@@ -11,6 +11,7 @@ import SuccessStoryCard from '@/components/SuccessStoryCard';
 import ScrollReveal from '@/components/ScrollReveal';
 import CTASection from '@/components/CTA';
 import GalaxyProducts from '@/components/GalaxyProducts';
+import Partners from '@/components/Partners';
 import {
   ArrowRight, Camera, MessageCircle, FileText, BookOpen, Heart,
   Bot, Workflow, Code2, GraduationCap, Package, Lightbulb,
@@ -400,7 +401,12 @@ const Index = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════
-          SECTION 7: WHAT OUR CLIENTS SAY
+          SECTION 7: OUR PARTNERS & CLIENTS
+      ═══════════════════════════════════════════════════ */}
+      <Partners />
+
+      {/* ═══════════════════════════════════════════════════
+          SECTION 8: WHAT OUR CLIENTS SAY
       ═══════════════════════════════════════════════════ */}
       <section className="py-16 md:py-24 snap-section" data-theme="light">
         <div className="section-container">
