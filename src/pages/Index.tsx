@@ -422,23 +422,23 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <TestimonialCard
                 quote="The Camera AI Platform has significantly improved our workplace safety. We've seen a 40% reduction in incidents since implementation."
-                author="Sarah Johnson"
-                role="Safety Director"
-                company="Manufacturing Co."
+                author="Kiem Nguyen"
+                role="Genral Manager"
+                company="RAIS Tech"
                 rating={5}
               />
               <TestimonialCard
-                quote="Our customer satisfaction scores increased by 30% after implementing the AI Chatbot. The natural conversations and quick responses have transformed our service."
-                author="Michael Chen"
+                quote="Primitive AI have helped us with AI Agent Development and deployment with high quality and fast speed. We are very satisfied with their service."
+                author="Oscar P. Ridell"
+                role="CEO"
+                company="Ymner"
+                rating={5}
+              />
+              <TestimonialCard
+                quote="Before, our 10 empolyees team can only serve 5% of our customers' support tickets. Now, we can serve all of them instantly 24/7, with high accuracy and satisfactions."
+                author="Duyen Nguyen"
                 role="CTO"
-                company="RetailTech"
-                rating={5}
-              />
-              <TestimonialCard
-                quote="The LegalHub platform reduced our document processing time by 60% and improved accuracy. It's been a game-changer for our legal department."
-                author="Jennifer Williams"
-                role="General Counsel"
-                company="Global Services Inc."
+                company="TNE"
                 rating={5}
               />
             </div>
