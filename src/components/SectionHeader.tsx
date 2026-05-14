@@ -23,7 +23,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => {
   return (
     <div className={cn(
-      'mb-12 md:mb-16',
+      'mb-8 md:mb-14',
       centered && 'text-center',
       className
     )}>
@@ -47,7 +47,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       </h2>
       {subtitle && (
         <p className={cn(
-          'text-lg md:text-xl max-w-3xl leading-relaxed',
+          'text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl leading-relaxed',
           centered && 'mx-auto',
           light ? 'text-white/70' : 'text-muted-foreground'
         )}>

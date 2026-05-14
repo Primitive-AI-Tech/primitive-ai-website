@@ -52,7 +52,7 @@ const SuccessStoryCard: React.FC<SuccessStoryCardProps> = ({
 
         {/* Metric highlight */}
         <div className="mb-3">
-          <span className="text-3xl md:text-4xl font-extrabold text-white">{metric}</span>
+          <span className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">{metric}</span>
           <span className="block text-sm text-white/70 mt-1">{metricLabel}</span>
         </div>
 

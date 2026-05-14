@@ -70,8 +70,31 @@ const GalaxyProducts = () => {
 
   return (
     <div className="relative w-full mt-8 md:mt-12">
-      {/* Mobile Fallback: Vertical List */}
-      <div className="flex flex-col gap-6 lg:hidden">
+      {/* Tablet/Mobile Fallback: Visual + Grid List */}
+      <div className="lg:hidden">
+        {/* Decorative Mini-Galaxy for Mobile */}
+        <div className="relative h-36 w-full flex items-center justify-center mb-6 overflow-hidden">
+          <div className="absolute inset-0 bg-purple-500/5 rounded-full blur-3xl" />
+          <div className="absolute w-32 h-32 border border-purple-500/20 rounded-full animate-[spin_10s_linear_infinite]" />
+          <div className="absolute w-24 h-24 border border-purple-500/10 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
+          <div className="relative w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-900 rounded-full shadow-lg flex items-center justify-center z-10">
+            <Brain className="w-8 h-8 text-white animate-pulse" />
+          </div>
+          {/* Floating Icons around the core */}
+          {products.slice(0, 3).map((p, i) => (
+            <div 
+              key={p.id}
+              className="absolute w-8 h-8 bg-white border border-purple-100 rounded-full flex items-center justify-center shadow-sm"
+              style={{
+                transform: `rotate(${i * 120}deg) translateX(60px) rotate(-${i * 120}deg)`
+              }}
+            >
+              <p.icon className="w-4 h-4 text-purple-600" />
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {products.map((product) => (
           <ProductCard
             key={product.id}
@@ -84,11 +107,12 @@ const GalaxyProducts = () => {
           />
         ))}
       </div>
+    </div>
 
-      {/* Desktop: Galaxy Visualization */}
-      <div className="hidden lg:flex items-center justify-between gap-16 min-h-[600px]">
+    {/* Desktop: Galaxy Visualization */}
+      <div className="hidden lg:flex items-center justify-between gap-12 xl:gap-16 min-h-[600px] max-w-7xl mx-auto">
         {/* Left: Active Product Card Presentation */}
-        <div className="w-[450px] relative z-20 shrink-0 h-[380px]">
+        <div className="w-full max-w-[400px] xl:max-w-[450px] relative z-20 shrink-0 h-[380px]">
           <div className="absolute inset-0 bg-purple-500/10 rounded-full blur-[100px] animate-pulse pointer-events-none" />
           <ProductCard
             name={activeProduct.name}
@@ -102,7 +126,7 @@ const GalaxyProducts = () => {
         </div>
 
         {/* Right: The Galaxy */}
-        <div className="relative flex-1 h-[600px] flex items-center justify-center pointer-events-auto">
+        <div className="relative flex-1 h-[600px] flex items-center justify-center pointer-events-auto scale-[0.75] xl:scale-100 transition-transform duration-500 origin-right">
           {/* Orbital Rings */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full border border-purple-500/20" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] rounded-full border border-purple-500/10" />

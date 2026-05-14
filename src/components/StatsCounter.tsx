@@ -61,12 +61,12 @@ const StatsCounter: React.FC<StatsCounterProps> = ({
 
   return (
     <div ref={ref} className={cn('text-center', className)}>
-      <div className="text-4xl md:text-5xl font-extrabold text-foreground mb-2">
+      <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-foreground mb-1.5">
         {prefix}
         <span className="tabular-nums">{hasAnimated ? count : 0}</span>
         {suffix}
       </div>
-      <p className="text-sm md:text-base text-muted-foreground font-medium">{label}</p>
+      <p className="text-xs sm:text-sm md:text-base text-muted-foreground font-medium">{label}</p>
     </div>
   );
 };

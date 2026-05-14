@@ -27,17 +27,17 @@ const Partners = () => {
     <div className="relative flex overflow-hidden py-3">
       <div className={`flex whitespace-nowrap min-w-full ${reverse ? 'animate-scroll-reverse' : 'animate-scroll'} hover:[animation-play-state:paused]`}>
         {items.map((partner, index) => (
-          <div key={index} className="flex-shrink-0 px-8 md:px-12">
+          <div key={index} className="flex-shrink-0 px-6 md:px-12">
             <a
               href={partner.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center h-20 w-40 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="flex items-center justify-center h-16 w-32 md:h-20 md:w-40 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="max-h-12 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                className="max-h-8 md:max-h-12 w-auto object-contain transition-transform duration-300 hover:scale-105"
               />
             </a>
           </div>
@@ -47,8 +47,8 @@ const Partners = () => {
   );
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-transparent via-purple-50/20 to-transparent snap-section" data-theme="light">
-      <div className="section-container mb-12">
+    <section className="pt-24 pb-10 md:py-28 bg-gradient-to-b from-transparent via-purple-50/20 to-transparent snap-section" data-theme="light">
+      <div className="section-container mb-8 md:mb-12">
         <ScrollReveal>
           <SectionHeader
             badge="Institutional Trust"
@@ -63,13 +63,15 @@ const Partners = () => {
         <div className="relative">
           {/* Fading Edges Overlay */}
           <div className="absolute inset-0 z-10 pointer-events-none">
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white via-white/50 to-transparent" />
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white via-white/50 to-transparent" />
+            <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-white via-white/50 to-transparent" />
+            <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-white via-white/50 to-transparent" />
           </div>
 
           <LogoRow items={row1} />
           <LogoRow items={row2} reverse />
-          <LogoRow items={row3} />
+          <div className="hidden md:block">
+            <LogoRow items={row3} />
+          </div>
         </div>
       </div>
     </section>

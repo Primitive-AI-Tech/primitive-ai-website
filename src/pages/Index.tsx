@@ -34,10 +34,10 @@ const Index = () => {
           <div className="absolute inset-0 dot-bg opacity-30" />
         </div>
 
-        <div className="section-container relative z-10 py-20 md:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="section-container relative z-10 pt-24 pb-16 md:py-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left: Text content */}
-            <div className="space-y-8 max-w-2xl">
+            <div className="space-y-5 md:space-y-8 max-w-2xl">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-purple-200 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                 Enterprise AI Solutions
@@ -48,15 +48,15 @@ const Index = () => {
                 <span className="text-gradient-purple">Built for Business.</span>
               </h1>
 
-              <p className="text-lg md:text-xl text-purple-200/80 leading-relaxed max-w-xl">
+              <p className="text-sm sm:text-base md:text-lg xl:text-xl text-purple-200/80 leading-relaxed max-w-xl">
                 AI is changing the world, dramatically. Our mission is to make AI bring good
                 for mankind. In this journey, we build products that help businesses and
                 communities thrive.
               </p>
 
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
                 <Button
-                  className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-6 text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5"
+                  className="w-full sm:w-auto bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-6 text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5"
                   asChild
                 >
                   <Link to="/solutions">
@@ -66,7 +66,7 @@ const Index = () => {
                 </Button>
                 <Button
                   variant="outline"
-                  className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:-translate-y-0.5"
+                  className="w-full sm:w-auto bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:-translate-y-0.5"
                   asChild
                 >
                   <Link to="/contact">Talk to Our Team</Link>
@@ -75,117 +75,188 @@ const Index = () => {
             </div>
 
             {/* Right: Premium Visual element */}
-            <div className="relative hidden lg:block h-[450px] w-full max-w-[420px] mx-auto mt-8">
-              {/* Dynamic Glow Backgrounds */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple-500/20 rounded-full blur-[80px] animate-pulse" />
-              <div className="absolute top-1/4 right-1/4 w-[250px] h-[250px] bg-blue-500/20 rounded-full blur-[60px] animate-pulse" style={{ animationDelay: '1s' }} />
-
-              {/* Central Dashboard Card (KnowledgeHub) */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] bg-white/5 border border-white/10 rounded-2xl p-6 z-10 animate-float shadow-2xl backdrop-blur-xl">
-                <div className="flex items-center justify-between mb-6 border-b border-white/10 pb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
-                      <BookOpen className="w-5 h-5 text-white" />
+            <div className="w-full max-w-[480px] mx-auto mt-8 lg:mt-0 lg:flex-1 relative">
+              {/* Dynamic Glow Backgrounds (Visible on all sizes) */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-[80px] animate-pulse" />
+              
+              {/* Desktop: Artful Overlapping Layout */}
+              <div className="hidden lg:block relative h-[500px]">
+                {/* Central Dashboard Card (KnowledgeHub) */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] bg-white/5 border border-white/10 rounded-2xl p-6 z-10 animate-float shadow-2xl backdrop-blur-xl">
+                  <div className="flex items-center justify-between mb-6 border-b border-white/10 pb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
+                        <BookOpen className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-white font-semibold text-sm">KnowledgeHub</h4>
+                        <p className="text-xs text-purple-200/60">Enterprise AI Engine</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-white font-semibold text-sm">KnowledgeHub</h4>
-                      <p className="text-xs text-purple-200/60">Enterprise AI Engine</p>
+                    <div className="px-2.5 py-1 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                      <span className="text-[10px] font-bold text-green-400 uppercase tracking-wider">Optimal</span>
                     </div>
                   </div>
-                  <div className="px-2.5 py-1 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                    <span className="text-[10px] font-bold text-green-400 uppercase tracking-wider">Optimal</span>
+                  <div className="space-y-4">
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-2.5 flex items-center gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 flex-shrink-0" />
+                      <span className="text-xs text-purple-200/80 font-medium">Analyze Q3 financial reports...</span>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex gap-3">
+                        <div className="w-7 h-7 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <Brain className="w-3.5 h-3.5 text-purple-300" />
+                        </div>
+                        <div>
+                          <p className="text-xs text-white font-medium">Extracted 42 key insights</p>
+                          <p className="text-[10px] text-purple-200/60 mt-0.5">Cross-referencing 15 documents. Confidence: 98%</p>
+                        </div>
+                      </div>
+                      <div className="flex gap-3">
+                        <div className="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <Bot className="w-3.5 h-3.5 text-blue-300" />
+                        </div>
+                        <div>
+                          <p className="text-xs text-white font-medium">Executive summary generated</p>
+                          <p className="text-[10px] text-purple-200/60 mt-0.5">Ready for review and distribution.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  {/* Search Input */}
-                  <div className="bg-white/5 border border-white/10 rounded-lg p-2.5 flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 flex-shrink-0" />
-                    <span className="text-xs text-purple-200/80 font-medium">Analyze Q3 financial reports...</span>
+                {/* Floating Element 1 (VisionHub) */}
+                <div className="absolute top-1/2 left-1/2 ml-[20px] -mt-[180px] w-[240px] bg-black/60 border border-white/10 rounded-2xl p-4 z-0 animate-float-delayed rotate-[6deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2">
+                      <Camera className="w-4 h-4 text-emerald-400" />
+                      <span className="text-xs font-semibold text-white">VisionHub</span>
+                    </div>
+                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">LIVE</span>
                   </div>
-
-                  {/* Data Processing Steps */}
-                  <div className="space-y-3">
-                    <div className="flex gap-3">
-                      <div className="w-7 h-7 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <Brain className="w-3.5 h-3.5 text-purple-300" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-white font-medium">Extracted 42 key insights</p>
-                        <p className="text-[10px] text-purple-200/60 mt-0.5">Cross-referencing 15 documents. Confidence: 98%</p>
+                  <div className="h-24 rounded-lg bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
+                    <img src="/vision-hub.png" alt="Vision AI Feed" className="absolute inset-0 w-full h-full object-cover opacity-70" />
+                    <div className="absolute inset-0 bg-scan-lines opacity-20 pointer-events-none" />
+                    <div className="absolute top-4 left-6 w-16 h-12 border border-emerald-400/60 bg-emerald-400/10 rounded-sm shadow-[0_0_10px_rgba(52,211,153,0.3)]" />
+                    <div className="absolute bottom-2 left-2 z-10">
+                      <div className="flex flex-col gap-0.5">
+                        <span className="text-[8px] font-mono bg-black/60 text-emerald-400 px-1 rounded inline-block w-max">ZONE 1: SECURE</span>
+                        <span className="text-[8px] font-mono bg-black/60 text-white/80 px-1 rounded inline-block w-max">Subject tracking active</span>
                       </div>
                     </div>
-                    <div className="flex gap-3">
-                      <div className="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <Bot className="w-3.5 h-3.5 text-blue-300" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-white font-medium">Executive summary generated</p>
-                        <p className="text-[10px] text-purple-200/60 mt-0.5">Ready for review and distribution.</p>
-                      </div>
+                  </div>
+                </div>
+
+                {/* Floating Element 2 (SupportHub) */}
+                <div className="absolute top-1/2 left-1/2 -ml-[250px] mt-[60px] w-[260px] bg-[#2a134a]/90 border border-purple-500/30 rounded-2xl p-4 z-20 animate-float -rotate-[4deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
+                  <div className="flex items-center gap-3 mb-3 border-b border-white/10 pb-3">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                      <MessageCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-white">SupportHub</p>
+                      <p className="text-[10px] text-blue-200/80 font-medium">AI Agent typing...</p>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="bg-purple-500/20 border border-purple-400/20 rounded-tl-xl rounded-tr-xl rounded-bl-xl p-2.5 w-[85%] ml-auto">
+                      <p className="text-[10px] text-purple-100/90 leading-tight text-right">How to reset my password?</p>
+                    </div>
+                    <div className="bg-white/5 border border-white/10 rounded-tr-xl rounded-bl-xl rounded-br-xl p-2.5 w-[90%]">
+                      <p className="text-[11px] text-white/90 leading-relaxed">
+                        To reset your password, please go to the login page, click on the <span className="text-blue-300 font-semibold">'Forgot Password'</span> link...
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Floating Element 1 (VisionHub) */}
-              <div className="absolute top-1/2 left-1/2 ml-[10px] -mt-[150px] w-[240px] bg-black/60 border border-white/10 rounded-2xl p-4 z-0 animate-float-delayed rotate-[6deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <Camera className="w-4 h-4 text-emerald-400" />
-                    <span className="text-xs font-semibold text-white">VisionHub</span>
+              {/* Mobile/Tablet: Full Content Cards */}
+              <div className="lg:hidden flex flex-col gap-3 relative z-10">
+                {/* KnowledgeHub Card */}
+                <div className="bg-black/45 border border-white/10 rounded-2xl p-4 backdrop-blur-xl">
+                  <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-3">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
+                        <BookOpen className="w-4 h-4 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-white font-semibold text-xs">KnowledgeHub</h4>
+                        <p className="text-[10px] text-purple-200/60">Enterprise AI Engine</p>
+                      </div>
+                    </div>
+                    <div className="px-2 py-0.5 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                      <span className="text-[9px] font-bold text-green-400 uppercase tracking-wider">Optimal</span>
+                    </div>
                   </div>
-                  <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">LIVE</span>
+                  <div className="space-y-2.5">
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-2 flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-full border-2 border-purple-400/50 flex-shrink-0" />
+                      <span className="text-[10px] text-purple-200/80 font-medium">Analyze Q3 financial reports...</span>
+                    </div>
+                    <div className="flex gap-2.5">
+                      <div className="w-6 h-6 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <Brain className="w-3 h-3 text-purple-300" />
+                      </div>
+                      <div>
+                        <p className="text-[10px] text-white font-medium">Extracted 42 key insights</p>
+                        <p className="text-[9px] text-purple-200/60 mt-0.5">Cross-referencing 15 documents. Confidence: 98%</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2.5">
+                      <div className="w-6 h-6 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <Bot className="w-3 h-3 text-blue-300" />
+                      </div>
+                      <div>
+                        <p className="text-[10px] text-white font-medium">Executive summary generated</p>
+                        <p className="text-[9px] text-purple-200/60 mt-0.5">Ready for review and distribution.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="h-24 rounded-lg bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
-                  {/* Vision Hub Image Feed */}
-                  <img
-                    src="/vision-hub.png"
-                    alt="Vision AI Feed"
-                    className="absolute inset-0 w-full h-full object-cover opacity-70"
-                  />
 
-                  {/* Scan lines effect */}
-                  <div className="absolute inset-0 bg-scan-lines opacity-20 pointer-events-none" />
-
-                  {/* Bounding box mockup */}
-                  <div className="absolute top-4 left-6 w-16 h-12 border border-emerald-400/60 bg-emerald-400/10 rounded-sm shadow-[0_0_10px_rgba(52,211,153,0.3)]" />
-
-                  {/* Feed Status Text */}
-                  <div className="absolute bottom-2 left-2 z-10">
-                    <div className="flex flex-col gap-0.5">
+                {/* VisionHub Card */}
+                <div className="bg-black/40 border border-white/10 rounded-2xl p-4 backdrop-blur-md">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2">
+                      <Camera className="w-4 h-4 text-emerald-400" />
+                      <span className="text-sm font-semibold text-white">VisionHub</span>
+                    </div>
+                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">LIVE</span>
+                  </div>
+                  <div className="h-28 rounded-xl bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
+                    <img src="/vision-hub.png" alt="Vision AI Feed" className="absolute inset-0 w-full h-full object-cover opacity-70" />
+                    <div className="absolute inset-0 bg-scan-lines opacity-20 pointer-events-none" />
+                    <div className="absolute top-3 left-6 w-16 h-10 border border-emerald-400/60 bg-emerald-400/10 rounded-sm shadow-[0_0_10px_rgba(52,211,153,0.3)]" />
+                    <div className="absolute bottom-2 left-2 z-10 flex flex-col gap-0.5">
                       <span className="text-[8px] font-mono bg-black/60 text-emerald-400 px-1 rounded inline-block w-max">ZONE 1: SECURE</span>
                       <span className="text-[8px] font-mono bg-black/60 text-white/80 px-1 rounded inline-block w-max">Subject tracking active</span>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Floating Element 2 (SupportHub) */}
-              <div className="absolute top-1/2 left-1/2 -ml-[230px] mt-[50px] w-[260px] bg-[#2a134a]/90 border border-purple-500/30 rounded-2xl p-4 z-20 animate-float -rotate-[4deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
-                <div className="flex items-center gap-3 mb-3 border-b border-white/10 pb-3">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
-                    <MessageCircle className="w-4 h-4 text-white" />
+                {/* SupportHub Card */}
+                <div className="bg-[#2a134a]/90 border border-purple-500/30 rounded-2xl p-4 backdrop-blur-md">
+                  <div className="flex items-center gap-2.5 mb-3 border-b border-white/10 pb-3">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                      <MessageCircle className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-white">SupportHub</p>
+                      <p className="text-[10px] text-blue-200/80 font-medium">AI Agent typing...</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs font-semibold text-white">SupportHub</p>
-                    <p className="text-[10px] text-blue-200/80 font-medium">AI Agent typing...</p>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  {/* User Question */}
-                  <div className="bg-purple-500/20 border border-purple-400/20 rounded-tl-xl rounded-tr-xl rounded-bl-xl p-2.5 w-[85%] ml-auto">
-                    <p className="text-[10px] text-purple-100/90 leading-tight text-right">
-                      How to reset my password?
-                    </p>
-                  </div>
-
-                  {/* AI Response */}
-                  <div className="bg-white/5 border border-white/10 rounded-tr-xl rounded-bl-xl rounded-br-xl p-2.5 w-[90%]">
-                    <p className="text-[11px] text-white/90 leading-relaxed">
-                      To reset your password, please go to the login page, click on the <span className="text-blue-300 font-semibold">'Forgot Password'</span> link, and follow the instructions. You will receive an email with a link to reset your password.
-                    </p>
+                  <div className="space-y-2.5">
+                    <div className="bg-purple-500/20 border border-purple-400/20 rounded-tl-xl rounded-tr-xl rounded-bl-xl p-2.5 w-[80%] ml-auto">
+                      <p className="text-[10px] text-purple-100/90 leading-tight text-right">How to reset my password?</p>
+                    </div>
+                    <div className="bg-white/5 border border-white/10 rounded-tr-xl rounded-bl-xl rounded-br-xl p-2.5 w-[90%]">
+                      <p className="text-[10px] text-white/90 leading-relaxed">
+                        To reset your password, please go to the login page, click on the <span className="text-blue-300 font-semibold">'Forgot Password'</span> link...
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -203,7 +274,7 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 2: STATS COUNTER BAR
       ═══════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 relative snap-section" data-theme="light">
+      <section className="pt-24 pb-20 relative snap-section" data-theme="light">
         <div className="section-container">
           <ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
@@ -219,7 +290,7 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 3: OUR PRODUCTS
       ═══════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-28 snap-section" data-theme="light">
+      <section className="pt-24 pb-10 md:py-28 snap-section" data-theme="light">
         <div className="section-container">
           <ScrollReveal>
             <SectionHeader
@@ -238,7 +309,7 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 4: OUR SERVICES
       ═══════════════════════════════════════════════════ */}
-      <section className="relative py-20 md:py-28 overflow-hidden snap-section" data-theme="dark">
+      <section className="relative pt-24 pb-10 md:py-28 overflow-hidden snap-section" data-theme="dark">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-950" />
         <div className="absolute inset-0 dot-bg opacity-20" />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-3xl" />
@@ -293,9 +364,9 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 5: WHY CHOOSE PRIMITIVE AI
       ═══════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 snap-section" data-theme="light">
+      <section className="pt-24 pb-10 md:py-24 snap-section" data-theme="light">
         <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left: Value proposition text */}
             <ScrollReveal direction="left">
               <div className="space-y-6">
@@ -305,13 +376,13 @@ const Index = () => {
                 <h2 className="section-heading">
                   Technology with <span className="gradient-text">Purpose</span>
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                   We believe AI should serve humanity — not just generate profit.
                   Every product we build, every service we deliver is guided by a
                   commitment to creating real, measurable impact for businesses and
                   the communities they serve.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                   From enterprise-grade security to end-to-end delivery, we partner
                   with organizations that share our vision for responsible, impactful AI.
                 </p>
@@ -359,7 +430,7 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 6: SUCCESS STORIES GALLERY
       ═══════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-purple-50/50 to-transparent snap-section" data-theme="light">
+      <section className="pt-24 pb-10 md:py-24 bg-gradient-to-b from-purple-50/50 to-transparent snap-section" data-theme="light">
         <div className="section-container">
           <ScrollReveal>
             <SectionHeader
@@ -408,7 +479,7 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 8: WHAT OUR CLIENTS SAY
       ═══════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 snap-section" data-theme="light">
+      <section className="pt-24 pb-10 md:py-24 snap-section" data-theme="light">
         <div className="section-container">
           <ScrollReveal>
             <SectionHeader
@@ -423,7 +494,7 @@ const Index = () => {
               <TestimonialCard
                 quote="The Camera AI Platform has significantly improved our workplace safety. We've seen a 40% reduction in incidents since implementation."
                 author="Kiem Nguyen"
-                role="Genral Manager"
+                role="General Manager"
                 company="RAIS Tech"
                 rating={5}
               />

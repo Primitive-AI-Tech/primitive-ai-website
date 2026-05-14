@@ -14,29 +14,31 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    let observer: IntersectionObserver;
-    
-    // Add small delay to ensure DOM is fully rendered
-    const timeout = setTimeout(() => {
-      observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting) {
-              const theme = entry.target.getAttribute('data-theme') as 'dark' | 'light';
-              if (theme) setNavTheme(theme);
-            }
-          }
-        },
-        { rootMargin: '-10% 0px -50% 0px', threshold: 0 } // triggers when section is in top half
-      );
+    const updateNavTheme = () => {
+      const sections = Array.from(
+        document.querySelectorAll('[data-theme]')
+      ) as HTMLElement[];
+      // Walk sections in DOM order; the last one whose top is at or above
+      // 45% of the viewport is the one currently filling the screen.
+      let current: HTMLElement | null = null;
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= window.innerHeight * 0.45) {
+          current = section;
+        } else {
+          break;
+        }
+      }
+      if (current) {
+        const theme = current.getAttribute('data-theme') as 'dark' | 'light';
+        if (theme) setNavTheme(theme);
+      }
+    };
 
-      const sections = document.querySelectorAll('[data-theme]');
-      sections.forEach((s) => observer.observe(s));
-    }, 100);
-
+    const timeout = setTimeout(updateNavTheme, 80);
+    window.addEventListener('scroll', updateNavTheme, { passive: true });
     return () => {
       clearTimeout(timeout);
-      if (observer) observer.disconnect();
+      window.removeEventListener('scroll', updateNavTheme);
     };
   }, [location.pathname]);
 
@@ -77,12 +79,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3">
+    <nav className={cn(
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3',
+      isDark
+        ? 'bg-gradient-to-b from-purple-950/70 via-purple-950/30 to-transparent'
+        : 'bg-transparent'
+    )}>
       <div className={cn(
           'mx-auto max-w-5xl w-[95%] rounded-[2rem] px-4 sm:px-6 py-3 transition-all duration-300 mt-2',
           'backdrop-blur-xl shadow-lg',
-          isDark 
-            ? 'bg-white/10 border border-white/20' 
+          isDark
+            ? 'bg-white/10 border border-white/20'
             : 'bg-white/60 border border-purple-900/10'
         )}
       >
@@ -243,48 +250,71 @@ const Navbar = () => {
         className={cn(
           'lg:hidden mx-4 sm:mx-6 mt-2 rounded-2xl overflow-hidden transition-all duration-300',
           isMenuOpen
-            ? 'max-h-[80vh] opacity-100 app-panel-strong'
+            ? cn(
+                'max-h-[80vh] opacity-100 border shadow-2xl',
+                isDark
+                  ? 'bg-purple-950/95 border-white/15 backdrop-blur-xl'
+                  : 'bg-white/98 border-purple-100 backdrop-blur-xl'
+              )
             : 'max-h-0 opacity-0 pointer-events-none'
         )}
       >
-        <div className="p-4 space-y-1 max-h-[75vh] overflow-y-auto">
-          <Link to="/" className={cn('block px-4 py-3 rounded-xl text-sm font-medium text-foreground', isActive('/') ? 'bg-purple-100 text-purple-700' : 'hover:bg-purple-50')}>
+        <div className="p-3 space-y-0.5 max-h-[75vh] overflow-y-auto">
+          <Link
+            to="/"
+            className={cn(
+              'block px-4 py-3 rounded-xl text-sm font-medium transition-colors',
+              isDark
+                ? (isActive('/') ? 'bg-white/15 text-white' : 'text-white/90 hover:bg-white/10')
+                : (isActive('/') ? 'bg-purple-100 text-purple-700' : 'text-foreground hover:bg-purple-50')
+            )}
+          >
             Home
           </Link>
 
           {/* Mobile Products */}
           <button
+            type="button"
             onClick={() => setIsProductsOpen(!isProductsOpen)}
-            className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium hover:bg-purple-50 transition-colors text-foreground"
+            className={cn(
+              'w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-colors',
+              isDark ? 'text-white/90 hover:bg-white/10' : 'text-foreground hover:bg-purple-50'
+            )}
           >
             Products & Services
-            <ChevronDown className={cn('w-4 h-4 transition-transform', isProductsOpen && 'rotate-180')} />
+            <ChevronDown className={cn('w-4 h-4 transition-transform', isProductsOpen && 'rotate-180', isDark ? 'text-white/60' : 'text-muted-foreground')} />
           </button>
 
           {isProductsOpen && (
-            <div className="pl-4 space-y-1">
-              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground px-4 pt-2 pb-1">Products</p>
+            <div className={cn('ml-2 pl-3 border-l space-y-0.5 py-1', isDark ? 'border-white/10' : 'border-purple-100')}>
+              <p className={cn('text-[10px] font-bold uppercase tracking-widest px-3 pt-1 pb-1.5', isDark ? 'text-white/40' : 'text-muted-foreground')}>Products</p>
               {products.map((product) => (
                 <Link
                   key={product.name}
                   to={product.path}
-                  className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm hover:bg-purple-50 transition-colors text-foreground"
+                  className={cn(
+                    'flex items-center gap-3 px-3 py-2 rounded-xl text-sm transition-colors',
+                    isDark ? 'text-white/80 hover:bg-white/10' : 'text-foreground hover:bg-purple-50'
+                  )}
                 >
-                  <product.icon className="w-4 h-4 text-purple-500" />
+                  <product.icon className={cn('w-4 h-4 shrink-0', isDark ? 'text-purple-300' : 'text-purple-500')} />
                   <span className="font-medium">{product.name}</span>
                   {product.badge && (
-                    <span className="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700">{product.badge}</span>
+                    <span className="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 ml-auto">{product.badge}</span>
                   )}
                 </Link>
               ))}
-              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground px-4 pt-3 pb-1">Services</p>
+              <p className={cn('text-[10px] font-bold uppercase tracking-widest px-3 pt-2 pb-1.5', isDark ? 'text-white/40' : 'text-muted-foreground')}>Services</p>
               {services.map((service) => (
                 <Link
                   key={service.name}
                   to="/solutions"
-                  className="flex items-center gap-3 px-4 py-2 rounded-xl text-sm hover:bg-purple-50 transition-colors text-foreground"
+                  className={cn(
+                    'flex items-center gap-3 px-3 py-2 rounded-xl text-sm transition-colors',
+                    isDark ? 'text-white/70 hover:bg-white/10' : 'text-foreground hover:bg-purple-50'
+                  )}
                 >
-                  <service.icon className="w-4 h-4 text-purple-400" />
+                  <service.icon className={cn('w-4 h-4 shrink-0', isDark ? 'text-purple-400' : 'text-purple-400')} />
                   <span>{service.name}</span>
                 </Link>
               ))}
@@ -295,14 +325,25 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.path}
-              className={cn('block px-4 py-3 rounded-xl text-sm font-medium text-foreground', isActive(link.path) ? 'bg-purple-100 text-purple-700' : 'hover:bg-purple-50')}
+              className={cn(
+                'block px-4 py-3 rounded-xl text-sm font-medium transition-colors',
+                isDark
+                  ? (isActive(link.path) ? 'bg-white/15 text-white' : 'text-white/90 hover:bg-white/10')
+                  : (isActive(link.path) ? 'bg-purple-100 text-purple-700' : 'text-foreground hover:bg-purple-50')
+              )}
             >
               {link.name}
             </Link>
           ))}
 
-          <div className="pt-3">
-            <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-full" asChild>
+          <div className="pt-2 pb-1">
+            <Button
+              className={cn(
+                'w-full font-medium rounded-full',
+                isDark ? 'bg-white text-purple-900 hover:bg-white/90' : 'bg-purple-600 hover:bg-purple-700 text-white'
+              )}
+              asChild
+            >
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
