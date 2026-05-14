@@ -448,6 +448,14 @@
   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--muted-foreground) / 0.5);
   }
+  .bg-scan-lines {
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.4) 50%
+    );
+    background-size: 100% 4px;
+  }
 }
 
 /* ── Standalone keyframes ── */
@@ -484,6 +492,16 @@
 @keyframes bounce-subtle {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-2px); }
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg); }
+}
+
+@keyframes orbit-paused {
+  from { transform: rotate(var(--current-rotation)) translateX(var(--orbit-radius)) rotate(calc(-1 * var(--current-rotation))); }
+  to { transform: rotate(var(--current-rotation)) translateX(var(--orbit-radius)) rotate(calc(-1 * var(--current-rotation))); }
 }
 
 .animate-fade-in {

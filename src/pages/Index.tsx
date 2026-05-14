@@ -10,10 +10,11 @@ import StatsCounter from '@/components/StatsCounter';
 import SuccessStoryCard from '@/components/SuccessStoryCard';
 import ScrollReveal from '@/components/ScrollReveal';
 import CTASection from '@/components/CTA';
+import GalaxyProducts from '@/components/GalaxyProducts';
 import {
   ArrowRight, Camera, MessageCircle, FileText, BookOpen, Heart,
   Bot, Workflow, Code2, GraduationCap, Package, Lightbulb,
-  Shield, Zap, BarChart, Target, ChevronDown,
+  Shield, Zap, BarChart, Target, ChevronDown, Brain
 } from 'lucide-react';
 
 const Index = () => {
@@ -72,43 +73,118 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right: Visual element */}
-            <div className="relative hidden lg:block">
-              <div className="relative">
-                {/* Glow ring */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/30 to-purple-300/20 rounded-3xl blur-xl" />
+            {/* Right: Premium Visual element */}
+            <div className="relative hidden lg:block h-[450px] w-full max-w-[420px] mx-auto mt-8">
+              {/* Dynamic Glow Backgrounds */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple-500/20 rounded-full blur-[80px] animate-pulse" />
+              <div className="absolute top-1/4 right-1/4 w-[250px] h-[250px] bg-blue-500/20 rounded-full blur-[60px] animate-pulse" style={{ animationDelay: '1s' }} />
 
-                {/* Main card */}
-                <div className="relative bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md">
-                  <div className="grid grid-cols-2 gap-4">
-                    {[
-                      { icon: MessageCircle, name: 'SupportHub', color: 'from-blue-500 to-blue-700' },
-                      { icon: BookOpen, name: 'KnowledgeHub', color: 'from-purple-500 to-purple-700' },
-                      { icon: Camera, name: 'VisionHub', color: 'from-emerald-500 to-emerald-700' },
-                      { icon: Heart, name: 'FamilyHub', color: 'from-rose-500 to-rose-700' },
-                    ].map((item, i) => (
-                      <div
-                        key={item.name}
-                        className="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 group cursor-pointer"
-                        style={{ animationDelay: `${i * 100}ms` }}
-                      >
-                        <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
-                          <item.icon className="w-5 h-5 text-white" />
-                        </div>
-                        <p className="text-sm font-semibold text-white">{item.name}</p>
-                      </div>
-                    ))}
+              {/* Central Dashboard Card (KnowledgeHub) */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] bg-white/5 border border-white/10 rounded-2xl p-6 z-10 animate-float shadow-2xl backdrop-blur-xl">
+                <div className="flex items-center justify-between mb-6 border-b border-white/10 pb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
+                      <BookOpen className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold text-sm">KnowledgeHub</h4>
+                      <p className="text-xs text-purple-200/60">Enterprise AI Engine</p>
+                    </div>
                   </div>
-                  <div className="mt-4 p-4 rounded-2xl bg-white/5 border border-white/10">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
-                        <FileText className="w-5 h-5 text-white" />
+                  <div className="px-2.5 py-1 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                    <span className="text-[10px] font-bold text-green-400 uppercase tracking-wider">Optimal</span>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  {/* Search Input */}
+                  <div className="bg-white/5 border border-white/10 rounded-lg p-2.5 flex items-center gap-2">
+                    <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 flex-shrink-0" />
+                    <span className="text-xs text-purple-200/80 font-medium">Analyze Q3 financial reports...</span>
+                  </div>
+
+                  {/* Data Processing Steps */}
+                  <div className="space-y-3">
+                    <div className="flex gap-3">
+                      <div className="w-7 h-7 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <Brain className="w-3.5 h-3.5 text-purple-300" />
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">LegalHub</p>
-                        <p className="text-xs text-purple-300">Coming Soon</p>
+                        <p className="text-xs text-white font-medium">Extracted 42 key insights</p>
+                        <p className="text-[10px] text-purple-200/60 mt-0.5">Cross-referencing 15 documents. Confidence: 98%</p>
                       </div>
                     </div>
+                    <div className="flex gap-3">
+                      <div className="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <Bot className="w-3.5 h-3.5 text-blue-300" />
+                      </div>
+                      <div>
+                        <p className="text-xs text-white font-medium">Executive summary generated</p>
+                        <p className="text-[10px] text-purple-200/60 mt-0.5">Ready for review and distribution.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating Element 1 (VisionHub) */}
+              <div className="absolute top-1/2 left-1/2 ml-[10px] -mt-[150px] w-[240px] bg-black/60 border border-white/10 rounded-2xl p-4 z-0 animate-float-delayed rotate-[6deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <Camera className="w-4 h-4 text-emerald-400" />
+                    <span className="text-xs font-semibold text-white">VisionHub</span>
+                  </div>
+                  <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">LIVE</span>
+                </div>
+                <div className="h-24 rounded-lg bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
+                  {/* Vision Hub Image Feed */}
+                  <img
+                    src="/vision-hub.png"
+                    alt="Vision AI Feed"
+                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                  />
+
+                  {/* Scan lines effect */}
+                  <div className="absolute inset-0 bg-scan-lines opacity-20 pointer-events-none" />
+
+                  {/* Bounding box mockup */}
+                  <div className="absolute top-4 left-6 w-16 h-12 border border-emerald-400/60 bg-emerald-400/10 rounded-sm shadow-[0_0_10px_rgba(52,211,153,0.3)]" />
+
+                  {/* Feed Status Text */}
+                  <div className="absolute bottom-2 left-2 z-10">
+                    <div className="flex flex-col gap-0.5">
+                      <span className="text-[8px] font-mono bg-black/60 text-emerald-400 px-1 rounded inline-block w-max">ZONE 1: SECURE</span>
+                      <span className="text-[8px] font-mono bg-black/60 text-white/80 px-1 rounded inline-block w-max">Subject tracking active</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating Element 2 (SupportHub) */}
+              <div className="absolute top-1/2 left-1/2 -ml-[230px] mt-[50px] w-[260px] bg-[#2a134a]/90 border border-purple-500/30 rounded-2xl p-4 z-20 animate-float -rotate-[4deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
+                <div className="flex items-center gap-3 mb-3 border-b border-white/10 pb-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <MessageCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-white">SupportHub</p>
+                    <p className="text-[10px] text-blue-200/80 font-medium">AI Agent typing...</p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  {/* User Question */}
+                  <div className="bg-purple-500/20 border border-purple-400/20 rounded-tl-xl rounded-tr-xl rounded-bl-xl p-2.5 w-[85%] ml-auto">
+                    <p className="text-[10px] text-purple-100/90 leading-tight text-right">
+                      How to reset my password?
+                    </p>
+                  </div>
+
+                  {/* AI Response */}
+                  <div className="bg-white/5 border border-white/10 rounded-tr-xl rounded-bl-xl rounded-br-xl p-2.5 w-[90%]">
+                    <p className="text-[11px] text-white/90 leading-relaxed">
+                      To reset your password, please go to the login page, click on the <span className="text-blue-300 font-semibold">'Forgot Password'</span> link, and follow the instructions. You will receive an email with a link to reset your password.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -142,7 +218,7 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 3: OUR PRODUCTS
       ═══════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 snap-section" data-theme="light">
+      <section className="py-20 md:py-28 snap-section" data-theme="light">
         <div className="section-container">
           <ScrollReveal>
             <SectionHeader
@@ -153,49 +229,7 @@ const Index = () => {
           </ScrollReveal>
 
           <ScrollReveal stagger>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ProductCard
-                name="SupportHub"
-                tagline="AI-Powered Customer Support"
-                description="Deliver exceptional customer support with intelligent chatbot and voice bot platform. Natural language understanding, omnichannel support, and seamless escalation."
-                icon={MessageCircle}
-                href="/solutions/chatbot"
-                gradient="from-blue-500 to-blue-700"
-              />
-              <ProductCard
-                name="KnowledgeHub"
-                tagline="Enterprise Knowledge Management"
-                description="Centralize, organize, and retrieve organizational knowledge with AI-powered search, document analysis, and intelligent recommendations."
-                icon={BookOpen}
-                href="/solutions/knowledgehub"
-                gradient="from-purple-500 to-purple-700"
-              />
-              <ProductCard
-                name="VisionHub"
-                tagline="Intelligent Visual Monitoring"
-                description="Enhance workplace safety with real-time camera AI for human-robot interaction, PPE compliance, and behavior detection across facilities."
-                icon={Camera}
-                href="/solutions/camera-ai"
-                gradient="from-emerald-500 to-emerald-700"
-              />
-              <ProductCard
-                name="FamilyHub"
-                tagline="Family Knowledge Preservation"
-                description="Preserve and share family stories, memories, and wisdom across generations with AI-powered knowledge organization and storytelling."
-                icon={Heart}
-                href="/solutions/familyhub"
-                gradient="from-rose-500 to-rose-700"
-              />
-              <ProductCard
-                name="LegalHub"
-                tagline="AI-Powered Legal Operations"
-                description="Streamline legal document creation, management, and e-signing with intelligent automation, compliance checks, and template generation."
-                icon={FileText}
-                href="/solutions/legalhub"
-                status="coming-soon"
-                gradient="from-amber-500 to-orange-600"
-              />
-            </div>
+            <GalaxyProducts />
           </ScrollReveal>
         </div>
       </section>

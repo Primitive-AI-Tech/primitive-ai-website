@@ -10,8 +10,8 @@ interface ProductCardProps {
   icon: LucideIcon;
   href: string;
   status?: 'active' | 'coming-soon';
-  gradient?: string;
   className?: string;
+  children?: React.ReactNode;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -21,8 +21,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
   icon: Icon,
   href,
   status = 'active',
-  gradient = 'from-purple-500 to-purple-700',
   className,
+  children,
 }) => {
   return (
     <div
@@ -31,39 +31,36 @@ const ProductCard: React.FC<ProductCardProps> = ({
         className
       )}
     >
-      {/* Gradient accent top bar */}
-      <div className={cn('absolute top-0 left-0 right-0 h-1 bg-gradient-to-r', gradient)} />
-
       {/* Icon */}
-      <div
-        className={cn(
-          'w-14 h-14 rounded-2xl bg-gradient-to-br flex items-center justify-center mb-5',
-          gradient
-        )}
-      >
-        <Icon className="w-7 h-7 text-white" />
+      <div className="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center mb-5 relative z-10">
+        <Icon className="w-7 h-7 text-purple-700" />
       </div>
 
       {/* Status badge */}
       {status === 'coming-soon' && (
-        <span className="inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-700 border border-amber-200 mb-3">
+        <span className="inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-700 border border-amber-200 mb-3 relative z-10">
           Coming Soon
         </span>
       )}
 
       {/* Content */}
-      <h3 className="text-xl font-bold text-foreground mb-1">{name}</h3>
-      <p className="text-sm font-medium text-purple-600 mb-3">{tagline}</p>
-      <p className="text-muted-foreground text-sm leading-relaxed flex-1">{description}</p>
+      <div className="relative z-10 flex flex-col flex-1">
+        <h3 className="text-xl font-bold text-foreground mb-1">{name}</h3>
+        <p className="text-sm font-medium text-purple-600 mb-3">{tagline}</p>
+        <p className="text-muted-foreground text-sm leading-relaxed flex-1 lg:max-w-[85%]">{description}</p>
+        
+        {/* Link */}
+        <Link
+          to={href}
+          className="inline-flex items-center self-start text-sm font-semibold text-purple-600 mt-5 group-hover:text-purple-700 transition-colors"
+        >
+          Learn More
+          <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </Link>
+      </div>
 
-      {/* Link */}
-      <Link
-        to={href}
-        className="inline-flex items-center text-sm font-semibold text-purple-600 mt-5 group-hover:text-purple-700 transition-colors"
-      >
-        Learn More
-        <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-      </Link>
+      {/* Custom Art */}
+      {children}
     </div>
   );
 };
