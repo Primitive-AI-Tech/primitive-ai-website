@@ -44,7 +44,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/primitiveai" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={16} />
               </a>
-              <a href="mailto:doannt@prai.tech" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="mailto:nguyentrongdoan.0@gmail.com" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Mail size={16} />
               </a>
             </div>
