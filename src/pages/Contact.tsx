@@ -83,23 +83,23 @@ const Contact = () => {
 
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
-    
-    // Simulate API call
+
     try {
-      // In a real application, you would send the form data to your backend
-      console.log('Form data submitted:', data);
-      
-      // Simulate network delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Reset the form
+      const subject = encodeURIComponent(`Contact request from ${data.firstName} ${data.lastName}`);
+      const body = encodeURIComponent(
+        `Name: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nCompany: ${data.company || 'N/A'}\nInterested in: ${data.solution || 'N/A'}\n\nMessage:\n${data.message}`
+      );
+      const mailtoLink = `mailto:doannt@prai.tech?subject=${subject}&body=${body}`;
+
+      if (typeof window !== 'undefined') {
+        window.location.href = mailtoLink;
+      }
+
       form.reset();
-      
-      // Show success message
-      toast.success('Your message has been sent! We will get back to you soon.');
+      toast.success('Your email client should open shortly.');
     } catch (error) {
-      console.error('Error submitting form:', error);
-      toast.error('Failed to send your message. Please try again later.');
+      console.error('Error opening email client:', error);
+      toast.error('Failed to open email client. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -370,9 +370,12 @@ const Contact = () => {
 
           <div className="mt-10 max-w-xl mx-auto text-center">
             <p className="text-muted-foreground mb-4">Still have questions?</p>
-            <Button type="button" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full px-8 py-5">
+            <a
+              href="mailto:nguyentrongdoan.0@gmail.com?subject=Contact%20from%20FAQ%20section"
+              className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full px-8 py-5"
+            >
               <Mail className="mr-2 h-4 w-4" /> Email Us
-            </Button>
+            </a>
           </div>
         </div>
       </section>
