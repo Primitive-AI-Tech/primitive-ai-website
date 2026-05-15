@@ -141,9 +141,9 @@ const Navbar = () => {
               >
                 <div className="w-[640px] app-panel-strong p-6 grid grid-cols-2 gap-6 text-foreground text-left">
                   {/* Products column */}
-                  <div>
+                  <div className="flex flex-col">
                     <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 px-2">Products</h3>
-                    <div className="space-y-1">
+                    <div className="space-y-1 flex-1">
                       {products.map((product) => (
                         <Link
                           key={product.name}
@@ -165,12 +165,20 @@ const Navbar = () => {
                         </Link>
                       ))}
                     </div>
+                    <div className="mt-4 pt-4 border-t border-border">
+                      <Link
+                        to="/solutions"
+                        className="block px-3 py-2 rounded-xl text-sm font-semibold text-purple-600 hover:bg-purple-50 transition-colors"
+                      >
+                        View All Products →
+                      </Link>
+                    </div>
                   </div>
 
                   {/* Services column */}
-                  <div>
+                  <div className="flex flex-col">
                     <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 px-2">Services</h3>
-                    <div className="space-y-1">
+                    <div className="flex flex-col justify-between flex-1">
                       {services.map((service) => (
                         <Link
                           key={service.name}
@@ -182,14 +190,7 @@ const Navbar = () => {
                         </Link>
                       ))}
                     </div>
-
-                    <div className="mt-4 pt-4 border-t border-border space-y-1">
-                      <Link
-                        to="/solutions"
-                        className="block px-3 py-2 rounded-xl text-sm font-semibold text-purple-600 hover:bg-purple-50 transition-colors"
-                      >
-                        View All Products →
-                      </Link>
+                    <div className="mt-4 pt-4 border-t border-border">
                       <Link
                         to="/services"
                         className="block px-3 py-2 rounded-xl text-sm font-semibold text-purple-600 hover:bg-purple-50 transition-colors"
