@@ -123,7 +123,7 @@ const successStories = [
 const highlights = [
   { icon: TrendingUp, value: '40–70%', label: 'Efficiency gains across engagements' },
   { icon: Users, value: '50+', label: 'Enterprise clients served' },
-  { icon: Zap, value: '6+', label: 'Industries transformed' },
+  { icon: Zap, value: '10+', label: 'Industries transformed' },
 ];
 
 const Success = () => {
