@@ -11,6 +11,19 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
 
+  // Manage snap-active: on for all pages except landing (Index manages its own) and /success
+  React.useLayoutEffect(() => {
+    const noSnap = ['/', '/success'];
+    if (!noSnap.includes(location.pathname)) {
+      document.documentElement.classList.add('snap-active');
+    } else {
+      document.documentElement.classList.remove('snap-active');
+    }
+    return () => {
+      document.documentElement.classList.remove('snap-active');
+    };
+  }, [location.pathname]);
+
   // Scroll to top on route change
   React.useEffect(() => {
     window.scrollTo(0, 0);

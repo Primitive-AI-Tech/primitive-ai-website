@@ -8,9 +8,10 @@ import Layout from '@/components/Layout';
 import Index from '@/pages/Index';
 import About from '@/pages/About';
 import Solutions from '@/pages/Solutions';
+import Services from '@/pages/Services';
 import Blog from '@/pages/Blog';
+import Success from '@/pages/Success';
 import Contact from '@/pages/Contact';
-import WhyChooseUs from '@/pages/WhyChooseUs';
 import NotFound from '@/pages/NotFound';
 import Privacy from '@/pages/Privacy';
 import Terms from '@/pages/Terms';
@@ -19,7 +20,8 @@ import Terms from '@/pages/Terms';
 import CameraAI from '@/pages/solution-details/CameraAI';
 import SupportHub from '@/pages/solution-details/Chatbot';
 import LegalHub from '@/pages/solution-details/LegalHub';
-import DocumentProcessing from '@/pages/solution-details/DocumentProcessing';
+import KnowledgeHub from '@/pages/solution-details/KnowledgeHub';
+import FamilyHub from '@/pages/solution-details/FamilyHub';
 
 // Blog post pages
 import BlogPost1 from '@/pages/blog-posts/BlogPost1';
@@ -45,17 +47,19 @@ function App() {
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/solutions" element={<Solutions />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/success" element={<Success />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/why-choose-us" element={<WhyChooseUs />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
-            
+
             {/* Solution detail routes */}
             <Route path="/solutions/camera-ai" element={<CameraAI />} />
             <Route path="/solutions/chatbot" element={<SupportHub />} />
             <Route path="/solutions/legalhub" element={<LegalHub />} />
-            <Route path="/solutions/document-processing" element={<DocumentProcessing />} />
+            <Route path="/solutions/knowledgehub" element={<KnowledgeHub />} />
+            <Route path="/solutions/familyhub" element={<FamilyHub />} />
             
             {/* Blog post routes */}
             <Route path="/blog/1" element={<BlogPost1 />} />

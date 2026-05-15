@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/SectionHeader';
 import FeatureCard from '@/components/FeatureCard';
 import TestimonialCard from '@/components/TestimonialCard';
-import ProductCard from '@/components/ProductCard';
 import ServiceCard from '@/components/ServiceCard';
 import StatsCounter from '@/components/StatsCounter';
 import SuccessStoryCard from '@/components/SuccessStoryCard';
@@ -13,12 +12,19 @@ import CTASection from '@/components/CTA';
 import GalaxyProducts from '@/components/GalaxyProducts';
 import Partners from '@/components/Partners';
 import {
-  ArrowRight, Camera, MessageCircle, FileText, BookOpen, Heart,
+  ArrowRight, Camera, MessageCircle, BookOpen,
   Bot, Workflow, Code2, GraduationCap, Package, Lightbulb,
-  Shield, Zap, BarChart, Target, ChevronDown, Brain
+  Award, Check, Clock, Users, Wrench, LifeBuoy, ChevronDown, Brain
 } from 'lucide-react';
 
 const Index = () => {
+  React.useLayoutEffect(() => {
+    document.documentElement.classList.add('snap-active');
+    return () => {
+      document.documentElement.classList.remove('snap-active');
+    };
+  }, []);
+
   return (
     <div>
       {/* ═══════════════════════════════════════════════════
@@ -362,86 +368,82 @@ const Index = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════
-          SECTION 5: WHY CHOOSE PRIMITIVE AI
+          SECTION 5A: WHY CHOOSE US — HERO QUESTION
       ═══════════════════════════════════════════════════ */}
-      <section className="pt-24 pb-10 md:py-24 snap-section" data-theme="light">
-        <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Left: Value proposition text */}
-            <ScrollReveal direction="left">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-purple-100 text-purple-700 border border-purple-200">
-                  Why Choose Us
-                </div>
-                <h2 className="section-heading">
-                  Technology with <span className="gradient-text">Purpose</span>
-                </h2>
-                <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                  We believe AI should serve humanity — not just generate profit.
-                  Every product we build, every service we deliver is guided by a
-                  commitment to creating real, measurable impact for businesses and
-                  the communities they serve.
-                </p>
-                <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                  From enterprise-grade security to end-to-end delivery, we partner
-                  with organizations that share our vision for responsible, impactful AI.
-                </p>
-                <Button
-                  className="bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full px-8 py-6 text-base shadow-md transition-all duration-300 hover:-translate-y-0.5"
-                  asChild
-                >
-                  <Link to="/why-choose-us">
-                    Learn More About Us
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
+      <section className="snap-section relative overflow-hidden" data-theme="light">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-purple-50/30" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-200/20 rounded-full blur-3xl" />
+        <div className="relative z-10 section-container py-16 md:py-0">
+          <ScrollReveal>
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-xs font-semibold uppercase tracking-wider text-purple-700">
+                <span className="w-2 h-2 rounded-full bg-purple-500" />
+                Why Choose Us
+              </div>
+              <h2 className="hero-heading">
+                Why Choose <span className="text-gradient-purple">Primitive AI?</span>
+              </h2>
+              <p className="text-base md:text-xl text-muted-foreground leading-relaxed">
+                We are committed to delivering innovative AI solutions that drive real, measurable business value for businesses and the communities they serve.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+                <Button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
+                  <Link to="/contact">Get Started</Link>
+                </Button>
+                <Button variant="outline" className="border-purple-300 text-purple-700 hover:bg-purple-50 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
+                  <Link to="/solutions">Our Solutions</Link>
                 </Button>
               </div>
-            </ScrollReveal>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
 
-            {/* Right: Value cards */}
-            <ScrollReveal direction="right" stagger>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <FeatureCard
-                  title="Mission-Driven AI"
-                  description="AI that serves humanity. Every solution we build is designed to bring good for mankind and create lasting positive impact."
-                  icon={Target}
-                />
-                <FeatureCard
-                  title="Enterprise Security"
-                  description="SOC-2 level security practices protect your data. We take enterprise-grade security seriously across all products."
-                  icon={Shield}
-                />
-                <FeatureCard
-                  title="End-to-End Delivery"
-                  description="From strategy to deployment to ongoing support — we handle every stage of your AI journey with expertise."
-                  icon={Zap}
-                />
-                <FeatureCard
-                  title="Measurable Impact"
-                  description="Data-driven results with clear ROI metrics. We measure success by the real impact we create for your business."
-                  icon={BarChart}
-                />
-              </div>
-            </ScrollReveal>
-          </div>
+      {/* ═══════════════════════════════════════════════════
+          SECTION 5B: WHY CHOOSE US — REASONS
+      ═══════════════════════════════════════════════════ */}
+      <section className="snap-section" data-theme="light">
+        <div className="section-container py-16 md:py-0">
+          <ScrollReveal>
+            <SectionHeader
+              badge="Reasons"
+              title="What Sets Us Apart"
+              subtitle="We provide cutting-edge AI solutions tailored to your unique business needs"
+              centered
+            />
+          </ScrollReveal>
+          <ScrollReveal stagger>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8">
+              <FeatureCard title="Innovative Solutions" description="We leverage the latest advancements in AI to develop innovative solutions that address your unique challenges." icon={Award} />
+              <FeatureCard title="Proven Results" description="Our solutions have a proven track record of delivering measurable results — increased efficiency, reduced costs, and improved customer satisfaction." icon={Check} />
+              <FeatureCard title="Timely Delivery" description="We are committed to delivering projects on time and within budget, without compromising on quality." icon={Clock} />
+              <FeatureCard title="Expert Team" description="Our team of AI experts has extensive experience in developing and deploying AI solutions across various industries." icon={Users} />
+              <FeatureCard title="Custom Solutions" description="We understand that every business is unique. That's why we offer custom AI solutions tailored to your specific needs and goals." icon={Wrench} />
+              <FeatureCard title="Ongoing Support" description="We provide ongoing support and maintenance to ensure your AI solutions continue to deliver value over time." icon={LifeBuoy} />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════
           SECTION 6: SUCCESS STORIES GALLERY
       ═══════════════════════════════════════════════════ */}
-      <section className="pt-24 pb-10 md:py-24 bg-gradient-to-b from-purple-50/50 to-transparent snap-section" data-theme="light">
-        <div className="section-container">
+      <section className="snap-section relative overflow-hidden" data-theme="dark">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-950" />
+        <div className="absolute inset-0 dot-bg opacity-20" />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-3xl" />
+        <div className="relative z-10 section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
               badge="Success Stories"
               title="Real Impact, Real Results"
               subtitle="See how organizations across industries are transforming their operations with Primitive AI"
+              light
             />
           </ScrollReveal>
 
           <ScrollReveal stagger>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <SuccessStoryCard
                 title="Transforming Workplace Safety in Manufacturing"
                 industry="Manufacturing"
@@ -466,6 +468,20 @@ const Index = () => {
                 metricLabel="Faster document processing"
                 bgColor="from-purple-600 to-purple-900"
               />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="mt-10 text-center">
+              <Button
+                className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 text-base shadow-md hover:-translate-y-0.5 transition-all duration-300"
+                asChild
+              >
+                <Link to="/success">
+                  View All Success Stories
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
+              </Button>
             </div>
           </ScrollReveal>
         </div>

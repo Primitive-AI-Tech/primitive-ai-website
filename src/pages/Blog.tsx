@@ -118,11 +118,11 @@ const Blog = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hook-section">
-        <div className="section-container">
+      <section className="hook-section min-h-screen flex items-center" data-theme="dark">
+        <div className="section-container py-24 md:py-32">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="hero-heading mb-6">Blog & Insights</h1>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-base md:text-xl text-purple-200/80 mb-8">
               Stay up to date with the latest trends, best practices, and insights in AI technology and business applications.
             </p>
             <div className="flex justify-center">

@@ -64,11 +64,11 @@ const Contact = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hook-section">
-        <div className="section-container">
+      <section className="hook-section min-h-screen flex items-center" data-theme="dark">
+        <div className="section-container py-24 md:py-32">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="hero-heading mb-6">Get in Touch</h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-base md:text-xl text-purple-200/80">
               Have questions about our AI solutions? We're here to help you find the right technology for your business needs.
             </p>
           </div>
@@ -76,7 +76,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-12">
+      <section className="snap-section" data-theme="light">
         <div className="section-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
@@ -278,7 +278,7 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="snap-section bg-gradient-to-b from-purple-50/40 to-transparent" data-theme="light">
         <div className="section-container">
           <SectionHeader
             title="Frequently Asked Questions"

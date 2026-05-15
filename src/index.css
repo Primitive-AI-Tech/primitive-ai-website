@@ -81,6 +81,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+
+  html.snap-active {
     scroll-snap-type: y mandatory;
   }
 
@@ -215,11 +219,16 @@
     box-shadow: 0 0 10px -2px hsl(var(--primary) / 0.3);
   }
 
+  .familyhub-hero {
+    background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%);
+  }
+
   /* ── Hero section ── */
   .hook-section {
     @apply bg-gradient-to-br from-purple-950 via-purple-900 to-purple-950 text-white;
     position: relative;
     overflow: hidden;
+    scroll-snap-align: start;
   }
 
   .hook-section::before {

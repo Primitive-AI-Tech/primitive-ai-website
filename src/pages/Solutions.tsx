@@ -17,7 +17,7 @@ const Solutions = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 1: HERO
       ═══════════════════════════════════════════════════ */}
-      <section className="hook-section min-h-[60vh] flex items-center relative">
+      <section className="hook-section min-h-screen flex items-center relative" data-theme="dark">
         {/* Animated decorative orbs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-[10%] w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-float" />
@@ -54,8 +54,8 @@ const Solutions = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 2: OUR PRODUCTS
       ═══════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24">
-        <div className="section-container">
+      <section className="snap-section" data-theme="light">
+        <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
               badge="Our Products"
@@ -115,7 +115,7 @@ const Solutions = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 3: OUR SERVICES
       ═══════════════════════════════════════════════════ */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section className="snap-section relative overflow-hidden" data-theme="dark">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-950" />
         <div className="absolute inset-0 dot-bg opacity-20" />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-3xl" />

@@ -15,11 +15,10 @@ const Navbar = () => {
 
   useEffect(() => {
     const updateNavTheme = () => {
+      // Check both data-theme sections and hook-section heroes
       const sections = Array.from(
-        document.querySelectorAll('[data-theme]')
+        document.querySelectorAll('[data-theme], .hook-section')
       ) as HTMLElement[];
-      // Walk sections in DOM order; the last one whose top is at or above
-      // 45% of the viewport is the one currently filling the screen.
       let current: HTMLElement | null = null;
       for (const section of sections) {
         if (section.getBoundingClientRect().top <= window.innerHeight * 0.45) {
@@ -29,7 +28,8 @@ const Navbar = () => {
         }
       }
       if (current) {
-        const theme = current.getAttribute('data-theme') as 'dark' | 'light';
+        const theme = (current.getAttribute('data-theme') ||
+          (current.classList.contains('hook-section') ? 'dark' : null)) as 'dark' | 'light' | null;
         if (theme) setNavTheme(theme);
       }
     };
@@ -46,10 +46,6 @@ const Navbar = () => {
   useEffect(() => {
     setIsMenuOpen(false);
     setIsProductsOpen(false);
-    // Reset theme on route change if not on homepage
-    if (location.pathname !== '/') {
-      setNavTheme('light');
-    }
   }, [location.pathname]);
 
   const isActive = (path: string) => location.pathname === path;
@@ -73,8 +69,7 @@ const Navbar = () => {
   ];
 
   const navLinks = [
-    { name: 'Why Choose Us', path: '/why-choose-us' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'Success Stories', path: '/success' },
     { name: 'About', path: '/about' },
   ];
 
@@ -179,7 +174,7 @@ const Navbar = () => {
                       {services.map((service) => (
                         <Link
                           key={service.name}
-                          to="/solutions"
+                          to="/services"
                           className="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-purple-50 transition-colors group/item"
                         >
                           <service.icon className="w-4 h-4 text-purple-500 shrink-0" />
@@ -188,12 +183,18 @@ const Navbar = () => {
                       ))}
                     </div>
 
-                    <div className="mt-4 pt-4 border-t border-border">
+                    <div className="mt-4 pt-4 border-t border-border space-y-1">
                       <Link
                         to="/solutions"
                         className="block px-3 py-2 rounded-xl text-sm font-semibold text-purple-600 hover:bg-purple-50 transition-colors"
                       >
-                        View All Solutions →
+                        View All Products →
+                      </Link>
+                      <Link
+                        to="/services"
+                        className="block px-3 py-2 rounded-xl text-sm font-semibold text-purple-600 hover:bg-purple-50 transition-colors"
+                      >
+                        View All Services →
                       </Link>
                     </div>
                   </div>
