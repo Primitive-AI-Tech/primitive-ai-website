@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "title": "Liên hệ với chúng tôi",
+    "description": "Có câu hỏi về giải pháp AI của chúng tôi? Chúng tôi ở đây để giúp bạn tìm công nghệ phù hợp cho nhu cầu kinh doanh."
+  },
+  "form": {
+    "title": "Gửi tin nhắn",
+    "subtitle": "Điền vào biểu mẫu bên dưới, và một trong những chuyên gia AI của chúng tôi sẽ phản hồi trong vòng 24 giờ.",
+    "first_name": "Họ",
+    "last_name": "Tên",
+    "email": "Địa chỉ Email",
+    "company": "Công ty",
+    "interested_in": "Tôi quan tâm đến",
+    "message": "Tin nhắn",
+    "placeholder_first": "Nguyễn",
+    "placeholder_last": "Văn A",
+    "placeholder_email": "email@cong-ty.com",
+    "placeholder_company": "Tên công ty",
+    "placeholder_message": "Hãy cho chúng tôi biết về dự án hoặc yêu cầu của bạn...",
+    "select_solution": "Chọn một giải pháp",
+    "option_camera_ai": "Nền tảng Camera AI",
+    "option_support_hub": "SupportHub",
+    "option_legal_hub": "Nền tảng LegalHub",
+    "option_doc_processing": "Xử lý Tài liệu Thông minh",
+    "option_other": "Khác",
+    "send": "Gửi Tin nhắn",
+    "sending": "Đang gửi...",
+    "toast_success": "Ứng dụng email của bạn sẽ mở trong giây lát.",
+    "toast_error": "Không thể mở ứng dụng email. Vui lòng thử lại sau.",
+    "validation": {
+      "first_name_min": "Họ phải có ít nhất 2 ký tự.",
+      "last_name_min": "Tên phải có ít nhất 2 ký tự.",
+      "email_invalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+      "message_min": "Tin nhắn phải có ít nhất 10 ký tự."
+    }
+  },
+  "info": {
+    "title": "Thông tin Liên hệ",
+    "email_label": "Email",
+    "email_value": "doannt@prai.tech",
+    "phone_label": "Điện thoại",
+    "phone_value": "+1 (917) 508-5261",
+    "location_label": "Địa điểm",
+    "location_line1": "2261 Market Street STE 22919",
+    "location_line2": "San Francisco, CA 94114",
+    "hours_label": "Giờ làm việc",
+    "hours_weekday": "Thứ Hai - Thứ Sáu: 9 giờ sáng - 6 giờ chiều PST",
+    "hours_weekend": "Thứ Bảy - Chủ Nhật: Nghỉ",
+    "connect": "Kết nối với chúng tôi"
+  },
+  "faq": {
+    "badge": "Câu hỏi thường gặp",
+    "title": "Câu hỏi Thường gặp",
+    "subtitle": "Giải đáp các thắc mắc phổ biến về sản phẩm, dịch vụ và cách chúng tôi làm việc",
+    "still_questions": "Vẫn còn câu hỏi?",
+    "email_us": "Gửi Email",
+    "items": [
+      {
+        "q": "Sản phẩm nào của Primitive AI có thể triển khai nhanh?",
+        "a": "SupportHub, KnowledgeHub và FamilyHub là các sản phẩm SaaS có thể sử dụng ngay. VisionHub (Camera AI) cần cài đặt phần cứng tại chỗ và mất 4–6 tuần. LegalHub có thể cấu hình và hoạt động trong 1–2 tuần cho các trường hợp sử dụng chuẩn."
+      },
+      {
+        "q": "SupportHub xử lý việc chuyển giao cho nhân viên hỗ trợ như thế nào?",
+        "a": "SupportHub phát hiện khi cuộc trò chuyện vượt quá ngưỡng tin tưởng của AI hoặc khi khách hàng yêu cầu rõ ràng nhân viên hỗ trợ. Hệ thống chuyển toàn bộ lịch sử và bối cảnh cuộc trò chuyện cho nhân viên theo thời gian thực — đảm bảo khách hàng không phải lặp lại thông tin."
+      },
+      {
+        "q": "VisionHub có tích hợp được với camera CCTV hiện có không?",
+        "a": "Có. VisionHub được thiết kế để hoạt động với hầu hết camera IP chuẩn và luồng tương thích RTSP. Đội ngũ của chúng tôi thực hiện đánh giá tương thích trong quá trình onboarding và có thể cài đặt phần cứng AI biên khi cần xử lý thời gian thực."
+      },
+      {
+        "q": "KnowledgeHub duy trì độ chính xác như thế nào khi kiến thức thay đổi?",
+        "a": "KnowledgeHub liên tục lập chỉ mục các nguồn được kết nối — tài liệu, wiki và hệ thống nội bộ — và đánh dấu nội dung lỗi thời để xem xét. Quản trị viên có thể cập nhật cơ sở tri thức trực tiếp, và thay đổi được truyền đi ngay lập tức trên tất cả phản hồi AI."
+      },
+      {
+        "q": "LegalHub có tuân thủ các quy định về chữ ký điện tử không?",
+        "a": "Có. Mô-đun chữ ký điện tử của LegalHub tuân thủ eIDAS (EU), ESIGN Act (Mỹ) và các tiêu chuẩn UETA. Tất cả chữ ký có đường dẫn kiểm toán đầy đủ với dấu thời gian, hồ sơ IP và xác minh danh tính để đảm bảo tính pháp lý."
+      },
+      {
+        "q": "Giải pháp AI của bạn có tích hợp với hệ thống hiện có không?",
+        "a": "Tất cả sản phẩm của chúng tôi đều cung cấp REST API và hỗ trợ tích hợp webhook. Chúng tôi có sẵn các kết nối với CRM phổ biến (Salesforce, HubSpot), helpdesk (Zendesk, Freshdesk) và hệ thống tài liệu (Google Drive, SharePoint). Tích hợp tùy chỉnh do đội kỹ thuật của chúng tôi xử lý."
+      },
+      {
+        "q": "Bạn có xây dựng giải pháp AI hoàn toàn tùy chỉnh không?",
+        "a": "Có — ngoài bộ sản phẩm, chúng tôi cung cấp phát triển AI tùy chỉnh toàn diện qua mảng dịch vụ. Điều này bao gồm phát triển AI agent, tinh chỉnh mô hình trên dữ liệu nội bộ, phát triển API tùy chỉnh và tự động hóa quy trình theo quy trình cụ thể của bạn."
+      },
+      {
+        "q": "Dữ liệu của chúng tôi được bảo vệ như thế nào trên các nền tảng của bạn?",
+        "a": "Tất cả dữ liệu được mã hóa trong quá trình truyền tải (TLS 1.3) và khi lưu trữ (AES-256). Chúng tôi tuân theo các thông lệ bảo mật SOC 2, thực thi kiểm soát truy cập dựa trên vai trò và tiến hành kiểm toán bảo mật bên thứ ba thường xuyên. Dữ liệu của bạn không bao giờ được sử dụng để huấn luyện các mô hình chia sẻ mà không có sự đồng ý bằng văn bản."
+      },
+      {
+        "q": "Hỗ trợ liên tục nào được bao gồm sau khi triển khai?",
+        "a": "Tất cả các gói đều bao gồm quyền truy cập cổng hỗ trợ, tài liệu và hỗ trợ email. Các gói Business và Enterprise bổ sung thêm quản lý tài khoản chuyên biệt, hỗ trợ kỹ thuật 24/7 và đánh giá hàng quý theo lịch để đảm bảo giải pháp AI của bạn tiếp tục tạo ra giá trị."
+      },
+      {
+        "q": "Bạn định giá sản phẩm và dịch vụ như thế nào?",
+        "a": "Các sản phẩm của chúng tôi được cung cấp theo các gói đăng ký hàng tháng dựa trên khối lượng sử dụng và tính năng — xem trang sản phẩm riêng lẻ để biết giá. Các dịch vụ phát triển AI tùy chỉnh được báo giá theo dự án sau cuộc gọi xác định phạm vi. Liên hệ để nhận đề xuất phù hợp."
+      }
+    ]
+  }
+}

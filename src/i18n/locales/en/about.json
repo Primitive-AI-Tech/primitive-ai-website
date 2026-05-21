@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "badge": "Our Story",
+    "title_1": "About",
+    "title_2": "Primitive AI",
+    "description": "We're on a mission to transform businesses through innovative AI solutions that solve real-world problems and bring good for mankind.",
+    "get_in_touch": "Get in Touch",
+    "why_choose_us": "Why Choose Us"
+  },
+  "story": {
+    "badge": "Origins",
+    "title": "Our Story",
+    "subtitle": "From an idea to a leading AI solutions provider",
+    "p1": "Primitive AI was founded in 2020 by Doan Nguyen, an AI expert with extensive experience in artificial intelligence and robotics. What began as a vision has quickly grown into a comprehensive AI solutions provider serving clients worldwide.",
+    "p2": "Our journey began with a simple belief: that advanced AI technology should be accessible to businesses of all sizes. We've expanded our offerings to include solutions for workplace safety, customer support, legal operations, and document processing — all powered by cutting-edge large language models.",
+    "p3": "Today, Primitive AI is self-funded and employs AI specialists, engineers, and industry experts dedicated to developing innovative solutions that drive real business value.",
+    "img_alt": "Primitive AI Team"
+  },
+  "values": {
+    "badge": "Core Principles",
+    "title": "Our Values",
+    "subtitle": "The principles that guide everything we do and build",
+    "items": [
+      {
+        "title": "Customer First",
+        "description": "We prioritize customer success and build solutions that address real business challenges with measurable results."
+      },
+      {
+        "title": "Excellence",
+        "description": "We strive for excellence in everything we do, from cutting-edge AI research to customer support and implementation."
+      },
+      {
+        "title": "Innovation",
+        "description": "We continuously innovate and push the boundaries of what's possible with AI to deliver transformative solutions."
+      },
+      {
+        "title": "Responsibility",
+        "description": "We develop and deploy AI responsibly, with a focus on ethics, security, and positive societal impact."
+      }
+    ]
+  },
+  "milestones": {
+    "badge": "Timeline",
+    "title": "Our Journey",
+    "subtitle": "Key milestones in our company's growth",
+    "items": [
+      {
+        "year": "Jan 2020",
+        "title": "Company Founded",
+        "description": "Primitive AI was established with a mission to make AI bring good for mankind — building products that help businesses and communities thrive."
+      },
+      {
+        "year": "Aug 2020",
+        "title": "VisionHub — First Product Launch",
+        "description": "Released our flagship Camera AI platform for real-time workplace safety monitoring, PPE compliance, and human-robot interaction detection across manufacturing and construction sites."
+      },
+      {
+        "year": "Jun 2023",
+        "title": "SupportHub Launch",
+        "description": "Launched our LLM-powered chatbot and voice bot platform, enabling businesses to automate customer support and sales conversations with high accuracy and natural language understanding."
+      },
+      {
+        "year": "Jan 2024",
+        "title": "KnowledgeHub & AI Services",
+        "description": "Released KnowledgeHub — our enterprise knowledge management and intelligent document processing platform. Simultaneously launched our professional AI development services including AI Agent Development, Workflow Automation, and Model Fine-Tuning."
+      },
+      {
+        "year": "Feb 2025",
+        "title": "LegalHub — Beta",
+        "description": "Launched LegalHub in beta — an AI-powered platform for legal document generation, review, and e-signature management. Early adopters are already cutting document turnaround from days to hours. Full release coming soon."
+      },
+      {
+        "year": "2025",
+        "title": "FamilyHub & Global Expansion",
+        "description": "Launched FamilyHub to bring AI-powered knowledge preservation to individuals and families. Expanded our enterprise client base across Asia-Pacific and North America, serving 10+ industries with our full AI product and services portfolio."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Join Us on Our Mission",
+    "description": "We're always looking for talented individuals who share our passion for AI and our commitment to excellence.",
+    "primary": "Contact Us",
+    "secondary": "View Careers"
+  }
+}

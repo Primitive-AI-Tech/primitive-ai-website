@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "products_services": "Sản phẩm & Dịch vụ",
+    "products": "Sản phẩm",
+    "services": "Dịch vụ",
+    "view_all_products": "Xem tất cả sản phẩm →",
+    "view_all_services": "Xem tất cả dịch vụ →",
+    "success_stories": "Câu chuyện Thành công",
+    "about": "Giới thiệu",
+    "contact_us": "Liên hệ",
+    "products_list": {
+      "support_hub_desc": "Nền tảng hỗ trợ khách hàng bằng AI",
+      "knowledge_hub_desc": "Quản lý tri thức doanh nghiệp & truy xuất AI",
+      "vision_hub_desc": "Giám sát hình ảnh thông minh & Camera AI",
+      "family_hub_desc": "Lưu giữ ký ức & tri thức gia đình",
+      "legal_hub_desc": "Tạo lập & quản lý văn bản pháp lý"
+    },
+    "services_list": {
+      "ai_agent_dev": "Phát triển AI Agent",
+      "ai_workflow": "Tự động hóa Quy trình AI",
+      "ai_api": "Phát triển AI API",
+      "model_training": "Huấn luyện & Tinh chỉnh Mô hình",
+      "ai_product_dev": "Phát triển Sản phẩm AI",
+      "consulting": "Tư vấn & Chiến lược"
+    }
+  },
+  "footer": {
+    "tagline": "AI đang thay đổi thế giới. Sứ mệnh của chúng tôi là làm cho AI mang lại điều tốt đẹp cho nhân loại — xây dựng các sản phẩm giúp doanh nghiệp và cộng đồng phát triển.",
+    "products": "Sản phẩm",
+    "services": "Dịch vụ",
+    "company": "Công ty",
+    "about_us": "Giới thiệu",
+    "success_stories": "Câu chuyện Thành công",
+    "contact": "Liên hệ",
+    "copyright": "© {{year}} Primitive AI. Bảo lưu mọi quyền.",
+    "terms": "Điều khoản Dịch vụ",
+    "privacy": "Chính sách Bảo mật"
+  },
+  "cta": {
+    "default_title": "Sẵn sàng Chuyển đổi Doanh nghiệp với AI?",
+    "default_description": "Liên hệ ngay hôm nay để tìm hiểu cách Primitive AI có thể giúp tổ chức của bạn khai thác sức mạnh của trí tuệ nhân tạo.",
+    "default_primary": "Bắt đầu",
+    "default_secondary": "Yêu cầu Demo"
+  },
+  "languages": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "learn_more": "Tìm Hiểu Thêm",
+  "badge": {
+    "soon": "Sắp ra mắt",
+    "live": "TRỰC TIẾP",
+    "optimal": "Tối ưu",
+    "beta": "Beta"
+  }
+}

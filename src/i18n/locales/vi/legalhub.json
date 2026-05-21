@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "title_1": "Văn Bản Pháp Lý",
+    "title_2": "Được Hỗ Trợ Bởi AI",
+    "description": "Đơn giản hóa việc tạo lập, quản lý và ký điện tử văn bản pháp lý với nền tảng AI mạnh mẽ được thiết kế dành riêng cho các chuyên gia pháp lý.",
+    "request_demo": "Đặt Lịch Demo"
+  },
+  "features": {
+    "badge": "Tính Năng Nổi Bật",
+    "title": "Công Cụ Mạnh Mẽ Cho Chuyên Gia Pháp Lý",
+    "subtitle": "Nền tảng LegalHub tận dụng AI tiên tiến để đơn giản hóa mọi khía cạnh của hoạt động pháp lý",
+    "items": [
+      { "title": "Tạo Tài Liệu Bằng AI", "description": "Tạo nhanh các văn bản pháp lý sử dụng các mẫu và hỗ trợ AI được thiết kế riêng theo yêu cầu của bạn." },
+      { "title": "Chữ Ký Điện Tử", "description": "Thu thập an toàn các chữ ký điện tử có giá trị pháp lý từ tất cả các bên kèm theo dấu vết kiểm toán và xác minh." },
+      { "title": "Lưu Trữ Tài Liệu An Toàn", "description": "Lưu trữ và sắp xếp tất cả văn bản pháp lý với bảo mật cấp doanh nghiệp và các tính năng tuân thủ." },
+      { "title": "Tìm Kiếm Thông Minh", "description": "Nhanh chóng tìm thấy nội dung cụ thể trong kho tài liệu của bạn bằng tìm kiếm ngữ nghĩa được hỗ trợ bởi AI." },
+      { "title": "Phân Tích Toàn Diện", "description": "Theo dõi trạng thái tài liệu, chu kỳ xem xét và hiệu suất nhóm với phân tích và báo cáo chi tiết." },
+      { "title": "Giám Sát Tuân Thủ", "description": "Đảm bảo tài liệu tuân thủ các quy định liên quan và chính sách nội bộ với các kiểm tra tự động." }
+    ]
+  },
+  "dashboard": {
+    "badge": "Bảng Điều Khiển",
+    "title": "Giao Diện Hiện Đại, Trực Quan",
+    "subtitle": "Quản lý tất cả văn bản pháp lý của bạn từ một bảng điều khiển thống nhất, được thiết kế đẹp mắt",
+    "images": [
+      { "title": "Tổng Quan Bảng Điều Khiển", "description": "Tổng quan đầy đủ về hoạt động tài liệu, chữ ký đang chờ xử lý và hoạt động gần đây" },
+      { "title": "Quản Lý Tài Liệu", "description": "Tổ chức và truy cập tất cả văn bản pháp lý của bạn tại một nơi" },
+      { "title": "Mẫu Tài Liệu", "description": "Truy cập thư viện các mẫu chuyên nghiệp cho các nhu cầu pháp lý khác nhau" }
+    ]
+  },
+  "how_it_works": {
+    "badge": "Cách Thức Hoạt Động",
+    "title": "Từ Bản Thảo Đến Ký Kết Trong Bốn Bước",
+    "subtitle": "Nền tảng LegalHub tích hợp liền mạch vào quy trình pháp lý của bạn ngay từ ngày đầu tiên",
+    "steps": [
+      { "step": "01", "title": "Tạo Tài Liệu", "description": "Tạo tài liệu mới từ đầu hoặc sử dụng các mẫu được hỗ trợ bởi AI phù hợp với nhu cầu pháp lý cụ thể của bạn." },
+      { "step": "02", "title": "Xem Xét & Cộng Tác", "description": "Cộng tác với các thành viên nhóm và các bên liên quan để xem xét và hoàn thiện tài liệu theo thời gian thực." },
+      { "step": "03", "title": "Chữ Ký Điện Tử", "description": "Thu thập an toàn các chữ ký điện tử có giá trị pháp lý từ tất cả các bên cần thiết với đầy đủ dấu vết kiểm toán." },
+      { "step": "04", "title": "Lưu Trữ & Quản Lý", "description": "Lưu trữ, sắp xếp và quản lý an toàn tất cả tài liệu với khả năng tìm kiếm và phân tích mạnh mẽ." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Ứng Dụng Thực Tế",
+    "title": "Đa Năng Trong Các Hoạt Động Pháp Lý",
+    "subtitle": "LegalHub hỗ trợ quy trình tài liệu cho các nhóm pháp lý trong các ngành và quy mô công ty khác nhau",
+    "items": [
+      {
+        "title": "Quản Lý Hợp Đồng",
+        "description": "Đơn giản hóa toàn bộ vòng đời hợp đồng từ tạo đến gia hạn, với quy trình làm việc tự động, kiểm soát phiên bản và theo dõi phê duyệt.",
+        "points": ["Tự động tạo hợp đồng", "Thu thập chữ ký điện tử", "Theo dõi gia hạn và hết hạn"]
+      },
+      {
+        "title": "Quản Trị Doanh Nghiệp",
+        "description": "Quản lý tài liệu hội đồng, nghị quyết và hồ sơ doanh nghiệp với kiểm soát quyền truy cập an toàn, dấu vết kiểm toán và giám sát tuân thủ.",
+        "points": ["Quản lý cuộc họp hội đồng", "Theo dõi và phê duyệt nghị quyết", "Tài liệu tuân thủ quy định"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn Sàng Chuyển Đổi Hoạt Động Pháp Lý?",
+    "description": "Đặt lịch demo và xem LegalHub có thể đơn giản hóa quy trình tài liệu và đẩy nhanh nhóm pháp lý của bạn như thế nào.",
+    "primary": "Đặt Lịch Demo",
+    "secondary": "Khám Phá Giải Pháp"
+  }
+}

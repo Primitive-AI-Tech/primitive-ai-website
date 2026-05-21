@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title_1": "An Toàn Lao Động",
+    "title_2": "Được Hỗ Trợ Bởi AI",
+    "description": "Nâng cao an toàn nơi làm việc với hệ thống giám sát hình ảnh thông minh — đảm bảo tuân thủ quy định, ngăn ngừa tai nạn và bảo vệ người lao động theo thời gian thực.",
+    "request_demo": "Đặt Lịch Demo",
+    "view_pricing": "Xem Bảng Giá"
+  },
+  "features": {
+    "badge": "Tính Năng Nổi Bật",
+    "title": "An Toàn Thông Minh, Luôn Hoạt Động",
+    "subtitle": "Nền tảng Camera AI sử dụng thị giác máy tính và học sâu để bảo vệ người lao động của bạn suốt 24 giờ",
+    "items": [
+      { "title": "An Toàn Robot-Con Người", "description": "Giám sát tương tác giữa robot và con người để ngăn ngừa tai nạn và đảm bảo môi trường làm việc chung an toàn." },
+      { "title": "Tuân Thủ Thiết Bị BHLĐ", "description": "Tự động phát hiện người lao động có đeo thiết bị bảo hộ cần thiết như mũ bảo hiểm, găng tay và áo phản quang hay không." },
+      { "title": "Nhận Diện Khuôn Mặt", "description": "Bảo mật quyền truy cập cơ sở với nhận diện khuôn mặt để chấm công ra vào và xác minh nhân viên được phép." },
+      { "title": "Phát Hiện Hành Vi Bất Thường", "description": "Nhận biết các hành vi hoặc cử chỉ bất thường có thể là dấu hiệu của rủi ro an toàn hoặc mối đe dọa bảo mật." },
+      { "title": "Cảnh Báo Thời Gian Thực", "description": "Nhận thông báo ngay lập tức khi phát hiện vi phạm an toàn hoặc nguy hiểm tiềm ẩn." },
+      { "title": "Bảng Phân Tích Dữ Liệu", "description": "Theo dõi chỉ số an toàn, nhận diện xu hướng và tạo báo cáo để cải tiến liên tục." }
+    ]
+  },
+  "how_it_works": {
+    "badge": "Cách Thức Hoạt Động",
+    "title": "Triển Khai Trong Vài Ngày",
+    "subtitle": "Nền tảng Camera AI tích hợp liền mạch với hạ tầng bảo mật hiện có của bạn",
+    "steps": [
+      { "step": "01", "title": "Lắp Đặt & Cài Đặt", "description": "Đội ngũ của chúng tôi tích hợp camera AI với hệ thống bảo mật hiện có hoặc lắp đặt phần cứng mới theo yêu cầu." },
+      { "step": "02", "title": "Cấu Hình AI", "description": "Chúng tôi cài đặt hệ thống theo dõi các thông số an toàn cụ thể dựa trên yêu cầu nơi làm việc và quy định ngành nghề của bạn." },
+      { "step": "03", "title": "Giám Sát Liên Tục", "description": "Hệ thống liên tục theo dõi hoạt động, cung cấp cảnh báo thời gian thực và tạo ra thông tin chi tiết để cải thiện an toàn lao động." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Ứng Dụng Thực Tế",
+    "title": "Được Thiết Kế Cho Môi Trường Rủi Ro Cao",
+    "subtitle": "VisionHub được tin dùng trong sản xuất, xây dựng, logistics và nhiều ngành khác",
+    "items": [
+      {
+        "title": "Sản Xuất",
+        "description": "Đảm bảo an toàn cho người lao động trong môi trường có máy móc hạng nặng, robot và hệ thống tự động. Giám sát tuân thủ BHLĐ và ngăn chặn truy cập trái phép.",
+        "points": ["An toàn tương tác robot-con người", "Giám sát tuân thủ BHLĐ", "Kiểm soát truy cập khu vực hạn chế"]
+      },
+      {
+        "title": "Xây Dựng",
+        "description": "Giám sát công trường về tuân thủ an toàn, sử dụng BHLĐ và nhân sự trái phép. Phát hiện nguy hiểm tiềm ẩn trước khi xảy ra tai nạn.",
+        "points": ["Tuân thủ thiết bị bảo hộ", "Giám sát khu vực nguy hiểm", "Chấm công ra vào của công nhân"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn Sàng Nâng Cao An Toàn Lao Động?",
+    "description": "Đặt lịch demo và tìm hiểu cách VisionHub có thể bảo vệ lực lượng lao động và cải thiện sự tuân thủ của bạn.",
+    "primary": "Đặt Lịch Demo",
+    "secondary": "Khám Phá Giải Pháp"
+  }
+}

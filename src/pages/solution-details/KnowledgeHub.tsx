@@ -6,61 +6,19 @@ import ScrollReveal from '@/components/ScrollReveal';
 import CTASection from '@/components/CTA';
 import {
   BookOpen, Search, Brain, Shield, Zap, Users, FileText,
-  Database, ArrowRight, ExternalLink, ChevronDown
+  Database, ExternalLink, ChevronDown
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-const features = [
-  {
-    icon: Search,
-    title: 'AI-Powered Search',
-    description: 'Semantic search that understands context and intent — not just keywords — to surface the most relevant knowledge instantly.',
-  },
-  {
-    icon: Brain,
-    title: 'Knowledge Graph',
-    description: 'Automatically map relationships between documents, topics, and experts to unlock hidden connections across your organization.',
-  },
-  {
-    icon: FileText,
-    title: 'Document Intelligence',
-    description: 'Ingest PDFs, Docs, slides, wikis, and more. KnowledgeHub parses, indexes, and makes every document queryable.',
-  },
-  {
-    icon: Users,
-    title: 'Team Collaboration',
-    description: 'Share knowledge bases across teams with fine-grained access controls, version history, and collaborative annotations.',
-  },
-  {
-    icon: Shield,
-    title: 'Enterprise Security',
-    description: 'SOC-2 compliant with end-to-end encryption. Your proprietary knowledge never leaves your secure environment.',
-  },
-  {
-    icon: Zap,
-    title: 'Instant Answers',
-    description: 'Ask questions in natural language and get precise answers with source citations — no more digging through folders.',
-  },
-];
-
-const useCases = [
-  {
-    title: 'Internal Knowledge Base',
-    description: 'Onboard new employees faster and reduce repetitive questions by making your company\'s expertise instantly accessible.',
-    icon: Database,
-  },
-  {
-    title: 'Customer Support',
-    description: 'Equip support agents with instant answers from product docs, FAQs, and past resolutions to resolve cases 3× faster.',
-    icon: Users,
-  },
-  {
-    title: 'Research & Analysis',
-    description: 'Synthesize insights across thousands of documents in seconds, accelerating research and competitive intelligence.',
-    icon: Brain,
-  },
-];
+const FEATURE_ICONS = [Search, Brain, FileText, Users, Shield, Zap];
+const USE_CASE_ICONS = [Database, Users, Brain];
 
 const KnowledgeHub = () => {
+  const { t } = useTranslation('knowledgehub');
+
+  const features = t('features.items', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const useCases = t('use_cases.items', { returnObjects: true }) as Array<{ title: string; description: string }>;
+
   return (
     <div>
       {/* ═══ HERO ═══ */}
@@ -79,20 +37,20 @@ const KnowledgeHub = () => {
                 KnowledgeHub
               </div>
               <h1 className="hero-heading text-white">
-                Your Organization's <span className="text-gradient-purple">AI Brain</span>
+                {t('hero.title_1')} <span className="text-gradient-purple">{t('hero.title_2')}</span>
               </h1>
               <p className="text-base md:text-lg text-purple-200/80 leading-relaxed">
-                KnowledgeHub centralizes your organization's knowledge and makes it instantly searchable with AI — turning scattered documents into a powerful, queryable intelligence layer.
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
                   <a href="http://knowledge-hub.space/" target="_blank" rel="noopener noreferrer">
-                    Open KnowledgeHub
+                    {t('hero.open_app')}
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
                 <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/contact">Request Demo</Link>
+                  <Link to="/contact">{t('hero.request_demo')}</Link>
                 </Button>
               </div>
             </div>
@@ -120,19 +78,19 @@ const KnowledgeHub = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Features"
-              title="Everything You Need to Manage Knowledge at Scale"
-              subtitle="KnowledgeHub combines powerful AI with enterprise-grade reliability to make your organization's knowledge work for you"
+              badge={t('features.badge')}
+              title={t('features.title')}
+              subtitle={t('features.subtitle')}
               centered
             />
           </ScrollReveal>
 
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2">
-              {features.map((feature) => (
-                <div key={feature.title} className="glass-card p-6 sm:p-8 hover-lift">
+              {features.map((feature, i) => (
+                <div key={i} className="glass-card p-6 sm:p-8 hover-lift">
                   <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4">
-                    <feature.icon className="w-6 h-6 text-purple-700" />
+                    {React.createElement(FEATURE_ICONS[i], { className: 'w-6 h-6 text-purple-700' })}
                   </div>
                   <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
@@ -151,9 +109,9 @@ const KnowledgeHub = () => {
         <div className="relative z-10 section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Use Cases"
-              title="Built for Every Knowledge Challenge"
-              subtitle="From internal wikis to customer support — KnowledgeHub adapts to how your teams actually work"
+              badge={t('use_cases.badge')}
+              title={t('use_cases.title')}
+              subtitle={t('use_cases.subtitle')}
               centered
               light
             />
@@ -161,10 +119,10 @@ const KnowledgeHub = () => {
 
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2">
-              {useCases.map((uc) => (
-                <div key={uc.title} className="bg-white/10 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:bg-white/15 transition-colors">
+              {useCases.map((uc, i) => (
+                <div key={i} className="bg-white/10 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:bg-white/15 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-4">
-                    <uc.icon className="w-6 h-6 text-purple-300" />
+                    {React.createElement(USE_CASE_ICONS[i], { className: 'w-6 h-6 text-purple-300' })}
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">{uc.title}</h3>
                   <p className="text-purple-200/70 text-sm leading-relaxed">{uc.description}</p>
@@ -180,7 +138,7 @@ const KnowledgeHub = () => {
                 asChild
               >
                 <a href="http://knowledge-hub.space/" target="_blank" rel="noopener noreferrer">
-                  Try KnowledgeHub Free
+                  {t('use_cases.try_free')}
                   <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
               </Button>
@@ -191,10 +149,10 @@ const KnowledgeHub = () => {
 
       {/* ═══ CTA ═══ */}
       <CTASection
-        title="Ready to Unlock Your Organization's Knowledge?"
-        description="Join teams using KnowledgeHub to make every document, conversation, and insight instantly accessible."
-        primaryButtonText="Open KnowledgeHub"
-        secondaryButtonText="Contact Us"
+        title={t('cta.title')}
+        description={t('cta.description')}
+        primaryButtonText={t('cta.primary')}
+        secondaryButtonText={t('cta.secondary')}
         primaryButtonLink="/contact"
         secondaryButtonLink="/contact"
         showDemoIcon={false}

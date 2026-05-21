@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Linkedin, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation('common');
+
   const products = [
     { name: 'SupportHub', path: '/solutions/chatbot' },
     { name: 'KnowledgeHub', path: '/solutions/knowledgehub' },
@@ -12,24 +15,22 @@ const Footer = () => {
   ];
 
   const services = [
-    'AI Agent Development',
-    'AI Workflow Automation',
-    'AI API Development',
-    'Model Training & Fine-Tuning',
-    'AI Product Development',
-    'Consulting & Strategy',
+    { key: 'ai_agent_dev', path: '/services' },
+    { key: 'ai_workflow', path: '/services' },
+    { key: 'ai_api', path: '/services' },
+    { key: 'model_training', path: '/services' },
+    { key: 'ai_product_dev', path: '/services' },
+    { key: 'consulting', path: '/services' },
   ];
 
   const company = [
-    { name: 'About Us', path: '/about' },
-    { name: 'Why Choose Us', path: '/why-choose-us' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' },
+    { key: 'about_us', path: '/about' },
+    { key: 'success_stories', path: '/success' },
+    { key: 'contact', path: '/contact' },
   ];
 
   return (
     <footer className="relative flex flex-col justify-center min-h-[100vh] bg-purple-950 text-white pt-20 pb-8 overflow-hidden snap-section" data-theme="dark">
-      {/* Decorative blur */}
       <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-purple-700/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +39,7 @@ const Footer = () => {
           <div className="lg:col-span-2 space-y-5">
             <img src="/prai-logo.png" alt="Primitive AI" className="h-12 w-auto brightness-0 invert" />
             <p className="text-purple-200/80 text-sm leading-relaxed max-w-sm">
-              AI is changing the world. Our mission is to make AI bring good for mankind — building products that help businesses and communities thrive.
+              {t('footer.tagline')}
             </p>
             <div className="flex items-center gap-3">
               <a href="https://www.linkedin.com/company/primitiveai" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" target="_blank" rel="noopener noreferrer">
@@ -52,7 +53,7 @@ const Footer = () => {
 
           {/* Products */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">Products</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">{t('footer.products')}</h4>
             <ul className="space-y-2.5">
               {products.map((p) => (
                 <li key={p.name}>
@@ -64,11 +65,13 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">Services</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2.5">
               {services.map((s) => (
-                <li key={s}>
-                  <Link to="/solutions" className="text-sm text-purple-200/70 hover:text-white transition-colors">{s}</Link>
+                <li key={s.key}>
+                  <Link to={s.path} className="text-sm text-purple-200/70 hover:text-white transition-colors">
+                    {t(`nav.services_list.${s.key}`)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -76,11 +79,13 @@ const Footer = () => {
 
           {/* Company & Contact */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">Company</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2.5 mb-6">
               {company.map((c) => (
-                <li key={c.name}>
-                  <Link to={c.path} className="text-sm text-purple-200/70 hover:text-white transition-colors">{c.name}</Link>
+                <li key={c.key}>
+                  <Link to={c.path} className="text-sm text-purple-200/70 hover:text-white transition-colors">
+                    {t(`footer.${c.key}`)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -104,10 +109,10 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-purple-700/40 pt-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-purple-300/60">
-            <p>&copy; {new Date().getFullYear()} Primitive AI. All rights reserved.</p>
+            <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
             <div className="flex gap-6">
-              <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-              <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="hover:text-white transition-colors">{t('footer.terms')}</Link>
+              <Link to="/privacy" className="hover:text-white transition-colors">{t('footer.privacy')}</Link>
             </div>
           </div>
         </div>

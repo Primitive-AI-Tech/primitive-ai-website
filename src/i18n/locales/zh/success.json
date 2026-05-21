@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "badge": "成功案例",
+    "title_1": "真实影响，",
+    "title_2": "切实成果",
+    "description": "看看各行业的组织如何借助Primitive AI降低成本、加速运营并实现业务转型。",
+    "highlights": [
+      { "value": "40–70%", "label": "各项目效率提升" },
+      { "value": "50+", "label": "企业客户服务" },
+      { "value": "10+", "label": "已转型行业" }
+    ]
+  },
+  "filters": {
+    "all": "全部",
+    "manufacturing": "制造业",
+    "financial_services": "金融服务",
+    "legal": "法律",
+    "retail": "零售",
+    "healthcare": "医疗健康"
+  },
+  "no_stories": "该行业暂无案例。",
+  "show_all": "显示所有案例",
+  "spotlight": {
+    "badge": "精选案例研究",
+    "challenge": "挑战",
+    "solution": "我们的解决方案",
+    "discuss": "探讨您的挑战"
+  },
+  "cta": {
+    "title": "准备好书写您自己的成功故事了吗？",
+    "description": "联系我们，探索Primitive AI如何为您的组织创造可衡量的影响。",
+    "primary": "开始对话",
+    "secondary": "查看我们的解决方案"
+  },
+  "stories": [
+    {
+      "title": "制造业职场安全变革",
+      "industry": "制造业",
+      "client": "全球汽车零部件制造商",
+      "product": "VisionHub",
+      "summary": "VisionHub摄像AI平台部署于12家工厂，实时监控PPE合规情况和人机交互区域，将事故消弭于萌芽状态。",
+      "challenge": "数百名工人在12家工厂与工业机器人共同作业，手动安全审计被动、不一致且无法扩展。事故在人员和财务方面代价高昂。",
+      "solution": "在所有工厂部署VisionHub，实现实时PPE检测、限制区域监控，并将行为异常警报通过移动设备直接发送给安全管理人员。",
+      "metric": "40%",
+      "metric_label": "工作场所事故减少",
+      "stats": [
+        { "value": "40%", "label": "事故减少" },
+        { "value": "12个", "label": "覆盖工厂" },
+        { "value": "98%", "label": "PPE检测精度" }
+      ]
+    },
+    {
+      "title": "金融科技客户支持革命",
+      "industry": "金融服务",
+      "client": "领先数字银行",
+      "product": "SupportHub",
+      "summary": "SupportHub的AI聊天机器人现在自动处理80%的一线支持查询，复杂案例无缝升级，CSAT分数大幅提升。",
+      "challenge": "快速成长的数字银行面临支持量激增——漫长等待、坐席倦怠和回答质量不一致正在导致客户流失。",
+      "solution": "在网页聊天、移动应用和WhatsApp上集成SupportHub。AI处理账户查询、交易问题和FAQ，将边缘案例带着完整上下文升级给人工坐席。",
+      "metric": "30%",
+      "metric_label": "客户满意度提升",
+      "stats": [
+        { "value": "80%", "label": "查询自动化" },
+        { "value": "30%", "label": "CSAT提升" },
+        { "value": "4×", "label": "解决速度" }
+      ]
+    },
+    {
+      "title": "大规模法律运营加速",
+      "industry": "法律",
+      "client": "顶级律师事务所",
+      "product": "LegalHub",
+      "summary": "LegalHub自动化合同生成和审查，将500多个合同模板的处理时间从数天压缩至数小时。",
+      "challenge": "初级律师60%以上的时间花在例行合同起草和审查上，限制了事务所承接高价值顾问工作的能力。",
+      "solution": "以事务所500多个合同模板、条款库和合规规则部署LegalHub。律师审查AI生成的草稿，而非从头起草。",
+      "metric": "60%",
+      "metric_label": "文件处理提速",
+      "stats": [
+        { "value": "60%", "label": "处理时间缩短" },
+        { "value": "500+", "label": "模板自动化" },
+        { "value": "3×", "label": "处理案件量" }
+      ]
+    },
+    {
+      "title": "企业知识管理转型",
+      "industry": "零售",
+      "client": "区域零售连锁",
+      "product": "KnowledgeHub",
+      "summary": "KnowledgeHub将10年的产品知识、供应商数据和运营流程整合到一个可供2000多名员工AI搜索的统一系统中。",
+      "challenge": "知识分散在SharePoint、电子邮件线程和个别员工的记忆中。新员工需要数周时间适应，资深员工反复花数小时回答相同问题。",
+      "solution": "KnowledgeHub导入所有现有文档和Wiki。员工用自然语言提问，即可获得即时、带引用的答案——从门店政策到供应商联系方式。",
+      "metric": "70%",
+      "metric_label": "知识检索时间减少",
+      "stats": [
+        { "value": "70%", "label": "搜索时间减少" },
+        { "value": "2,000+", "label": "员工赋能" },
+        { "value": "50%", "label": "入职速度提升" }
+      ]
+    },
+    {
+      "title": "电子行业AI质量控制",
+      "industry": "制造业",
+      "client": "电子元件制造商",
+      "product": "VisionHub",
+      "summary": "视觉AI检测取代人工质检，在生产线上以比人工检验员更高的精度快10倍的速度检测缺陷。",
+      "challenge": "人工质检是生产线的瓶颈——在大批量生产时，缓慢、昂贵且容易因检验员疲劳而漏检。",
+      "solution": "VisionHub摄像头实时监控生产线上的每个单元，检测微小缺陷并触发带完整缺陷记录的自动剔除。",
+      "metric": "99.2%",
+      "metric_label": "缺陷检测精度",
+      "stats": [
+        { "value": "99.2%", "label": "检测精度" },
+        { "value": "10×", "label": "比人工质检快" },
+        { "value": "35%", "label": "缺陷漏检减少" }
+      ]
+    },
+    {
+      "title": "国家基金会的家庭故事保存",
+      "industry": "医疗健康",
+      "client": "老年护理基金会",
+      "product": "FamilyHub",
+      "summary": "FamilyHub在老年护理机构部署，帮助居民记录人生故事、与家人分享记忆，并通过回忆保持认知参与。",
+      "challenge": "许多居民拥有丰富的人生故事，面临消逝的风险。家人想要联系却身处远方。工作人员缺乏进行有组织叙事活动的时间。",
+      "solution": "FamilyHub的引导式AI对话帮助居民用自己的语言记录故事。家人收到精美格式的记忆册，并可远程添加自己的贡献。",
+      "metric": "92%",
+      "metric_label": "家庭满意度分数",
+      "stats": [
+        { "value": "92%", "label": "家庭满意度" },
+        { "value": "1,200+", "label": "保存的故事" },
+        { "value": "85%", "label": "居民参与率" }
+      ]
+    }
+  ]
+}

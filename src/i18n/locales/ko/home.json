@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "badge": "엔터프라이즈 AI 솔루션",
+    "title_1": "선을 위한 AI.",
+    "title_2": "비즈니스를 위해 구축.",
+    "description": "AI는 세상을 극적으로 변화시키고 있습니다. 우리의 사명은 AI가 인류에게 선을 가져오도록 하는 것입니다. 이 여정에서 우리는 기업과 커뮤니티가 번영할 수 있도록 돕는 제품을 구축합니다.",
+    "explore_products": "제품 살펴보기",
+    "talk_to_team": "팀에 문의하기",
+    "scroll": "스크롤하여 탐색"
+  },
+  "stats": {
+    "ai_products": "AI 제품",
+    "enterprise_clients": "기업 고객",
+    "industries_served": "서비스 업종",
+    "platform_uptime": "플랫폼 가동률"
+  },
+  "products_section": {
+    "badge": "우리의 제품",
+    "title": "엔터프라이즈 AI 제품 제품군",
+    "subtitle": "각 산업의 실제 비즈니스 과제를 해결하기 위해 특별히 설계된 AI 제품"
+  },
+  "services_section": {
+    "badge": "우리의 서비스",
+    "title": "AI 개발 서비스",
+    "subtitle": "전략에서 배포까지 — AI 솔루션을 구축, 학습, 확장하는 모든 과정에서 파트너가 됩니다",
+    "cards": [
+      {
+        "title": "AI 에이전트 개발",
+        "description": "복잡한 워크플로우를 자동화하고, 고객 상호작용을 처리하며, 데이터 기반 의사결정을 자율적으로 수행하는 지능형 에이전트를 구축합니다."
+      },
+      {
+        "title": "AI 워크플로우 자동화",
+        "description": "운영을 간소화하고, 수동 작업을 줄이며, 비즈니스 프로세스를 가속화하는 AI 기반 워크플로우를 설계하고 구현합니다."
+      },
+      {
+        "title": "AI API 개발",
+        "description": "기존 시스템과 서드파티 애플리케이션에 원활하게 통합되는 강력하고 확장 가능한 AI API를 구축합니다."
+      },
+      {
+        "title": "모델 학습 및 파인튜닝",
+        "description": "특정 사용 사례에서 탁월한 정확도를 달성하기 위해 독점 데이터로 커스텀 모델을 학습하고 파인튜닝합니다."
+      },
+      {
+        "title": "AI 제품 개발",
+        "description": "아이디어부터 출시까지 전주기 AI 제품 개발 — UX 디자인, 엔지니어링, 테스트, 프로덕션 배포."
+      },
+      {
+        "title": "컨설팅 및 전략",
+        "description": "기회를 식별하고, 로드맵을 구축하며, 조직의 AI 전환 여정을 안내하는 전략적 AI 컨설팅."
+      }
+    ]
+  },
+  "why_hero": {
+    "badge": "선택하는 이유",
+    "title_1": "왜",
+    "title_2": "Primitive AI인가요?",
+    "description": "우리는 기업과 그들이 서비스하는 커뮤니티를 위해 진정하고 측정 가능한 비즈니스 가치를 창출하는 혁신적인 AI 솔루션 제공에 헌신합니다.",
+    "get_started": "시작하기",
+    "our_solutions": "솔루션 보기"
+  },
+  "why_reasons": {
+    "badge": "핵심 강점",
+    "title": "우리를 특별하게 만드는 것",
+    "subtitle": "귀사의 독특한 비즈니스 요구에 맞춘 최첨단 AI 솔루션을 제공합니다",
+    "cards": [
+      {
+        "title": "혁신적인 솔루션",
+        "description": "AI의 최신 발전을 활용하여 귀사의 고유한 도전을 해결하는 혁신적인 솔루션을 개발합니다."
+      },
+      {
+        "title": "검증된 성과",
+        "description": "우리의 솔루션은 효율성 향상, 비용 절감, 고객 만족도 개선이라는 측정 가능한 결과를 제공해 왔습니다."
+      },
+      {
+        "title": "기한 내 납품",
+        "description": "품질을 타협하지 않으면서 예산 내에서 프로젝트를 기한 내에 납품하겠다는 약속을 지킵니다."
+      },
+      {
+        "title": "전문가 팀",
+        "description": "다양한 산업에서 AI 솔루션 개발 및 배포 경험이 풍부한 AI 전문가 팀이 함께합니다."
+      },
+      {
+        "title": "맞춤형 솔루션",
+        "description": "모든 비즈니스가 독특하다는 것을 잘 알고 있습니다. 그래서 귀사의 특정 요구와 목표에 맞춘 AI 솔루션을 제공합니다."
+      },
+      {
+        "title": "지속적인 지원",
+        "description": "AI 솔루션이 시간이 지나도 가치를 계속 제공할 수 있도록 지속적인 지원과 유지보수를 제공합니다."
+      }
+    ]
+  },
+  "success_section": {
+    "badge": "성공 사례",
+    "title": "실제 영향, 진정한 성과",
+    "subtitle": "다양한 산업의 기업들이 Primitive AI로 운영을 혁신하는 방법을 확인하세요",
+    "view_all": "모든 성공 사례 보기",
+    "stories": [
+      {
+        "title": "제조업 직장 안전 변혁",
+        "industry": "제조업",
+        "summary": "VisionHub의 카메라 AI 플랫폼을 12개 시설에 배포하여 PPE 준수 및 인간-로봇 상호작용 구역을 실시간 모니터링.",
+        "metric": "40%",
+        "metric_label": "직장 사고 감소"
+      },
+      {
+        "title": "핀테크 고객 지원 혁신",
+        "industry": "금융 서비스",
+        "summary": "SupportHub의 AI 챗봇이 1차 지원 문의의 80%를 자동으로 처리하고, 복잡한 케이스는 원활하게 에스컬레이션.",
+        "metric": "30%",
+        "metric_label": "고객 만족도 향상"
+      },
+      {
+        "title": "법률 업무 가속화",
+        "industry": "법률",
+        "summary": "LegalHub가 계약서 생성 및 검토를 자동화하여 500개 이상의 템플릿에서 문서 처리 시간을 며칠에서 몇 시간으로 단축.",
+        "metric": "60%",
+        "metric_label": "문서 처리 속도 향상"
+      }
+    ]
+  },
+  "partners": {
+    "badge": "기관 신뢰",
+    "title": "업계 리더들이 신뢰하는 파트너",
+    "subtitle": "글로벌 기술 선구자들과 협력하여 기업 AI의 미래를 이끌어 갑니다"
+  },
+  "galaxy": {
+    "click_to_explore": "클릭하여 탐색",
+    "view_details": "자세히 보기"
+  },
+  "testimonials_section": {
+    "badge": "고객 후기",
+    "title": "고객들의 이야기",
+    "subtitle": "우리 말만 듣지 마세요 — Primitive AI를 신뢰하는 리더들의 이야기를 들어보세요",
+    "items": [
+      {
+        "quote": "카메라 AI 플랫폼이 직장 안전을 크게 향상시켰습니다. 도입 이후 사고가 40% 감소했습니다.",
+        "author": "Kiem Nguyen",
+        "role": "총괄 관리자",
+        "company": "RAIS Tech"
+      },
+      {
+        "quote": "Primitive AI는 높은 품질과 빠른 속도로 AI 에이전트 개발 및 배포를 도와주었습니다. 서비스에 매우 만족합니다.",
+        "author": "Oscar P. Ridell",
+        "role": "CEO",
+        "company": "Ymner"
+      },
+      {
+        "quote": "예전에는 10명 팀이 고객 지원 티켓의 5%만 처리할 수 있었습니다. 이제는 높은 정확도와 만족도로 24/7 즉시 모든 고객을 지원합니다.",
+        "author": "Duyen Nguyen",
+        "role": "CTO",
+        "company": "TNE"
+      }
+    ]
+  }
+}

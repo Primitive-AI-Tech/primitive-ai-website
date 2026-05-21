@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title_1": "珍藏最重要的",
+    "title_2": "家族记忆",
+    "description": "FamilyHub借助AI帮助家庭记录、保存和分享故事、记忆与智慧 — 让最重要的东西永远不会消逝。",
+    "open_app": "打开FamilyHub",
+    "learn_more": "了解更多"
+  },
+  "features": {
+    "badge": "产品功能",
+    "title": "让家族故事永远流传",
+    "subtitle": "简单而美观的工具，让保存家族记忆像聊天一样轻松",
+    "items": [
+      { "title": "语音故事录制", "description": "通过自然的语音对话记录家族故事和记忆 — AI自动转录、整理并保存每一句话。" },
+      { "title": "家族知识书", "description": "将录制的故事、照片和记忆自动编辑成精美的、可分享的数字家族书。" },
+      { "title": "多代人访问", "description": "邀请各年龄层的家庭成员参与和探索 — 简单到祖父母也能使用，有趣到孙辈也爱参与。" },
+      { "title": "AI对话引导", "description": "AI引导式问题帮助家庭成员分享他们可能想不到要讲述的有意义的故事。" },
+      { "title": "照片与记忆库", "description": "上传照片、视频和文档。AI自动按人物、地点和事件进行整理归类。" },
+      { "title": "私密且安全", "description": "家族故事默认保持私密。端到端加密确保只有受邀的家庭成员才能访问您的记忆。" }
+    ]
+  },
+  "quote": {
+    "text": "祖父母讲给我们的故事是我们成为今天的自己的基石。FamilyHub确保那些故事永远不会消失。",
+    "attribution": "FamilyHub用户",
+    "start_preserving": "开始保存记忆"
+  },
+  "cta": {
+    "title": "给家人留下珍贵记忆的礼物",
+    "description": "今天就开始记录故事吧 — 免费试用、易于操作，专为世代传承而构建。",
+    "primary": "打开FamilyHub",
+    "secondary": "联系我们"
+  }
+}

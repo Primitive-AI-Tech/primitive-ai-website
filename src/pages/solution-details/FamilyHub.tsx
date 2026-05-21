@@ -8,41 +8,15 @@ import {
   Heart, BookOpen, Camera, Mic, Users, Shield,
   MessageCircle, ChevronDown, ExternalLink, Star
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-const features = [
-  {
-    icon: Mic,
-    title: 'Voice Story Recording',
-    description: 'Capture family stories and memories through natural voice conversations — AI transcribes, organizes, and preserves every word.',
-  },
-  {
-    icon: BookOpen,
-    title: 'Family Knowledge Book',
-    description: 'Automatically compile recorded stories, photos, and memories into a beautiful, shareable digital family book.',
-  },
-  {
-    icon: Users,
-    title: 'Multi-Generation Access',
-    description: 'Invite family members of all ages to contribute and explore — simple enough for grandparents, engaging for grandchildren.',
-  },
-  {
-    icon: MessageCircle,
-    title: 'AI Conversation Guide',
-    description: 'AI-guided questions help family members share meaningful stories they might not think to tell on their own.',
-  },
-  {
-    icon: Camera,
-    title: 'Photo & Memory Vault',
-    description: 'Upload photos, videos, and documents. AI organizes them by people, places, and events automatically.',
-  },
-  {
-    icon: Shield,
-    title: 'Private & Secure',
-    description: 'Your family stories are private by default. End-to-end encryption ensures only invited family members can access your memories.',
-  },
-];
+const FEATURE_ICONS = [Mic, BookOpen, Users, MessageCircle, Camera, Shield];
 
 const FamilyHub = () => {
+  const { t } = useTranslation('familyhub');
+
+  const features = t('features.items', { returnObjects: true }) as Array<{ title: string; description: string }>;
+
   return (
     <div>
       {/* ═══ HERO ═══ */}
@@ -61,20 +35,20 @@ const FamilyHub = () => {
                 FamilyHub
               </div>
               <h1 className="hero-heading text-white">
-                Preserve What <span className="bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent">Matters Most</span>
+                {t('hero.title_1')} <span className="bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent">{t('hero.title_2')}</span>
               </h1>
               <p className="text-base md:text-lg text-purple-200/80 leading-relaxed">
-                FamilyHub uses AI to help families capture, preserve, and share their stories, memories, and wisdom — so the things that matter most are never lost.
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
                   <a href="https://family-hub.space/" target="_blank" rel="noopener noreferrer">
-                    Open FamilyHub
+                    {t('hero.open_app')}
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
                 <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/contact">Learn More</Link>
+                  <Link to="/contact">{t('hero.learn_more')}</Link>
                 </Button>
               </div>
             </div>
@@ -102,19 +76,19 @@ const FamilyHub = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Features"
-              title="Keep Your Family's Story Alive"
-              subtitle="Simple, beautiful tools that make preserving family memories as easy as having a conversation"
+              badge={t('features.badge')}
+              title={t('features.title')}
+              subtitle={t('features.subtitle')}
               centered
             />
           </ScrollReveal>
 
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2">
-              {features.map((feature) => (
-                <div key={feature.title} className="glass-card p-6 sm:p-8 hover-lift">
+              {features.map((feature, i) => (
+                <div key={i} className="glass-card p-6 sm:p-8 hover-lift">
                   <div className="w-12 h-12 rounded-xl bg-rose-100 flex items-center justify-center mb-4">
-                    <feature.icon className="w-6 h-6 text-rose-600" />
+                    {React.createElement(FEATURE_ICONS[i], { className: 'w-6 h-6 text-rose-600' })}
                   </div>
                   <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
@@ -136,9 +110,9 @@ const FamilyHub = () => {
                 ))}
               </div>
               <blockquote className="text-2xl md:text-3xl font-semibold text-foreground leading-snug">
-                "The stories our grandparents told us are the foundation of who we are. FamilyHub makes sure those stories are never lost."
+                "{t('quote.text')}"
               </blockquote>
-              <p className="text-muted-foreground font-medium">— FamilyHub User</p>
+              <p className="text-muted-foreground font-medium">— {t('quote.attribution')}</p>
 
               <div className="pt-4">
                 <Button
@@ -146,7 +120,7 @@ const FamilyHub = () => {
                   asChild
                 >
                   <a href="https://family-hub.space/" target="_blank" rel="noopener noreferrer">
-                    Start Preserving Memories
+                    {t('quote.start_preserving')}
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
@@ -158,10 +132,10 @@ const FamilyHub = () => {
 
       {/* ═══ CTA ═══ */}
       <CTASection
-        title="Give Your Family the Gift of Preserved Memories"
-        description="Start capturing stories today — free to try, easy to use, and built to last generations."
-        primaryButtonText="Open FamilyHub"
-        secondaryButtonText="Contact Us"
+        title={t('cta.title')}
+        description={t('cta.description')}
+        primaryButtonText={t('cta.primary')}
+        secondaryButtonText={t('cta.secondary')}
         primaryButtonLink="/contact"
         secondaryButtonLink="/contact"
         showDemoIcon={false}

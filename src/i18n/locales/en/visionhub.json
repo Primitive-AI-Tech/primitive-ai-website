@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title_1": "AI-Powered",
+    "title_2": "Workplace Safety",
+    "description": "Enhance workplace safety with intelligent visual monitoring that ensures compliance, prevents accidents, and protects your workforce — in real time.",
+    "request_demo": "Request Demo",
+    "view_pricing": "View Pricing"
+  },
+  "features": {
+    "badge": "Key Features",
+    "title": "Intelligent Safety, Always On",
+    "subtitle": "Our Camera AI Platform uses computer vision and deep learning to keep your workforce safe around the clock",
+    "items": [
+      { "title": "Robot-Human Safety", "description": "Monitor interactions between robots and humans to prevent accidents and ensure safe coworking environments." },
+      { "title": "PPE Compliance", "description": "Automatically detect whether workers are wearing required protective equipment such as helmets, gloves, and safety vests." },
+      { "title": "Facial Recognition", "description": "Secure facility access with facial recognition for check-in/check-out and authorized personnel verification." },
+      { "title": "Behavior Detection", "description": "Identify abnormal behaviors or movements that may indicate safety risks or security concerns." },
+      { "title": "Real-time Alerts", "description": "Receive instant notifications when safety violations or potential hazards are detected." },
+      { "title": "Analytics Dashboard", "description": "Track safety metrics, identify trends, and generate reports for continuous improvement." }
+    ]
+  },
+  "how_it_works": {
+    "badge": "How It Works",
+    "title": "Up and Running in Days",
+    "subtitle": "Our Camera AI Platform integrates seamlessly with your existing security infrastructure",
+    "steps": [
+      { "step": "01", "title": "Installation & Setup", "description": "Our team integrates AI-powered cameras with your existing security infrastructure or installs new hardware as needed." },
+      { "step": "02", "title": "AI Configuration", "description": "We configure the system to monitor specific safety parameters based on your workplace requirements and industry regulations." },
+      { "step": "03", "title": "Continuous Monitoring", "description": "The system continuously monitors operations, providing real-time alerts and generating insights to improve workplace safety." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Use Cases",
+    "title": "Built for High-Stakes Environments",
+    "subtitle": "VisionHub is trusted across manufacturing, construction, logistics, and more",
+    "items": [
+      {
+        "title": "Manufacturing",
+        "description": "Ensure worker safety in environments with heavy machinery, robots, and automated systems. Monitor PPE compliance and prevent unauthorized access.",
+        "points": ["Robot-human interaction safety", "PPE compliance monitoring", "Restricted area access control"]
+      },
+      {
+        "title": "Construction",
+        "description": "Monitor construction sites for safety compliance, PPE usage, and unauthorized personnel. Detect potential hazards before they cause accidents.",
+        "points": ["Safety gear compliance", "Hazard zone monitoring", "Worker check-in/check-out"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Enhance Workplace Safety?",
+    "description": "Schedule a demo and learn how VisionHub can protect your workforce and improve compliance.",
+    "primary": "Request Demo",
+    "secondary": "Explore Solutions"
+  }
+}

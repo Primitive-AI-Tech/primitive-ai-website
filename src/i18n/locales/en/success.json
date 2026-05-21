@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "badge": "Success Stories",
+    "title_1": "Real Impact,",
+    "title_2": "Real Results",
+    "description": "See how organizations across industries are using Primitive AI to reduce costs, accelerate operations, and transform their businesses.",
+    "highlights": [
+      { "value": "40–70%", "label": "Efficiency gains across engagements" },
+      { "value": "50+", "label": "Enterprise clients served" },
+      { "value": "10+", "label": "Industries transformed" }
+    ]
+  },
+  "filters": {
+    "all": "All",
+    "manufacturing": "Manufacturing",
+    "financial_services": "Financial Services",
+    "legal": "Legal",
+    "retail": "Retail",
+    "healthcare": "Healthcare"
+  },
+  "no_stories": "No stories found for this industry yet.",
+  "show_all": "Show All Stories",
+  "spotlight": {
+    "badge": "Featured Case Study",
+    "challenge": "The Challenge",
+    "solution": "Our Solution",
+    "discuss": "Discuss Your Challenge"
+  },
+  "cta": {
+    "title": "Ready to Write Your Own Success Story?",
+    "description": "Contact us to explore how Primitive AI can create measurable impact for your organization.",
+    "primary": "Start a Conversation",
+    "secondary": "View Our Solutions"
+  },
+  "stories": [
+    {
+      "title": "Transforming Workplace Safety in Manufacturing",
+      "industry": "Manufacturing",
+      "client": "Global Auto Parts Manufacturer",
+      "product": "VisionHub",
+      "summary": "VisionHub's camera AI platform deployed across 12 facilities to monitor PPE compliance and human-robot interaction zones in real-time — preventing incidents before they happen.",
+      "challenge": "With hundreds of workers operating alongside industrial robots across 12 facilities, manual safety audits were reactive, inconsistent, and unable to scale. Incidents were costly in both human and financial terms.",
+      "solution": "Deployed VisionHub across all facilities with real-time PPE detection, restricted zone monitoring, and behavioral anomaly alerts sent directly to safety managers via mobile.",
+      "metric": "40%",
+      "metric_label": "Reduction in workplace incidents",
+      "stats": [
+        { "value": "40%", "label": "Fewer incidents" },
+        { "value": "12", "label": "Facilities covered" },
+        { "value": "98%", "label": "PPE detection accuracy" }
+      ]
+    },
+    {
+      "title": "Revolutionizing Customer Support in FinTech",
+      "industry": "Financial Services",
+      "client": "Leading Digital Bank",
+      "product": "SupportHub",
+      "summary": "SupportHub's AI chatbot now handles 80% of tier-1 support queries automatically, with seamless escalation for complex cases and dramatically improved CSAT scores.",
+      "challenge": "A rapidly growing digital bank was struggling with support volume — long wait times, agent burnout, and inconsistent answer quality were driving customer churn.",
+      "solution": "Integrated SupportHub across web chat, mobile app, and WhatsApp. The AI handles account queries, transaction questions, and FAQs, escalating edge cases to human agents with full context.",
+      "metric": "30%",
+      "metric_label": "Increase in customer satisfaction",
+      "stats": [
+        { "value": "80%", "label": "Queries automated" },
+        { "value": "30%", "label": "CSAT increase" },
+        { "value": "4×", "label": "Faster resolution" }
+      ]
+    },
+    {
+      "title": "Accelerating Legal Operations at Scale",
+      "industry": "Legal",
+      "client": "Top-Tier Law Firm",
+      "product": "LegalHub",
+      "summary": "LegalHub automated contract generation and review, reducing document turnaround from days to hours across 500+ contract templates.",
+      "challenge": "Junior associates were spending 60%+ of their time on routine contract drafting and review, limiting the firm's capacity for high-value advisory work.",
+      "solution": "Deployed LegalHub with the firm's 500+ contract templates, clause libraries, and compliance rules. Attorneys review AI-generated drafts rather than drafting from scratch.",
+      "metric": "60%",
+      "metric_label": "Faster document processing",
+      "stats": [
+        { "value": "60%", "label": "Faster turnaround" },
+        { "value": "500+", "label": "Templates automated" },
+        { "value": "3×", "label": "More cases handled" }
+      ]
+    },
+    {
+      "title": "Enterprise Knowledge Management Transformation",
+      "industry": "Retail",
+      "client": "Regional Retail Chain",
+      "product": "KnowledgeHub",
+      "summary": "KnowledgeHub consolidated 10 years of product knowledge, supplier data, and operational procedures into a single AI-searchable system accessible to all 2,000+ employees.",
+      "challenge": "Knowledge was siloed across SharePoint, email threads, and individual employees' heads. New staff spent weeks ramping up, and experienced staff spent hours answering the same questions repeatedly.",
+      "solution": "KnowledgeHub ingested all existing documents and wikis. Staff now ask questions in natural language and get instant, cited answers — from store policies to supplier contacts.",
+      "metric": "70%",
+      "metric_label": "Reduction in knowledge search time",
+      "stats": [
+        { "value": "70%", "label": "Less search time" },
+        { "value": "2,000+", "label": "Employees enabled" },
+        { "value": "50%", "label": "Faster onboarding" }
+      ]
+    },
+    {
+      "title": "AI-Powered Quality Control in Electronics",
+      "industry": "Manufacturing",
+      "client": "Electronics Component Manufacturer",
+      "product": "VisionHub",
+      "summary": "Visual AI inspection replaced manual QC checks, detecting defects 10× faster with higher accuracy than human inspectors on the production line.",
+      "challenge": "Manual QC was a bottleneck on the production line — slow, expensive, and prone to inspector fatigue causing missed defects in high-volume runs.",
+      "solution": "VisionHub cameras monitor every unit on the production line, detecting micro-defects in real-time and triggering automatic rejection with full defect logging.",
+      "metric": "99.2%",
+      "metric_label": "Defect detection accuracy",
+      "stats": [
+        { "value": "99.2%", "label": "Detection accuracy" },
+        { "value": "10×", "label": "Faster than manual QC" },
+        { "value": "35%", "label": "Reduction in defect escapes" }
+      ]
+    },
+    {
+      "title": "Family Story Preservation for a National Foundation",
+      "industry": "Healthcare",
+      "client": "Senior Care Foundation",
+      "product": "FamilyHub",
+      "summary": "FamilyHub was deployed across senior care facilities to help residents record life stories, share memories with families, and maintain cognitive engagement through reminiscence.",
+      "challenge": "Many residents had rich life stories at risk of being lost. Families wanted to connect but lived far away. Staff lacked time for structured storytelling sessions.",
+      "solution": "FamilyHub's guided AI conversations helped residents record stories in their own words. Families received beautifully formatted memory books and could add their own contributions remotely.",
+      "metric": "92%",
+      "metric_label": "Family satisfaction score",
+      "stats": [
+        { "value": "92%", "label": "Family satisfaction" },
+        { "value": "1,200+", "label": "Stories preserved" },
+        { "value": "85%", "label": "Resident engagement rate" }
+      ]
+    }
+  ]
+}

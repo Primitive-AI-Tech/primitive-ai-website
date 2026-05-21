@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "badge": "企业级AI解决方案",
+    "title_1": "AI向善，",
+    "title_2": "赋能商业发展。",
+    "description": "AI正在深刻改变世界。我们的使命是让AI造福人类。在这一旅程中，我们构建帮助企业和社区蓬勃发展的产品。",
+    "explore_products": "探索我们的产品",
+    "talk_to_team": "联系我们的团队",
+    "scroll": "滚动探索"
+  },
+  "stats": {
+    "ai_products": "AI产品",
+    "enterprise_clients": "企业客户",
+    "industries_served": "服务行业",
+    "platform_uptime": "平台稳定性"
+  },
+  "products_section": {
+    "badge": "我们的产品",
+    "title": "企业级AI产品套件",
+    "subtitle": "专为解决各行业实际业务挑战而设计的AI产品"
+  },
+  "services_section": {
+    "badge": "我们的服务",
+    "title": "AI开发服务",
+    "subtitle": "从战略到部署的端到端AI服务——我们与您携手构建、训练和扩展AI解决方案",
+    "cards": [
+      {
+        "title": "AI智能体开发",
+        "description": "构建能自动化复杂工作流、处理客户交互并自主进行数据驱动决策的智能体。"
+      },
+      {
+        "title": "AI工作流自动化",
+        "description": "设计并实施AI驱动的工作流，优化运营、减少手动工作并加速业务流程。"
+      },
+      {
+        "title": "AI API开发",
+        "description": "构建强健、可扩展的AI API，无缝集成至您的现有系统和第三方应用程序。"
+      },
+      {
+        "title": "模型训练与微调",
+        "description": "在您的专有数据上进行定制化模型训练与微调，为特定用例实现卓越精度。"
+      },
+      {
+        "title": "AI产品开发",
+        "description": "从构想到上线的全周期AI产品开发——UX设计、工程实现、测试和生产部署。"
+      },
+      {
+        "title": "咨询与战略规划",
+        "description": "战略性AI咨询，帮助识别机会、制定路线图，引领组织的AI转型之旅。"
+      }
+    ]
+  },
+  "why_hero": {
+    "badge": "选择我们的理由",
+    "title_1": "为何选择",
+    "title_2": "Primitive AI？",
+    "description": "我们致力于提供创新的AI解决方案，为企业及其服务的社区创造真实、可衡量的商业价值。",
+    "get_started": "立即开始",
+    "our_solutions": "我们的解决方案"
+  },
+  "why_reasons": {
+    "badge": "核心优势",
+    "title": "我们的差异化优势",
+    "subtitle": "我们提供针对您独特业务需求量身定制的前沿AI解决方案",
+    "cards": [
+      {
+        "title": "创新解决方案",
+        "description": "我们利用AI最新进展，开发应对您独特挑战的创新解决方案。"
+      },
+      {
+        "title": "经过验证的成果",
+        "description": "我们的解决方案拥有可交付可衡量结果的成功记录——提升效率、降低成本、改善客户满意度。"
+      },
+      {
+        "title": "按时交付",
+        "description": "我们承诺在预算内按时交付项目，绝不牺牲质量。"
+      },
+      {
+        "title": "专家团队",
+        "description": "我们的AI专家团队在各行业AI解决方案的开发和部署方面拥有丰富经验。"
+      },
+      {
+        "title": "定制化解决方案",
+        "description": "我们了解每个企业都是独一无二的。因此，我们提供针对您具体需求和目标量身定制的AI解决方案。"
+      },
+      {
+        "title": "持续支持",
+        "description": "我们提供持续的支持和维护，确保您的AI解决方案随时间推移持续创造价值。"
+      }
+    ]
+  },
+  "success_section": {
+    "badge": "成功案例",
+    "title": "真实影响，切实成果",
+    "subtitle": "看看各行业的组织如何借助Primitive AI实现业务转型",
+    "view_all": "查看所有成功案例",
+    "stories": [
+      {
+        "title": "制造业职场安全变革",
+        "industry": "制造业",
+        "summary": "VisionHub摄像AI平台部署于12家工厂，实时监控PPE合规情况和人机交互区域。",
+        "metric": "40%",
+        "metric_label": "工作场所事故减少"
+      },
+      {
+        "title": "金融科技客户支持革命",
+        "industry": "金融服务",
+        "summary": "SupportHub的AI聊天机器人自动处理80%的一线支持查询，复杂案例无缝升级。",
+        "metric": "30%",
+        "metric_label": "客户满意度提升"
+      },
+      {
+        "title": "加速法律运营",
+        "industry": "法律",
+        "summary": "LegalHub自动化合同生成和审查，将500多个模板的文件处理时间从数天缩短至数小时。",
+        "metric": "60%",
+        "metric_label": "文件处理提速"
+      }
+    ]
+  },
+  "partners": {
+    "badge": "机构信任",
+    "title": "受到行业领导者的信赖",
+    "subtitle": "与全球技术先驱合作，共同推动企业AI的未来"
+  },
+  "galaxy": {
+    "click_to_explore": "点击探索",
+    "view_details": "查看详情"
+  },
+  "testimonials_section": {
+    "badge": "客户评价",
+    "title": "客户怎么说",
+    "subtitle": "不仅听我们说——听听信赖Primitive AI的企业领袖的心声",
+    "items": [
+      {
+        "quote": "摄像AI平台显著提升了我们的职场安全水平。自实施以来，事故率降低了40%。",
+        "author": "Kiem Nguyen",
+        "role": "总经理",
+        "company": "RAIS Tech"
+      },
+      {
+        "quote": "Primitive AI以高质量和高速度帮助我们完成了AI智能体的开发和部署。我们对他们的服务非常满意。",
+        "author": "Oscar P. Ridell",
+        "role": "首席执行官",
+        "company": "Ymner"
+      },
+      {
+        "quote": "以前，我们10人团队只能处理5%的客户支持工单。现在，我们能以高精度和高满意度即时处理全部工单，全天候不间断。",
+        "author": "Duyen Nguyen",
+        "role": "首席技术官",
+        "company": "TNE"
+      }
+    ]
+  }
+}

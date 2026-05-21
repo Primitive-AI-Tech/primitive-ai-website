@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "title_1": "AI-Powered",
+    "title_2": "Legal Documents",
+    "description": "Streamline legal document creation, management, and e-signing with our powerful AI-driven platform designed for legal professionals.",
+    "request_demo": "Request Demo"
+  },
+  "features": {
+    "badge": "Key Features",
+    "title": "Powerful Tools for Legal Professionals",
+    "subtitle": "Our LegalHub Platform leverages advanced AI to streamline every aspect of legal operations",
+    "items": [
+      { "title": "AI Document Creation", "description": "Generate legal documents quickly using templates and AI assistance tailored to your specific requirements." },
+      { "title": "Electronic Signatures", "description": "Securely collect legally binding electronic signatures from all parties with audit trails and verification." },
+      { "title": "Secure Document Storage", "description": "Store and organize all legal documents with enterprise-grade security and compliance features." },
+      { "title": "Intelligent Search", "description": "Quickly find specific content within your document repository using AI-powered semantic search." },
+      { "title": "Comprehensive Analytics", "description": "Track document status, review cycles, and team performance with detailed analytics and reports." },
+      { "title": "Compliance Monitoring", "description": "Ensure documents comply with relevant regulations and internal policies with automated checks." }
+    ]
+  },
+  "dashboard": {
+    "badge": "Dashboard",
+    "title": "Modern, Intuitive Interface",
+    "subtitle": "Manage all your legal documents from one unified, beautifully designed dashboard",
+    "images": [
+      { "title": "Dashboard View", "description": "Complete overview of your document activity, pending signatures, and recent activity" },
+      { "title": "Documents Management", "description": "Organize and access all your legal documents in one place" },
+      { "title": "Document Templates", "description": "Access a library of professional templates for various legal needs" }
+    ]
+  },
+  "how_it_works": {
+    "badge": "How It Works",
+    "title": "From Draft to Signed in Four Steps",
+    "subtitle": "Our LegalHub Platform seamlessly integrates into your legal workflow from day one",
+    "steps": [
+      { "step": "01", "title": "Document Creation", "description": "Create new documents from scratch or use AI-powered templates tailored to your specific legal needs." },
+      { "step": "02", "title": "Review & Collaboration", "description": "Collaborate with team members and stakeholders to review and refine documents in real-time." },
+      { "step": "03", "title": "E-Signatures", "description": "Securely collect legally binding electronic signatures from all required parties with full audit trails." },
+      { "step": "04", "title": "Storage & Management", "description": "Securely store, organize, and manage all documents with powerful search and analytics capabilities." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Use Cases",
+    "title": "Versatile Across Legal Operations",
+    "subtitle": "LegalHub powers document workflows for legal teams across industries and firm sizes",
+    "items": [
+      {
+        "title": "Contract Management",
+        "description": "Streamline the entire contract lifecycle from creation to renewal, with automated workflows, version control, and approval tracking.",
+        "points": ["Automated contract generation", "Electronic signature collection", "Renewal and expiration tracking"]
+      },
+      {
+        "title": "Corporate Governance",
+        "description": "Manage board documents, resolutions, and corporate records with secure access control, audit trails, and compliance monitoring.",
+        "points": ["Board meeting management", "Resolution tracking and approvals", "Regulatory compliance documentation"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Your Legal Operations?",
+    "description": "Schedule a demo and see how LegalHub can streamline document workflows and accelerate your legal team.",
+    "primary": "Request Demo",
+    "secondary": "Explore Solutions"
+  }
+}

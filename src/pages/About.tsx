@@ -5,34 +5,25 @@ import CTASection from '@/components/CTA';
 import ScrollReveal from '@/components/ScrollReveal';
 import { Link } from 'react-router-dom';
 import { Award, Briefcase, GraduationCap, Users, Target } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
-  const milestones = [
-    {
-      year: 'Jan - 2020',
-      title: 'Company Founded',
-      description: 'Primitive AI was established with a mission to make advanced AI accessible to businesses of all sizes.',
-    },
-    {
-      year: 'Aug - 2020',
-      title: 'First Product Launch - VisionHub',
-      description: 'Launched our Camera AI Platform for workplace safety, expanding into the manufacturing and construction sectors.',
-    },
-    {
-      year: 'Jun - 2023',
-      title: 'SupportHub Launch',
-      description: 'Launched our advanced LLM-powered chatbot and voice bot solution for customer support and sales.',
-    },
-    {
-      year: 'Feb - 2024',
-      title: 'Intelligent Document Processing',
-      description: 'Released our first AI-powered document processing solution, gaining our initial enterprise customers.',
-    },
-    {
-      year: 'Feb - 2025',
-      title: 'LegalHub Launch',
-      description: 'Released our LegalHub Platform, bringing AI-powered document creation and management to companies.',
-    },
+  const { t } = useTranslation('about');
+
+  const milestones = t('milestones.items', { returnObjects: true }) as Array<{
+    year: string; title: string; description: string;
+  }>;
+
+  const values = t('values.items', { returnObjects: true }) as Array<{
+    title: string; description: string;
+  }>;
+
+  const valueIcons = [Users, Award, Briefcase, GraduationCap];
+  const valueColors = [
+    'from-purple-500 to-purple-700',
+    'from-blue-500 to-blue-700',
+    'from-emerald-500 to-emerald-700',
+    'from-amber-500 to-orange-600',
   ];
 
   return (
@@ -50,20 +41,20 @@ const About = () => {
             <div className="space-y-6 max-w-2xl">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-purple-200 backdrop-blur-sm">
                 <Target className="w-4 h-4 text-purple-400" />
-                Our Story
+                {t('hero.badge')}
               </div>
               <h1 className="hero-heading text-white">
-                About <span className="text-gradient-purple">Primitive AI</span>
+                {t('hero.title_1')} <span className="text-gradient-purple">{t('hero.title_2')}</span>
               </h1>
               <p className="text-base md:text-lg text-purple-200/80 leading-relaxed max-w-xl">
-                We're on a mission to transform businesses through innovative AI solutions that solve real-world problems and bring good for mankind.
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/contact">Get in Touch</Link>
+                  <Link to="/contact">{t('hero.get_in_touch')}</Link>
                 </Button>
                 <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/why-choose-us">Why Choose Us</Link>
+                  <Link to="/why-choose-us">{t('hero.why_choose_us')}</Link>
                 </Button>
               </div>
             </div>
@@ -87,25 +78,19 @@ const About = () => {
       <section className="snap-section" data-theme="light">
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
-            <SectionHeader badge="Origins" title="Our Story" subtitle="From an idea to a leading AI solutions provider" />
+            <SectionHeader badge={t('story.badge')} title={t('story.title')} subtitle={t('story.subtitle')} />
           </ScrollReveal>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mt-8 md:mt-10">
             <ScrollReveal direction="left">
               <div className="space-y-4">
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                  Primitive AI was founded in 2020 by Doan Nguyen, an AI expert with extensive experience in artificial intelligence and robotics. What began as a vision has quickly grown into a comprehensive AI solutions provider serving clients worldwide.
-                </p>
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                  Our journey began with a simple belief: that advanced AI technology should be accessible to businesses of all sizes. We've expanded our offerings to include solutions for workplace safety, customer support, legal operations, and document processing — all powered by cutting-edge large language models.
-                </p>
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                  Today, Primitive AI is self-funded and employs AI specialists, engineers, and industry experts dedicated to developing innovative solutions that drive real business value.
-                </p>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{t('story.p1')}</p>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{t('story.p2')}</p>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{t('story.p3')}</p>
               </div>
             </ScrollReveal>
             <ScrollReveal direction="right">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-purple-100/50">
-                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop" alt="Primitive AI Team" className="w-full h-56 md:h-72 object-cover" />
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop" alt={t('story.img_alt')} className="w-full h-56 md:h-72 object-cover" />
               </div>
             </ScrollReveal>
           </div>
@@ -118,24 +103,22 @@ const About = () => {
         <div className="absolute inset-0 dot-bg opacity-20" />
         <div className="relative z-10 section-container py-16 md:py-0">
           <ScrollReveal>
-            <SectionHeader badge="Core Principles" title="Our Values" subtitle="The principles that guide everything we do and build" light centered />
+            <SectionHeader badge={t('values.badge')} title={t('values.title')} subtitle={t('values.subtitle')} light centered />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-8">
-              {[
-                { icon: Users, color: 'from-purple-500 to-purple-700', title: 'Customer First', desc: 'We prioritize customer success and build solutions that address real business challenges with measurable results.' },
-                { icon: Award, color: 'from-blue-500 to-blue-700', title: 'Excellence', desc: 'We strive for excellence in everything we do, from cutting-edge AI research to customer support and implementation.' },
-                { icon: Briefcase, color: 'from-emerald-500 to-emerald-700', title: 'Innovation', desc: 'We continuously innovate and push the boundaries of what\'s possible with AI to deliver transformative solutions.' },
-                { icon: GraduationCap, color: 'from-amber-500 to-orange-600', title: 'Responsibility', desc: 'We develop and deploy AI responsibly, with a focus on ethics, security, and positive societal impact.' },
-              ].map(({ icon: Icon, color, title, desc }) => (
-                <div key={title} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <Icon className="w-6 h-6 text-white" />
+              {values.map((value, i) => {
+                const Icon = valueIcons[i] ?? Users;
+                return (
+                  <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${valueColors[i]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-base font-bold mb-2 text-white">{value.title}</h3>
+                    <p className="text-purple-200/70 text-sm leading-relaxed">{value.description}</p>
                   </div>
-                  <h3 className="text-base font-bold mb-2 text-white">{title}</h3>
-                  <p className="text-purple-200/70 text-sm leading-relaxed">{desc}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </ScrollReveal>
         </div>
@@ -144,9 +127,9 @@ const About = () => {
       {/* ═══ SECTION 4: MILESTONES ═══ */}
       <section className="snap-section relative overflow-hidden" data-theme="light">
         <div className="absolute bottom-0 right-0 w-1/2 h-96 bg-purple-100/50 rounded-full blur-3xl -z-10" />
-        <div className="section-container py-16 md:py-0">
+        <div className="section-container pt-24 pb-16 md:pt-28 md:pb-20">
           <ScrollReveal>
-            <SectionHeader badge="Timeline" title="Our Journey" subtitle="Key milestones in our company's growth" centered />
+            <SectionHeader badge={t('milestones.badge')} title={t('milestones.title')} subtitle={t('milestones.subtitle')} centered />
           </ScrollReveal>
           <div className="relative mt-8 max-w-3xl mx-auto">
             <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-purple-300 via-purple-200 to-transparent" />
@@ -173,10 +156,10 @@ const About = () => {
 
       {/* ═══ SECTION 5: CTA ═══ */}
       <CTASection
-        title="Join Us on Our Mission"
-        description="We're always looking for talented individuals who share our passion for AI and our commitment to excellence."
-        primaryButtonText="Contact Us"
-        secondaryButtonText="View Careers"
+        title={t('cta.title')}
+        description={t('cta.description')}
+        primaryButtonText={t('cta.primary')}
+        secondaryButtonText={t('cta.secondary')}
         primaryButtonLink="/contact"
         secondaryButtonLink="/"
       />

@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title_1": "Chatbot AI &",
+    "title_2": "Voice Bot",
+    "description": "Chuyển đổi dịch vụ hỗ trợ khách hàng và bán hàng với nền tảng AI hội thoại có thể tùy chỉnh hoàn toàn — mang lại tương tác tự nhiên, hữu ích qua cả kênh văn bản và giọng nói.",
+    "request_demo": "Đặt Lịch Demo",
+    "view_pricing": "Xem Bảng Giá"
+  },
+  "dashboard": {
+    "badge": "Bảng Điều Khiển",
+    "title": "Giao Diện Mạnh Mẽ, Trực Quan",
+    "subtitle": "Quản lý toàn bộ giao tiếp khách hàng trên mọi kênh từ một bảng điều khiển thống nhất",
+    "schedule_demo": "Đặt Lịch Demo Trực Tiếp",
+    "images": [
+      { "title": "Bảng Phân Tích", "description": "Tổng quan đầy đủ về hiệu suất hỗ trợ khách hàng với số liệu và biểu đồ theo thời gian thực" },
+      { "title": "Quản Lý Phiếu Hỗ Trợ", "description": "Quản lý phiếu hỗ trợ hiệu quả với theo dõi trạng thái, đánh dấu ưu tiên và phản hồi được hỗ trợ bởi AI" },
+      { "title": "Hỗ Trợ Đa Kênh", "description": "Kết nối với khách hàng trên nhiều kênh — website, email, mạng xã hội và nhiều hơn nữa" },
+      { "title": "Quản Lý Khách Hàng", "description": "Theo dõi tất cả tương tác và lịch sử khách hàng trong một giao diện thống nhất" },
+      { "title": "Quản Lý Kịch Bản AI", "description": "Tạo và quản lý các kịch bản cơ sở kiến thức AI để tự động hóa phản hồi các yêu cầu phổ biến" }
+    ]
+  },
+  "features": {
+    "badge": "Tính Năng",
+    "title": "Tất Cả Những Gì Bạn Cần Để Làm Hài Lòng Khách Hàng",
+    "subtitle": "Nền tảng AI với nhiều tùy chọn tùy chỉnh để mang lại trải nghiệm khách hàng xuất sắc",
+    "items": [
+      { "title": "Hỗ Trợ Đa Kênh", "description": "Cung cấp hỗ trợ nhất quán trên web, di động, mạng xã hội và kênh giọng nói với trải nghiệm thống nhất." },
+      { "title": "Hội Thoại Tự Nhiên", "description": "Tận dụng LLM tiên tiến để có cuộc trò chuyện giống người thật, hiểu được ngữ cảnh, sắc thái và ý định người dùng." },
+      { "title": "Tương Tác Giọng Nói", "description": "Cho phép tương tác giọng nói tự nhiên với nhận diện giọng nói và chuyển đổi văn bản thành giọng nói cho hỗ trợ qua điện thoại." },
+      { "title": "Chuyển Giao Cho Con Người", "description": "Chuyển liền mạch các cuộc trò chuyện phức tạp cho nhân viên người thật với đầy đủ ngữ cảnh và lịch sử." },
+      { "title": "Sẵn Sàng 24/7", "description": "Cung cấp hỗ trợ quanh đồng hồ cho khách hàng bất kể múi giờ hay giờ làm việc." },
+      { "title": "Bảng Phân Tích", "description": "Theo dõi chỉ số hiệu suất, chất lượng hội thoại và sự hài lòng của khách hàng để liên tục cải tiến." },
+      { "title": "Tùy Chỉnh Hoàn Toàn", "description": "Tùy chỉnh giao diện để phù hợp với thương hiệu của bạn với màu sắc, phông chữ và thành phần giao diện tùy chỉnh." },
+      { "title": "Tùy Chọn Tích Hợp", "description": "Kết nối SupportHub với CRM hiện có, bàn trợ giúp và các hệ thống kinh doanh khác qua API mạnh mẽ." },
+      { "title": "Cấu Hình Không Cần Code", "description": "Thiết lập và sửa đổi luồng chatbot mà không cần kiến thức kỹ thuật bằng giao diện kéo-thả trực quan." }
+    ]
+  },
+  "how_it_works": {
+    "badge": "Cách Thức Hoạt Động",
+    "title": "Triển Khai Trong Ba Bước",
+    "subtitle": "SupportHub tích hợp liền mạch với hệ thống hiện có và hoạt động trong vài ngày",
+    "steps": [
+      { "step": "01", "title": "Tùy Chỉnh & Cài Đặt", "description": "Chúng tôi điều chỉnh SupportHub theo sản phẩm, dịch vụ, chính sách và tương tác khách hàng của bạn để có phản hồi chính xác, hữu ích." },
+      { "step": "02", "title": "Tích Hợp Hệ Thống", "description": "Chúng tôi tích hợp với hệ thống hỗ trợ hiện có, website, ứng dụng di động và hệ thống điện thoại của bạn một cách liền mạch." },
+      { "step": "03", "title": "Cải Tiến Liên Tục", "description": "Hệ thống học hỏi từ mọi tương tác và cải thiện theo thời gian với các cập nhật thường xuyên và nâng cấp khả năng." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Ứng Dụng Thực Tế",
+    "title": "Linh Hoạt Trong Mọi Ngành Nghề",
+    "subtitle": "SupportHub hỗ trợ dịch vụ khách hàng, bán hàng và tương tác cho các doanh nghiệp mọi quy mô",
+    "items": [
+      {
+        "title": "Hỗ Trợ Khách Hàng",
+        "description": "Cung cấp phản hồi tức thì, chính xác cho các câu hỏi thường gặp, khắc phục sự cố và leo thang các vấn đề phức tạp cho nhân viên người thật.",
+        "points": ["Phản hồi ngay lập tức các câu hỏi thường gặp", "Hỗ trợ kỹ thuật từ xa", "Tra cứu trạng thái và theo dõi đơn hàng"]
+      },
+      {
+        "title": "Hỗ Trợ Bán Hàng",
+        "description": "Hướng dẫn khách hàng tiềm năng qua quy trình mua hàng, đề xuất sản phẩm, trả lời câu hỏi và hỗ trợ thanh toán.",
+        "points": ["Đề xuất sản phẩm phù hợp", "So sánh tính năng và giá cả", "Hỗ trợ thanh toán từng bước"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn Sàng Cải Thiện Dịch Vụ Khách Hàng?",
+    "description": "Đặt lịch demo và xem SupportHub có thể mang lại trải nghiệm khách hàng xuất sắc ở quy mô lớn như thế nào.",
+    "primary": "Đặt Lịch Demo",
+    "secondary": "Khám Phá Giải Pháp"
+  }
+}

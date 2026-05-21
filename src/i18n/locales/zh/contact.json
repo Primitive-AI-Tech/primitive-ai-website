@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "title": "联系我们",
+    "description": "对我们的AI解决方案有疑问？我们在这里帮助您找到适合您业务需求的正确技术。"
+  },
+  "form": {
+    "title": "发送消息",
+    "subtitle": "填写下方表单，我们的AI专家将在24小时内回复您。",
+    "first_name": "名",
+    "last_name": "姓",
+    "email": "电子邮件地址",
+    "company": "公司名称",
+    "interested_in": "我感兴趣的",
+    "message": "留言",
+    "placeholder_first": "三",
+    "placeholder_last": "张",
+    "placeholder_email": "zhangsan@gongsi.com",
+    "placeholder_company": "您的公司名称",
+    "placeholder_message": "请告诉我们您的项目或需求...",
+    "select_solution": "选择解决方案",
+    "option_camera_ai": "摄像AI平台",
+    "option_support_hub": "SupportHub",
+    "option_legal_hub": "LegalHub平台",
+    "option_doc_processing": "智能文件处理",
+    "option_other": "其他",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "toast_success": "您的邮件客户端即将打开。",
+    "toast_error": "无法打开邮件客户端，请稍后重试。",
+    "validation": {
+      "first_name_min": "名至少需要2个字符。",
+      "last_name_min": "姓至少需要2个字符。",
+      "email_invalid": "请输入有效的电子邮件地址。",
+      "message_min": "留言至少需要10个字符。"
+    }
+  },
+  "info": {
+    "title": "联系信息",
+    "email_label": "电子邮件",
+    "email_value": "doannt@prai.tech",
+    "phone_label": "电话",
+    "phone_value": "+1 (917) 508-5261",
+    "location_label": "地址",
+    "location_line1": "2261 Market Street STE 22919",
+    "location_line2": "San Francisco, CA 94114",
+    "hours_label": "工作时间",
+    "hours_weekday": "周一至周五：上午9时至下午6时（太平洋时间）",
+    "hours_weekend": "周六至周日：休息",
+    "connect": "关注我们"
+  },
+  "faq": {
+    "badge": "常见问题",
+    "title": "常见问题解答",
+    "subtitle": "关于我们产品、服务和工作方式的常见问题解答",
+    "still_questions": "还有其他问题？",
+    "email_us": "发送邮件",
+    "items": [
+      {
+        "q": "哪些Primitive AI产品可以快速部署？",
+        "a": "SupportHub、KnowledgeHub和FamilyHub是我们的SaaS产品，可以立即使用。VisionHub（摄像AI）需要现场硬件安装，需要4-6周时间。LegalHub标准用例可在1-2周内配置完毕并投入使用。"
+      },
+      {
+        "q": "SupportHub如何处理向人工坐席的转接？",
+        "a": "SupportHub检测到对话超出AI置信度阈值或客户明确要求人工时，会实时将完整的对话历史和上下文转交给人工坐席——确保客户无需重复说明。"
+      },
+      {
+        "q": "VisionHub能与现有的CCTV摄像头集成吗？",
+        "a": "是的。VisionHub设计为与大多数标准IP摄像头和RTSP兼容视频流配合使用。我们的团队在入驻时进行兼容性评估，并可在需要实时处理的地方安装边缘AI硬件。"
+      },
+      {
+        "q": "KnowledgeHub如何在知识变化时保持准确性？",
+        "a": "KnowledgeHub持续对接入的来源（文件、Wiki和内部系统）进行索引，并标记过时内容供审查。管理员可以直接更新知识库，更改立即在所有AI回复中生效。"
+      },
+      {
+        "q": "LegalHub符合电子签名法规吗？",
+        "a": "是的。LegalHub的电子签名模块符合eIDAS（欧盟）、ESIGN法案（美国）和UETA标准。所有签名附带包含时间戳、IP记录和身份验证的完整审计追踪，确保法律效力。"
+      },
+      {
+        "q": "您的AI解决方案能与我们现有系统集成吗？",
+        "a": "我们所有产品都提供REST API并支持Webhook集成。我们有针对常见CRM（Salesforce、HubSpot）、服务台（Zendesk、Freshdesk）和文件系统（Google Drive、SharePoint）的预置连接器。定制集成由我们的工程团队处理。"
+      },
+      {
+        "q": "你们提供完全定制的AI解决方案吗？",
+        "a": "是的——除产品套件外，我们通过服务部门提供端到端的定制AI开发。包括AI智能体开发、在您专有数据上的模型微调、定制API开发以及针对您特定流程的工作流自动化。"
+      },
+      {
+        "q": "我们的数据在您的平台上如何受到保护？",
+        "a": "所有数据在传输中（TLS 1.3）和静态存储（AES-256）时均经过加密。我们遵循SOC 2安全实践，实施基于角色的访问控制，并进行定期的第三方安全审计。未经明确书面同意，您的数据不会用于训练共享模型。"
+      },
+      {
+        "q": "部署后包含哪些持续支持？",
+        "a": "所有套餐包含访问支持门户、文档和电子邮件支持。商业版和企业版额外提供专属客户经理、24/7技术支持以及定期季度审查，确保您的AI解决方案持续创造价值。"
+      },
+      {
+        "q": "你们如何定价产品和服务？",
+        "a": "我们的产品按使用量和功能的月度订阅套餐提供——请查看各产品页面了解定价。定制AI开发服务在范围确认电话后按项目报价。请联系我们获取定制方案。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "products_services": "製品・サービス",
+    "products": "製品",
+    "services": "サービス",
+    "view_all_products": "すべての製品を見る →",
+    "view_all_services": "すべてのサービスを見る →",
+    "success_stories": "導入事例",
+    "about": "会社概要",
+    "contact_us": "お問い合わせ",
+    "products_list": {
+      "support_hub_desc": "AI搭載のカスタマーサポートプラットフォーム",
+      "knowledge_hub_desc": "企業ナレッジ管理・AI検索",
+      "vision_hub_desc": "インテリジェント映像監視・カメラAI",
+      "family_hub_desc": "家族の記憶・知識の保存",
+      "legal_hub_desc": "法的文書の生成・管理"
+    },
+    "services_list": {
+      "ai_agent_dev": "AIエージェント開発",
+      "ai_workflow": "AIワークフロー自動化",
+      "ai_api": "AI API開発",
+      "model_training": "モデルのトレーニング・ファインチューニング",
+      "ai_product_dev": "AI製品開発",
+      "consulting": "コンサルティング・戦略立案"
+    }
+  },
+  "footer": {
+    "tagline": "AIは世界を変えています。私たちの使命は、AIが人類に善をもたらすこと — ビジネスとコミュニティの発展を支える製品を構築します。",
+    "products": "製品",
+    "services": "サービス",
+    "company": "会社情報",
+    "about_us": "会社概要",
+    "success_stories": "導入事例",
+    "contact": "お問い合わせ",
+    "copyright": "© {{year}} Primitive AI. All rights reserved.",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー"
+  },
+  "cta": {
+    "default_title": "AIでビジネスを変革しませんか？",
+    "default_description": "Primitive AIがお客様の組織に人工知能の力をどのように活用できるか、今すぐお問い合わせください。",
+    "default_primary": "今すぐ始める",
+    "default_secondary": "デモを申し込む"
+  },
+  "languages": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "learn_more": "詳細はこちら",
+  "badge": {
+    "soon": "近日公開",
+    "live": "ライブ",
+    "optimal": "最適",
+    "beta": "ベータ"
+  }
+}

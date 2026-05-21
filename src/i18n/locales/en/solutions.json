@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "badge": "Products & Services",
+    "title_1": "AI Solutions for",
+    "title_2": "Modern Businesses",
+    "description": "Our comprehensive suite of AI-powered solutions helps businesses improve safety, enhance customer experiences, streamline operations, and drive innovation.",
+    "scroll": "Scroll to explore"
+  },
+  "products_section": {
+    "badge": "Our Products",
+    "title": "Enterprise AI Product Suite",
+    "subtitle": "Purpose-built AI products designed to solve real business challenges across industries",
+    "items": [
+      {
+        "name": "SupportHub",
+        "tagline": "AI-Powered Customer Support",
+        "description": "Deliver exceptional customer support with intelligent chatbot and voice bot platform. Natural language understanding, omnichannel support, and seamless escalation."
+      },
+      {
+        "name": "KnowledgeHub",
+        "tagline": "Enterprise Knowledge Management",
+        "description": "Centralize, organize, and retrieve organizational knowledge with AI-powered search, document analysis, and intelligent recommendations."
+      },
+      {
+        "name": "VisionHub",
+        "tagline": "Intelligent Visual Monitoring",
+        "description": "Enhance workplace safety with real-time camera AI for human-robot interaction, PPE compliance, and behavior detection across facilities."
+      },
+      {
+        "name": "FamilyHub",
+        "tagline": "Family Knowledge Preservation",
+        "description": "Preserve and share family stories, memories, and wisdom across generations with AI-powered knowledge organization and storytelling."
+      },
+      {
+        "name": "LegalHub",
+        "tagline": "AI-Powered Legal Operations",
+        "description": "Streamline legal document creation, management, and e-signing with intelligent automation, compliance checks, and template generation."
+      }
+    ]
+  },
+  "services_section": {
+    "badge": "Our Services",
+    "title": "AI Development Services",
+    "subtitle": "End-to-end AI services from strategy to deployment — we partner with you to build, train, and scale AI solutions",
+    "cards": [
+      {
+        "title": "AI Agent Development",
+        "description": "Build intelligent agents that automate complex workflows, handle customer interactions, and make data-driven decisions autonomously."
+      },
+      {
+        "title": "AI Workflow Automation",
+        "description": "Design and implement AI-powered workflows that streamline operations, reduce manual effort, and accelerate business processes."
+      },
+      {
+        "title": "AI API Development",
+        "description": "Create robust, scalable AI APIs that integrate seamlessly into your existing systems and third-party applications."
+      },
+      {
+        "title": "Model Training & Fine-Tuning",
+        "description": "Custom model training and fine-tuning on your proprietary data to achieve superior accuracy for your specific use cases."
+      },
+      {
+        "title": "AI Product Development",
+        "description": "Full-cycle AI product development from ideation to launch — UX design, engineering, testing, and production deployment."
+      },
+      {
+        "title": "Consulting & Strategy",
+        "description": "Strategic AI consulting to identify opportunities, build roadmaps, and guide your organization's AI transformation journey."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Enhance Your Business with AI?",
+    "description": "Contact us today to schedule a demo and learn how our AI solutions can transform your operations.",
+    "primary": "Request Demo",
+    "secondary": "Why Choose Us?"
+  }
+}

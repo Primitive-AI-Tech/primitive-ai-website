@@ -16,8 +16,20 @@ import {
   Bot, Workflow, Code2, GraduationCap, Package, Lightbulb,
   Award, Check, Clock, Users, Wrench, LifeBuoy, ChevronDown, Brain
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
+const serviceIcons = [Bot, Workflow, Code2, GraduationCap, Package, Lightbulb];
+const featureIcons = [Award, Check, Clock, Users, Wrench, LifeBuoy];
+const successBgColors = [
+  'from-emerald-600 to-teal-800',
+  'from-blue-600 to-indigo-800',
+  'from-purple-600 to-purple-900',
+];
 
 const Index = () => {
+  const { t } = useTranslation('home');
+  const { t: tC } = useTranslation('common');
+
   React.useLayoutEffect(() => {
     document.documentElement.classList.add('snap-active');
     return () => {
@@ -25,18 +37,25 @@ const Index = () => {
     };
   }, []);
 
+  const serviceCards = t('services_section.cards', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const whyCards = t('why_reasons.cards', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const stories = t('success_section.stories', { returnObjects: true }) as Array<{
+    title: string; industry: string; summary: string; metric: string; metric_label: string;
+  }>;
+  const testimonials = t('testimonials_section.items', { returnObjects: true }) as Array<{
+    quote: string; author: string; role: string; company: string;
+  }>;
+
   return (
     <div>
       {/* ═══════════════════════════════════════════════════
           SECTION 1: HERO — Mission & Vision
       ═══════════════════════════════════════════════════ */}
       <section className="hook-section min-h-[100vh] flex items-center relative snap-section" data-theme="dark">
-        {/* Animated decorative orbs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-[10%] w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-20 left-[5%] w-96 h-96 bg-purple-400/10 rounded-full blur-3xl animate-float-delayed" />
           <div className="absolute top-1/2 right-[30%] w-48 h-48 bg-purple-300/10 rounded-full blur-2xl animate-float" />
-          {/* Dot pattern */}
           <div className="absolute inset-0 dot-bg opacity-30" />
         </div>
 
@@ -46,18 +65,16 @@ const Index = () => {
             <div className="space-y-5 md:space-y-8 max-w-2xl">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-purple-200 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                Enterprise AI Solutions
+                {t('hero.badge')}
               </div>
 
               <h1 className="hero-heading text-white">
-                AI for Good.{' '}
-                <span className="text-gradient-purple">Built for Business.</span>
+                {t('hero.title_1')}{' '}
+                <span className="text-gradient-purple">{t('hero.title_2')}</span>
               </h1>
 
               <p className="text-sm sm:text-base md:text-lg xl:text-xl text-purple-200/80 leading-relaxed max-w-xl">
-                AI is changing the world, dramatically. Our mission is to make AI bring good
-                for mankind. In this journey, we build products that help businesses and
-                communities thrive.
+                {t('hero.description')}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
@@ -66,7 +83,7 @@ const Index = () => {
                   asChild
                 >
                   <Link to="/solutions">
-                    Explore Our Products
+                    {t('hero.explore_products')}
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
@@ -75,16 +92,15 @@ const Index = () => {
                   className="w-full sm:w-auto bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:-translate-y-0.5"
                   asChild
                 >
-                  <Link to="/contact">Talk to Our Team</Link>
+                  <Link to="/contact">{t('hero.talk_to_team')}</Link>
                 </Button>
               </div>
             </div>
 
             {/* Right: Premium Visual element */}
             <div className="w-full max-w-[480px] mx-auto mt-8 lg:mt-0 lg:flex-1 relative">
-              {/* Dynamic Glow Backgrounds (Visible on all sizes) */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-[80px] animate-pulse" />
-              
+
               {/* Desktop: Artful Overlapping Layout */}
               <div className="hidden lg:block relative h-[500px]">
                 {/* Central Dashboard Card (KnowledgeHub) */}
@@ -101,7 +117,7 @@ const Index = () => {
                     </div>
                     <div className="px-2.5 py-1 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                      <span className="text-[10px] font-bold text-green-400 uppercase tracking-wider">Optimal</span>
+                      <span className="text-[10px] font-bold text-green-400 uppercase tracking-wider">{tC('badge.optimal')}</span>
                     </div>
                   </div>
                   <div className="space-y-4">
@@ -139,7 +155,7 @@ const Index = () => {
                       <Camera className="w-4 h-4 text-emerald-400" />
                       <span className="text-xs font-semibold text-white">VisionHub</span>
                     </div>
-                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">LIVE</span>
+                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">{tC('badge.live')}</span>
                   </div>
                   <div className="h-24 rounded-lg bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
                     <img src="/vision-hub.png" alt="Vision AI Feed" className="absolute inset-0 w-full h-full object-cover opacity-70" />
@@ -180,7 +196,6 @@ const Index = () => {
 
               {/* Mobile/Tablet: Full Content Cards */}
               <div className="lg:hidden flex flex-col gap-3 relative z-10">
-                {/* KnowledgeHub Card */}
                 <div className="bg-black/45 border border-white/10 rounded-2xl p-4 backdrop-blur-xl">
                   <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-3">
                     <div className="flex items-center gap-2.5">
@@ -194,7 +209,7 @@ const Index = () => {
                     </div>
                     <div className="px-2 py-0.5 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                      <span className="text-[9px] font-bold text-green-400 uppercase tracking-wider">Optimal</span>
+                      <span className="text-[9px] font-bold text-green-400 uppercase tracking-wider">{tC('badge.optimal')}</span>
                     </div>
                   </div>
                   <div className="space-y-2.5">
@@ -223,14 +238,13 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* VisionHub Card */}
                 <div className="bg-black/40 border border-white/10 rounded-2xl p-4 backdrop-blur-md">
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-2">
                       <Camera className="w-4 h-4 text-emerald-400" />
                       <span className="text-sm font-semibold text-white">VisionHub</span>
                     </div>
-                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">LIVE</span>
+                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">{tC('badge.live')}</span>
                   </div>
                   <div className="h-28 rounded-xl bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
                     <img src="/vision-hub.png" alt="Vision AI Feed" className="absolute inset-0 w-full h-full object-cover opacity-70" />
@@ -243,7 +257,6 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* SupportHub Card */}
                 <div className="bg-[#2a134a]/90 border border-purple-500/30 rounded-2xl p-4 backdrop-blur-md">
                   <div className="flex items-center gap-2.5 mb-3 border-b border-white/10 pb-3">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
@@ -271,7 +284,7 @@ const Index = () => {
 
           {/* Scroll indicator */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-purple-300/50">
-            <span className="text-xs font-medium uppercase tracking-wider">Scroll to explore</span>
+            <span className="text-xs font-medium uppercase tracking-wider">{t('hero.scroll')}</span>
             <ChevronDown className="w-5 h-5 animate-bounce" />
           </div>
         </div>
@@ -284,10 +297,10 @@ const Index = () => {
         <div className="section-container">
           <ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-              <StatsCounter end={5} suffix="+" label="AI Products" />
-              <StatsCounter end={50} suffix="+" label="Enterprise Clients" />
-              <StatsCounter end={10} suffix="+" label="Industries Served" />
-              <StatsCounter end={99} suffix=".9%" label="Platform Uptime" />
+              <StatsCounter end={5} suffix="+" label={t('stats.ai_products')} />
+              <StatsCounter end={50} suffix="+" label={t('stats.enterprise_clients')} />
+              <StatsCounter end={10} suffix="+" label={t('stats.industries_served')} />
+              <StatsCounter end={99} suffix=".9%" label={t('stats.platform_uptime')} />
             </div>
           </ScrollReveal>
         </div>
@@ -300,9 +313,9 @@ const Index = () => {
         <div className="section-container">
           <ScrollReveal>
             <SectionHeader
-              badge="Our Products"
-              title="Enterprise AI Product Suite"
-              subtitle="Purpose-built AI products designed to solve real business challenges across industries"
+              badge={t('products_section.badge')}
+              title={t('products_section.title')}
+              subtitle={t('products_section.subtitle')}
             />
           </ScrollReveal>
 
@@ -323,45 +336,23 @@ const Index = () => {
         <div className="relative z-10 section-container">
           <ScrollReveal>
             <SectionHeader
-              badge="Our Services"
-              title="AI Development Services"
-              subtitle="End-to-end AI services from strategy to deployment — we partner with you to build, train, and scale AI solutions"
+              badge={t('services_section.badge')}
+              title={t('services_section.title')}
+              subtitle={t('services_section.subtitle')}
               light
             />
           </ScrollReveal>
 
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              <ServiceCard
-                title="AI Agent Development"
-                description="Build intelligent agents that automate complex workflows, handle customer interactions, and make data-driven decisions autonomously."
-                icon={Bot}
-              />
-              <ServiceCard
-                title="AI Workflow Automation"
-                description="Design and implement AI-powered workflows that streamline operations, reduce manual effort, and accelerate business processes."
-                icon={Workflow}
-              />
-              <ServiceCard
-                title="AI API Development"
-                description="Create robust, scalable AI APIs that integrate seamlessly into your existing systems and third-party applications."
-                icon={Code2}
-              />
-              <ServiceCard
-                title="Model Training & Fine-Tuning"
-                description="Custom model training and fine-tuning on your proprietary data to achieve superior accuracy for your specific use cases."
-                icon={GraduationCap}
-              />
-              <ServiceCard
-                title="AI Product Development"
-                description="Full-cycle AI product development from ideation to launch — UX design, engineering, testing, and production deployment."
-                icon={Package}
-              />
-              <ServiceCard
-                title="Consulting & Strategy"
-                description="Strategic AI consulting to identify opportunities, build roadmaps, and guide your organization's AI transformation journey."
-                icon={Lightbulb}
-              />
+              {serviceCards.map((card, i) => (
+                <ServiceCard
+                  key={i}
+                  title={card.title}
+                  description={card.description}
+                  icon={serviceIcons[i]}
+                />
+              ))}
             </div>
           </ScrollReveal>
         </div>
@@ -378,20 +369,20 @@ const Index = () => {
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-xs font-semibold uppercase tracking-wider text-purple-700">
                 <span className="w-2 h-2 rounded-full bg-purple-500" />
-                Why Choose Us
+                {t('why_hero.badge')}
               </div>
               <h2 className="hero-heading">
-                Why Choose <span className="text-gradient-purple">Primitive AI?</span>
+                {t('why_hero.title_1')} <span className="text-gradient-purple">{t('why_hero.title_2')}</span>
               </h2>
               <p className="text-base md:text-xl text-muted-foreground leading-relaxed">
-                We are committed to delivering innovative AI solutions that drive real, measurable business value for businesses and the communities they serve.
+                {t('why_hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
                 <Button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/contact">Get Started</Link>
+                  <Link to="/contact">{t('why_hero.get_started')}</Link>
                 </Button>
                 <Button variant="outline" className="border-purple-300 text-purple-700 hover:bg-purple-50 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/solutions">Our Solutions</Link>
+                  <Link to="/solutions">{t('why_hero.our_solutions')}</Link>
                 </Button>
               </div>
             </div>
@@ -406,20 +397,22 @@ const Index = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Reasons"
-              title="What Sets Us Apart"
-              subtitle="We provide cutting-edge AI solutions tailored to your unique business needs"
+              badge={t('why_reasons.badge')}
+              title={t('why_reasons.title')}
+              subtitle={t('why_reasons.subtitle')}
               centered
             />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8">
-              <FeatureCard title="Innovative Solutions" description="We leverage the latest advancements in AI to develop innovative solutions that address your unique challenges." icon={Award} />
-              <FeatureCard title="Proven Results" description="Our solutions have a proven track record of delivering measurable results — increased efficiency, reduced costs, and improved customer satisfaction." icon={Check} />
-              <FeatureCard title="Timely Delivery" description="We are committed to delivering projects on time and within budget, without compromising on quality." icon={Clock} />
-              <FeatureCard title="Expert Team" description="Our team of AI experts has extensive experience in developing and deploying AI solutions across various industries." icon={Users} />
-              <FeatureCard title="Custom Solutions" description="We understand that every business is unique. That's why we offer custom AI solutions tailored to your specific needs and goals." icon={Wrench} />
-              <FeatureCard title="Ongoing Support" description="We provide ongoing support and maintenance to ensure your AI solutions continue to deliver value over time." icon={LifeBuoy} />
+              {whyCards.map((card, i) => (
+                <FeatureCard
+                  key={i}
+                  title={card.title}
+                  description={card.description}
+                  icon={featureIcons[i]}
+                />
+              ))}
             </div>
           </ScrollReveal>
         </div>
@@ -435,39 +428,26 @@ const Index = () => {
         <div className="relative z-10 section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Success Stories"
-              title="Real Impact, Real Results"
-              subtitle="See how organizations across industries are transforming their operations with Primitive AI"
+              badge={t('success_section.badge')}
+              title={t('success_section.title')}
+              subtitle={t('success_section.subtitle')}
               light
             />
           </ScrollReveal>
 
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-              <SuccessStoryCard
-                title="Transforming Workplace Safety in Manufacturing"
-                industry="Manufacturing"
-                summary="VisionHub's camera AI platform deployed across 12 facilities to monitor PPE compliance and human-robot interaction zones in real-time."
-                metric="40%"
-                metricLabel="Reduction in workplace incidents"
-                bgColor="from-emerald-600 to-teal-800"
-              />
-              <SuccessStoryCard
-                title="Revolutionizing Customer Support in FinTech"
-                industry="Financial Services"
-                summary="SupportHub's AI chatbot handles 80% of tier-1 support queries automatically, with seamless escalation for complex cases."
-                metric="30%"
-                metricLabel="Increase in customer satisfaction"
-                bgColor="from-blue-600 to-indigo-800"
-              />
-              <SuccessStoryCard
-                title="Accelerating Legal Operations"
-                industry="Legal"
-                summary="LegalHub automated contract generation and review, reducing document turnaround time from days to hours across 500+ templates."
-                metric="60%"
-                metricLabel="Faster document processing"
-                bgColor="from-purple-600 to-purple-900"
-              />
+              {stories.map((story, i) => (
+                <SuccessStoryCard
+                  key={i}
+                  title={story.title}
+                  industry={story.industry}
+                  summary={story.summary}
+                  metric={story.metric}
+                  metricLabel={story.metric_label}
+                  bgColor={successBgColors[i]}
+                />
+              ))}
             </div>
           </ScrollReveal>
 
@@ -478,7 +458,7 @@ const Index = () => {
                 asChild
               >
                 <Link to="/success">
-                  View All Success Stories
+                  {t('success_section.view_all')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
@@ -499,42 +479,31 @@ const Index = () => {
         <div className="section-container">
           <ScrollReveal>
             <SectionHeader
-              badge="Testimonials"
-              title="What Our Clients Say"
-              subtitle="Don't just take our word for it — hear from the leaders who trust Primitive AI"
+              badge={t('testimonials_section.badge')}
+              title={t('testimonials_section.title')}
+              subtitle={t('testimonials_section.subtitle')}
             />
           </ScrollReveal>
 
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <TestimonialCard
-                quote="The Camera AI Platform has significantly improved our workplace safety. We've seen a 40% reduction in incidents since implementation."
-                author="Kiem Nguyen"
-                role="General Manager"
-                company="RAIS Tech"
-                rating={5}
-              />
-              <TestimonialCard
-                quote="Primitive AI have helped us with AI Agent Development and deployment with high quality and fast speed. We are very satisfied with their service."
-                author="Oscar P. Ridell"
-                role="CEO"
-                company="Ymner"
-                rating={5}
-              />
-              <TestimonialCard
-                quote="Before, our 10 empolyees team can only serve 5% of our customers' support tickets. Now, we can serve all of them instantly 24/7, with high accuracy and satisfactions."
-                author="Duyen Nguyen"
-                role="CTO"
-                company="TNE"
-                rating={5}
-              />
+              {testimonials.map((item, i) => (
+                <TestimonialCard
+                  key={i}
+                  quote={item.quote}
+                  author={item.author}
+                  role={item.role}
+                  company={item.company}
+                  rating={5}
+                />
+              ))}
             </div>
           </ScrollReveal>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════
-          SECTION 8: CTA
+          SECTION 9: CTA
       ═══════════════════════════════════════════════════ */}
       <CTASection />
     </div>

@@ -2,21 +2,48 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/SectionHeader';
 import FeatureCard from '@/components/FeatureCard';
-import PricingCard from '@/components/PricingCard';
-import TestimonialCard from '@/components/TestimonialCard';
 import CTASection from '@/components/CTA';
 import GalleryCarousel from '@/components/GalleryCarousel';
 import ScrollReveal from '@/components/ScrollReveal';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Globe, Clock, BarChart, Headphones, Zap, Palette, Code, ChevronDown, CheckCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
+const FEATURE_ICONS = [Globe, MessageCircle, Headphones, Headphones, Clock, BarChart, Palette, Code, Zap];
 
 const Chatbot = () => {
-  const dashboardImages = [
-    { src: '/lovable-uploads/46cf1a4f-859d-4c73-9cc8-5fd496e2ae80.png', alt: 'SupportHub Analytics Dashboard', title: 'Analytics Dashboard', description: 'Get a complete overview of your customer support performance with real-time metrics and visualizations' },
-    { src: '/lovable-uploads/b8b1f634-740d-46da-a6a7-74b7488fd3d4.png', alt: 'SupportHub Ticket Management', title: 'Ticket Management', description: 'Efficiently manage support tickets with status tracking, priority flags, and AI-assisted responses' },
-    { src: '/lovable-uploads/51cfee29-f2f5-45d1-b1bc-6273fb432132.png', alt: 'SupportHub Communication Channels', title: 'Multi-Channel Support', description: 'Connect with customers across multiple channels — website, email, social media, and more' },
-    { src: '/lovable-uploads/33b37c77-db0f-44c7-9281-18a94b010538.png', alt: 'SupportHub Customer Management', title: 'Customer Management', description: 'Keep track of all customer interactions and history in one unified interface' },
-    { src: '/lovable-uploads/5f9395b2-7d5f-4b1e-8dab-d966c5fd751f.png', alt: 'SupportHub AI Scenarios', title: 'AI Scenarios Management', description: 'Create and manage AI knowledge base scenarios to automate responses to common customer inquiries' },
+  const { t } = useTranslation('supporthub');
+
+  const dashboardImgSrcs = [
+    '/lovable-uploads/46cf1a4f-859d-4c73-9cc8-5fd496e2ae80.png',
+    '/lovable-uploads/b8b1f634-740d-46da-a6a7-74b7488fd3d4.png',
+    '/lovable-uploads/51cfee29-f2f5-45d1-b1bc-6273fb432132.png',
+    '/lovable-uploads/33b37c77-db0f-44c7-9281-18a94b010538.png',
+    '/lovable-uploads/5f9395b2-7d5f-4b1e-8dab-d966c5fd751f.png',
+  ];
+  const dashboardImgAlts = [
+    'SupportHub Analytics Dashboard',
+    'SupportHub Ticket Management',
+    'SupportHub Communication Channels',
+    'SupportHub Customer Management',
+    'SupportHub AI Scenarios',
+  ];
+
+  const dashboardImgData = t('dashboard.images', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const dashboardImages = dashboardImgData.map((img, i) => ({
+    src: dashboardImgSrcs[i],
+    alt: dashboardImgAlts[i],
+    title: img.title,
+    description: img.description,
+  }));
+
+  const features = t('features.items', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const steps = t('how_it_works.steps', { returnObjects: true }) as Array<{ step: string; title: string; description: string }>;
+  const useCases = t('use_cases.items', { returnObjects: true }) as Array<{ title: string; description: string; points: string[] }>;
+
+  const useCaseImgs = [
+    'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=2666&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=2670&auto=format&fit=crop',
   ];
 
   return (
@@ -37,17 +64,17 @@ const Chatbot = () => {
                 SupportHub
               </div>
               <h1 className="hero-heading text-white">
-                AI Chatbot & <span className="text-gradient-purple">Voice Bot</span>
+                {t('hero.title_1')} <span className="text-gradient-purple">{t('hero.title_2')}</span>
               </h1>
               <p className="text-base md:text-lg text-purple-200/80 leading-relaxed">
-                Transform customer support and sales with a fully customizable conversational AI platform that delivers natural, helpful interactions across text and voice channels.
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/contact">Request Demo</Link>
+                  <Link to="/contact">{t('hero.request_demo')}</Link>
                 </Button>
                 <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="#pricing">View Pricing</Link>
+                  <Link to="#pricing">{t('hero.view_pricing')}</Link>
                 </Button>
               </div>
             </div>
@@ -75,9 +102,9 @@ const Chatbot = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Dashboard"
-              title="Powerful, Intuitive Interface"
-              subtitle="Manage all customer communications across every channel from one unified dashboard"
+              badge={t('dashboard.badge')}
+              title={t('dashboard.title')}
+              subtitle={t('dashboard.subtitle')}
               centered
             />
           </ScrollReveal>
@@ -87,7 +114,7 @@ const Chatbot = () => {
             </div>
             <div className="mt-8 text-center">
               <Button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full px-8 py-5 shadow-md hover:-translate-y-0.5 transition-all duration-300" asChild>
-                <Link to="/contact">Schedule a Live Demo</Link>
+                <Link to="/contact">{t('dashboard.schedule_demo')}</Link>
               </Button>
             </div>
           </ScrollReveal>
@@ -99,23 +126,17 @@ const Chatbot = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Features"
-              title="Everything You Need to Delight Customers"
-              subtitle="An AI-powered platform with extensive customization options for exceptional customer experiences"
+              badge={t('features.badge')}
+              title={t('features.title')}
+              subtitle={t('features.subtitle')}
               centered
             />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mt-8">
-              <FeatureCard title="Omnichannel Support" description="Provide consistent support across web, mobile, social media, and voice channels with a unified experience." icon={Globe} />
-              <FeatureCard title="Natural Conversations" description="Leverage advanced LLMs for human-like conversations that understand context, nuance, and user intent." icon={MessageCircle} />
-              <FeatureCard title="Voice Interaction" description="Enable natural voice interactions with speech recognition and text-to-speech for phone support." icon={Headphones} />
-              <FeatureCard title="Human Handoff" description="Seamlessly transfer complex conversations to human agents with complete context and history." icon={Headphones} />
-              <FeatureCard title="24/7 Availability" description="Provide round-the-clock support to customers regardless of time zone or business hours." icon={Clock} />
-              <FeatureCard title="Analytics Dashboard" description="Track performance metrics, conversation quality, and customer satisfaction to continuously improve." icon={BarChart} />
-              <FeatureCard title="Fully Customizable" description="Tailor the look and feel to match your brand with custom colors, fonts, and interface elements." icon={Palette} />
-              <FeatureCard title="Integration Options" description="Connect SupportHub to your existing CRM, help desk, and other business systems via robust API." icon={Code} />
-              <FeatureCard title="No-Code Configuration" description="Set up and modify chatbot flows without technical knowledge using our intuitive drag-and-drop interface." icon={Zap} />
+              {features.map((feature, i) => (
+                <FeatureCard key={i} title={feature.title} description={feature.description} icon={FEATURE_ICONS[i]} />
+              ))}
             </div>
           </ScrollReveal>
         </div>
@@ -128,24 +149,20 @@ const Chatbot = () => {
         <div className="relative z-10 section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="How It Works"
-              title="Live in Three Steps"
-              subtitle="SupportHub integrates seamlessly with your existing systems and is live within days"
+              badge={t('how_it_works.badge')}
+              title={t('how_it_works.title')}
+              subtitle={t('how_it_works.subtitle')}
               centered
               light
             />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              {[
-                { step: '01', title: 'Customization & Setup', desc: 'We tailor SupportHub to your products, services, policies, and customer interactions for accurate, helpful responses.' },
-                { step: '02', title: 'Integration', desc: 'We integrate with your existing support systems, website, mobile apps, and phone systems seamlessly.' },
-                { step: '03', title: 'Continuous Improvement', desc: 'The system learns from every interaction and improves over time with regular updates and capability enhancements.' },
-              ].map((s) => (
+              {steps.map((s) => (
                 <div key={s.step} className="bg-white/10 border border-white/10 rounded-2xl p-6 sm:p-8 text-center hover:bg-white/15 transition-colors">
                   <div className="text-4xl font-extrabold text-purple-400/60 mb-4">{s.step}</div>
                   <h3 className="text-base font-bold text-white mb-2">{s.title}</h3>
-                  <p className="text-purple-200/70 text-sm leading-relaxed">{s.desc}</p>
+                  <p className="text-purple-200/70 text-sm leading-relaxed">{s.description}</p>
                 </div>
               ))}
             </div>
@@ -158,33 +175,20 @@ const Chatbot = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Use Cases"
-              title="Versatile Across Every Industry"
-              subtitle="SupportHub powers customer support, sales, and engagement for businesses of all sizes"
+              badge={t('use_cases.badge')}
+              title={t('use_cases.title')}
+              subtitle={t('use_cases.subtitle')}
               centered
             />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              {[
-                {
-                  img: 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=2666&auto=format&fit=crop',
-                  title: 'Customer Support',
-                  desc: 'Provide instant, accurate responses to common queries, troubleshoot issues, and escalate complex problems to human agents.',
-                  points: ['Instant response to FAQs', 'Technical troubleshooting', 'Order status and tracking'],
-                },
-                {
-                  img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=2670&auto=format&fit=crop',
-                  title: 'Sales Assistance',
-                  desc: 'Guide potential customers through the sales process, recommend products, answer questions, and facilitate purchases.',
-                  points: ['Product recommendations', 'Pricing and feature comparisons', 'Guided checkout process'],
-                },
-              ].map((uc) => (
-                <div key={uc.title} className="glass-card overflow-hidden hover-lift">
-                  <img src={uc.img} alt={uc.title} className="w-full h-44 object-cover" />
+              {useCases.map((uc, i) => (
+                <div key={i} className="glass-card overflow-hidden hover-lift">
+                  <img src={useCaseImgs[i]} alt={uc.title} className="w-full h-44 object-cover" />
                   <div className="p-6">
                     <h3 className="text-lg font-bold mb-2">{uc.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">{uc.desc}</p>
+                    <p className="text-muted-foreground text-sm mb-4">{uc.description}</p>
                     <ul className="space-y-2">
                       {uc.points.map((p) => (
                         <li key={p} className="flex items-center gap-2 text-sm">
@@ -201,54 +205,12 @@ const Chatbot = () => {
         </div>
       </section>
 
-      {/* ═══ SECTION 6: TESTIMONIALS ═══ */}
-      {/* <section className="snap-section bg-gradient-to-b from-purple-50/40 to-transparent" data-theme="light">
-        <div className="section-container py-16 md:py-0">
-          <ScrollReveal>
-            <SectionHeader
-              badge="Client Stories"
-              title="What Our Clients Say"
-              subtitle="Hear from businesses that have transformed their customer interactions with SupportHub"
-              centered
-            />
-          </ScrollReveal>
-          <ScrollReveal stagger>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <TestimonialCard quote="Our customer satisfaction scores increased by 35% after implementing SupportHub. The natural conversations and customization have been game-changing." author="Sarah Thompson" role="Customer Experience Director" company="RetailGiant Inc." rating={5} />
-              <TestimonialCard quote="The voice bot reduced our call wait times by 70% while maintaining high-quality interactions. Our team can now focus on complex issues that truly need human attention." author="Michael Rodriguez" role="Support Operations Manager" company="TechSolutions Corp" rating={5} />
-              <TestimonialCard quote="Integration with our existing systems was seamless and the bot keeps getting smarter. The customization options let us align it perfectly with our brand voice." author="Jennifer Wu" role="CTO" company="E-Commerce Leaders" rating={5} />
-            </div>
-          </ScrollReveal>
-        </div>
-      </section> */}
-
-      {/* ═══ SECTION 7: PRICING ═══ */}
-      {/* <section id="pricing" className="snap-section" data-theme="light">
-        <div className="section-container py-16 md:py-0">
-          <ScrollReveal>
-            <SectionHeader
-              badge="Pricing"
-              title="SupportHub Plans"
-              subtitle="Choose the plan that works best for your business needs"
-              centered
-            />
-          </ScrollReveal>
-          <ScrollReveal stagger>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <PricingCard title="Basic" price="$999" description="Ideal for small businesses with standard customer support needs" features={["SupportHub chatbot for website", "5,000 conversations/month", "Basic customization", "Pre-built templates", "Email support", "Standard analytics", "Business hours support"]} />
-              <PricingCard title="Business" price="$2,499" description="Perfect for growing companies with multi-channel support requirements" features={["All Basic features", "Chatbot & voice bot", "25,000 conversations/month", "Advanced customization", "Custom training", "CRM integration", "Advanced analytics", "24/7 support"]} isPopular />
-              <PricingCard title="Enterprise" price="Custom" description="Tailored solution for large organizations with complex support needs" features={["All Business features", "Unlimited conversations", "Full white-label", "Multi-language support", "Custom integrations", "Dedicated account manager", "Enterprise security", "99.9% uptime SLA"]} />
-            </div>
-          </ScrollReveal>
-        </div> */}
-      {/* </section> */}
-
-      {/* ═══ SECTION 8: CTA ═══ */}
+      {/* ═══ SECTION 6: CTA ═══ */}
       <CTASection
-        title="Ready to Transform Customer Support?"
-        description="Schedule a demo and see how SupportHub can deliver exceptional customer experiences at scale."
-        primaryButtonText="Request Demo"
-        secondaryButtonText="Explore Solutions"
+        title={t('cta.title')}
+        description={t('cta.description')}
+        primaryButtonText={t('cta.primary')}
+        secondaryButtonText={t('cta.secondary')}
         primaryButtonLink="/contact"
         secondaryButtonLink="/solutions"
       />

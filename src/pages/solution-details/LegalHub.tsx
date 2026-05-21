@@ -2,34 +2,40 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/SectionHeader';
 import FeatureCard from '@/components/FeatureCard';
-import PricingCard from '@/components/PricingCard';
-import TestimonialCard from '@/components/TestimonialCard';
 import CTASection from '@/components/CTA';
 import GalleryCarousel from '@/components/GalleryCarousel';
 import ScrollReveal from '@/components/ScrollReveal';
 import { Link } from 'react-router-dom';
 import { FileText, PenTool, Lock, Search, BarChart, CheckSquare, ChevronDown, CheckCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
+const FEATURE_ICONS = [FileText, PenTool, Lock, Search, BarChart, CheckSquare];
 
 const LegalHub = () => {
-  const dashboardImages = [
-    {
-      src: "/lovable-uploads/943f3048-80fe-4d3f-84fb-df0de740391c.png",
-      alt: "LegalHub Dashboard",
-      title: "Dashboard View",
-      description: "Complete overview of your document activity, pending signatures, and recent activity"
-    },
-    {
-      src: "/lovable-uploads/74efe076-bdd8-4da0-b32e-a92f68ce896f.png",
-      alt: "LegalHub Documents View",
-      title: "Documents Management",
-      description: "Organize and access all your legal documents in one place"
-    },
-    {
-      src: "/lovable-uploads/da20ed6c-425e-4f98-8f05-47de3444a629.png",
-      alt: "LegalHub Templates View",
-      title: "Document Templates",
-      description: "Access a library of professional templates for various legal needs"
-    }
+  const { t } = useTranslation('legalhub');
+
+  const dashboardImgSrcs = [
+    '/lovable-uploads/943f3048-80fe-4d3f-84fb-df0de740391c.png',
+    '/lovable-uploads/74efe076-bdd8-4da0-b32e-a92f68ce896f.png',
+    '/lovable-uploads/da20ed6c-425e-4f98-8f05-47de3444a629.png',
+  ];
+  const dashboardImgAlts = ['LegalHub Dashboard', 'LegalHub Documents View', 'LegalHub Templates View'];
+
+  const dashboardImgData = t('dashboard.images', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const dashboardImages = dashboardImgData.map((img, i) => ({
+    src: dashboardImgSrcs[i],
+    alt: dashboardImgAlts[i],
+    title: img.title,
+    description: img.description,
+  }));
+
+  const features = t('features.items', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const steps = t('how_it_works.steps', { returnObjects: true }) as Array<{ step: string; title: string; description: string }>;
+  const useCases = t('use_cases.items', { returnObjects: true }) as Array<{ title: string; description: string; points: string[] }>;
+
+  const useCaseImgs = [
+    'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2669&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop',
   ];
 
   return (
@@ -50,18 +56,15 @@ const LegalHub = () => {
                 LegalHub
               </div>
               <h1 className="hero-heading text-white">
-                AI-Powered <span className="text-gradient-purple">Legal Documents</span>
+                {t('hero.title_1')} <span className="text-gradient-purple">{t('hero.title_2')}</span>
               </h1>
               <p className="text-base md:text-lg text-purple-200/80 leading-relaxed">
-                Streamline legal document creation, management, and e-signing with our powerful AI-driven platform designed for legal professionals.
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="/contact">Request Demo</Link>
+                  <Link to="/contact">{t('hero.request_demo')}</Link>
                 </Button>
-                {/* <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
-                  <Link to="#pricing">View Pricing</Link>
-                </Button> */}
               </div>
             </div>
 
@@ -88,20 +91,17 @@ const LegalHub = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Key Features"
-              title="Powerful Tools for Legal Professionals"
-              subtitle="Our LegalHub Platform leverages advanced AI to streamline every aspect of legal operations"
+              badge={t('features.badge')}
+              title={t('features.title')}
+              subtitle={t('features.subtitle')}
               centered
             />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mt-8">
-              <FeatureCard title="AI Document Creation" description="Generate legal documents quickly using templates and AI assistance tailored to your specific requirements." icon={FileText} />
-              <FeatureCard title="Electronic Signatures" description="Securely collect legally binding electronic signatures from all parties with audit trails and verification." icon={PenTool} />
-              <FeatureCard title="Secure Document Storage" description="Store and organize all legal documents with enterprise-grade security and compliance features." icon={Lock} />
-              <FeatureCard title="Intelligent Search" description="Quickly find specific content within your document repository using AI-powered semantic search." icon={Search} />
-              <FeatureCard title="Comprehensive Analytics" description="Track document status, review cycles, and team performance with detailed analytics and reports." icon={BarChart} />
-              <FeatureCard title="Compliance Monitoring" description="Ensure documents comply with relevant regulations and internal policies with automated checks." icon={CheckSquare} />
+              {features.map((feature, i) => (
+                <FeatureCard key={i} title={feature.title} description={feature.description} icon={FEATURE_ICONS[i]} />
+              ))}
             </div>
           </ScrollReveal>
         </div>
@@ -112,9 +112,9 @@ const LegalHub = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Dashboard"
-              title="Modern, Intuitive Interface"
-              subtitle="Manage all your legal documents from one unified, beautifully designed dashboard"
+              badge={t('dashboard.badge')}
+              title={t('dashboard.title')}
+              subtitle={t('dashboard.subtitle')}
               centered
             />
           </ScrollReveal>
@@ -133,25 +133,20 @@ const LegalHub = () => {
         <div className="relative z-10 section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="How It Works"
-              title="From Draft to Signed in Four Steps"
-              subtitle="Our LegalHub Platform seamlessly integrates into your legal workflow from day one"
+              badge={t('how_it_works.badge')}
+              title={t('how_it_works.title')}
+              subtitle={t('how_it_works.subtitle')}
               centered
               light
             />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
-              {[
-                { step: '01', title: 'Document Creation', desc: 'Create new documents from scratch or use AI-powered templates tailored to your specific legal needs.' },
-                { step: '02', title: 'Review & Collaboration', desc: 'Collaborate with team members and stakeholders to review and refine documents in real-time.' },
-                { step: '03', title: 'E-Signatures', desc: 'Securely collect legally binding electronic signatures from all required parties with full audit trails.' },
-                { step: '04', title: 'Storage & Management', desc: 'Securely store, organize, and manage all documents with powerful search and analytics capabilities.' },
-              ].map((s) => (
+              {steps.map((s) => (
                 <div key={s.step} className="bg-white/10 border border-white/10 rounded-2xl p-6 sm:p-8 text-center hover:bg-white/15 transition-colors">
                   <div className="text-4xl font-extrabold text-purple-400/60 mb-4">{s.step}</div>
                   <h3 className="text-base font-bold text-white mb-2">{s.title}</h3>
-                  <p className="text-purple-200/70 text-sm leading-relaxed">{s.desc}</p>
+                  <p className="text-purple-200/70 text-sm leading-relaxed">{s.description}</p>
                 </div>
               ))}
             </div>
@@ -164,33 +159,20 @@ const LegalHub = () => {
         <div className="section-container py-16 md:py-0">
           <ScrollReveal>
             <SectionHeader
-              badge="Use Cases"
-              title="Versatile Across Legal Operations"
-              subtitle="LegalHub powers document workflows for legal teams across industries and firm sizes"
+              badge={t('use_cases.badge')}
+              title={t('use_cases.title')}
+              subtitle={t('use_cases.subtitle')}
               centered
             />
           </ScrollReveal>
           <ScrollReveal stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              {[
-                {
-                  img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2669&auto=format&fit=crop',
-                  title: 'Contract Management',
-                  desc: 'Streamline the entire contract lifecycle from creation to renewal, with automated workflows, version control, and approval tracking.',
-                  points: ['Automated contract generation', 'Electronic signature collection', 'Renewal and expiration tracking'],
-                },
-                {
-                  img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop',
-                  title: 'Corporate Governance',
-                  desc: 'Manage board documents, resolutions, and corporate records with secure access control, audit trails, and compliance monitoring.',
-                  points: ['Board meeting management', 'Resolution tracking and approvals', 'Regulatory compliance documentation'],
-                },
-              ].map((uc) => (
-                <div key={uc.title} className="glass-card overflow-hidden hover-lift">
-                  <img src={uc.img} alt={uc.title} className="w-full h-44 object-cover" />
+              {useCases.map((uc, i) => (
+                <div key={i} className="glass-card overflow-hidden hover-lift">
+                  <img src={useCaseImgs[i]} alt={uc.title} className="w-full h-44 object-cover" />
                   <div className="p-6">
                     <h3 className="text-lg font-bold mb-2">{uc.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">{uc.desc}</p>
+                    <p className="text-muted-foreground text-sm mb-4">{uc.description}</p>
                     <ul className="space-y-2">
                       {uc.points.map((p) => (
                         <li key={p} className="flex items-center gap-2 text-sm">
@@ -207,54 +189,12 @@ const LegalHub = () => {
         </div>
       </section>
 
-      {/* ═══ SECTION 6: TESTIMONIALS ═══ */}
-      {/* <section className="snap-section bg-gradient-to-b from-purple-50/40 to-transparent" data-theme="light">
-        <div className="section-container py-16 md:py-0">
-          <ScrollReveal>
-            <SectionHeader
-              badge="Client Stories"
-              title="What Our Clients Say"
-              subtitle="Hear from legal professionals who have transformed their operations with LegalHub"
-              centered
-            />
-          </ScrollReveal>
-          <ScrollReveal stagger>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <TestimonialCard quote="The LegalHub Platform has reduced our contract processing time by 65%. The AI document generation and e-signature features have been transformative for our legal department." author="Daniel Martinez" role="General Counsel" company="Global Enterprises" rating={5} />
-              <TestimonialCard quote="The platform's compliance monitoring features ensure we stay on top of regulatory requirements. It's like having an extra compliance officer on the team." author="Emily Johnson" role="Compliance Director" company="Financial Services Inc." rating={5} />
-              <TestimonialCard quote="We've seen a significant ROI since implementing LegalHub. Document retrieval time has decreased by 80%, and our team can focus on high-value legal work." author="Robert Chang" role="Legal Operations Manager" company="Tech Innovations Corp" rating={5} />
-            </div>
-          </ScrollReveal>
-        </div>
-      </section> */}
-
-      {/* ═══ SECTION 7: PRICING ═══ */}
-      {/* <section id="pricing" className="snap-section" data-theme="light">
-        <div className="section-container py-16 md:py-0">
-          <ScrollReveal>
-            <SectionHeader
-              badge="Pricing"
-              title="LegalHub Plans"
-              subtitle="Choose the plan that works best for your legal operations"
-              centered
-            />
-          </ScrollReveal>
-          <ScrollReveal stagger>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <PricingCard title="Essential" price="$1,299" description="Ideal for small legal teams and solo practitioners" features={["Up to 5 users", "Basic document templates", "E-signature capabilities", "Secure document storage", "Basic search functionality", "Email and chat support"]} />
-              <PricingCard title="Professional" price="$2,799" description="Perfect for mid-sized legal departments with advanced needs" features={["Up to 20 users", "All Essential features", "Advanced AI document generation", "Custom template creation", "Advanced search and analytics", "Compliance monitoring", "Priority support"]} isPopular />
-              <PricingCard title="Enterprise" price="Custom" description="Tailored solution for large legal teams with complex requirements" features={["Unlimited users", "All Professional features", "Custom integrations", "Advanced security and compliance", "Custom workflows and automation", "Dedicated account manager", "24/7 premium support"]} />
-            </div>
-          </ScrollReveal>
-        </div>
-      </section> */}
-
-      {/* ═══ SECTION 8: CTA ═══ */}
+      {/* ═══ SECTION 6: CTA ═══ */}
       <CTASection
-        title="Ready to Transform Your Legal Operations?"
-        description="Schedule a demo and see how LegalHub can streamline document workflows and accelerate your legal team."
-        primaryButtonText="Request Demo"
-        secondaryButtonText="Explore Solutions"
+        title={t('cta.title')}
+        description={t('cta.description')}
+        primaryButtonText={t('cta.primary')}
+        secondaryButtonText={t('cta.secondary')}
         primaryButtonLink="/contact"
         secondaryButtonLink="/solutions"
       />

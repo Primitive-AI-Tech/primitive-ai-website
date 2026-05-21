@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title_1": "Não Bộ AI",
+    "title_2": "Của Tổ Chức Bạn",
+    "description": "KnowledgeHub tập trung hóa tri thức của tổ chức và giúp tìm kiếm tức thì bằng AI — biến những tài liệu rải rác thành một lớp trí tuệ mạnh mẽ, có thể truy vấn.",
+    "open_app": "Mở KnowledgeHub",
+    "request_demo": "Đặt Lịch Demo"
+  },
+  "features": {
+    "badge": "Tính Năng",
+    "title": "Tất Cả Những Gì Bạn Cần Để Quản Lý Tri Thức Quy Mô Lớn",
+    "subtitle": "KnowledgeHub kết hợp AI mạnh mẽ với độ tin cậy cấp doanh nghiệp để tri thức của tổ chức bạn phát huy tác dụng",
+    "items": [
+      { "title": "Tìm Kiếm Ngữ Nghĩa AI", "description": "Tìm kiếm ngữ nghĩa hiểu được ngữ cảnh và ý định — không chỉ từ khóa — để nhanh chóng tìm ra tri thức liên quan nhất." },
+      { "title": "Đồ Thị Tri Thức", "description": "Tự động lập bản đồ mối quan hệ giữa tài liệu, chủ đề và chuyên gia để khám phá các kết nối ẩn trong tổ chức." },
+      { "title": "Trí Tuệ Tài Liệu", "description": "Nhập PDF, Docs, slide, wiki và nhiều hơn nữa. KnowledgeHub phân tích cú pháp, lập chỉ mục và làm cho mọi tài liệu có thể truy vấn." },
+      { "title": "Cộng Tác Nhóm", "description": "Chia sẻ cơ sở tri thức giữa các nhóm với kiểm soát quyền truy cập chi tiết, lịch sử phiên bản và chú thích cộng tác." },
+      { "title": "Bảo Mật Doanh Nghiệp", "description": "Tuân thủ SOC-2 với mã hóa đầu cuối. Tri thức độc quyền của bạn không bao giờ rời khỏi môi trường an toàn." },
+      { "title": "Câu Trả Lời Tức Thì", "description": "Đặt câu hỏi bằng ngôn ngữ tự nhiên và nhận câu trả lời chính xác kèm trích dẫn nguồn — không cần lục tìm trong thư mục." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Ứng Dụng Thực Tế",
+    "title": "Được Xây Dựng Cho Mọi Thách Thức Tri Thức",
+    "subtitle": "Từ wiki nội bộ đến hỗ trợ khách hàng — KnowledgeHub thích nghi với cách các nhóm của bạn thực sự làm việc",
+    "try_free": "Dùng Thử KnowledgeHub Miễn Phí",
+    "items": [
+      { "title": "Cơ Sở Tri Thức Nội Bộ", "description": "Đào tạo nhân viên mới nhanh hơn và giảm các câu hỏi lặp đi lặp lại bằng cách làm cho kiến thức chuyên môn của công ty trở nên tức thì." },
+      { "title": "Hỗ Trợ Khách Hàng", "description": "Trang bị cho nhân viên hỗ trợ câu trả lời tức thì từ tài liệu sản phẩm, FAQ và các giải pháp trước đây để giải quyết trường hợp nhanh hơn 3 lần." },
+      { "title": "Nghiên Cứu & Phân Tích", "description": "Tổng hợp thông tin chi tiết từ hàng nghìn tài liệu trong vài giây, đẩy nhanh nghiên cứu và phân tích cạnh tranh." }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn Sàng Khai Thác Tri Thức Tổ Chức?",
+    "description": "Tham gia các nhóm đang sử dụng KnowledgeHub để làm cho mọi tài liệu, cuộc trò chuyện và thông tin chi tiết trở nên tức thì.",
+    "primary": "Mở KnowledgeHub",
+    "secondary": "Liên Hệ Chúng Tôi"
+  }
+}

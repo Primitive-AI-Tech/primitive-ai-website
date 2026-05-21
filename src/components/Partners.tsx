@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionHeader from './SectionHeader';
 import ScrollReveal from './ScrollReveal';
+import { useTranslation } from 'react-i18next';
 
 const partners = [
   { name: 'Qualcomm', logo: '/images/partners/Qualcomm.png', website: 'https://www.qualcomm.com/' },
@@ -18,6 +19,7 @@ const partners = [
 ];
 
 const Partners = () => {
+  const { t } = useTranslation('home');
   // Split partners into 3 groups for the rows
   const row1 = [...partners.slice(0, 4), ...partners.slice(0, 4), ...partners.slice(0, 4)];
   const row2 = [...partners.slice(4, 8), ...partners.slice(4, 8), ...partners.slice(4, 8)];
@@ -51,9 +53,9 @@ const Partners = () => {
       <div className="section-container mb-8 md:mb-12">
         <ScrollReveal>
           <SectionHeader
-            badge="Institutional Trust"
-            title="Trusted by Industry Leaders"
-            subtitle="Partnering with global technology pioneers to drive the future of Enterprise AI"
+            badge={t('partners.badge')}
+            title={t('partners.title')}
+            subtitle={t('partners.subtitle')}
             centered
           />
         </ScrollReveal>
