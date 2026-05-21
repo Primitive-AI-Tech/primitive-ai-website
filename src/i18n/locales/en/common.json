@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "products_services": "Products & Services",
+    "products": "Products",
+    "services": "Services",
+    "view_all_products": "View All Products →",
+    "view_all_services": "View All Services →",
+    "success_stories": "Success Stories",
+    "about": "About",
+    "contact_us": "Contact Us",
+    "products_list": {
+      "support_hub_desc": "AI-powered customer support platform",
+      "knowledge_hub_desc": "Enterprise knowledge management & AI retrieval",
+      "vision_hub_desc": "Intelligent visual monitoring & Camera AI",
+      "family_hub_desc": "Family knowledge preservation & memories",
+      "legal_hub_desc": "Legal document generation & management"
+    },
+    "services_list": {
+      "ai_agent_dev": "AI Agent Development",
+      "ai_workflow": "AI Workflow Automation",
+      "ai_api": "AI API Development",
+      "model_training": "Model Training & Fine-Tuning",
+      "ai_product_dev": "AI Product Development",
+      "consulting": "Consulting & Strategy"
+    }
+  },
+  "footer": {
+    "tagline": "AI is changing the world. Our mission is to make AI bring good for mankind — building products that help businesses and communities thrive.",
+    "products": "Products",
+    "services": "Services",
+    "company": "Company",
+    "about_us": "About Us",
+    "success_stories": "Success Stories",
+    "contact": "Contact",
+    "copyright": "© {{year}} Primitive AI. All rights reserved.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "cta": {
+    "default_title": "Ready to Transform Your Business with AI?",
+    "default_description": "Contact us today to learn how Primitive AI can help your organization harness the power of artificial intelligence.",
+    "default_primary": "Get Started",
+    "default_secondary": "Request Demo"
+  },
+  "languages": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "learn_more": "Learn More",
+  "badge": {
+    "soon": "Soon",
+    "live": "LIVE",
+    "optimal": "Optimal",
+    "beta": "Beta"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "badge": "Sản phẩm & Dịch vụ",
+    "title_1": "Giải pháp AI cho",
+    "title_2": "Doanh nghiệp Hiện đại",
+    "description": "Bộ giải pháp AI toàn diện của chúng tôi giúp doanh nghiệp cải thiện an toàn, nâng cao trải nghiệm khách hàng, tối ưu vận hành và thúc đẩy đổi mới.",
+    "scroll": "Cuộn để khám phá"
+  },
+  "products_section": {
+    "badge": "Sản phẩm của chúng tôi",
+    "title": "Bộ Sản phẩm AI Doanh nghiệp",
+    "subtitle": "Các sản phẩm AI được thiết kế chuyên biệt để giải quyết thách thức kinh doanh thực tế trong nhiều ngành",
+    "items": [
+      {
+        "name": "SupportHub",
+        "tagline": "Hỗ trợ Khách hàng bằng AI",
+        "description": "Cung cấp dịch vụ hỗ trợ khách hàng xuất sắc với nền tảng chatbot và voice bot thông minh. Hiểu ngôn ngữ tự nhiên, hỗ trợ đa kênh và chuyển giao liền mạch."
+      },
+      {
+        "name": "KnowledgeHub",
+        "tagline": "Quản lý Tri thức Doanh nghiệp",
+        "description": "Tập trung hóa, tổ chức và truy xuất tri thức tổ chức với tìm kiếm bằng AI, phân tích tài liệu và đề xuất thông minh."
+      },
+      {
+        "name": "VisionHub",
+        "tagline": "Giám sát Hình ảnh Thông minh",
+        "description": "Nâng cao an toàn lao động với Camera AI thời gian thực cho tương tác người-robot, tuân thủ PPE và phát hiện hành vi bất thường trên toàn cơ sở."
+      },
+      {
+        "name": "FamilyHub",
+        "tagline": "Lưu giữ Tri thức Gia đình",
+        "description": "Bảo tồn và chia sẻ câu chuyện, ký ức và trí tuệ gia đình qua nhiều thế hệ với tổ chức tri thức và kể chuyện bằng AI."
+      },
+      {
+        "name": "LegalHub",
+        "tagline": "Vận hành Pháp lý bằng AI",
+        "description": "Tối ưu hóa tạo lập, quản lý và ký điện tử văn bản pháp lý với tự động hóa thông minh, kiểm tra tuân thủ và tạo mẫu tài liệu."
+      }
+    ]
+  },
+  "services_section": {
+    "badge": "Dịch vụ của chúng tôi",
+    "title": "Dịch vụ Phát triển AI",
+    "subtitle": "Dịch vụ AI toàn diện từ chiến lược đến triển khai — chúng tôi đồng hành cùng bạn để xây dựng, huấn luyện và mở rộng giải pháp AI",
+    "cards": [
+      {
+        "title": "Phát triển AI Agent",
+        "description": "Xây dựng các agent thông minh tự động hóa quy trình phức tạp, xử lý tương tác khách hàng và đưa ra quyết định dựa trên dữ liệu."
+      },
+      {
+        "title": "Tự động hóa Quy trình AI",
+        "description": "Thiết kế và triển khai quy trình làm việc bằng AI giúp tối ưu vận hành, giảm công việc thủ công và đẩy nhanh tiến độ."
+      },
+      {
+        "title": "Phát triển AI API",
+        "description": "Tạo AI API mạnh mẽ, có thể mở rộng, tích hợp liền mạch vào hệ thống hiện có và các ứng dụng bên thứ ba."
+      },
+      {
+        "title": "Huấn luyện & Tinh chỉnh Mô hình",
+        "description": "Huấn luyện và tinh chỉnh mô hình tùy chỉnh trên dữ liệu nội bộ để đạt độ chính xác vượt trội cho các trường hợp cụ thể."
+      },
+      {
+        "title": "Phát triển Sản phẩm AI",
+        "description": "Phát triển sản phẩm AI toàn chu trình từ ý tưởng đến ra mắt — thiết kế UX, kỹ thuật, kiểm thử và triển khai."
+      },
+      {
+        "title": "Tư vấn & Chiến lược",
+        "description": "Tư vấn chiến lược AI để xác định cơ hội, xây dựng lộ trình và hướng dẫn hành trình chuyển đổi AI của tổ chức."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn sàng Nâng cao Doanh nghiệp với AI?",
+    "description": "Liên hệ ngay hôm nay để đặt lịch demo và tìm hiểu cách giải pháp AI của chúng tôi có thể chuyển đổi hoạt động của bạn.",
+    "primary": "Yêu cầu Demo",
+    "secondary": "Tại sao chọn chúng tôi?"
+  }
+}

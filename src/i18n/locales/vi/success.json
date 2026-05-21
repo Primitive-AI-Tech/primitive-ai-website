@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "badge": "Câu chuyện Thành công",
+    "title_1": "Tác động Thực tế,",
+    "title_2": "Kết quả Thực sự",
+    "description": "Xem cách các tổ chức trong nhiều ngành sử dụng Primitive AI để giảm chi phí, đẩy nhanh vận hành và chuyển đổi doanh nghiệp.",
+    "highlights": [
+      { "value": "40–70%", "label": "Hiệu quả tăng trong các dự án" },
+      { "value": "50+", "label": "Khách hàng doanh nghiệp" },
+      { "value": "10+", "label": "Ngành được chuyển đổi" }
+    ]
+  },
+  "filters": {
+    "all": "Tất cả",
+    "manufacturing": "Sản xuất",
+    "financial_services": "Dịch vụ Tài chính",
+    "legal": "Pháp lý",
+    "retail": "Bán lẻ",
+    "healthcare": "Chăm sóc Sức khỏe"
+  },
+  "no_stories": "Chưa có câu chuyện nào cho ngành này.",
+  "show_all": "Hiển thị tất cả câu chuyện",
+  "spotlight": {
+    "badge": "Nghiên cứu Điển hình Nổi bật",
+    "challenge": "Thách thức",
+    "solution": "Giải pháp của chúng tôi",
+    "discuss": "Thảo luận Thách thức của bạn"
+  },
+  "cta": {
+    "title": "Sẵn sàng viết Câu chuyện Thành công của riêng bạn?",
+    "description": "Liên hệ để khám phá cách Primitive AI có thể tạo ra tác động có thể đo lường cho tổ chức của bạn.",
+    "primary": "Bắt đầu Cuộc trò chuyện",
+    "secondary": "Xem Giải pháp của chúng tôi"
+  },
+  "stories": [
+    {
+      "title": "Chuyển đổi An toàn Lao động trong Sản xuất",
+      "industry": "Sản xuất",
+      "client": "Nhà sản xuất Phụ tùng Ô tô Toàn cầu",
+      "product": "VisionHub",
+      "summary": "Nền tảng Camera AI của VisionHub được triển khai tại 12 cơ sở để giám sát tuân thủ PPE và khu vực tương tác người-robot theo thời gian thực.",
+      "challenge": "Với hàng trăm công nhân làm việc bên cạnh robot công nghiệp tại 12 cơ sở, các cuộc kiểm tra an toàn thủ công mang tính phản ứng, thiếu nhất quán và không thể mở rộng. Sự cố gây thiệt hại lớn cả về người và tài chính.",
+      "solution": "Triển khai VisionHub trên tất cả cơ sở với phát hiện PPE theo thời gian thực, giám sát khu vực hạn chế và cảnh báo bất thường hành vi được gửi trực tiếp đến quản lý an toàn qua điện thoại.",
+      "metric": "40%",
+      "metric_label": "Giảm sự cố lao động",
+      "stats": [
+        { "value": "40%", "label": "Ít sự cố hơn" },
+        { "value": "12", "label": "Cơ sở được bao phủ" },
+        { "value": "98%", "label": "Độ chính xác phát hiện PPE" }
+      ]
+    },
+    {
+      "title": "Cách mạng hóa Hỗ trợ Khách hàng trong FinTech",
+      "industry": "Dịch vụ Tài chính",
+      "client": "Ngân hàng Số Hàng đầu",
+      "product": "SupportHub",
+      "summary": "Chatbot AI của SupportHub xử lý tự động 80% yêu cầu hỗ trợ cấp 1, với chuyển giao liền mạch cho các trường hợp phức tạp và điểm CSAT cải thiện đáng kể.",
+      "challenge": "Ngân hàng số đang phát triển nhanh gặp khó khăn với khối lượng hỗ trợ — thời gian chờ dài, kiệt sức nhân viên và chất lượng trả lời không nhất quán đang gây mất khách hàng.",
+      "solution": "Tích hợp SupportHub trên web chat, ứng dụng di động và WhatsApp. AI xử lý các yêu cầu về tài khoản, giao dịch và FAQ, chuyển giao các trường hợp đặc biệt cho nhân viên với đầy đủ ngữ cảnh.",
+      "metric": "30%",
+      "metric_label": "Tăng sự hài lòng khách hàng",
+      "stats": [
+        { "value": "80%", "label": "Yêu cầu được tự động hóa" },
+        { "value": "30%", "label": "Tăng CSAT" },
+        { "value": "4×", "label": "Giải quyết nhanh hơn" }
+      ]
+    },
+    {
+      "title": "Đẩy nhanh Hoạt động Pháp lý ở Quy mô Lớn",
+      "industry": "Pháp lý",
+      "client": "Công ty Luật Hàng đầu",
+      "product": "LegalHub",
+      "summary": "LegalHub tự động hóa tạo lập và xem xét hợp đồng, giảm thời gian xử lý từ ngày xuống giờ trên 500+ mẫu hợp đồng.",
+      "challenge": "Các luật sư trẻ dành 60%+ thời gian cho việc soạn thảo và xem xét hợp đồng thông thường, hạn chế năng lực của công ty cho công việc tư vấn giá trị cao.",
+      "solution": "Triển khai LegalHub với 500+ mẫu hợp đồng, thư viện điều khoản và quy tắc tuân thủ của công ty. Luật sư xem xét bản thảo do AI tạo ra thay vì soạn thảo từ đầu.",
+      "metric": "60%",
+      "metric_label": "Xử lý tài liệu nhanh hơn",
+      "stats": [
+        { "value": "60%", "label": "Nhanh hơn" },
+        { "value": "500+", "label": "Mẫu được tự động hóa" },
+        { "value": "3×", "label": "Xử lý nhiều vụ hơn" }
+      ]
+    },
+    {
+      "title": "Chuyển đổi Quản lý Tri thức Doanh nghiệp",
+      "industry": "Bán lẻ",
+      "client": "Chuỗi Bán lẻ Khu vực",
+      "product": "KnowledgeHub",
+      "summary": "KnowledgeHub hợp nhất 10 năm kiến thức sản phẩm, dữ liệu nhà cung cấp và quy trình vận hành vào một hệ thống có thể tìm kiếm bằng AI cho 2.000+ nhân viên.",
+      "challenge": "Kiến thức bị phân tán trên SharePoint, chuỗi email và trong đầu từng nhân viên. Nhân viên mới mất nhiều tuần để làm quen, nhân viên có kinh nghiệm mất nhiều giờ trả lời cùng một câu hỏi lặp đi lặp lại.",
+      "solution": "KnowledgeHub tiếp nhận tất cả tài liệu và wiki hiện có. Nhân viên đặt câu hỏi bằng ngôn ngữ tự nhiên và nhận câu trả lời tức thì, có trích dẫn nguồn — từ chính sách cửa hàng đến liên hệ nhà cung cấp.",
+      "metric": "70%",
+      "metric_label": "Giảm thời gian tìm kiếm tri thức",
+      "stats": [
+        { "value": "70%", "label": "Ít thời gian tìm kiếm hơn" },
+        { "value": "2.000+", "label": "Nhân viên được hỗ trợ" },
+        { "value": "50%", "label": "Onboarding nhanh hơn" }
+      ]
+    },
+    {
+      "title": "Kiểm soát Chất lượng bằng AI trong Điện tử",
+      "industry": "Sản xuất",
+      "client": "Nhà sản xuất Linh kiện Điện tử",
+      "product": "VisionHub",
+      "summary": "Kiểm tra AI hình ảnh thay thế kiểm tra QC thủ công, phát hiện lỗi nhanh hơn 10 lần với độ chính xác cao hơn người kiểm tra trên dây chuyền sản xuất.",
+      "challenge": "QC thủ công là điểm nghẽn cổ chai trên dây chuyền — chậm, tốn kém và dễ bỏ sót lỗi do mệt mỏi trong các lần chạy khối lượng lớn.",
+      "solution": "Camera VisionHub giám sát từng đơn vị trên dây chuyền sản xuất, phát hiện lỗi vi mô theo thời gian thực và kích hoạt từ chối tự động với ghi chép đầy đủ.",
+      "metric": "99,2%",
+      "metric_label": "Độ chính xác phát hiện lỗi",
+      "stats": [
+        { "value": "99,2%", "label": "Độ chính xác phát hiện" },
+        { "value": "10×", "label": "Nhanh hơn QC thủ công" },
+        { "value": "35%", "label": "Giảm lỗi lọt qua" }
+      ]
+    },
+    {
+      "title": "Lưu giữ Câu chuyện Gia đình cho Quỹ Quốc gia",
+      "industry": "Chăm sóc Sức khỏe",
+      "client": "Quỹ Chăm sóc Người cao tuổi",
+      "product": "FamilyHub",
+      "summary": "FamilyHub được triển khai tại các cơ sở chăm sóc người cao tuổi để giúp cư dân ghi lại câu chuyện cuộc đời, chia sẻ ký ức với gia đình và duy trì sự gắn kết nhận thức qua hồi tưởng.",
+      "challenge": "Nhiều cư dân có câu chuyện cuộc đời phong phú có nguy cơ bị mất đi. Gia đình muốn kết nối nhưng sống xa. Nhân viên thiếu thời gian cho các buổi kể chuyện có cấu trúc.",
+      "solution": "Các cuộc trò chuyện AI có hướng dẫn của FamilyHub giúp cư dân ghi lại câu chuyện bằng lời của chính họ. Gia đình nhận sách ký ức được định dạng đẹp và có thể thêm đóng góp từ xa.",
+      "metric": "92%",
+      "metric_label": "Điểm hài lòng gia đình",
+      "stats": [
+        { "value": "92%", "label": "Hài lòng gia đình" },
+        { "value": "1.200+", "label": "Câu chuyện được lưu giữ" },
+        { "value": "85%", "label": "Tỷ lệ tham gia của cư dân" }
+      ]
+    }
+  ]
+}

@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +54,18 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
+				info: {
+					DEFAULT: 'hsl(var(--info))',
+					foreground: 'hsl(var(--info-foreground))'
 				},
 				purple: {
 					50: '#f5f3ff',
@@ -106,7 +121,15 @@ export default {
 				},
 				'bounce-subtle': {
 					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(1px)' },
+					'50%': { transform: 'translateY(-2px)' },
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 0 0 hsl(260 80% 60% / 0.4)' },
+					'50%': { boxShadow: '0 0 20px 10px hsl(260 80% 60% / 0.1)' },
+				},
+				'spin-slow': {
+					from: { transform: 'rotate(0deg)' },
+					to: { transform: 'rotate(360deg)' },
 				}
 			},
 			animation: {
@@ -118,7 +141,9 @@ export default {
 				'slide-in-right': 'slide-in-right 0.5s ease-out forwards',
 				'slide-in-left': 'slide-in-left 0.5s ease-out forwards',
 				'scale-in': 'scale-in 0.5s ease-out forwards',
-				'bounce-subtle': 'bounce-subtle 4s ease-in-out infinite'
+				'bounce-subtle': 'bounce-subtle 4s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+				'spin-slow': 'spin-slow 20s linear infinite',
 			},
 		},
 	},

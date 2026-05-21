@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "홈",
+    "products_services": "제품 및 서비스",
+    "products": "제품",
+    "services": "서비스",
+    "view_all_products": "모든 제품 보기 →",
+    "view_all_services": "모든 서비스 보기 →",
+    "success_stories": "성공 사례",
+    "about": "회사 소개",
+    "contact_us": "문의하기",
+    "products_list": {
+      "support_hub_desc": "AI 기반 고객 지원 플랫폼",
+      "knowledge_hub_desc": "기업 지식 관리 및 AI 검색",
+      "vision_hub_desc": "지능형 영상 모니터링 및 카메라 AI",
+      "family_hub_desc": "가족 지식 보존 및 기억 저장",
+      "legal_hub_desc": "법률 문서 생성 및 관리"
+    },
+    "services_list": {
+      "ai_agent_dev": "AI 에이전트 개발",
+      "ai_workflow": "AI 워크플로우 자동화",
+      "ai_api": "AI API 개발",
+      "model_training": "모델 학습 및 파인튜닝",
+      "ai_product_dev": "AI 제품 개발",
+      "consulting": "컨설팅 및 전략"
+    }
+  },
+  "footer": {
+    "tagline": "AI가 세상을 변화시키고 있습니다. 우리의 사명은 AI가 인류에게 선을 가져오도록 하는 것입니다 — 기업과 커뮤니티가 번영할 수 있도록 돕는 제품을 구축합니다.",
+    "products": "제품",
+    "services": "서비스",
+    "company": "회사",
+    "about_us": "회사 소개",
+    "success_stories": "성공 사례",
+    "contact": "문의하기",
+    "copyright": "© {{year}} Primitive AI. 모든 권리 보유.",
+    "terms": "서비스 약관",
+    "privacy": "개인정보 처리방침"
+  },
+  "cta": {
+    "default_title": "AI로 비즈니스를 혁신할 준비가 되셨나요?",
+    "default_description": "오늘 Primitive AI에 문의하여 인공지능의 힘을 어떻게 활용할 수 있는지 알아보세요.",
+    "default_primary": "시작하기",
+    "default_secondary": "데모 신청"
+  },
+  "languages": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "learn_more": "더 알아보기",
+  "badge": {
+    "soon": "출시 예정",
+    "live": "실시간",
+    "optimal": "최적",
+    "beta": "베타"
+  }
+}

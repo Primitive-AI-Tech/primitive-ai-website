@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "badge": "Câu chuyện của chúng tôi",
+    "title_1": "Giới thiệu",
+    "title_2": "Primitive AI",
+    "description": "Chúng tôi đang thực hiện sứ mệnh chuyển đổi doanh nghiệp thông qua các giải pháp AI đổi mới, giải quyết vấn đề thực tế và mang lại điều tốt đẹp cho nhân loại.",
+    "get_in_touch": "Liên hệ ngay",
+    "why_choose_us": "Tại sao chọn chúng tôi"
+  },
+  "story": {
+    "badge": "Nguồn gốc",
+    "title": "Câu chuyện của chúng tôi",
+    "subtitle": "Từ một ý tưởng đến nhà cung cấp giải pháp AI hàng đầu",
+    "p1": "Primitive AI được thành lập năm 2020 bởi Đoàn Nguyễn, một chuyên gia AI với nhiều năm kinh nghiệm trong lĩnh vực trí tuệ nhân tạo và robot. Từ một tầm nhìn, công ty đã nhanh chóng phát triển thành nhà cung cấp giải pháp AI toàn diện phục vụ khách hàng trên toàn cầu.",
+    "p2": "Hành trình của chúng tôi bắt đầu từ một niềm tin đơn giản: công nghệ AI tiên tiến phải được tiếp cận bởi mọi doanh nghiệp, dù lớn hay nhỏ. Chúng tôi đã mở rộng danh mục sản phẩm để bao gồm các giải pháp về an toàn lao động, hỗ trợ khách hàng, vận hành pháp lý và xử lý tài liệu — tất cả đều được hỗ trợ bởi các mô hình ngôn ngữ lớn tiên tiến.",
+    "p3": "Ngày nay, Primitive AI là công ty tự tài trợ với đội ngũ chuyên gia AI, kỹ sư và chuyên gia ngành công nghiệp tận tụy phát triển các giải pháp đổi mới tạo ra giá trị kinh doanh thực sự.",
+    "img_alt": "Đội ngũ Primitive AI"
+  },
+  "values": {
+    "badge": "Nguyên tắc Cốt lõi",
+    "title": "Giá trị của chúng tôi",
+    "subtitle": "Những nguyên tắc định hướng mọi việc chúng tôi làm và xây dựng",
+    "items": [
+      {
+        "title": "Khách hàng là trên hết",
+        "description": "Chúng tôi ưu tiên thành công của khách hàng và xây dựng các giải pháp giải quyết những thách thức kinh doanh thực sự với kết quả có thể đo lường."
+      },
+      {
+        "title": "Xuất sắc",
+        "description": "Chúng tôi phấn đấu đạt sự xuất sắc trong mọi việc, từ nghiên cứu AI tiên tiến đến hỗ trợ và triển khai cho khách hàng."
+      },
+      {
+        "title": "Đổi mới",
+        "description": "Chúng tôi không ngừng đổi mới và vượt qua các giới hạn của những gì có thể với AI để cung cấp các giải pháp mang tính chuyển đổi."
+      },
+      {
+        "title": "Trách nhiệm",
+        "description": "Chúng tôi phát triển và triển khai AI có trách nhiệm, tập trung vào đạo đức, bảo mật và tác động tích cực đến xã hội."
+      }
+    ]
+  },
+  "milestones": {
+    "badge": "Dòng thời gian",
+    "title": "Hành trình của chúng tôi",
+    "subtitle": "Những cột mốc quan trọng trong sự phát triển của công ty",
+    "items": [
+      {
+        "year": "Tháng 1/2020",
+        "title": "Thành lập Công ty",
+        "description": "Primitive AI được thành lập với sứ mệnh làm cho AI mang lại điều tốt đẹp cho nhân loại — xây dựng sản phẩm giúp doanh nghiệp và cộng đồng phát triển."
+      },
+      {
+        "year": "Tháng 8/2020",
+        "title": "VisionHub — Ra mắt Sản phẩm đầu tiên",
+        "description": "Ra mắt nền tảng Camera AI hàng đầu để giám sát an toàn lao động theo thời gian thực, tuân thủ PPE và phát hiện tương tác người-robot tại các cơ sở sản xuất và xây dựng."
+      },
+      {
+        "year": "Tháng 6/2023",
+        "title": "Ra mắt SupportHub",
+        "description": "Ra mắt nền tảng chatbot và voice bot được hỗ trợ bởi LLM, giúp doanh nghiệp tự động hóa hội thoại hỗ trợ khách hàng và bán hàng với độ chính xác cao."
+      },
+      {
+        "year": "Tháng 1/2024",
+        "title": "KnowledgeHub & Dịch vụ AI",
+        "description": "Ra mắt KnowledgeHub — nền tảng quản lý tri thức doanh nghiệp và xử lý tài liệu thông minh. Đồng thời khởi động các dịch vụ phát triển AI chuyên nghiệp bao gồm Phát triển AI Agent, Tự động hóa Quy trình và Tinh chỉnh Mô hình."
+      },
+      {
+        "year": "Tháng 2/2025",
+        "title": "LegalHub — Beta",
+        "description": "Ra mắt LegalHub dạng beta — nền tảng AI cho soạn thảo, xem xét và quản lý chữ ký điện tử văn bản pháp lý. Những người dùng đầu tiên đã rút ngắn thời gian xử lý tài liệu từ ngày xuống giờ. Phiên bản chính thức sắp ra mắt."
+      },
+      {
+        "year": "2025",
+        "title": "FamilyHub & Mở rộng Toàn cầu",
+        "description": "Ra mắt FamilyHub để đưa AI lưu giữ tri thức đến với cá nhân và gia đình. Mở rộng cơ sở khách hàng doanh nghiệp sang Châu Á-Thái Bình Dương và Bắc Mỹ, phục vụ 10+ ngành với danh mục sản phẩm và dịch vụ AI đầy đủ."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Tham gia cùng chúng tôi trong Sứ mệnh",
+    "description": "Chúng tôi luôn tìm kiếm những người tài năng chia sẻ niềm đam mê AI và cam kết với sự xuất sắc.",
+    "primary": "Liên hệ chúng tôi",
+    "secondary": "Xem cơ hội nghề nghiệp"
+  }
+}

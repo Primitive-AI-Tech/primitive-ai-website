@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title_1": "您组织的",
+    "title_2": "AI大脑",
+    "description": "KnowledgeHub将您组织的知识集中化，并通过AI实现即时搜索 — 将分散的文档转化为强大的、可查询的智能层。",
+    "open_app": "打开KnowledgeHub",
+    "request_demo": "申请演示"
+  },
+  "features": {
+    "badge": "产品功能",
+    "title": "大规模知识管理所需的一切",
+    "subtitle": "KnowledgeHub将强大的AI与企业级可靠性相结合，让您组织的知识真正发挥价值",
+    "items": [
+      { "title": "AI语义搜索", "description": "理解上下文和意图的语义搜索（不仅仅是关键词），即时呈现最相关的知识。" },
+      { "title": "知识图谱", "description": "自动绘制文档、主题和专家之间的关系，挖掘组织中隐藏的连接。" },
+      { "title": "文档智能", "description": "接入PDF、文档、幻灯片、Wiki等多种格式。KnowledgeHub解析、索引并让每个文档都可查询。" },
+      { "title": "团队协作", "description": "通过精细的访问控制、版本历史和协作注释在团队间共享知识库。" },
+      { "title": "企业级安全", "description": "SOC-2合规，端到端加密。您的专有知识永远不会离开安全环境。" },
+      { "title": "即时获取答案", "description": "用自然语言提问，获得带引文的精确答案 — 无需再翻查文件夹。" }
+    ]
+  },
+  "use_cases": {
+    "badge": "应用场景",
+    "title": "应对各类知识挑战",
+    "subtitle": "从内部Wiki到客户支持 — KnowledgeHub适应团队实际的工作方式",
+    "try_free": "免费试用KnowledgeHub",
+    "items": [
+      { "title": "内部知识库", "description": "通过让公司专业知识即时可达，加快新员工入职速度，减少重复性问题。" },
+      { "title": "客户支持", "description": "为支持专员提供来自产品文档、FAQ和历史解决方案的即时答案，将案例处理速度提升3倍。" },
+      { "title": "研究与分析", "description": "数秒内综合分析数千份文档的洞察，加速研究和竞争情报收集。" }
+    ]
+  },
+  "cta": {
+    "title": "准备好释放组织知识了吗？",
+    "description": "加入使用KnowledgeHub的团队，让每份文档、每次对话和每个洞察都即时可及。",
+    "primary": "打开KnowledgeHub",
+    "secondary": "联系我们"
+  }
+}

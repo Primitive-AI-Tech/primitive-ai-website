@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title_1": "Your Organization's",
+    "title_2": "AI Brain",
+    "description": "KnowledgeHub centralizes your organization's knowledge and makes it instantly searchable with AI — turning scattered documents into a powerful, queryable intelligence layer.",
+    "open_app": "Open KnowledgeHub",
+    "request_demo": "Request Demo"
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Everything You Need to Manage Knowledge at Scale",
+    "subtitle": "KnowledgeHub combines powerful AI with enterprise-grade reliability to make your organization's knowledge work for you",
+    "items": [
+      { "title": "AI-Powered Search", "description": "Semantic search that understands context and intent — not just keywords — to surface the most relevant knowledge instantly." },
+      { "title": "Knowledge Graph", "description": "Automatically map relationships between documents, topics, and experts to unlock hidden connections across your organization." },
+      { "title": "Document Intelligence", "description": "Ingest PDFs, Docs, slides, wikis, and more. KnowledgeHub parses, indexes, and makes every document queryable." },
+      { "title": "Team Collaboration", "description": "Share knowledge bases across teams with fine-grained access controls, version history, and collaborative annotations." },
+      { "title": "Enterprise Security", "description": "SOC-2 compliant with end-to-end encryption. Your proprietary knowledge never leaves your secure environment." },
+      { "title": "Instant Answers", "description": "Ask questions in natural language and get precise answers with source citations — no more digging through folders." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Use Cases",
+    "title": "Built for Every Knowledge Challenge",
+    "subtitle": "From internal wikis to customer support — KnowledgeHub adapts to how your teams actually work",
+    "try_free": "Try KnowledgeHub Free",
+    "items": [
+      { "title": "Internal Knowledge Base", "description": "Onboard new employees faster and reduce repetitive questions by making your company's expertise instantly accessible." },
+      { "title": "Customer Support", "description": "Equip support agents with instant answers from product docs, FAQs, and past resolutions to resolve cases 3× faster." },
+      { "title": "Research & Analysis", "description": "Synthesize insights across thousands of documents in seconds, accelerating research and competitive intelligence." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Unlock Your Organization's Knowledge?",
+    "description": "Join teams using KnowledgeHub to make every document, conversation, and insight instantly accessible.",
+    "primary": "Open KnowledgeHub",
+    "secondary": "Contact Us"
+  }
+}

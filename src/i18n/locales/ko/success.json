@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "badge": "성공 사례",
+    "title_1": "실제 영향,",
+    "title_2": "진정한 성과",
+    "description": "다양한 산업의 기업들이 Primitive AI를 통해 비용을 절감하고, 운영을 가속화하며, 비즈니스를 혁신하는 방법을 확인하세요.",
+    "highlights": [
+      { "value": "40–70%", "label": "프로젝트 전반의 효율성 향상" },
+      { "value": "50+", "label": "기업 고객 수" },
+      { "value": "10+", "label": "혁신된 산업 수" }
+    ]
+  },
+  "filters": {
+    "all": "전체",
+    "manufacturing": "제조업",
+    "financial_services": "금융 서비스",
+    "legal": "법률",
+    "retail": "유통",
+    "healthcare": "헬스케어"
+  },
+  "no_stories": "이 업종의 성공 사례가 아직 없습니다.",
+  "show_all": "모든 사례 보기",
+  "spotlight": {
+    "badge": "주요 사례 연구",
+    "challenge": "과제",
+    "solution": "솔루션",
+    "discuss": "귀사의 과제 상담"
+  },
+  "cta": {
+    "title": "나만의 성공 사례를 만들 준비가 되셨나요?",
+    "description": "Primitive AI가 귀사에 어떤 측정 가능한 가치를 창출할 수 있는지 함께 알아보세요.",
+    "primary": "상담 시작",
+    "secondary": "솔루션 보기"
+  },
+  "stories": [
+    {
+      "title": "제조업 직장 안전 혁신",
+      "industry": "Manufacturing",
+      "client": "글로벌 자동차 부품 제조사",
+      "product": "VisionHub",
+      "summary": "VisionHub 카메라 AI 플랫폼을 12개 시설에 배포하여 PPE 준수와 인간-로봇 상호작용 구역을 실시간 모니터링 — 사고 발생 전에 예방합니다.",
+      "challenge": "12개 시설에서 산업용 로봇과 함께 작업하는 수백 명의 직원들로 인해 수동 안전 감사는 사후 대응적이고 일관성이 없었으며 확장이 불가능했습니다. 사고는 인적, 재정적으로 모두 큰 비용을 초래했습니다.",
+      "solution": "모든 시설에 VisionHub를 배포하여 실시간 PPE 감지, 제한 구역 모니터링, 행동 이상 알림을 안전 관리자의 모바일로 직접 전송합니다.",
+      "metric": "40%",
+      "metric_label": "직장 사고 감소",
+      "stats": [
+        { "value": "40%", "label": "사고 감소" },
+        { "value": "12", "label": "적용 시설 수" },
+        { "value": "98%", "label": "PPE 감지 정확도" }
+      ]
+    },
+    {
+      "title": "핀테크 고객 지원 혁신",
+      "industry": "Financial Services",
+      "client": "선도적인 디지털 은행",
+      "product": "SupportHub",
+      "summary": "SupportHub AI 챗봇이 1차 지원 문의의 80%를 자동으로 처리하고, 복잡한 케이스는 원활하게 에스컬레이션하며 고객 만족도를 크게 향상시켰습니다.",
+      "challenge": "빠르게 성장하는 디지털 은행이 지원 볼륨 문제에 직면했습니다 — 긴 대기 시간, 상담원 소진, 일관성 없는 답변 품질이 고객 이탈을 유발했습니다.",
+      "solution": "웹 채팅, 모바일 앱, WhatsApp에 SupportHub를 통합했습니다. AI가 계좌 조회, 거래 문의, FAQ를 처리하며 복잡한 케이스는 전체 맥락을 전달하여 상담원에게 에스컬레이션합니다.",
+      "metric": "30%",
+      "metric_label": "고객 만족도 향상",
+      "stats": [
+        { "value": "80%", "label": "자동화된 문의" },
+        { "value": "30%", "label": "CSAT 향상" },
+        { "value": "4×", "label": "더 빠른 해결" }
+      ]
+    },
+    {
+      "title": "대규모 법률 업무 가속화",
+      "industry": "Legal",
+      "client": "대형 로펌",
+      "product": "LegalHub",
+      "summary": "LegalHub가 계약서 생성 및 검토를 자동화하여 500개 이상의 계약 템플릿에서 문서 처리 시간을 며칠에서 몇 시간으로 단축했습니다.",
+      "challenge": "주니어 변호사들이 업무 시간의 60% 이상을 정형화된 계약서 작성 및 검토에 소비하여 고부가가치 자문 업무 역량이 제한되었습니다.",
+      "solution": "로펌의 500개 이상의 계약 템플릿, 조항 라이브러리, 컴플라이언스 규칙으로 LegalHub를 배포했습니다. 변호사들은 처음부터 작성하는 대신 AI가 생성한 초안을 검토합니다.",
+      "metric": "60%",
+      "metric_label": "문서 처리 속도 향상",
+      "stats": [
+        { "value": "60%", "label": "처리 시간 단축" },
+        { "value": "500+", "label": "자동화된 템플릿" },
+        { "value": "3×", "label": "처리 사건 수 증가" }
+      ]
+    },
+    {
+      "title": "엔터프라이즈 지식 관리 혁신",
+      "industry": "Retail",
+      "client": "지역 유통 체인",
+      "product": "KnowledgeHub",
+      "summary": "KnowledgeHub가 10년간의 제품 지식, 공급업체 데이터, 운영 절차를 2,000명 이상의 직원 모두가 접근할 수 있는 단일 AI 검색 시스템으로 통합했습니다.",
+      "challenge": "지식이 SharePoint, 이메일, 개별 직원들의 머릿속에 분산되어 있었습니다. 신입 직원들은 업무 파악에 몇 주가 걸렸고, 경험 많은 직원들은 같은 질문에 반복적으로 답하느라 시간을 낭비했습니다.",
+      "solution": "KnowledgeHub가 기존 문서와 위키를 모두 수집했습니다. 직원들은 이제 자연어로 질문하고 매장 정책부터 공급업체 연락처까지 즉각적인 인용 답변을 받습니다.",
+      "metric": "70%",
+      "metric_label": "지식 검색 시간 단축",
+      "stats": [
+        { "value": "70%", "label": "검색 시간 절감" },
+        { "value": "2,000+", "label": "활성화된 직원 수" },
+        { "value": "50%", "label": "온보딩 속도 향상" }
+      ]
+    },
+    {
+      "title": "전자 부품 AI 기반 품질 관리",
+      "industry": "Manufacturing",
+      "client": "전자 부품 제조사",
+      "product": "VisionHub",
+      "summary": "시각 AI 검사가 수동 품질 검사를 대체하여 생산 라인에서 인간 검사관보다 10배 빠르고 높은 정확도로 불량품을 감지합니다.",
+      "challenge": "수동 품질 검사가 생산 라인의 병목이었습니다 — 느리고 비용이 많이 들며, 대량 생산에서 검사관 피로로 인한 불량 누락이 발생했습니다.",
+      "solution": "VisionHub 카메라가 생산 라인의 모든 제품을 모니터링하고, 실시간으로 미세 불량을 감지하며, 전체 불량 로그와 함께 자동 불합격 처리를 트리거합니다.",
+      "metric": "99.2%",
+      "metric_label": "불량 감지 정확도",
+      "stats": [
+        { "value": "99.2%", "label": "감지 정확도" },
+        { "value": "10×", "label": "수동 QC 대비 속도" },
+        { "value": "35%", "label": "불량 누락 감소" }
+      ]
+    },
+    {
+      "title": "국립 재단의 가족 이야기 보존",
+      "industry": "Healthcare",
+      "client": "노인 돌봄 재단",
+      "product": "FamilyHub",
+      "summary": "FamilyHub가 노인 요양 시설에 배포되어 입주자들이 생애 이야기를 기록하고, 가족과 추억을 공유하며, 회상을 통한 인지적 참여를 유지하도록 돕습니다.",
+      "challenge": "많은 입주자들이 잃어버릴 위기에 처한 풍부한 삶의 이야기를 가지고 있었습니다. 가족들은 연결되고 싶었지만 멀리 살고 있었습니다. 직원들은 구조화된 스토리텔링 세션을 진행할 시간이 부족했습니다.",
+      "solution": "FamilyHub의 안내형 AI 대화가 입주자들이 자신만의 언어로 이야기를 기록하도록 도왔습니다. 가족들은 아름답게 편집된 기억 책을 받고 원격으로 자신만의 기여를 추가할 수 있었습니다.",
+      "metric": "92%",
+      "metric_label": "가족 만족도",
+      "stats": [
+        { "value": "92%", "label": "가족 만족도" },
+        { "value": "1,200+", "label": "보존된 이야기 수" },
+        { "value": "85%", "label": "입주자 참여율" }
+      ]
+    }
+  ]
+}

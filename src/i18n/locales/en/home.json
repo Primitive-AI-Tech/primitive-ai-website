@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "badge": "Enterprise AI Solutions",
+    "title_1": "AI for Good.",
+    "title_2": "Built for Business.",
+    "description": "AI is changing the world, dramatically. Our mission is to make AI bring good for mankind. In this journey, we build products that help businesses and communities thrive.",
+    "explore_products": "Explore Our Products",
+    "talk_to_team": "Talk to Our Team",
+    "scroll": "Scroll to explore"
+  },
+  "stats": {
+    "ai_products": "AI Products",
+    "enterprise_clients": "Enterprise Clients",
+    "industries_served": "Industries Served",
+    "platform_uptime": "Platform Uptime"
+  },
+  "products_section": {
+    "badge": "Our Products",
+    "title": "Enterprise AI Product Suite",
+    "subtitle": "Purpose-built AI products designed to solve real business challenges across industries"
+  },
+  "services_section": {
+    "badge": "Our Services",
+    "title": "AI Development Services",
+    "subtitle": "End-to-end AI services from strategy to deployment — we partner with you to build, train, and scale AI solutions",
+    "cards": [
+      {
+        "title": "AI Agent Development",
+        "description": "Build intelligent agents that automate complex workflows, handle customer interactions, and make data-driven decisions autonomously."
+      },
+      {
+        "title": "AI Workflow Automation",
+        "description": "Design and implement AI-powered workflows that streamline operations, reduce manual effort, and accelerate business processes."
+      },
+      {
+        "title": "AI API Development",
+        "description": "Create robust, scalable AI APIs that integrate seamlessly into your existing systems and third-party applications."
+      },
+      {
+        "title": "Model Training & Fine-Tuning",
+        "description": "Custom model training and fine-tuning on your proprietary data to achieve superior accuracy for your specific use cases."
+      },
+      {
+        "title": "AI Product Development",
+        "description": "Full-cycle AI product development from ideation to launch — UX design, engineering, testing, and production deployment."
+      },
+      {
+        "title": "Consulting & Strategy",
+        "description": "Strategic AI consulting to identify opportunities, build roadmaps, and guide your organization's AI transformation journey."
+      }
+    ]
+  },
+  "why_hero": {
+    "badge": "Why Choose Us",
+    "title_1": "Why Choose",
+    "title_2": "Primitive AI?",
+    "description": "We are committed to delivering innovative AI solutions that drive real, measurable business value for businesses and the communities they serve.",
+    "get_started": "Get Started",
+    "our_solutions": "Our Solutions"
+  },
+  "why_reasons": {
+    "badge": "Reasons",
+    "title": "What Sets Us Apart",
+    "subtitle": "We provide cutting-edge AI solutions tailored to your unique business needs",
+    "cards": [
+      {
+        "title": "Innovative Solutions",
+        "description": "We leverage the latest advancements in AI to develop innovative solutions that address your unique challenges."
+      },
+      {
+        "title": "Proven Results",
+        "description": "Our solutions have a proven track record of delivering measurable results — increased efficiency, reduced costs, and improved customer satisfaction."
+      },
+      {
+        "title": "Timely Delivery",
+        "description": "We are committed to delivering projects on time and within budget, without compromising on quality."
+      },
+      {
+        "title": "Expert Team",
+        "description": "Our team of AI experts has extensive experience in developing and deploying AI solutions across various industries."
+      },
+      {
+        "title": "Custom Solutions",
+        "description": "We understand that every business is unique. That's why we offer custom AI solutions tailored to your specific needs and goals."
+      },
+      {
+        "title": "Ongoing Support",
+        "description": "We provide ongoing support and maintenance to ensure your AI solutions continue to deliver value over time."
+      }
+    ]
+  },
+  "success_section": {
+    "badge": "Success Stories",
+    "title": "Real Impact, Real Results",
+    "subtitle": "See how organizations across industries are transforming their operations with Primitive AI",
+    "view_all": "View All Success Stories",
+    "stories": [
+      {
+        "title": "Transforming Workplace Safety in Manufacturing",
+        "industry": "Manufacturing",
+        "summary": "VisionHub's camera AI platform deployed across 12 facilities to monitor PPE compliance and human-robot interaction zones in real-time.",
+        "metric": "40%",
+        "metric_label": "Reduction in workplace incidents"
+      },
+      {
+        "title": "Revolutionizing Customer Support in FinTech",
+        "industry": "Financial Services",
+        "summary": "SupportHub's AI chatbot handles 80% of tier-1 support queries automatically, with seamless escalation for complex cases.",
+        "metric": "30%",
+        "metric_label": "Increase in customer satisfaction"
+      },
+      {
+        "title": "Accelerating Legal Operations",
+        "industry": "Legal",
+        "summary": "LegalHub automated contract generation and review, reducing document turnaround time from days to hours across 500+ templates.",
+        "metric": "60%",
+        "metric_label": "Faster document processing"
+      }
+    ]
+  },
+  "partners": {
+    "badge": "Institutional Trust",
+    "title": "Trusted by Industry Leaders",
+    "subtitle": "Partnering with global technology pioneers to drive the future of Enterprise AI"
+  },
+  "galaxy": {
+    "click_to_explore": "Click to explore",
+    "view_details": "View Details"
+  },
+  "testimonials_section": {
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it — hear from the leaders who trust Primitive AI",
+    "items": [
+      {
+        "quote": "The Camera AI Platform has significantly improved our workplace safety. We've seen a 40% reduction in incidents since implementation.",
+        "author": "Kiem Nguyen",
+        "role": "General Manager",
+        "company": "RAIS Tech"
+      },
+      {
+        "quote": "Primitive AI have helped us with AI Agent Development and deployment with high quality and fast speed. We are very satisfied with their service.",
+        "author": "Oscar P. Ridell",
+        "role": "CEO",
+        "company": "Ymner"
+      },
+      {
+        "quote": "Before, our 10 employee team could only serve 5% of our customers' support tickets. Now, we can serve all of them instantly 24/7, with high accuracy and satisfaction.",
+        "author": "Duyen Nguyen",
+        "role": "CTO",
+        "company": "TNE"
+      }
+    ]
+  }
+}

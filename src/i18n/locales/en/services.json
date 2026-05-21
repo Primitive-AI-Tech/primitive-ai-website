@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "badge": "AI Development Services",
+    "title_1": "End-to-End AI",
+    "title_2": "Built for Your Business",
+    "description": "From strategy to deployment — we partner with you to design, build, train, and scale AI solutions that deliver measurable results.",
+    "start_project": "Start a Project",
+    "view_products": "View Products",
+    "scroll": "Our services"
+  },
+  "list": {
+    "badge": "What We Do",
+    "title": "AI Services Across the Full Stack",
+    "subtitle": "We cover every phase of the AI journey — from identifying opportunities to building and running production systems",
+    "whats_included": "What's included",
+    "discuss_service": "Discuss This Service",
+    "items": [
+      {
+        "title": "AI Agent Development",
+        "tagline": "Autonomous AI that works for you",
+        "description": "We design and build intelligent agents that automate complex multi-step workflows, handle customer interactions, make data-driven decisions, and operate autonomously across your business systems.",
+        "benefits": [
+          "Custom agents trained on your data and processes",
+          "Seamless integration with existing tools (CRM, ERP, etc.)",
+          "Human-in-the-loop oversight and escalation paths",
+          "Continuous monitoring and improvement"
+        ]
+      },
+      {
+        "title": "AI Workflow Automation",
+        "tagline": "Eliminate repetitive work at scale",
+        "description": "We map, redesign, and automate your manual workflows using AI — from data entry and document routing to approvals and reporting. Free your team to focus on high-value work.",
+        "benefits": [
+          "End-to-end workflow analysis and optimization",
+          "AI-powered document processing and routing",
+          "Automated reporting and decision triggers",
+          "Integration with 100+ enterprise platforms"
+        ]
+      },
+      {
+        "title": "AI API Development",
+        "tagline": "Scalable AI infrastructure for your products",
+        "description": "We build robust, production-ready AI APIs that integrate seamlessly into your existing systems and third-party applications — giving your products AI superpowers without the complexity.",
+        "benefits": [
+          "RESTful and GraphQL API design and implementation",
+          "LLM integration (OpenAI, Anthropic, Gemini, local models)",
+          "Scalable cloud-native architecture",
+          "Comprehensive documentation and support"
+        ]
+      },
+      {
+        "title": "Model Training & Fine-Tuning",
+        "tagline": "AI precision-built for your domain",
+        "description": "Generic AI models often miss the nuance of your industry. We fine-tune and train models on your proprietary data to achieve superior accuracy, domain expertise, and business-specific performance.",
+        "benefits": [
+          "Domain-specific fine-tuning on your datasets",
+          "RAG (Retrieval-Augmented Generation) pipelines",
+          "Model evaluation, benchmarking, and optimization",
+          "On-premise or private cloud deployment options"
+        ]
+      },
+      {
+        "title": "AI Product Development",
+        "tagline": "From idea to production-ready AI product",
+        "description": "Full-cycle AI product development — we partner with you from ideation through UX design, engineering, testing, and production deployment to build AI-powered products your users will love.",
+        "benefits": [
+          "AI product strategy and roadmap development",
+          "UX/UI design optimized for AI interactions",
+          "Agile development with regular demos",
+          "Post-launch support and iteration"
+        ]
+      },
+      {
+        "title": "Consulting & Strategy",
+        "tagline": "AI transformation with a clear roadmap",
+        "description": "Not sure where to start with AI? Our experts help you identify the highest-value opportunities, build practical roadmaps, and guide your organization through a successful AI transformation journey.",
+        "benefits": [
+          "AI readiness assessment and gap analysis",
+          "Use case identification and ROI modeling",
+          "Technology selection and vendor evaluation",
+          "Change management and team enablement"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "badge": "How We Work",
+    "title": "Our Delivery Process",
+    "subtitle": "A proven 5-step process that takes you from idea to production with confidence",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Discovery",
+        "description": "We learn your business, goals, and pain points through in-depth workshops."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "description": "We define the AI approach, architecture, and success metrics."
+      },
+      {
+        "step": "03",
+        "title": "Build",
+        "description": "Our engineers design, build, and test your solution in iterative sprints."
+      },
+      {
+        "step": "04",
+        "title": "Deploy",
+        "description": "We launch to production with monitoring, security reviews, and handoff documentation."
+      },
+      {
+        "step": "05",
+        "title": "Optimize",
+        "description": "Ongoing support, model retraining, and continuous improvement to maximize ROI."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Build Something Meaningful with AI?",
+    "description": "Tell us about your project and we'll show you how our team can bring it to life.",
+    "primary": "Start a Conversation",
+    "secondary": "View Our Products"
+  }
+}

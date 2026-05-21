@@ -2,403 +2,218 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/SectionHeader';
 import FeatureCard from '@/components/FeatureCard';
-import PricingCard from '@/components/PricingCard';
-import TestimonialCard from '@/components/TestimonialCard';
 import CTASection from '@/components/CTA';
 import GalleryCarousel from '@/components/GalleryCarousel';
+import ScrollReveal from '@/components/ScrollReveal';
 import { Link } from 'react-router-dom';
-import { 
-  MessageCircle, Globe, Clock, BarChart, Headphones, 
-  Speech, Palette, Zap, Code 
-} from 'lucide-react';
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table';
+import { MessageCircle, Globe, Clock, BarChart, Headphones, Zap, Palette, Code, ChevronDown, CheckCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
+const FEATURE_ICONS = [Globe, MessageCircle, Headphones, Headphones, Clock, BarChart, Palette, Code, Zap];
 
 const Chatbot = () => {
-  const dashboardImages = [
-    {
-      src: "/lovable-uploads/46cf1a4f-859d-4c73-9cc8-5fd496e2ae80.png",
-      alt: "SupportHub Analytics Dashboard",
-      title: "Analytics Dashboard",
-      description: "Get a complete overview of your customer support performance with real-time metrics and visualizations"
-    },
-    {
-      src: "/lovable-uploads/b8b1f634-740d-46da-a6a7-74b7488fd3d4.png",
-      alt: "SupportHub Ticket Management",
-      title: "Ticket Management",
-      description: "Efficiently manage support tickets with status tracking, priority flags, and AI-assisted responses"
-    },
-    {
-      src: "/lovable-uploads/51cfee29-f2f5-45d1-b1bc-6273fb432132.png",
-      alt: "SupportHub Communication Channels",
-      title: "Multi-Channel Support",
-      description: "Connect with customers across multiple channels - website, email, social media, and more"
-    },
-    {
-      src: "/lovable-uploads/33b37c77-db0f-44c7-9281-18a94b010538.png",
-      alt: "SupportHub Customer Management",
-      title: "Customer Management",
-      description: "Keep track of all customer interactions and history in one unified interface"
-    },
-    {
-      src: "/lovable-uploads/5f9395b2-7d5f-4b1e-8dab-d966c5fd751f.png",
-      alt: "SupportHub AI Scenarios",
-      title: "AI Scenarios Management",
-      description: "Create and manage AI knowledge base scenarios to automate responses to common customer inquiries"
-    }
+  const { t } = useTranslation('supporthub');
+
+  const dashboardImgSrcs = [
+    '/lovable-uploads/46cf1a4f-859d-4c73-9cc8-5fd496e2ae80.png',
+    '/lovable-uploads/b8b1f634-740d-46da-a6a7-74b7488fd3d4.png',
+    '/lovable-uploads/51cfee29-f2f5-45d1-b1bc-6273fb432132.png',
+    '/lovable-uploads/33b37c77-db0f-44c7-9281-18a94b010538.png',
+    '/lovable-uploads/5f9395b2-7d5f-4b1e-8dab-d966c5fd751f.png',
+  ];
+  const dashboardImgAlts = [
+    'SupportHub Analytics Dashboard',
+    'SupportHub Ticket Management',
+    'SupportHub Communication Channels',
+    'SupportHub Customer Management',
+    'SupportHub AI Scenarios',
+  ];
+
+  const dashboardImgData = t('dashboard.images', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const dashboardImages = dashboardImgData.map((img, i) => ({
+    src: dashboardImgSrcs[i],
+    alt: dashboardImgAlts[i],
+    title: img.title,
+    description: img.description,
+  }));
+
+  const features = t('features.items', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const steps = t('how_it_works.steps', { returnObjects: true }) as Array<{ step: string; title: string; description: string }>;
+  const useCases = t('use_cases.items', { returnObjects: true }) as Array<{ title: string; description: string; points: string[] }>;
+
+  const useCaseImgs = [
+    'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=2666&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=2670&auto=format&fit=crop',
   ];
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="hook-section">
-        <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="hero-heading mb-6">SupportHub: AI Chatbot & Voice Bot</h1>
-              <p className="text-xl text-gray-300 mb-8">
-                Transform customer support and sales with our fully customizable intelligent conversational AI platform that delivers natural, helpful interactions across text and voice channels.
+      {/* ═══ SECTION 1: HERO ═══ */}
+      <section className="hook-section min-h-screen flex items-center relative" data-theme="dark">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 right-[10%] w-72 h-72 bg-blue-500/15 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 left-[5%] w-96 h-96 bg-purple-400/10 rounded-full blur-3xl animate-float-delayed" />
+          <div className="absolute inset-0 dot-bg opacity-30" />
+        </div>
+
+        <div className="section-container relative z-10 py-24 md:py-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-purple-200 backdrop-blur-sm">
+                <MessageCircle className="w-3.5 h-3.5 text-blue-400" />
+                SupportHub
+              </div>
+              <h1 className="hero-heading text-white">
+                {t('hero.title_1')} <span className="text-gradient-purple">{t('hero.title_2')}</span>
+              </h1>
+              <p className="text-base md:text-lg text-purple-200/80 leading-relaxed">
+                {t('hero.description')}
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button variant="outline" className="bg-white text-purple-800 border-transparent hover:bg-white/10 hover:text-white animate-bounce-subtle">
-                  <Link to="/contact">Request Demo</Link>
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <Button className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
+                  <Link to="/contact">{t('hero.request_demo')}</Link>
                 </Button>
-                <Button variant="outline" className="bg-white/10 text-white border-transparent hover:bg-white hover:text-purple-800 animate-bounce-subtle">
-                  <Link to="#pricing">View Pricing</Link>
+                <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
+                  <Link to="#pricing">{t('hero.view_pricing')}</Link>
                 </Button>
               </div>
             </div>
+
             <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg blur opacity-75"></div>
-              <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2670&auto=format&fit=crop" 
-                  alt="SupportHub: AI Chatbot & Voice Bot" 
-                  className="rounded-lg shadow-xl w-full"
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/40 to-purple-600/40 rounded-2xl blur-lg" />
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2670&auto=format&fit=crop"
+                  alt="SupportHub — AI Chatbot & Voice Bot"
+                  className="w-full h-56 md:h-80 object-cover"
                 />
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Dashboard Preview Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="section-container">
-          <SectionHeader
-            title="SupportHub Dashboard"
-            subtitle="A powerful, intuitive interface for managing customer communications across all channels"
-            centered={true}
-          />
-          
-          <div className="mt-12">
-            <GalleryCarousel images={dashboardImages} />
-          </div>
-
-          <div className="mt-16 text-center">
-            <Button variant="purple" className="shadow-lg">
-              <Link to="/contact">Schedule a Live Demo</Link>
-            </Button>
-          </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-purple-300/50">
+          <ChevronDown className="w-5 h-5 animate-bounce" />
         </div>
       </section>
 
-      {/* Key Features Section */}
-      <section className="py-12">
-        <div className="section-container">
-          <SectionHeader
-            title="Key Features"
-            subtitle="Our AI-powered SupportHub platform delivers exceptional customer experiences with extensive customization options"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <FeatureCard
-              title="Omnichannel Support"
-              description="Provide consistent support across web, mobile, social media, and voice channels with a unified conversational experience."
-              icon={Globe}
-              animationDelay={100}
+      {/* ═══ SECTION 2: DASHBOARD PREVIEW ═══ */}
+      <section className="snap-section bg-gradient-to-b from-purple-50/30 to-transparent" data-theme="light">
+        <div className="section-container py-16 md:py-0">
+          <ScrollReveal>
+            <SectionHeader
+              badge={t('dashboard.badge')}
+              title={t('dashboard.title')}
+              subtitle={t('dashboard.subtitle')}
+              centered
             />
-            <FeatureCard
-              title="Natural Conversations"
-              description="Leverage advanced LLMs for human-like conversations that understand context, nuance, and user intent."
-              icon={MessageCircle}
-              animationDelay={200}
-            />
-            <FeatureCard
-              title="Voice Interaction"
-              description="Enable natural voice interactions with speech recognition and text-to-speech capabilities for phone support."
-              icon={Speech}
-              animationDelay={300}
-            />
-            <FeatureCard
-              title="Human Handoff"
-              description="Seamlessly transfer complex conversations to human agents with complete context and conversation history."
-              icon={Headphones}
-              animationDelay={400}
-            />
-            <FeatureCard
-              title="24/7 Availability"
-              description="Provide round-the-clock support to customers regardless of time zone or business hours."
-              icon={Clock}
-              animationDelay={500}
-            />
-            <FeatureCard
-              title="Analytics Dashboard"
-              description="Track performance metrics, conversation quality, and customer satisfaction to continuously improve."
-              icon={BarChart}
-              animationDelay={600}
-            />
-            <FeatureCard
-              title="Fully Customizable"
-              description="Tailor the look and feel of your chatbot to match your brand with custom colors, fonts, and interface elements."
-              icon={Palette}
-              animationDelay={700}
-            />
-            <FeatureCard
-              title="Integration Options"
-              description="Connect SupportHub to your existing CRM, help desk, and other business systems with our robust API."
-              icon={Code}
-              animationDelay={800}
-            />
-            <FeatureCard
-              title="No-Code Configuration"
-              description="Set up and modify your chatbot flows without technical knowledge using our intuitive drag-and-drop interface."
-              icon={Zap}
-              animationDelay={900}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-12 bg-gray-50">
-        <div className="section-container">
-          <SectionHeader
-            title="How SupportHub Works"
-            subtitle="Our AI Chatbot & Voice Bot platform seamlessly integrates with your existing systems"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-xl font-bold">1</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Customization & Setup</h3>
-              <p className="text-muted-foreground">
-                We customize SupportHub for your specific products, services, policies, and customer interactions to ensure accurate and helpful responses.
-              </p>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="mt-8">
+              <GalleryCarousel images={dashboardImages} />
             </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-xl font-bold">2</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Integration</h3>
-              <p className="text-muted-foreground">
-                We integrate SupportHub with your existing customer support systems, websites, mobile apps, and phone systems.
-              </p>
+            <div className="mt-8 text-center">
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full px-8 py-5 shadow-md hover:-translate-y-0.5 transition-all duration-300" asChild>
+                <Link to="/contact">{t('dashboard.schedule_demo')}</Link>
+              </Button>
             </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-xl font-bold">3</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Continuous Improvement</h3>
-              <p className="text-muted-foreground">
-                The system learns and improves from each interaction, with regular updates to enhance performance and capabilities.
-              </p>
-            </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Use Cases */}
-      <section className="py-12">
-        <div className="section-container">
-          <SectionHeader
-            title="Use Cases"
-            subtitle="SupportHub is versatile and applicable across various industries"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div className="border rounded-xl overflow-hidden shadow-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=2666&auto=format&fit=crop" 
-                alt="Customer Support" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Customer Support</h3>
-                <p className="text-muted-foreground mb-4">
-                  Provide instant, accurate responses to common customer queries, troubleshoot issues, and escalate complex problems to human agents when necessary.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-primitive-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Instant response to FAQs</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-primitive-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Technical troubleshooting</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-primitive-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Order status and tracking</span>
-                  </li>
-                </ul>
-              </div>
+      {/* ═══ SECTION 3: KEY FEATURES ═══ */}
+      <section className="snap-section" data-theme="light">
+        <div className="section-container py-16 md:py-0">
+          <ScrollReveal>
+            <SectionHeader
+              badge={t('features.badge')}
+              title={t('features.title')}
+              subtitle={t('features.subtitle')}
+              centered
+            />
+          </ScrollReveal>
+          <ScrollReveal stagger>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mt-8">
+              {features.map((feature, i) => (
+                <FeatureCard key={i} title={feature.title} description={feature.description} icon={FEATURE_ICONS[i]} />
+              ))}
             </div>
-            
-            <div className="border rounded-xl overflow-hidden shadow-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=2670&auto=format&fit=crop" 
-                alt="Sales Assistance" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Sales Assistance</h3>
-                <p className="text-muted-foreground mb-4">
-                  Guide potential customers through the sales process, recommend products, answer questions, and facilitate purchases.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-primitive-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Product recommendations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-primitive-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Pricing and feature comparisons</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-primitive-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Guided checkout process</span>
-                  </li>
-                </ul>
-              </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ═══ SECTION 4: HOW IT WORKS ═══ */}
+      <section className="snap-section relative overflow-hidden" data-theme="dark">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-950" />
+        <div className="absolute inset-0 dot-bg opacity-20" />
+        <div className="relative z-10 section-container py-16 md:py-0">
+          <ScrollReveal>
+            <SectionHeader
+              badge={t('how_it_works.badge')}
+              title={t('how_it_works.title')}
+              subtitle={t('how_it_works.subtitle')}
+              centered
+              light
+            />
+          </ScrollReveal>
+          <ScrollReveal stagger>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              {steps.map((s) => (
+                <div key={s.step} className="bg-white/10 border border-white/10 rounded-2xl p-6 sm:p-8 text-center hover:bg-white/15 transition-colors">
+                  <div className="text-4xl font-extrabold text-purple-400/60 mb-4">{s.step}</div>
+                  <h3 className="text-base font-bold text-white mb-2">{s.title}</h3>
+                  <p className="text-purple-200/70 text-sm leading-relaxed">{s.description}</p>
+                </div>
+              ))}
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-12 bg-gray-50">
-        <div className="section-container">
-          <SectionHeader
-            title="What Our Clients Say"
-            subtitle="Hear from businesses that have transformed their customer interactions with SupportHub"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <TestimonialCard
-              quote="Our customer satisfaction scores increased by 35% after implementing SupportHub. The natural conversations, quick responses, and ability to customize it to match our brand have been game-changing."
-              author="Sarah Thompson"
-              role="Customer Experience Director"
-              company="RetailGiant Inc."
-              rating={5}
+      {/* ═══ SECTION 5: USE CASES ═══ */}
+      <section className="snap-section" data-theme="light">
+        <div className="section-container py-16 md:py-0">
+          <ScrollReveal>
+            <SectionHeader
+              badge={t('use_cases.badge')}
+              title={t('use_cases.title')}
+              subtitle={t('use_cases.subtitle')}
+              centered
             />
-            <TestimonialCard
-              quote="The voice bot has reduced our call wait times by 70% while maintaining high-quality customer interactions. Our team can now focus on complex issues that truly need human attention."
-              author="Michael Rodriguez"
-              role="Support Operations Manager"
-              company="TechSolutions Corp"
-              rating={5}
-            />
-            <TestimonialCard
-              quote="The integration with our existing systems was seamless, and the continuous improvements have made the bot smarter over time. The customization options let us make it perfectly aligned with our brand voice."
-              author="Jennifer Wu"
-              role="CTO"
-              company="E-Commerce Leaders"
-              rating={5}
-            />
-          </div>
+          </ScrollReveal>
+          <ScrollReveal stagger>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              {useCases.map((uc, i) => (
+                <div key={i} className="glass-card overflow-hidden hover-lift">
+                  <img src={useCaseImgs[i]} alt={uc.title} className="w-full h-44 object-cover" />
+                  <div className="p-6">
+                    <h3 className="text-lg font-bold mb-2">{uc.title}</h3>
+                    <p className="text-muted-foreground text-sm mb-4">{uc.description}</p>
+                    <ul className="space-y-2">
+                      {uc.points.map((p) => (
+                        <li key={p} className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="w-4 h-4 text-purple-600 shrink-0" />
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-12">
-        <div className="section-container">
-          <SectionHeader
-            title="SupportHub Pricing Plans"
-            subtitle="Choose the plan that works best for your business needs"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <PricingCard
-              title="Basic"
-              price="$999"
-              description="Ideal for small businesses with standard customer support needs"
-              features={[
-                "SupportHub chatbot for website",
-                "5,000 conversations/month",
-                "Basic customization options",
-                "Basic pre-built templates",
-                "Email support",
-                "Standard analytics",
-                "Business hours support"
-              ]}
-            />
-            <PricingCard
-              title="Business"
-              price="$2,499"
-              description="Perfect for growing companies with multi-channel support requirements"
-              features={[
-                "All Basic features",
-                "SupportHub chatbot & voice bot",
-                "25,000 conversations/month",
-                "Advanced customization options",
-                "Custom training and templates",
-                "CRM integration",
-                "Advanced analytics",
-                "24/7 support"
-              ]}
-              isPopular={true}
-            />
-            <PricingCard
-              title="Enterprise"
-              price="Custom"
-              description="Tailored SupportHub solution for large organizations with complex support needs"
-              features={[
-                "All Business features",
-                "Unlimited conversations",
-                "Full white-label customization",
-                "Multiple language support",
-                "Custom integrations",
-                "Dedicated account manager",
-                "Enterprise-grade security",
-                "99.9% uptime SLA"
-              ]}
-            />
-          </div>
-          
-          {/* <div className="mt-12 text-center">
-            <p className="text-muted-foreground mb-4">
-              All plans include setup, training, and regular updates.
-            </p>
-            <Button className="bg-primitive-600 hover:bg-primitive-700">
-              <Link to="/contact">Contact Us for Custom Pricing</Link>
-            </Button>
-          </div> */}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <CTASection />
+      {/* ═══ SECTION 6: CTA ═══ */}
+      <CTASection
+        title={t('cta.title')}
+        description={t('cta.description')}
+        primaryButtonText={t('cta.primary')}
+        secondaryButtonText={t('cta.secondary')}
+        primaryButtonLink="/contact"
+        secondaryButtonLink="/solutions"
+      />
     </div>
   );
 };

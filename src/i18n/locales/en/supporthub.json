@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title_1": "AI Chatbot &",
+    "title_2": "Voice Bot",
+    "description": "Transform customer support and sales with a fully customizable conversational AI platform that delivers natural, helpful interactions across text and voice channels.",
+    "request_demo": "Request Demo",
+    "view_pricing": "View Pricing"
+  },
+  "dashboard": {
+    "badge": "Dashboard",
+    "title": "Powerful, Intuitive Interface",
+    "subtitle": "Manage all customer communications across every channel from one unified dashboard",
+    "schedule_demo": "Schedule a Live Demo",
+    "images": [
+      { "title": "Analytics Dashboard", "description": "Get a complete overview of your customer support performance with real-time metrics and visualizations" },
+      { "title": "Ticket Management", "description": "Efficiently manage support tickets with status tracking, priority flags, and AI-assisted responses" },
+      { "title": "Multi-Channel Support", "description": "Connect with customers across multiple channels — website, email, social media, and more" },
+      { "title": "Customer Management", "description": "Keep track of all customer interactions and history in one unified interface" },
+      { "title": "AI Scenarios Management", "description": "Create and manage AI knowledge base scenarios to automate responses to common customer inquiries" }
+    ]
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Everything You Need to Delight Customers",
+    "subtitle": "An AI-powered platform with extensive customization options for exceptional customer experiences",
+    "items": [
+      { "title": "Omnichannel Support", "description": "Provide consistent support across web, mobile, social media, and voice channels with a unified experience." },
+      { "title": "Natural Conversations", "description": "Leverage advanced LLMs for human-like conversations that understand context, nuance, and user intent." },
+      { "title": "Voice Interaction", "description": "Enable natural voice interactions with speech recognition and text-to-speech for phone support." },
+      { "title": "Human Handoff", "description": "Seamlessly transfer complex conversations to human agents with complete context and history." },
+      { "title": "24/7 Availability", "description": "Provide round-the-clock support to customers regardless of time zone or business hours." },
+      { "title": "Analytics Dashboard", "description": "Track performance metrics, conversation quality, and customer satisfaction to continuously improve." },
+      { "title": "Fully Customizable", "description": "Tailor the look and feel to match your brand with custom colors, fonts, and interface elements." },
+      { "title": "Integration Options", "description": "Connect SupportHub to your existing CRM, help desk, and other business systems via robust API." },
+      { "title": "No-Code Configuration", "description": "Set up and modify chatbot flows without technical knowledge using our intuitive drag-and-drop interface." }
+    ]
+  },
+  "how_it_works": {
+    "badge": "How It Works",
+    "title": "Live in Three Steps",
+    "subtitle": "SupportHub integrates seamlessly with your existing systems and is live within days",
+    "steps": [
+      { "step": "01", "title": "Customization & Setup", "description": "We tailor SupportHub to your products, services, policies, and customer interactions for accurate, helpful responses." },
+      { "step": "02", "title": "Integration", "description": "We integrate with your existing support systems, website, mobile apps, and phone systems seamlessly." },
+      { "step": "03", "title": "Continuous Improvement", "description": "The system learns from every interaction and improves over time with regular updates and capability enhancements." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Use Cases",
+    "title": "Versatile Across Every Industry",
+    "subtitle": "SupportHub powers customer support, sales, and engagement for businesses of all sizes",
+    "items": [
+      {
+        "title": "Customer Support",
+        "description": "Provide instant, accurate responses to common queries, troubleshoot issues, and escalate complex problems to human agents.",
+        "points": ["Instant response to FAQs", "Technical troubleshooting", "Order status and tracking"]
+      },
+      {
+        "title": "Sales Assistance",
+        "description": "Guide potential customers through the sales process, recommend products, answer questions, and facilitate purchases.",
+        "points": ["Product recommendations", "Pricing and feature comparisons", "Guided checkout process"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Customer Support?",
+    "description": "Schedule a demo and see how SupportHub can deliver exceptional customer experiences at scale.",
+    "primary": "Request Demo",
+    "secondary": "Explore Solutions"
+  }
+}

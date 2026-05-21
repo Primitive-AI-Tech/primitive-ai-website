@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title_1": "Preserve What",
+    "title_2": "Matters Most",
+    "description": "FamilyHub uses AI to help families capture, preserve, and share their stories, memories, and wisdom — so the things that matter most are never lost.",
+    "open_app": "Open FamilyHub",
+    "learn_more": "Learn More"
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Keep Your Family's Story Alive",
+    "subtitle": "Simple, beautiful tools that make preserving family memories as easy as having a conversation",
+    "items": [
+      { "title": "Voice Story Recording", "description": "Capture family stories and memories through natural voice conversations — AI transcribes, organizes, and preserves every word." },
+      { "title": "Family Knowledge Book", "description": "Automatically compile recorded stories, photos, and memories into a beautiful, shareable digital family book." },
+      { "title": "Multi-Generation Access", "description": "Invite family members of all ages to contribute and explore — simple enough for grandparents, engaging for grandchildren." },
+      { "title": "AI Conversation Guide", "description": "AI-guided questions help family members share meaningful stories they might not think to tell on their own." },
+      { "title": "Photo & Memory Vault", "description": "Upload photos, videos, and documents. AI organizes them by people, places, and events automatically." },
+      { "title": "Private & Secure", "description": "Your family stories are private by default. End-to-end encryption ensures only invited family members can access your memories." }
+    ]
+  },
+  "quote": {
+    "text": "The stories our grandparents told us are the foundation of who we are. FamilyHub makes sure those stories are never lost.",
+    "attribution": "FamilyHub User",
+    "start_preserving": "Start Preserving Memories"
+  },
+  "cta": {
+    "title": "Give Your Family the Gift of Preserved Memories",
+    "description": "Start capturing stories today — free to try, easy to use, and built to last generations.",
+    "primary": "Open FamilyHub",
+    "secondary": "Contact Us"
+  }
+}

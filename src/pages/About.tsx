@@ -1,257 +1,165 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/SectionHeader';
 import CTASection from '@/components/CTA';
+import ScrollReveal from '@/components/ScrollReveal';
 import { Link } from 'react-router-dom';
-import { Award, Briefcase, GraduationCap, Users } from 'lucide-react';
+import { Award, Briefcase, GraduationCap, Users, Target } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
-  const teamMembers = [
-    {
-      name: 'Doan Nguyen',
-      role: 'Founder & CEO',
-      image: '/founders/doannt.jpg',
-      bio: 'Serial Entrepreneur. AI expert with 10+ years of experience. Holds two Master degrees in AI and Robotics from Northern Arizona University and National Chiao Tung University.'
-    },
-    {
-      name: 'Tung Ngo',
-      role: 'COO',
-      image: '/founders/tungnt.png',
-      bio: 'Over 10 years of experience in Finance and Banking with strong expertise in operational management, process optimization, and cross-functional team leadership.'
-    },
-    {
-      name: 'An Nguyen',
-      role: 'CTO',
-      image: '/founders/ann.png',
-      bio: 'Experienced technology leader with 20+ years in software development and multiple CTO roles. Brings deep expertise across Insurance, Finance, Retail, Logistics, and e-Commerce, with a strong track record of driving innovation and building scalable solutions.'
-    }
-  ];
+  const { t } = useTranslation('about');
 
-  const milestones = [
-    {
-      year: 'Jan - 2020',
-      title: 'Company Founded',
-      description: 'Primitive AI was established with a mission to make advanced AI accessible to businesses of all sizes.'
-    },
-    {
-      year: 'Aug - 2020',
-      title: 'First Product Launch - VisionHub',
-      description: 'Launched our Camera AI Platform for workplace safety, expanding into the manufacturing and construction sectors.'
-    },
-    {
-      year: 'Jun - 2023',
-      title: 'SupportHub Launch',
-      description: 'Launched our advanced LLM-powered chatbot and voice bot solution for customer support and sales.'
-    },
-    {
-      year: 'Feb - 2024',
-      title: 'Intelligent Document Processing',
-      description: 'Released our first AI-powered document processing solution, gaining our initial enterprise customers.'
-      
-    },
-    {
-      year: 'Feb - 2025',
-      title: 'LegalHub Launch',
-      description: 'Released our LegalHub Platform, bringing AI-powered document creation and management to companies.'
-    }
+  const milestones = t('milestones.items', { returnObjects: true }) as Array<{
+    year: string; title: string; description: string;
+  }>;
+
+  const values = t('values.items', { returnObjects: true }) as Array<{
+    title: string; description: string;
+  }>;
+
+  const valueIcons = [Users, Award, Briefcase, GraduationCap];
+  const valueColors = [
+    'from-purple-500 to-purple-700',
+    'from-blue-500 to-blue-700',
+    'from-emerald-500 to-emerald-700',
+    'from-amber-500 to-orange-600',
   ];
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="hook-section">
-        <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="hero-heading mb-6">About Primitive AI</h1>
-              <p className="text-xl text-gray-300 mb-8">
-                We're on a mission to transform businesses through innovative AI solutions that solve real-world problems.
+      {/* ═══ SECTION 1: HERO ═══ */}
+      <section className="hook-section min-h-screen flex items-center relative" data-theme="dark">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 right-[10%] w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 left-[5%] w-96 h-96 bg-purple-400/10 rounded-full blur-3xl animate-float-delayed" />
+          <div className="absolute inset-0 dot-bg opacity-30" />
+        </div>
+
+        <div className="section-container relative z-10 py-24 md:py-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="space-y-6 max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-purple-200 backdrop-blur-sm">
+                <Target className="w-4 h-4 text-purple-400" />
+                {t('hero.badge')}
+              </div>
+              <h1 className="hero-heading text-white">
+                {t('hero.title_1')} <span className="text-gradient-purple">{t('hero.title_2')}</span>
+              </h1>
+              <p className="text-base md:text-lg text-purple-200/80 leading-relaxed max-w-xl">
+                {t('hero.description')}
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button variant="outline" className="bg-white text-purple-800 border-transparent hover:bg-white/10 hover:text-white animate-bounce-subtle">
-                  <Link to="/contact">Get in Touch</Link>
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <Button className="bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300" asChild>
+                  <Link to="/contact">{t('hero.get_in_touch')}</Link>
                 </Button>
-                <Button variant="outline" className="bg-white/10 text-white border-transparent hover:bg-white hover:text-purple-800 animate-bounce-subtle">
-                  <Link to="/why-choose-us">Why Choose Us</Link>
+                <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base hover:-translate-y-0.5 transition-all duration-300" asChild>
+                  <Link to="/why-choose-us">{t('hero.why_choose_us')}</Link>
                 </Button>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg blur opacity-75"></div>
-              <div className="relative">
-                <img 
-                  src="/founders/doannt-body.png" 
-                  alt="Primitive AI Team" 
-                  className="rounded-lg shadow-xl w-full"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Our Story */}
-      <section className="py-12">
-        <div className="section-container">
-          <SectionHeader
-            title="Our Story"
-            subtitle="From an idea to a leading AI solutions provider"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg mb-6 text-gray-700">
-                Primitive AI was founded in 2020 by Doan Nguyen, an AI expert with extensive experience in artificial intelligence and robotics. What began as a vision has quickly grown into a comprehensive AI solutions provider serving clients worldwide.
-              </p>
-              <p className="text-lg mb-6 text-gray-700">
-                Our journey began with a simple belief: that advanced AI technology should be accessible to businesses of all sizes. We've expanded our offerings to include solutions for workplace safety, customer support, legal operations, and document processing—all powered by cutting-edge large language models.
-              </p>
-              <p className="text-lg text-gray-700">
-                Today, Primitive AI employs AI specialists, engineers, and industry experts dedicated to developing innovative solutions that drive real business value. Our company is self-funded, allowing us to maintain our vision and focus on customer success without external pressures.
-              </p>
-            </div>
-            <div>
-              <div className="relative rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop" 
-                  alt="Primitive AI Office" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Values */}
-      <section className="py-12 bg-gray-50">
-        <div className="section-container">
-          <SectionHeader
-            title="Our Values"
-            subtitle="The principles that guide everything we do"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-              <div className="bg-purple-100 text-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Customer First</h3>
-              <p className="text-gray-600">
-                We prioritize customer success and build solutions that address real business challenges with measurable results.
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-              <div className="bg-purple-100 text-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Excellence</h3>
-              <p className="text-gray-600">
-                We strive for excellence in everything we do, from cutting-edge AI research to customer support and implementation.
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-              <div className="bg-purple-100 text-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Briefcase className="h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Innovation</h3>
-              <p className="text-gray-600">
-                We continuously innovate and push the boundaries of what's possible with AI to deliver transformative solutions.
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-              <div className="bg-purple-100 text-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <GraduationCap className="h-8 w-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Responsibility</h3>
-              <p className="text-gray-600">
-                We develop and deploy AI responsibly, with a focus on ethics, security, and positive societal impact.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Team */}
-      <section className="py-12">
-        <div className="section-container">
-          <SectionHeader
-            title="Leadership Team"
-            subtitle="Meet the experts driving our mission forward"
-            centered={true}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
-                <div className="h-64 overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-purple-600 font-medium mb-4">{member.role}</p>
-                  <p className="text-gray-600">{member.bio}</p>
+            <div className="relative hidden lg:block">
+              <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/30 to-purple-300/20 rounded-3xl blur-xl" />
+              <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl max-h-[55vh]">
+                <img src="/founders/doannt-body.png" alt="Doan Nguyen — Founder & CEO" className="w-full h-full object-cover object-top" />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-950/80 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="text-white font-medium text-lg">Doan Nguyen</p>
+                  <p className="text-purple-300 text-sm">Founder & CEO</p>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Company Milestones */}
-      <section className="py-12 bg-gradient-to-br from-purple-50 to-white">
-        <div className="section-container">
-          <SectionHeader
-            title="Our Journey"
-            subtitle="Key milestones in our company's growth"
-            centered={true}
-          />
-          
-          <div className="relative mt-16">
-            {/* Vertical line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-300"></div>
-            
-            <div className="space-y-16">
-              {milestones.map((milestone, index) => (
-                <div key={index} className="relative">
-                  <div className="flex items-center justify-center">
-                    <div className="bg-gradient-to-r from-purple-500 to-purple-700 text-white text-center py-3 px-8 rounded-full font-bold z-10 shadow-md hover:shadow-lg transition-shadow duration-300">
-                      {milestone.year}
+      {/* ═══ SECTION 2: OUR STORY ═══ */}
+      <section className="snap-section" data-theme="light">
+        <div className="section-container py-16 md:py-0">
+          <ScrollReveal>
+            <SectionHeader badge={t('story.badge')} title={t('story.title')} subtitle={t('story.subtitle')} />
+          </ScrollReveal>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mt-8 md:mt-10">
+            <ScrollReveal direction="left">
+              <div className="space-y-4">
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{t('story.p1')}</p>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{t('story.p2')}</p>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{t('story.p3')}</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-purple-100/50">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop" alt={t('story.img_alt')} className="w-full h-56 md:h-72 object-cover" />
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ SECTION 3: OUR VALUES ═══ */}
+      <section className="snap-section relative overflow-hidden" data-theme="dark">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-950" />
+        <div className="absolute inset-0 dot-bg opacity-20" />
+        <div className="relative z-10 section-container py-16 md:py-0">
+          <ScrollReveal>
+            <SectionHeader badge={t('values.badge')} title={t('values.title')} subtitle={t('values.subtitle')} light centered />
+          </ScrollReveal>
+          <ScrollReveal stagger>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-8">
+              {values.map((value, i) => {
+                const Icon = valueIcons[i] ?? Users;
+                return (
+                  <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${valueColors[i]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
+                    <h3 className="text-base font-bold mb-2 text-white">{value.title}</h3>
+                    <p className="text-purple-200/70 text-sm leading-relaxed">{value.description}</p>
                   </div>
-                  
-                  <div className={`mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                    <div className={index % 2 === 0 ? 'md:order-1' : 'md:order-2'}>
-                      <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
-                        <h3 className="text-xl font-bold mb-2 text-gray-800">{milestone.title}</h3>
-                        <p className="text-gray-600">{milestone.description}</p>
+                );
+              })}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ═══ SECTION 4: MILESTONES ═══ */}
+      <section className="snap-section relative overflow-hidden" data-theme="light">
+        <div className="absolute bottom-0 right-0 w-1/2 h-96 bg-purple-100/50 rounded-full blur-3xl -z-10" />
+        <div className="section-container pt-24 pb-16 md:pt-28 md:pb-20">
+          <ScrollReveal>
+            <SectionHeader badge={t('milestones.badge')} title={t('milestones.title')} subtitle={t('milestones.subtitle')} centered />
+          </ScrollReveal>
+          <div className="relative mt-8 max-w-3xl mx-auto">
+            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-purple-300 via-purple-200 to-transparent" />
+            <div className="space-y-6">
+              {milestones.map((milestone, index) => (
+                <ScrollReveal key={index} direction={index % 2 === 0 ? 'right' : 'left'}>
+                  <div className="relative flex flex-col md:flex-row items-center md:justify-between group">
+                    <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-white border-4 border-purple-500 shadow-md group-hover:scale-125 group-hover:border-purple-600 transition-all z-10" />
+                    <div className={`w-full md:w-5/12 pl-10 md:pl-0 ${index % 2 === 0 ? 'md:text-right md:pr-10' : 'md:order-2 md:pl-10'}`}>
+                      <div className="glass-card p-4 md:p-5">
+                        <div className="inline-block px-3 py-1 mb-2 rounded-full bg-purple-100 text-purple-700 text-xs font-bold">{milestone.year}</div>
+                        <h3 className="text-sm md:text-base font-bold mb-1">{milestone.title}</h3>
+                        <p className="text-muted-foreground text-xs md:text-sm">{milestone.description}</p>
                       </div>
                     </div>
-                    <div className={index % 2 === 0 ? 'md:order-2' : 'md:order-1'}></div>
+                    <div className={`hidden md:block w-5/12 ${index % 2 === 0 ? 'md:order-2' : ''}`} />
                   </div>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <CTASection 
-        title="Join Us on Our Mission"
-        description="We're always looking for talented individuals who share our passion for AI and our commitment to excellence."
-        primaryButtonText="Contact Us"
-        secondaryButtonText="View Careers"
+      {/* ═══ SECTION 5: CTA ═══ */}
+      <CTASection
+        title={t('cta.title')}
+        description={t('cta.description')}
+        primaryButtonText={t('cta.primary')}
+        secondaryButtonText={t('cta.secondary')}
         primaryButtonLink="/contact"
         secondaryButtonLink="/"
       />

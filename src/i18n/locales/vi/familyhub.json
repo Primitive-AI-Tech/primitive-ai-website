@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title_1": "Gìn Giữ Những Gì",
+    "title_2": "Quan Trọng Nhất",
+    "description": "FamilyHub sử dụng AI để giúp các gia đình ghi lại, lưu giữ và chia sẻ những câu chuyện, ký ức và trí tuệ — để những điều quan trọng nhất không bao giờ bị mất.",
+    "open_app": "Mở FamilyHub",
+    "learn_more": "Tìm Hiểu Thêm"
+  },
+  "features": {
+    "badge": "Tính Năng",
+    "title": "Giữ Câu Chuyện Gia Đình Sống Mãi",
+    "subtitle": "Những công cụ đơn giản, đẹp đẽ giúp lưu giữ ký ức gia đình dễ dàng như một cuộc trò chuyện",
+    "items": [
+      { "title": "Ghi Âm Câu Chuyện Bằng Giọng Nói", "description": "Ghi lại những câu chuyện và ký ức gia đình qua cuộc trò chuyện giọng nói tự nhiên — AI phiên âm, sắp xếp và lưu giữ từng lời nói." },
+      { "title": "Sách Tri Thức Gia Đình", "description": "Tự động biên soạn những câu chuyện, ảnh và ký ức được ghi lại thành một cuốn sách gia đình số đẹp đẽ, có thể chia sẻ." },
+      { "title": "Truy Cập Đa Thế Hệ", "description": "Mời các thành viên gia đình ở mọi lứa tuổi đóng góp và khám phá — đủ đơn giản cho ông bà, đủ hấp dẫn cho con cháu." },
+      { "title": "Hướng Dẫn Trò Chuyện AI", "description": "Các câu hỏi được hướng dẫn bởi AI giúp các thành viên gia đình chia sẻ những câu chuyện có ý nghĩa mà họ có thể không nghĩ đến." },
+      { "title": "Kho Ảnh & Ký Ức", "description": "Tải lên ảnh, video và tài liệu. AI tổ chức chúng theo người, địa điểm và sự kiện một cách tự động." },
+      { "title": "Riêng Tư & Bảo Mật", "description": "Câu chuyện gia đình của bạn được riêng tư theo mặc định. Mã hóa đầu cuối đảm bảo chỉ các thành viên gia đình được mời mới có thể truy cập." }
+    ]
+  },
+  "quote": {
+    "text": "Những câu chuyện ông bà kể cho chúng ta là nền tảng của con người chúng ta. FamilyHub đảm bảo những câu chuyện đó không bao giờ bị mất.",
+    "attribution": "Người Dùng FamilyHub",
+    "start_preserving": "Bắt Đầu Lưu Giữ Ký Ức"
+  },
+  "cta": {
+    "title": "Tặng Gia Đình Bạn Món Quà Lưu Giữ Ký Ức",
+    "description": "Bắt đầu ghi lại câu chuyện hôm nay — miễn phí để thử, dễ sử dụng và được xây dựng để tồn tại qua nhiều thế hệ.",
+    "primary": "Mở FamilyHub",
+    "secondary": "Liên Hệ Chúng Tôi"
+  }
+}

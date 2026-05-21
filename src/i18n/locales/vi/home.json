@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "badge": "Giải pháp AI Doanh nghiệp",
+    "title_1": "AI vị nhân sinh.",
+    "title_2": "Xây dựng cho Doanh nghiệp.",
+    "description": "AI đang thay đổi thế giới một cách mạnh mẽ. Sứ mệnh của chúng tôi là mang AI đến với mọi người. Trong hành trình này, chúng tôi xây dựng các sản phẩm giúp doanh nghiệp và cộng đồng phát triển.",
+    "explore_products": "Khám phá Sản phẩm",
+    "talk_to_team": "Liên hệ Đội ngũ",
+    "scroll": "Cuộn để khám phá"
+  },
+  "stats": {
+    "ai_products": "Sản phẩm AI",
+    "enterprise_clients": "Khách hàng Doanh nghiệp",
+    "industries_served": "Ngành được phục vụ",
+    "platform_uptime": "Thời gian Hoạt động"
+  },
+  "products_section": {
+    "badge": "Sản phẩm của chúng tôi",
+    "title": "Bộ Sản phẩm AI Doanh nghiệp",
+    "subtitle": "Các sản phẩm AI được thiết kế chuyên biệt để giải quyết những thách thức kinh doanh thực tế trong nhiều lĩnh vực"
+  },
+  "services_section": {
+    "badge": "Dịch vụ của chúng tôi",
+    "title": "Dịch vụ Phát triển AI",
+    "subtitle": "Các dịch vụ AI toàn diện từ xây dựng chiến lược đến triển khai — chúng tôi đồng hành cùng bạn để xây dựng, chứng minh hiệu quả và mở rộng giải pháp AI",
+    "cards": [
+      {
+        "title": "Phát triển AI Agent",
+        "description": "Xây dựng các agent thông minh tự động hóa quy trình phức tạp, xử lý tương tác với khách hàng và đưa ra quyết định dựa trên dữ liệu một cách tự chủ."
+      },
+      {
+        "title": "Tự động hóa Quy trình AI",
+        "description": "Thiết kế và triển khai quy trình làm việc bằng AI giúp tối ưu vận hành, giảm công việc thủ công và nâng cao hiệu suất."
+      },
+      {
+        "title": "Phát triển AI API",
+        "description": "Xây dựng các AI API mạnh mẽ, có thể mở rộng, tích hợp liền mạch vào hệ thống hiện có và các ứng dụng bên thứ ba."
+      },
+      {
+        "title": "Huấn luyện & Tinh chỉnh Mô hình",
+        "description": "Huấn luyện và tinh chỉnh mô hình tùy chỉnh trên dữ liệu nội bộ để đạt độ chính xác vượt trội cho các trường hợp sử dụng cụ thể."
+      },
+      {
+        "title": "Phát triển Sản phẩm AI",
+        "description": "Phát triển sản phẩm AI toàn chu trình từ ý tưởng đến ra mắt — thiết kế UX, kỹ thuật, kiểm thử và triển khai sản xuất."
+      },
+      {
+        "title": "Tư vấn & Chiến lược",
+        "description": "Tư vấn chiến lược AI để xác định cơ hội, xây dựng lộ trình và hướng dẫn tổ chức của bạn trong hành trình chuyển đổi AI."
+      }
+    ]
+  },
+  "why_hero": {
+    "badge": "Tại sao chọn chúng tôi",
+    "title_1": "Tại sao chọn",
+    "title_2": "Primitive AI?",
+    "description": "Chúng tôi cam kết cung cấp các giải pháp AI đổi mới tạo ra giá trị kinh doanh thực sự và đo lường được cho doanh nghiệp và cộng đồng mà họ phục vụ.",
+    "get_started": "Bắt đầu",
+    "our_solutions": "Giải pháp của chúng tôi"
+  },
+  "why_reasons": {
+    "badge": "Lý do",
+    "title": "Điều tạo nên sự khác biệt",
+    "subtitle": "Chúng tôi cung cấp giải pháp AI tiên tiến phù hợp với nhu cầu kinh doanh độc đáo của bạn",
+    "cards": [
+      {
+        "title": "Giải pháp Đổi mới",
+        "description": "Chúng tôi tận dụng những tiến bộ mới nhất trong AI để phát triển các giải pháp sáng tạo giải quyết thách thức riêng của bạn."
+      },
+      {
+        "title": "Kết quả Đã chứng minh",
+        "description": "Giải pháp của chúng tôi được chứng minh bởi các khách hàng — tăng hiệu quả, giảm chi phí và cải thiện sự hài lòng của khách hàng."
+      },
+      {
+        "title": "Giao hàng Đúng hạn",
+        "description": "Chúng tôi cam kết giao dự án đúng thời hạn và trong ngân sách, không đánh đổi chất lượng."
+      },
+      {
+        "title": "Đội ngũ Chuyên gia",
+        "description": "Đội ngũ chuyên gia AI của chúng tôi có kinh nghiệm phong phú trong việc phát triển và triển khai giải pháp AI cho nhiều lĩnh vực."
+      },
+      {
+        "title": "Giải pháp Tùy chỉnh",
+        "description": "Chúng tôi hiểu mỗi doanh nghiệp là một thực thể đơn nhất. Vì vậy, chúng tôi cung cấp giải pháp AI tùy chỉnh theo nhu cầu và mục tiêu cụ thể của bạn."
+      },
+      {
+        "title": "Hỗ trợ Liên tục",
+        "description": "Chúng tôi cung cấp hỗ trợ và bảo trì liên tục để đảm bảo các giải pháp AI của bạn tiếp tục tạo ra giá trị theo thời gian."
+      }
+    ]
+  },
+  "success_section": {
+    "badge": "Câu chuyện Thành công",
+    "title": "Tác động Thực tế, Kết quả Thực sự",
+    "subtitle": "Xem cách các tổ chức trong nhiều ngành đang chuyển đổi hoạt động với Primitive AI",
+    "view_all": "Xem tất cả câu chuyện",
+    "stories": [
+      {
+        "title": "Chuyển đổi An toàn Lao động trong Sản xuất",
+        "industry": "Sản xuất",
+        "summary": "Nền tảng Camera AI của VisionHub được triển khai tại 12 cơ sở để giám sát tuân thủ PPE và khu vực tương tác người-robot theo thời gian thực.",
+        "metric": "25.2%",
+        "metric_label": "Giảm sự cố lao động"
+      },
+      {
+        "title": "Cách mạng hóa Hỗ trợ Khách hàng trong FinTech",
+        "industry": "Dịch vụ Tài chính",
+        "summary": "Chatbot AI của SupportHub xử lý tự động 80% yêu cầu hỗ trợ cấp 1, với chuyển giao liền mạch cho đội ngũ CS trong các trường hợp phức tạp.",
+        "metric": "47%",
+        "metric_label": "Tăng sự hài lòng khách hàng"
+      },
+      {
+        "title": "Đẩy nhanh Hoạt động Pháp lý",
+        "industry": "Pháp lý",
+        "summary": "LegalHub tự động hóa tạo lập và xem xét hợp đồng, giảm thời gian xử lý từ ngày xuống giờ trên 500+ mẫu tài liệu.",
+        "metric": "60%",
+        "metric_label": "Xử lý tài liệu nhanh hơn"
+      }
+    ]
+  },
+  "partners": {
+    "badge": "Uy Tín",
+    "title": "Được Tin Dùng Bởi Các Đối Tác Tiên Phong",
+    "subtitle": "Hợp tác chặt chẽ với các tổ chức tiên phong đổi mới sáng tạo để định hình tương lai của Doanh Nghiệp với AI"
+  },
+  "galaxy": {
+    "click_to_explore": "Nhấp để khám phá",
+    "view_details": "Xem Chi Tiết"
+  },
+  "testimonials_section": {
+    "badge": "Nhận xét Khách hàng",
+    "title": "Khách hàng Nói gì",
+    "subtitle": "Đừng chỉ nghe chúng tôi nói — hãy nghe từ những nhà lãnh đạo đã tin tưởng Primitive AI",
+    "items": [
+      {
+        "quote": "Nền tảng Camera AI đã cải thiện đáng kể an toàn lao động của chúng tôi. Chúng tôi đã giảm 40% sự cố kể từ khi triển khai.",
+        "author": "Kiem Nguyen",
+        "role": "Giám đốc Điều hành",
+        "company": "RAIS Tech"
+      },
+      {
+        "quote": "Primitive AI đã hỗ trợ chúng tôi phát triển và triển khai AI Agent với chất lượng cao và tốc độ nhanh. Chúng tôi rất hài lòng với dịch vụ của họ.",
+        "author": "Oscar P. Ridell",
+        "role": "CEO",
+        "company": "Ymner"
+      },
+      {
+        "quote": "Trước đây, nhóm 10 nhân viên chỉ xử lý được 5% phiếu hỗ trợ. Giờ đây, chúng tôi phục vụ tất cả khách hàng ngay lập tức 24/7, với độ chính xác và sự hài lòng cao.",
+        "author": "Duyen Nguyen",
+        "role": "CTO",
+        "company": "TNE"
+      }
+    ]
+  }
+}

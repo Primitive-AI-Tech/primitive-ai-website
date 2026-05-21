@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "badge": "Dịch vụ Phát triển AI",
+    "title_1": "AI Toàn diện",
+    "title_2": "Xây dựng cho Doanh nghiệp của bạn",
+    "description": "Từ chiến lược đến triển khai — chúng tôi đồng hành cùng bạn để thiết kế, xây dựng, huấn luyện và mở rộng các giải pháp AI mang lại kết quả có thể đo lường.",
+    "start_project": "Bắt đầu Dự án",
+    "view_products": "Xem Sản phẩm",
+    "scroll": "Dịch vụ của chúng tôi"
+  },
+  "list": {
+    "badge": "Những gì chúng tôi làm",
+    "title": "Dịch vụ AI Toàn diện",
+    "subtitle": "Chúng tôi bao phủ mọi giai đoạn trong hành trình AI — từ xác định cơ hội đến xây dựng và vận hành hệ thống sản xuất",
+    "whats_included": "Bao gồm",
+    "discuss_service": "Thảo luận về Dịch vụ này",
+    "items": [
+      {
+        "title": "Phát triển AI Agent",
+        "tagline": "AI tự chủ làm việc cho bạn",
+        "description": "Chúng tôi thiết kế và xây dựng các agent thông minh tự động hóa quy trình đa bước phức tạp, xử lý tương tác khách hàng, đưa ra quyết định dựa trên dữ liệu và vận hành tự chủ trên các hệ thống kinh doanh.",
+        "benefits": [
+          "Agent tùy chỉnh được huấn luyện trên dữ liệu và quy trình của bạn",
+          "Tích hợp liền mạch với các công cụ hiện có (CRM, ERP, v.v.)",
+          "Giám sát và phân quyền leo thang có sự tham gia của con người",
+          "Giám sát và cải tiến liên tục"
+        ]
+      },
+      {
+        "title": "Tự động hóa Quy trình AI",
+        "tagline": "Loại bỏ công việc lặp đi lặp lại ở quy mô lớn",
+        "description": "Chúng tôi phân tích, thiết kế lại và tự động hóa các quy trình thủ công bằng AI — từ nhập liệu và phân phối tài liệu đến phê duyệt và báo cáo. Giải phóng nhóm của bạn để tập trung vào công việc giá trị cao.",
+        "benefits": [
+          "Phân tích và tối ưu hóa quy trình toàn diện",
+          "Xử lý và phân phối tài liệu bằng AI",
+          "Báo cáo tự động và kích hoạt quyết định",
+          "Tích hợp với 100+ nền tảng doanh nghiệp"
+        ]
+      },
+      {
+        "title": "Phát triển AI API",
+        "tagline": "Cơ sở hạ tầng AI có thể mở rộng cho sản phẩm của bạn",
+        "description": "Chúng tôi xây dựng AI API mạnh mẽ, sẵn sàng cho sản xuất, tích hợp liền mạch vào hệ thống hiện có và ứng dụng bên thứ ba — mang lại khả năng AI vượt trội cho sản phẩm của bạn mà không cần sự phức tạp.",
+        "benefits": [
+          "Thiết kế và triển khai API RESTful và GraphQL",
+          "Tích hợp LLM (OpenAI, Anthropic, Gemini, mô hình cục bộ)",
+          "Kiến trúc cloud-native có thể mở rộng",
+          "Tài liệu và hỗ trợ toàn diện"
+        ]
+      },
+      {
+        "title": "Huấn luyện & Tinh chỉnh Mô hình",
+        "tagline": "AI được xây dựng chính xác cho lĩnh vực của bạn",
+        "description": "Các mô hình AI thông thường thường bỏ lỡ sắc thái của ngành bạn. Chúng tôi tinh chỉnh và huấn luyện mô hình trên dữ liệu nội bộ để đạt độ chính xác vượt trội, chuyên môn về lĩnh vực và hiệu suất kinh doanh cụ thể.",
+        "benefits": [
+          "Tinh chỉnh đặc thù ngành trên bộ dữ liệu của bạn",
+          "Đường dẫn RAG (Retrieval-Augmented Generation)",
+          "Đánh giá, đo chuẩn và tối ưu hóa mô hình",
+          "Tùy chọn triển khai tại chỗ hoặc đám mây riêng"
+        ]
+      },
+      {
+        "title": "Phát triển Sản phẩm AI",
+        "tagline": "Từ ý tưởng đến sản phẩm AI sẵn sàng sản xuất",
+        "description": "Phát triển sản phẩm AI toàn chu trình — chúng tôi đồng hành từ giai đoạn ý tưởng qua thiết kế UX, kỹ thuật, kiểm thử và triển khai sản xuất để xây dựng sản phẩm AI mà người dùng sẽ yêu thích.",
+        "benefits": [
+          "Chiến lược và lộ trình phát triển sản phẩm AI",
+          "Thiết kế UX/UI tối ưu cho tương tác AI",
+          "Phát triển Agile với demo thường xuyên",
+          "Hỗ trợ và cải tiến sau khi ra mắt"
+        ]
+      },
+      {
+        "title": "Tư vấn & Chiến lược",
+        "tagline": "Chuyển đổi AI với lộ trình rõ ràng",
+        "description": "Không biết bắt đầu từ đâu với AI? Các chuyên gia của chúng tôi giúp bạn xác định cơ hội giá trị cao nhất, xây dựng lộ trình thực tế và hướng dẫn tổ chức qua hành trình chuyển đổi AI thành công.",
+        "benefits": [
+          "Đánh giá mức độ sẵn sàng AI và phân tích khoảng cách",
+          "Xác định trường hợp sử dụng và mô hình ROI",
+          "Lựa chọn công nghệ và đánh giá nhà cung cấp",
+          "Quản lý thay đổi và nâng cao năng lực đội ngũ"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "badge": "Cách chúng tôi làm việc",
+    "title": "Quy trình Giao hàng của chúng tôi",
+    "subtitle": "Quy trình 5 bước đã được kiểm chứng đưa bạn từ ý tưởng đến sản xuất một cách tự tin",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Khám phá",
+        "description": "Chúng tôi tìm hiểu doanh nghiệp, mục tiêu và điểm đau của bạn qua các buổi workshop chuyên sâu."
+      },
+      {
+        "step": "02",
+        "title": "Chiến lược",
+        "description": "Chúng tôi xác định phương pháp AI, kiến trúc và các chỉ số thành công."
+      },
+      {
+        "step": "03",
+        "title": "Xây dựng",
+        "description": "Đội kỹ sư của chúng tôi thiết kế, xây dựng và kiểm thử giải pháp của bạn trong các sprint lặp đi lặp lại."
+      },
+      {
+        "step": "04",
+        "title": "Triển khai",
+        "description": "Chúng tôi ra mắt vào môi trường sản xuất với giám sát, đánh giá bảo mật và tài liệu bàn giao."
+      },
+      {
+        "step": "05",
+        "title": "Tối ưu hóa",
+        "description": "Hỗ trợ liên tục, tái huấn luyện mô hình và cải tiến liên tục để tối đa hóa ROI."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn sàng Xây dựng điều gì đó Ý nghĩa với AI?",
+    "description": "Hãy kể cho chúng tôi nghe về dự án của bạn và chúng tôi sẽ cho bạn thấy đội ngũ của chúng tôi có thể thực hiện nó như thế nào.",
+    "primary": "Bắt đầu Cuộc trò chuyện",
+    "secondary": "Xem Sản phẩm của chúng tôi"
+  }
+}

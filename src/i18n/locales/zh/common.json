@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "首页",
+    "products_services": "产品与服务",
+    "products": "产品",
+    "services": "服务",
+    "view_all_products": "查看所有产品 →",
+    "view_all_services": "查看所有服务 →",
+    "success_stories": "成功案例",
+    "about": "关于我们",
+    "contact_us": "联系我们",
+    "products_list": {
+      "support_hub_desc": "AI驱动的客户支持平台",
+      "knowledge_hub_desc": "企业知识管理与AI检索",
+      "vision_hub_desc": "智能视觉监控与摄像AI",
+      "family_hub_desc": "家庭知识与记忆传承",
+      "legal_hub_desc": "法律文件生成与管理"
+    },
+    "services_list": {
+      "ai_agent_dev": "AI智能体开发",
+      "ai_workflow": "AI工作流自动化",
+      "ai_api": "AI API开发",
+      "model_training": "模型训练与微调",
+      "ai_product_dev": "AI产品开发",
+      "consulting": "咨询与战略规划"
+    }
+  },
+  "footer": {
+    "tagline": "AI正在改变世界。我们的使命是让AI造福人类——构建帮助企业和社区蓬勃发展的产品。",
+    "products": "产品",
+    "services": "服务",
+    "company": "公司",
+    "about_us": "关于我们",
+    "success_stories": "成功案例",
+    "contact": "联系我们",
+    "copyright": "© {{year}} Primitive AI. 版权所有。",
+    "terms": "服务条款",
+    "privacy": "隐私政策"
+  },
+  "cta": {
+    "default_title": "准备好用AI转型您的业务了吗？",
+    "default_description": "立即联系我们，了解Primitive AI如何帮助您的组织驾驭人工智能的力量。",
+    "default_primary": "立即开始",
+    "default_secondary": "申请演示"
+  },
+  "languages": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "learn_more": "了解更多",
+  "badge": {
+    "soon": "即将推出",
+    "live": "实时",
+    "optimal": "最优",
+    "beta": "测试版"
+  }
+}
