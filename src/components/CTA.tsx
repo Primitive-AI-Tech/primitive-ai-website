@@ -10,6 +10,7 @@ interface CTASectionProps {
   secondaryButtonText?: string;
   primaryButtonLink?: string;
   secondaryButtonLink?: string;
+  primaryButtonExternal?: boolean;
   showDemoIcon?: boolean;
 }
 
@@ -20,6 +21,7 @@ const CTASection = ({
   secondaryButtonText,
   primaryButtonLink = "/contact",
   secondaryButtonLink = "/contact",
+  primaryButtonExternal = false,
   showDemoIcon = true
 }: CTASectionProps) => {
   const { t } = useTranslation('common');
@@ -40,7 +42,11 @@ const CTASection = ({
           <p className="text-sm sm:text-base md:text-lg xl:text-xl text-purple-200/80 mb-8 md:mb-10 leading-relaxed">{resolvedDescription}</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
             <Button className="bg-white text-purple-800 hover:bg-white/90 font-semibold rounded-full px-8 py-5 sm:py-6 text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5" asChild>
-              <Link to={primaryButtonLink}>{resolvedPrimary}<ArrowRight className="ml-2 w-5 h-5" /></Link>
+              {primaryButtonExternal ? (
+                <a href={primaryButtonLink} target="_blank" rel="noopener noreferrer">{resolvedPrimary}<ArrowRight className="ml-2 w-5 h-5" /></a>
+              ) : (
+                <Link to={primaryButtonLink}>{resolvedPrimary}<ArrowRight className="ml-2 w-5 h-5" /></Link>
+              )}
             </Button>
             <Button variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-5 sm:py-6 text-base sm:text-lg transition-all duration-300 hover:-translate-y-0.5" asChild>
               <Link to={secondaryButtonLink}>{showDemoIcon && <Users className="mr-2 h-5 w-5" />}{resolvedSecondary}</Link>

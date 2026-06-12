@@ -35,6 +35,11 @@
         "name": "LegalHub",
         "tagline": "AI-Powered Legal Operations",
         "description": "Streamline legal document creation, management, and e-signing with intelligent automation, compliance checks, and template generation."
+      },
+      {
+        "name": "EduAssess AI",
+        "tagline": "AI-Powered English Assessment",
+        "description": "Automate English language assessment with AI-powered grading for speaking, writing, and comprehension. Deliver instant, accurate evaluations for educators and students worldwide."
       }
     ]
   },

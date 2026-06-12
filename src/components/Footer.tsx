@@ -12,6 +12,7 @@ const Footer = () => {
     { name: 'VisionHub', path: '/solutions/camera-ai' },
     { name: 'FamilyHub', path: '/solutions/familyhub' },
     { name: 'LegalHub', path: '/solutions/legalhub' },
+    { name: 'EduAssess AI', path: '/solutions/eduassess' },
   ];
 
   const services = [
@@ -57,7 +58,11 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {products.map((p) => (
                 <li key={p.name}>
-                  <Link to={p.path} className="text-sm text-purple-200/70 hover:text-white transition-colors">{p.name}</Link>
+                  {p.path.startsWith('http') ? (
+                    <a href={p.path} target="_blank" rel="noopener noreferrer" className="text-sm text-purple-200/70 hover:text-white transition-colors">{p.name}</a>
+                  ) : (
+                    <Link to={p.path} className="text-sm text-purple-200/70 hover:text-white transition-colors">{p.name}</Link>
+                  )}
                 </li>
               ))}
             </ul>

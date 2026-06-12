@@ -5,19 +5,20 @@ import ServiceCard from '@/components/ServiceCard';
 import ScrollReveal from '@/components/ScrollReveal';
 import CTASection from '@/components/CTA';
 import {
-  Camera, MessageCircle, FileText, BookOpen, Heart,
-  Bot, Workflow, Code2, GraduationCap, Package, Lightbulb,
+  Camera, MessageCircle, FileText, BookOpen, Heart, GraduationCap,
+  Bot, Workflow, Code2, Package, Lightbulb,
   ChevronDown
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-const productIcons = [MessageCircle, BookOpen, Camera, Heart, FileText];
+const productIcons = [MessageCircle, BookOpen, Camera, Heart, FileText, GraduationCap];
 const productGradients = [
   'from-blue-500 to-blue-700',
   'from-purple-500 to-purple-700',
   'from-emerald-500 to-emerald-700',
   'from-rose-500 to-rose-700',
   'from-amber-500 to-orange-600',
+  'from-cyan-500 to-teal-600',
 ];
 const productPaths = [
   '/solutions/chatbot',
@@ -25,9 +26,10 @@ const productPaths = [
   '/solutions/camera-ai',
   '/solutions/familyhub',
   '/solutions/legalhub',
+  '/solutions/eduassess',
 ];
 const productStatuses: Array<'active' | 'coming-soon' | 'beta' | undefined> = [
-  undefined, undefined, undefined, undefined, 'beta',
+  undefined, undefined, undefined, undefined, 'beta', undefined,
 ];
 
 const serviceIcons = [Bot, Workflow, Code2, GraduationCap, Package, Lightbulb];

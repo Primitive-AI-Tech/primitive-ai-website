@@ -159,7 +159,7 @@ const Index = () => {
                   </div>
                   <div className="text-left">
                     <div className="text-3xl font-bold text-gray-900 mb-1">
-                      <StatsCounter end={5} suffix="+" label="" />
+                      <StatsCounter end={6} suffix="+" label="" />
                     </div>
                     <div className="text-sm text-gray-500 font-medium leading-snug">{t('stats.ai_products', 'Năm kinh nghiệm trong lĩnh vực AI')}</div>
                   </div>

@@ -58,13 +58,25 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <p className="text-muted-foreground text-sm leading-relaxed flex-1 lg:max-w-[85%]">{description}</p>
 
         {/* Link */}
-        <Link
-          to={href}
-          className="inline-flex items-center self-start text-sm font-semibold text-purple-600 mt-5 group-hover:text-purple-700 transition-colors"
-        >
-          {t('learn_more')}
-          <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-        </Link>
+        {href.startsWith('http') ? (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center self-start text-sm font-semibold text-purple-600 mt-5 group-hover:text-purple-700 transition-colors"
+          >
+            {t('learn_more')}
+            <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        ) : (
+          <Link
+            to={href}
+            className="inline-flex items-center self-start text-sm font-semibold text-purple-600 mt-5 group-hover:text-purple-700 transition-colors"
+          >
+            {t('learn_more')}
+            <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        )}
       </div>
 
       {/* Custom Art */}

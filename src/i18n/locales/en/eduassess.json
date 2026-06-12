@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "title_1": "AI-Powered",
+    "title_2": "English Assessment",
+    "description": "Automate English language assessment with AI-powered grading for speaking, writing, and comprehension. Deliver instant, accurate evaluations at scale — for educators, language schools, and enterprises worldwide.",
+    "try_now": "Try EduAssess AI",
+    "request_demo": "Request Demo"
+  },
+  "features": {
+    "badge": "Key Features",
+    "title": "Everything You Need to Assess English Proficiency",
+    "subtitle": "EduAssess AI combines speech recognition, NLP, and adaptive scoring to deliver institution-grade language assessments",
+    "items": [
+      { "title": "Speaking Assessment", "description": "Evaluate pronunciation, fluency, vocabulary range, and grammar accuracy with real-time AI speech analysis powered by Whisper AI." },
+      { "title": "Writing Evaluation", "description": "Grade essays and written responses across coherence, vocabulary, grammar, and task achievement with deep NLP-based analysis." },
+      { "title": "Reading Comprehension", "description": "Adaptive comprehension questions with intelligent distractor analysis and instant, detailed scoring breakdowns." },
+      { "title": "Instant AI Grading", "description": "Receive scored results within seconds of submission — eliminating manual grading backlogs and human scoring bias." },
+      { "title": "Personalized Feedback", "description": "Every assessment generates a tailored feedback report highlighting strengths, weaknesses, and specific areas for improvement." },
+      { "title": "Progress Analytics", "description": "Track learner performance over time with longitudinal dashboards, cohort comparisons, and exportable progress reports." }
+    ]
+  },
+  "how_it_works": {
+    "badge": "How It Works",
+    "title": "From Assessment to Insight in Four Steps",
+    "subtitle": "EduAssess AI integrates seamlessly into your curriculum or training workflow from day one",
+    "steps": [
+      { "step": "01", "title": "Create Assessment", "description": "Build custom assessments or choose from CEFR-aligned templates covering speaking, writing, and reading comprehension." },
+      { "step": "02", "title": "Student Submits", "description": "Learners submit responses via audio recording or text input directly through the EduAssess platform — no special hardware required." },
+      { "step": "03", "title": "AI Scores & Analyzes", "description": "Our AI engine scores responses across multiple dimensions simultaneously, applying the same rigorous rubrics as human examiners." },
+      { "step": "04", "title": "Review & Report", "description": "Educators and learners receive detailed score reports, feedback, and actionable insights — accessible immediately on the dashboard." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Use Cases",
+    "title": "Built for Every English Learning Context",
+    "subtitle": "EduAssess AI adapts to the assessment needs of language schools, universities, and enterprises",
+    "items": [
+      {
+        "title": "Language Schools & Test Preparation",
+        "description": "Accelerate IELTS, TOEFL, and Cambridge exam preparation with automated mock assessments that match official scoring standards and give students instant practice feedback.",
+        "points": ["CEFR-aligned scoring rubrics", "Unlimited mock speaking & writing tests", "Instant band score estimation with detailed feedback"]
+      },
+      {
+        "title": "Corporate English Training",
+        "description": "Assess and benchmark employee English proficiency at scale — onboarding, periodic reviews, and post-training evaluations without manual HR overhead.",
+        "points": ["Bulk learner enrollment and management", "Role-specific assessment templates", "Exportable reports for HR and L&D teams"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform English Assessment?",
+    "description": "Start using EduAssess AI today — no setup required. Try the platform or contact us to discuss enterprise deployment.",
+    "primary": "Try EduAssess AI",
+    "secondary": "Explore Solutions"
+  }
+}

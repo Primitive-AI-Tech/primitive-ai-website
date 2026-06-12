@@ -14,7 +14,8 @@
       "knowledge_hub_desc": "기업 지식 관리 및 AI 검색",
       "vision_hub_desc": "지능형 영상 모니터링 및 카메라 AI",
       "family_hub_desc": "가족 지식 보존 및 기억 저장",
-      "legal_hub_desc": "법률 문서 생성 및 관리"
+      "legal_hub_desc": "법률 문서 생성 및 관리",
+      "edu_assess_desc": "AI 영어 평가 및 언어 채점 플랫폼"
     },
     "services_list": {
       "ai_agent_dev": "AI 에이전트 개발",

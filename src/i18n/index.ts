@@ -16,6 +16,7 @@ import enSupporthub from './locales/en/supporthub.json';
 import enKnowledgehub from './locales/en/knowledgehub.json';
 import enFamilyhub from './locales/en/familyhub.json';
 import enLegalhub from './locales/en/legalhub.json';
+import enEduassess from './locales/en/eduassess.json';
 
 // VI
 import viCommon from './locales/vi/common.json';
@@ -31,6 +32,7 @@ import viSupporthub from './locales/vi/supporthub.json';
 import viKnowledgehub from './locales/vi/knowledgehub.json';
 import viFamilyhub from './locales/vi/familyhub.json';
 import viLegalhub from './locales/vi/legalhub.json';
+import viEduassess from './locales/vi/eduassess.json';
 
 // JA
 import jaCommon from './locales/ja/common.json';
@@ -46,6 +48,7 @@ import jaSupporthub from './locales/ja/supporthub.json';
 import jaKnowledgehub from './locales/ja/knowledgehub.json';
 import jaFamilyhub from './locales/ja/familyhub.json';
 import jaLegalhub from './locales/ja/legalhub.json';
+import jaEduassess from './locales/ja/eduassess.json';
 
 // ZH
 import zhCommon from './locales/zh/common.json';
@@ -61,6 +64,7 @@ import zhSupporthub from './locales/zh/supporthub.json';
 import zhKnowledgehub from './locales/zh/knowledgehub.json';
 import zhFamilyhub from './locales/zh/familyhub.json';
 import zhLegalhub from './locales/zh/legalhub.json';
+import zhEduassess from './locales/zh/eduassess.json';
 
 // KO
 import koCommon from './locales/ko/common.json';
@@ -76,6 +80,7 @@ import koSupporthub from './locales/ko/supporthub.json';
 import koKnowledgehub from './locales/ko/knowledgehub.json';
 import koFamilyhub from './locales/ko/familyhub.json';
 import koLegalhub from './locales/ko/legalhub.json';
+import koEduassess from './locales/ko/eduassess.json';
 
 i18n
   .use(LanguageDetector)
@@ -96,6 +101,7 @@ i18n
         knowledgehub: enKnowledgehub,
         familyhub: enFamilyhub,
         legalhub: enLegalhub,
+        eduassess: enEduassess,
       },
       vi: {
         common: viCommon,
@@ -111,6 +117,7 @@ i18n
         knowledgehub: viKnowledgehub,
         familyhub: viFamilyhub,
         legalhub: viLegalhub,
+        eduassess: viEduassess,
       },
       ja: {
         common: jaCommon,
@@ -126,6 +133,7 @@ i18n
         knowledgehub: jaKnowledgehub,
         familyhub: jaFamilyhub,
         legalhub: jaLegalhub,
+        eduassess: jaEduassess,
       },
       zh: {
         common: zhCommon,
@@ -141,6 +149,7 @@ i18n
         knowledgehub: zhKnowledgehub,
         familyhub: zhFamilyhub,
         legalhub: zhLegalhub,
+        eduassess: zhEduassess,
       },
       ko: {
         common: koCommon,
@@ -156,6 +165,7 @@ i18n
         knowledgehub: koKnowledgehub,
         familyhub: koFamilyhub,
         legalhub: koLegalhub,
+        eduassess: koEduassess,
       },
     },
     fallbackLng: 'en',

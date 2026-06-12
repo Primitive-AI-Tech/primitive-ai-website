@@ -21,6 +21,7 @@ import SupportHub from '@/pages/solution-details/Chatbot';
 import LegalHub from '@/pages/solution-details/LegalHub';
 import KnowledgeHub from '@/pages/solution-details/KnowledgeHub';
 import FamilyHub from '@/pages/solution-details/FamilyHub';
+import EduAssess from '@/pages/solution-details/EduAssess';
 
 import './App.css';
 
@@ -47,7 +48,8 @@ function App() {
             <Route path="/solutions/legalhub" element={<LegalHub />} />
             <Route path="/solutions/knowledgehub" element={<KnowledgeHub />} />
             <Route path="/solutions/familyhub" element={<FamilyHub />} />
-            
+            <Route path="/solutions/eduassess" element={<EduAssess />} />
+
             {/* 404 route */}
             <Route path="*" element={<NotFound />} />
           </Routes>

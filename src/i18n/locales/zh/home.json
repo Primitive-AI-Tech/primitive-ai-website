@@ -110,11 +110,11 @@
         "metric_label": "客户满意度提升"
       },
       {
-        "title": "加速法律运营",
-        "industry": "法律",
-        "summary": "LegalHub自动化合同生成和审查，将500多个模板的文件处理时间从数天缩短至数小时。",
-        "metric": "60%",
-        "metric_label": "文件处理提速"
+        "title": "教育英语评估的数字化变革",
+        "industry": "教育",
+        "summary": "EduAssess AI部署于语言学校和企业培训项目，以媲美人类考官精度的AI评分自动化口语和写作评估。",
+        "metric": "85%",
+        "metric_label": "评分时间减少"
       }
     ]
   },

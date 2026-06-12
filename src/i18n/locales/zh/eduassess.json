@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "title_1": "AI驱动的",
+    "title_2": "英语水平评估",
+    "description": "通过AI自动化英语口语、写作和阅读理解评分。为全球教育机构、语言学校和企业提供即时、准确的大规模评估结果。",
+    "try_now": "立即体验EduAssess AI",
+    "request_demo": "申请演示"
+  },
+  "features": {
+    "badge": "核心功能",
+    "title": "英语能力评估所需的一切",
+    "subtitle": "EduAssess AI融合语音识别、NLP和自适应评分，提供机构级语言评估",
+    "items": [
+      { "title": "口语评估", "description": "通过Whisper AI支持的实时AI语音分析，评估发音、流利度、词汇范围和语法准确性。" },
+      { "title": "写作评估", "description": "通过深度NLP分析，对文章和书面回答的连贯性、词汇、语法和任务完成度进行评分。" },
+      { "title": "阅读理解", "description": "自适应阅读理解题目，配备智能干扰项分析和即时详细评分解析。" },
+      { "title": "即时AI评分", "description": "提交后数秒内获得评分结果——彻底消除人工评分积压和主观评分偏差。" },
+      { "title": "个性化反馈", "description": "每次评估生成定制化反馈报告，突出优势、不足和具体改进方向。" },
+      { "title": "进度分析", "description": "通过纵向仪表板、群组对比和可导出的进度报告追踪学习者的长期表现。" }
+    ]
+  },
+  "how_it_works": {
+    "badge": "工作原理",
+    "title": "四步从评估到洞察",
+    "subtitle": "EduAssess AI从第一天起就与您的课程或培训流程无缝集成",
+    "steps": [
+      { "step": "01", "title": "创建评估", "description": "创建自定义评估或从涵盖口语、写作和阅读理解的CEFR对齐模板中选择。" },
+      { "step": "02", "title": "学习者提交", "description": "学习者直接通过EduAssess平台以录音或文本输入方式提交答案——无需特殊硬件。" },
+      { "step": "03", "title": "AI评分分析", "description": "我们的AI引擎同时从多个维度对答案进行评分，应用与人类考官相同的严格评分标准。" },
+      { "step": "04", "title": "查看报告", "description": "教师和学习者可立即在仪表板上获取详细评分报告、反馈和可操作的改进建议。" }
+    ]
+  },
+  "use_cases": {
+    "badge": "应用场景",
+    "title": "适用于各类英语学习场景",
+    "subtitle": "EduAssess AI能够适应语言学校、大学和企业的评估需求",
+    "items": [
+      {
+        "title": "语言学校与备考培训",
+        "description": "通过符合官方评分标准的自动化模拟考试，加速学生IELTS、TOEFL和剑桥考试备考，提供即时练习反馈。",
+        "points": ["CEFR对齐评分标准", "无限次口语写作模拟测试", "即时评分估算与详细反馈"]
+      },
+      {
+        "title": "企业英语培训",
+        "description": "大规模评估和基准化员工英语能力——入职测评、定期审查和培训后评估，无需繁重的人工HR流程。",
+        "points": ["批量学习者注册与管理", "职位专属评估模板", "可导出的HR和L&D团队报告"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "准备好变革英语评估了吗？",
+    "description": "立即开始使用EduAssess AI——无需任何设置。体验平台或联系我们讨论企业部署方案。",
+    "primary": "立即体验EduAssess AI",
+    "secondary": "探索解决方案"
+  }
+}

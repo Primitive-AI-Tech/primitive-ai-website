@@ -14,7 +14,8 @@
       "knowledge_hub_desc": "企业知识管理与AI检索",
       "vision_hub_desc": "智能视觉监控与摄像AI",
       "family_hub_desc": "家庭知识与记忆传承",
-      "legal_hub_desc": "法律文件生成与管理"
+      "legal_hub_desc": "法律文件生成与管理",
+      "edu_assess_desc": "AI英语评估与语言评分平台"
     },
     "services_list": {
       "ai_agent_dev": "AI智能体开发",

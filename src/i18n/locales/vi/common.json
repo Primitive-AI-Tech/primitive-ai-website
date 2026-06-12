@@ -14,7 +14,8 @@
       "knowledge_hub_desc": "Quản lý tri thức doanh nghiệp & truy xuất AI",
       "vision_hub_desc": "Giám sát hình ảnh thông minh & Camera AI",
       "family_hub_desc": "Lưu giữ ký ức & tri thức gia đình",
-      "legal_hub_desc": "Tạo lập & quản lý văn bản pháp lý"
+      "legal_hub_desc": "Tạo lập & quản lý văn bản pháp lý",
+      "edu_assess_desc": "Đánh giá & chấm điểm tiếng Anh bằng AI"
     },
     "services_list": {
       "ai_agent_dev": "Phát triển AI Agent",

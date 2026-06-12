@@ -14,7 +14,8 @@
       "knowledge_hub_desc": "Enterprise knowledge management & AI retrieval",
       "vision_hub_desc": "Intelligent visual monitoring & Camera AI",
       "family_hub_desc": "Family knowledge preservation & memories",
-      "legal_hub_desc": "Legal document generation & management"
+      "legal_hub_desc": "Legal document generation & management",
+      "edu_assess_desc": "AI English assessment & language grading"
     },
     "services_list": {
       "ai_agent_dev": "AI Agent Development",

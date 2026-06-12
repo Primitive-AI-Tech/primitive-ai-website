@@ -35,6 +35,11 @@
         "name": "LegalHub",
         "tagline": "Vận hành Pháp lý bằng AI",
         "description": "Tối ưu hóa tạo lập, quản lý và ký điện tử văn bản pháp lý với tự động hóa thông minh, kiểm tra tuân thủ và tạo mẫu tài liệu."
+      },
+      {
+        "name": "EduAssess AI",
+        "tagline": "Đánh giá Tiếng Anh bằng AI",
+        "description": "Tự động hóa đánh giá ngôn ngữ tiếng Anh với chấm điểm AI cho kỹ năng nói, viết và đọc hiểu. Cung cấp kết quả đánh giá chính xác, tức thì cho giáo viên và học sinh toàn cầu."
       }
     ]
   },

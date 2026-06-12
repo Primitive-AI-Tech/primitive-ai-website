@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "title_1": "Đánh giá Tiếng Anh",
+    "title_2": "bằng Trí tuệ Nhân tạo",
+    "description": "Tự động hóa đánh giá ngôn ngữ tiếng Anh với chấm điểm AI cho kỹ năng nói, viết và đọc hiểu. Cung cấp kết quả đánh giá chính xác, tức thì — cho giáo viên, trường ngôn ngữ và doanh nghiệp toàn cầu.",
+    "try_now": "Dùng thử EduAssess AI",
+    "request_demo": "Yêu cầu Demo"
+  },
+  "features": {
+    "badge": "Tính năng Nổi bật",
+    "title": "Tất cả những gì bạn cần để đánh giá năng lực Tiếng Anh",
+    "subtitle": "EduAssess AI kết hợp nhận dạng giọng nói, NLP và chấm điểm thích ứng để cung cấp đánh giá ngôn ngữ chuẩn học thuật",
+    "items": [
+      { "title": "Đánh giá Kỹ năng Nói", "description": "Đánh giá phát âm, độ lưu loát, vốn từ vựng và độ chính xác ngữ pháp với phân tích giọng nói AI thời gian thực được hỗ trợ bởi Whisper AI." },
+      { "title": "Chấm điểm Bài Viết", "description": "Chấm điểm bài luận và câu trả lời viết về tính mạch lạc, từ vựng, ngữ pháp và hoàn thành nhiệm vụ với phân tích NLP chuyên sâu." },
+      { "title": "Đọc Hiểu", "description": "Câu hỏi đọc hiểu thích ứng với phân tích phương án nhiễu thông minh và phân tích điểm số chi tiết, tức thì." },
+      { "title": "Chấm điểm AI Tức thì", "description": "Nhận kết quả chấm điểm trong vài giây sau khi nộp bài — loại bỏ tồn đọng chấm điểm thủ công và sai lệch điểm số từ con người." },
+      { "title": "Phản hồi Cá nhân hóa", "description": "Mỗi bài đánh giá tạo ra báo cáo phản hồi phù hợp, nêu bật điểm mạnh, điểm yếu và các lĩnh vực cụ thể cần cải thiện." },
+      { "title": "Phân tích Tiến độ", "description": "Theo dõi hiệu suất học viên theo thời gian với bảng điều khiển theo dọc, so sánh nhóm và báo cáo tiến độ có thể xuất." }
+    ]
+  },
+  "how_it_works": {
+    "badge": "Cách hoạt động",
+    "title": "Từ Đánh giá đến Hiểu biết trong Bốn Bước",
+    "subtitle": "EduAssess AI tích hợp liền mạch vào chương trình học hoặc quy trình đào tạo của bạn từ ngày đầu tiên",
+    "steps": [
+      { "step": "01", "title": "Tạo Bài Đánh giá", "description": "Xây dựng bài đánh giá tùy chỉnh hoặc chọn từ các mẫu phù hợp CEFR bao gồm kỹ năng nói, viết và đọc hiểu." },
+      { "step": "02", "title": "Học viên Nộp Bài", "description": "Học viên nộp câu trả lời qua ghi âm hoặc nhập văn bản trực tiếp trên nền tảng EduAssess — không cần phần cứng đặc biệt." },
+      { "step": "03", "title": "AI Chấm điểm & Phân tích", "description": "Engine AI của chúng tôi chấm điểm câu trả lời trên nhiều chiều đồng thời, áp dụng cùng tiêu chí nghiêm ngặt như giám khảo con người." },
+      { "step": "04", "title": "Xem lại & Báo cáo", "description": "Giáo viên và học viên nhận báo cáo điểm chi tiết, phản hồi và thông tin chi tiết có thể hành động — có thể truy cập ngay trên bảng điều khiển." }
+    ]
+  },
+  "use_cases": {
+    "badge": "Trường hợp Sử dụng",
+    "title": "Được Xây dựng cho Mọi Bối cảnh Học Tiếng Anh",
+    "subtitle": "EduAssess AI thích ứng với nhu cầu đánh giá của các trường ngôn ngữ, trường đại học và doanh nghiệp",
+    "items": [
+      {
+        "title": "Trường Ngôn ngữ & Luyện thi",
+        "description": "Tăng tốc luyện thi IELTS, TOEFL và Cambridge với các bài thi thử tự động phù hợp với tiêu chuẩn chấm điểm chính thức và cung cấp phản hồi tức thì cho học viên.",
+        "points": ["Tiêu chí chấm điểm phù hợp CEFR", "Bài thi nói & viết thử không giới hạn", "Ước tính band score tức thì với phản hồi chi tiết"]
+      },
+      {
+        "title": "Đào tạo Tiếng Anh Doanh nghiệp",
+        "description": "Đánh giá và chuẩn hóa năng lực tiếng Anh của nhân viên quy mô lớn — tuyển dụng, đánh giá định kỳ và đánh giá sau đào tạo mà không cần gánh nặng nhân sự thủ công.",
+        "points": ["Đăng ký và quản lý học viên hàng loạt", "Mẫu đánh giá theo vai trò công việc", "Báo cáo xuất được cho HR và L&D"]
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn sàng Cải tổ Đánh giá Tiếng Anh?",
+    "description": "Bắt đầu sử dụng EduAssess AI ngay hôm nay — không cần thiết lập. Dùng thử nền tảng hoặc liên hệ với chúng tôi để thảo luận về triển khai doanh nghiệp.",
+    "primary": "Dùng thử EduAssess AI",
+    "secondary": "Khám phá Giải pháp"
+  }
+}

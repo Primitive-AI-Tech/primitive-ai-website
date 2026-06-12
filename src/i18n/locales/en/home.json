@@ -111,11 +111,11 @@
         "metric_label": "Increase in customer satisfaction"
       },
       {
-        "title": "Accelerating Legal Operations",
-        "industry": "Legal",
-        "summary": "LegalHub automated contract generation and review, reducing document turnaround time from days to hours across 500+ templates.",
-        "metric": "60%",
-        "metric_label": "Faster document processing"
+        "title": "Transforming English Assessment in Education",
+        "industry": "Education",
+        "summary": "EduAssess AI deployed across language schools and corporate training programs, automating speaking and writing evaluation with AI grading that matches human examiner accuracy.",
+        "metric": "85%",
+        "metric_label": "Reduction in grading time"
       }
     ]
   },

@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import {
-  Menu, X, Camera, MessageCircle, FileText, Brain, BookOpen, Heart,
-  Bot, Workflow, Code2, GraduationCap, Package, Lightbulb, ChevronDown, Globe
+  Menu, X, Camera, MessageCircle, FileText, Brain, BookOpen, Heart, GraduationCap,
+  Bot, Workflow, Code2, Package, Lightbulb, ChevronDown, Globe
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import i18n from '@/i18n';
@@ -81,6 +81,7 @@ const Navbar = () => {
     { name: 'VisionHub', descKey: 'nav.products_list.vision_hub_desc', icon: Camera, path: '/solutions/camera-ai' },
     { name: 'FamilyHub', descKey: 'nav.products_list.family_hub_desc', icon: Heart, path: '/solutions/familyhub' },
     { name: 'LegalHub', descKey: 'nav.products_list.legal_hub_desc', icon: FileText, path: '/solutions/legalhub', badgeKey: 'badge.beta' },
+    { name: 'EduAssess AI', descKey: 'nav.products_list.edu_assess_desc', icon: GraduationCap, path: '/solutions/eduassess' },
   ];
 
   const services = [
@@ -168,6 +169,28 @@ const Navbar = () => {
                     <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 px-2">{t('nav.products')}</h3>
                     <div className="space-y-1 flex-1">
                       {products.map((product) => (
+                        product.path.startsWith('http') ? (
+                        <a
+                          key={product.name}
+                          href={product.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-start gap-3 px-3 py-2.5 rounded-xl hover:bg-purple-50 transition-colors group/item"
+                        >
+                          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center shrink-0 mt-0.5">
+                            <product.icon className="w-4.5 h-4.5 text-purple-600" />
+                          </div>
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-2">
+                              <span className="text-sm font-semibold text-foreground group-hover/item:text-purple-700 transition-colors">{product.name}</span>
+                              {'badgeKey' in product && product.badgeKey && (
+                                <span className="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700">{t(product.badgeKey)}</span>
+                              )}
+                            </div>
+                            <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">{t(product.descKey)}</p>
+                          </div>
+                        </a>
+                        ) : (
                         <Link
                           key={product.name}
                           to={product.path}
@@ -186,6 +209,7 @@ const Navbar = () => {
                             <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">{t(product.descKey)}</p>
                           </div>
                         </Link>
+                        )
                       ))}
                     </div>
                     <div className="mt-4 pt-4 border-t border-border">
@@ -352,6 +376,21 @@ const Navbar = () => {
             <div className={cn('ml-2 pl-3 border-l space-y-0.5 py-1', isDark ? 'border-white/10' : 'border-purple-100')}>
               <p className={cn('text-[10px] font-bold uppercase tracking-widest px-3 pt-1 pb-1.5', isDark ? 'text-white/40' : 'text-muted-foreground')}>{t('nav.products')}</p>
               {products.map((product) => (
+                product.path.startsWith('http') ? (
+                <a
+                  key={product.name}
+                  href={product.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    'flex items-center gap-3 px-3 py-2 rounded-xl text-sm transition-colors',
+                    isDark ? 'text-white/80 hover:bg-white/10' : 'text-foreground hover:bg-purple-50'
+                  )}
+                >
+                  <product.icon className={cn('w-4 h-4 shrink-0', isDark ? 'text-purple-300' : 'text-purple-500')} />
+                  <span className="font-medium">{product.name}</span>
+                </a>
+                ) : (
                 <Link
                   key={product.name}
                   to={product.path}
@@ -362,10 +401,11 @@ const Navbar = () => {
                 >
                   <product.icon className={cn('w-4 h-4 shrink-0', isDark ? 'text-purple-300' : 'text-purple-500')} />
                   <span className="font-medium">{product.name}</span>
-                  {product.badgeKey && (
+                  {'badgeKey' in product && product.badgeKey && (
                     <span className="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 ml-auto">{t(product.badgeKey)}</span>
                   )}
                 </Link>
+                )
               ))}
               <p className={cn('text-[10px] font-bold uppercase tracking-widest px-3 pt-2 pb-1.5', isDark ? 'text-white/40' : 'text-muted-foreground')}>{t('nav.services')}</p>
               {services.map((service) => (

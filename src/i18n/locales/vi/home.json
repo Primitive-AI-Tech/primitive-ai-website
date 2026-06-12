@@ -111,11 +111,11 @@
         "metric_label": "Tăng sự hài lòng khách hàng"
       },
       {
-        "title": "Đẩy nhanh Hoạt động Pháp lý",
-        "industry": "Pháp lý",
-        "summary": "LegalHub tự động hóa tạo lập và xem xét hợp đồng, giảm thời gian xử lý từ ngày xuống giờ trên 500+ mẫu tài liệu.",
-        "metric": "60%",
-        "metric_label": "Xử lý tài liệu nhanh hơn"
+        "title": "Chuyển đổi Đánh giá Tiếng Anh trong Giáo dục",
+        "industry": "Giáo dục",
+        "summary": "EduAssess AI được triển khai tại các trường ngôn ngữ và chương trình đào tạo doanh nghiệp, tự động hóa đánh giá nói và viết với độ chính xác AI tương đương giám khảo con người.",
+        "metric": "85%",
+        "metric_label": "Giảm thời gian chấm điểm"
       }
     ]
   },
