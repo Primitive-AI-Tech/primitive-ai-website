@@ -12,11 +12,27 @@ import CTASection from '@/components/CTA';
 import GalaxyProducts from '@/components/GalaxyProducts';
 import Partners from '@/components/Partners';
 import {
-  ArrowRight, Camera, MessageCircle, BookOpen,
+  ArrowRight,
   Bot, Workflow, Code2, GraduationCap, Package, Lightbulb,
-  Award, Check, Clock, Users, Wrench, LifeBuoy, ChevronDown, Brain
+  Award, Check, Clock, Users, Wrench, LifeBuoy, ChevronDown, Brain,
+  Building2, Cpu, Activity
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+
+const partnersList = [
+  { name: 'Qualcomm', logo: '/images/partners/Qualcomm.png', website: 'https://www.qualcomm.com/' },
+  { name: 'Intel', logo: '/images/partners/Intel.png', website: 'https://www.intel.vn/' },
+  { name: 'Microsoft', logo: '/images/partners/Microsoft.png', website: 'https://www.microsoft.com/' },
+  { name: 'Google', logo: '/images/partners/Google.png', website: 'https://startup.google.com/' },
+  { name: 'Canon', logo: '/images/partners/Canon.png', website: 'https://vn.canon/' },
+  { name: 'Ajinomoto', logo: '/images/partners/Ajinomoto.png', website: 'https://www.ajinomoto.com.vn/' },
+  { name: 'YAZAKI', logo: '/images/partners/Yazaki.png', website: 'https://www.yev.vn/' },
+  { name: 'Nidec', logo: '/images/partners/Nidec.png', website: 'https://www.nidec.com/' },
+  { name: 'FPT Automotive', logo: '/images/partners/FA.png', website: 'https://fpt.auto/' },
+  { name: 'HIK Robotics', logo: '/images/partners/HIK.png', website: 'https://www.hikrobotics.com/' },
+  { name: 'VTI Solutions', logo: '/images/partners/vti-solutions.png', website: 'https://vti-solutions.vn/' },
+  { name: 'RAIS Tech', logo: '/images/partners/RAIS.png', website: 'https://raistech.vn/' },
+];
 
 const serviceIcons = [Bot, Workflow, Code2, GraduationCap, Package, Lightbulb];
 const featureIcons = [Award, Check, Clock, Users, Wrench, LifeBuoy];
@@ -51,256 +67,143 @@ const Index = () => {
       {/* ═══════════════════════════════════════════════════
           SECTION 1: HERO — Mission & Vision
       ═══════════════════════════════════════════════════ */}
-      <section className="hook-section min-h-[100vh] flex items-center relative snap-section" data-theme="dark">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 right-[10%] w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 left-[5%] w-96 h-96 bg-purple-400/10 rounded-full blur-3xl animate-float-delayed" />
-          <div className="absolute top-1/2 right-[30%] w-48 h-48 bg-purple-300/10 rounded-full blur-2xl animate-float" />
-          <div className="absolute inset-0 dot-bg opacity-30" />
+      <section
+        className="hook-section relative min-h-[100vh] flex flex-col justify-center overflow-hidden"
+        data-theme="dark"
+      >
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <img
+            src="/images/hero-background.png"
+            alt="Primitive AI product ecosystem"
+            className="h-full w-full object-cover object-[76%_center] sm:object-[72%_center] lg:object-right"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,5,32,0.96)_0%,rgba(8,5,32,0.9)_24%,rgba(8,5,32,0.6)_42%,rgba(8,5,32,0.2)_60%,rgba(8,5,32,0)_74%)] lg:bg-[linear-gradient(90deg,rgba(8,5,32,0.9)_0%,rgba(8,5,32,0.78)_24%,rgba(8,5,32,0.34)_46%,rgba(8,5,32,0)_68%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#080520] via-[#080520]/45 to-transparent" />
         </div>
 
-        <div className="section-container relative z-10 pt-24 pb-16 md:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* Left: Text content */}
-            <div className="space-y-5 md:space-y-8 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-purple-200 backdrop-blur-sm">
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                {t('hero.badge')}
-              </div>
+        <div className="section-container relative z-10 w-full pt-32 pb-24 md:pt-40 md:pb-32">
+          {/* Left column: text sits in the image's naturally dark left area (0–40% of image) */}
+          <div className="w-full max-w-[40rem] lg:max-w-[44%] space-y-6 md:space-y-8 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold uppercase tracking-wider text-purple-200 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+              {t('hero.badge')}
+            </div>
 
-              <h1 className="hero-heading text-white">
-                {t('hero.title_1')}{' '}
-                <span className="text-gradient-purple">{t('hero.title_2')}</span>
-              </h1>
+            <h1 className="hero-heading text-white font-bold leading-tight">
+              {t('hero.title_1')}{' '}
+              <br className="hidden md:block" />
+              <span className="text-gradient-purple">{t('hero.title_2')}</span>
+            </h1>
 
-              <p className="text-sm sm:text-base md:text-lg xl:text-xl text-purple-200/80 leading-relaxed max-w-xl">
-                {t('hero.description')}
+            <p className="text-sm sm:text-base md:text-lg xl:text-xl text-purple-200/80 leading-relaxed">
+              {t('hero.description')}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
+              <Button
+                className="w-full sm:w-auto bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-6 text-base shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-all duration-300 hover:-translate-y-0.5"
+                asChild
+              >
+                <Link to="/solutions">
+                  {t('hero.explore_products')}
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
+              </Button>
+              <Button
+                variant="outline"
+                className="w-full sm:w-auto bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:-translate-y-0.5"
+                asChild
+              >
+                <Link to="/contact">{t('hero.talk_to_team')}</Link>
+              </Button>
+            </div>
+
+            {/* Static partners logo section inside Left Column (mockup style) */}
+            <div className="mt-8 pt-6 border-t border-white/10">
+              <p className="text-xs font-semibold uppercase tracking-wider text-purple-300/60 mb-4">
+                {t('hero.trusted_by')}
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
-                <Button
-                  className="w-full sm:w-auto bg-white text-purple-900 hover:bg-white/90 font-semibold rounded-full px-8 py-6 text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5"
-                  asChild
-                >
-                  <Link to="/solutions">
-                    {t('hero.explore_products')}
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full sm:w-auto bg-white/10 text-white border-white/20 hover:bg-white/20 font-semibold rounded-full px-8 py-6 text-base transition-all duration-300 hover:-translate-y-0.5"
-                  asChild
-                >
-                  <Link to="/contact">{t('hero.talk_to_team')}</Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Right: Premium Visual element */}
-            <div className="w-full max-w-[480px] mx-auto mt-8 lg:mt-0 lg:flex-1 relative">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-[80px] animate-pulse" />
-
-              {/* Desktop: Artful Overlapping Layout */}
-              <div className="hidden lg:block relative h-[500px]">
-                {/* Central Dashboard Card (KnowledgeHub) */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] bg-white/5 border border-white/10 rounded-2xl p-6 z-10 animate-float shadow-2xl backdrop-blur-xl">
-                  <div className="flex items-center justify-between mb-6 border-b border-white/10 pb-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
-                        <BookOpen className="w-5 h-5 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-white font-semibold text-sm">KnowledgeHub</h4>
-                        <p className="text-xs text-purple-200/60">Enterprise AI Engine</p>
-                      </div>
-                    </div>
-                    <div className="px-2.5 py-1 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                      <span className="text-[10px] font-bold text-green-400 uppercase tracking-wider">{tC('badge.optimal')}</span>
-                    </div>
+              <div className="flex gap-6 items-center flex-wrap justify-center lg:justify-start">
+                {[...partnersList].slice(0, 5).map((partner, index) => (
+                  <div key={index} className="filter brightness-0 invert opacity-60 hover:opacity-100 transition-all duration-300">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="h-5 w-auto object-contain"
+                    />
                   </div>
-                  <div className="space-y-4">
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-2.5 flex items-center gap-2">
-                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 flex-shrink-0" />
-                      <span className="text-xs text-purple-200/80 font-medium">Analyze Q3 financial reports...</span>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex gap-3">
-                        <div className="w-7 h-7 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                          <Brain className="w-3.5 h-3.5 text-purple-300" />
-                        </div>
-                        <div>
-                          <p className="text-xs text-white font-medium">Extracted 42 key insights</p>
-                          <p className="text-[10px] text-purple-200/60 mt-0.5">Cross-referencing 15 documents. Confidence: 98%</p>
-                        </div>
-                      </div>
-                      <div className="flex gap-3">
-                        <div className="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                          <Bot className="w-3.5 h-3.5 text-blue-300" />
-                        </div>
-                        <div>
-                          <p className="text-xs text-white font-medium">Executive summary generated</p>
-                          <p className="text-[10px] text-purple-200/60 mt-0.5">Ready for review and distribution.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Element 1 (VisionHub) */}
-                <div className="absolute top-1/2 left-1/2 ml-[20px] -mt-[180px] w-[240px] bg-black/60 border border-white/10 rounded-2xl p-4 z-0 animate-float-delayed rotate-[6deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-2">
-                      <Camera className="w-4 h-4 text-emerald-400" />
-                      <span className="text-xs font-semibold text-white">VisionHub</span>
-                    </div>
-                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">{tC('badge.live')}</span>
-                  </div>
-                  <div className="h-24 rounded-lg bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
-                    <img src="/vision-hub.png" alt="Vision AI Feed" className="absolute inset-0 w-full h-full object-cover opacity-70" />
-                    <div className="absolute inset-0 bg-scan-lines opacity-20 pointer-events-none" />
-                    <div className="absolute top-4 left-6 w-16 h-12 border border-emerald-400/60 bg-emerald-400/10 rounded-sm shadow-[0_0_10px_rgba(52,211,153,0.3)]" />
-                    <div className="absolute bottom-2 left-2 z-10">
-                      <div className="flex flex-col gap-0.5">
-                        <span className="text-[8px] font-mono bg-black/60 text-emerald-400 px-1 rounded inline-block w-max">ZONE 1: SECURE</span>
-                        <span className="text-[8px] font-mono bg-black/60 text-white/80 px-1 rounded inline-block w-max">Subject tracking active</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Element 2 (SupportHub) */}
-                <div className="absolute top-1/2 left-1/2 -ml-[250px] mt-[60px] w-[260px] bg-[#2a134a]/90 border border-purple-500/30 rounded-2xl p-4 z-20 animate-float -rotate-[4deg] hover:rotate-0 transition-transform cursor-pointer shadow-2xl backdrop-blur-md">
-                  <div className="flex items-center gap-3 mb-3 border-b border-white/10 pb-3">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
-                      <MessageCircle className="w-4 h-4 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold text-white">SupportHub</p>
-                      <p className="text-[10px] text-blue-200/80 font-medium">AI Agent typing...</p>
-                    </div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="bg-purple-500/20 border border-purple-400/20 rounded-tl-xl rounded-tr-xl rounded-bl-xl p-2.5 w-[85%] ml-auto">
-                      <p className="text-[10px] text-purple-100/90 leading-tight text-right">How to reset my password?</p>
-                    </div>
-                    <div className="bg-white/5 border border-white/10 rounded-tr-xl rounded-bl-xl rounded-br-xl p-2.5 w-[90%]">
-                      <p className="text-[11px] text-white/90 leading-relaxed">
-                        To reset your password, please go to the login page, click on the <span className="text-blue-300 font-semibold">'Forgot Password'</span> link...
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Mobile/Tablet: Full Content Cards */}
-              <div className="lg:hidden flex flex-col gap-3 relative z-10">
-                <div className="bg-black/45 border border-white/10 rounded-2xl p-4 backdrop-blur-xl">
-                  <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-3">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
-                        <BookOpen className="w-4 h-4 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-white font-semibold text-xs">KnowledgeHub</h4>
-                        <p className="text-[10px] text-purple-200/60">Enterprise AI Engine</p>
-                      </div>
-                    </div>
-                    <div className="px-2 py-0.5 rounded-full bg-green-500/10 border border-green-500/20 flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                      <span className="text-[9px] font-bold text-green-400 uppercase tracking-wider">{tC('badge.optimal')}</span>
-                    </div>
-                  </div>
-                  <div className="space-y-2.5">
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-2 flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full border-2 border-purple-400/50 flex-shrink-0" />
-                      <span className="text-[10px] text-purple-200/80 font-medium">Analyze Q3 financial reports...</span>
-                    </div>
-                    <div className="flex gap-2.5">
-                      <div className="w-6 h-6 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <Brain className="w-3 h-3 text-purple-300" />
-                      </div>
-                      <div>
-                        <p className="text-[10px] text-white font-medium">Extracted 42 key insights</p>
-                        <p className="text-[9px] text-purple-200/60 mt-0.5">Cross-referencing 15 documents. Confidence: 98%</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-2.5">
-                      <div className="w-6 h-6 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <Bot className="w-3 h-3 text-blue-300" />
-                      </div>
-                      <div>
-                        <p className="text-[10px] text-white font-medium">Executive summary generated</p>
-                        <p className="text-[9px] text-purple-200/60 mt-0.5">Ready for review and distribution.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-black/40 border border-white/10 rounded-2xl p-4 backdrop-blur-md">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-2">
-                      <Camera className="w-4 h-4 text-emerald-400" />
-                      <span className="text-sm font-semibold text-white">VisionHub</span>
-                    </div>
-                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 font-bold">{tC('badge.live')}</span>
-                  </div>
-                  <div className="h-28 rounded-xl bg-black/40 border border-white/5 overflow-hidden relative shadow-inner">
-                    <img src="/vision-hub.png" alt="Vision AI Feed" className="absolute inset-0 w-full h-full object-cover opacity-70" />
-                    <div className="absolute inset-0 bg-scan-lines opacity-20 pointer-events-none" />
-                    <div className="absolute top-3 left-6 w-16 h-10 border border-emerald-400/60 bg-emerald-400/10 rounded-sm shadow-[0_0_10px_rgba(52,211,153,0.3)]" />
-                    <div className="absolute bottom-2 left-2 z-10 flex flex-col gap-0.5">
-                      <span className="text-[8px] font-mono bg-black/60 text-emerald-400 px-1 rounded inline-block w-max">ZONE 1: SECURE</span>
-                      <span className="text-[8px] font-mono bg-black/60 text-white/80 px-1 rounded inline-block w-max">Subject tracking active</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-[#2a134a]/90 border border-purple-500/30 rounded-2xl p-4 backdrop-blur-md">
-                  <div className="flex items-center gap-2.5 mb-3 border-b border-white/10 pb-3">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
-                      <MessageCircle className="w-4 h-4 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold text-white">SupportHub</p>
-                      <p className="text-[10px] text-blue-200/80 font-medium">AI Agent typing...</p>
-                    </div>
-                  </div>
-                  <div className="space-y-2.5">
-                    <div className="bg-purple-500/20 border border-purple-400/20 rounded-tl-xl rounded-tr-xl rounded-bl-xl p-2.5 w-[80%] ml-auto">
-                      <p className="text-[10px] text-purple-100/90 leading-tight text-right">How to reset my password?</p>
-                    </div>
-                    <div className="bg-white/5 border border-white/10 rounded-tr-xl rounded-bl-xl rounded-br-xl p-2.5 w-[90%]">
-                      <p className="text-[10px] text-white/90 leading-relaxed">
-                        To reset your password, please go to the login page, click on the <span className="text-blue-300 font-semibold">'Forgot Password'</span> link...
-                      </p>
-                    </div>
-                  </div>
+                ))}
+                <div className="filter brightness-0 invert opacity-60 flex items-center justify-center font-bold text-lg tracking-widest pl-2">
+                  ...
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-purple-300/50">
-            <span className="text-xs font-medium uppercase tracking-wider">{t('hero.scroll')}</span>
-            <ChevronDown className="w-5 h-5 animate-bounce" />
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════
-          SECTION 2: STATS COUNTER BAR
+          SECTION 2: STATS COUNTER BAR (METRICS CARD)
       ═══════════════════════════════════════════════════ */}
-      <section className="pt-24 pb-20 relative snap-section" data-theme="light">
+      <section className="py-20 relative snap-section bg-gradient-to-b from-transparent to-purple-50/10 px-4 md:px-0" data-theme="light">
         <div className="section-container">
           <ScrollReveal>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-              <StatsCounter end={5} suffix="+" label={t('stats.ai_products')} />
-              <StatsCounter end={50} suffix="+" label={t('stats.enterprise_clients')} />
-              <StatsCounter end={10} suffix="+" label={t('stats.industries_served')} />
-              <StatsCounter end={99} suffix=".9%" label={t('stats.platform_uptime')} />
+            <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_20px_80px_-15px_rgba(109,40,217,0.3)] transition-all duration-500">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 divide-y sm:divide-y-0 lg:divide-x divide-purple-100">
+                {/* Stat 1 */}
+                <div className="flex items-center gap-5 p-2 hover:scale-105 transition-all duration-300">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm border border-purple-100">
+                    <Lightbulb className="w-8 h-8" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-3xl font-bold text-gray-900 mb-1">
+                      <StatsCounter end={5} suffix="+" label="" />
+                    </div>
+                    <div className="text-sm text-gray-500 font-medium leading-snug">{t('stats.ai_products', 'Năm kinh nghiệm trong lĩnh vực AI')}</div>
+                  </div>
+                </div>
+
+                {/* Stat 2 */}
+                <div className="flex items-center gap-5 p-2 pt-6 sm:pt-2 hover:scale-105 transition-all duration-300 lg:pl-8">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm border border-purple-100">
+                    <Users className="w-8 h-8" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-3xl font-bold text-gray-900 mb-1">
+                      <StatsCounter end={50} suffix="+" label="" />
+                    </div>
+                    <div className="text-sm text-gray-500 font-medium leading-snug">{t('stats.enterprise_clients', 'Khách hàng Doanh nghiệp')}</div>
+                  </div>
+                </div>
+
+                {/* Stat 3 */}
+                <div className="flex items-center gap-5 p-2 pt-6 sm:pt-2 hover:scale-105 transition-all duration-300 lg:pl-8">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm border border-purple-100">
+                    <Code2 className="w-8 h-8" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-3xl font-bold text-gray-900 mb-1">
+                      <StatsCounter end={10} suffix="+" label="" />
+                    </div>
+                    <div className="text-sm text-gray-500 font-medium leading-snug">{t('stats.industries_served', 'Ngành nghề được phục vụ')}</div>
+                  </div>
+                </div>
+
+                {/* Stat 4 */}
+                <div className="flex items-center gap-5 p-2 pt-6 sm:pt-2 hover:scale-105 transition-all duration-300 lg:pl-8">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm border border-purple-100">
+                    <Award className="w-8 h-8" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-3xl font-bold text-gray-900 mb-1">
+                      <StatsCounter end={99} suffix=".9%" label="" />
+                    </div>
+                    <div className="text-sm text-gray-500 font-medium leading-snug">{t('stats.platform_uptime', 'Thời gian hoạt động của nền tảng')}</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </ScrollReveal>
         </div>
