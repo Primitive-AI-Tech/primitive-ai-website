@@ -1,0 +1,9 @@
+Use case: precise-object-edit.
+Image1 is the edit target: a complete blue Primitive AI Business Value webpage mockup. Preserve exactly ALL its layout, logo, copy, controls, colors, spacing, cards, economics and evidence sections.
+Change ONLY the "Same baseline comparison" module under the calculator. Delete its two stacked bars and legend. Replace with a beautiful readable comparison TABLE, keeping the same module height and width.
+Exact columns: "Human effort", "Before", "With AI". Exact rows:
+"Eligible work" | "60 min" | "12 min"
+"Other work" | "40 min" | "40 min"
+"Added review" | "0 min" | "8 min"
+"Total" | "100 min" | "60 min"
+Highlight last assisted total with #044EFF. Crisp dark navy type, generous spacing, fine row dividers, blue-tinted total row. Keep the title "Same baseline comparison". Do not include any bars, axes, ratios or percentages inside this table. Keep 60 min and40% in the result panel above completely unchanged. Preserve main-blue#044EFF theme and original logo unchanged. This is a precise correction, not a redesign. Same flat screenshot proportions.

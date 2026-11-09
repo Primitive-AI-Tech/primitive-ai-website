@@ -9,17 +9,20 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-preview: {
-  port: 4173,
-  strictPort: true,
-  host: '0.0.0.0',
-  allowedHosts: ['www.prai.tech'], // allow all incoming hosts
-},
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+  preview: {
+    port: 4173,
+    strictPort: true,
+    host: "0.0.0.0",
+    allowedHosts: [
+      "primitive-ai.com",
+      "www.primitive-ai.com",
+      "prai.tech",
+      "www.prai.tech",
+    ],
+  },
+  plugins: [react(), mode === "development" && componentTagger()].filter(
+    Boolean,
+  ),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

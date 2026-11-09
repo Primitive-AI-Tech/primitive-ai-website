@@ -88,6 +88,7 @@ i18n
   .init({
     resources: {
       en: {
+        marketing: {},
         common: enCommon,
         home: enHome,
         about: enAbout,
@@ -168,6 +169,7 @@ i18n
         eduassess: koEduassess,
       },
     },
+    react: { bindI18nStore: 'added removed' },
     fallbackLng: 'en',
     defaultNS: 'common',
     interpolation: {

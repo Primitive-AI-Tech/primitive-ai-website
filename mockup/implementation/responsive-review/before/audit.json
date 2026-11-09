@@ -1,0 +1,9026 @@
+[
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "17px",
+        "text": "Request"
+      },
+      {
+        "font": "17px",
+        "text": "Core Agentic"
+      },
+      {
+        "font": "17px",
+        "text": "Approved systems"
+      },
+      {
+        "font": "17px",
+        "text": "Reviewable result"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 83,
+              "x": 16,
+              "y": 8810
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 83,
+              "x": 111,
+              "y": 8810
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 83,
+              "x": 206,
+              "y": 8810
+            }
+          }
+        ],
+        "columns": "83px 83px 83px",
+        "rect": {
+          "h": 95,
+          "w": 273,
+          "x": 16,
+          "y": 8810
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 128,
+              "x": 16,
+              "y": 6837
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 128,
+              "x": 162,
+              "y": 6837
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 128,
+              "x": 16,
+              "y": 7086
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 128,
+              "x": 162,
+              "y": 7086
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 128,
+              "x": 16,
+              "y": 7335
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 128,
+              "x": 162,
+              "y": 7335
+            }
+          }
+        ],
+        "columns": "127.5px 127.5px",
+        "rect": {
+          "h": 729,
+          "w": 273,
+          "x": 16,
+          "y": 6811
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 91,
+              "w": 245,
+              "x": 16,
+              "y": 11039
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 128,
+              "x": 16,
+              "y": 11155
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 128,
+              "x": 162,
+              "y": 11155
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 151,
+              "w": 273,
+              "x": 16,
+              "y": 11333
+            }
+          }
+        ],
+        "columns": "127.5px 127.5px",
+        "rect": {
+          "h": 445,
+          "w": 273,
+          "x": 16,
+          "y": 11039
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 564,
+              "w": 273,
+              "x": 16,
+              "y": 116
+            }
+          },
+          {
+            "class": "mobile-agent-canvas",
+            "rect": {
+              "h": 369,
+              "w": 273,
+              "x": 16,
+              "y": 742
+            }
+          }
+        ],
+        "columns": "0.45fr 0.55fr",
+        "rect": {
+          "h": 970,
+          "w": 273,
+          "x": 16,
+          "y": 116
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 485,
+              "w": 235,
+              "x": 35,
+              "y": 5463
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 402,
+              "w": 235,
+              "x": 35,
+              "y": 5973
+            }
+          }
+        ],
+        "columns": "235px",
+        "rect": {
+          "h": 960,
+          "w": 273,
+          "x": 16,
+          "y": 5439
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 997,
+              "w": 273,
+              "x": 16,
+              "y": 6544
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 720,
+              "w": 273,
+              "x": 16,
+              "y": 7591
+            }
+          }
+        ],
+        "columns": "273px",
+        "rect": {
+          "h": 1742,
+          "w": 273,
+          "x": 16,
+          "y": 6544
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 608,
+              "w": 273,
+              "x": 16,
+              "y": 8457
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 485,
+              "w": 273,
+              "x": 16,
+              "y": 9120
+            }
+          }
+        ],
+        "columns": "273px",
+        "rect": {
+          "h": 1123,
+          "w": 273,
+          "x": 16,
+          "y": 8457
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 172,
+              "w": 237,
+              "x": 34,
+              "y": 4390
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 168,
+              "w": 237,
+              "x": 34,
+              "y": 4585
+            }
+          }
+        ],
+        "columns": "237px",
+        "rect": {
+          "h": 363,
+          "w": 237,
+          "x": 34,
+          "y": 4390
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 112,
+              "w": 223,
+              "x": 41,
+              "y": 3285
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 137,
+              "w": 223,
+              "x": 41,
+              "y": 3421
+            }
+          }
+        ],
+        "columns": "223px",
+        "rect": {
+          "h": 324,
+          "w": 273,
+          "x": 16,
+          "y": 3260
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 273,
+              "x": 16,
+              "y": 3612
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 134,
+              "w": 273,
+              "x": 16,
+              "y": 3714
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 101,
+              "w": 273,
+              "x": 16,
+              "y": 3871
+            }
+          }
+        ],
+        "columns": "273px",
+        "rect": {
+          "h": 360,
+          "w": 273,
+          "x": 16,
+          "y": 3586
+        }
+      }
+    },
+    "height": 568,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1140,
+        "id": "intro",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1781,
+        "id": "problem",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1110,
+        "id": "business-value",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 985,
+        "id": "economics",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1412,
+        "id": "applications",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1913,
+        "id": "approach",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1294,
+        "id": "platform",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 774,
+        "id": "story",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 597,
+        "id": "next-step",
+        "padding": "116px 54px"
+      }
+    ],
+    "width": 320,
+    "requested": {
+      "width": 320,
+      "height": 568
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "17px",
+        "text": "Request"
+      },
+      {
+        "font": "17px",
+        "text": "Core Agentic"
+      },
+      {
+        "font": "17px",
+        "text": "Approved systems"
+      },
+      {
+        "font": "17px",
+        "text": "Reviewable result"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 94,
+              "x": 20,
+              "y": 8422
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 94,
+              "x": 126,
+              "y": 8422
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 94,
+              "x": 231,
+              "y": 8422
+            }
+          }
+        ],
+        "columns": "93.6641px 93.6641px 93.6641px",
+        "rect": {
+          "h": 95,
+          "w": 305,
+          "x": 20,
+          "y": 8422
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 144,
+              "x": 20,
+              "y": 6571
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 144,
+              "x": 182,
+              "y": 6571
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 144,
+              "x": 20,
+              "y": 6803
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 231,
+              "w": 144,
+              "x": 182,
+              "y": 6803
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 144,
+              "x": 20,
+              "y": 7052
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 144,
+              "x": 182,
+              "y": 7052
+            }
+          }
+        ],
+        "columns": "143.5px 143.5px",
+        "rect": {
+          "h": 694,
+          "w": 305,
+          "x": 20,
+          "y": 6545
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 91,
+              "w": 245,
+              "x": 20,
+              "y": 10603
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 144,
+              "x": 20,
+              "y": 10719
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 144,
+              "x": 182,
+              "y": 10719
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 151,
+              "w": 305,
+              "x": 20,
+              "y": 10897
+            }
+          }
+        ],
+        "columns": "143.5px 143.5px",
+        "rect": {
+          "h": 445,
+          "w": 305,
+          "x": 20,
+          "y": 10603
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 556,
+              "w": 305,
+              "x": 20,
+              "y": 116
+            }
+          },
+          {
+            "class": "mobile-agent-canvas",
+            "rect": {
+              "h": 355,
+              "w": 305,
+              "x": 20,
+              "y": 734
+            }
+          }
+        ],
+        "columns": "0.45fr 0.55fr",
+        "rect": {
+          "h": 948,
+          "w": 305,
+          "x": 20,
+          "y": 116
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 469,
+              "w": 267,
+              "x": 39,
+              "y": 5251
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 363,
+              "w": 267,
+              "x": 39,
+              "y": 5745
+            }
+          }
+        ],
+        "columns": "267px",
+        "rect": {
+          "h": 905,
+          "w": 305,
+          "x": 20,
+          "y": 5227
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 962,
+              "w": 305,
+              "x": 20,
+              "y": 6277
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 633,
+              "w": 305,
+              "x": 20,
+              "y": 7290
+            }
+          }
+        ],
+        "columns": "305px",
+        "rect": {
+          "h": 1620,
+          "w": 305,
+          "x": 20,
+          "y": 6277
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 608,
+              "w": 305,
+              "x": 20,
+              "y": 8069
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 458,
+              "w": 305,
+              "x": 20,
+              "y": 8732
+            }
+          }
+        ],
+        "columns": "305px",
+        "rect": {
+          "h": 1096,
+          "w": 305,
+          "x": 20,
+          "y": 8069
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 179,
+              "w": 269,
+              "x": 38,
+              "y": 4227
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 168,
+              "w": 269,
+              "x": 38,
+              "y": 4429
+            }
+          }
+        ],
+        "columns": "269px",
+        "rect": {
+          "h": 370,
+          "w": 269,
+          "x": 38,
+          "y": 4227
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 90,
+              "w": 255,
+              "x": 45,
+              "y": 3165
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 137,
+              "w": 255,
+              "x": 45,
+              "y": 3280
+            }
+          }
+        ],
+        "columns": "255px",
+        "rect": {
+          "h": 301,
+          "w": 305,
+          "x": 20,
+          "y": 3140
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 305,
+              "x": 20,
+              "y": 3470
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 134,
+              "w": 305,
+              "x": 20,
+              "y": 3572
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 305,
+              "x": 20,
+              "y": 3729
+            }
+          }
+        ],
+        "columns": "305px",
+        "rect": {
+          "h": 340,
+          "w": 305,
+          "x": 20,
+          "y": 3444
+        }
+      }
+    },
+    "height": 640,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1118,
+        "id": "intro",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1679,
+        "id": "problem",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1071,
+        "id": "business-value",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 973,
+        "id": "economics",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1320,
+        "id": "applications",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1791,
+        "id": "approach",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1267,
+        "id": "platform",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 710,
+        "id": "story",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 640,
+        "id": "next-step",
+        "padding": "116px 54px"
+      }
+    ],
+    "width": 360,
+    "requested": {
+      "width": 360,
+      "height": 640
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "17px",
+        "text": "Request"
+      },
+      {
+        "font": "17px",
+        "text": "Core Agentic"
+      },
+      {
+        "font": "17px",
+        "text": "Approved systems"
+      },
+      {
+        "font": "17px",
+        "text": "Reviewable result"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 99,
+              "x": 20,
+              "y": 8179
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 99,
+              "x": 131,
+              "y": 8179
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 99,
+              "x": 241,
+              "y": 8179
+            }
+          }
+        ],
+        "columns": "98.6641px 98.6641px 98.6641px",
+        "rect": {
+          "h": 95,
+          "w": 320,
+          "x": 20,
+          "y": 8179
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 151,
+              "x": 20,
+              "y": 6428
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 151,
+              "x": 189,
+              "y": 6428
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 151,
+              "x": 20,
+              "y": 6660
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 151,
+              "x": 189,
+              "y": 6660
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 151,
+              "x": 20,
+              "y": 6891
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 151,
+              "x": 189,
+              "y": 6891
+            }
+          }
+        ],
+        "columns": "151px 151px",
+        "rect": {
+          "h": 677,
+          "w": 320,
+          "x": 20,
+          "y": 6402
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 91,
+              "w": 245,
+              "x": 20,
+              "y": 10387
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 149,
+              "x": 20,
+              "y": 10506
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 149,
+              "x": 191,
+              "y": 10506
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 151,
+              "w": 320,
+              "x": 20,
+              "y": 10686
+            }
+          }
+        ],
+        "columns": "149px 149px",
+        "rect": {
+          "h": 451,
+          "w": 320,
+          "x": 20,
+          "y": 10387
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 563,
+              "w": 320,
+              "x": 20,
+              "y": 116
+            }
+          },
+          {
+            "class": "mobile-agent-canvas",
+            "rect": {
+              "h": 341,
+              "w": 320,
+              "x": 20,
+              "y": 741
+            }
+          }
+        ],
+        "columns": "0.45fr 0.55fr",
+        "rect": {
+          "h": 940,
+          "w": 320,
+          "x": 20,
+          "y": 116
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 469,
+              "w": 282,
+              "x": 39,
+              "y": 5108
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 363,
+              "w": 282,
+              "x": 39,
+              "y": 5602
+            }
+          }
+        ],
+        "columns": "282px",
+        "rect": {
+          "h": 905,
+          "w": 320,
+          "x": 20,
+          "y": 5084
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 944,
+              "w": 320,
+              "x": 20,
+              "y": 6135
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 589,
+              "w": 320,
+              "x": 20,
+              "y": 7130
+            }
+          }
+        ],
+        "columns": "320px",
+        "rect": {
+          "h": 1558,
+          "w": 320,
+          "x": 20,
+          "y": 6135
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 569,
+              "w": 320,
+              "x": 20,
+              "y": 7864
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 458,
+              "w": 320,
+              "x": 20,
+              "y": 8489
+            }
+          }
+        ],
+        "columns": "320px",
+        "rect": {
+          "h": 1057,
+          "w": 320,
+          "x": 20,
+          "y": 7864
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 215,
+              "w": 284,
+              "x": 38,
+              "y": 4067
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 168,
+              "w": 284,
+              "x": 38,
+              "y": 4306
+            }
+          }
+        ],
+        "columns": "284px",
+        "rect": {
+          "h": 407,
+          "w": 284,
+          "x": 38,
+          "y": 4067
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 90,
+              "w": 270,
+              "x": 45,
+              "y": 3091
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 115,
+              "w": 270,
+              "x": 45,
+              "y": 3205
+            }
+          }
+        ],
+        "columns": "270px",
+        "rect": {
+          "h": 279,
+          "w": 320,
+          "x": 20,
+          "y": 3066
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 320,
+              "x": 20,
+              "y": 3373
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 101,
+              "w": 320,
+              "x": 20,
+              "y": 3476
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 320,
+              "x": 20,
+              "y": 3599
+            }
+          }
+        ],
+        "columns": "320px",
+        "rect": {
+          "h": 307,
+          "w": 320,
+          "x": 20,
+          "y": 3347
+        }
+      }
+    },
+    "height": 667,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1110,
+        "id": "intro",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1641,
+        "id": "problem",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 986,
+        "id": "business-value",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 960,
+        "id": "economics",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1320,
+        "id": "applications",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1729,
+        "id": "approach",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1228,
+        "id": "platform",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 710,
+        "id": "story",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 667,
+        "id": "next-step",
+        "padding": "116px 54px"
+      }
+    ],
+    "width": 375,
+    "requested": {
+      "width": 375,
+      "height": 667
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "17px",
+        "text": "Request"
+      },
+      {
+        "font": "17px",
+        "text": "Core Agentic"
+      },
+      {
+        "font": "17px",
+        "text": "Approved systems"
+      },
+      {
+        "font": "17px",
+        "text": "Reviewable result"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 104,
+              "x": 20,
+              "y": 7999
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 104,
+              "x": 136,
+              "y": 7999
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 104,
+              "x": 251,
+              "y": 7999
+            }
+          }
+        ],
+        "columns": "103.664px 103.664px 103.664px",
+        "rect": {
+          "h": 95,
+          "w": 335,
+          "x": 20,
+          "y": 7999
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 159,
+              "x": 20,
+              "y": 6297
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 159,
+              "x": 197,
+              "y": 6297
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 159,
+              "x": 20,
+              "y": 6529
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 159,
+              "x": 197,
+              "y": 6529
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 159,
+              "x": 20,
+              "y": 6760
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 214,
+              "w": 159,
+              "x": 197,
+              "y": 6760
+            }
+          }
+        ],
+        "columns": "158.5px 158.5px",
+        "rect": {
+          "h": 677,
+          "w": 335,
+          "x": 20,
+          "y": 6271
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 91,
+              "w": 245,
+              "x": 20,
+              "y": 10482
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 157,
+              "x": 20,
+              "y": 10601
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 157,
+              "x": 199,
+              "y": 10601
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 151,
+              "w": 335,
+              "x": 20,
+              "y": 10782
+            }
+          }
+        ],
+        "columns": "156.5px 156.5px",
+        "rect": {
+          "h": 451,
+          "w": 335,
+          "x": 20,
+          "y": 10482
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 570,
+              "w": 335,
+              "x": 20,
+              "y": 116
+            }
+          },
+          {
+            "class": "mobile-agent-canvas is-revealed",
+            "rect": {
+              "h": 341,
+              "w": 335,
+              "x": 20,
+              "y": 745
+            }
+          }
+        ],
+        "columns": "0.45fr 0.55fr",
+        "rect": {
+          "h": 947,
+          "w": 335,
+          "x": 20,
+          "y": 116
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 435,
+              "w": 297,
+              "x": 39,
+              "y": 5036
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 363,
+              "w": 297,
+              "x": 39,
+              "y": 5496
+            }
+          }
+        ],
+        "columns": "297px",
+        "rect": {
+          "h": 871,
+          "w": 335,
+          "x": 20,
+          "y": 5012
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 919,
+              "w": 335,
+              "x": 20,
+              "y": 6029
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 569,
+              "w": 335,
+              "x": 20,
+              "y": 6999
+            }
+          }
+        ],
+        "columns": "335px",
+        "rect": {
+          "h": 1514,
+          "w": 335,
+          "x": 20,
+          "y": 6029
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 541,
+              "w": 335,
+              "x": 20,
+              "y": 7713
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 422,
+              "w": 335,
+              "x": 20,
+              "y": 8310
+            }
+          }
+        ],
+        "columns": "335px",
+        "rect": {
+          "h": 992,
+          "w": 335,
+          "x": 20,
+          "y": 7713
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 195,
+              "w": 299,
+              "x": 38,
+              "y": 4037
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 147,
+              "w": 299,
+              "x": 38,
+              "y": 4255
+            }
+          }
+        ],
+        "columns": "299px",
+        "rect": {
+          "h": 365,
+          "w": 299,
+          "x": 38,
+          "y": 4037
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 90,
+              "w": 285,
+              "x": 45,
+              "y": 3102
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 115,
+              "w": 285,
+              "x": 45,
+              "y": 3216
+            }
+          }
+        ],
+        "columns": "285px",
+        "rect": {
+          "h": 279,
+          "w": 335,
+          "x": 20,
+          "y": 3077
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 60,
+              "w": 335,
+              "x": 20,
+              "y": 3384
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 335,
+              "x": 20,
+              "y": 3466
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 335,
+              "x": 20,
+              "y": 3569
+            }
+          }
+        ],
+        "columns": "335px",
+        "rect": {
+          "h": 265,
+          "w": 335,
+          "x": 20,
+          "y": 3358
+        }
+      }
+    },
+    "height": 844,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1117,
+        "id": "intro",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1641,
+        "id": "problem",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 949,
+        "id": "business-value",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 918,
+        "id": "economics",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1286,
+        "id": "applications",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1685,
+        "id": "approach",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1163,
+        "id": "platform",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 844,
+        "id": "story",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 844,
+        "id": "next-step",
+        "padding": "116px 54px"
+      }
+    ],
+    "width": 390,
+    "requested": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "17px",
+        "text": "Request"
+      },
+      {
+        "font": "17px",
+        "text": "Core Agentic"
+      },
+      {
+        "font": "17px",
+        "text": "Approved systems"
+      },
+      {
+        "font": "17px",
+        "text": "Reviewable result"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 117,
+              "x": 20,
+              "y": 7823
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 117,
+              "x": 149,
+              "y": 7823
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 95,
+              "w": 117,
+              "x": 278,
+              "y": 7823
+            }
+          }
+        ],
+        "columns": "117px 117px 117px",
+        "rect": {
+          "h": 95,
+          "w": 375,
+          "x": 20,
+          "y": 7823
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 179,
+              "x": 20,
+              "y": 6216
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 179,
+              "x": 217,
+              "y": 6216
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 179,
+              "x": 20,
+              "y": 6430
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 179,
+              "x": 217,
+              "y": 6430
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 179,
+              "x": 20,
+              "y": 6644
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 179,
+              "x": 217,
+              "y": 6644
+            }
+          }
+        ],
+        "columns": "178.5px 178.5px",
+        "rect": {
+          "h": 624,
+          "w": 375,
+          "x": 20,
+          "y": 6190
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 91,
+              "w": 245,
+              "x": 20,
+              "y": 10432
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 177,
+              "x": 20,
+              "y": 10551
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 177,
+              "x": 219,
+              "y": 10551
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 151,
+              "w": 375,
+              "x": 20,
+              "y": 10732
+            }
+          }
+        ],
+        "columns": "176.5px 176.5px",
+        "rect": {
+          "h": 451,
+          "w": 375,
+          "x": 20,
+          "y": 10432
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 562,
+              "w": 375,
+              "x": 20,
+              "y": 116
+            }
+          },
+          {
+            "class": "mobile-agent-canvas is-revealed",
+            "rect": {
+              "h": 341,
+              "w": 375,
+              "x": 20,
+              "y": 733
+            }
+          }
+        ],
+        "columns": "0.45fr 0.55fr",
+        "rect": {
+          "h": 940,
+          "w": 375,
+          "x": 20,
+          "y": 116
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 435,
+              "w": 337,
+              "x": 39,
+              "y": 4955
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 363,
+              "w": 337,
+              "x": 39,
+              "y": 5415
+            }
+          }
+        ],
+        "columns": "337px",
+        "rect": {
+          "h": 871,
+          "w": 375,
+          "x": 20,
+          "y": 4931
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 867,
+              "w": 375,
+              "x": 20,
+              "y": 5947
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 527,
+              "w": 375,
+              "x": 20,
+              "y": 6865
+            }
+          }
+        ],
+        "columns": "375px",
+        "rect": {
+          "h": 1419,
+          "w": 375,
+          "x": 20,
+          "y": 5947
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 526,
+              "w": 375,
+              "x": 20,
+              "y": 7537
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 385,
+              "w": 375,
+              "x": 20,
+              "y": 8120
+            }
+          }
+        ],
+        "columns": "375px",
+        "rect": {
+          "h": 942,
+          "w": 375,
+          "x": 20,
+          "y": 7537
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 195,
+              "w": 339,
+              "x": 38,
+              "y": 3949
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 147,
+              "w": 339,
+              "x": 38,
+              "y": 4167
+            }
+          }
+        ],
+        "columns": "339px",
+        "rect": {
+          "h": 365,
+          "w": 339,
+          "x": 38,
+          "y": 3949
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 90,
+              "w": 325,
+              "x": 45,
+              "y": 3007
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 115,
+              "w": 325,
+              "x": 45,
+              "y": 3121
+            }
+          }
+        ],
+        "columns": "325px",
+        "rect": {
+          "h": 279,
+          "w": 375,
+          "x": 20,
+          "y": 2982
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 60,
+              "w": 375,
+              "x": 20,
+              "y": 3289
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 375,
+              "x": 20,
+              "y": 3371
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 81,
+              "w": 375,
+              "x": 20,
+              "y": 3474
+            }
+          }
+        ],
+        "columns": "375px",
+        "rect": {
+          "h": 265,
+          "w": 375,
+          "x": 20,
+          "y": 3263
+        }
+      }
+    },
+    "height": 932,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1110,
+        "id": "intro",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1543,
+        "id": "problem",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 960,
+        "id": "business-value",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 932,
+        "id": "economics",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1286,
+        "id": "applications",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1590,
+        "id": "approach",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1113,
+        "id": "platform",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 932,
+        "id": "story",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 932,
+        "id": "next-step",
+        "padding": "116px 54px"
+      }
+    ],
+    "width": 430,
+    "requested": {
+      "width": 430,
+      "height": 932
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "17px",
+        "text": "Request"
+      },
+      {
+        "font": "17px",
+        "text": "Core Agentic"
+      },
+      {
+        "font": "17px",
+        "text": "Approved systems"
+      },
+      {
+        "font": "17px",
+        "text": "Reviewable result"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 93,
+              "w": 163,
+              "x": 20,
+              "y": 7456
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 93,
+              "w": 163,
+              "x": 195,
+              "y": 7456
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 93,
+              "w": 163,
+              "x": 370,
+              "y": 7456
+            }
+          }
+        ],
+        "columns": "163px 163px 163px",
+        "rect": {
+          "h": 93,
+          "w": 513,
+          "x": 20,
+          "y": 7456
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 248,
+              "x": 20,
+              "y": 5926
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 248,
+              "x": 286,
+              "y": 5926
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 248,
+              "x": 20,
+              "y": 6140
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 248,
+              "x": 286,
+              "y": 6140
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 248,
+              "x": 20,
+              "y": 6354
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 248,
+              "x": 286,
+              "y": 6354
+            }
+          }
+        ],
+        "columns": "247.5px 247.5px",
+        "rect": {
+          "h": 624,
+          "w": 513,
+          "x": 20,
+          "y": 5900
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 91,
+              "w": 245,
+              "x": 20,
+              "y": 9249
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 246,
+              "x": 20,
+              "y": 9369
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 246,
+              "x": 288,
+              "y": 9369
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 151,
+              "w": 513,
+              "x": 20,
+              "y": 9549
+            }
+          }
+        ],
+        "columns": "245.5px 245.5px",
+        "rect": {
+          "h": 451,
+          "w": 513,
+          "x": 20,
+          "y": 9249
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 607,
+              "w": 513,
+              "x": 20,
+              "y": 116
+            }
+          },
+          {
+            "class": "mobile-agent-canvas is-revealed",
+            "rect": {
+              "h": 341,
+              "w": 513,
+              "x": 20,
+              "y": 775
+            }
+          }
+        ],
+        "columns": "0.45fr 0.55fr",
+        "rect": {
+          "h": 984,
+          "w": 513,
+          "x": 20,
+          "y": 116
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 410,
+              "w": 475,
+              "x": 39,
+              "y": 4766
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 325,
+              "w": 475,
+              "x": 39,
+              "y": 5201
+            }
+          }
+        ],
+        "columns": "475px",
+        "rect": {
+          "h": 808,
+          "w": 513,
+          "x": 20,
+          "y": 4742
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 828,
+              "w": 513,
+              "x": 20,
+              "y": 5696
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 488,
+              "w": 513,
+              "x": 20,
+              "y": 6575
+            }
+          }
+        ],
+        "columns": "513px",
+        "rect": {
+          "h": 1342,
+          "w": 513,
+          "x": 20,
+          "y": 5696
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 486,
+              "w": 513,
+              "x": 20,
+              "y": 7208
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 385,
+              "w": 513,
+              "x": 20,
+              "y": 7750
+            }
+          }
+        ],
+        "columns": "513px",
+        "rect": {
+          "h": 901,
+          "w": 513,
+          "x": 20,
+          "y": 7208
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 195,
+              "w": 477,
+              "x": 38,
+              "y": 3813
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 147,
+              "w": 477,
+              "x": 38,
+              "y": 4031
+            }
+          }
+        ],
+        "columns": "477px",
+        "rect": {
+          "h": 365,
+          "w": 477,
+          "x": 38,
+          "y": 3813
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 90,
+              "w": 463,
+              "x": 45,
+              "y": 2919
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 115,
+              "w": 463,
+              "x": 45,
+              "y": 3033
+            }
+          }
+        ],
+        "columns": "463px",
+        "rect": {
+          "h": 279,
+          "w": 513,
+          "x": 20,
+          "y": 2894
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 60,
+              "w": 513,
+              "x": 20,
+              "y": 3201
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 60,
+              "w": 513,
+              "x": 20,
+              "y": 3283
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 60,
+              "w": 513,
+              "x": 20,
+              "y": 3365
+            }
+          }
+        ],
+        "columns": "513px",
+        "rect": {
+          "h": 224,
+          "w": 513,
+          "x": 20,
+          "y": 3175
+        }
+      }
+    },
+    "height": 320,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1154,
+        "id": "intro",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1400,
+        "id": "problem",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 929,
+        "id": "business-value",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 910,
+        "id": "economics",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1186,
+        "id": "applications",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1513,
+        "id": "approach",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 1072,
+        "id": "platform",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 619,
+        "id": "story",
+        "padding": "116px 54px"
+      },
+      {
+        "height": 432,
+        "id": "next-step",
+        "padding": "116px 54px"
+      }
+    ],
+    "width": 568,
+    "requested": {
+      "width": 568,
+      "height": 320
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "17px",
+        "text": "Research agent"
+      },
+      {
+        "font": "17px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "17px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "15px",
+        "text": "ERP"
+      },
+      {
+        "font": "15px",
+        "text": "CRM"
+      },
+      {
+        "font": "15px",
+        "text": "Documents"
+      },
+      {
+        "font": "15px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 93,
+              "w": 174,
+              "x": 20,
+              "y": 7862
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 93,
+              "w": 174,
+              "x": 206,
+              "y": 7862
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 93,
+              "w": 174,
+              "x": 391,
+              "y": 7862
+            }
+          }
+        ],
+        "columns": "173.594px 173.602px 173.594px",
+        "rect": {
+          "h": 93,
+          "w": 545,
+          "x": 20,
+          "y": 7862
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 263,
+              "x": 20,
+              "y": 6314
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 263,
+              "x": 302,
+              "y": 6314
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 263,
+              "x": 20,
+              "y": 6528
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 263,
+              "x": 302,
+              "y": 6528
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 263,
+              "x": 20,
+              "y": 6742
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 263,
+              "x": 302,
+              "y": 6742
+            }
+          }
+        ],
+        "columns": "263.398px 263.398px",
+        "rect": {
+          "h": 624,
+          "w": 545,
+          "x": 20,
+          "y": 6288
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 91,
+              "w": 245,
+              "x": 20,
+              "y": 10420
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 261,
+              "x": 20,
+              "y": 10539
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 261,
+              "x": 304,
+              "y": 10539
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 151,
+              "w": 545,
+              "x": 20,
+              "y": 10720
+            }
+          }
+        ],
+        "columns": "261.398px 261.398px",
+        "rect": {
+          "h": 451,
+          "w": 545,
+          "x": 20,
+          "y": 10420
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 603,
+              "w": 545,
+              "x": 20,
+              "y": 125
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 682,
+              "w": 545,
+              "x": 20,
+              "y": 772
+            }
+          }
+        ],
+        "columns": "544.797px",
+        "rect": {
+          "h": 1329,
+          "w": 545,
+          "x": 20,
+          "y": 125
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 337,
+              "w": 507,
+              "x": 39,
+              "y": 5202
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 325,
+              "w": 507,
+              "x": 39,
+              "y": 5564
+            }
+          }
+        ],
+        "columns": "506.797px",
+        "rect": {
+          "h": 736,
+          "w": 545,
+          "x": 20,
+          "y": 5178
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 828,
+              "w": 545,
+              "x": 20,
+              "y": 6083
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 469,
+              "w": 545,
+              "x": 20,
+              "y": 6976
+            }
+          }
+        ],
+        "columns": "544.797px",
+        "rect": {
+          "h": 1335,
+          "w": 545,
+          "x": 20,
+          "y": 6083
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 486,
+              "w": 545,
+              "x": 20,
+              "y": 7614
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 385,
+              "w": 545,
+              "x": 20,
+              "y": 8156
+            }
+          }
+        ],
+        "columns": "544.797px",
+        "rect": {
+          "h": 901,
+          "w": 545,
+          "x": 20,
+          "y": 7614
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 195,
+              "w": 507,
+              "x": 39,
+              "y": 4214
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 151,
+              "w": 507,
+              "x": 39,
+              "y": 4433
+            }
+          }
+        ],
+        "columns": "506.797px",
+        "rect": {
+          "h": 370,
+          "w": 507,
+          "x": 39,
+          "y": 4214
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 235,
+              "x": 45,
+              "y": 3260
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 196,
+              "w": 235,
+              "x": 305,
+              "y": 3260
+            }
+          }
+        ],
+        "columns": "235.398px 235.398px",
+        "rect": {
+          "h": 246,
+          "w": 545,
+          "x": 20,
+          "y": 3235
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 60,
+              "w": 545,
+              "x": 20,
+              "y": 3524
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 85,
+              "w": 545,
+              "x": 20,
+              "y": 3608
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 85,
+              "w": 545,
+              "x": 20,
+              "y": 3717
+            }
+          }
+        ],
+        "columns": "544.797px",
+        "rect": {
+          "h": 278,
+          "w": 545,
+          "x": 20,
+          "y": 3498
+        }
+      }
+    },
+    "height": 900,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1524,
+        "id": "intro",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1425,
+        "id": "problem",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 926,
+        "id": "business-value",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 944,
+        "id": "economics",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1138,
+        "id": "applications",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1531,
+        "id": "approach",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1097,
+        "id": "platform",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 900,
+        "id": "story",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 900,
+        "id": "next-step",
+        "padding": "125px 70px"
+      }
+    ],
+    "width": 600,
+    "requested": {
+      "width": 600,
+      "height": 900
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "21px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "17px",
+        "text": "Research agent"
+      },
+      {
+        "font": "17px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "17px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "15px",
+        "text": "ERP"
+      },
+      {
+        "font": "15px",
+        "text": "CRM"
+      },
+      {
+        "font": "15px",
+        "text": "Documents"
+      },
+      {
+        "font": "15px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 226,
+              "x": 26,
+              "y": 7336
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 226,
+              "x": 264,
+              "y": 7336
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 226,
+              "x": 501,
+              "y": 7336
+            }
+          }
+        ],
+        "columns": "225.844px 225.844px 225.852px",
+        "rect": {
+          "h": 90,
+          "w": 702,
+          "x": 26,
+          "y": 7336
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 225,
+              "x": 26,
+              "y": 5983
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 225,
+              "x": 264,
+              "y": 5983
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 225,
+              "x": 502,
+              "y": 5983
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 225,
+              "x": 26,
+              "y": 6198
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 225,
+              "x": 264,
+              "y": 6198
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 225,
+              "x": 502,
+              "y": 6198
+            }
+          }
+        ],
+        "columns": "225.18px 225.18px 225.18px",
+        "rect": {
+          "h": 410,
+          "w": 702,
+          "x": 26,
+          "y": 5957
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 72,
+              "w": 170,
+              "x": 26,
+              "y": 10155
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 154,
+              "x": 213,
+              "y": 10121
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 154,
+              "x": 385,
+              "y": 10121
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 170,
+              "x": 558,
+              "y": 10121
+            }
+          }
+        ],
+        "columns": "169.586px 154.18px 154.18px 169.594px",
+        "rect": {
+          "h": 139,
+          "w": 702,
+          "x": 26,
+          "y": 10121
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 618,
+              "w": 700,
+              "x": 26,
+              "y": 125
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 685,
+              "w": 702,
+              "x": 26,
+              "y": 787
+            }
+          }
+        ],
+        "columns": "701.539px",
+        "rect": {
+          "h": 1347,
+          "w": 702,
+          "x": 26,
+          "y": 125
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 390,
+              "w": 320,
+              "x": 47,
+              "y": 5105
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 390,
+              "w": 320,
+              "x": 387,
+              "y": 5105
+            }
+          }
+        ],
+        "columns": "319.766px 319.773px",
+        "rect": {
+          "h": 440,
+          "w": 702,
+          "x": 26,
+          "y": 5080
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 604,
+              "w": 702,
+              "x": 26,
+              "y": 5764
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 455,
+              "w": 702,
+              "x": 26,
+              "y": 6461
+            }
+          }
+        ],
+        "columns": "701.539px",
+        "rect": {
+          "h": 1127,
+          "w": 702,
+          "x": 26,
+          "y": 5764
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 481,
+              "w": 702,
+              "x": 26,
+              "y": 7087
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 702,
+              "x": 26,
+              "y": 7619
+            }
+          }
+        ],
+        "columns": "701.539px",
+        "rect": {
+          "h": 879,
+          "w": 702,
+          "x": 26,
+          "y": 7087
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 217,
+              "w": 644,
+              "x": 55,
+              "y": 3949
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 106,
+              "w": 644,
+              "x": 55,
+              "y": 4190
+            }
+          }
+        ],
+        "columns": "643.539px",
+        "rect": {
+          "h": 347,
+          "w": 644,
+          "x": 55,
+          "y": 3949
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 323,
+              "x": 54,
+              "y": 2929
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 323,
+              "x": 377,
+              "y": 2929
+            }
+          }
+        ],
+        "columns": "322.766px 322.773px",
+        "rect": {
+          "h": 266,
+          "w": 702,
+          "x": 26,
+          "y": 2901
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 57,
+              "w": 702,
+              "x": 26,
+              "y": 3209
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 702,
+              "x": 26,
+              "y": 3290
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 702,
+              "x": 26,
+              "y": 3396
+            }
+          }
+        ],
+        "columns": "701.539px",
+        "rect": {
+          "h": 268,
+          "w": 702,
+          "x": 26,
+          "y": 3183
+        }
+      }
+    },
+    "height": 1024,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1542,
+        "id": "intro",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1024,
+        "id": "problem",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1024,
+        "id": "business-value",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1024,
+        "id": "economics",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1024,
+        "id": "applications",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1323,
+        "id": "approach",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1075,
+        "id": "platform",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1024,
+        "id": "story",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1024,
+        "id": "next-step",
+        "padding": "125px 70px"
+      }
+    ],
+    "width": 768,
+    "requested": {
+      "width": 768,
+      "height": 1024
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "21px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "17px",
+        "text": "Research agent"
+      },
+      {
+        "font": "17px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "17px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "15px",
+        "text": "ERP"
+      },
+      {
+        "font": "15px",
+        "text": "CRM"
+      },
+      {
+        "font": "15px",
+        "text": "Documents"
+      },
+      {
+        "font": "15px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 242,
+              "x": 27,
+              "y": 8031
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 242,
+              "x": 281,
+              "y": 8031
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 242,
+              "x": 536,
+              "y": 8031
+            }
+          }
+        ],
+        "columns": "242.016px 242.016px 242.023px",
+        "rect": {
+          "h": 90,
+          "w": 750,
+          "x": 27,
+          "y": 8031
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 241,
+              "x": 27,
+              "y": 6626
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 241,
+              "x": 282,
+              "y": 6626
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 241,
+              "x": 536,
+              "y": 6626
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 241,
+              "x": 27,
+              "y": 6841
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 241,
+              "x": 282,
+              "y": 6841
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 241,
+              "x": 536,
+              "y": 6841
+            }
+          }
+        ],
+        "columns": "241.352px 241.352px 241.352px",
+        "rect": {
+          "h": 410,
+          "w": 750,
+          "x": 27,
+          "y": 6600
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 76,
+              "w": 182,
+              "x": 27,
+              "y": 11212
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 166,
+              "x": 228,
+              "y": 11181
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 166,
+              "x": 411,
+              "y": 11181
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 182,
+              "x": 595,
+              "y": 11181
+            }
+          }
+        ],
+        "columns": "182.297px 165.727px 165.727px 182.305px",
+        "rect": {
+          "h": 139,
+          "w": 750,
+          "x": 27,
+          "y": 11181
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 636,
+              "w": 700,
+              "x": 27,
+              "y": 125
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 685,
+              "w": 720,
+              "x": 43,
+              "y": 805
+            }
+          }
+        ],
+        "columns": "750.055px",
+        "rect": {
+          "h": 1365,
+          "w": 750,
+          "x": 27,
+          "y": 125
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 375,
+              "w": 344,
+              "x": 48,
+              "y": 5659
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 375,
+              "w": 344,
+              "x": 413,
+              "y": 5659
+            }
+          }
+        ],
+        "columns": "344.023px 344.031px",
+        "rect": {
+          "h": 425,
+          "w": 750,
+          "x": 27,
+          "y": 5634
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 604,
+              "w": 750,
+              "x": 27,
+              "y": 6406
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 455,
+              "w": 750,
+              "x": 27,
+              "y": 7104
+            }
+          }
+        ],
+        "columns": "750.055px",
+        "rect": {
+          "h": 1127,
+          "w": 750,
+          "x": 27,
+          "y": 6406
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 481,
+              "w": 750,
+              "x": 27,
+              "y": 7782
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 750,
+              "x": 27,
+              "y": 8314
+            }
+          }
+        ],
+        "columns": "750.055px",
+        "rect": {
+          "h": 879,
+          "w": 750,
+          "x": 27,
+          "y": 7782
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 217,
+              "w": 692,
+              "x": 56,
+              "y": 4343
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 106,
+              "w": 692,
+              "x": 56,
+              "y": 4584
+            }
+          }
+        ],
+        "columns": "692.055px",
+        "rect": {
+          "h": 347,
+          "w": 692,
+          "x": 56,
+          "y": 4343
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 347,
+              "x": 55,
+              "y": 3164
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 347,
+              "x": 403,
+              "y": 3164
+            }
+          }
+        ],
+        "columns": "347.023px 347.031px",
+        "rect": {
+          "h": 266,
+          "w": 750,
+          "x": 27,
+          "y": 3136
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 57,
+              "w": 750,
+              "x": 27,
+              "y": 3444
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 750,
+              "x": 27,
+              "y": 3525
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 750,
+              "x": 27,
+              "y": 3631
+            }
+          }
+        ],
+        "columns": "750.055px",
+        "rect": {
+          "h": 268,
+          "w": 750,
+          "x": 27,
+          "y": 3418
+        }
+      }
+    },
+    "height": 1180,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1560,
+        "id": "intro",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1180,
+        "id": "problem",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1180,
+        "id": "business-value",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1180,
+        "id": "economics",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1180,
+        "id": "applications",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1323,
+        "id": "approach",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1180,
+        "id": "platform",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1180,
+        "id": "story",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1180,
+        "id": "next-step",
+        "padding": "125px 70px"
+      }
+    ],
+    "width": 820,
+    "requested": {
+      "width": 820,
+      "height": 1180
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "21px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "17px",
+        "text": "Research agent"
+      },
+      {
+        "font": "17px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "17px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "15px",
+        "text": "ERP"
+      },
+      {
+        "font": "15px",
+        "text": "CRM"
+      },
+      {
+        "font": "15px",
+        "text": "Documents"
+      },
+      {
+        "font": "15px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 267,
+              "x": 30,
+              "y": 6823
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 267,
+              "x": 309,
+              "y": 6823
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 267,
+              "x": 588,
+              "y": 6823
+            }
+          }
+        ],
+        "columns": "266.898px 266.898px 266.898px",
+        "rect": {
+          "h": 90,
+          "w": 825,
+          "x": 30,
+          "y": 6823
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 266,
+              "x": 30,
+              "y": 5471
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 266,
+              "x": 309,
+              "y": 5471
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 266,
+              "x": 589,
+              "y": 5471
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 266,
+              "x": 30,
+              "y": 5686
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 266,
+              "x": 309,
+              "y": 5686
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 266,
+              "x": 589,
+              "y": 5686
+            }
+          }
+        ],
+        "columns": "266.227px 266.234px 266.234px",
+        "rect": {
+          "h": 410,
+          "w": 825,
+          "x": 30,
+          "y": 5445
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 83,
+              "w": 202,
+              "x": 30,
+              "y": 8988
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 184,
+              "x": 250,
+              "y": 8961
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 184,
+              "x": 451,
+              "y": 8961
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 202,
+              "x": 653,
+              "y": 8961
+            }
+          }
+        ],
+        "columns": "201.844px 183.5px 183.5px 201.852px",
+        "rect": {
+          "h": 139,
+          "w": 825,
+          "x": 30,
+          "y": 8961
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 662,
+              "w": 700,
+              "x": 30,
+              "y": 125
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 685,
+              "w": 720,
+              "x": 83,
+              "y": 831
+            }
+          }
+        ],
+        "columns": "824.695px",
+        "rect": {
+          "h": 1391,
+          "w": 825,
+          "x": 30,
+          "y": 125
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 338,
+              "w": 381,
+              "x": 51,
+              "y": 4719
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 338,
+              "w": 381,
+              "x": 453,
+              "y": 4719
+            }
+          }
+        ],
+        "columns": "381.344px 381.352px",
+        "rect": {
+          "h": 388,
+          "w": 825,
+          "x": 30,
+          "y": 4694
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 604,
+              "w": 825,
+              "x": 30,
+              "y": 5251
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 455,
+              "w": 825,
+              "x": 30,
+              "y": 5949
+            }
+          }
+        ],
+        "columns": "824.695px",
+        "rect": {
+          "h": 1127,
+          "w": 825,
+          "x": 30,
+          "y": 5251
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 481,
+              "w": 825,
+              "x": 30,
+              "y": 6574
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 825,
+              "x": 30,
+              "y": 7106
+            }
+          }
+        ],
+        "columns": "824.695px",
+        "rect": {
+          "h": 879,
+          "w": 825,
+          "x": 30,
+          "y": 6574
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 217,
+              "w": 767,
+              "x": 59,
+              "y": 3722
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 106,
+              "w": 767,
+              "x": 59,
+              "y": 3964
+            }
+          }
+        ],
+        "columns": "766.695px",
+        "rect": {
+          "h": 347,
+          "w": 767,
+          "x": 59,
+          "y": 3722
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 384,
+              "x": 58,
+              "y": 2797
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 384,
+              "x": 443,
+              "y": 2797
+            }
+          }
+        ],
+        "columns": "384.344px 384.352px",
+        "rect": {
+          "h": 266,
+          "w": 825,
+          "x": 30,
+          "y": 2769
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 57,
+              "w": 825,
+              "x": 30,
+              "y": 3078
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 825,
+              "x": 30,
+              "y": 3159
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 825,
+              "x": 30,
+              "y": 3264
+            }
+          }
+        ],
+        "columns": "824.695px",
+        "rect": {
+          "h": 268,
+          "w": 825,
+          "x": 30,
+          "y": 3052
+        }
+      }
+    },
+    "height": 700,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1586,
+        "id": "intro",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 907,
+        "id": "problem",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 937,
+        "id": "business-value",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 919,
+        "id": "economics",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 776,
+        "id": "applications",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1323,
+        "id": "approach",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1075,
+        "id": "platform",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 700,
+        "id": "story",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 700,
+        "id": "next-step",
+        "padding": "125px 70px"
+      }
+    ],
+    "width": 900,
+    "requested": {
+      "width": 900,
+      "height": 700
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "21px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "17px",
+        "text": "Research agent"
+      },
+      {
+        "font": "17px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "17px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "15px",
+        "text": "ERP"
+      },
+      {
+        "font": "15px",
+        "text": "CRM"
+      },
+      {
+        "font": "15px",
+        "text": "Documents"
+      },
+      {
+        "font": "15px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 298,
+              "x": 33,
+              "y": 6812
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 298,
+              "x": 343,
+              "y": 6812
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 298,
+              "x": 653,
+              "y": 6812
+            }
+          }
+        ],
+        "columns": "297.688px 297.688px 297.688px",
+        "rect": {
+          "h": 90,
+          "w": 917,
+          "x": 33,
+          "y": 6812
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 190,
+              "w": 297,
+              "x": 33,
+              "y": 5465
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 190,
+              "w": 297,
+              "x": 343,
+              "y": 5465
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 190,
+              "w": 297,
+              "x": 654,
+              "y": 5465
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 297,
+              "x": 33,
+              "y": 5675
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 297,
+              "x": 343,
+              "y": 5675
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 195,
+              "w": 297,
+              "x": 654,
+              "y": 5675
+            }
+          }
+        ],
+        "columns": "297.016px 297.023px 297.023px",
+        "rect": {
+          "h": 405,
+          "w": 917,
+          "x": 33,
+          "y": 5439
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 92,
+              "w": 226,
+              "x": 33,
+              "y": 8973
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 205,
+              "x": 278,
+              "y": 8950
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 205,
+              "x": 501,
+              "y": 8950
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 226,
+              "x": 724,
+              "y": 8950
+            }
+          }
+        ],
+        "columns": "226.039px 205.492px 205.484px 226.047px",
+        "rect": {
+          "h": 139,
+          "w": 917,
+          "x": 33,
+          "y": 8950
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 662,
+              "w": 700,
+              "x": 33,
+              "y": 125
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 685,
+              "w": 720,
+              "x": 132,
+              "y": 831
+            }
+          }
+        ],
+        "columns": "917.062px",
+        "rect": {
+          "h": 1391,
+          "w": 917,
+          "x": 33,
+          "y": 125
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 338,
+              "w": 428,
+              "x": 54,
+              "y": 4712
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 338,
+              "w": 428,
+              "x": 502,
+              "y": 4712
+            }
+          }
+        ],
+        "columns": "427.531px 427.531px",
+        "rect": {
+          "h": 388,
+          "w": 917,
+          "x": 33,
+          "y": 4687
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 599,
+              "w": 917,
+              "x": 33,
+              "y": 5245
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 455,
+              "w": 917,
+              "x": 33,
+              "y": 5938
+            }
+          }
+        ],
+        "columns": "917.062px",
+        "rect": {
+          "h": 1122,
+          "w": 917,
+          "x": 33,
+          "y": 5245
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 481,
+              "w": 917,
+              "x": 33,
+              "y": 6563
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 917,
+              "x": 33,
+              "y": 7095
+            }
+          }
+        ],
+        "columns": "917.062px",
+        "rect": {
+          "h": 879,
+          "w": 917,
+          "x": 33,
+          "y": 6563
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 217,
+              "w": 859,
+              "x": 62,
+              "y": 3712
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 106,
+              "w": 859,
+              "x": 62,
+              "y": 3953
+            }
+          }
+        ],
+        "columns": "859.062px",
+        "rect": {
+          "h": 347,
+          "w": 859,
+          "x": 62,
+          "y": 3712
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 431,
+              "x": 61,
+              "y": 2787
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 210,
+              "w": 431,
+              "x": 492,
+              "y": 2787
+            }
+          }
+        ],
+        "columns": "430.531px 430.531px",
+        "rect": {
+          "h": 266,
+          "w": 917,
+          "x": 33,
+          "y": 2759
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 57,
+              "w": 917,
+              "x": 33,
+              "y": 3067
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 917,
+              "x": 33,
+              "y": 3148
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 82,
+              "w": 917,
+              "x": 33,
+              "y": 3254
+            }
+          }
+        ],
+        "columns": "917.062px",
+        "rect": {
+          "h": 268,
+          "w": 917,
+          "x": 33,
+          "y": 3041
+        }
+      }
+    },
+    "height": 700,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1586,
+        "id": "intro",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 893,
+        "id": "problem",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 941,
+        "id": "business-value",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 919,
+        "id": "economics",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 781,
+        "id": "applications",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1318,
+        "id": "approach",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 1075,
+        "id": "platform",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 700,
+        "id": "story",
+        "padding": "125px 70px"
+      },
+      {
+        "height": 700,
+        "id": "next-step",
+        "padding": "125px 70px"
+      }
+    ],
+    "width": 999,
+    "requested": {
+      "width": 999,
+      "height": 700
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "15px",
+        "text": "Research agent"
+      },
+      {
+        "font": "15px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "15px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "12px",
+        "text": "ERP"
+      },
+      {
+        "font": "12px",
+        "text": "CRM"
+      },
+      {
+        "font": "12px",
+        "text": "Documents"
+      },
+      {
+        "font": "12px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 98,
+              "w": 147,
+              "x": 34,
+              "y": 4682
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 98,
+              "w": 147,
+              "x": 193,
+              "y": 4682
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 98,
+              "w": 147,
+              "x": 352,
+              "y": 4682
+            }
+          }
+        ],
+        "columns": "147.469px 147.469px 147.477px",
+        "rect": {
+          "h": 98,
+          "w": 466,
+          "x": 34,
+          "y": 4682
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 179,
+              "x": 34,
+              "y": 3904
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 179,
+              "x": 229,
+              "y": 3904
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 179,
+              "x": 425,
+              "y": 3904
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 179,
+              "x": 34,
+              "y": 4097
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 179,
+              "x": 229,
+              "y": 4097
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 179,
+              "x": 425,
+              "y": 4097
+            }
+          }
+        ],
+        "columns": "178.664px 178.664px 178.672px",
+        "rect": {
+          "h": 368,
+          "w": 570,
+          "x": 34,
+          "y": 3878
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 92,
+              "w": 226,
+              "x": 34,
+              "y": 6455
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 206,
+              "x": 278,
+              "y": 6432
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 206,
+              "x": 502,
+              "y": 6432
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 226,
+              "x": 725,
+              "y": 6432
+            }
+          }
+        ],
+        "columns": "226.281px 205.719px 205.711px 226.289px",
+        "rect": {
+          "h": 139,
+          "w": 918,
+          "x": 34,
+          "y": 6432
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 517,
+              "w": 399,
+              "x": 34,
+              "y": 129
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 497,
+              "w": 484,
+              "x": 468,
+              "y": 139
+            }
+          }
+        ],
+        "columns": "399.445px 483.555px",
+        "rect": {
+          "h": 517,
+          "w": 918,
+          "x": 34,
+          "y": 129
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 316,
+              "w": 426,
+              "x": 55,
+              "y": 3181
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 316,
+              "w": 426,
+              "x": 505,
+              "y": 3181
+            }
+          }
+        ],
+        "columns": "426px 426px",
+        "rect": {
+          "h": 358,
+          "w": 918,
+          "x": 34,
+          "y": 3160
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 591,
+              "w": 570,
+              "x": 34,
+              "y": 3655
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 509,
+              "w": 304,
+              "x": 648,
+              "y": 3734
+            }
+          }
+        ],
+        "columns": "570px 304px",
+        "rect": {
+          "h": 591,
+          "w": 918,
+          "x": 34,
+          "y": 3655
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 489,
+              "w": 466,
+              "x": 34,
+              "y": 4433
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 406,
+              "x": 546,
+              "y": 4517
+            }
+          }
+        ],
+        "columns": "466.414px 405.578px",
+        "rect": {
+          "h": 489,
+          "w": 918,
+          "x": 34,
+          "y": 4433
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 228,
+              "w": 566,
+              "x": 60,
+              "y": 2424
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 164,
+              "w": 275,
+              "x": 651,
+              "y": 2456
+            }
+          }
+        ],
+        "columns": "566.383px 274.609px",
+        "rect": {
+          "h": 228,
+          "w": 866,
+          "x": 60,
+          "y": 2424
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 431,
+              "x": 62,
+              "y": 1746
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 431,
+              "x": 493,
+              "y": 1746
+            }
+          }
+        ],
+        "columns": "431px 431px",
+        "rect": {
+          "h": 158,
+          "w": 918,
+          "x": 34,
+          "y": 1718
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 144,
+              "w": 274,
+              "x": 34,
+              "y": 1908
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 144,
+              "w": 329,
+              "x": 328,
+              "y": 1908
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 144,
+              "w": 274,
+              "x": 677,
+              "y": 1908
+            }
+          }
+        ],
+        "columns": "274.375px 329.25px 274.375px",
+        "rect": {
+          "h": 144,
+          "w": 918,
+          "x": 34,
+          "y": 1882
+        }
+      }
+    },
+    "height": 700,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 700,
+        "id": "intro",
+        "padding": "114px 40px"
+      },
+      {
+        "height": 737,
+        "id": "problem",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "business-value",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "economics",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 703,
+        "id": "applications",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 754,
+        "id": "approach",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "platform",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "story",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "next-step",
+        "padding": "114px 48px"
+      }
+    ],
+    "width": 1000,
+    "requested": {
+      "width": 1000,
+      "height": 700
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "15px",
+        "text": "Research agent"
+      },
+      {
+        "font": "15px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "15px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "12px",
+        "text": "ERP"
+      },
+      {
+        "font": "12px",
+        "text": "CRM"
+      },
+      {
+        "font": "12px",
+        "text": "Documents"
+      },
+      {
+        "font": "12px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 98,
+              "w": 151,
+              "x": 34,
+              "y": 5030
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 98,
+              "w": 151,
+              "x": 198,
+              "y": 5030
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 98,
+              "w": 151,
+              "x": 361,
+              "y": 5030
+            }
+          }
+        ],
+        "columns": "151.461px 151.461px 151.469px",
+        "rect": {
+          "h": 98,
+          "w": 478,
+          "x": 34,
+          "y": 5030
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 184,
+              "x": 34,
+              "y": 4211
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 184,
+              "x": 235,
+              "y": 4211
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 184,
+              "x": 435,
+              "y": 4211
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 184,
+              "x": 34,
+              "y": 4404
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 184,
+              "x": 235,
+              "y": 4404
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 184,
+              "x": 435,
+              "y": 4404
+            }
+          }
+        ],
+        "columns": "183.531px 183.531px 183.539px",
+        "rect": {
+          "h": 368,
+          "w": 585,
+          "x": 34,
+          "y": 4185
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 94,
+              "w": 232,
+              "x": 34,
+              "y": 6972
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 211,
+              "x": 284,
+              "y": 6950
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 211,
+              "x": 514,
+              "y": 6950
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 232,
+              "x": 743,
+              "y": 6950
+            }
+          }
+        ],
+        "columns": "232.148px 211.047px 211.039px 232.156px",
+        "rect": {
+          "h": 139,
+          "w": 940,
+          "x": 34,
+          "y": 6950
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 522,
+              "w": 409,
+              "x": 34,
+              "y": 160
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 488,
+              "w": 495,
+              "x": 479,
+              "y": 177
+            }
+          }
+        ],
+        "columns": "409.203px 495.352px",
+        "rect": {
+          "h": 522,
+          "w": 940,
+          "x": 34,
+          "y": 160
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 316,
+              "w": 437,
+              "x": 55,
+              "y": 3448
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 316,
+              "w": 437,
+              "x": 517,
+              "y": 3448
+            }
+          }
+        ],
+        "columns": "437.195px 437.195px",
+        "rect": {
+          "h": 358,
+          "w": 940,
+          "x": 34,
+          "y": 3427
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 591,
+              "w": 585,
+              "x": 34,
+              "y": 3962
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 509,
+              "w": 312,
+              "x": 663,
+              "y": 4041
+            }
+          }
+        ],
+        "columns": "584.602px 311.789px",
+        "rect": {
+          "h": 591,
+          "w": 940,
+          "x": 34,
+          "y": 3962
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 489,
+              "w": 478,
+              "x": 34,
+              "y": 4781
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 416,
+              "x": 559,
+              "y": 4865
+            }
+          }
+        ],
+        "columns": "478.391px 415.992px",
+        "rect": {
+          "h": 489,
+          "w": 940,
+          "x": 34,
+          "y": 4781
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 228,
+              "w": 581,
+              "x": 60,
+              "y": 2625
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 164,
+              "w": 282,
+              "x": 667,
+              "y": 2657
+            }
+          }
+        ],
+        "columns": "581.461px 281.922px",
+        "rect": {
+          "h": 228,
+          "w": 888,
+          "x": 60,
+          "y": 2625
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 442,
+              "x": 62,
+              "y": 1879
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 442,
+              "x": 505,
+              "y": 1879
+            }
+          }
+        ],
+        "columns": "442.195px 442.195px",
+        "rect": {
+          "h": 158,
+          "w": 940,
+          "x": 34,
+          "y": 1851
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 144,
+              "w": 281,
+              "x": 34,
+              "y": 2041
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 144,
+              "w": 338,
+              "x": 336,
+              "y": 2041
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 144,
+              "w": 281,
+              "x": 693,
+              "y": 2041
+            }
+          }
+        ],
+        "columns": "281.367px 337.648px 281.375px",
+        "rect": {
+          "h": 144,
+          "w": 940,
+          "x": 34,
+          "y": 2015
+        }
+      }
+    },
+    "height": 768,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 768,
+        "id": "intro",
+        "padding": "114px 40px"
+      },
+      {
+        "height": 768,
+        "id": "problem",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "business-value",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "economics",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "applications",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "approach",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "platform",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "story",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "next-step",
+        "padding": "114px 48px"
+      }
+    ],
+    "width": 1024,
+    "requested": {
+      "width": 1024,
+      "height": 768
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "15px",
+        "text": "Research agent"
+      },
+      {
+        "font": "15px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "15px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "12px",
+        "text": "ERP"
+      },
+      {
+        "font": "12px",
+        "text": "CRM"
+      },
+      {
+        "font": "12px",
+        "text": "Documents"
+      },
+      {
+        "font": "12px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 164,
+              "x": 37,
+              "y": 4652
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 164,
+              "x": 213,
+              "y": 4652
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 164,
+              "x": 389,
+              "y": 4652
+            }
+          }
+        ],
+        "columns": "164.102px 164.109px 164.102px",
+        "rect": {
+          "h": 90,
+          "w": 516,
+          "x": 37,
+          "y": 4652
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 199,
+              "x": 37,
+              "y": 3870
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 199,
+              "x": 253,
+              "y": 3870
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 199,
+              "x": 469,
+              "y": 3870
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 199,
+              "x": 37,
+              "y": 4063
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 199,
+              "x": 253,
+              "y": 4063
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 199,
+              "x": 469,
+              "y": 4063
+            }
+          }
+        ],
+        "columns": "198.945px 198.945px 198.953px",
+        "rect": {
+          "h": 368,
+          "w": 631,
+          "x": 37,
+          "y": 3844
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 101,
+              "w": 251,
+              "x": 37,
+              "y": 6417
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 228,
+              "x": 306,
+              "y": 6398
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 228,
+              "x": 552,
+              "y": 6398
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 251,
+              "x": 797,
+              "y": 6398
+            }
+          }
+        ],
+        "columns": "250.719px 227.93px 227.922px 250.727px",
+        "rect": {
+          "h": 139,
+          "w": 1011,
+          "x": 37,
+          "y": 6398
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 540,
+              "w": 440,
+              "x": 37,
+              "y": 117
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 488,
+              "w": 533,
+              "x": 515,
+              "y": 143
+            }
+          }
+        ],
+        "columns": "440.07px 532.727px",
+        "rect": {
+          "h": 540,
+          "w": 1011,
+          "x": 37,
+          "y": 117
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 316,
+              "w": 473,
+              "x": 58,
+              "y": 3147
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 316,
+              "w": 473,
+              "x": 555,
+              "y": 3147
+            }
+          }
+        ],
+        "columns": "472.648px 472.648px",
+        "rect": {
+          "h": 358,
+          "w": 1011,
+          "x": 37,
+          "y": 3126
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 591,
+              "w": 631,
+              "x": 37,
+              "y": 3621
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 470,
+              "w": 336,
+              "x": 712,
+              "y": 3720
+            }
+          }
+        ],
+        "columns": "630.844px 336.453px",
+        "rect": {
+          "h": 591,
+          "w": 1011,
+          "x": 37,
+          "y": 3621
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 481,
+              "w": 516,
+              "x": 37,
+              "y": 4403
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 449,
+              "x": 599,
+              "y": 4483
+            }
+          }
+        ],
+        "columns": "516.32px 448.969px",
+        "rect": {
+          "h": 481,
+          "w": 1011,
+          "x": 37,
+          "y": 4403
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 228,
+              "w": 629,
+              "x": 63,
+              "y": 2391
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 164,
+              "w": 305,
+              "x": 717,
+              "y": 2423
+            }
+          }
+        ],
+        "columns": "629.219px 305.07px",
+        "rect": {
+          "h": 228,
+          "w": 959,
+          "x": 63,
+          "y": 2391
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 478,
+              "x": 65,
+              "y": 1732
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 478,
+              "x": 543,
+              "y": 1732
+            }
+          }
+        ],
+        "columns": "477.648px 477.648px",
+        "rect": {
+          "h": 158,
+          "w": 1011,
+          "x": 37,
+          "y": 1704
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 108,
+              "w": 304,
+              "x": 37,
+              "y": 1894
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 108,
+              "w": 364,
+              "x": 360,
+              "y": 1894
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 108,
+              "w": 304,
+              "x": 745,
+              "y": 1894
+            }
+          }
+        ],
+        "columns": "303.523px 364.242px 303.531px",
+        "rect": {
+          "h": 108,
+          "w": 1011,
+          "x": 37,
+          "y": 1868
+        }
+      }
+    },
+    "height": 700,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 700,
+        "id": "intro",
+        "padding": "114px 40px"
+      },
+      {
+        "height": 704,
+        "id": "problem",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "business-value",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "economics",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 703,
+        "id": "applications",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 754,
+        "id": "approach",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "platform",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "story",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 700,
+        "id": "next-step",
+        "padding": "114px 48px"
+      }
+    ],
+    "width": 1100,
+    "requested": {
+      "width": 1100,
+      "height": 700
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "15px",
+        "text": "Research agent"
+      },
+      {
+        "font": "15px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "15px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "12px",
+        "text": "ERP"
+      },
+      {
+        "font": "12px",
+        "text": "CRM"
+      },
+      {
+        "font": "12px",
+        "text": "Documents"
+      },
+      {
+        "font": "12px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 172,
+              "x": 39,
+              "y": 5242
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 172,
+              "x": 223,
+              "y": 5242
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 172,
+              "x": 407,
+              "y": 5242
+            }
+          }
+        ],
+        "columns": "172.422px 172.422px 172.422px",
+        "rect": {
+          "h": 90,
+          "w": 541,
+          "x": 39,
+          "y": 5242
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 209,
+              "x": 39,
+              "y": 4374
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 209,
+              "x": 265,
+              "y": 4374
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 209,
+              "x": 491,
+              "y": 4374
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 209,
+              "x": 39,
+              "y": 4567
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 209,
+              "x": 265,
+              "y": 4567
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 209,
+              "x": 491,
+              "y": 4567
+            }
+          }
+        ],
+        "columns": "209.086px 209.086px 209.094px",
+        "rect": {
+          "h": 368,
+          "w": 661,
+          "x": 39,
+          "y": 4348
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 105,
+              "w": 263,
+              "x": 39,
+              "y": 7255
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 239,
+              "x": 319,
+              "y": 7238
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 239,
+              "x": 576,
+              "y": 7238
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 263,
+              "x": 834,
+              "y": 7238
+            }
+          }
+        ],
+        "columns": "262.938px 239.031px 239.031px 262.945px",
+        "rect": {
+          "h": 139,
+          "w": 1058,
+          "x": 39,
+          "y": 7238
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 551,
+              "w": 460,
+              "x": 39,
+              "y": 162
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 488,
+              "w": 557,
+              "x": 539,
+              "y": 193
+            }
+          }
+        ],
+        "columns": "460.383px 557.312px",
+        "rect": {
+          "h": 551,
+          "w": 1058,
+          "x": 39,
+          "y": 162
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 316,
+              "w": 496,
+              "x": 60,
+              "y": 3592
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 316,
+              "w": 496,
+              "x": 580,
+              "y": 3592
+            }
+          }
+        ],
+        "columns": "495.969px 495.977px",
+        "rect": {
+          "h": 358,
+          "w": 1058,
+          "x": 39,
+          "y": 3571
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 564,
+              "w": 661,
+              "x": 39,
+              "y": 4151
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 470,
+              "w": 353,
+              "x": 744,
+              "y": 4237
+            }
+          }
+        ],
+        "columns": "661.266px 352.68px",
+        "rect": {
+          "h": 564,
+          "w": 1058,
+          "x": 39,
+          "y": 4151
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 481,
+              "w": 541,
+              "x": 39,
+              "y": 4993
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 471,
+              "x": 626,
+              "y": 5073
+            }
+          }
+        ],
+        "columns": "541.266px 470.672px",
+        "rect": {
+          "h": 481,
+          "w": 1058,
+          "x": 39,
+          "y": 4993
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 228,
+              "w": 661,
+              "x": 65,
+              "y": 2737
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 164,
+              "w": 320,
+              "x": 750,
+              "y": 2769
+            }
+          }
+        ],
+        "columns": "660.633px 320.305px",
+        "rect": {
+          "h": 228,
+          "w": 1006,
+          "x": 65,
+          "y": 2737
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 501,
+              "x": 67,
+              "y": 1990
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 501,
+              "x": 568,
+              "y": 1990
+            }
+          }
+        ],
+        "columns": "500.969px 500.977px",
+        "rect": {
+          "h": 158,
+          "w": 1058,
+          "x": 39,
+          "y": 1962
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 318,
+              "x": 39,
+              "y": 2153
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 382,
+              "x": 377,
+              "y": 2153
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 318,
+              "x": 778,
+              "y": 2153
+            }
+          }
+        ],
+        "columns": "318.102px 381.734px 318.109px",
+        "rect": {
+          "h": 86,
+          "w": 1058,
+          "x": 39,
+          "y": 2127
+        }
+      }
+    },
+    "height": 800,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 800,
+        "id": "intro",
+        "padding": "114px 40px"
+      },
+      {
+        "height": 800,
+        "id": "problem",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 800,
+        "id": "business-value",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 800,
+        "id": "economics",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 800,
+        "id": "applications",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 800,
+        "id": "approach",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 800,
+        "id": "platform",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 800,
+        "id": "story",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 800,
+        "id": "next-step",
+        "padding": "114px 48px"
+      }
+    ],
+    "width": 1150,
+    "requested": {
+      "width": 1150,
+      "height": 800
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "15px",
+        "text": "Research agent"
+      },
+      {
+        "font": "15px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "15px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "12px",
+        "text": "ERP"
+      },
+      {
+        "font": "12px",
+        "text": "CRM"
+      },
+      {
+        "font": "12px",
+        "text": "Documents"
+      },
+      {
+        "font": "12px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 194,
+              "x": 43,
+              "y": 4729
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 194,
+              "x": 249,
+              "y": 4729
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 194,
+              "x": 455,
+              "y": 4729
+            }
+          }
+        ],
+        "columns": "193.883px 193.883px 193.883px",
+        "rect": {
+          "h": 90,
+          "w": 606,
+          "x": 43,
+          "y": 4729
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 235,
+              "x": 43,
+              "y": 3938
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 235,
+              "x": 295,
+              "y": 3938
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 176,
+              "w": 235,
+              "x": 547,
+              "y": 3938
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 235,
+              "x": 43,
+              "y": 4130
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 235,
+              "x": 295,
+              "y": 4130
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 175,
+              "w": 235,
+              "x": 547,
+              "y": 4130
+            }
+          }
+        ],
+        "columns": "235.25px 235.25px 235.258px",
+        "rect": {
+          "h": 368,
+          "w": 740,
+          "x": 43,
+          "y": 3912
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 115,
+              "w": 290,
+              "x": 43,
+              "y": 6537
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 268,
+              "x": 355,
+              "y": 6525
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 268,
+              "x": 641,
+              "y": 6525
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 139,
+              "w": 294,
+              "x": 927,
+              "y": 6525
+            }
+          }
+        ],
+        "columns": "294.453px 267.695px 267.695px 294.461px",
+        "rect": {
+          "h": 139,
+          "w": 1178,
+          "x": 43,
+          "y": 6525
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 565,
+              "w": 513,
+              "x": 43,
+              "y": 115
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 488,
+              "w": 621,
+              "x": 600,
+              "y": 153
+            }
+          }
+        ],
+        "columns": "512.789px 620.758px",
+        "rect": {
+          "h": 565,
+          "w": 1178,
+          "x": 43,
+          "y": 115
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 316,
+              "w": 556,
+              "x": 64,
+              "y": 3232
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 316,
+              "w": 556,
+              "x": 644,
+              "y": 3232
+            }
+          }
+        ],
+        "columns": "556.148px 556.156px",
+        "rect": {
+          "h": 358,
+          "w": 1178,
+          "x": 43,
+          "y": 3211
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 564,
+              "w": 740,
+              "x": 43,
+              "y": 3715
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 434,
+              "w": 395,
+              "x": 827,
+              "y": 3818
+            }
+          }
+        ],
+        "columns": "739.758px 394.547px",
+        "rect": {
+          "h": 564,
+          "w": 1178,
+          "x": 43,
+          "y": 3715
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 483,
+              "w": 606,
+              "x": 43,
+              "y": 4479
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 373,
+              "w": 527,
+              "x": 695,
+              "y": 4561
+            }
+          }
+        ],
+        "columns": "605.648px 526.648px",
+        "rect": {
+          "h": 483,
+          "w": 1178,
+          "x": 43,
+          "y": 4479
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 228,
+              "w": 742,
+              "x": 69,
+              "y": 2458
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 142,
+              "w": 360,
+              "x": 836,
+              "y": 2501
+            }
+          }
+        ],
+        "columns": "741.688px 359.617px",
+        "rect": {
+          "h": 228,
+          "w": 1126,
+          "x": 69,
+          "y": 2458
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 561,
+              "x": 71,
+              "y": 1793
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 561,
+              "x": 632,
+              "y": 1793
+            }
+          }
+        ],
+        "columns": "561.148px 561.156px",
+        "rect": {
+          "h": 158,
+          "w": 1178,
+          "x": 43,
+          "y": 1765
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 343,
+              "x": 63,
+              "y": 1956
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 412,
+              "x": 426,
+              "y": 1956
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 343,
+              "x": 858,
+              "y": 1956
+            }
+          }
+        ],
+        "columns": "343.219px 411.859px 343.227px",
+        "rect": {
+          "h": 86,
+          "w": 1138,
+          "x": 63,
+          "y": 1930
+        }
+      }
+    },
+    "height": 720,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 720,
+        "id": "intro",
+        "padding": "114px 40px"
+      },
+      {
+        "height": 720,
+        "id": "problem",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "business-value",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "economics",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "applications",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 727,
+        "id": "approach",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "platform",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "story",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "next-step",
+        "padding": "114px 48px"
+      }
+    ],
+    "width": 1279,
+    "requested": {
+      "width": 1279,
+      "height": 720
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "15px",
+        "text": "Research agent"
+      },
+      {
+        "font": "15px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "15px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "12px",
+        "text": "ERP"
+      },
+      {
+        "font": "12px",
+        "text": "CRM"
+      },
+      {
+        "font": "12px",
+        "text": "Documents"
+      },
+      {
+        "font": "12px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 189,
+              "x": 43,
+              "y": 4742
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 189,
+              "x": 252,
+              "y": 4742
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 189,
+              "x": 460,
+              "y": 4742
+            }
+          }
+        ],
+        "columns": "188.711px 188.719px 188.711px",
+        "rect": {
+          "h": 90,
+          "w": 606,
+          "x": 43,
+          "y": 4742
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 170,
+              "w": 235,
+              "x": 43,
+              "y": 3940
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 170,
+              "w": 235,
+              "x": 295,
+              "y": 3940
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 170,
+              "w": 235,
+              "x": 548,
+              "y": 3940
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 169,
+              "w": 235,
+              "x": 43,
+              "y": 4127
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 169,
+              "w": 235,
+              "x": 295,
+              "y": 4127
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 169,
+              "w": 235,
+              "x": 548,
+              "y": 4127
+            }
+          }
+        ],
+        "columns": "235.453px 235.453px 235.461px",
+        "rect": {
+          "h": 356,
+          "w": 740,
+          "x": 43,
+          "y": 3914
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 115,
+              "w": 290,
+              "x": 43,
+              "y": 6537
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 230,
+              "x": 405,
+              "y": 6518
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 230,
+              "x": 676,
+              "y": 6518
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 276,
+              "x": 946,
+              "y": 6518
+            }
+          }
+        ],
+        "columns": "322.375px 230.266px 230.266px 276.32px",
+        "rect": {
+          "h": 153,
+          "w": 1179,
+          "x": 43,
+          "y": 6518
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 565,
+              "w": 513,
+              "x": 43,
+              "y": 115
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 488,
+              "w": 621,
+              "x": 601,
+              "y": 153
+            }
+          }
+        ],
+        "columns": "513.195px 621.242px",
+        "rect": {
+          "h": 565,
+          "w": 1179,
+          "x": 43,
+          "y": 115
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 316,
+              "w": 557,
+              "x": 64,
+              "y": 3232
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 316,
+              "w": 557,
+              "x": 645,
+              "y": 3232
+            }
+          }
+        ],
+        "columns": "556.617px 556.617px",
+        "rect": {
+          "h": 358,
+          "w": 1179,
+          "x": 43,
+          "y": 3211
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 552,
+              "w": 740,
+              "x": 43,
+              "y": 3717
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 434,
+              "w": 395,
+              "x": 827,
+              "y": 3815
+            }
+          }
+        ],
+        "columns": "740.367px 394.867px",
+        "rect": {
+          "h": 552,
+          "w": 1179,
+          "x": 43,
+          "y": 3717
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 497,
+              "w": 606,
+              "x": 43,
+              "y": 4465
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 400,
+              "w": 527,
+              "x": 695,
+              "y": 4540
+            }
+          }
+        ],
+        "columns": "606.148px 527.086px",
+        "rect": {
+          "h": 497,
+          "w": 1179,
+          "x": 43,
+          "y": 4465
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 228,
+              "w": 780,
+              "x": 69,
+              "y": 2458
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 242,
+              "w": 308,
+              "x": 888,
+              "y": 2451
+            }
+          }
+        ],
+        "columns": "779.523px 307.703px",
+        "rect": {
+          "h": 242,
+          "w": 1127,
+          "x": 69,
+          "y": 2451
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 554,
+              "x": 79,
+              "y": 1782
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 554,
+              "x": 633,
+              "y": 1782
+            }
+          }
+        ],
+        "columns": "553.617px 553.617px",
+        "rect": {
+          "h": 174,
+          "w": 1179,
+          "x": 43,
+          "y": 1746
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 108,
+              "w": 335,
+              "x": 63,
+              "y": 1953
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 108,
+              "w": 402,
+              "x": 432,
+              "y": 1953
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 108,
+              "w": 335,
+              "x": 867,
+              "y": 1953
+            }
+          }
+        ],
+        "columns": "334.758px 401.711px 334.766px",
+        "rect": {
+          "h": 108,
+          "w": 1139,
+          "x": 63,
+          "y": 1927
+        }
+      }
+    },
+    "height": 720,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 720,
+        "id": "intro",
+        "padding": "114px 40px"
+      },
+      {
+        "height": 720,
+        "id": "problem",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "business-value",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "economics",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "applications",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "approach",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "platform",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "story",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 720,
+        "id": "next-step",
+        "padding": "114px 48px"
+      }
+    ],
+    "width": 1280,
+    "requested": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "15px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "15px",
+        "text": "Research agent"
+      },
+      {
+        "font": "15px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "15px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "12px",
+        "text": "ERP"
+      },
+      {
+        "font": "12px",
+        "text": "CRM"
+      },
+      {
+        "font": "12px",
+        "text": "Documents"
+      },
+      {
+        "font": "12px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 203,
+              "x": 46,
+              "y": 5054
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 203,
+              "x": 269,
+              "y": 5054
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 203,
+              "x": 492,
+              "y": 5054
+            }
+          }
+        ],
+        "columns": "203.016px 203.023px 203.016px",
+        "rect": {
+          "h": 90,
+          "w": 649,
+          "x": 46,
+          "y": 5054
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 170,
+              "w": 253,
+              "x": 46,
+              "y": 4204
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 170,
+              "w": 253,
+              "x": 316,
+              "y": 4204
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 170,
+              "w": 253,
+              "x": 586,
+              "y": 4204
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 169,
+              "w": 253,
+              "x": 46,
+              "y": 4391
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 169,
+              "w": 253,
+              "x": 316,
+              "y": 4391
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 169,
+              "w": 253,
+              "x": 586,
+              "y": 4391
+            }
+          }
+        ],
+        "columns": "252.898px 252.898px 252.898px",
+        "rect": {
+          "h": 356,
+          "w": 793,
+          "x": 46,
+          "y": 4178
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 115,
+              "w": 290,
+              "x": 46,
+              "y": 6969
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 248,
+              "x": 433,
+              "y": 6950
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 248,
+              "x": 720,
+              "y": 6950
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 297,
+              "x": 1008,
+              "y": 6950
+            }
+          }
+        ],
+        "columns": "346.797px 247.711px 247.711px 297.25px",
+        "rect": {
+          "h": 153,
+          "w": 1259,
+          "x": 46,
+          "y": 6950
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 586,
+              "w": 548,
+              "x": 46,
+              "y": 128
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 488,
+              "w": 664,
+              "x": 642,
+              "y": 177
+            }
+          }
+        ],
+        "columns": "548.133px 663.539px",
+        "rect": {
+          "h": 586,
+          "w": 1259,
+          "x": 46,
+          "y": 128
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 316,
+              "w": 597,
+              "x": 67,
+              "y": 3448
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 316,
+              "w": 597,
+              "x": 688,
+              "y": 3448
+            }
+          }
+        ],
+        "columns": "596.734px 596.742px",
+        "rect": {
+          "h": 358,
+          "w": 1259,
+          "x": 46,
+          "y": 3427
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 552,
+              "w": 793,
+              "x": 46,
+              "y": 3981
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 434,
+              "w": 423,
+              "x": 882,
+              "y": 4079
+            }
+          }
+        ],
+        "columns": "792.695px 422.781px",
+        "rect": {
+          "h": 552,
+          "w": 1259,
+          "x": 46,
+          "y": 3981
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 497,
+              "w": 649,
+              "x": 46,
+              "y": 4777
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 400,
+              "w": 564,
+              "x": 741,
+              "y": 4852
+            }
+          }
+        ],
+        "columns": "649.062px 564.406px",
+        "rect": {
+          "h": 497,
+          "w": 1259,
+          "x": 46,
+          "y": 4777
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 228,
+              "w": 837,
+              "x": 72,
+              "y": 2627
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 242,
+              "w": 330,
+              "x": 949,
+              "y": 2620
+            }
+          }
+        ],
+        "columns": "837.055px 330.422px",
+        "rect": {
+          "h": 242,
+          "w": 1207,
+          "x": 72,
+          "y": 2620
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 594,
+              "x": 82,
+              "y": 1915
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 102,
+              "w": 594,
+              "x": 676,
+              "y": 1915
+            }
+          }
+        ],
+        "columns": "593.734px 593.742px",
+        "rect": {
+          "h": 174,
+          "w": 1259,
+          "x": 46,
+          "y": 1879
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 360,
+              "x": 66,
+              "y": 2085
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 432,
+              "x": 460,
+              "y": 2085
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 86,
+              "w": 360,
+              "x": 925,
+              "y": 2085
+            }
+          }
+        ],
+        "columns": "359.836px 431.797px 359.844px",
+        "rect": {
+          "h": 86,
+          "w": 1219,
+          "x": 66,
+          "y": 2059
+        }
+      }
+    },
+    "height": 768,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 768,
+        "id": "intro",
+        "padding": "114px 40px"
+      },
+      {
+        "height": 768,
+        "id": "problem",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "business-value",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "economics",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "applications",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "approach",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "platform",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "story",
+        "padding": "114px 48px"
+      },
+      {
+        "height": 768,
+        "id": "next-step",
+        "padding": "114px 48px"
+      }
+    ],
+    "width": 1366,
+    "requested": {
+      "width": 1366,
+      "height": 768
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "20px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "18.72px",
+        "text": "Research agent"
+      },
+      {
+        "font": "18.72px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "18.72px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "17px",
+        "text": "ERP"
+      },
+      {
+        "font": "17px",
+        "text": "CRM"
+      },
+      {
+        "font": "17px",
+        "text": "Documents"
+      },
+      {
+        "font": "17px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 207,
+              "x": 73,
+              "y": 5911
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 207,
+              "x": 299,
+              "y": 5911
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 207,
+              "x": 526,
+              "y": 5911
+            }
+          }
+        ],
+        "columns": "206.68px 206.68px 206.68px",
+        "rect": {
+          "h": 90,
+          "w": 660,
+          "x": 73,
+          "y": 5911
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 73,
+              "y": 4901
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 350,
+              "y": 4901
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 628,
+              "y": 4901
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 73,
+              "y": 5137
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 350,
+              "y": 5137
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 628,
+              "y": 5137
+            }
+          }
+        ],
+        "columns": "250.695px 250.695px 250.695px",
+        "rect": {
+          "h": 439,
+          "w": 806,
+          "x": 73,
+          "y": 4875
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 115,
+              "w": 290,
+              "x": 73,
+              "y": 8157
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 252,
+              "x": 466,
+              "y": 8138
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 252,
+              "x": 758,
+              "y": 8138
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 303,
+              "x": 1050,
+              "y": 8138
+            }
+          }
+        ],
+        "columns": "353.039px 252.172px 252.18px 302.602px",
+        "rect": {
+          "h": 153,
+          "w": 1280,
+          "x": 73,
+          "y": 8138
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 682,
+              "w": 556,
+              "x": 73,
+              "y": 140
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 623,
+              "w": 673,
+              "x": 679,
+              "y": 170
+            }
+          }
+        ],
+        "columns": "556.242px 673.359px",
+        "rect": {
+          "h": 682,
+          "w": 1280,
+          "x": 73,
+          "y": 140
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 359,
+              "w": 598,
+              "x": 99,
+              "y": 4067
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 359,
+              "w": 598,
+              "x": 729,
+              "y": 4067
+            }
+          }
+        ],
+        "columns": "598px 598px",
+        "rect": {
+          "h": 417,
+          "w": 1280,
+          "x": 73,
+          "y": 4038
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 666,
+              "w": 806,
+              "x": 73,
+              "y": 4649
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 545,
+              "w": 430,
+              "x": 923,
+              "y": 4761
+            }
+          }
+        ],
+        "columns": "806.086px 429.906px",
+        "rect": {
+          "h": 666,
+          "w": 1280,
+          "x": 73,
+          "y": 4649
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 497,
+              "w": 660,
+              "x": 73,
+              "y": 5633
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 400,
+              "w": 574,
+              "x": 779,
+              "y": 5708
+            }
+          }
+        ],
+        "columns": "660.039px 573.961px",
+        "rect": {
+          "h": 497,
+          "w": 1280,
+          "x": 73,
+          "y": 5633
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 250,
+              "w": 847,
+              "x": 102,
+              "y": 3075
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 242,
+              "w": 335,
+              "x": 989,
+              "y": 3079
+            }
+          }
+        ],
+        "columns": "847.469px 334.523px",
+        "rect": {
+          "h": 250,
+          "w": 1222,
+          "x": 102,
+          "y": 3075
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 138,
+              "w": 604,
+              "x": 109,
+              "y": 2258
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 138,
+              "w": 604,
+              "x": 713,
+              "y": 2258
+            }
+          }
+        ],
+        "columns": "604px 604px",
+        "rect": {
+          "h": 210,
+          "w": 1280,
+          "x": 73,
+          "y": 2222
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 87,
+              "w": 366,
+              "x": 93,
+              "y": 2474
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 87,
+              "w": 440,
+              "x": 493,
+              "y": 2474
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 87,
+              "w": 366,
+              "x": 966,
+              "y": 2474
+            }
+          }
+        ],
+        "columns": "366.25px 439.5px 366.25px",
+        "rect": {
+          "h": 87,
+          "w": 1240,
+          "x": 93,
+          "y": 2448
+        }
+      }
+    },
+    "height": 900,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 900,
+        "id": "intro",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "problem",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "business-value",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "economics",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "applications",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "approach",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "platform",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "story",
+        "padding": "126px 63px"
+      },
+      {
+        "height": 900,
+        "id": "next-step",
+        "padding": "126px 63px"
+      }
+    ],
+    "width": 1440,
+    "requested": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  {
+    "clipped": [],
+    "diagramFonts": [
+      {
+        "font": "20px",
+        "text": "Prepare our weekly operations review"
+      },
+      {
+        "font": "19px",
+        "text": "Research agent"
+      },
+      {
+        "font": "19px",
+        "text": "Operations agent"
+      },
+      {
+        "font": "19px",
+        "text": "Sales agent"
+      },
+      {
+        "font": "17px",
+        "text": "ERP"
+      },
+      {
+        "font": "17px",
+        "text": "CRM"
+      },
+      {
+        "font": "17px",
+        "text": "Documents"
+      },
+      {
+        "font": "17px",
+        "text": "Finance"
+      }
+    ],
+    "groups": {
+      ".capability-nodes": {
+        "children": [
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 207,
+              "x": 313,
+              "y": 7087
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 207,
+              "x": 539,
+              "y": 7087
+            }
+          },
+          {
+            "class": "glow-node ",
+            "rect": {
+              "h": 90,
+              "w": 207,
+              "x": 766,
+              "y": 7087
+            }
+          }
+        ],
+        "columns": "206.68px 206.68px 206.68px",
+        "rect": {
+          "h": 90,
+          "w": 660,
+          "x": 313,
+          "y": 7087
+        }
+      },
+      ".delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 313,
+              "y": 5898
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 590,
+              "y": 5898
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 868,
+              "y": 5898
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 313,
+              "y": 6133
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 590,
+              "y": 6133
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 204,
+              "w": 251,
+              "x": 868,
+              "y": 6133
+            }
+          }
+        ],
+        "columns": "250.695px 250.695px 250.695px",
+        "rect": {
+          "h": 439,
+          "w": 806,
+          "x": 313,
+          "y": 5872
+        }
+      },
+      ".footer-grid": {
+        "children": [
+          {
+            "class": "footer-brand",
+            "rect": {
+              "h": 115,
+              "w": 290,
+              "x": 313,
+              "y": 9777
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 252,
+              "x": 706,
+              "y": 9758
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 252,
+              "x": 998,
+              "y": 9758
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 153,
+              "w": 303,
+              "x": 1290,
+              "y": 9758
+            }
+          }
+        ],
+        "columns": "353.039px 252.172px 252.18px 302.602px",
+        "rect": {
+          "h": 153,
+          "w": 1280,
+          "x": 313,
+          "y": 9758
+        }
+      },
+      ".hero-grid": {
+        "children": [
+          {
+            "class": "home-hero-copy",
+            "rect": {
+              "h": 705,
+              "w": 555,
+              "x": 313,
+              "y": 226
+            }
+          },
+          {
+            "class": "hero-desktop-visual",
+            "rect": {
+              "h": 641,
+              "w": 671,
+              "x": 921,
+              "y": 257
+            }
+          }
+        ],
+        "columns": "554.617px 671.383px",
+        "rect": {
+          "h": 705,
+          "w": 1280,
+          "x": 313,
+          "y": 226
+        }
+      },
+      ".home-case-panel": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 359,
+              "w": 598,
+              "x": 339,
+              "y": 4885
+            }
+          },
+          {
+            "class": "output-preview ",
+            "rect": {
+              "h": 359,
+              "w": 598,
+              "x": 969,
+              "y": 4885
+            }
+          }
+        ],
+        "columns": "598px 598px",
+        "rect": {
+          "h": 417,
+          "w": 1280,
+          "x": 313,
+          "y": 4856
+        }
+      },
+      ".home-delivery-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 666,
+              "w": 806,
+              "x": 313,
+              "y": 5646
+            }
+          },
+          {
+            "class": "working-brief surface-panel compact",
+            "rect": {
+              "h": 545,
+              "w": 430,
+              "x": 1163,
+              "y": 5757
+            }
+          }
+        ],
+        "columns": "806.086px 429.906px",
+        "rect": {
+          "h": 666,
+          "w": 1280,
+          "x": 313,
+          "y": 5646
+        }
+      },
+      ".home-platform-grid": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 497,
+              "w": 660,
+              "x": 313,
+              "y": 6810
+            }
+          },
+          {
+            "class": "activity-preview",
+            "rect": {
+              "h": 400,
+              "w": 574,
+              "x": 1019,
+              "y": 6884
+            }
+          }
+        ],
+        "columns": "660.039px 573.961px",
+        "rect": {
+          "h": 497,
+          "w": 1280,
+          "x": 313,
+          "y": 6810
+        }
+      },
+      ".mini-economics-main": {
+        "children": [
+          {
+            "class": "effort-table-wrap",
+            "rect": {
+              "h": 250,
+              "w": 847,
+              "x": 342,
+              "y": 3712
+            }
+          },
+          {
+            "class": "effort-result",
+            "rect": {
+              "h": 242,
+              "w": 335,
+              "x": 1229,
+              "y": 3716
+            }
+          }
+        ],
+        "columns": "847.469px 334.523px",
+        "rect": {
+          "h": 250,
+          "w": 1222,
+          "x": 342,
+          "y": 3712
+        }
+      },
+      ".primary-value-pair": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 138,
+              "w": 604,
+              "x": 349,
+              "y": 2717
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 138,
+              "w": 604,
+              "x": 953,
+              "y": 2717
+            }
+          }
+        ],
+        "columns": "604px 604px",
+        "rect": {
+          "h": 210,
+          "w": 1280,
+          "x": 313,
+          "y": 2681
+        }
+      },
+      ".supporting-values": {
+        "children": [
+          {
+            "class": "",
+            "rect": {
+              "h": 87,
+              "w": 366,
+              "x": 333,
+              "y": 2933
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 87,
+              "w": 440,
+              "x": 733,
+              "y": 2933
+            }
+          },
+          {
+            "class": "",
+            "rect": {
+              "h": 87,
+              "w": 366,
+              "x": 1206,
+              "y": 2933
+            }
+          }
+        ],
+        "columns": "366.25px 439.5px 366.25px",
+        "rect": {
+          "h": 87,
+          "w": 1240,
+          "x": 333,
+          "y": 2907
+        }
+      }
+    },
+    "height": 1080,
+    "overflow": 0,
+    "scroll": 0,
+    "sections": [
+      {
+        "height": 1080,
+        "id": "intro",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "problem",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "business-value",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "economics",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "applications",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "approach",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "platform",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "story",
+        "padding": "151.2px 75.6px"
+      },
+      {
+        "height": 1080,
+        "id": "next-step",
+        "padding": "151.2px 75.6px"
+      }
+    ],
+    "width": 1920,
+    "requested": {
+      "width": 1920,
+      "height": 1080
+    }
+  }
+]

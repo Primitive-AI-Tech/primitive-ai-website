@@ -1,0 +1,128 @@
+{
+  "customers": 8,
+  "partners": 4,
+  "mockup_text_allowed": true,
+  "production_requires_real_logo_images": true,
+  "assets": [
+    {
+      "name": "Ajinomoto",
+      "relationship": "customer",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/Ajinomoto.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "1f4b97df7c565e05163b04e7e02ae86231be0a39a88bfc44a7c902661573843a"
+    },
+    {
+      "name": "Nidec",
+      "relationship": "customer",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/Nidec.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "f37b5d399302f212f81a612364d35a61e51f8e4901388ac74db187a3fb85bde8"
+    },
+    {
+      "name": "FPT Automotive",
+      "relationship": "customer",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/FA.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "ffea952fa0f84712d78242b40e4d5ff21dd0b8bb6a16e7778334d86f7428d12e"
+    },
+    {
+      "name": "VTI Solutions",
+      "relationship": "customer",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/vti-solutions.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "7a6f6cfda86171ae49292184d1a024a721332fe4e761ceafbb3c9917f1006029"
+    },
+    {
+      "name": "RAIS Tech",
+      "relationship": "customer",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/RAIS.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "949381cd2f56f6404e12440a648c642375096b4cfcaf8b275a4b04ec5bb31a7b"
+    },
+    {
+      "name": "Ymner",
+      "relationship": "customer",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": null,
+      "status": "missing-authentic-artwork",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "remaining_work": "Obtain authentic organization artwork before completing the final logo treatment; do not generate a replacement or ship mockup text as finished logo artwork."
+    },
+    {
+      "name": "TNE",
+      "relationship": "customer",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": null,
+      "status": "missing-authentic-artwork",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "remaining_work": "Obtain authentic organization artwork before completing the final logo treatment; do not generate a replacement or ship mockup text as finished logo artwork."
+    },
+    {
+      "name": "NEU — National Economics University",
+      "relationship": "customer",
+      "relationship_source": "Owner V3 feedback",
+      "source_path": "mockup/v3/references/NEU-official-kit.svg",
+      "status": "official-source-saved",
+      "source_url": "https://fit.neu.edu.vn/en/post/resources",
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "2420bcc74a5df59e827efe93c2bc1a51686dd074bdb72e1efffa7b5f23a2c14b"
+    },
+    {
+      "name": "Intel",
+      "relationship": "partner",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/Intel.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "ef25fb97099a9e5978de46aa03d042af75c982d7d0afc384ce2e500f6f869247"
+    },
+    {
+      "name": "Microsoft",
+      "relationship": "partner",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/Microsoft.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "2bf1492e38490cd0e58356d40363e6ee5a3478f5c18d4146ef581c4d8d33b1f1"
+    },
+    {
+      "name": "Google",
+      "relationship": "partner",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/Google.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "ad7afd0908fa8f26a122a21410db8ee3a9f11766f6932f2d36e6eb91a3b48096"
+    },
+    {
+      "name": "Techvico",
+      "relationship": "partner",
+      "relationship_source": "Owner decisions L01–L19",
+      "source_path": "public/images/partners/Techvico.png",
+      "status": "authentic-local-asset",
+      "source_url": null,
+      "build_requirement": "Real image; natural aspect ratio; optical sizing; contain fit; full organization name as accessible text",
+      "sha256": "59949507386d6ce38ba8edc4ba46a783cb1e70369de4682123d5b0c6f9c5ff28"
+    }
+  ]
+}

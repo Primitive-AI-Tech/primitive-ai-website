@@ -1,0 +1,22 @@
+[
+  {
+    "value": "inbound-sales",
+    "clipped": [],
+    "outside": []
+  },
+  {
+    "value": "outbound-research",
+    "clipped": [],
+    "outside": []
+  },
+  {
+    "value": "internal-operations",
+    "clipped": [],
+    "outside": []
+  },
+  {
+    "value": "research-knowledge",
+    "clipped": [],
+    "outside": []
+  }
+]

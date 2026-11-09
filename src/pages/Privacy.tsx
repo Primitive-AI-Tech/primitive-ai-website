@@ -5,9 +5,10 @@ import { ChevronLeft } from 'lucide-react';
 
 const Privacy = () => {
   return (
-    <div className="py-16 animate-fade-in">
-      <div className="section-container">
-        <div className="max-w-4xl mx-auto">
+    <div className="policy-page animate-fade-in">
+      <section className="policy-title-panel">
+        <div className="site-container">
+          <div className="max-w-4xl mx-auto">
           <Link 
             to="/" 
             className="flex items-center text-blue-600 hover:text-blue-700 transition-colors mb-8"
@@ -17,13 +18,14 @@ const Privacy = () => {
           </Link>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-left">Privacy Policy</h1>
-          
-          <div className="prose prose-lg max-w-none text-left">
-            <p className="text-lg text-muted-foreground mb-8">
-              Last updated: June 1, 2024
-            </p>
+          <p className="text-lg text-muted-foreground">Last updated: June 1, 2024</p>
+          </div>
+        </div>
+      </section>
+      <div className="site-container">
+        <div className="policy-sections prose prose-lg max-w-4xl mx-auto text-left">
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
               <p>
                 At Primitive AI ("we", "our", or "us"), we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
@@ -33,7 +35,7 @@ const Privacy = () => {
               </p>
             </section>
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
               <p>
                 We may collect several types of information from and about users of our website and services, including:
@@ -65,7 +67,7 @@ const Privacy = () => {
               </ul>
             </section>
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">How We Use Your Information</h2>
               <p>
                 We may use the information we collect from you for various purposes, including:
@@ -82,7 +84,7 @@ const Privacy = () => {
               </ul>
             </section>
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">Disclosure of Your Information</h2>
               <p>
                 We may disclose your personal information in the following circumstances:
@@ -98,7 +100,7 @@ const Privacy = () => {
               </ul>
             </section>
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">Your Rights and Choices</h2>
               <p>
                 Depending on your location, you may have certain rights regarding your personal information, including:
@@ -117,34 +119,31 @@ const Privacy = () => {
               </p>
             </section>
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
               <p>
                 We have implemented appropriate technical and organizational measures to secure your personal information from accidental loss and unauthorized access, use, alteration, and disclosure. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
               </p>
             </section>
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">Changes to Our Privacy Policy</h2>
               <p>
                 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
               </p>
             </section>
             
-            <section className="mb-12">
+            <section className="policy-clause">
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
               <p>
                 If you have any questions or concerns about this Privacy Policy, please contact us at:
               </p>
               <p className="mt-4">
                 Primitive AI<br />
-                123 Innovation Drive<br />
-                San Francisco, CA 94105<br />
-                Email: privacy@primitiveai.com<br />
-                Phone: +1 (555) 123-4567
+                Email: doannt@primitive-ai.com<br />
+
               </p>
             </section>
-          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,285 @@
+/* Trust */
+.trust-hero {
+  padding: 175px 0 60px;
+}
+.trust-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+.trust-hero h1 {
+  font-size: 69px;
+  font-weight: 800;
+  line-height: 1.06;
+}
+.trust-hero .hero-description {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.approval-preview {
+  padding: 25px 27px;
+  border: 1px solid #1797ff;
+  background: linear-gradient(130deg, #0e2e54, #102e50);
+  box-shadow: 0 0 18px #044eff8c;
+  border-radius: 25px;
+}
+.approval-preview-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.approval-preview-label .site-badge {
+  font-size: 11px;
+}
+.approval-preview h2 {
+  font-size: 29px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.approval-preview h2 svg {
+  width: 42px;
+  height: 48px;
+  stroke-width: 1.5;
+}
+.approval-preview .glow-node {
+  padding: 16px;
+  margin-top: 17px;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 20px;
+}
+.approval-preview .glow-node > svg:first-child {
+  height: 40px;
+  width: 40px;
+}
+.approval-preview .glow-node > span {
+  flex: 1;
+}
+.approval-preview .glow-node small {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.approval-preview .glow-node strong {
+  font-size: 21px;
+  line-height: 1.1;
+}
+.approval-check {
+  color: var(--cyan);
+  fill: var(--cyan);
+  stroke: white;
+}
+.approval-info {
+  color: #86bbef;
+}
+.approval-actions {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  margin-top: 25px;
+}
+.preview-status {
+  font-size: 14px;
+  margin-top: 16px;
+}
+.example-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: #071526b8;
+  z-index: 230;
+  backdrop-filter: blur(5px);
+}
+.example-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 240;
+  background: var(--paper);
+  padding: 38px;
+  width: min(600px, calc(100vw - 32px));
+  max-height: 90dvh;
+  overflow: auto;
+  border-radius: 25px;
+  box-shadow: 0 20px 100px #0004;
+  color: var(--ink);
+}
+.dialog-close {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  background: transparent;
+  border: 0;
+  padding: 8px;
+}
+.example-dialog h2 {
+  font-size: 33px;
+  margin: 25px 0 14px;
+}
+.example-dialog > p {
+  font-size: 17px;
+  line-height: 1.4;
+}
+.example-dialog dl {
+  margin: 25px 0;
+}
+.example-dialog dl > div {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--site-border);
+}
+.example-dialog dt {
+  font-size: 14px;
+  color: var(--muted-ink);
+  margin-bottom: 6px;
+}
+.example-dialog dd {
+  margin: 0;
+  font-weight: 650;
+  font-size: 18px;
+}
+.trust-principles {
+  padding: 35px 0;
+}
+.trust-principle-list {
+  display: grid;
+  gap: 40px;
+  padding: 0 45px;
+}
+.trust-principle-list > article {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.trust-principle-list .icon-tile {
+  width: 110px;
+  height: 110px;
+  border-radius: 24px;
+}
+.trust-principle-list .icon-tile > svg {
+  height: 67px;
+  width: 67px;
+  color: var(--blue);
+}
+.trust-principle-list > article > div {
+  border-left: 1px solid #a5bfdc;
+  padding-left: 35px;
+  max-width: 960px;
+}
+.trust-principle-list h2 {
+  font-size: 39px;
+  margin-bottom: 8px;
+}
+.trust-principle-list p {
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+}
+.sample-approval {
+  margin-top: 40px;
+  padding: 22px 25px;
+}
+.sample-approval .panel-heading {
+  margin-bottom: 18px;
+}
+.sample-approval h3 {
+  font-size: 24px;
+}
+.approval-table-wrap {
+  overflow: auto;
+}
+.sample-approval table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+}
+.sample-approval th {
+  background: #d8edff;
+  padding: 13px;
+  font-weight: 700;
+}
+.sample-approval td {
+  padding: 15px 13px;
+  background: #f0f9ff;
+}
+.sample-approval .site-badge {
+  font-size: 13px;
+  font-weight: 650;
+}
+.authority-section {
+  padding: 40px 0 32px;
+}
+.authority-section .section-title {
+  font-size: 45px;
+}
+.authority-stages {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 35px;
+}
+.authority-stages > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  text-align: center;
+  min-height: 85px;
+  color: white;
+  border: 1px solid #7ab9e9;
+  border-radius: 16px;
+  padding: 18px;
+  background: #204b7a99;
+  font-size: 20px;
+  line-height: 1.2;
+  position: relative;
+}
+.authority-stages svg {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+.authority-stages > button.selected {
+  background: var(--blue);
+  border-color: #20ddff;
+  box-shadow: 0 0 15px #044effad;
+}
+.authority-description {
+  text-align: center;
+  max-width: 930px;
+  margin: 25px auto 0;
+  font-size: 17px;
+  min-height: 48px;
+}
+.authority-note {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 9px;
+}
+.trust-decisions {
+  padding: 43px 0;
+}
+.trust-decision-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.1fr;
+  gap: 55px;
+}
+.trust-decision-grid .section-title {
+  font-size: 43px;
+}
+.trust-decision-grid .section-intro {
+  font-size: 21px;
+  margin-bottom: 27px;
+}
+.trust-decision-grid .question-list summary {
+  font-size: 19px;
+  padding: 17px 21px;
+}

@@ -1,151 +1,49 @@
-# Primitive AI — Marketing Website
+# Primitive AI website
 
-The public-facing marketing site for [Primitive AI](https://primitive.ai), built with React + Vite + TypeScript. Covers the company homepage, product landing pages, services, success stories, about, and contact.
+The local V3 implementation carries the approved Core Agentic story into the homepage, adds page-level Products and Services destinations, restores the fuller company history and keeps the new blue/navy design. The [migration plan](docs/website-migration-plan.md) records the implemented structure and remaining release work. The [architecture refactor](docs/architecture-refactor.md) explains the shared route, page and feature structure.
 
-## Tech Stack
+The interface uses the original Primitive AI logo, **#044EFF** as its primary blue, navy presentation sections, responsive layouts, native diagrams and scroll-led motion. The implementation uses React 18, TypeScript and Vite.
 
-| Layer | Library / Tool |
-|---|---|
-| Framework | React 18 + TypeScript |
-| Build | Vite 5 |
-| Styling | Tailwind CSS 3 + shadcn/ui (Radix primitives) |
-| Routing | React Router v6 |
-| i18n | i18next 26 + react-i18next + browser language detector |
-| Icons | Lucide React |
-| Data fetching | TanStack Query v5 |
-| Process manager | PM2 (`npm run preview`) |
-
-## Pages & Routes
-
-| Route | Page |
-|---|---|
-| `/` | Home — hero, galaxy products, services, partners, success stories, testimonials |
-| `/about` | About — mission, leadership, journey timeline |
-| `/solutions` | Solutions overview — product cards |
-| `/solutions/knowledgehub` | KnowledgeHub detail |
-| `/solutions/chatbot` | SupportHub detail |
-| `/solutions/camera-ai` | VisionHub detail |
-| `/solutions/familyhub` | FamilyHub detail |
-| `/solutions/legalhub` | LegalHub detail (beta) |
-| `/services` | AI development services |
-| `/success` | Customer success stories |
-| `/contact` | Contact / demo request form |
-| `/privacy` | Privacy policy |
-| `/terms` | Terms of service |
-
-## i18n
-
-Five languages are supported. The browser language detector picks the locale automatically; users can also switch via the language selector in the navbar.
-
-**Supported locales:** `en` (default) · `vi` · `ja` · `zh` · `ko`
-
-**Namespaces** (one JSON file per namespace per locale):
-
-```
-src/i18n/locales/
-├── en/
-│   ├── common.json       # shared strings (badges, buttons, nav labels)
-│   ├── home.json
-│   ├── about.json
-│   ├── solutions.json
-│   ├── services.json
-│   ├── success.json
-│   ├── contact.json
-│   ├── notFound.json
-│   ├── knowledgehub.json
-│   ├── supporthub.json
-│   ├── visionhub.json
-│   ├── familyhub.json
-│   └── legalhub.json
-├── vi/  (same structure)
-├── ja/  (same structure)
-├── zh/  (same structure)
-└── ko/  (same structure)
-```
-
-To add a new namespace:
-1. Create the JSON file in every locale folder.
-2. Import and register it in `src/i18n/index.ts`.
-3. Use `useTranslation('namespace')` in the component.
-
-For array-based data (feature lists, steps, etc.) use `t('key', { returnObjects: true })` and cast to the expected type.
-
-## Development
+## Run locally
 
 ```sh
-# Install dependencies
 npm install
-
-# Start dev server (hot reload)
 npm run dev
-
-# Type-check & build
-npm run build
-
-# Preview production build locally
-npm run preview
-
-# Lint
-npm run lint
 ```
 
-## Production Deployment
-
-The site is served as a static preview build managed by PM2.
+Use the local URL printed by Vite. Create and preview a production build with:
 
 ```sh
-# Build
 npm run build
-
-# Start / restart with PM2
-pm2 start pm2.json
-pm2 reload prai   # zero-downtime reload after a new build
+npm run preview
 ```
 
-The `pm2.json` config runs `npm run preview`, which serves the `dist/` folder via Vite's built-in static server.
+## Pages
 
-## Project Structure
+| Route | Content |
+| --- | --- |
+| `/` | Core Agentic, business value, configurable workflows, customer experience, delivery, controls, company bridge, Custom AI Development and Updates teaser |
+| `/products` | Core Agentic, broad workflow examples and focused VisionHub, FamilyHub and EduAssess offerings without separate detail pages |
+| `/services` | Six Custom AI Development capabilities and the Discovery → Strategy → Build → Deploy → Optimize process |
+| `/about` | Doan Nguyen, the 2023 company formation, named product lineage and company values |
+| `/update` | Updates introduction and the official Primitive AI LinkedIn channel; no unpublished articles are fabricated |
+| `/contact` | Inquiry form with optional offering, workflow and service context |
+| `/privacy`, `/terms` | Existing legal pages |
 
-```
-src/
-├── components/          # Shared UI components
-│   ├── ui/              # shadcn/ui primitives (auto-generated, do not edit)
-│   ├── Navbar.tsx        # Top nav + language selector
-│   ├── Footer.tsx
-│   ├── GalaxyProducts.tsx  # Animated orbit product showcase
-│   ├── Partners.tsx
-│   ├── CTA.tsx           # Reusable full-screen CTA section (has snap-section built in)
-│   ├── ProductCard.tsx   # Card used in /solutions (supports active / beta / coming-soon)
-│   └── ...
-├── i18n/
-│   ├── index.ts          # i18next config + namespace registration
-│   └── locales/          # Translation JSON files (see above)
-├── pages/
-│   ├── Index.tsx         # Home page
-│   ├── solution-details/ # Per-product detail pages
-│   └── ...
-├── index.css             # Global styles, scroll-snap rules, utility classes
-└── App.tsx               # Router setup
-```
+The header contains Home, Products, Services, About and Updates. Home sections are not separate top-level destinations. Older paths such as `/core-agentic`, `/business-value`, `/use-cases`, `/how-we-work`, `/trust`, `/company`, `/updates`, `/success` and `/solutions` resolve to their current destinations. Retired VisionHub, FamilyHub and EduAssess detail URLs now lead to `/products`; retired chatbot, KnowledgeHub and LegalHub paths land on the corresponding homepage example. Unknown URLs keep the not-found view.
 
-## Scroll Snap
+## Contact delivery
 
-Pages that use full-screen section snapping add `snap-active` to `<html>` via `useLayoutEffect` and remove it on unmount. Individual sections get the `snap-section` class. Currently enabled on the **Home** and **Success** pages.
+The recipient is **doannt@primitive-ai.com**. Without `VITE_CONTACT_ENDPOINT`, a valid form opens a populated email draft and the visitor sends it from their own email app. The website does not claim it received the inquiry. The optional endpoint contract is documented in [website implementation notes](docs/website-implementation.md).
 
-```tsx
-React.useLayoutEffect(() => {
-  document.documentElement.classList.add('snap-active');
-  return () => document.documentElement.classList.remove('snap-active');
-}, []);
+## Content and visual assets
 
-// on each <section>:
-<section className="... snap-section" data-theme="dark">
-```
+The homepage examples describe possible configurations, not out-of-the-box connector availability or guaranteed outcomes. Customer and partner names are separated. Images are used for the available authentic marks, including National Economics University; Ymner and TNE remain name-only until their correct logo assets and, for TNE, exact identity are confirmed. The Updates page does not invent an article archive.
 
-## Adding a New Product
+English is the fallback for newly added V3 copy. The site retains its English, Vietnamese, Japanese, Chinese and Korean language menu and its existing product-page translations. New V3 copy still needs a translation review.
 
-1. Create the detail page in `src/pages/solution-details/`.
-2. Add a route in `src/App.tsx`.
-3. Add translation files in all 5 locale folders and register the namespace in `src/i18n/index.ts`.
-4. Add a `ProductCard` entry in `src/pages/Solutions.tsx`.
-5. Add a `PRODUCT_CONFIG` entry in `src/components/GalaxyProducts.tsx` with a `solutionIdx` mapping to the `solutions` namespace array order.
+## Checks and responsive review
+
+`npm run typecheck` and `npm run build` pass. An earlier browser sweep covered 11 routes and 483 section panels at 320 × 568, 390 × 844, 600 × 400, 768 × 1024, 1024 × 600, 1280 × 720 and 1440 × 900; it predated retirement of the three product detail pages. The current site has 8 canonical routes. This latest pass rechecked Home, Products and About at 390 × 844 and 1440 × 960, including the new About timeline; no horizontal overflow was found. The earlier 34-viewport audit remains archived under [the implementation mockups](mockup/implementation/responsive-review/index.html); keyboard, zoom and boundary-specific review remain on the release checklist.
+
+No publication, DNS change, email sending or external lead submission was performed.

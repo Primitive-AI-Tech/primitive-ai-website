@@ -32,7 +32,7 @@ const CTASection = ({
   const resolvedSecondary = secondaryButtonText ?? t('cta.default_secondary');
 
   return (
-    <section className="relative flex flex-col justify-center min-h-[70vh] lg:min-h-screen pt-24 pb-16 md:py-28 overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-purple-950 snap-section" data-theme="dark">
+    <section className="relative flex flex-col justify-center pt-24 pb-16 md:py-28 overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-purple-950 snap-section" data-theme="dark">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
       </div>

@@ -1,0 +1,742 @@
+/* Responsive, scroll-led presentation layer. Native browser scrolling owns input. */
+:root {
+  --section-top: clamp(116px, 14svh, 164px);
+  --section-bottom: clamp(48px, 7svh, 96px);
+  --snap-header-clearance: clamp(100px, 11svh, 112px);
+}
+html.story-snap {
+  scroll-snap-type: y proximity;
+  scroll-padding-block: 0 16px;
+  scroll-behavior: smooth;
+}
+.experience-page > section,
+.experience-page > div > section,
+.experience-page .policy-sections > section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-margin-block-start: 0;
+  min-inline-size: 0;
+  block-size: 100svh;
+  min-block-size: 100svh;
+  max-block-size: 100svh;
+  box-sizing: border-box;
+  position: relative;
+  border-top: 1px solid #87b4e226;
+  display: grid;
+  align-content: safe center;
+  overflow-x: clip;
+  overflow-y: auto;
+  padding-block: var(--snap-header-clearance) clamp(42px, 6svh, 76px);
+}
+.experience-page > section:first-of-type,
+.experience-page > div > section:first-of-type,
+.experience-page .policy-page > section:first-of-type {
+  border-top: 0;
+  block-size: 100svh;
+  min-block-size: 100svh;
+  max-block-size: 100svh;
+  scroll-margin-block-start: 0;
+}
+.experience-page > section.page-hero {
+  padding-block: clamp(122px, 16svh, 180px) clamp(42px, 7svh, 76px);
+}
+.experience-page > section.company-hero,
+.experience-page > section.hook-section,
+.experience-page > div > section.hook-section {
+  padding-block: clamp(122px, 16svh, 170px) clamp(42px, 7svh, 76px);
+}
+.experience-page [id]:not(section) {
+  scroll-margin-top: var(--snap-header-clearance);
+}
+.experience-page .policy-sections > .policy-clause {
+  margin-block: 0;
+}
+.site-footer {
+  scroll-snap-align: end;
+}
+.site-container {
+  width: min(1280px, calc(100% - clamp(40px, 6.7vw, 112px)));
+}
+.site-container > *,
+.hero-grid > *,
+.home-case-panel > *,
+.home-delivery-grid > *,
+.home-platform-grid > *,
+.primary-value-pair > *,
+.supporting-values > *,
+.case-requirements > *,
+.calculator-grid > *,
+.contact-grid > * {
+  min-width: 0;
+}
+.site-badge {
+  white-space: normal;
+  text-align: center;
+}
+.site-button {
+  white-space: normal;
+  text-align: center;
+}
+.glow-node {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.number-unit {
+  flex-shrink: 0;
+}
+.section-title {
+  font-size: clamp(32px, 3.9vw, 58px);
+  text-wrap: balance;
+}
+.page-hero h1 {
+  font-size: clamp(42px, 5.4vw, 78px);
+  text-wrap: balance;
+}
+.hero-description {
+  font-size: clamp(19px, 1.8vw, 26px);
+}
+.site-header {
+  top: 16px;
+}
+.nav-capsule {
+  min-height: 76px;
+  padding-block: 6px;
+}
+.site-brand {
+  width: 205px;
+}
+.desktop-navigation > a {
+  font-size: 13px;
+  padding-inline: 10px;
+}
+.desktop-nav-actions {
+  gap: 12px;
+}
+
+/* Homepage chapters use fixed viewport panels; overflowing content stays reachable inside. */
+main[data-page="/"] > section {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-block: var(--section-top) var(--section-bottom);
+  isolation: isolate;
+}
+main[data-page="/"] > section > .site-container {
+  position: relative;
+  z-index: 1;
+}
+main[data-page="/"] > section + section {
+  box-shadow: 0 -1px 0 #ffffff15;
+}
+main[data-page="/"] > .problem-section {
+  background:
+    radial-gradient(ellipse at 15% 90%, #d5f3ff 0, transparent 55%), #f6faff;
+}
+main[data-page="/"] > .home-value {
+  background:
+    radial-gradient(ellipse at top right, #357cff 0, transparent 60%),
+    linear-gradient(135deg, #044eff, #0032b8 70%, #07217b);
+  color: white;
+}
+.home-value .site-eyebrow,
+.home-value p {
+  color: #f2f7ff;
+}
+.home-value .site-eyebrow > span {
+  background: #a4eaff;
+}
+.home-value .primary-value-pair {
+  background: #ffffff0b;
+  border-color: #bedcff70;
+  box-shadow: 0 24px 70px #001d721a;
+}
+.home-value .primary-value-pair > div + div,
+.home-value .supporting-values > div + div {
+  border-color: #cbe0ff50;
+}
+.home-value .icon-tile {
+  background: #eff7ff;
+  color: #044eff;
+  box-shadow: 0 8px 35px #00277728;
+}
+.home-value .supporting-values {
+  margin-top: 42px;
+}
+main[data-page="/"] > .home-economics {
+  background:
+    radial-gradient(ellipse at 85% 20%, #e1f4ff, transparent 62%), #f8fbff;
+}
+.home-economics .mini-economics {
+  margin-top: 18px;
+  box-shadow: 0 28px 100px #174e8f13;
+  background: #ffffffa6;
+}
+main[data-page="/"] > .home-company {
+  background: linear-gradient(135deg, #eef9ff, #daeaff);
+}
+.home-company h2 {
+  font-size: clamp(34px, 4.5vw, 66px);
+  max-width: 1000px;
+  text-wrap: balance;
+}
+.home-company p {
+  font-size: clamp(19px, 2.1vw, 29px);
+  max-width: 1020px;
+  margin-top: 28px;
+}
+.home-company .story-progression {
+  margin-top: 48px;
+}
+main[data-page="/"] > .closing-cta {
+  background:
+    radial-gradient(ellipse at 90% 80%, #044eff70, transparent 65%), #071526;
+}
+main[data-page="/"] > .closing-cta > .site-container {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 38px;
+}
+main[data-page="/"] > .closing-cta h2 {
+  font-size: clamp(42px, 5.7vw, 84px);
+  max-width: 1060px;
+  text-wrap: balance;
+}
+main[data-page="/"] > .closing-cta p {
+  font-size: clamp(20px, 2.2vw, 30px);
+  margin-top: 30px;
+}
+main[data-page="/"] > .closing-cta .site-button {
+  font-size: 20px;
+  min-height: 58px;
+  padding-inline: 30px;
+}
+
+/* The homepage progress indicator stays quiet at the top edge. */
+.story-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 3px;
+  z-index: 180;
+  pointer-events: none;
+  background: #6d9aff20;
+}
+.story-progress > span {
+  display: block;
+  height: 100%;
+  background: #0fb4e0;
+  transform: scaleX(var(--story-progress, 0));
+  transform-origin: left;
+  box-shadow: 0 0 12px #0fb4e0;
+}
+.story-scroll-cue {
+  position: absolute;
+  z-index: 2;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #b7d4ed;
+  border: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 36px;
+  padding: 4px 14px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.story-scroll-cue svg {
+  width: 17px;
+  height: 17px;
+  animation: exp-scroll-cue 2s ease-in-out infinite;
+}
+
+/* Entrances are progressive enhancement. Without JavaScript, everything is visible. */
+.motion-ready [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition:
+    opacity 0.75s ease var(--reveal-delay, 0ms),
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) var(--reveal-delay, 0ms);
+}
+.motion-ready [data-reveal].is-revealed,
+.motion-ready [data-reveal]:focus-within {
+  opacity: 1;
+  transform: none;
+}
+.flow-backdrop > svg {
+  animation: exp-flow-drift 20s ease-in-out infinite alternate;
+  animation-play-state: paused;
+  transform-origin: center;
+}
+.dot-field {
+  animation: exp-dot-breathe 8s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+.canvas-wires path {
+  animation: exp-data-flow 2.7s linear infinite;
+  animation-play-state: paused;
+}
+.canvas-wires circle {
+  animation: exp-junction-glow 2.7s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.core-node {
+  animation: exp-core-breathe 4s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.role-nodes > .glow-node {
+  animation: exp-agent-beacon 7s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.role-nodes > .glow-node:nth-child(2) {
+  animation-delay: 1.4s;
+}
+.role-nodes > .glow-node:nth-child(3) {
+  animation-delay: 2.8s;
+}
+.role-nodes > .glow-node:nth-child(4) {
+  animation-delay: 4.2s;
+}
+.is-in-view .flow-backdrop > svg,
+.is-in-view .dot-field,
+.is-in-view .canvas-wires path,
+.is-in-view .canvas-wires circle,
+.is-in-view .core-node,
+.is-in-view .role-nodes > .glow-node {
+  animation-play-state: running;
+}
+.output-row .sample-lines > i {
+  transform-origin: left;
+}
+.is-in-view .output-row .sample-lines > i {
+  animation: exp-output-fill 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.is-in-view .output-row:nth-child(3) .sample-lines > i {
+  animation-delay: 0.2s;
+}
+.is-in-view .output-row:nth-child(4) .sample-lines > i {
+  animation-delay: 0.4s;
+}
+.site-button > svg,
+.text-link > svg {
+  transition: transform 0.25s;
+}
+.site-button:hover > svg,
+.text-link:hover > svg {
+  transform: translateX(4px);
+}
+.problem-card,
+.evidence-grid > article,
+.company-principle-grid > article,
+.case-requirements > section,
+.training-grid > article {
+  transition:
+    transform 0.35s,
+    box-shadow 0.35s,
+    border-color 0.35s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .problem-card:hover,
+  .evidence-grid > article:hover,
+  .company-principle-grid > article:hover,
+  .case-requirements > section:hover,
+  .training-grid > article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px #0c458917;
+    border-color: #77acff;
+  }
+}
+@keyframes exp-data-flow {
+  to {
+    stroke-dashoffset: -48;
+  }
+}
+@keyframes exp-junction-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes exp-core-breathe {
+  0%,
+  100% {
+    box-shadow:
+      0 0 14px #005bff80,
+      inset 0 0 12px #3e85ff;
+  }
+  50% {
+    box-shadow:
+      0 0 30px #005bffb3,
+      0 0 60px #0fb4e024,
+      inset 0 0 22px #3e85ff;
+  }
+}
+@keyframes exp-agent-beacon {
+  0%,
+  18%,
+  55%,
+  100% {
+    box-shadow: inset 0 0 16px #c5efff0b;
+  }
+  30%,
+  42% {
+    box-shadow:
+      0 0 20px #0fb4e052,
+      inset 0 0 20px #044eff35;
+    border-color: #54d5ff;
+  }
+}
+@keyframes exp-flow-drift {
+  from {
+    transform: translate3d(-1%, -1%, 0) scale(1.03);
+  }
+  to {
+    transform: translate3d(1%, 1.5%, 0) scale(1.06);
+  }
+}
+@keyframes exp-dot-breathe {
+  from {
+    opacity: 0.38;
+    transform: skewY(-25deg) translateY(0);
+  }
+  to {
+    opacity: 0.8;
+    transform: skewY(-25deg) translateY(-12px);
+  }
+}
+@keyframes exp-scroll-cue {
+  0%,
+  100% {
+    transform: translateY(-2px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+}
+@keyframes exp-output-fill {
+  from {
+    transform: scaleX(0.2);
+    opacity: 0.25;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* Shared small-screen and reduced-motion behavior. */
+@media (max-width: 599px) {
+  .company-hero h1 {
+    font-size: clamp(32px, 9vw, 43px);
+  }
+  .company-timeline h3 {
+    font-size: 19px;
+    overflow-wrap: anywhere;
+  }
+  .company-timeline p {
+    font-size: 15px;
+  }
+}
+.hero-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+.hero-line > span {
+  display: block;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .is-in-view .hero-line > span {
+    animation: exp-headline-rise 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) both;
+  }
+  .is-in-view .hero-line:nth-child(2) > span {
+    animation-delay: 0.09s;
+  }
+  .is-in-view .hero-line:nth-child(3) > span {
+    animation-delay: 0.18s;
+  }
+  .is-in-view .hero-line:nth-child(4) > span {
+    animation-delay: 0.27s;
+  }
+}
+@keyframes exp-headline-rise {
+  from {
+    transform: translateY(105%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.problem-card .problem-visual {
+  transform: none !important;
+}
+.problem-visual > .problem-illustration {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+}
+.is-in-view .illustration-orbit {
+  animation: exp-data-flow 16s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .is-in-view .illustration-orbit {
+    animation: none;
+  }
+}
+
+@media (max-width: 999px) {
+  .experience-page:not([data-page="/"]) > section + section {
+    padding-top: 112px;
+  }
+  .experience-page .page-hero {
+    padding-top: 130px;
+  }
+}
+@media (max-width: 599px) {
+  .page-hero h1,
+  .contact-hero h1 {
+    font-size: clamp(36px, 10.6vw, 48px);
+  }
+  .page-hero .hero-description {
+    font-size: 19px;
+  }
+  .example-output-heading,
+  .approval-preview-label {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .approval-actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .approval-actions > .site-button {
+    min-width: 0;
+    flex: 1 1 120px;
+  }
+  .calculator-result .result-actions {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .source-tags {
+    flex-wrap: wrap;
+  }
+  .mobile-menu-scroll nav > a {
+    font-size: 19px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.story-snap {
+    scroll-behavior: auto;
+    scroll-snap-type: y proximity;
+  }
+  .motion-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .flow-backdrop > svg,
+  .dot-field,
+  .canvas-wires path,
+  .canvas-wires circle,
+  .core-node,
+  .role-nodes > .glow-node,
+  .story-scroll-cue svg,
+  .sample-lines > i {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .experience-page > section,
+  .experience-page > div > section,
+  .experience-page .policy-sections > section {
+    padding-block: var(--snap-header-clearance) clamp(34px, 6svh, 54px);
+  }
+  .experience-page > section.page-hero,
+  .experience-page > section.company-hero,
+  .experience-page > section.hook-section,
+  .experience-page > div > section.hook-section {
+    padding-block: clamp(106px, 17svh, 138px) 42px;
+  }
+}
+
+@media (max-width: 1279px) {
+  :root {
+    --snap-header-clearance: 96px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --snap-header-clearance: 82px;
+  }
+}
+
+@media (max-height: 600px) {
+  :root {
+    --snap-header-clearance: 100px;
+  }
+  .experience-page > section.page-hero,
+  .experience-page > section.company-hero,
+  .experience-page > section.hook-section,
+  .experience-page > div > section.hook-section {
+    padding-block: clamp(94px, 20svh, 122px) 34px;
+  }
+}
+
+@media (max-width: 760px) and (max-height: 600px) {
+  :root {
+    --snap-header-clearance: 82px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-page .company-hero {
+    padding: 88px 0 22px;
+  }
+  .company-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .company-hero h1 {
+    font-size: clamp(32px, 9vw, 40px);
+    line-height: 1.05;
+  }
+  .company-hero .hero-description {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+  .company-founded-badge {
+    margin-top: 12px;
+    padding: 7px 11px;
+  }
+  .company-founder-portrait {
+    height: 96px;
+    max-height: 96px;
+    aspect-ratio: auto;
+    border-radius: 15px;
+  }
+  .company-founder-portrait figcaption {
+    padding: 10px 14px;
+  }
+  .company-founder-portrait figcaption strong {
+    font-size: 16px;
+  }
+  .company-founder-portrait figcaption span {
+    font-size: 12px;
+  }
+
+  .products-hero {
+    padding-block: 88px 20px !important;
+  }
+  main[data-page^="/solutions/"] .hook-section {
+    padding-block: 88px 22px !important;
+  }
+  main[data-page^="/solutions/"] .hook-section .section-container {
+    padding-block: 0 !important;
+  }
+  main[data-page^="/solutions/"] .hook-section .section-container > .grid {
+    gap: 14px !important;
+  }
+  main[data-page^="/solutions/"] .hook-section .section-container > .grid > .relative {
+    display: none;
+  }
+  main[data-page^="/solutions/"] .hook-section .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 14px !important;
+  }
+  main[data-page^="/solutions/"] .hook-section .hero-heading {
+    font-size: clamp(32px, 8.8vw, 40px);
+    line-height: 1.05;
+  }
+  main[data-page^="/solutions/"] .hook-section .space-y-6 > p {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+  main[data-page^="/solutions/"] .hook-section .space-y-6 > .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 0;
+  }
+  main[data-page^="/solutions/"] .hook-section .site-button {
+    min-height: 42px;
+    padding: 10px 14px !important;
+    font-size: 13px;
+  }
+  main[data-page^="/solutions/"] .hook-section > .absolute.bottom-8 {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  main[data-page^="/solutions/"] .hook-section {
+    padding-block: clamp(110px, 14svh, 148px) 32px !important;
+  }
+  main[data-page^="/solutions/"] .hook-section .section-container {
+    padding-block: 0 !important;
+  }
+}
+
+@media (max-height: 600px) {
+  .experience-page > section.page-hero {
+    padding-block: var(--snap-header-clearance) 18px !important;
+  }
+  .experience-page .company-hero {
+    padding: var(--snap-header-clearance) 0 18px;
+  }
+  .company-hero h1 {
+    font-size: clamp(40px, 5vw, 54px);
+  }
+  .company-hero .hero-description {
+    font-size: 18px;
+  }
+  .company-founded-badge {
+    margin-top: 12px;
+  }
+  .company-founder-portrait {
+    max-height: 260px;
+    aspect-ratio: 1.05;
+  }
+}
+
+@media (max-width: 600px) and (max-height: 600px) {
+  .experience-page > section.page-hero {
+    padding-block: 82px 10px !important;
+  }
+  .experience-page .company-hero {
+    padding: 82px 0 16px;
+  }
+  .company-hero h1 {
+    font-size: clamp(30px, 8vw, 36px);
+  }
+  .company-hero .hero-description {
+    font-size: 15px;
+  }
+  .company-founder-portrait {
+    display: none;
+  }
+}
+
+@media (max-height: 600px) and (min-width: 601px) and (max-width: 1199px) {
+  main[data-page^="/solutions/"] .hook-section .section-container > .grid > .relative {
+    display: none;
+  }
+  main[data-page^="/solutions/"] .hook-section .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 14px !important;
+  }
+}
+

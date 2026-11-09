@@ -1,0 +1,67 @@
+.services-hero { padding-bottom: 82px; }
+.services-hero h1 { max-width: 1050px; }
+.services-hero .button-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.service-paths,
+.service-capabilities { padding: 72px 0; }
+.service-paths { background: linear-gradient(145deg, #f7fbff, #eaf4ff); }
+.service-path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+.service-path-grid article { position: relative; padding: 28px; border-radius: 22px; background: #fff; }
+.service-path-grid h3 { margin: 10px 0 12px; font-size: 28px; }
+.service-path-grid p { max-width: 620px; margin-bottom: 22px; font-size: 17px; line-height: 1.5; color: var(--muted-ink); }
+.service-path-number { color: var(--blue); font-size: 13px; font-weight: 800; letter-spacing: .08em; }
+.service-path-featured { border: 1px solid #6ea2ff; box-shadow: 0 15px 40px #044eff12; }
+.service-capabilities { background: #fff; }
+.service-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 32px;
+}
+.service-capability-card { position: relative; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; padding: 24px; border-radius: 21px; background: #f9fbff; }
+.service-capability-card .icon-tile { width: 54px; height: 54px; margin-bottom: 19px; color: var(--blue); background: #e7f1ff; }
+.service-capability-index { position: absolute; top: 28px; right: 24px; color: #8ca7cc; font-size: 13px; font-weight: 800; }
+.service-capability-card h3 { min-height: 2.3em; margin-bottom: 11px; font-size: 23px; line-height: 1.15; }
+.service-capability-card > p { flex: 1; margin-bottom: 20px; color: var(--muted-ink); font-size: 15px; line-height: 1.5; }
+.service-capability-card > div:not(.icon-tile) { display: grid; gap: 6px; margin: 0 0 20px; padding: 14px; border-radius: 14px; background: #edf5ff; font-size: 14px; line-height: 1.45; }
+.service-capability-card > div strong { color: #174584; font-size: 12px; text-transform: uppercase; letter-spacing: .055em; }
+.service-capability-card .text-link { font-size: 14px; }
+.service-process { padding: 72px 0; color: white; background: linear-gradient(130deg, #071526, #0b2f5b 70%, #08214c); }
+.service-process .site-eyebrow { color: #c0d9f4; }
+.service-process .section-title { max-width: 950px; }
+.service-process-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin: 32px 0 0; padding: 0; list-style: none; }
+.service-process-list li { min-width: 0; padding: 22px 18px; border: 1px solid #a9cff22a; border-radius: 19px; background: #ffffff0b; }
+.service-process-list li > span { color: #7daeff; font-size: 26px; font-weight: 800; }
+.service-process-list h3 { margin: 15px 0 10px; font-size: 20px; }
+.service-process-list p { color: #c0d2e5; font-size: 14px; line-height: 1.5; }
+.service-process-note { margin-top: 24px; color: #bed1e7; font-size: 14px; }
+.service-contact-band { padding: 62px 0; background: #edf5ff; }
+.service-contact-content { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.service-contact-content .section-title { max-width: 850px; }
+.service-contact-content .site-button { flex: 0 0 auto; }
+.service-contact-band + .closing-cta > .site-container { flex-direction: row; justify-content: space-between; text-align: left; gap: 45px; }
+.service-contact-band + .closing-cta h2 { max-width: 800px; font-size: clamp(34px, 4.4vw, 54px); }
+
+@media (max-width: 980px) {
+  .service-capability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-process-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .services-hero { padding-bottom: 56px; }
+  .service-paths,
+  .service-capabilities,
+  .service-process { padding: 52px 0; }
+  .service-path-grid,
+  .service-capability-grid { grid-template-columns: 1fr; gap: 14px; }
+  .service-capability-card h3 { min-height: 0; }
+  .service-process-list { grid-template-columns: 1fr; gap: 10px; }
+  .service-process-list li { display: grid; grid-template-columns: 42px 1fr; column-gap: 12px; align-items: start; padding: 16px; }
+  .service-process-list li > span { grid-row: span 2; font-size: 20px; }
+  .service-process-list h3 { margin: 0 0 5px; }
+  .service-contact-content,
+  .service-contact-band + .closing-cta > .site-container { align-items: flex-start; flex-direction: column; }
+}

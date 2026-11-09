@@ -23,10 +23,10 @@ const productGradients = [
 const productPaths = [
   '/solutions/chatbot',
   '/solutions/knowledgehub',
-  '/solutions/camera-ai',
-  '/solutions/familyhub',
+  '/products',
+  '/products',
   '/solutions/legalhub',
-  '/solutions/eduassess',
+  '/products',
 ];
 const productStatuses: Array<'active' | 'coming-soon' | 'beta' | undefined> = [
   undefined, undefined, undefined, undefined, 'beta', undefined,
@@ -100,7 +100,6 @@ const Solutions = () => {
                   description={product.description}
                   icon={productIcons[i]}
                   href={productPaths[i]}
-                  gradient={productGradients[i]}
                   status={productStatuses[i]}
                 />
               ))}

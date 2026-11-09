@@ -1,0 +1,79 @@
+[
+  {
+    "id": "01",
+    "title": "Home and configuration family",
+    "image": "images/01-home-and-configurations.png",
+    "decision_source": "D01, D02, D06",
+    "description": "The current hero and agent canvas extend into three workflow configurations sharing one Core Agentic foundation.",
+    "prompt": "prompts/01-home-and-configurations.txt",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "01a014be41b9d7d7bdb0ce824d9835f64f9ec2dd1d75f1fb9b432acee12bb975"
+  },
+  {
+    "id": "02",
+    "title": "Value, delivery and control",
+    "image": "images/02-value-delivery-and-control.png",
+    "decision_source": "D03, D04",
+    "description": "Economics, the working-proof process and controls remain on the homepage, with inline detail instead of competing pages.",
+    "prompt": "prompts/02-value-delivery-and-control.txt",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "c3bbdfdde01f680e8e727223ac499b2f83d6b3afd038ceabbc8b035b465763e0"
+  },
+  {
+    "id": "03",
+    "title": "Customers, updates and closing",
+    "image": "images/03-customers-updates-and-footer.png",
+    "decision_source": "D05, L01\u2013L19, C01\u2013C07",
+    "description": "Seven customers and four partners are separated, followed by the new Updates teaser and existing closing language.",
+    "prompt": "prompts/03-customers-updates-and-footer.txt",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "1c845afbede027a16618b9d5a657484e4ddf92b566eaf6beb588e797ee45db47"
+  },
+  {
+    "id": "04",
+    "title": "Company and product lineage",
+    "image": "images/04-company-history-and-other-products-corrected.png",
+    "decision_source": "D07, F01, P03/P05/P06",
+    "description": "The real founder, company founding in 2023, the specialist-solution journey and three clearly separate products.",
+    "prompt": "prompts/04-company-history-and-other-products.txt",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "b7db1243c09da40dd800f5138e02dd2582bcf95781df1511adcf23d865b47adb"
+  },
+  {
+    "id": "05",
+    "title": "Phone and tablet behavior",
+    "image": "images/05-responsive-phone-and-tablet-corrected.png",
+    "decision_source": "Current responsive design",
+    "description": "Stacked phone content, readable workflow summaries, real customer names and a compact tablet header.",
+    "prompt": "prompts/05-responsive-phone-and-tablet.txt",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "11fcad00cede53e2dbce99a165fa4f08b971d1547d07ae0ceff6ffb52ee95c04"
+  },
+  {
+    "id": "06",
+    "title": "Configured use cases",
+    "image": "images/06-configured-use-cases.png",
+    "decision_source": "D06 and product-wide instruction",
+    "description": "Configuration families and concrete scenarios explain what changes per workflow and what the platform shares.",
+    "prompt": "prompts/06-configured-use-cases.txt",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "b2cbdc4f2851635c767ebe699b9004b23f5a8a924f9f59595ea59672e233cb9d"
+  },
+  {
+    "id": "07",
+    "title": "Updates and Contact",
+    "image": "images/07-updates-and-contact.png",
+    "decision_source": "C01\u2013C07, F02",
+    "description": "Editorial index previews and the existing inquiry flow extended with the approved US/Vietnam contact details.",
+    "prompt": "prompts/07-updates-and-contact.txt",
+    "width": 772,
+    "height": 2036,
+    "sha256": "80b611531777e790208aaa0e7a8811288177e0f3eec80d9d5c4b7f6d918327a8"
+  }
+]

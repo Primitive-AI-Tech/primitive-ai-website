@@ -1,0 +1,12 @@
+{
+  "preservedSharedComponents": 24,
+  "componentBodies": "byte-identical",
+  "cssRuleOrder": "identical excluding token consolidation",
+  "effectiveTokenCount": 53,
+  "motionStyles": "byte-identical",
+  "homeResponsiveStyles": "byte-identical",
+  "movedDictionaries": 4,
+  "archivedPages": 4,
+  "archivedComponents": 3,
+  "browserVisualRegression": "not completed: embedded host unavailable; native interaction interrupted"
+}

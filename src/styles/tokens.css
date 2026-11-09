@@ -1,0 +1,58 @@
+/* Shared brand and semantic tokens. The effective current palette is preserved. */
+:root {
+  --background: 214 60% 98%;
+  --foreground: 225 53% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 40% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 40% 11%;
+  --primary: 222.47 100% 50.78%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 222 30% 95%;
+  --secondary-foreground: 222 40% 11%;
+  --muted: 222 20% 95%;
+  --muted-foreground: 222 16% 47%;
+  --accent: 222 30% 94%;
+  --accent-foreground: 222 40% 11%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 142 76% 36%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 0 0% 100%;
+  --info: 199 89% 48%;
+  --info-foreground: 0 0% 100%;
+  --border: 215 41% 88%;
+  --input: 222 20% 90%;
+  --ring: 222.47 100% 50.78%;
+  --radius: 0.95rem;
+  --glass: 0 0% 100% / 0.78;
+  --glass-border: 222 20% 88% / 0.65;
+  --surface: 0 0% 100% / 0.82;
+  --surface-strong: 0 0% 100% / 0.94;
+  --surface-muted: 222 20% 95% / 0.78;
+  --surface-border: 222 20% 88% / 0.9;
+  --shadow-sm: 0 1px 2px 0 hsl(222 40% 11% / 0.05);
+  --shadow-md: 0 4px 6px -1px hsl(222 40% 11% / 0.08), 0 2px 4px -2px hsl(222 40% 11% / 0.05);
+  --shadow-lg: 0 10px 15px -3px hsl(222 40% 11% / 0.08), 0 4px 6px -4px hsl(222 40% 11% / 0.05);
+  --shadow-xl: 0 20px 25px -5px hsl(222 40% 11% / 0.08), 0 8px 10px -6px hsl(222 40% 11% / 0.05);
+  --shadow-surface: 0 18px 56px -24px hsl(222 40% 11% / 0.18), 0 10px 24px -18px hsl(222 30% 11% / 0.12);
+  --shadow-surface-lg: 0 32px 96px -36px hsl(222 40% 11% / 0.22), 0 18px 38px -24px hsl(222 30% 11% / 0.16);
+  --gradient-primary: linear-gradient(135deg, hsl(222 80% 60%), hsl(192 87% 47%));
+  --gradient-subtle: linear-gradient(180deg, hsl(222 24% 98%), hsl(222 30% 95%));
+  --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.92), hsl(222 16% 98% / 0.72));
+  --gradient-page: radial-gradient(circle at top left, hsl(222 80% 86% / 0.22), transparent 32%),
+      radial-gradient(circle at 85% 12%, hsl(222 80% 76% / 0.14), transparent 28%),
+      linear-gradient(180deg, hsl(222 20% 98%), hsl(222 28% 97%));
+  --gradient-surface: linear-gradient(135deg, hsl(0 0% 100% / 0.98), hsl(222 28% 97% / 0.92));
+  --blue: #044eff;
+  --blue-hover: #003ed4;
+  --midnight: #071526;
+  --ink: #101a35;
+  --muted-ink: #526278;
+  --paper: #f6f9fc;
+  --ice: #e9f7fc;
+  --cyan: #0fb4e0;
+  --logo-indigo: #32409a;
+  --site-border: #cbdcf0;
+}

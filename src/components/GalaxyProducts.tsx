@@ -6,10 +6,10 @@ import { useTranslation } from 'react-i18next';
 const PRODUCT_CONFIG = [
   { id: 'knowledgehub', solutionIdx: 1, icon: BookOpen, href: '/solutions/knowledgehub', orbitRadius: '160px', duration: '25s', delay: '0s' },
   { id: 'supporthub', solutionIdx: 0, icon: MessageCircle, href: '/solutions/chatbot', orbitRadius: '240px', duration: '35s', delay: '-10s' },
-  { id: 'visionhub', solutionIdx: 2, icon: Camera, href: '/solutions/camera-ai', orbitRadius: '320px', duration: '45s', delay: '-20s' },
-  { id: 'familyhub', solutionIdx: 3, icon: Heart, href: '/solutions/familyhub', orbitRadius: '160px', duration: '25s', delay: '-12.5s' },
+  { id: 'visionhub', solutionIdx: 2, icon: Camera, href: '/products', orbitRadius: '320px', duration: '45s', delay: '-20s' },
+  { id: 'familyhub', solutionIdx: 3, icon: Heart, href: '/products', orbitRadius: '160px', duration: '25s', delay: '-12.5s' },
   { id: 'legalhub', solutionIdx: 4, icon: FileText, href: '/solutions/legalhub', status: 'beta' as const, orbitRadius: '240px', duration: '35s', delay: '-27.5s' },
-  { id: 'eduassess', solutionIdx: 5, icon: GraduationCap, href: '/solutions/eduassess', orbitRadius: '320px', duration: '45s', delay: '-42.5s' },
+  { id: 'eduassess', solutionIdx: 5, icon: GraduationCap, href: '/products', orbitRadius: '320px', duration: '45s', delay: '-42.5s' },
 ] as const;
 
 const GalaxyProducts = () => {

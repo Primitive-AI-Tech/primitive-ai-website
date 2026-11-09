@@ -1,0 +1,10 @@
+Use case: precise-object-edit.
+Image1 is the EDIT TARGET, a four-screen mobile Primitive AI responsive mockup board.
+Change ONLY the small input-fields area in the SECOND phone ("02 / BUSINESS VALUE"), below the 40% result and above "Explore the economics".
+Replace its three existing input rows with FOUR compact, readable labeled input rows:
+"Baseline human time" value "100 min"
+"Share eligible for automation" value "60%"
+"Eligible work handled by AI" value "80%"
+"Added review time" value "8 min"
+These are the same assumptions as the desktop model and yield60 total human minutes, including8 of review. Preserve the existing 100min/60min chart and40% result above. Fit four rows by reducing the input group's internal vertical gaps slightly; retain readable text and do not overlap the CTA.
+Keep the other THREE phone screens entirely unchanged. Preserve all layout, colors, logo, headings, diagrams, four-screen presentation and exact #044EFF mainblue. This is a precise mobile-model control correction only. No other edits.
