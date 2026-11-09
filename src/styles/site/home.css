@@ -7,6 +7,23 @@ main[data-page="/"] {
   --hero-title: clamp(36px, 9.4vw, 48px);
   --home-title: clamp(30px, 4.4vw, 56px);
 }
+.hero-particle-field {
+  position: absolute;
+  /* Above the copy and the workflow card so the word reads across the whole hero; it only
+     adds light (screen blend) and never takes clicks. */
+  z-index: 2;
+  mix-blend-mode: screen;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.hero-particle-field canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.home-hero .dot-field { display: none; }
 main[data-page="/"] > section {
   block-size: 100svh;
   min-height: 100svh;
@@ -17,6 +34,12 @@ main[data-page="/"] > section {
   overflow-y: auto;
   padding-block: var(--home-top) var(--home-bottom);
   align-items: flex-start;
+}
+@media (max-width: 899px) {
+  .hero-particle-field { opacity: 0.8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-particle-field { opacity: 0.55; }
 }
 main[data-page="/"] > section:first-of-type {
   block-size: 100svh;
@@ -1694,5 +1717,14 @@ main[data-page="/"] .text-link {
     flex: 1 1 190px;
     min-height: 42px;
     padding: 10px 14px;
+  }
+}
+
+/* Tablet and mobile: centre the hero copy in the viewport instead of pinning it to the top,
+   so the leftover height is shared above and below. "safe" keeps the top reachable when the
+   content is taller than the screen (the section scrolls). */
+@media (max-width: 1199px) {
+  main[data-page="/"] > .home-hero {
+    align-items: safe center;
   }
 }

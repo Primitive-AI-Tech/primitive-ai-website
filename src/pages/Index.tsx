@@ -27,6 +27,7 @@ import {
   WorkingBrief,
 } from "@/features/delivery/components/DeliveryGrid";
 import { FlowBackdrop } from "@/components/marketing/FlowBackdrop";
+import { HeroParticleField } from "@/components/marketing/HeroParticleField";
 import { MiniEconomics } from "@/features/business-value/components/Economics";
 import { ProblemVisual } from "@/features/home/ProblemVisual";
 import { ActivityPreview } from "@/components/diagrams/ActivityPreview";
@@ -61,6 +62,7 @@ export default function Home() {
       <StoryProgress />
       <section className="home-hero dark-section" id="intro">
         <FlowBackdrop />
+        <HeroParticleField />
         <div className="site-container hero-grid relative-content">
           <div className="home-hero-copy">
             <Eyebrow>{t("Core Agentic by Primitive AI")}</Eyebrow>
