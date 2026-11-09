@@ -73,6 +73,16 @@ export default function Company() {
                   <span className="company-timeline-number">{String(index + 1).padStart(2, "0")}</span>
                   <h3>{t(item.title)}</h3>
                   <p>{t(item.text)}</p>
+                  {index === 0 && (
+                    <figure className="company-journey-visual">
+                      <img
+                        src="/vision-hub.png"
+                        alt={t("Factory production line with computer vision detection markers.")}
+                        loading="lazy"
+                      />
+                      <figcaption>{t("Computer vision in an operating environment")}</figcaption>
+                    </figure>
+                  )}
                 </li>
               ))}
             </ol>

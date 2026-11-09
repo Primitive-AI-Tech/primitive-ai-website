@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Badge, Eyebrow } from "@/components/marketing/primitives";
 import { PageHero } from "@/components/marketing/PageHero";
+import { InquiryStoryArt } from "@/components/marketing/StoryArtwork";
 import { companyLocations, contactEmail } from "@/config/company";
 import {
   inquiryMailto,
@@ -157,6 +158,7 @@ export default function Contact() {
         }
         description="Tell us about the work. We will explore the opportunity together."
         className="contact-hero"
+        visual={<InquiryStoryArt />}
       />
       <section className="contact-section light-section">
         <div className="site-container contact-grid">

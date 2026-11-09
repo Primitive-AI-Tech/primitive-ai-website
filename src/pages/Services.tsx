@@ -4,6 +4,9 @@ import {
   Braces,
   Compass,
   Cpu,
+  Gauge,
+  Rocket,
+  Search,
   Workflow,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -11,6 +14,7 @@ import { ClosingCTA } from "@/components/marketing/ClosingCTA";
 import { FlowBackdrop } from "@/components/marketing/FlowBackdrop";
 import { Button, Eyebrow, IconTile, TextLink } from "@/components/marketing/primitives";
 import { PageHero } from "@/components/marketing/PageHero";
+import { ServiceStoryArt } from "@/components/marketing/StoryArtwork";
 import { useCopy } from "@/i18n/useCopy";
 
 const capabilities = [
@@ -59,11 +63,11 @@ const capabilities = [
 ];
 
 const process = [
-  ["01", "Discovery", "Understand the workflow, people, information, systems and constraints."],
-  ["02", "Strategy", "Agree the problem, technical approach, scope and evaluation criteria."],
-  ["03", "Build", "Develop the selected capability in reviewable increments."],
-  ["04", "Deploy", "Prepare the agreed release, documentation and operating handoff."],
-  ["05", "Optimize", "Review real use and prioritize the next improvements together."],
+  { number: "01", title: "Discovery", description: "Understand the workflow, people, information, systems and constraints.", icon: Search },
+  { number: "02", title: "Strategy", description: "Agree the problem, technical approach, scope and evaluation criteria.", icon: Compass },
+  { number: "03", title: "Build", description: "Develop the selected capability in reviewable increments.", icon: Braces },
+  { number: "04", title: "Deploy", description: "Prepare the agreed release, documentation and operating handoff.", icon: Rocket },
+  { number: "05", title: "Optimize", description: "Review real use and prioritize the next improvements together.", icon: Gauge },
 ];
 
 export default function Services() {
@@ -79,6 +83,7 @@ export default function Services() {
         }
         description="We work with your team to shape and build AI capabilities for requirements that call for tailored engineering."
         className="services-hero"
+        visual={<ServiceStoryArt />}
       >
         <div className="button-row">
           <Button to="/contact?intent=custom-development&interest=custom-ai-development" arrow>
@@ -141,11 +146,14 @@ export default function Services() {
           <Eyebrow>{t("A practical engineering process")}</Eyebrow>
           <h2 className="section-title">{t("From the first question to an operating solution.")}</h2>
           <ol className="service-process-list">
-            {process.map(([number, title, description]) => (
-              <li key={number}>
-                <span>{number}</span>
-                <h3>{t(title)}</h3>
-                <p>{t(description)}</p>
+            {process.map((step) => (
+              <li key={step.number}>
+                <div className="service-process-topline">
+                  <span>{step.number}</span>
+                  <step.icon aria-hidden="true" />
+                </div>
+                <h3>{t(step.title)}</h3>
+                <p>{t(step.description)}</p>
               </li>
             ))}
           </ol>

@@ -1,6 +1,7 @@
 import { ArrowUpRight, Newspaper } from "lucide-react";
 import { PageHero } from "@/components/marketing/PageHero";
 import { Eyebrow } from "@/components/marketing/primitives";
+import { UpdatesStoryArt } from "@/components/marketing/StoryArtwork";
 import { useCopy } from "@/i18n/useCopy";
 
 const companyLinkedIn = "https://www.linkedin.com/company/primitiveai";
@@ -14,6 +15,7 @@ export default function Updates() {
         title={<>{t("Updates and perspectives.")}</>}
         description="News and ideas about Primitive AI, Core Agentic and practical AI for organizations."
         className="updates-hero"
+        visual={<UpdatesStoryArt />}
       />
       <section className="updates-index light-section">
         <div className="site-container">

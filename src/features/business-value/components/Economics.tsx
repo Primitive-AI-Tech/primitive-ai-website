@@ -55,6 +55,71 @@ export function EffortTable({
   );
 }
 
+export function EffortFigure({
+  assumptions = defaultAssumptions,
+}: {
+  assumptions?: WorkflowAssumptions;
+}) {
+  const t = useCopy();
+  const result = calculateWorkflow(assumptions);
+  const scale = Math.max(assumptions.baseline, result.assisted, 1);
+  const rows = [
+    {
+      label: "Before",
+      total: assumptions.baseline,
+      segments: [
+        { label: "Eligible work", value: result.eligibleBefore, kind: "eligible" },
+        { label: "Other work", value: result.other, kind: "other" },
+        { label: "Added review", value: 0, kind: "review" },
+      ],
+    },
+    {
+      label: "With AI",
+      total: result.assisted,
+      segments: [
+        { label: "Eligible work", value: result.remaining, kind: "eligible" },
+        { label: "Other work", value: result.other, kind: "other" },
+        { label: "Added review", value: result.review, kind: "review" },
+      ],
+    },
+  ] as const;
+  return (
+    <figure
+      className="effort-figure"
+      aria-label={t("Illustrative stacked bars showing human effort before and with AI, including review time.")}
+    >
+      <figcaption className="effort-figure-heading">
+        <span>{t("Human time per task")}</span>
+        <span>{t("Minutes")}</span>
+      </figcaption>
+      <div className="effort-chart" aria-hidden="true">
+        {rows.map((row) => (
+          <div className="effort-chart-row" key={row.label}>
+            <div className="effort-chart-label"><strong>{t(row.label)}</strong><span>{number(row.total)} {t("min")}</span></div>
+            <div className="effort-chart-track">
+              {row.segments.map((segment) => (
+                <span
+                  className={`effort-chart-segment ${segment.kind}`}
+                  key={segment.label}
+                  style={{ width: `${Math.max(0, (segment.value / scale) * 100)}%` }}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <ul className="effort-chart-legend" aria-hidden="true">
+        <li className="eligible">{t("Eligible work")}</li>
+        <li className="other">{t("Other work")}</li>
+        <li className="review">{t("Added review")}</li>
+      </ul>
+      <p className="sr-only">
+        {t("The comparison is illustrative and uses the assumptions shown in the adjacent table.")}
+      </p>
+    </figure>
+  );
+}
+
 export function MiniEconomics({
   standalone = false,
 }: { standalone?: boolean } = {}) {
@@ -67,7 +132,10 @@ export function MiniEconomics({
         <Badge>{t("Illustrative model")}</Badge>
       </div>
       <div className="mini-economics-main">
-        <EffortTable />
+        <div className="mini-economics-visuals">
+          <EffortTable />
+          <EffortFigure />
+        </div>
         <div className="effort-result">
           <strong>
             <span>40%</span> {t("less human effort")}

@@ -1,16 +1,15 @@
 import {
   ArrowUpRight,
   BrainCircuit,
-  Camera,
-  GraduationCap,
-  HeartHandshake,
   Sparkles,
 } from "lucide-react";
 import { CompactArchitecture } from "@/components/diagrams/CompactArchitecture";
 import { ClosingCTA } from "@/components/marketing/ClosingCTA";
 import { FlowBackdrop } from "@/components/marketing/FlowBackdrop";
-import { Button, Eyebrow, IconTile, TextLink } from "@/components/marketing/primitives";
+import { Button, Eyebrow, TextLink } from "@/components/marketing/primitives";
 import { PageHero } from "@/components/marketing/PageHero";
+import { PlatformStoryArt } from "@/components/marketing/StoryArtwork";
+import { ProductArtwork } from "@/components/marketing/ProductArtwork";
 import ApplicationExplorer from "@/features/home/ApplicationExplorer";
 import { useCopy } from "@/i18n/useCopy";
 
@@ -20,21 +19,21 @@ const independentProducts = [
     category: "Workplace computer vision",
     description:
       "A computer vision product for organizations that need visibility in operating environments.",
-    icon: Camera,
+    art: "vision" as const,
   },
   {
     title: "FamilyHub",
     category: "Family knowledge and memory",
     description:
       "A product for collecting and exploring the knowledge and memories families choose to preserve.",
-    icon: HeartHandshake,
+    art: "family" as const,
   },
   {
     title: "EduAssess AI",
     category: "English language assessment",
     description:
       "An AI enabled platform for English language assessment and feedback.",
-    icon: GraduationCap,
+    art: "assessment" as const,
   },
 ];
 
@@ -51,6 +50,7 @@ export default function Products() {
         }
         description="Explore Core Agentic, our configurable agent platform for organizational work, alongside focused products built for specific needs."
         className="products-hero"
+        visual={<PlatformStoryArt />}
       >
         <div className="button-row">
           <Button to="/#applications" arrow>{t("Explore applications")}</Button>
@@ -105,7 +105,7 @@ export default function Products() {
           <div className="specialist-product-grid">
             {independentProducts.map((product) => (
               <article className="specialist-product-card surface-panel" key={product.title}>
-                <IconTile icon={product.icon} />
+                <ProductArtwork type={product.art} />
                 <p className="product-category">{t(product.category)}</p>
                 <h3>{t(product.title)}</h3>
                 <p>{t(product.description)}</p>
