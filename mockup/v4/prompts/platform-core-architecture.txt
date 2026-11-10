@@ -1,0 +1,21 @@
+Use case: precise-object-edit.
+Edit target: the supplied Core Agentic 3D architecture illustration.
+Keep its beautiful unified three-tier exploded architecture, isometric rounded slabs, frosted glass, brushed graphite, luminous cobalt #044eff center and midnight navy #071526 background. This is a conceptual SOFTWARE architecture, not a physical chip. Improve it to represent our actual system and print precise readable descriptions directly ON the top surfaces of its blocks.
+
+Composition: wide 3:2 image, whole object in frame, centered, ample narrow dark margins. Three evenly spaced aligned layers with enough vertical separation that NO block label is occluded. Shallower isometric tilt and large broad block faces for excellent reading. Nine total rectangular blocks: THREE blocks per tier, arranged side by side in a shallow row, not six on top. Make each block substantial and each label large, beautifully typeset in crisp clean sans serif. Labels and descriptions lie flush in perspective with the top surface, like precisely printed product markings. Use dark ink on light frosted top blocks, bright white on blue central blocks, pale white on graphite lower blocks. Each block has exactly one large title and one smaller short description. Do not add exterior callouts.
+
+TOP TIER: pale frosted glass. Three blocks exactly:
+"AI agents" / "Understand the goal"
+"Skills" / "Guide the work"
+"Workflows" / "Run repeatable steps"
+MIDDLE TIER: integrated cobalt blue execution platform. Three blocks exactly:
+"Permissions" / "Limit access"
+"Approvals" / "Keep people in control"
+"Run history" / "Trace every step"
+Print the small title "GOVERNED EXECUTION" prominently on the front edge of the middle shared slab, which connects all three blocks. Visually coherent single control plane, restrained inset cyan traces.
+BOTTOM TIER: dark graphite foundation with THREE low rounded rectangular resource blocks (replace the cylinders so labels fit):
+"Knowledge" / "Approved sources"
+"Tools & connectors" / "Company systems"
+"AI models" / "Configured providers"
+
+All nine modules connected through subtle vertical light channels inside the common footprint. Three planes are functional groups, not chronological steps. Elegant understated premium industrial render, soft studio reflections and depth, precise geometry, generous gaps, minimal bloom. No extra decorative components, no people, no logos, no external text, no circuitry pins. Text fidelity and unobstructed block surfaces are essential. Preserve polished beauty of the reference while making the architecture genuinely informative.

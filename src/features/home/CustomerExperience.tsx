@@ -6,7 +6,7 @@ const customers = [
   { name: "FPT Automotive", src: "/images/partners/FA.png" },
   { name: "VTI Solutions", src: "/images/partners/vti-solutions.png" },
   { name: "RAIS Tech", src: "/images/partners/RAIS.png" },
-  { name: "NEU — National Economics University", src: "/images/partners/NEU.svg" },
+  { name: "National Economic University (NEU)", src: "/images/partners/NEU.svg" },
 ];
 
 const customersWithoutArtwork = ["Ymner", "TNE"];
@@ -31,7 +31,7 @@ export default function CustomerExperience() {
       id="customer-experience"
       aria-labelledby="customer-experience-title"
     >
-      <div className="site-container">
+      <div className="site-container customer-experience-layout">
         <div className="customer-experience-heading">
           <div>
             <p className="site-eyebrow">
@@ -40,26 +40,31 @@ export default function CustomerExperience() {
             <h2 className="section-title" id="customer-experience-title">
               {t("Experience across real organizations.")}
             </h2>
+            <p className="customer-experience-intro">
+              {t("Our work has grown through collaboration with teams across industries and institutions.")}
+            </p>
           </div>
         </div>
-        <div className="relationship-group">
-          <h3>{t("Customers")}</h3>
-          <ul className="relationship-grid" aria-label={t("Customers")}>
-            {customers.map((customer) => (
-              <LogoCard key={customer.name} {...customer} />
-            ))}
-            {customersWithoutArtwork.map((name) => (
-              <LogoCard key={name} name={name} />
-            ))}
-          </ul>
-        </div>
-        <div className="relationship-group partner-group">
-          <h3>{t("Partners")}</h3>
-          <ul className="relationship-grid partner-grid" aria-label={t("Partners")}>
-            {partners.map((partner) => (
-              <LogoCard key={partner.name} {...partner} />
-            ))}
-          </ul>
+        <div className="customer-experience-proof">
+          <div className="relationship-group">
+            <h3>{t("Customers")}</h3>
+            <ul className="relationship-grid" aria-label={t("Customers")}>
+              {customers.map((customer) => (
+                <LogoCard key={customer.name} {...customer} />
+              ))}
+              {customersWithoutArtwork.map((name) => (
+                <LogoCard key={name} name={name} />
+              ))}
+            </ul>
+          </div>
+          <div className="relationship-group partner-group">
+            <h3>{t("Technology partners")}</h3>
+            <ul className="relationship-grid partner-grid" aria-label={t("Technology partners")}>
+              {partners.map((partner) => (
+                <LogoCard key={partner.name} {...partner} />
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>

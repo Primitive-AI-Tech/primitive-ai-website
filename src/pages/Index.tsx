@@ -3,8 +3,6 @@ import {
   Database,
   Eye,
   Layers3,
-  Laptop,
-  Sparkles,
   Target,
   UsersRound,
   Zap,
@@ -20,7 +18,6 @@ import {
   IconTile,
   TextLink,
 } from "@/components/marketing/primitives";
-import { ClosingCTA } from "@/components/marketing/ClosingCTA";
 import { CompactArchitecture } from "@/components/diagrams/CompactArchitecture";
 import {
   DeliveryGrid,
@@ -28,8 +25,6 @@ import {
 } from "@/features/delivery/components/DeliveryGrid";
 import { FlowBackdrop } from "@/components/marketing/FlowBackdrop";
 import { HeroParticleField } from "@/components/marketing/HeroParticleField";
-import { MiniEconomics } from "@/features/business-value/components/Economics";
-import { ProblemVisual } from "@/features/home/ProblemVisual";
 import { ActivityPreview } from "@/components/diagrams/ActivityPreview";
 import { useCopy } from "@/i18n/useCopy";
 import ApplicationExplorer from "@/features/home/ApplicationExplorer";
@@ -37,26 +32,14 @@ import CustomerExperience from "@/features/home/CustomerExperience";
 import StoryProgress, {
   ScrollCue,
 } from "@/components/layout/StoryProgress";
+import { FrictionSection } from "@/features/home/FrictionSection";
+import { HomeEconomicsSection } from "@/features/home/HomeEconomicsSection";
+import { CustomAISection } from "@/features/home/CustomAISection";
+import { HomeUpdatesSection } from "@/features/home/HomeUpdatesSection";
+import { HomeInvitation } from "@/features/home/HomeInvitation";
 
 export default function Home() {
   const t = useCopy();
-  const problems = [
-    {
-      title: "Scattered information",
-      description:
-        "Key knowledge and updates live across different tools, teams, and formats.",
-    },
-    {
-      title: "Repeated manual work",
-      description:
-        "People copy, clean, and move information between systems just to keep things running.",
-    },
-    {
-      title: "Growth adds coordination",
-      description:
-        "As the business grows, more steps, hand-offs, and check-ins are needed to stay aligned.",
-    },
-  ];
   return (
     <>
       <StoryProgress />
@@ -120,32 +103,10 @@ export default function Home() {
         </div>
         <ScrollCue />
       </section>
-      <section className="problem-section light-section" id="problem">
-        <div className="site-container">
-          <Eyebrow>{t("The work between your systems")}</Eyebrow>
-          <h2 className="section-title">
-            {t("Your people spend too much time holding the process together.")}
-          </h2>
-          <p className="section-intro">
-            {t("Searching. Copying. Chasing. Checking. Again.")}
-          </p>
-          <div className="problem-grid">
-            {problems.map((problem, index) => (
-              <article key={problem.title} className="problem-card">
-                <ProblemVisual type={index} />
-                <h3>{t(problem.title)}</h3>
-                <p>{t(problem.description)}</p>
-              </article>
-            ))}
-          </div>
-          <p className="problem-statement">
-            {t("Let AI carry more of the repeatable work.")}
-          </p>
-        </div>
-      </section>
+      <FrictionSection />
       <section className="home-value light-section" id="business-value">
         <div className="site-container">
-          <Eyebrow>{t("Business Value")}</Eyebrow>
+          <Eyebrow>{t("We Offer")}</Eyebrow>
           <h2 className="section-title">
             {t("More work completed. Better operating economics.")}
           </h2>
@@ -202,14 +163,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="home-economics light-section" id="economics">
-        <div className="site-container">
-          <Eyebrow>{t("Cost perspective")}</Eyebrow>
-          <MiniEconomics standalone />
-        </div>
-      </section>
-      <section className="home-use-cases dark-section" id="applications">
-        <FlowBackdrop />
+      <HomeEconomicsSection />
+      <section className="home-use-cases light-section" id="applications">
         <div className="site-container relative-content">
           <Eyebrow>{t("Practical applications")}</Eyebrow>
           <h2 className="section-title">
@@ -258,62 +213,45 @@ export default function Home() {
         </div>
       </section>
       <section className="home-company light-section" id="story">
-        <div className="site-container">
-          <h2>{t("Built around a bigger productivity question.")}</h2>
-          <p>
+        <div className="site-container home-story">
+          <Eyebrow>{t("Our story")}</Eyebrow>
+          <h2 className="section-title">
+            {t("Built around a bigger productivity question.")}
+          </h2>
+          <p className="home-story-intro">
             {t(
               "From industrial systems to practical AI, our work has focused on helping organizations use their people, knowledge and systems more effectively.",
             )}
           </p>
-          <div className="story-progression">
-            <span>
-              <Laptop aria-hidden="true" />
-              {t("Practical AI")}
-            </span>
+          <div className="story-chapters">
+            <article className="story-chapter">
+              <span className="story-chapter-label">{t("Experience")}</span>
+              <h3>{t("AI in real operating environments")}</h3>
+              <p>{t("Computer vision and applied systems shaped an early focus on practical work.")}</p>
+            </article>
             <ArrowRight aria-hidden="true" />
-            <span>
-              <Layers3 aria-hidden="true" />
-              {t("Knowledge")}
-            </span>
+            <article className="story-chapter">
+              <span className="story-chapter-label">{t("Learning")}</span>
+              <h3>{t("Products, knowledge and custom AI")}</h3>
+              <p>{t("Work across support, organizational knowledge and tailored applications.")}</p>
+            </article>
             <ArrowRight aria-hidden="true" />
-            <span className="story-core">
-              <Sparkles aria-hidden="true" />
-              {t("Core Agentic")}
-            </span>
-            <TextLink to="/about">{t("Our story")}</TextLink>
+            <article className="story-chapter story-current">
+              <span className="story-chapter-label">{t("Today")}</span>
+              <h3>{t("Core Agentic")}</h3>
+              <p>{t("A configurable platform to connect knowledge, agents, tools and review.")}</p>
+            </article>
+          </div>
+          <div className="story-footer">
+            <span className="story-founded">{t("Primitive AI founded in 2023")}</span>
+            <p>{t("One question through every chapter: how can organizations do more with what they know?")}</p>
+            <TextLink to="/about">{t("Our full journey")}</TextLink>
           </div>
         </div>
       </section>
-      <section className="home-services light-section" id="custom-ai">
-        <div className="site-container home-services-grid">
-          <div>
-            <Eyebrow>{t("Custom AI Development")}</Eyebrow>
-            <h2 className="section-title">{t("Custom AI, built around your work.")}</h2>
-            <p>{t("When a requirement needs tailored engineering, our team can help shape, build and deploy the right AI capability around your organization.")}</p>
-          </div>
-          <div className="home-service-capabilities surface-panel">
-            {[
-              "AI agents and workflow automation",
-              "AI APIs and application development",
-              "Model evaluation and adaptation",
-              "AI consulting and delivery strategy",
-            ].map((item) => <span key={item}>{t(item)}</span>)}
-            <TextLink to="/services">{t("Explore custom AI services")}</TextLink>
-          </div>
-        </div>
-      </section>
-      <section className="home-updates dark-section" id="updates">
-        <FlowBackdrop />
-        <div className="site-container relative-content home-updates-inner">
-          <div>
-            <Eyebrow>{t("From Primitive AI")}</Eyebrow>
-            <h2 className="section-title">{t("Ideas and updates from our work.")}</h2>
-            <p>{t("Read the latest news and perspectives from Primitive AI.")}</p>
-          </div>
-          <TextLink to="/update">{t("See all updates")}</TextLink>
-        </div>
-      </section>
-      <ClosingCTA id="next-step" />
+      <CustomAISection />
+      <HomeUpdatesSection />
+      <HomeInvitation id="next-step" />
     </>
   );
 }
