@@ -187,40 +187,6 @@
 .updates-topic-product { right: 3%; top: 40%; }
 .updates-topic-practice { left: 15%; bottom: 10%; }
 
-.story-art-inquiry {
-  background:
-    radial-gradient(circle at 16% 15%, #12b7e433, transparent 30%),
-    radial-gradient(circle at 83% 83%, #085cff5c, transparent 38%),
-    linear-gradient(145deg, #15345c, #06172d 67%, #0b2b59);
-}
-.inquiry-rings { position: absolute; top: 11%; left: 10%; width: 82%; height: 77%; border: 1px solid #91c9ff2a; border-radius: 48%; transform: rotate(-22deg); box-shadow: 0 0 0 21px #167aff0c, 0 0 0 43px #167aff08; }
-.inquiry-brief { position: absolute; z-index: 2; left: 21%; top: 12%; width: 63%; padding: 20px; border: 1px solid #d5e8ff; border-radius: 20px; color: #142844; background: linear-gradient(150deg, #fff, #edf5ff); box-shadow: 0 25px 65px #000b2d7a; transform: rotate(-2deg); }
-.inquiry-brief-top { display: flex; align-items: center; gap: 11px; }
-.inquiry-brief-top > span:first-child { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 12px; color: #044eff; background: #e8f1ff; }
-.inquiry-brief-top > span:first-child svg { width: 20px; height: 20px; }
-.inquiry-brief-top > div { display: grid; gap: 3px; }
-.inquiry-brief-top small { color: #5279a8; font-size: 8px; font-weight: 850; letter-spacing: .13em; }
-.inquiry-brief-top strong { font-size: 16px; }
-.inquiry-brief-status { display: grid; place-items: center; width: 25px; height: 25px; margin-left: auto; border-radius: 50%; color: #079a8b; background: #dff8f2; }
-.inquiry-brief-status svg { width: 14px; height: 14px; }
-.inquiry-brief-divider { margin: 14px 0 10px; border-top: 1px solid #d9e6f5; }
-.inquiry-brief-row { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid #e6eef8; }
-.inquiry-step-icon { display: grid; place-items: center; width: 32px; height: 32px; flex: 0 0 auto; border-radius: 10px; color: #1a63dc; background: #eaf2ff; }
-.inquiry-step-icon svg { width: 17px; height: 17px; }
-.inquiry-brief-row > div { display: grid; gap: 2px; }
-.inquiry-brief-row small { color: #6790be; font-size: 8px; font-weight: 800; }
-.inquiry-brief-row strong { font-size: 11px; }
-.inquiry-brief-row > i { width: 7px; height: 7px; margin-left: auto; border-radius: 50%; background: #19b8ce; box-shadow: 0 0 10px #19b8ce75; }
-.inquiry-brief-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 13px; color: #5f7899; font-size: 9px; font-weight: 750; }
-.inquiry-brief-footer span:last-child { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 7px; color: #0754c6; background: #e4efff; }
-.inquiry-brief-footer svg { width: 13px; height: 13px; }
-.inquiry-note { position: absolute; display: grid; gap: 6px; padding: 13px; border: 1px solid #a9d5ff7a; border-radius: 14px; background: #eff7ffc9; box-shadow: 0 14px 30px #00112e57; }
-.inquiry-note span { width: 23px; height: 23px; border-radius: 8px; background: #105ffc; }
-.inquiry-note i { display: block; width: 49px; height: 3px; border-radius: 4px; background: #a6c5ea; }
-.inquiry-note i:last-child { width: 33px; }
-.inquiry-note-one { left: 5%; top: 23%; transform: rotate(8deg); }
-.inquiry-note-two { right: 3%; bottom: 14%; transform: rotate(7deg); }
-
 .product-art {
   position: relative;
   display: block;
@@ -357,8 +323,6 @@
   .updates-sheet-mark { width: 45px; height: 45px; margin: 18px 0 15px; }
   .updates-topic { gap: 6px; padding: 8px 9px; font-size: 9px; }
   .updates-topic svg { width: 14px; height: 14px; }
-  .inquiry-brief { left: 16%; width: 68%; padding: 14px; }
-  .inquiry-note { padding: 9px; }
   .company-timeline > li:first-child { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .company-timeline > li:first-child h3,
   .company-timeline > li:first-child p,
@@ -384,9 +348,6 @@
   .updates-topic-company { left: 2%; top: 20%; }
   .updates-topic-product { right: 1%; top: 42%; }
   .updates-topic-practice { left: 8%; bottom: 8%; }
-  .inquiry-brief { left: 13%; width: 75%; }
-  .inquiry-note-one { left: 2%; top: 20%; }
-  .inquiry-note-two { right: 1%; bottom: 10%; }
   .company-journey-visual { width: 100%; }
 }
 @media (max-width: 360px) and (max-height: 760px) {
@@ -422,7 +383,6 @@
   .story-art-platform:after { content: "CORE AGENTIC · CONNECTED WORK"; }
   .story-art-services:after { content: "CUSTOM AI · PROJECT BLUEPRINT"; }
   .story-art-updates:after { content: "PRAI · FIELD NOTES"; }
-  .story-art-inquiry:after { content: "START WITH THE WORK"; }
 }
 @media (max-width: 760px) {
   .mini-economics-visuals { grid-template-columns: minmax(0, 1fr); }

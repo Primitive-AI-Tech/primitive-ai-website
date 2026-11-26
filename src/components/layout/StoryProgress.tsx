@@ -2,20 +2,20 @@ import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 import { useCopy } from "@/i18n/useCopy";
 
-export default function StoryProgress() {
+export default function StoryProgress({ endId = "next-step" }: { endId?: string }) {
   const bar = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const progress = bar.current;
     const root = document.getElementById("main-content");
-    const invitation = document.getElementById("next-step");
-    if (!progress || !root || !invitation) return;
+    const end = document.getElementById(endId);
+    if (!progress || !root || !end) return;
 
     let frame = 0;
     const update = () => {
       frame = 0;
       const start = root.getBoundingClientRect().top;
-      const distance = Math.max(1, invitation.getBoundingClientRect().top - start);
+      const distance = Math.max(1, end.getBoundingClientRect().top - start);
       const value = Math.min(1, Math.max(0, -start / distance));
       progress.style.setProperty("--story-progress", String(value));
     };
@@ -25,7 +25,7 @@ export default function StoryProgress() {
     const resize =
       "ResizeObserver" in window ? new ResizeObserver(schedule) : undefined;
     resize?.observe(root);
-    resize?.observe(invitation);
+    resize?.observe(end);
     window.addEventListener("scroll", schedule, { passive: true });
     window.addEventListener("resize", schedule);
     update();
@@ -36,7 +36,7 @@ export default function StoryProgress() {
       window.removeEventListener("scroll", schedule);
       window.removeEventListener("resize", schedule);
     };
-  }, []);
+  }, [endId]);
 
   return (
     <div className="story-progress" aria-hidden="true">

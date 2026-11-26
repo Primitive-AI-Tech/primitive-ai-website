@@ -24,7 +24,8 @@ export function validateInquiry(value: Inquiry) {
   return errors;
 }
 
-export function inquiryMailto(value: Inquiry) {
+export function inquiryMailto(value: Inquiry, intent?: string | null) {
+  const subject = intent === "pricing" ? "Primitive AI pricing inquiry" : "Primitive AI inquiry";
   const body = [
     "Name: " + value.name.trim(),
     "Work email: " + value.email.trim(),
@@ -43,7 +44,7 @@ export function inquiryMailto(value: Inquiry) {
     contactEmail +
     "?subject=" +
     encodeURIComponent(
-      "Primitive AI inquiry — " +
+      subject + " — " +
         value.organization.trim().replace(/[\r\n]/g, " "),
     ) +
     "&body=" +

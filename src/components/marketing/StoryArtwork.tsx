@@ -8,7 +8,6 @@ import {
   MessageSquareText,
   Network,
   Search,
-  ShieldCheck,
   Sparkles,
   UsersRound,
   Workflow,
@@ -132,39 +131,6 @@ export function UpdatesStoryArt() {
       <div className="updates-topic updates-topic-product" aria-hidden="true"><Layers3 /><span>{t("Products")}</span></div>
       <div className="updates-topic updates-topic-practice" aria-hidden="true"><Sparkles /><span>{t("Practical AI")}</span></div>
       <figcaption className="sr-only">{t("Editorial illustration. No article or publication is represented here.")}</figcaption>
-    </figure>
-  );
-}
-
-export function InquiryStoryArt() {
-  const t = useCopy();
-  const steps = [
-    { icon: Workflow, label: "The workflow" },
-    { icon: UsersRound, label: "The people involved" },
-    { icon: ShieldCheck, label: "The outcome to improve" },
-  ];
-  return (
-    <figure
-      className="story-art story-art-inquiry"
-      role="img"
-      aria-label={t("Illustration of a working brief with a workflow, the people involved and an outcome to improve.")}
-    >
-      <div className="inquiry-rings" aria-hidden="true" />
-      <div className="inquiry-brief" aria-hidden="true">
-        <div className="inquiry-brief-top"><span><FileCheck2 /></span><div><small>{t("WORKING BRIEF")}</small><strong>{t("Start with the work")}</strong></div><span className="inquiry-brief-status"><Check /></span></div>
-        <div className="inquiry-brief-divider" />
-        {steps.map((step, index) => (
-          <div className="inquiry-brief-row" key={step.label}>
-            <span className="inquiry-step-icon"><step.icon /></span>
-            <div><small>0{index + 1}</small><strong>{t(step.label)}</strong></div>
-            <i />
-          </div>
-        ))}
-        <div className="inquiry-brief-footer"><span>{t("Prepared together")}</span><span><Check /></span></div>
-      </div>
-      <div className="inquiry-note inquiry-note-one" aria-hidden="true"><span /><i /><i /><i /></div>
-      <div className="inquiry-note inquiry-note-two" aria-hidden="true"><span /><i /><i /></div>
-      <figcaption className="sr-only">{t("Illustrative working brief; do not send sensitive information in the contact form.")}</figcaption>
     </figure>
   );
 }

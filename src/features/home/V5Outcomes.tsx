@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "@/components/marketing/primitives";
 import { useCopy } from "@/i18n/useCopy";
 import { ChapterIcon, ExecutionSteps, HomeChapter } from "./V5Chapter";
 
@@ -66,6 +67,27 @@ const deliverySteps = [
     icon: "pilot-measure",
     title: "Compare results",
     description: "Compare accepted results per team hour and the cost per result, including rework.",
+  },
+];
+
+const pricingStages = [
+  {
+    icon: "pricing-setup",
+    title: "Setup",
+    cadence: "One-time",
+    description: "We agree on what to launch, connect your systems, and test with your team.",
+  },
+  {
+    icon: "pricing-subscription",
+    title: "Subscription",
+    cadence: "Recurring",
+    description: "Includes Core Agentic access and platform maintenance as outlined in your quote.",
+  },
+  {
+    icon: "pricing-usage",
+    title: "Usage",
+    cadence: "Usage-based",
+    description: "We estimate AI and any third-party costs based on how often your workflow runs.",
   },
 ];
 
@@ -198,32 +220,32 @@ export function V5Outcomes() {
         id="pricing"
         className="v5-pricing"
         titleId="pricing-title"
-        eyebrow={t("Costs")}
-        title={t("How pricing is structured")}
-        lead={t("Your quote depends on the workflow, systems to connect, deployment environment, number of accounts, and expected usage.")}
+        eyebrow={t("Pricing")}
+        title={t("Plan your costs before you start")}
+        lead={t("Start with one workflow. We’ll estimate the cost to launch and run it.")}
       >
-        <ul className="pricing-grid">
-          <li className="metric-card">
-            <ChapterIcon name="pricing-setup" />
-            <h3>{t("Setup fee")}</h3>
-            <p>{t("Review the workflow, connect systems, configure and test the agreed processes.")}</p>
-            <p className="pricing-cadence">{t("One time")}</p>
-          </li>
-          <li className="metric-card pricing-subscription">
-            <ChapterIcon name="pricing-subscription" />
-            <h3>{t("Subscription fee")}</h3>
-            <p>{t("Includes access to Core Agentic and platform maintenance within the agreed scope.")}</p>
-            <p className="pricing-cadence">{t("Recurring")}</p>
-          </li>
-          <li className="metric-card">
-            <ChapterIcon name="pricing-usage" />
-            <h3>{t("Usage fee")}</h3>
-            <p>{t("Based on usage of AI models and agreed third-party services.")}</p>
-            <p className="pricing-cadence">{t("Usage-based")}</p>
-          </li>
-        </ul>
-        <div className="chapter-followup">
-          <p className="pricing-note">{t("The quote details what the subscription includes, how usage is metered, any limits, and applicable overage charges. Custom development and advanced support are quoted separately when needed.")}</p>
+        <ol className="pricing-grid" role="list">
+          {pricingStages.map(({ icon, title, cadence, description }) => (
+            <li key={icon} className="metric-card">
+              <div className="pricing-card-heading">
+                <ChapterIcon name={icon} />
+                <div>
+                  <h3>{t(title)}</h3>
+                  <p className="pricing-cadence">{t(cadence)}</p>
+                </div>
+              </div>
+              <p>{t(description)}</p>
+            </li>
+          ))}
+        </ol>
+        <div className="chapter-followup pricing-conversation">
+          <div>
+            <h3>{t("Review the quote before you decide")}</h3>
+            <p>{t("See any usage limits, with optional work or support priced separately.")}</p>
+          </div>
+          <Button to="/contact?intent=pricing&interest=core-agentic" arrow>
+            {t("Talk to us about pricing")}
+          </Button>
         </div>
       </HomeChapter>
     </>

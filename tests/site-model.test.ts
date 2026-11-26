@@ -100,3 +100,8 @@ test("email drafts use the explicitly approved destination and encode user conte
   assert.ok(params.get("body")!.includes("ERP & finance"));
   assert.equal(params.get("bcc"), null);
 });
+
+test("pricing inquiries keep their context in the email draft subject", () => {
+  const draft = new URL(inquiryMailto(inquiry, "pricing"));
+  assert.equal(draft.searchParams.get("subject"), "Primitive AI pricing inquiry — Example & Co");
+});

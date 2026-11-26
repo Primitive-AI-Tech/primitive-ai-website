@@ -51,10 +51,10 @@ export default function PageLifecycle({
     });
     return () => cancelAnimationFrame(frame);
   }, [location.pathname, location.hash, location.key, location.search, navigate, page.id]);
-  const showProgress = ["products", "services", "about", "updates"].includes(page.id);
+  const showProgress = ["products", "services", "about", "updates", "contact"].includes(page.id);
   return (
     <>
-      {showProgress && <StoryProgress key={page.id} />}
+      {showProgress && <StoryProgress key={page.id} endId={page.id === "contact" ? "inquiry" : undefined} />}
       {children}
     </>
   );

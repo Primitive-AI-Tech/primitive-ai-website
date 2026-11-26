@@ -56,8 +56,9 @@ const revealSelector = [
   ".authority-stages",
   ".company-timeline > li",
   ".company-principle-grid > article",
-  ".contact-expectations",
+  ".contact-next-card",
   ".contact-form-card",
+  ".contact-direct",
   ".question-list",
 ].join(",");
 

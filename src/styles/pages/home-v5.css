@@ -289,19 +289,31 @@ main[data-page="/"] > .v5-section {
 
 .v5-section.v5-pricing { background: var(--page-light-glow); }
 .v5-section .pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--v5-card-gap); padding: 0; list-style: none; }
-.v5-section .pricing-grid .pricing-subscription { background: var(--deck-sage); }
-.v5-section .pricing-grid .chapter-icon { width: 48px; height: 48px; border-radius: 13px; }
-.v5-section .pricing-grid .chapter-icon img { width: 25px; height: 25px; }
-.v5-section .pricing-grid h3 { margin-top: 7px; font-size: clamp(21px, 2.15vw, 30px); }
+.v5-section .pricing-grid .metric-card { gap: clamp(8px, 1.1vw, 14px); padding: clamp(14px, 1.9vw, 26px); }
+.v5-section .pricing-card-heading { display: flex; align-items: center; gap: 12px; }
+.v5-section .pricing-grid .chapter-icon { width: clamp(40px, 4vw, 48px); height: clamp(40px, 4vw, 48px); border-radius: 12px; }
+.v5-section .pricing-grid .chapter-icon img { width: 24px; height: 24px; }
+.v5-section .pricing-grid h3 { font-size: clamp(20px, 2.05vw, 28px); }
 .v5-section .pricing-grid .pricing-cadence {
-  margin-top: auto;
-  padding-top: 16px;
+  margin-top: 2px;
   color: var(--deck-green);
   font-size: 13px;
-  font-weight: 750;
-  text-transform: uppercase;
+  font-weight: 650;
 }
-.v5-section .pricing-note { max-width: 96ch; color: var(--page-muted); }
+.v5-section .pricing-grid .metric-card > p { font-size: clamp(14px, 1.2vw, 17px); }
+.v5-section .pricing-conversation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px 28px;
+  padding: clamp(15px, 2vw, 26px);
+  border: 1px solid #cbdcf3;
+  border-radius: 18px;
+  background: #f6faff;
+}
+.v5-section .pricing-conversation h3 { font-size: clamp(18px, 1.65vw, 23px); }
+.v5-section .pricing-conversation p { margin-top: 4px; color: var(--page-muted); }
+.v5-section .pricing-conversation .site-button { justify-self: start; text-decoration: none; }
 
 @media (max-width: 920px) {
   .v5-section .customer-groups { grid-template-columns: minmax(0, 1fr); gap: 24px; }
@@ -326,8 +338,18 @@ main[data-page="/"] > .v5-section {
   .v5-section .baseline strong { white-space: normal; }
   .v5-section .role-grid { gap: 8px; }
 }
+@media (max-width: 720px) {
+  .v5-section .pricing-grid { grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  .v5-section .pricing-grid .metric-card { gap: 6px; padding-block: 12px; }
+  .v5-section .pricing-card-heading { gap: 9px; }
+  .v5-section .pricing-card-heading > div { display: flex; flex: 1; flex-wrap: wrap; align-items: baseline; gap: 1px 10px; }
+  .v5-section .pricing-grid .chapter-icon { width: 32px; height: 32px; border-radius: 9px; }
+  .v5-section .pricing-grid .chapter-icon img { width: 20px; height: 20px; }
+  .v5-section .pricing-conversation { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .v5-section .pricing-conversation .site-button { padding-inline: 16px; }
+}
 @media (max-width: 600px) {
-  .v5-section .friction-grid, .v5-section .value-pair, .v5-section .pricing-grid { grid-template-columns: minmax(0, 1fr); }
+  .v5-section .friction-grid, .v5-section .value-pair { grid-template-columns: minmax(0, 1fr); }
   .v5-section .v5-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .v5-section .v5-logos li { min-height: 70px; padding: 10px; }
   .v5-section .v5-logos img { height: 39px; }
