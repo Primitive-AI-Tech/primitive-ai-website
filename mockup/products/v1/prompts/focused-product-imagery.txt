@@ -1,0 +1,41 @@
+# VisionHub
+Use case: photorealistic-natural
+Asset type: landscape product-page card artwork for a B2B AI products website
+Primary request: create a refined editorial image suggesting workplace computer vision in industrial operations.
+Scene/backdrop: a clean, modern manufacturing line viewed at a shallow elevated angle, with a precision camera inspecting a component as it moves through the line.
+Subject: one real industrial production moment, orderly machinery and a single item under inspection.
+Style/medium: premium editorial product photography with subtle photographic illustration polish, tactile detail, realistic materials, composed for a calm enterprise website.
+Composition/framing: wide 3:2 composition; clear focal point near center; enough quieter area toward the upper left for an overlaid small label outside the image in the webpage.
+Lighting/mood: crisp daylight mixed with soft factory light, capable and calm.
+Color palette: neutral steel and warm industrial tones with restrained sapphire-blue light accents inspired by #044eff.
+Materials/textures: brushed metal, glass optics, clean conveyor surfaces.
+Constraints: no brand names, no logos, no readable text, no dashboards, no fake UI, no charts, no watermark. This is conceptual artwork, not evidence of a specific deployed installation.
+Avoid: sci-fi factory, neon overload, clutter, dramatic danger, human faces, extra cameras, malformed machinery.
+
+# FamilyHub
+Use case: photorealistic-natural
+Asset type: landscape product-page card artwork for a B2B AI products website
+Primary request: create a warm editorial image suggesting a family preserving and exploring shared memories and knowledge.
+Scene/backdrop: a sunlit home table with a small collection of printed photographs, handwritten notes, a recipe card and a well-used family album, carefully arranged for scanning and discussion.
+Subject: the chosen memories and written notes are the focus; one adult hand gently places a photograph among the materials.
+Style/medium: premium editorial still-life photography with a subtle photographic illustration polish, natural detail and gentle warmth.
+Composition/framing: wide 3:2 composition; tactile objects centered with breathing room and soft background, suitable for a product card crop.
+Lighting/mood: late morning window light, reflective, personal and quietly optimistic.
+Color palette: warm paper, soft wood and natural earth colors, with a few restrained sapphire-blue accents inspired by #044eff.
+Materials/textures: matte photo paper, handwriting, linen, wood grain.
+Constraints: no readable text, no logos, no screens, no interface, no watermark. This is conceptual product artwork, not a real customer story.
+Avoid: sentimental stock-photo posing, visible faces, piles of clutter, antiques-as-props, dramatic nostalgia, glowing digital effects.
+
+# EduAssess AI
+Use case: photorealistic-natural
+Asset type: landscape product-page card artwork for a B2B AI products website
+Primary request: create a clear editorial image suggesting English-language assessment and useful feedback.
+Scene/backdrop: a contemporary learning space with a learner speaking an answer into a laptop microphone while reviewing a short written exercise beside the laptop.
+Subject: an adult learner in focused practice, with the act of speaking and learning emphasized.
+Style/medium: premium editorial education photography with subtle photographic illustration polish, natural detail, human and respectful.
+Composition/framing: wide 3:2 composition; hands, laptop and study materials visible, with the person framed from shoulder level rather than a tight face portrait.
+Lighting/mood: soft daylight, encouraging and focused, a real quiet study moment.
+Color palette: clear blue, white and warm neutral accents, with restrained sapphire-blue details inspired by #044eff.
+Materials/textures: paper, matte laptop surface, soft fabric, natural room finishes.
+Constraints: no brand names, logos, readable text, scoring screens, charts, watermark, or claims of a real result. Conceptual artwork only.
+Avoid: exam stress, school-child imagery, staged corporate stock-photo smiles, futuristic holograms, excessive purple or neon.

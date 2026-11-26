@@ -1,0 +1,77 @@
+.invitation-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #071526;
+  color: #fff;
+}
+.invitation-cta-image,
+.invitation-cta-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.invitation-cta-image { z-index: 0; }
+.invitation-cta-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 54%;
+}
+.invitation-cta-overlay {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, #071526f2 0%, #071526db 34%, #07152670 62%, #07152610 100%),
+    linear-gradient(0deg, #071526c4 0%, transparent 32%, #07152644 100%);
+}
+.invitation-cta-content { z-index: 2; }
+.invitation-cta-content .site-eyebrow { color: #78d9ff; }
+.invitation-cta-content .site-eyebrow > span { background: #78d9ff; }
+.invitation-cta-content h2 {
+  max-width: 850px;
+  font-size: clamp(44px, 5.4vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -.055em;
+}
+.invitation-cta-content > p {
+  max-width: 660px;
+  margin-top: 24px;
+  color: #d5e4f5;
+  font-size: clamp(18px, 1.8vw, 23px);
+  line-height: 1.45;
+}
+.invitation-cta-content .site-button { margin-top: 30px; }
+.invitation-cta-note,
+.invitation-cta-credit {
+  position: absolute;
+  z-index: 2;
+  bottom: 28px;
+  color: #d0e0f1;
+  font-size: 11px;
+  letter-spacing: .04em;
+}
+.invitation-cta-note { left: max(24px, calc((100vw - 1280px) / 2)); }
+.invitation-cta-credit { right: max(24px, calc((100vw - 1280px) / 2)); }
+.invitation-cta-credit:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 920px) {
+  .invitation-cta-overlay {
+    background:
+      linear-gradient(90deg, #071526ed 0%, #071526b8 55%, #07152636 100%),
+      linear-gradient(0deg, #071526c4 0%, transparent 45%, #07152644 100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .invitation-cta {
+    block-size: auto;
+    max-block-size: none;
+    overflow-y: visible;
+    padding-bottom: 108px !important;
+  }
+  .invitation-cta-content h2 { font-size: clamp(42px, 11vw, 54px); }
+  .invitation-cta-content > p { font-size: 17px; }
+  .invitation-cta-note { bottom: 54px; left: 24px; right: 24px; }
+  .invitation-cta-credit { bottom: 28px; left: 24px; right: auto; }
+}

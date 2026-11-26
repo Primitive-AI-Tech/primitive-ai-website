@@ -1,16 +1,21 @@
 import { Button, Eyebrow } from "@/components/marketing/primitives";
 import { useCopy } from "@/i18n/useCopy";
 
-export function HomeInvitation({ id }: { id: string }) {
+export function InvitationCTA({ id, to }: { id?: string; to?: string }) {
   const t = useCopy();
 
   return (
-    <section className="home-invitation dark-section" id={id}>
-      <div className="home-invitation-image" aria-hidden="true">
-        <img src="/images/earth-sunrise-iss070-full.jpg" alt="" />
+    <section className="invitation-cta dark-section" id={id}>
+      <div className="invitation-cta-image" aria-hidden="true">
+        <img
+          src="/images/earth-sunrise-iss070-full.jpg"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
       </div>
-      <div className="home-invitation-overlay" aria-hidden="true" />
-      <div className="site-container relative-content home-invitation-content">
+      <div className="invitation-cta-overlay" aria-hidden="true" />
+      <div className="site-container relative-content invitation-cta-content">
         <Eyebrow>{t("Your next step")}</Eyebrow>
         <h2>{t("The next advantage is how your organization works.")}</h2>
         <p>
@@ -18,13 +23,13 @@ export function HomeInvitation({ id }: { id: string }) {
             "Where could your people spend less time coordinating—and more time moving the work forward?",
           )}
         </p>
-        <Button arrow>{t("Talk to our team")}</Button>
+        <Button to={to} arrow>{t("Talk to our team")}</Button>
       </div>
-      <p className="home-invitation-note">
+      <p className="invitation-cta-note">
         {t("Start with one workflow. See what becomes possible.")}
       </p>
       <a
-        className="home-invitation-credit"
+        className="invitation-cta-credit"
         href="https://science.nasa.gov/earth/earth-observatory/sunrise-from-the-station-152259/"
         target="_blank"
         rel="noreferrer"

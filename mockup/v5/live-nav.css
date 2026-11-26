@@ -1,0 +1,808 @@
+
+:where(body[data-v5-preview]) :is(#v5-live-nav, .mobile-menu, .language-menu) {
+  --blue: #044eff;
+  --blue-hover: #003ed4;
+  --ink: #101a35;
+  --cyan: #0fb4e0;
+  --site-border: #cbdcf0;
+  color: var(--ink);
+  font: 16px/1.5 Inter, system-ui, -apple-system, sans-serif;
+}
+:where(body[data-v5-preview]) :is(#v5-live-nav, .mobile-menu, .language-menu, #v5-live-nav *, .mobile-menu *, .language-menu *) {
+  box-sizing: border-box;
+}
+:where(body[data-v5-preview]) :where(#v5-live-nav, .mobile-menu, .language-menu) :where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+:where(body[data-v5-preview]) :where(#v5-live-nav, .mobile-menu, .language-menu) :where(button) {
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+:where(body[data-v5-preview]) :where(#v5-live-nav, .mobile-menu, .language-menu) :where(svg) {
+  display: block;
+  vertical-align: middle;
+}
+:where(body[data-v5-preview]) :where(#v5-live-nav, .mobile-menu, .language-menu) :focus-visible {
+  outline: 2px solid #044eff;
+  outline-offset: 4px;
+}
+:where(body[data-v5-preview]) .mobile-menu ul { margin: 0; list-style: none; }
+:where(body[data-v5-preview]) .mobile-menu .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+/*
+Add the correct font size in all browsers.
+*/
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+/*
+Reset default styling for dialogs.
+*/
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+/*
+Set the default cursor for buttons.
+*/
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+/* ── Layout helpers ── */
+/* ── Typography ── */
+/* ── Buttons ── */
+/* ── Glass & Surface panels (from KHub) ── */
+/* ── Hover effects ── */
+/* ── Glow effects ── */
+/* ── Hero section ── */
+/* ── Dot background ── */
+/* ── Reveal animations (scroll-triggered) ── */
+/* ── Stagger children ── */
+/* ── Counter animation ── */
+/* ── Marquee ── */
+/* ── Shimmer ── */
+/* ── Float ── */
+/* ── Pulse glow ── */
+/* ── Gradient border animated ── */
+/* ── Stats card ── */
+/* ── Trust badge ── */
+/* ── Section divider ── */
+/* ── Animated arrow ── */
+
+/* ── Standalone keyframes ── */
+/* Ordered to preserve the current design cascade. */
+/* Shared brand and semantic tokens. The effective current palette is preserved. */
+/* Primitive AI — selected mockup implementation. Primary color: #044EFF. */
+:where(body[data-v5-preview]) .site-header .site-button, :where(body[data-v5-preview]) .mobile-menu .site-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--blue);
+  color: white;
+  border: 1px solid #356fff;
+  border-radius: 100px;
+  padding: 14px 27px;
+  font-size: 17px;
+  font-weight: 650;
+  min-height: 50px;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 2px 9px #044eff12;
+  transition:
+    background 0.18s,
+    box-shadow 0.18s,
+    transform 0.18s;
+}
+:where(body[data-v5-preview]) .site-header .site-button:hover, :where(body[data-v5-preview]) .mobile-menu .site-button:hover {
+  background: var(--blue-hover);
+  box-shadow: 0 4px 22px #044eff36;
+  transform: translateY(-1px);
+}
+:where(body[data-v5-preview]) .site-header .site-button.secondary, :where(body[data-v5-preview]) .mobile-menu .site-button.secondary {
+  background: transparent;
+  border-color: #daedff;
+  color: white;
+  box-shadow: inset 0 0 0 1px #a4d0f033;
+}
+:where(body[data-v5-preview]) .site-header .site-button.secondary:hover, :where(body[data-v5-preview]) .mobile-menu .site-button.secondary:hover {
+  background: #ffffff10;
+}
+:where(body[data-v5-preview]) .site-header .site-button.light-button, :where(body[data-v5-preview]) .mobile-menu .site-button.light-button {
+  background: #f5faff;
+  color: var(--ink);
+  border-color: #d9e6f5;
+}
+/* Navigation */
+:where(body[data-v5-preview]) .site-header {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+:where(body[data-v5-preview]) .nav-capsule {
+  pointer-events: auto;
+  width: calc(100% - 64px);
+  max-width: 1380px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 86px;
+  padding: 8px 18px 8px 26px;
+  border: 1px solid #ffffff9c;
+  border-radius: 44px;
+  background: #edf7fff2;
+  box-shadow: 0 8px 30px #001a3c0b;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+:where(body[data-v5-preview]) .site-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 225px;
+  padding-right: 23px;
+  position: relative;
+}
+:where(body[data-v5-preview]) .site-brand:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  border-right: 1px solid #8cbee3;
+}
+:where(body[data-v5-preview]) .site-brand img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+:where(body[data-v5-preview]) .desktop-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+}
+:where(body[data-v5-preview]) .desktop-navigation > a {
+  font-size: 14px;
+  font-weight: 650;
+  white-space: nowrap;
+  padding: 12px 12px;
+  border-radius: 99px;
+  transition:
+    background 0.18s,
+    color 0.18s;
+}
+:where(body[data-v5-preview]) .desktop-navigation > a:hover {
+  background: #044eff10;
+  color: var(--blue);
+}
+:where(body[data-v5-preview]) .desktop-navigation > a.active {
+  background: var(--blue);
+  color: white;
+}
+:where(body[data-v5-preview]) .desktop-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+:where(body[data-v5-preview]) .language-trigger {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #14214b;
+  background: transparent;
+  border: 0;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+:where(body[data-v5-preview]) .desktop-nav-actions .site-button {
+  padding: 12px 20px;
+  min-height: 44px;
+  font-size: 14px;
+}
+:where(body[data-v5-preview]) .language-menu {
+  z-index: 220;
+  min-width: 190px;
+  padding: 7px;
+  border: 1px solid var(--site-border);
+  border-radius: 17px;
+  background: #f6fbff;
+  box-shadow: 0 14px 48px #07152626;
+}
+:where(body[data-v5-preview]) .language-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+:where(body[data-v5-preview]) .language-item[data-highlighted] {
+  color: var(--blue);
+  background: #e0ecff;
+}
+:where(body[data-v5-preview]) .mobile-menu-trigger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+}
+:where(body[data-v5-preview]) .mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: #07152670;
+  z-index: 190;
+}
+:where(body[data-v5-preview]) .mobile-menu {
+  position: fixed;
+  z-index: 200;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(110deg, #f5faff, #edf8ff);
+  padding: 12px 24px 24px;
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
+  color: var(--ink);
+}
+:where(body[data-v5-preview]) .mobile-menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #d7e4f2;
+  min-height: 80px;
+}
+:where(body[data-v5-preview]) .mobile-menu-top .site-brand {
+  width: 210px;
+  padding: 0;
+}
+:where(body[data-v5-preview]) .mobile-menu-top .site-brand:after {
+  display: none;
+}
+:where(body[data-v5-preview]) .mobile-menu-close {
+  border: 0;
+  background: transparent;
+  padding: 12px;
+  color: var(--ink);
+}
+:where(body[data-v5-preview]) .mobile-menu-close svg {
+  width: 28px;
+  height: 28px;
+}
+:where(body[data-v5-preview]) .mobile-menu-scroll {
+  overflow-y: auto;
+  min-height: 0;
+  padding: 10px 0 20px;
+  flex: 1;
+}
+:where(body[data-v5-preview]) .mobile-menu-scroll nav > a,
+:where(body[data-v5-preview]) .mobile-nav-section > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--site-border);
+  font-size: 21px;
+  font-weight: 650;
+}
+:where(body[data-v5-preview]) .mobile-menu-scroll nav > a.active {
+  color: var(--blue);
+}
+:where(body[data-v5-preview]) .mobile-menu-scroll svg {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+}
+:where(body[data-v5-preview]) .mobile-nav-section {
+  padding-top: 24px;
+}
+:where(body[data-v5-preview]) .mobile-nav-section > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+:where(body[data-v5-preview]) .mobile-nav-section > span:before {
+  content: "";
+  width: 28px;
+  height: 3px;
+  background: var(--cyan);
+  border-radius: 3px;
+}
+:where(body[data-v5-preview]) .mobile-nav-section > a {
+  font-size: 18px;
+  font-weight: 500;
+  padding-block: 14px;
+}
+:where(body[data-v5-preview]) .mobile-language-trigger {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 15px 12px;
+  border: 1px solid var(--site-border);
+  border-radius: 13px;
+  background: #ffffff70;
+  text-align: left;
+  font-size: 18px;
+}
+:where(body[data-v5-preview]) .mobile-language-trigger svg:last-child {
+  margin-left: auto;
+}
+:where(body[data-v5-preview]) .mobile-language-list {
+  padding: 8px;
+  background: #fff6;
+  border: 1px solid var(--site-border);
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+}
+:where(body[data-v5-preview]) .mobile-language-list button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 11px 18px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+:where(body[data-v5-preview]) .mobile-language-list button[aria-pressed="true"] {
+  background: #d7e9ff;
+  border-radius: 8px;
+  font-weight: 700;
+}
+:where(body[data-v5-preview]) .mobile-menu-bottom {
+  padding-top: 14px;
+}
+:where(body[data-v5-preview]) .mobile-menu-bottom > .site-button {
+  width: 100%;
+}
+:where(body[data-v5-preview]) .mobile-menu-bottom > div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+/* Homepage opening and diagrams */
+/* Homepage problem */
+/* Value / effort */
+/* Use cases */
+/* Delivery, platform and company homepage sections */
+/* Footer */
+/* Page mastheads / platform */
+/* Business value page */
+/* Full use-case page */
+/* How we work */
+/* Trust */
+/* Company */
+/* Contact */
+/* Tablet */
+@media (max-width: 1250px) {
+  :where(body[data-v5-preview]) .site-brand {
+    width: 195px;
+    padding-right: 18px;
+  }
+  :where(body[data-v5-preview]) .nav-capsule {
+    gap: 10px;
+    padding-inline: 20px;
+  }
+  :where(body[data-v5-preview]) .desktop-navigation {
+    gap: 0;
+  }
+  :where(body[data-v5-preview]) .desktop-navigation > a {
+    padding-inline: 10px;
+    font-size: 13px;
+  }
+  :where(body[data-v5-preview]) .desktop-nav-actions {
+    gap: 12px;
+  }
+  :where(body[data-v5-preview]) .desktop-nav-actions .site-button {
+    font-size: 13px;
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 1279px) {
+  :where(body[data-v5-preview]) .desktop-navigation,
+  :where(body[data-v5-preview]) .desktop-nav-actions {
+    display: none;
+  }
+  :where(body[data-v5-preview]) .mobile-menu-trigger {
+    display: flex;
+  }
+  :where(body[data-v5-preview]) .nav-capsule {
+    max-width: 1000px;
+    min-height: 78px;
+    padding: 5px 20px;
+  }
+  :where(body[data-v5-preview]) .site-brand {
+    width: 210px;
+    border: 0;
+    padding-right: 0;
+  }
+  :where(body[data-v5-preview]) .site-brand:after {
+    display: none;
+  }
+  :where(body[data-v5-preview]) .site-header {
+    top: 18px;
+  }
+}
+/* Mobile: reflow decisions, never scale a desktop screenshot */
+@media (max-width: 767px) {
+  :where(body[data-v5-preview]) .site-header {
+    top: 10px;
+  }
+  :where(body[data-v5-preview]) .nav-capsule {
+    width: calc(100% - 24px);
+    min-height: 65px;
+    padding: 3px 14px;
+    border-radius: 27px;
+  }
+  :where(body[data-v5-preview]) .site-brand {
+    width: 190px;
+  }
+  :where(body[data-v5-preview]) .mobile-menu-trigger svg {
+    height: 26px;
+    width: 26px;
+  }
+  :where(body[data-v5-preview]) .mobile-menu {
+    padding: 10px 22px 22px;
+  }
+  :where(body[data-v5-preview]) .mobile-menu-top {
+    min-height: 70px;
+  }
+  :where(body[data-v5-preview]) .mobile-menu-top .site-brand {
+    width: 205px;
+  }
+  :where(body[data-v5-preview]) .mobile-menu-scroll nav > a {
+    font-size: 21px;
+    padding-block: 18px;
+  }
+  :where(body[data-v5-preview]) .site-header .site-button, :where(body[data-v5-preview]) .mobile-menu .site-button {
+    font-size: 16px;
+    min-height: 48px;
+    padding: 13px 24px;
+  }
+}
+@media (max-width: 360px) {
+  :where(body[data-v5-preview]) .site-brand {
+    width: 173px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :where(body[data-v5-preview]) .site-header .site-button:hover, :where(body[data-v5-preview]) .mobile-menu .site-button:hover {
+    transform: none;
+  }
+}
+/* Intrinsic content must not collapse the diagram at intermediate widths. */
+/* Longer localized copy wraps without reducing the size of controls. */
+body[data-v5-nav-language="vi"] .desktop-navigation > a {
+  font-size: 12px;
+  padding-inline: 10px;
+}
+/* Responsive, scroll-led presentation layer. Native browser scrolling owns input. */
+:where(body[data-v5-preview]) .site-header .site-button, :where(body[data-v5-preview]) .mobile-menu .site-button {
+  white-space: normal;
+  text-align: center;
+}
+:where(body[data-v5-preview]) .site-header {
+  top: 16px;
+}
+:where(body[data-v5-preview]) .nav-capsule {
+  min-height: 76px;
+  padding-block: 6px;
+}
+:where(body[data-v5-preview]) .site-brand {
+  width: 205px;
+}
+:where(body[data-v5-preview]) .desktop-navigation > a {
+  font-size: 13px;
+  padding-inline: 10px;
+}
+:where(body[data-v5-preview]) .desktop-nav-actions {
+  gap: 12px;
+}
+/* Homepage chapters use fixed viewport panels; overflowing content stays reachable inside. */
+/* The homepage progress indicator stays quiet at the top edge. */
+/* Entrances are progressive enhancement. Without JavaScript, everything is visible. */
+:where(body[data-v5-preview]) .site-header .site-button > svg,
+:where(body[data-v5-preview]) .mobile-menu .site-button > svg {
+  transition: transform 0.25s;
+}
+:where(body[data-v5-preview]) .site-header .site-button:hover > svg,
+:where(body[data-v5-preview]) .mobile-menu .site-button:hover > svg {
+  transform: translateX(4px);
+}
+/* Shared small-screen and reduced-motion behavior. */
+@media (max-width: 599px) {
+  :where(body[data-v5-preview]) .mobile-menu-scroll nav > a {
+    font-size: 19px;
+  }
+}
+/* One responsive layout contract for the landing page; theme and motion live in experience.css. */
+/* Problems and value: the grid follows the minimum readable card width. */
+/* Economics: a real table remains readable; the result moves below it on smaller screens. */
+/* Use-case narrative and example stay together, without squeezing either column. */
+/* Delivery cards and the working brief reflow independently. */
+/* Architecture labels never drop below 14 px or split words to force a fit. */
+/* The company story moves from operating experience to today’s shared platform. */
+/* Shared header: a useful contact action stays visible on tablets. */
+:where(body[data-v5-preview]) .site-header {
+  top: 12px;
+}
+:where(body[data-v5-preview]) .nav-capsule {
+  width: calc(100% - 24px);
+  max-width: 1380px;
+  min-height: 70px;
+  padding: 5px 15px;
+  gap: 12px;
+}
+:where(body[data-v5-preview]) .site-brand {
+  width: 164px;
+  min-height: 0;
+  padding-right: 0;
+}
+:where(body[data-v5-preview]) .site-brand::after {
+  display: none;
+}
+:where(body[data-v5-preview]) .desktop-navigation,
+:where(body[data-v5-preview]) .desktop-nav-actions {
+  display: none;
+}
+:where(body[data-v5-preview]) .mobile-menu-trigger {
+  display: flex;
+  flex-shrink: 0;
+}
+@media (min-width: 600px) {
+  :where(body[data-v5-preview]) .nav-capsule {
+    width: calc(100% - 48px);
+    min-height: 74px;
+    padding: 5px 20px;
+  }
+  :where(body[data-v5-preview]) .site-brand {
+    width: 180px;
+  }
+  :where(body[data-v5-preview]) .desktop-nav-actions {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+  }
+  :where(body[data-v5-preview]) .desktop-nav-actions .language-trigger {
+    display: none;
+  }
+  :where(body[data-v5-preview]) .desktop-nav-actions .nav-contact {
+    font-size: 14px;
+    min-height: 44px;
+    padding-inline: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  :where(body[data-v5-preview]) .site-header {
+    top: 16px;
+  }
+  :where(body[data-v5-preview]) .nav-capsule {
+    min-height: 76px;
+    gap: 14px;
+    padding: 5px 18px 5px 24px;
+  }
+  :where(body[data-v5-preview]) .site-brand {
+    width: 190px;
+    padding-right: 20px;
+  }
+  :where(body[data-v5-preview]) .site-brand::after {
+    display: block;
+  }
+  :where(body[data-v5-preview]) .desktop-navigation {
+    display: flex;
+    gap: 4px;
+  }
+  :where(body[data-v5-preview]) .desktop-navigation > a {
+    font-size: 13px;
+    padding: 12px 9px;
+  }
+  :where(body[data-v5-preview]) .desktop-nav-actions {
+    margin: 0;
+  }
+  :where(body[data-v5-preview]) .desktop-nav-actions .language-trigger {
+    display: flex;
+  }
+  :where(body[data-v5-preview]) .mobile-menu-trigger {
+    display: none;
+  }
+}
+@media (max-height: 480px) and (max-width: 1199px) {
+  :where(body[data-v5-preview]) .site-header {
+    top: 8px;
+  }
+  :where(body[data-v5-preview]) .nav-capsule {
+    min-height: 56px;
+    padding-block: 3px;
+  }
+  :where(body[data-v5-preview]) .site-brand {
+    width: 140px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1349px) {
+  body[data-v5-nav-language="vi"] .desktop-navigation,
+  body[data-v5-nav-language="vi"] .desktop-nav-actions .language-trigger {
+    display: none;
+  }
+  body[data-v5-nav-language="vi"] .desktop-nav-actions {
+    margin-left: auto;
+  }
+  body[data-v5-nav-language="vi"] .mobile-menu-trigger {
+    display: flex;
+  }
+}
+/* Content-specific minimum widths keep the six stages and three problem cards balanced. */
+:where(body[data-v5-preview]) .desktop-navigation > a {
+  min-height: 44px;
+  align-items: center;
+}
+/* Short landscape screens need a fluid headline, rather than portrait line breaks. */
+/* Practical applications remain as direct paths into a workflow inquiry. */
+/* Tablet and mobile: centre the hero copy in the viewport instead of pinning it to the top,
+   so the leftover height is shared above and below. "safe" keeps the top reachable when the
+   content is taller than the screen (the section scrolls). */
+/* Section 02: the repeated coordination between disconnected business systems. */
+/* Homepage section 04 follows the v4 effort model: a concrete question and a comparable example. */
+/* Homepage section 10: plain-language examples for custom AI work. */
+/* Homepage section 11: retain the editorial layout while the archive has no posts. */
+/* Visual scenes paired with page narratives. All artwork is illustrative and repo native. */

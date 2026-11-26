@@ -697,24 +697,6 @@ main[data-page="/"] .hero-grid {
 .story-founded { justify-self: start; padding: 9px 14px; border-radius: 24px; background: #e2eeff; color: #174a91; font-size: 13px; font-weight: 750; }
 .story-footer p { color: #174a91; font-size: 15px; font-weight: 750; line-height: 1.4; text-align: center; }
 .story-footer .text-link { flex: 0 0 auto; color: #526783; font-size: 14px; }
-main[data-page="/"] > .closing-cta h2 {
-  font-size: clamp(36px, 5vw, 76px);
-  line-height: 1.08;
-  max-width: 1100px;
-}
-main[data-page="/"] > .closing-cta p {
-  font-size: clamp(19px, 2vw, 28px);
-  line-height: 1.4;
-  margin-top: 26px;
-}
-main[data-page="/"] > .closing-cta > .site-container {
-  gap: 32px;
-}
-main[data-page="/"] > .closing-cta .site-button {
-  min-height: 52px;
-  font-size: 18px;
-  width: 100%;
-}
 
 /* Shared header: a useful contact action stays visible on tablets. */
 .site-header {
@@ -808,9 +790,6 @@ main[data-page="/"] > .closing-cta .site-button {
   }
   .branch-line.lower {
     width: 76%;
-  }
-  main[data-page="/"] > .closing-cta .site-button {
-    width: auto;
   }
 }
 @media (min-width: 600px) {
@@ -2332,79 +2311,15 @@ main[data-page="/"] > .economics-story {
 }
 .home-updates-empty a svg { width: 17px; height: 17px; }
 
-/* Homepage section 12: actual Earth sunrise photograph behind the invitation. */
-main[data-page="/"] > .home-invitation {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background: #071526;
-  color: #fff;
-}
-.home-invitation-image,
-.home-invitation-overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-.home-invitation-image { z-index: 0; }
-.home-invitation-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 54%;
-}
-.home-invitation-overlay {
-  z-index: 1;
-  background:
-    linear-gradient(90deg, #071526f2 0%, #071526db 34%, #07152670 62%, #07152610 100%),
-    linear-gradient(0deg, #071526c4 0%, transparent 32%, #07152644 100%);
-}
-.home-invitation-content { z-index: 2; }
-.home-invitation-content .site-eyebrow { color: #78d9ff; }
-.home-invitation-content .site-eyebrow > span { background: #78d9ff; }
-.home-invitation-content h2 {
-  max-width: 850px;
-  font-size: clamp(44px, 5.4vw, 76px);
-  line-height: 1.05;
-  letter-spacing: -.055em;
-}
-.home-invitation-content > p {
-  max-width: 660px;
-  margin-top: 24px;
-  color: #d5e4f5;
-  font-size: clamp(18px, 1.8vw, 23px);
-  line-height: 1.45;
-}
-.home-invitation-content .site-button { margin-top: 30px; }
-.home-invitation-note,
-.home-invitation-credit {
-  position: absolute;
-  z-index: 2;
-  bottom: 28px;
-  color: #d0e0f1;
-  font-size: 11px;
-  letter-spacing: .04em;
-}
-.home-invitation-note { left: max(24px, calc((100vw - 1280px) / 2)); }
-.home-invitation-credit { right: max(24px, calc((100vw - 1280px) / 2)); }
-.home-invitation-credit:hover { text-decoration: underline; text-underline-offset: 3px; }
-
 @media (max-width: 920px) {
   .custom-ai-intro { align-items: flex-start; flex-direction: column; gap: 16px; }
   .custom-ai-intro > p { max-width: 760px; }
   .custom-ai-cases { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .custom-ai-case-copy { min-height: 170px; }
-  .home-invitation-overlay {
-    background:
-      linear-gradient(90deg, #071526ed 0%, #071526b8 55%, #07152636 100%),
-      linear-gradient(0deg, #071526c4 0%, transparent 45%, #07152644 100%);
-  }
 }
 @media (max-width: 600px) {
   main[data-page="/"] > .custom-ai-section,
-  main[data-page="/"] > .home-updates,
-  main[data-page="/"] > .home-invitation {
+  main[data-page="/"] > .home-updates {
     block-size: auto;
     max-block-size: none;
     overflow-y: visible;
@@ -2421,9 +2336,4 @@ main[data-page="/"] > .home-invitation {
   .home-updates-heading .section-title { font-size: clamp(38px, 10vw, 48px); }
   .home-updates-inner > .text-link { justify-self: start; }
   .home-updates-empty { grid-template-columns: 1fr; gap: 16px; margin-top: 0; }
-  .home-invitation { padding-bottom: 108px !important; }
-  .home-invitation-content h2 { font-size: clamp(42px, 11vw, 54px); }
-  .home-invitation-content > p { font-size: 17px; }
-  .home-invitation-note { bottom: 54px; left: 24px; right: 24px; }
-  .home-invitation-credit { bottom: 28px; left: 24px; right: auto; }
 }

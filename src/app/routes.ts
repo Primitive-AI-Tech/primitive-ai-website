@@ -114,6 +114,45 @@ export function getPageMetadata(pathname: string): PageMetadata {
   return pageRoutes.find((page) => page.path === normalized) ?? notFoundPage;
 }
 
+const movedHomeFragments: Readonly<Partial<Record<string, string>>> = {
+  "#applications": "/products#product-applications",
+  "#outbound-research": "/products#outbound-research",
+  "#sales-support": "/products#sales-support",
+  "#knowledge-research": "/products#knowledge-research",
+  "#internal-operations": "/products#internal-operations",
+  "#finance-reconciliation": "/products#finance-reconciliation",
+  "#people-hr": "/products#people-hr",
+  "#documents-legal": "/products#documents-legal",
+  "#economics": "/#business-value",
+  "#platform": "/#architecture",
+  "#story": "/about",
+  "#custom-ai": "/services",
+  "#updates": "/update",
+};
+
+export function movedHomeLocation(hash: string, search: string) {
+  const destination = movedHomeFragments[hash];
+  if (!destination) return undefined;
+  const [pathname, fragment] = destination.split("#");
+  return { pathname, search, hash: fragment ? `#${fragment}` : "" };
+}
+
+const movedProductFragments: Readonly<Partial<Record<string, string>>> = {
+  "#control": "#control",
+  "#controls": "#control",
+  "#product-interface": "#control",
+  "#pricing": "#pricing",
+  "#economics": "#pricing",
+  "#business-value": "#pricing",
+  "#how-we-work": "#how-we-work",
+  "#pilot": "#how-we-work",
+};
+
+export function movedProductLocation(hash: string, search: string) {
+  const destination = movedProductFragments[hash];
+  return destination ? { pathname: "/", search, hash: destination } : undefined;
+}
+
 /** Redirect paths change, while inquiry context and section entry points survive. */
 export function redirectLocation(
   destination: string,
@@ -143,11 +182,8 @@ export function redirectLocation(
   };
   const compatibleHash =
     oldFragments[location.pathname]?.[location.hash] || location.hash;
-  return {
-    pathname: queryIndex < 0 ? route : route.slice(0, queryIndex),
-    search:
-      location.search || (queryIndex < 0 ? "" : route.slice(queryIndex)),
-    // Existing deep links win over the generic chapter target.
-    hash: compatibleHash || destinationHash,
-  };
+  const pathname = queryIndex < 0 ? route : route.slice(0, queryIndex);
+  const search = location.search || (queryIndex < 0 ? "" : route.slice(queryIndex));
+  const hash = compatibleHash || destinationHash;
+  return (pathname === "/" && movedHomeLocation(hash, search)) || { pathname, search, hash };
 }

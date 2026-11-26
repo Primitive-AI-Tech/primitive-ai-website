@@ -1,15 +1,19 @@
 # Core Agentic website mockups
 
-**Latest: [V3 design gallery](v3/index.html)** — extends the current uncommitted blue/navy design with page navigation, broader applications, NEU, the fuller company journey and restored Custom AI Development. [V2](v2/index.html) and the earlier boards below remain historical references.
+**V5 review.** The [Vietnamese landing page](v5/website-review.html) places the product presentation’s story between the current website hero and the Earth sunrise invitation. The [Products preview](v5/products.html) introduces the architecture, applications and configuration. The [Services preview](v5/services.html) covers custom AI capabilities, likely deliverables and the engineering process. [About](v5/about.html) shows the company journey. [Updates](v5/update.html) starts with the Hanoi hackathon. The [Vietnamese](v5/slides-vi.html) and [English](v5/index.html) slide references show the original decks. The [V5 package guide](v5/README.md) lists the sources and handoff notes.
+
+**Current homepage: [V4 visual gallery](v4/index.html)** — the settled twelve-section homepage story. **Current Products page: [Products V1 image board](products/v1/images/products-page-v1.png)** — a separate page concept aligned to the V4 visual system. See the latest [hybrid architecture image](products/v1/images/core-agentic-architecture-v3.png) and [design notes](products/v1/design-notes.md). [V3](v3/index.html) and [V2](v2/index.html) remain historical design references.
 
 **Recommended direction:** primary blue **#044EFF**, midnight navy, white reading surfaces and the original logo's supporting indigo/cyan.
 
-Start with **[the visual review gallery](index.html)**. It opens locally without a build or external dependency. Select any board to view its image and component descriptions; open the image at full size when inspecting text.
+Start with **[the visual review gallery](index.html)** for the original design set. It opens locally without a build or external dependency. The current homepage and Products mockups also open directly from their links above.
 
 ## Review order
 
 | Board | What to review |
 |---|---|
+| V4 | Settled homepage: twelve section images, story sequence and latest visual revisions |
+| Products V1 | `/products`: Core Agentic platform, broad work configurations, separate specialist products and custom-build path |
 | 01 | Homepage opening: headline, connected-work visual, operating problem |
 | 02 | Homepage middle: business value, illustrative economics, use-case selection |
 | 03 | Homepage ending: delivery, platform, company, final invitation and footer |

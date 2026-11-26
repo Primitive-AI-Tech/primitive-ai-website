@@ -1,0 +1,29 @@
+Use case: infographic-diagram
+Asset type: premium 3D system architecture illustration for a website product page
+
+Primary request: Depict the real Core Agentic execution architecture as one coherent, beautiful isometric 3D model. It must communicate clear ownership boundaries and the actual request path, not a generic stack of AI cards.
+
+Scene/backdrop: transparent background, no surrounding page or device mockup.
+
+Subject and structure: A single low, wide, architectural platform in a calm three-quarter isometric view. The central enclosure is the Core Agentic platform, with a thin, softly refractive Liquid Glass canopy and a precise satin titanium chassis. The components feel designed into one physical system. Keep it grounded and compact, with convincing depth and fine joinery; avoid floating cards or disconnected blocks.
+
+Architecture and arrows:
+1. At left, a small user/frontend terminal sends requests into the platform's API.
+2. The API passes admitted work to the Worker.
+3. Inside the Worker chamber, show two adjacent computation modules: the OpenCode agent loop and the structured workflow engine. These are compute engines, not authority boundaries.
+4. Both execution paths pass through one clearly visible Core Executor gateway. It enforces access, validation, approvals, cancellation, idempotency and bounded results.
+5. Beneath these services, integrated into the same chassis, show identity and policy, durable runs, files, and observable execution history.
+6. Outside the Core Agentic enclosure at upper right, show a separate Customer Package module that supplies business instructions, skills, tools and domain contracts to the Worker through a small labeled contract connection.
+7. Outside the enclosure at lower right, show external systems of record (ERP, CRM, databases, files). Connect them only to the Core Executor through a small connector bridge. No direct agent-to-data connection.
+
+Labels printed cleanly on appropriate surfaces, exact spelling only: "CORE AGENTIC", "API", "WORKER", "OpenCode agent loop", "Structured workflow engine", "CORE EXECUTOR", "Identity & policy", "Durable runs · files · history", "Customer package", "Business instructions · skills · tools · domain contracts", "Systems of record", "ERP · CRM · databases · files".
+
+Style: premium Apple Liquid Glass sensibility, expressed with restraint: sparse soft refraction, delicate lensing only along selected glass edges, luminous clarity, quiet depth. Use clear/frosted glass only for the outer canopy and one functional boundary surface. Make internal modules satin silver ceramic and brushed titanium, not glossy glass. One small precise #044EFF blue signal path and a few tiny blue status lights. The overall effect is calm, mature, architectural and engineered, like a refined product reveal.
+
+Lighting and palette: soft studio illumination, deep but subtle cool shadows directly beneath parts, clean silver-gray, milky transparent glass, near-black navy accents, restrained cobalt-blue. High contrast for readable labels.
+
+Composition: wide landscape, centered, ample breathing room, no cropped components. Keep customer package and systems of record clearly outside the central enclosure.
+
+Constraints: Each system component belongs to the described boundary. Arrows must show user -> API -> Worker -> Core Executor -> systems of record; customer package -> Worker via contract. Include no ungoverned route from agents to customer data. Avoid implying the AI model or customer package is a system of record.
+
+Avoid: all-over gloss, chrome, wet plastic, neon glow, cyan bloom, dramatic cyberpunk lighting, glass every block, generic dashboards, cards, floating tiles, network-node web, abstract blobs, logos, extra labels, misspelled text, excessive microcopy, watermark.

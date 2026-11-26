@@ -13,7 +13,7 @@ export default function ApplicationExplorer() {
       </p>
       <ul className="application-grid" aria-label={t("Example work areas")}>
         {applicationAreas.map((area) => (
-          <li key={area.id}>
+          <li id={area.id} key={area.id}>
             <Link className="application-card" to={`/contact?workflow=${area.id}`}>
               <span className="application-card-icon">
                 <area.icon aria-hidden="true" />

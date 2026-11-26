@@ -1,67 +1,384 @@
-.services-hero { padding-bottom: 82px; }
-.services-hero h1 { max-width: 1050px; }
-.services-hero .button-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
-.service-paths,
-.service-capabilities { padding: 72px 0; }
-.service-paths { background: linear-gradient(145deg, #f7fbff, #eaf4ff); }
-.service-path-grid {
+:where(main[data-page="/services"]) .services-hero .v5-hero-layout {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
-  margin-top: 30px;
+  grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 72px);
 }
-.service-path-grid article { position: relative; padding: 28px; border-radius: 22px; background: #fff; }
-.service-path-grid h3 { margin: 10px 0 12px; font-size: 28px; }
-.service-path-grid p { max-width: 620px; margin-bottom: 22px; font-size: 17px; line-height: 1.5; color: var(--muted-ink); }
-.service-path-number { color: var(--blue); font-size: 13px; font-weight: 800; letter-spacing: .08em; }
-.service-path-featured { border: 1px solid #6ea2ff; box-shadow: 0 15px 40px #044eff12; }
-.service-capabilities { background: #fff; }
-.service-capability-grid {
+
+:where(main[data-page="/services"]) .services-hero {
+  --v5-hero-title: clamp(42px, 4.85vw, 70px);
+  --v5-hero-description-width: 44ch;
+}
+
+:where(main[data-page="/services"]) .services-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: clamp(16px, 2.15vw, 29px);
+}
+
+:where(main[data-page="/services"]) .services-actions .site-button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border: 1px solid #c8e3ff8c;
+  border-radius: 99px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+:where(main[data-page="/services"]) .services-actions .site-button.secondary:hover {
+  border-color: #c7edff;
+  background: #1a406b;
+}
+
+:where(main[data-page="/services"]) .services-actions .site-button:not(.secondary) {
+  border-color: var(--page-blue);
+  background: var(--page-blue);
+}
+
+:where(main[data-page="/services"]) .services-actions .site-button:not(.secondary):hover {
+  border-color: #003ed4;
+  background: #003ed4;
+}
+
+:where(main[data-page="/services"]) .services-project-brief {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #82bdf296;
+  border-radius: clamp(17px, 2.4vw, 27px);
+  background: #0b2441;
+  box-shadow: 0 20px 62px #020c229c, 0 0 21px #044eff44;
+}
+
+:where(main[data-page="/services"]) .services-project-brief > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 46%;
+}
+
+:where(main[data-page="/services"]) .services-project-brief figcaption {
+  padding: clamp(13px, 1.85vw, 24px);
+  border-top: 1px solid #82bdf253;
+  background: linear-gradient(120deg, #153452, #0a203b);
+}
+
+:where(main[data-page="/services"]) .services-project-brief figcaption > strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: clamp(17px, 1.7vw, 23px);
+  font-weight: 750;
+  letter-spacing: -.025em;
+}
+
+:where(main[data-page="/services"]) .services-brief-items {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 32px;
+  gap: 7px;
+  padding: 0;
+  list-style: none;
 }
-.service-capability-card { position: relative; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; padding: 24px; border-radius: 21px; background: #f9fbff; }
-.service-capability-card .icon-tile { width: 54px; height: 54px; margin-bottom: 19px; color: var(--blue); background: #e7f1ff; }
-.service-capability-index { position: absolute; top: 28px; right: 24px; color: #8ca7cc; font-size: 13px; font-weight: 800; }
-.service-capability-card h3 { min-height: 2.3em; margin-bottom: 11px; font-size: 23px; line-height: 1.15; }
-.service-capability-card > p { flex: 1; margin-bottom: 20px; color: var(--muted-ink); font-size: 15px; line-height: 1.5; }
-.service-capability-card > div:not(.icon-tile) { display: grid; gap: 6px; margin: 0 0 20px; padding: 14px; border-radius: 14px; background: #edf5ff; font-size: 14px; line-height: 1.45; }
-.service-capability-card > div strong { color: #174584; font-size: 12px; text-transform: uppercase; letter-spacing: .055em; }
-.service-capability-card .text-link { font-size: 14px; }
-.service-process { padding: 72px 0; color: white; background: linear-gradient(130deg, #071526, #0b2f5b 70%, #08214c); }
-.service-process .site-eyebrow { color: #c0d9f4; }
-.service-process .section-title { max-width: 950px; }
-.service-process-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin: 32px 0 0; padding: 0; list-style: none; }
-.service-process-list li { min-width: 0; padding: 22px 18px; border: 1px solid #a9cff22a; border-radius: 19px; background: #ffffff0b; }
-.service-process-list li > span { color: #7daeff; font-size: 26px; font-weight: 800; }
-.service-process-list h3 { margin: 15px 0 10px; font-size: 20px; }
-.service-process-list p { color: #c0d2e5; font-size: 14px; line-height: 1.5; }
-.service-process-note { margin-top: 24px; color: #bed1e7; font-size: 14px; }
-.service-contact-band { padding: 62px 0; background: #edf5ff; }
-.service-contact-content { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
-.service-contact-content .section-title { max-width: 850px; }
-.service-contact-content .site-button { flex: 0 0 auto; }
-.service-contact-band + .closing-cta > .site-container { flex-direction: row; justify-content: space-between; text-align: left; gap: 45px; }
-.service-contact-band + .closing-cta h2 { max-width: 800px; font-size: clamp(34px, 4.4vw, 54px); }
 
-@media (max-width: 980px) {
-  .service-capability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .service-process-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+:where(main[data-page="/services"]) .services-brief-items li {
+  display: grid;
+  grid-template-columns: 19px minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  min-height: 49px;
+  padding: 6px 7px;
+  border: 1px solid #a4d3ff42;
+  border-radius: 9px;
+  background: #a6d7ff11;
+  color: #edf6ff;
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 650;
+  line-height: 1.3;
 }
-@media (max-width: 650px) {
-  .services-hero { padding-bottom: 56px; }
-  .service-paths,
-  .service-capabilities,
-  .service-process { padding: 52px 0; }
-  .service-path-grid,
-  .service-capability-grid { grid-template-columns: 1fr; gap: 14px; }
-  .service-capability-card h3 { min-height: 0; }
-  .service-process-list { grid-template-columns: 1fr; gap: 10px; }
-  .service-process-list li { display: grid; grid-template-columns: 42px 1fr; column-gap: 12px; align-items: start; padding: 16px; }
-  .service-process-list li > span { grid-row: span 2; font-size: 20px; }
-  .service-process-list h3 { margin: 0 0 5px; }
-  .service-contact-content,
-  .service-contact-band + .closing-cta > .site-container { align-items: flex-start; flex-direction: column; }
+
+:where(main[data-page="/services"]) .services-brief-items svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: #a5e6fd;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.experience-page[data-page="/services"] > .services-paths {
+  align-content: safe center;
+  background: var(--page-light-glow);
+}
+
+:where(main[data-page="/services"]) .services-path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 24px);
+}
+
+:where(main[data-page="/services"]) .services-path-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: clamp(18px, 3vw, 36px);
+  border: 1px solid var(--page-border);
+  border-radius: 19px;
+  background: #fcfeff;
+}
+
+:where(main[data-page="/services"]) .services-path-card .chapter-icon {
+  background: #e3efff;
+}
+
+:where(main[data-page="/services"]) .services-path-card h3 {
+  margin-top: 13px;
+  font-size: clamp(22px, 2.7vw, 36px);
+  text-wrap: balance;
+}
+
+:where(main[data-page="/services"]) .services-path-card p {
+  max-width: 49ch;
+  margin-top: 8px;
+  color: var(--page-muted);
+}
+
+:where(main[data-page="/services"]) .services-path-card .text-link {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+:where(main[data-page="/services"]) .services-path-featured {
+  border-color: #527fc2;
+  background: linear-gradient(140deg, #173b6c, #0b2344);
+  color: #f6fbff;
+}
+
+:where(main[data-page="/services"]) .services-path-featured p {
+  color: #d4e5f8;
+}
+
+:where(main[data-page="/services"]) .services-path-featured .text-link {
+  color: #a8e3ff;
+}
+
+:where(main[data-page="/services"]) .services-path-featured :focus-visible {
+  outline-color: #8bdcff;
+}
+
+.experience-page[data-page="/services"] > .services-capabilities {
+  align-content: safe center;
+  background: linear-gradient(130deg, #f7faf8, #e9f5ef);
+}
+
+:where(main[data-page="/services"]) .services-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--v5-card-gap);
+}
+
+:where(main[data-page="/services"]) .services-capability-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(13px, 1.7vw, 22px);
+  border: 1px solid var(--deck-line);
+  border-radius: 15px;
+  background: var(--deck-white);
+  color: var(--deck-ink);
+}
+
+:where(main[data-page="/services"]) .services-capability-card h3 {
+  margin-top: 10px;
+  font-size: clamp(18px, 1.65vw, 23px);
+}
+
+:where(main[data-page="/services"]) .services-capability-card p {
+  margin: 5px 0 13px;
+  color: var(--deck-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+:where(main[data-page="/services"]) .services-deliverable {
+  min-block-size: 71px;
+  margin-top: auto;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--deck-sage);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+:where(main[data-page="/services"]) .services-deliverable dt {
+  color: var(--deck-green);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+:where(main[data-page="/services"]) .services-deliverable dd {
+  margin-top: 2px;
+}
+
+.experience-page[data-page="/services"] > .services-process {
+  align-content: safe center;
+  background: var(--page-dark);
+}
+
+:where(main[data-page="/services"]) .services-process-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--v5-card-gap);
+  padding: 0;
+  list-style: none;
+}
+
+:where(main[data-page="/services"]) .services-process-list::before {
+  position: absolute;
+  top: 21px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #8be1f9dd, #4c97d800);
+  content: "";
+}
+
+:where(main[data-page="/services"]) .services-process-list li {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 11px;
+}
+
+:where(main[data-page="/services"]) .services-process-list .chapter-icon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #87d6ff;
+  background: #0e3357;
+  box-shadow: 0 0 0 4px #102c4a;
+}
+
+:where(main[data-page="/services"]) .services-process-list .chapter-icon img {
+  filter: brightness(0) saturate(100%) invert(86%) sepia(20%) saturate(778%) hue-rotate(161deg);
+}
+
+:where(main[data-page="/services"]) .services-process-list h3 {
+  font-size: clamp(17px, 1.5vw, 22px);
+}
+
+:where(main[data-page="/services"]) .services-process-list p {
+  margin-top: 5px;
+  color: #c6dcf2;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+:where(main[data-page="/services"]) .services-process-note {
+  margin-top: clamp(18px, 3vw, 34px);
+  color: #c6dcf2;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  :where(main[data-page="/services"]) .services-capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  :where(main[data-page="/services"]) .services-hero .v5-hero-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :where(main[data-page="/services"]) .services-project-brief {
+    width: min(100%, 650px);
+  }
+
+  :where(main[data-page="/services"]) .services-project-brief > img {
+    height: clamp(158px, 36vw, 240px);
+  }
+}
+
+@media (max-width: 680px) {
+  :where(main[data-page="/services"]) .services-hero {
+    --v5-hero-title: clamp(36px, 9vw, 54px);
+  }
+
+  :where(main[data-page="/services"]) .services-hero {
+    --v5-hero-description-gap: 12px;
+  }
+
+  :where(main[data-page="/services"]) .services-path-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :where(main[data-page="/services"]) .services-process-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :where(main[data-page="/services"]) .services-process-list::before {
+    inset: 0 auto 0 21px;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(#8be1f9dd, #4c97d800);
+  }
+
+  :where(main[data-page="/services"]) .services-process-list li {
+    grid-template-columns: 42px minmax(0, 1fr);
+    align-items: start;
+    gap: 13px;
+  }
+
+  :where(main[data-page="/services"]) .services-process-list li > div {
+    padding-block: 1px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  :where(main[data-page="/services"]) .services-hero .v5-hero-layout {
+    gap: 16px;
+  }
+
+  :where(main[data-page="/services"]) .services-actions .site-button {
+    flex: 1 1 auto;
+    padding-inline: 11px;
+  }
+
+  :where(main[data-page="/services"]) .services-project-brief > img {
+    height: auto;
+    aspect-ratio: 2.05;
+    object-position: center 54%;
+  }
+
+  :where(main[data-page="/services"]) .services-capability-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 480px), (min-width: 761px) and (max-width: 960px) {
+  :where(main[data-page="/services"]) .services-brief-items li {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+  }
+}
+
+@media (max-height: 480px) and (min-width: 720px) and (max-width: 900px) {
+  :where(main[data-page="/services"]) .services-hero .v5-hero-layout {
+    grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+    gap: 18px;
+  }
+
+  :where(main[data-page="/services"]) .services-hero {
+    --v5-hero-title: clamp(32px, 4.6vw, 44px);
+  }
 }

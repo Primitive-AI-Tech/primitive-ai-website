@@ -1,0 +1,366 @@
+.v5-architecture {
+  --diagram-ink: #102925;
+  --diagram-card: #173831;
+  --diagram-sage: #eaf4ec;
+  --diagram-icon: #ddefe4;
+  --diagram-border: #bed7c9;
+  --diagram-dark-border: #35564e;
+  --diagram-muted: #3e5a53;
+  --diagram-dark-copy: #c0d7cf;
+  --diagram-mint: #a4e7c9;
+  --diagram-wire: #629586;
+}
+
+.v5-architecture .v5-integration {
+  background: var(--page-light, linear-gradient(112deg, #f8fbff 0%, #eef9ff 55%, #f6faff 100%));
+  color: var(--page-ink, #101a35);
+}
+
+.v5-architecture .v5-flow-grid {
+  --diagram-row-gap: 26px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.07fr) minmax(0, 1fr);
+  gap: var(--diagram-row-gap) clamp(22px, 3.9vw, 56px);
+}
+
+.v5-architecture .v5-systems,
+.v5-architecture .v5-core {
+  position: relative;
+  padding: clamp(17px, 2.1vw, 29px);
+  border-radius: 23px;
+}
+
+.v5-architecture .v5-systems {
+  border: 1px solid var(--diagram-border);
+  background: #fff;
+  color: var(--diagram-ink);
+}
+
+.v5-architecture .v5-core {
+  background: var(--diagram-ink);
+  color: #fff;
+}
+
+.v5-architecture .v5-systems h3 {
+  font-size: clamp(19px, 1.85vw, 27px);
+  letter-spacing: -.025em;
+}
+
+.v5-architecture .v5-core h3 {
+  font-size: clamp(28px, 3.2vw, 43px);
+  line-height: 1.1;
+  letter-spacing: -.026em;
+}
+
+.v5-architecture .v5-core > p {
+  margin-top: 8px;
+  color: var(--diagram-dark-copy);
+  font-size: clamp(14px, 1.44vw, 19px);
+  line-height: 1.45;
+}
+
+.v5-architecture .v5-systems dl {
+  display: grid;
+  gap: clamp(15px, 1.9vw, 27px);
+  margin-top: clamp(17px, 2.2vw, 30px);
+}
+
+.v5-architecture .v5-systems dl > div {
+  position: relative;
+  min-height: 38px;
+  padding-inline-start: 44px;
+}
+
+/* The six diagram icons use their original artwork from slide 12. */
+.v5-architecture .v5-systems dl > div::before {
+  position: absolute;
+  inset: 1px auto auto 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background-image: url("slides/vi/slide-12.png");
+  background-size: 1440px 810px;
+  content: "";
+}
+
+.v5-architecture .v5-inputs dl > div:nth-child(1)::before { background-position: -94px -317px; }
+.v5-architecture .v5-inputs dl > div:nth-child(2)::before { background-position: -94px -406px; }
+.v5-architecture .v5-inputs dl > div:nth-child(3)::before { background-position: -94px -495px; }
+.v5-architecture .v5-records dl > div:nth-child(1)::before { background-position: -1096px -317px; }
+.v5-architecture .v5-records dl > div:nth-child(2)::before { background-position: -1096px -406px; }
+.v5-architecture .v5-records dl > div:nth-child(3)::before { background-position: -1096px -495px; }
+
+.v5-architecture .v5-flow dt {
+  font-size: clamp(15px, 1.36vw, 19px);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.v5-architecture .v5-flow dd {
+  margin-top: 4px;
+  color: var(--diagram-muted);
+  font-size: clamp(13px, 1.23vw, 16px);
+  line-height: 1.4;
+}
+
+.v5-architecture .v5-engines {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: clamp(18px, 2.5vw, 31px);
+}
+
+.v5-architecture .v5-engines div,
+.v5-architecture .v5-core > .v5-connectors {
+  padding: clamp(10px, 1.15vw, 16px);
+  border: 1px solid var(--diagram-dark-border);
+  border-radius: 14px;
+  background: var(--diagram-card);
+}
+
+.v5-architecture .v5-engines dd { color: var(--diagram-dark-copy); }
+
+.v5-architecture .v5-core > .v5-connectors {
+  margin-top: 10px;
+  color: #fff;
+  font-size: clamp(15px, 1.36vw, 19px);
+  font-weight: 700;
+}
+
+.v5-architecture .v5-policy-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  margin-top: 12px;
+  color: var(--diagram-mint);
+  font-size: clamp(13px, 1.2vw, 16px);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.v5-architecture .v5-model {
+  position: relative;
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+  justify-self: center;
+  gap: 7px 15px;
+  flex-wrap: wrap;
+  padding: 12px 18px;
+  border: 1px solid var(--diagram-border);
+  border-radius: 14px;
+  background: var(--diagram-sage);
+  color: var(--diagram-ink);
+  font-size: 15px;
+  text-align: center;
+}
+
+.v5-architecture .v5-model::before {
+  position: absolute;
+  bottom: calc(100% + 1px);
+  left: 50%;
+  width: 1px;
+  height: var(--diagram-row-gap);
+  background: var(--diagram-wire);
+  content: "";
+}
+
+.v5-architecture .v5-model span { color: var(--diagram-muted); }
+
+.v5-architecture .v5-inputs::after,
+.v5-architecture .v5-records::before {
+  position: absolute;
+  top: calc(50% - .5em);
+  display: grid;
+  place-items: center;
+  width: clamp(22px, 3.9vw, 56px);
+  color: var(--diagram-wire);
+  font-size: clamp(18px, 2.6vw, 36px);
+  line-height: 1;
+  content: "↔";
+}
+
+.v5-architecture .v5-inputs::after { left: calc(100% + 1px); }
+.v5-architecture .v5-records::before { right: calc(100% + 1px); }
+
+.v5-architecture .v5-flow-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px 20px;
+  color: var(--page-muted, #526278);
+}
+
+.v5-architecture .v5-control {
+  background: var(--page-dark, radial-gradient(ellipse at 81% 43%, #14395f, #071526 65%));
+  color: #f6faff;
+}
+
+.v5-architecture .v5-controls-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--v5-card-gap);
+  padding-left: 0;
+  list-style: none;
+}
+
+.v5-architecture .v5-controls-list > li {
+  display: grid;
+  justify-items: start;
+  align-content: start;
+  gap: 12px;
+  padding: clamp(16px, 1.7vw, 24px);
+  border: 1px solid var(--diagram-dark-border);
+  border-radius: 23px;
+  background: var(--diagram-card);
+  color: #fff;
+}
+
+.v5-architecture .v5-controls-list .chapter-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: var(--diagram-icon);
+}
+
+.v5-architecture .v5-controls-list .chapter-icon img {
+  width: 26px;
+  height: 26px;
+  filter: none;
+}
+
+.v5-architecture .v5-controls-list h3 {
+  font-size: clamp(19px, 2vw, 27px);
+  line-height: 1.25;
+  letter-spacing: -.025em;
+}
+
+.v5-architecture .v5-controls-list p {
+  margin-top: 8px;
+  color: var(--diagram-dark-copy);
+  font-size: clamp(14px, 1.25vw, 17px);
+  line-height: 1.45;
+}
+
+.v5-architecture .v5-approval {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .82fr);
+  align-items: center;
+  gap: 0 clamp(16px, 3.2vw, 40px);
+  margin-top: var(--v5-followup-gap);
+  padding: clamp(15px, 1.9vw, 24px);
+  overflow: hidden;
+  border: 1px solid var(--diagram-border);
+  border-radius: 23px;
+  background: #fff;
+  color: var(--diagram-ink);
+}
+
+.v5-architecture .v5-approval-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+
+.v5-architecture .v5-approval-ref {
+  color: #196553;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: .065em;
+}
+
+.v5-architecture .v5-approval .chapter-badge.status-badge {
+  border-color: #efd4aa;
+  border-radius: 9px;
+  background: #fde9c7;
+  color: #704820;
+}
+
+.v5-architecture .v5-approval-copy h3 { margin-top: 10px; }
+
+.v5-architecture .v5-approval-copy > p {
+  margin-top: 7px;
+  color: var(--diagram-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.v5-architecture .v5-approval-crop {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 587 / 252;
+  border: 1px solid var(--diagram-border);
+  border-radius: 12px;
+  background: var(--diagram-sage);
+}
+
+.v5-architecture .v5-approval-crop img {
+  position: absolute;
+  top: -133.333%;
+  left: -128.62%;
+  width: 245.315%;
+  height: auto;
+  max-width: none;
+  pointer-events: none;
+}
+
+.v5-architecture .v5-approval figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  grid-column: 1 / -1;
+  gap: 0 12px;
+  margin-top: 14px;
+  border-top: 1px solid var(--diagram-border);
+  color: var(--diagram-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.v5-architecture .v5-approval figcaption a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 44px;
+  color: #195b4b;
+  font-weight: 650;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 960px) {
+  .v5-architecture .v5-flow-grid { --diagram-row-gap: 24px; grid-template-columns: minmax(0, 1fr); }
+  .v5-architecture .v5-systems dl { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .v5-architecture .v5-model { grid-column: 1; justify-self: stretch; }
+  .v5-architecture .v5-model::before { display: none; }
+  .v5-architecture .v5-inputs::after, .v5-architecture .v5-records::before {
+    inset: auto auto auto calc(50% - 12px);
+    width: 24px;
+    height: var(--diagram-row-gap);
+    font-size: 21px;
+    content: "↕";
+  }
+  .v5-architecture .v5-inputs::after { top: 100%; }
+  .v5-architecture .v5-records::before { bottom: 100%; }
+}
+
+@media (max-width: 690px) {
+  .v5-architecture .v5-controls-list, .v5-architecture .v5-approval { grid-template-columns: minmax(0, 1fr); }
+  .v5-architecture .v5-controls-list > li { grid-template-columns: 40px minmax(0, 1fr); }
+  .v5-architecture .v5-controls-list .chapter-icon { width: 40px; height: 40px; border-radius: 10px; }
+  .v5-architecture .v5-controls-list .chapter-icon img { width: 22px; height: 22px; }
+  .v5-architecture .v5-controls-list p { margin-top: 4px; }
+  .v5-architecture .v5-approval { row-gap: 15px; }
+  .v5-architecture .v5-approval figcaption { margin-top: 0; padding-top: 6px; }
+}
+
+@media (max-width: 600px) {
+  .v5-architecture .v5-systems dl { grid-template-columns: minmax(0, 1fr); }
+}

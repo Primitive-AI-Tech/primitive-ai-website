@@ -1,0 +1,25 @@
+# Core Agentic architecture · Hybrid V3
+
+## Reference roles
+
+- Image 1: `/Users/doannguyen/.codex/generated_images/01a1b615-5bf6-7e90-9ed0-9d4168fcffaa/exec-24e3021e-16b4-418d-ae9d-3e1e79bb90cf.png` — visual styling and materials.
+- Image 2: `/Users/doannguyen/.codex/generated_images/01a1b615-5bf6-7e90-9ed0-9d4168fcffaa/exec-b8adc3a1-f24f-497c-abdb-e244cff7bc6d.png` — architecture contents and module labels.
+
+## Generation prompt
+
+Use case: infographic-diagram
+Asset type: standalone 3D system architecture illustration for the Primitive AI Products page
+
+Generate a new wide 3D architectural diagram combining Image 1's visual styling with Image 2's component content. Keep the system architecture easy to understand and faithful to these boundaries.
+
+Use one large low-profile translucent white glass enclosure labeled "CORE AGENTIC". At far left, a user/frontend terminal connects to "API"; API connects into "WORKER". Within WORKER, place "Agent runtime" and "Structured workflow engine" side by side. Both compute modules connect to one "Governed executor". Place "Identity & policy" as a foundation governing access into Governed executor. Place "Execution ledger" as a separate internal supporting service that records execution; do not make it a stage in the outbound data path.
+
+Outside the enclosure at upper right, show "Customer package" with the exact subtitle "Business rules · skills · tools · domain contracts". Its connection enters WORKER/configuration, not the executor's authority controls. Outside the enclosure at lower right, show "Systems of record" with the exact subtitle "ERP · CRM · databases · files". Connect it only to Governed executor through a small connector bridge. Do not show a direct agent-to-data path.
+
+Exact labels only: "CORE AGENTIC", "API", "WORKER", "Agent runtime", "Structured workflow engine", "Identity & policy", "Governed executor", "Execution ledger", "Customer package", "Business rules · skills · tools · domain contracts", "Systems of record", "ERP · CRM · databases · files".
+
+Follow Image 1 closely: bright frosted white and clear glass, delicate rounded edges with subtle refraction, pale porcelain/satin internal modules, a faint titanium foundation, thin clear-blue #044EFF connector paths, soft shadows, premium and calm tactile 3D depth. Use a wide horizontal isometric view with transparent background, breathing room and readable labels. Avoid Image 2's dark navy background and blue-black gloss. Avoid heavy chrome, brilliant neon, thick glowing tubing, heavy appliance casing, extra words, spelling errors, logos and watermark.
+
+## Final edit prompt
+
+Starting from the generated hybrid, reroute the blue arrow leaving API so it ends at the left entrance of the larger WORKER enclosure, not at Agent runtime. Inside WORKER, branch the work path to both Agent runtime and Structured workflow engine. Remove the small floating capsule labeled "contract" from the Customer package path, keeping a clean thin blue configuration line into WORKER with no pill or extra label. Keep the Governed executor-to-Systems of record connection direct. Keep Execution ledger as a separate internal supporting service with no external data line. Preserve all labels, materials, layout and transparent background; make no unrelated changes.

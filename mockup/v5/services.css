@@ -1,0 +1,392 @@
+.v5-services #main > .v5-body > .services-hero {
+  align-content: safe center;
+}
+
+.v5-services .services-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 72px);
+}
+
+.v5-services .services-hero h1 {
+  font-size: clamp(42px, 4.85vw, 70px);
+}
+
+.v5-services .services-hero .lead {
+  max-width: 44ch;
+  margin-top: 18px;
+}
+
+.v5-services .services-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: clamp(16px, 2.15vw, 29px);
+}
+
+.v5-services .v5-body .services-action {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border: 1px solid #c8e3ff8c;
+  border-radius: 99px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.v5-services .v5-body .services-action:hover {
+  border-color: #c7edff;
+  background: #1a406b;
+}
+
+.v5-services .v5-body .services-action-primary {
+  border-color: var(--page-blue);
+  background: var(--page-blue);
+}
+
+.v5-services .v5-body .services-action-primary:hover {
+  border-color: #003ed4;
+  background: #003ed4;
+}
+
+.v5-services .services-project-brief {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #82bdf296;
+  border-radius: clamp(17px, 2.4vw, 27px);
+  background: #0b2441;
+  box-shadow: 0 20px 62px #020c229c, 0 0 21px #044eff44;
+}
+
+.v5-services .services-project-brief > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 46%;
+}
+
+.v5-services .services-project-brief figcaption {
+  padding: clamp(13px, 1.85vw, 24px);
+  border-top: 1px solid #82bdf253;
+  background: linear-gradient(120deg, #153452, #0a203b);
+}
+
+.v5-services .services-project-brief figcaption > strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: clamp(17px, 1.7vw, 23px);
+  font-weight: 750;
+  letter-spacing: -.025em;
+}
+
+.v5-services .services-brief-items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  padding: 0;
+  list-style: none;
+}
+
+.v5-services .services-brief-items li {
+  display: grid;
+  grid-template-columns: 19px minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  min-height: 49px;
+  padding: 6px 7px;
+  border: 1px solid #a4d3ff42;
+  border-radius: 9px;
+  background: #a6d7ff11;
+  color: #edf6ff;
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.v5-services .services-brief-items svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: #a5e6fd;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.v5-services #main > .v5-body > .services-paths {
+  align-content: safe center;
+  background: var(--page-light-glow);
+}
+
+.v5-services .services-path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 24px);
+}
+
+.v5-services .services-path-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: clamp(18px, 3vw, 36px);
+  border: 1px solid var(--page-border);
+  border-radius: 19px;
+  background: #fcfeff;
+}
+
+.v5-services .services-path-card .chapter-icon {
+  background: #e3efff;
+}
+
+.v5-services .services-path-card h3 {
+  margin-top: 13px;
+  font-size: clamp(22px, 2.7vw, 36px);
+  text-wrap: balance;
+}
+
+.v5-services .services-path-card p {
+  max-width: 49ch;
+  margin-top: 8px;
+  color: var(--page-muted);
+}
+
+.v5-services .services-path-card .v5-text-link {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.v5-services .services-path-featured {
+  border-color: #527fc2;
+  background: linear-gradient(140deg, #173b6c, #0b2344);
+  color: #f6fbff;
+}
+
+.v5-services .services-path-featured p {
+  color: #d4e5f8;
+}
+
+.v5-services .services-path-featured .v5-text-link {
+  color: #a8e3ff;
+}
+
+.v5-services .services-path-featured :focus-visible {
+  outline-color: #8bdcff;
+}
+
+.v5-services #main > .v5-body > .services-capabilities {
+  align-content: safe center;
+  background: linear-gradient(130deg, #f7faf8, #e9f5ef);
+}
+
+.v5-services .services-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--v5-card-gap);
+}
+
+.v5-services .services-capability-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(13px, 1.7vw, 22px);
+  border: 1px solid var(--deck-line);
+  border-radius: 15px;
+  background: var(--deck-white);
+  color: var(--deck-ink);
+}
+
+.v5-services .services-capability-card h3 {
+  margin-top: 10px;
+  font-size: clamp(18px, 1.65vw, 23px);
+}
+
+.v5-services .services-capability-card p {
+  margin: 5px 0 13px;
+  color: var(--deck-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.v5-services .services-deliverable {
+  min-block-size: 71px;
+  margin-top: auto;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--deck-sage);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.v5-services .services-deliverable dt {
+  color: var(--deck-green);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.v5-services .services-deliverable dd {
+  margin-top: 2px;
+}
+
+.v5-services #main > .v5-body > .services-process {
+  align-content: safe center;
+  background: var(--page-dark);
+}
+
+.v5-services .services-process-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--v5-card-gap);
+  padding: 0;
+  list-style: none;
+}
+
+.v5-services .services-process-list::before {
+  position: absolute;
+  top: 21px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #8be1f9dd, #4c97d800);
+  content: "";
+}
+
+.v5-services .services-process-list li {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 11px;
+}
+
+.v5-services .services-process-list .chapter-icon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #87d6ff;
+  background: #0e3357;
+  box-shadow: 0 0 0 4px #102c4a;
+}
+
+.v5-services .services-process-list .chapter-icon img {
+  filter: brightness(0) saturate(100%) invert(86%) sepia(20%) saturate(778%) hue-rotate(161deg);
+}
+
+.v5-services .services-process-list h3 {
+  font-size: clamp(17px, 1.5vw, 22px);
+}
+
+.v5-services .services-process-list p {
+  margin-top: 5px;
+  color: #c6dcf2;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.v5-services .services-process-note {
+  margin-top: clamp(18px, 3vw, 34px);
+  color: #c6dcf2;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .v5-services .services-capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .v5-services .services-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .v5-services .services-project-brief {
+    width: min(100%, 650px);
+  }
+
+  .v5-services .services-project-brief > img {
+    height: clamp(158px, 36vw, 240px);
+  }
+}
+
+@media (max-width: 680px) {
+  .v5-services .services-hero h1 {
+    font-size: clamp(36px, 9vw, 54px);
+  }
+
+  .v5-services .services-hero .lead {
+    margin-top: 12px;
+  }
+
+  .v5-services .services-path-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .v5-services .services-process-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .v5-services .services-process-list::before {
+    inset: 0 auto 0 21px;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(#8be1f9dd, #4c97d800);
+  }
+
+  .v5-services .services-process-list li {
+    grid-template-columns: 42px minmax(0, 1fr);
+    align-items: start;
+    gap: 13px;
+  }
+
+  .v5-services .services-process-list li > div {
+    padding-block: 1px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .v5-services .services-hero-grid {
+    gap: 16px;
+  }
+
+  .v5-services .v5-body .services-action {
+    flex: 1 1 auto;
+    padding-inline: 11px;
+  }
+
+  .v5-services .services-project-brief > img {
+    height: auto;
+    aspect-ratio: 2.05;
+    object-position: center 54%;
+  }
+
+  .v5-services .services-capability-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 480px), (min-width: 761px) and (max-width: 960px) {
+  .v5-services .services-brief-items li {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+  }
+}
+
+@media (max-height: 480px) and (min-width: 720px) and (max-width: 900px) {
+  .v5-services .services-hero-grid {
+    grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+    gap: 18px;
+  }
+
+  .v5-services .services-hero h1 {
+    font-size: clamp(32px, 4.6vw, 44px);
+  }
+}

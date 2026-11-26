@@ -1,0 +1,157 @@
+.experience-page > :is(.v5-page-hero, .v5-page-section) {
+  --page-blue: var(--blue);
+  --page-night: var(--midnight);
+  --page-ink: var(--ink);
+  --page-muted: #526278;
+  --page-border: #cbdcf0;
+  --page-light: linear-gradient(112deg, #f8fbff, #eef9ff 55%, #f6faff);
+  --page-light-glow: radial-gradient(ellipse at 15% 90%, #d5f3ff, transparent 55%), var(--page-light);
+  --page-dark: radial-gradient(ellipse at 93% 12%, #173e6a, transparent 66%), var(--page-night);
+  --v5-card-gap: clamp(12px, 1.4vw, 18px);
+  --deck-cream: #f4f3ec;
+  --deck-white: #fdfefd;
+  --deck-sage: #eaf4ec;
+  --deck-mint: #dceee4;
+  --deck-line: #d6e0d8;
+  --deck-ink: #142924;
+  --deck-muted: #425b53;
+  --deck-green: #1c614f;
+  --deck-night: #0b211e;
+  --deck-dark-card: #17362f;
+  --deck-dark-line: #315049;
+  --deck-dark-text: #c3d8cf;
+  --deck-accent: #85d6b0;
+  box-sizing: border-box;
+  block-size: auto;
+  min-block-size: 100svh;
+  max-block-size: none;
+  overflow: visible;
+  padding-block: max(calc(var(--snap-header-clearance) + 16px), clamp(120px, 16svh, 152px)) clamp(42px, 6svh, 76px);
+}
+
+.experience-page > :is(.v5-page-hero, .v5-page-section):first-of-type {
+  block-size: auto;
+  max-block-size: none;
+}
+
+.experience-page:has(> .v5-page-hero) > .invitation-cta {
+  block-size: auto;
+  max-block-size: none;
+  overflow: hidden;
+  padding-block-end: 76px;
+}
+
+.experience-page[data-page]:not([data-page="/"]) > .v5-page-section {
+  color: var(--page-ink);
+}
+
+.experience-page[data-page]:not([data-page="/"]) > .v5-page-section.ink {
+  background-color: var(--page-night);
+  color: #f6fbff;
+}
+
+.v5-page-wrap {
+  width: min(1280px, calc(100% - 2 * clamp(20px, 4.45vw, 64px)));
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.experience-page > .v5-page-hero {
+  isolation: isolate;
+  align-content: safe center;
+  background: var(--midnight);
+  color: #fff;
+}
+
+.v5-page-hero .dot-field { display: none; }
+
+.v5-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+  align-items: center;
+  gap: clamp(20px, 5vw, 72px);
+}
+
+.v5-page-hero .v5-hero-copy h1 {
+  margin: 0;
+  font-size: var(--v5-hero-title, clamp(37px, 5vw, 76px));
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: 1.045;
+  text-wrap: balance;
+}
+
+.v5-page-hero .v5-hero-copy h1 em {
+  color: var(--blue);
+}
+
+.v5-page-hero .site-eyebrow,
+.v5-page-heading .site-eyebrow {
+  min-height: 20px;
+  margin-bottom: 14px;
+  gap: 13px;
+  font-size: 12px;
+  letter-spacing: .075em;
+}
+
+.v5-page-hero .site-eyebrow { color: #d8e9f9; }
+.v5-page-hero .site-eyebrow > span { height: 3px; }
+
+.v5-page-hero .v5-hero-description {
+  max-width: var(--v5-hero-description-width, 48ch);
+  margin-top: var(--v5-hero-description-gap, 18px);
+  color: #e4effc;
+  font-size: var(--v5-hero-description-size, clamp(17px, 1.9vw, 23px));
+  letter-spacing: -.025em;
+  line-height: 1.35;
+}
+
+.v5-page-heading { margin-bottom: clamp(21px, 2.8vw, 38px); }
+.v5-page-heading h2 {
+  max-width: 28ch;
+  font-size: clamp(33px, 4.15vw, 60px);
+  font-weight: 800;
+  letter-spacing: -.042em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.v5-page-heading > p {
+  max-width: 68ch;
+  margin-top: 14px;
+  color: var(--page-muted);
+  font-size: clamp(16px, 1.45vw, 21px);
+  line-height: 1.5;
+}
+
+.v5-page-section .site-eyebrow { color: #0442d7; }
+.v5-page-section .site-eyebrow > span { height: 3px; }
+.v5-page-section.ink .site-eyebrow { color: #a4eaff; }
+.v5-page-section.ink .site-eyebrow > span { background: #78d9ff; }
+.v5-page-section.ink .v5-page-heading > p { color: #d2e4f8; }
+
+.v5-page-section .chapter-icon {
+  display: grid;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--deck-mint);
+}
+
+.v5-page-section .chapter-icon img { width: 22px; height: 22px; object-fit: contain; }
+
+@media (min-width: 1200px) and (max-height: 800px) {
+  .experience-page > .v5-page-hero { --v5-hero-description-size: 20px; }
+}
+
+@media (max-width: 920px) {
+  .experience-page[data-page]:not([data-page="/"]) > :is(.v5-page-hero, .v5-page-section) {
+    padding-block: calc(var(--snap-header-clearance) + 15px) clamp(34px, 6svh, 54px);
+  }
+}
+
+@media (max-width: 720px) {
+  .v5-hero-layout { grid-template-columns: minmax(0, 1fr); }
+}

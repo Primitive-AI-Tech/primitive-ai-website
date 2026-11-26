@@ -1,180 +1,165 @@
-import {
-  Bot,
-  Boxes,
-  Braces,
-  Compass,
-  Cpu,
-  Gauge,
-  Rocket,
-  Search,
-  Workflow,
-} from "lucide-react";
-import { Link } from "react-router-dom";
-import { ClosingCTA } from "@/components/marketing/ClosingCTA";
-import { FlowBackdrop } from "@/components/marketing/FlowBackdrop";
-import { Button, Eyebrow, IconTile, TextLink } from "@/components/marketing/primitives";
-import { PageHero } from "@/components/marketing/PageHero";
-import { ServiceStoryArt } from "@/components/marketing/StoryArtwork";
+import { ArrowDown, Database, Target, Workflow } from "lucide-react";
+import { ChapterIcon } from "@/components/marketing/ChapterIcon";
+import { InvitationCTA } from "@/components/marketing/InvitationCTA";
+import { V5PageHero } from "@/components/marketing/PageHero";
+import { Button, Eyebrow, TextLink } from "@/components/marketing/primitives";
 import { useCopy } from "@/i18n/useCopy";
+
+const projectContact = "/contact?intent=custom-development&interest=custom-ai-development";
 
 const capabilities = [
   {
-    icon: Bot,
+    icon: "chat",
     title: "AI Agent Development",
-    description:
-      "Design and build agents around defined tasks, approved information and the tools they are permitted to use.",
+    description: "Design and build agents around defined tasks, approved information and the tools they are permitted to use.",
     outcome: "A scoped agent workflow with evaluation and review points.",
   },
   {
-    icon: Workflow,
+    icon: "act",
     title: "AI Workflow Automation",
-    description:
-      "Map repeatable work, clarify exceptions and develop automation that fits the process and its owners.",
+    description: "Map repeatable work, clarify exceptions and develop automation that fits the process and its owners.",
     outcome: "A working workflow with agreed handoffs and exception handling.",
   },
   {
-    icon: Braces,
+    icon: "embedded",
     title: "AI API Development",
-    description:
-      "Build application interfaces that make an AI capability available to approved products and systems.",
+    description: "Build application interfaces that make an AI capability available to approved products and systems.",
     outcome: "An API or integration with documented scope and access.",
   },
   {
-    icon: Cpu,
+    icon: "plan",
     title: "Model Training & Fine-Tuning",
-    description:
-      "Assess whether model adaptation is useful, then evaluate an approach against the task and available data.",
+    description: "Assess whether model adaptation is useful, then evaluate an approach against the task and available data.",
     outcome: "A task-specific evaluation and an adaptation plan where justified.",
   },
   {
-    icon: Boxes,
+    icon: "deliver",
     title: "AI Product Development",
-    description:
-      "Shape an AI-enabled application from an initial product question through design, engineering and handoff.",
+    description: "Shape an AI-enabled application from an initial product question through design, engineering and handoff.",
     outcome: "A scoped product experience, implementation and operating handoff.",
   },
   {
-    icon: Compass,
+    icon: "search",
     title: "Consulting & Strategy",
-    description:
-      "Understand the work, compare opportunities and set out a practical path for responsible delivery.",
+    description: "Understand the work, compare opportunities and set out a practical path for responsible delivery.",
     outcome: "A prioritized opportunity brief and a delivery roadmap.",
   },
 ];
 
 const process = [
-  { number: "01", title: "Discovery", description: "Understand the workflow, people, information, systems and constraints.", icon: Search },
-  { number: "02", title: "Strategy", description: "Agree the problem, technical approach, scope and evaluation criteria.", icon: Compass },
-  { number: "03", title: "Build", description: "Develop the selected capability in reviewable increments.", icon: Braces },
-  { number: "04", title: "Deploy", description: "Prepare the agreed release, documentation and operating handoff.", icon: Rocket },
-  { number: "05", title: "Optimize", description: "Review real use and prioritize the next improvements together.", icon: Gauge },
+  { title: "Discovery", description: "Understand the workflow, people, information, systems and constraints.", icon: "search" },
+  { title: "Strategy", description: "Agree the problem, technical approach, scope and evaluation criteria.", icon: "plan" },
+  { title: "Build", description: "Develop the selected capability in reviewable increments.", icon: "act" },
+  { title: "Deploy", description: "Prepare the agreed release, documentation and operating handoff.", icon: "deliver" },
+  { title: "Optimize", description: "Review real use and prioritize the next improvements together.", icon: "pilot-measure" },
+];
+
+const briefTopics = [
+  { icon: Workflow, title: "The work to improve" },
+  { icon: Database, title: "Existing data and systems" },
+  { icon: Target, title: "The outcome you need" },
 ];
 
 export default function Services() {
   const t = useCopy();
+
   return (
     <>
-      <PageHero
-        eyebrow="Custom AI Development"
-        title={
-          <>
-            {t("Custom AI.")} <em>{t("Built around your business.")}</em>
-          </>
-        }
-        description="We work with your team to shape and build AI capabilities for requirements that call for tailored engineering."
+      <V5PageHero
+        id="service-intro"
+        eyebrow={t("Custom AI Development")}
+        title={<>{t("Custom AI.")} <em>{t("Built around your business.")}</em></>}
+        description={t("Primitive AI builds agents, tools and AI products with your team, shaped around your workflows and existing systems.")}
         className="services-hero"
-        visual={<ServiceStoryArt />}
+        visual={
+          <figure className="services-project-brief">
+            <img src="/images/services/workshop.webp" width={1536} height={1024} decoding="async" fetchPriority="high" alt={t("Two colleagues review a diagram of their workflow.")} />
+            <figcaption>
+              <strong>{t("The first working session")}</strong>
+              <ul className="services-brief-items" role="list">
+                {briefTopics.map(({ icon: Icon, title }) => (
+                  <li key={title}><Icon aria-hidden="true" /><span>{t(title)}</span></li>
+                ))}
+              </ul>
+            </figcaption>
+          </figure>
+        }
       >
-        <div className="button-row">
-          <Button to="/contact?intent=custom-development&interest=custom-ai-development" arrow>
-            {t("Discuss your project")}
+        <div className="button-row services-actions">
+          <Button to="#next-step" arrow>{t("Discuss your project")}</Button>
+          <Button to="#capabilities" secondary>
+            {t("See our services")} <ArrowDown size={17} aria-hidden="true" />
           </Button>
-          <Button to="/products" secondary>{t("Explore our products")}</Button>
         </div>
-      </PageHero>
+      </V5PageHero>
 
-      <section className="service-paths light-section">
-        <div className="site-container">
-          <Eyebrow>{t("Choose a starting point")}</Eyebrow>
-          <h2 className="section-title">{t("Configure a platform, or build a tailored capability.")}</h2>
-          <div className="service-path-grid">
-            <article className="surface-panel">
-              <span className="service-path-number">01</span>
+      <section id="service-paths" className="v5-page-section services-paths" aria-labelledby="service-paths-title">
+        <div className="v5-page-wrap">
+          <div className="v5-page-heading">
+            <Eyebrow>{t("Choose a starting point")}</Eyebrow>
+            <h2 id="service-paths-title">{t("Configure a platform or build a custom solution?")}</h2>
+            <p>{t("Choose based on the workflow you want to improve and how closely it needs to integrate with existing systems.")}</p>
+          </div>
+          <div className="services-path-grid">
+            <article className="services-path-card">
+              <ChapterIcon name="customize" />
               <h3>{t("Configure Core Agentic")}</h3>
               <p>{t("Start from an organizational workflow and configure the platform's knowledge, agents, tools and review steps around it.")}</p>
-              <TextLink to="/products">{t("Explore Core Agentic")}</TextLink>
+              <TextLink to="/products#roles">{t("See how Core Agentic is configured")}</TextLink>
             </article>
-            <article className="surface-panel service-path-featured">
-              <span className="service-path-number">02</span>
+            <article className="services-path-card services-path-featured">
+              <ChapterIcon name="act" />
               <h3>{t("Develop custom AI")}</h3>
-              <p>{t("For a product, model or integration that needs a tailored approach. A custom engagement does not have to use Core Agentic.")}</p>
-              <Link className="text-link" to="/contact?intent=custom-development&interest=custom-ai-development">
-                {t("Start a project conversation")}
-              </Link>
+              <p>{t("Build a product, adapt a model or develop a deeper integration. Custom projects can run independently or use Core Agentic.")}</p>
+              <TextLink to="#next-step">{t("Start a project conversation")}</TextLink>
             </article>
           </div>
         </div>
       </section>
 
-      <section className="service-capabilities light-section" id="capabilities">
-        <div className="site-container">
-          <Eyebrow>{t("What we can build")}</Eyebrow>
-          <h2 className="section-title">{t("AI services across the full development lifecycle.")}</h2>
-          <div className="service-capability-grid">
-            {capabilities.map((item, index) => (
-              <article className="service-capability-card surface-panel" key={item.title}>
-                <IconTile icon={item.icon} />
-                <span className="service-capability-index">{String(index + 1).padStart(2, "0")}</span>
-                <h3>{t(item.title)}</h3>
-                <p>{t(item.description)}</p>
-                <div>
-                  <strong>{t("Possible deliverable")}</strong>
-                  <span>{t(item.outcome)}</span>
-                </div>
-                <Link to={`/contact?intent=custom-development&interest=custom-ai-development&service=${encodeURIComponent(item.title)}`} className="text-link">
-                  {t("Discuss this capability")}
-                </Link>
+      <section id="capabilities" className="v5-page-section services-capabilities" aria-labelledby="service-capabilities-title">
+        <div className="v5-page-wrap">
+          <div className="v5-page-heading">
+            <Eyebrow>{t("What we can build")}</Eyebrow>
+            <h2 id="service-capabilities-title">{t("From consulting through development and handoff")}</h2>
+            <p>{t("Choose the services you need. We agree on specific deliverables for each project.")}</p>
+          </div>
+          <div className="services-capability-grid">
+            {capabilities.map(({ icon, title, description, outcome }) => (
+              <article className="services-capability-card" key={title}>
+                <ChapterIcon name={icon} />
+                <h3>{t(title)}</h3>
+                <p>{t(description)}</p>
+                <dl className="services-deliverable">
+                  <dt>{t("Possible deliverable")}</dt>
+                  <dd>{t(outcome)}</dd>
+                </dl>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="service-process dark-section" id="service-process">
-        <FlowBackdrop />
-        <div className="site-container relative-content">
-          <Eyebrow>{t("A practical engineering process")}</Eyebrow>
-          <h2 className="section-title">{t("From the first question to an operating solution.")}</h2>
-          <ol className="service-process-list">
-            {process.map((step) => (
-              <li key={step.number}>
-                <div className="service-process-topline">
-                  <span>{step.number}</span>
-                  <step.icon aria-hidden="true" />
-                </div>
-                <h3>{t(step.title)}</h3>
-                <p>{t(step.description)}</p>
+      <section id="service-process" className="v5-page-section services-process ink" aria-labelledby="service-process-title">
+        <div className="v5-page-wrap">
+          <div className="v5-page-heading">
+            <Eyebrow>{t("A practical engineering process")}</Eyebrow>
+            <h2 id="service-process-title">{t("From defining the problem to putting the solution to work")}</h2>
+            <p>{t("Your team helps define the outcome and reviews the solution at each stage.")}</p>
+          </div>
+          <ol className="services-process-list" role="list">
+            {process.map(({ icon, title, description }) => (
+              <li key={title}>
+                <ChapterIcon name={icon} />
+                <div><h3>{t(title)}</h3><p>{t(description)}</p></div>
               </li>
             ))}
           </ol>
-          <p className="service-process-note">
-            {t("Scope, evaluation, release and support are agreed to fit the project.")}
-          </p>
+          <p className="services-process-note">{t("Scope, evaluation, release and support are agreed to fit the project.")}</p>
         </div>
       </section>
 
-      <section className="service-contact-band light-section">
-        <div className="site-container service-contact-content">
-          <div>
-            <Eyebrow>{t("Bring us the challenge")}</Eyebrow>
-            <h2 className="section-title">{t("Start with the work you want to improve.")}</h2>
-          </div>
-          <Button to="/contact?intent=custom-development&interest=custom-ai-development" arrow>
-            {t("Discuss your project")}
-          </Button>
-        </div>
-      </section>
-      <ClosingCTA company />
+      <InvitationCTA id="next-step" to={projectContact} />
     </>
   );
 }

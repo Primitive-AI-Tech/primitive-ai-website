@@ -1,0 +1,80 @@
+      <section class="v5-section ink product-configuration" id="roles" aria-labelledby="roles-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Cấu hình linh hoạt</p>
+            <h2 id="roles-title">Cấu hình tác nhân <em>theo công việc</em></h2>
+            <p class="lead">Đội ngũ cấu hình tác nhân cho từng quy trình và quyết định AI được phép làm đến đâu.</p>
+          </div>
+
+          <ul class="configuration-decisions" role="list">
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/customize.png" width="24" height="24" alt=""></span>
+              <div>
+                <h3>Nhiệm vụ</h3>
+                <p>Chọn khi nào tác nhân bắt đầu, việc cần làm và kết quả cần bàn giao.</p>
+              </div>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/internal.png" width="24" height="24" alt=""></span>
+              <div>
+                <h3>Dữ liệu và công cụ</h3>
+                <p>Chỉ định dữ liệu tác nhân được đọc và công cụ được dùng.</p>
+              </div>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/approval.png" width="24" height="24" alt=""></span>
+              <div>
+                <h3>Quyền và phê duyệt</h3>
+                <p>Chọn thao tác tác nhân được thực hiện, bước cần duyệt và người phê duyệt.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="v5-architecture">
+        <section class="v5-section v5-integration" id="architecture" aria-labelledby="platform-title">
+          <span class="product-anchor" id="platform" aria-hidden="true"></span>
+          <span class="product-anchor" id="integration" aria-hidden="true"></span>
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Kiến trúc</p>
+              <h2 id="platform-title">Tích hợp với hệ thống hiện có</h2>
+              <p class="lead">Yêu cầu đi vào qua các kênh đã cấu hình. Worker chạy tác nhân hoặc quy trình, còn bộ thực thi kiểm soát thao tác với các công cụ và hệ thống nghiệp vụ.</p>
+            </div>
+
+            <figure class="v5-flow" aria-label="Kiến trúc tích hợp Core Agentic">
+              <div class="v5-flow-grid">
+                <section class="v5-systems v5-inputs" aria-labelledby="v5-channels-title">
+                  <h3 id="v5-channels-title">Kênh làm việc</h3>
+                  <dl>
+                    <div><dt>Chat và ứng dụng</dt><dd>Chat trên web hoặc nhúng vào ứng dụng.</dd></div>
+                    <div><dt>Email và API</dt><dd>Tiếp nhận yêu cầu qua kết nối đã cấu hình.</dd></div>
+                    <div><dt>Lịch và sự kiện</dt><dd>Khởi chạy tác vụ theo lịch hoặc sự kiện đã thiết lập.</dd></div>
+                  </dl>
+                </section>
+
+                <section class="v5-core" aria-labelledby="v5-core-title">
+                  <h3 id="v5-core-title">Core Agentic</h3>
+                  <p>Worker thực hiện công việc trong môi trường triển khai riêng cho từng khách hàng.</p>
+                  <dl class="v5-engines">
+                    <div><dt>Tác nhân AI</dt><dd>Suy luận và lập kế hoạch theo mục tiêu.</dd></div>
+                    <div><dt>Quy trình</dt><dd>Chạy các bước, công cụ và quy tắc đã thiết lập.</dd></div>
+                  </dl>
+                  <p class="v5-connectors">Bộ thực thi kiểm soát thao tác</p>
+                </section>
+
+                <section class="v5-systems v5-records" aria-labelledby="v5-records-title">
+                  <h3 id="v5-records-title">Hệ thống hiện có</h3>
+                  <dl>
+                    <div><dt>Ứng dụng nghiệp vụ</dt><dd>ERP, CRM và WMS vẫn giữ dữ liệu chính thức.</dd></div>
+                    <div><dt>Cơ sở dữ liệu</dt><dd>Truy cập trong phạm vi được cấp quyền.</dd></div>
+                    <div><dt>Tệp và kho tri thức</dt><dd>Tài liệu và bảng tính đã được phê duyệt.</dd></div>
+                  </dl>
+                </section>
+                <div class="v5-model"><strong>Mô hình AI</strong><span>Được chọn theo cấu hình triển khai.</span></div>
+              </div>
+            </figure>
+          </div>
+        </section>
+      </div>

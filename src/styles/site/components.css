@@ -592,28 +592,6 @@
   text-underline-offset: 3px;
   margin-top: 28px;
 }
-.closing-cta {
-  padding: 45px 0 48px;
-  border-bottom: 1px solid #9ac7e64d;
-}
-.closing-cta > .site-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 25px;
-}
-.closing-cta h2 {
-  font-size: 39px;
-  line-height: 1.15;
-}
-.closing-cta p {
-  font-size: 24px;
-  margin-top: 12px;
-}
-.closing-cta .site-button {
-  min-width: 250px;
-}
 /* Footer */
 .site-footer {
   background: var(--midnight);

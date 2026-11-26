@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Core Agentic | Primitive AI</title>
+  <meta name="description" content="Core Agentic kết nối các tác nhân AI với tri thức, hệ thống và quy trình của doanh nghiệp. Xem cách AI đảm nhận công việc hằng ngày dưới sự kiểm soát của đội ngũ.">
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="deck-cards.css">
+  <link rel="stylesheet" href="architecture-section.css">
+  <link rel="stylesheet" href="landing-snap.css">
+  <link rel="stylesheet" href="live-nav.css">
+  <script defer src="live-hero.js"></script>
+  <script defer src="landing.js"></script>
+  <script defer src="landing-snap.js"></script>
+</head>
+<body class="v5-review" data-v5-preview="home">
+  <div class="v5-story-progress" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main">Chuyển đến nội dung</a>
+  <div id="v5-live-nav"></div>
+  <main id="main" tabindex="-1">
+    <div id="v5-live-hero" lang="vi"></div>
+    <div class="v5-body">
+      <section class="v5-section v5-friction" id="problem" aria-labelledby="friction-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Bài toán vận hành</p>
+            <h2 id="friction-title">Công việc chậm lại khi dữ liệu nằm rải rác</h2>
+            <p class="lead">Khi thông tin nằm ở nhiều nơi, ngay cả một yêu cầu đơn giản cũng mất thời gian tra cứu, nhập lại dữ liệu và tổng hợp báo cáo.</p>
+          </div>
+          <div class="friction-grid">
+            <article class="metric-card">
+              <h3><span class="chapter-icon"><img src="assets/deck-icons/search.png" width="24" height="24" alt=""></span>Tra cứu thông tin</h3>
+              <strong>9 <small>giờ/tuần</small></strong>
+              <p>Thời gian tìm thông tin cần cho công việc, theo khảo sát nhân sự làm công việc tri thức.</p>
+              <a href="https://assets.asana.biz/m/7247625de89a76e6/original/State-of-Work-Innovation-2024_Global.pdf#page=5">Asana, 2024 · hơn 13.000 người ↗</a>
+            </article>
+            <article class="metric-card amber-card">
+              <h3><span class="chapter-icon"><img src="assets/deck-icons/copy.png" width="24" height="24" alt=""></span>Nhập lại dữ liệu</h3>
+              <strong>0,34%</strong>
+              <p>Tỷ lệ trường nhập sai khi nhập một lần trong một nghiên cứu dữ liệu y tế.</p>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/14500053/">Kawado và cộng sự, 2003 · 104.720 trường ↗</a>
+            </article>
+            <article class="metric-card">
+              <h3><span class="chapter-icon"><img src="assets/deck-icons/report.png" width="24" height="24" alt=""></span>Tổng hợp báo cáo</h3>
+              <strong>47%</strong>
+              <p>Thời gian nhóm lập kế hoạch và phân tích tài chính dùng để thu thập và kiểm tra dữ liệu.</p>
+              <a href="https://fpa-trends.com/article/closing-ai-readiness-gap-2026">FP&amp;A Trends, 2026 · 475 phản hồi ↗</a>
+            </article>
+          </div>
+          <div class="baseline">
+            <div><p class="chapter-badge">Ví dụ giả định</p><p>500 hồ sơ/tháng × 4 phút thao tác/hồ sơ</p></div>
+            <strong>≈ 33 <small>giờ công/tháng</small></strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="v5-section v5-systems-problem ink" id="system-handoffs" aria-labelledby="system-handoffs-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Bài toán vận hành</p>
+            <h2 id="system-handoffs-title">Một quy trình bị chia cắt giữa nhiều phần mềm</h2>
+            <p class="lead">Ngay cả khi đã tìm được dữ liệu, công việc vẫn có thể mắc lại ở khâu bàn giao. Khi bán hàng, vận hành, kho và kế toán dùng phần mềm riêng, đội ngũ phải tự đối chiếu trạng thái và báo cho bộ phận xử lý tiếp.</p>
+          </div>
+          <figure class="system-map" aria-labelledby="system-map-title">
+            <figcaption>
+              <p class="chapter-badge">Ví dụ minh họa</p>
+              <h3 id="system-map-title">Cùng một đơn hàng ở cùng thời điểm</h3>
+            </figcaption>
+            <ul class="system-stages" aria-label="Trạng thái trên bốn phần mềm">
+              <li>
+                <div class="system-record">
+                  <span class="chapter-icon"><img src="assets/deck-icons/chat.png" width="24" height="24" alt=""></span>
+                  <div><h4>CRM</h4><p>Yêu cầu YC-184</p></div>
+                </div>
+                <p class="system-status">Chờ xuất kho</p>
+              </li>
+              <li>
+                <div class="system-record">
+                  <span class="chapter-icon"><img src="assets/deck-icons/order.png" width="24" height="24" alt=""></span>
+                  <div><h4>ERP</h4><p>Đơn hàng DH-472</p></div>
+                </div>
+                <p class="system-status">Chờ xác nhận kho</p>
+              </li>
+              <li>
+                <div class="system-record">
+                  <span class="chapter-icon"><img src="assets/deck-icons/stock.png" width="24" height="24" alt=""></span>
+                  <div><h4>Phần mềm kho</h4><p>Phiếu xuất PX-328</p></div>
+                </div>
+                <p class="system-status is-complete">Đã xuất kho</p>
+              </li>
+              <li>
+                <div class="system-record">
+                  <span class="chapter-icon"><img src="assets/deck-icons/finance-report.png" width="24" height="24" alt=""></span>
+                  <div><h4>Phần mềm kế toán</h4><p>Tham chiếu DH-472</p></div>
+                </div>
+                <p class="system-status">Chưa lập hóa đơn</p>
+              </li>
+            </ul>
+            <div class="system-relays">
+              <h4>Bàn giao thủ công</h4>
+              <ul>
+                <li><strong>Email</strong><span>Bán hàng gửi yêu cầu cho vận hành để tạo đơn.</span></li>
+                <li><strong>Excel</strong><span>Vận hành ghi mã yêu cầu và mã đơn hàng vào bảng đối chiếu.</span></li>
+                <li><strong>Điện thoại</strong><span>Kế toán gọi kho để xác nhận phiếu xuất.</span></li>
+              </ul>
+            </div>
+            <p class="system-gap"><strong>Hóa đơn đang chờ</strong><span>Kho đã ghi nhận xuất hàng. Kế toán chỉ lập hóa đơn sau khi nhận xác nhận từ kho.</span></p>
+          </figure>
+        </div>
+      </section>
+
+      <section class="v5-section v5-work ink" id="execution" aria-labelledby="execution-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Sản phẩm</p>
+            <h2 id="execution-title">Core Agentic giải quyết như thế nào?</h2>
+            <p class="lead">Đội ngũ giao mục tiêu. Tác nhân AI tra cứu dữ liệu được cấp quyền, thực hiện các bước qua những công cụ hiện có và bàn giao kết quả để đội ngũ kiểm tra.</p>
+          </div>
+          <div class="work-grid">
+            <ol class="execution-steps">
+              <li><span class="chapter-icon"><img src="assets/deck-icons/plan.png" width="24" height="24" alt=""></span><div><h3>Suy luận, lập kế hoạch</h3><p>Chia mục tiêu thành các bước.</p></div></li>
+              <li><span class="chapter-icon"><img src="assets/deck-icons/act.png" width="24" height="24" alt=""></span><div><h3>Thực hiện linh hoạt</h3><p>Dùng công cụ hoặc chạy quy trình.</p></div></li>
+              <li><span class="chapter-icon"><img src="assets/deck-icons/deliver.png" width="24" height="24" alt=""></span><div><h3>Bàn giao kết quả</h3><p>Lưu kết quả hoặc cập nhật khi được phép.</p></div></li>
+            </ol>
+            <figure class="deck-capture">
+              <a href="assets/deck-trace.webp"><img src="assets/deck-trace.webp" width="1384" height="772" loading="lazy" alt="Giao diện Core Agentic hiển thị tra cứu hợp đồng, kiểm tra đơn hàng và kết luận về lịch giao."></a>
+              <figcaption><strong>Lịch giao đáp ứng điều khoản</strong><span>Trong ví dụ trên giao diện Core Agentic, tác nhân đối chiếu hợp đồng với đơn hàng mẫu. Hợp đồng cho phép 5 ngày, đơn hàng dự kiến giao vào ngày 4.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="v5-section v5-value" id="business-value" aria-labelledby="value-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Giá trị mang lại</p>
+            <h2 id="value-title">Xử lý nhiều việc hơn với cùng nguồn lực</h2>
+            <p class="lead">Khi AI đảm nhận các bước tra cứu, đối chiếu và nhập liệu lặp lại, đội ngũ có thêm thời gian xử lý ngoại lệ. Đo năng suất và chi phí trên cùng một quy trình để biết mức cải thiện.</p>
+          </div>
+          <div class="value-pair">
+            <article>
+              <p class="value-category"><span class="chapter-icon"><img src="assets/deck-icons/deliver.png" width="24" height="24" alt=""></span>Năng suất</p>
+              <h3>Hoàn tất nhiều việc hơn mỗi giờ</h3>
+              <p>Bớt thời gian tra cứu và nhập liệu. Áp dụng cùng một quy tắc cho mỗi yêu cầu khi khối lượng công việc tăng.</p>
+              <dl class="value-measure">
+                <div><dt>Chỉ số theo dõi</dt><dd>Số kết quả đạt yêu cầu trên mỗi giờ công</dd></div>
+              </dl>
+            </article>
+            <article>
+              <p class="value-category"><span class="chapter-icon"><img src="assets/deck-icons/report.png" width="24" height="24" alt=""></span>Chi phí vận hành</p>
+              <h3>Biết khi nào nên mở rộng</h3>
+              <p>Tính cả công xử lý, công sửa lại và chi phí sử dụng AI. Đối chiếu với cách làm hiện tại trên cùng một loại công việc.</p>
+              <dl class="value-measure">
+                <div><dt>Chỉ số theo dõi</dt><dd>Chi phí trên mỗi kết quả đạt yêu cầu</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="v5-section v5-roles" id="roles" aria-labelledby="role-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Vai trò của tác nhân</p>
+            <h2 id="role-title" lang="en">One platform. Configured for your work.</h2>
+            <p class="lead">Core Agentic hỗ trợ từ trả lời khách hàng đến đối chiếu chứng từ. Mỗi vai trò có đầu ra cụ thể để đội ngũ kiểm tra hoặc phê duyệt.</p>
+          </div>
+          <ul class="role-grid">
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/chat.png" width="24" height="24" alt=""></span>
+              <h3>Chatbot hỏi đáp</h3>
+              <p>Tra cứu tài liệu đã duyệt, đối chiếu nguồn và trả lời kèm trích dẫn.</p>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/internal.png" width="24" height="24" alt=""></span>
+              <h3>Trợ lý nội bộ</h3>
+              <p>Tra cứu hồ sơ, giải đáp chính sách đã duyệt và lập danh sách việc cần làm cho nhân viên mới.</p>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/support.png" width="24" height="24" alt=""></span>
+              <h3>Hỗ trợ khách hàng</h3>
+              <p>Phân loại yêu cầu bán hàng hoặc hỗ trợ, soạn phản hồi và chuyển cho người phụ trách.</p>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/schedule.png" width="24" height="24" alt=""></span>
+              <h3>AI vận hành nội bộ</h3>
+              <p>Cập nhật trạng thái yêu cầu và đánh dấu ngoại lệ theo lịch hoặc theo sự kiện.</p>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/embedded.png" width="24" height="24" alt=""></span>
+              <h3>Trợ lý trong ứng dụng</h3>
+              <p>Tra cứu dữ liệu và chuẩn bị thao tác ngay trong phần mềm đội ngũ đang dùng.</p>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/search.png" width="24" height="24" alt=""></span>
+              <h3>Nghiên cứu khách hàng tiềm năng</h3>
+              <p>Tổng hợp hồ sơ, dẫn nguồn và gợi ý bước tiếp cận cho đội bán hàng.</p>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/finance-overdue.png" width="24" height="24" alt=""></span>
+              <h3>Đối chiếu tài chính</h3>
+              <p>So sánh chứng từ và dữ liệu giao dịch, đánh dấu chênh lệch để kế toán kiểm tra.</p>
+            </li>
+            <li>
+              <span class="chapter-icon"><img src="assets/deck-icons/report.png" width="24" height="24" alt=""></span>
+              <h3>Tài liệu và pháp lý</h3>
+              <p>Đối chiếu tài liệu với mẫu đã duyệt và ghi lại khác biệt để chuyên viên rà soát.</p>
+            </li>
+            <li class="role-custom">
+              <span class="chapter-icon"><img src="assets/deck-icons/customize.png" width="24" height="24" alt=""></span>
+              <h3>Tuỳ biến theo nhu cầu của tổ chức</h3>
+              <p>Cấu hình tác nhân theo quy trình riêng của từng đội ngũ.</p>
+            </li>
+          </ul>
+          <div class="chapter-followup role-configuration">
+            <p>Thiết lập kênh, nguồn thông tin, công cụ và quy tắc phê duyệt cho từng vai trò.</p>
+            <a class="v5-text-link" href="products.html#applications">Xem các ví dụ ứng dụng <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="v5-architecture">
+        <section class="v5-section v5-integration" id="architecture" aria-labelledby="platform-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Kiến trúc</p>
+              <h2 id="platform-title">Tích hợp với hệ thống hiện có</h2>
+              <p class="lead">Tác nhân làm việc qua các kênh đội ngũ đang dùng và truy cập dữ liệu được cấp quyền. ERP, CRM và các hệ thống nghiệp vụ hiện có vẫn lưu dữ liệu chính thức.</p>
+            </div>
+
+            <figure class="v5-flow" aria-label="Kiến trúc tích hợp Core Agentic">
+              <div class="v5-flow-grid">
+                <section class="v5-systems v5-inputs" aria-labelledby="v5-channels-title">
+                  <h3 id="v5-channels-title">Kênh làm việc</h3>
+                  <dl>
+                    <div><dt>Chat và ứng dụng</dt><dd>Chat trên web hoặc nhúng vào ứng dụng.</dd></div>
+                    <div><dt>Email và API</dt><dd>Kết nối theo cấu hình.</dd></div>
+                    <div><dt>Lịch và sự kiện</dt><dd>Khởi chạy tác vụ theo lịch hoặc sự kiện đã thiết lập.</dd></div>
+                  </dl>
+                </section>
+
+                <section class="v5-core" aria-labelledby="v5-core-title">
+                  <h3 id="v5-core-title">Core Agentic</h3>
+                  <p>Môi trường triển khai riêng cho từng khách hàng.</p>
+                  <dl class="v5-engines">
+                    <div><dt>Tác nhân AI</dt><dd>Suy luận và lập kế hoạch.</dd></div>
+                    <div><dt>Quy trình</dt><dd>Chạy các bước đã thiết lập.</dd></div>
+                  </dl>
+                  <p class="v5-connectors">Công cụ và bộ kết nối</p>
+                  <a class="v5-policy-link" href="#control">Quyền truy cập · Phê duyệt · Nhật ký <span aria-hidden="true">↓</span></a>
+                </section>
+
+                <section class="v5-systems v5-records" aria-labelledby="v5-records-title">
+                  <h3 id="v5-records-title">Hệ thống hiện có</h3>
+                  <dl>
+                    <div><dt>Ứng dụng</dt><dd>ERP, CRM và WMS qua API.</dd></div>
+                    <div><dt>Cơ sở dữ liệu</dt><dd>Truy cập trong phạm vi được cấp quyền.</dd></div>
+                    <div><dt>Tệp và kho tri thức</dt><dd>Tài liệu và bảng tính đã được phê duyệt.</dd></div>
+                  </dl>
+                </section>
+
+                <div class="v5-model"><strong>Mô hình AI</strong><span>Core Agentic sử dụng mô hình theo cấu hình triển khai.</span></div>
+              </div>
+              <figcaption class="chapter-followup v5-flow-caption">
+                <p>Sơ đồ triển khai tổng quan. Chọn kênh, bộ kết nối và mô hình theo phạm vi dự án.</p>
+                <a class="v5-text-link" href="products.html#architecture">Xem kiến trúc Core Agentic <span aria-hidden="true">↗</span></a>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="v5-section ink v5-control" id="control" aria-labelledby="v5-control-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Kiểm soát</p>
+              <h2 id="v5-control-title">Đội ngũ quyết định AI được làm gì</h2>
+              <p class="lead">Khi tác nhân kết nối với hệ thống, đội ngũ quyết định AI được đọc dữ liệu nào, thao tác nào cần duyệt và cách kiểm tra lại trong nhật ký.</p>
+            </div>
+            <ul class="v5-controls-list">
+              <li>
+                  <span class="chapter-icon"><img src="assets/deck-icons/access.png" width="24" height="24" alt=""></span>
+                  <div><h3>Giới hạn truy cập</h3><p>Cấp đúng quyền cho từng nguồn và thao tác. Bắt đầu với quyền chỉ đọc nếu phù hợp.</p></div>
+              </li>
+              <li>
+                  <span class="chapter-icon"><img src="assets/deck-icons/approval.png" width="24" height="24" alt=""></span>
+                  <div><h3>Duyệt thao tác cụ thể</h3><p>Khi cần phê duyệt, AI dừng để người phụ trách xem nội dung thay đổi trước khi quyết định.</p></div>
+              </li>
+              <li>
+                  <span class="chapter-icon"><img src="assets/deck-icons/activity.png" width="24" height="24" alt=""></span>
+                  <div><h3>Xem nhật ký</h3><p>Kiểm tra lần chạy, quyết định phê duyệt và thao tác đã thực hiện.</p></div>
+              </li>
+            </ul>
+
+            <figure class="v5-approval" aria-labelledby="v5-approval-title">
+              <div class="v5-approval-copy">
+                <div class="v5-approval-top">
+                  <p class="v5-approval-ref">PR-DEMO-1042</p>
+                  <span class="chapter-badge status-badge">Chờ phê duyệt</span>
+                </div>
+                <h3 id="v5-approval-title">Đề nghị mua 100 gioăng</h3>
+                <p>Trong <a href="products.html#order-example">ví dụ lập kế hoạch vật tư</a>, tác nhân đề nghị cập nhật số lượng mua. Người phụ trách xem nội dung thay đổi trước khi duyệt hoặc từ chối.</p>
+              </div>
+              <div class="v5-approval-crop">
+                <img src="slides/vi/slide-14.png" width="1440" height="810" loading="lazy" alt="Ảnh giao diện minh họa yêu cầu duyệt chính xác thao tác cập nhật đề nghị PR-DEMO-1042 cho 100 gioăng, với lựa chọn Từ chối hoặc Phê duyệt.">
+              </div>
+              <figcaption>
+                <span>Ảnh giao diện Core Agentic với dữ liệu minh họa.</span>
+                <a href="slides/vi/slide-14.png">Xem slide gốc <span aria-hidden="true">↗</span></a>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+
+      <section class="v5-section v5-delivery" id="how-we-work" aria-labelledby="delivery-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Cách chúng tôi triển khai</p>
+            <h2 id="delivery-title">Thử trên một quy trình trước khi mở rộng</h2>
+            <p class="lead">Chúng tôi cùng đội ngũ của bạn chọn một công việc lặp lại, thống nhất kết quả cần đạt và các thao tác phải duyệt, rồi so sánh với cách làm hiện tại.</p>
+          </div>
+          <div class="delivery-example">
+            <ol class="execution-steps">
+              <li><span class="chapter-icon"><img src="assets/deck-icons/pilot-select.png" width="24" height="24" alt=""></span><div><h3>Chọn công việc</h3><p>Chọn người phụ trách, ghi nhận hiện trạng và thống nhất tiêu chí đầu ra.</p></div></li>
+              <li><span class="chapter-icon"><img src="assets/deck-icons/pilot-test.png" width="24" height="24" alt=""></span><div><h3>Thử trên tình huống thực tế</h3><p>Dùng đầu vào mẫu để kiểm tra kết quả và các điểm cần phê duyệt.</p></div></li>
+              <li><span class="chapter-icon"><img src="assets/deck-icons/pilot-measure.png" width="24" height="24" alt=""></span><div><h3>So sánh kết quả</h3><p>So sánh số kết quả đạt yêu cầu mỗi giờ công và chi phí cho mỗi kết quả, kể cả công sửa lại.</p></div></li>
+            </ol>
+            <img class="delivery-photo" src="assets/deck-pilot.webp" width="1640" height="923" loading="lazy" alt="Hai thành viên trao đổi về quy trình làm việc trong nhà máy.">
+          </div>
+        </div>
+      </section>
+
+      <section class="v5-section v5-customers ink" id="customer-experience" aria-labelledby="customer-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Kinh nghiệm triển khai</p>
+            <h2 id="customer-title">Những tổ chức đã làm việc với Primitive AI</h2>
+            <p class="lead">Kinh nghiệm của chúng tôi trải rộng từ sản xuất và logistics đến công nghệ và giáo dục.</p>
+          </div>
+          <div class="customer-groups">
+            <section class="customer-group" aria-labelledby="customer-list-title">
+              <h3 id="customer-list-title">Khách hàng</h3>
+              <ul class="v5-logos" aria-labelledby="customer-list-title">
+                <li><img src="../../public/images/partners/Ajinomoto.png" loading="lazy" alt="Ajinomoto"></li>
+                <li><img src="../../public/images/partners/Nidec.png" loading="lazy" alt="Nidec"></li>
+                <li><img src="../../public/images/partners/FA.png" loading="lazy" alt="FPT Automotive"></li>
+                <li><img src="../../public/images/partners/vti-solutions.png" loading="lazy" alt="VTI Solutions"></li>
+                <li class="logo-on-dark"><img src="../../public/images/partners/RAIS.png" loading="lazy" alt="RAIS Tech"></li>
+                <li><img src="../../public/images/partners/NEU.svg" loading="lazy" alt="National Economic University (NEU)"></li>
+                <li><img src="../../public/images/partners/Ymner.png" loading="lazy" alt="Ymner"></li>
+                <li><img src="../../public/images/partners/MinhVietTrans.png" loading="lazy" alt="Minh Việt Trans"></li>
+              </ul>
+            </section>
+            <section class="customer-group" aria-labelledby="partner-list-title">
+              <h3 id="partner-list-title">Đối tác công nghệ</h3>
+              <ul class="v5-logos technology-partners" aria-labelledby="partner-list-title">
+                <li><img src="../../public/images/partners/Intel.png" loading="lazy" alt="Intel"></li>
+                <li><img src="../../public/images/partners/Microsoft.png" loading="lazy" alt="Microsoft"></li>
+                <li><img src="../../public/images/partners/Google.png" loading="lazy" alt="Google"></li>
+                <li><img src="../../public/images/partners/Techvico.png" loading="lazy" alt="Techvico"></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="v5-section v5-pricing" id="pricing" aria-labelledby="pricing-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Chi phí</p>
+            <h2 id="pricing-title">Cách tính phí dự kiến</h2>
+            <p class="lead">Báo giá dựa trên quy trình đã chọn, hệ thống cần kết nối, môi trường triển khai, số tài khoản và mức sử dụng dự kiến.</p>
+          </div>
+          <ul class="pricing-grid">
+            <li class="metric-card">
+              <span class="chapter-icon"><img src="assets/deck-icons/pricing-setup.png" width="24" height="24" alt=""></span>
+              <h3>Phí triển khai</h3>
+              <p>Khảo sát quy trình, kết nối hệ thống, cấu hình và kiểm thử các luồng công việc đã thống nhất.</p>
+              <p class="pricing-cadence">Một lần</p>
+            </li>
+            <li class="metric-card pricing-subscription">
+              <span class="chapter-icon"><img src="assets/deck-icons/pricing-subscription.png" width="24" height="24" alt=""></span>
+              <h3>Phí thuê bao</h3>
+              <p>Bao gồm quyền sử dụng Core Agentic và bảo trì nền tảng theo phạm vi đã thỏa thuận.</p>
+              <p class="pricing-cadence">Định kỳ</p>
+            </li>
+            <li class="metric-card">
+              <span class="chapter-icon"><img src="assets/deck-icons/pricing-usage.png" width="24" height="24" alt=""></span>
+              <h3>Phí sử dụng</h3>
+              <p>Tính theo lượng sử dụng mô hình AI và các dịch vụ bên thứ ba đã thỏa thuận.</p>
+              <p class="pricing-cadence">Theo mức sử dụng</p>
+            </li>
+          </ul>
+          <div class="chapter-followup">
+            <p class="pricing-note">Báo giá nêu rõ thuê bao bao gồm những gì, cách đo mức sử dụng, hạn mức và cách tính phí vượt hạn mức nếu áp dụng. Phát triển theo yêu cầu và hỗ trợ nâng cao được báo giá riêng khi cần.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="v5-live-cta" lang="vi"></div>
+  </main>
+  <footer class="v5-footer">
+    <div class="v5-footer-inner">
+      <a href="#intro" aria-label="Primitive AI · Trang chủ"><img src="../../public/prai-logo.png" width="166" alt="Primitive AI"></a>
+      <nav aria-label="Điều hướng cuối trang"><a href="products.html">Sản phẩm</a><a href="products.html#applications">Ứng dụng</a><a href="mailto:doannt@primitive-ai.com">Liên hệ</a></nav>
+    </div>
+  </footer>
+</body>
+</html>

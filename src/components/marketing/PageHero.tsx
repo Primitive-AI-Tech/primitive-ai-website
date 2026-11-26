@@ -34,3 +34,37 @@ export function PageHero({
     </section>
   );
 }
+
+export function V5PageHero({
+  id,
+  className = "",
+  eyebrow,
+  title,
+  description,
+  visual,
+  children,
+}: {
+  id: string;
+  className?: string;
+  eyebrow: ReactNode;
+  title: ReactNode;
+  description?: ReactNode;
+  visual: ReactNode;
+  children?: ReactNode;
+}) {
+  const titleId = `${id}-title`;
+  return (
+    <section id={id} className={`v5-page-hero dark-section ${className}`} aria-labelledby={titleId}>
+      <FlowBackdrop />
+      <div className="v5-page-wrap v5-hero-layout">
+        <div className="v5-hero-copy">
+          <Eyebrow>{eyebrow}</Eyebrow>
+          <h1 id={titleId}>{title}</h1>
+          {description && <p className="v5-hero-description">{description}</p>}
+          {children}
+        </div>
+        {visual}
+      </div>
+    </section>
+  );
+}

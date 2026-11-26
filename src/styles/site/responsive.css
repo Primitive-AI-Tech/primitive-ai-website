@@ -351,12 +351,6 @@
   .activity-content li small {
     font-size: 13px;
   }
-  .closing-cta h2 {
-    font-size: 33px;
-  }
-  .closing-cta p {
-    font-size: 21px;
-  }
   .platform-hero {
     padding-top: 150px;
   }
@@ -726,9 +720,6 @@
   .company-principle-grid article {
     flex-direction: column;
   }
-  .company-principles + .closing-cta h2 {
-    font-size: 36px;
-  }
   .contact-hero h1 {
     font-size: 57px;
   }
@@ -956,25 +947,6 @@
     font-size: 14px;
   }
   .activity-preview > .text-link {
-    font-size: 17px;
-  }
-  .closing-cta {
-    padding: 35px 0 40px;
-  }
-  .closing-cta > .site-container {
-    gap: 22px;
-  }
-  .closing-cta h2 {
-    font-size: 31px;
-    line-height: 1.13;
-  }
-  .closing-cta p {
-    font-size: 19px;
-    margin-top: 18px;
-  }
-  .closing-cta .site-button {
-    width: 100%;
-    max-width: 420px;
     font-size: 17px;
   }
   .site-footer {
@@ -2079,15 +2051,6 @@
   .company-links > a + a {
     padding-left: 0;
     border: 0;
-  }
-  .company-principles + .closing-cta > .site-container {
-    flex-direction: column;
-    text-align: left;
-    gap: 28px;
-  }
-  .company-principles + .closing-cta h2 {
-    font-size: 35px;
-    line-height: 1.12;
   }
   .contact-hero {
     padding-bottom: 60px;

@@ -187,30 +187,6 @@ main[data-page="/"] > .home-company {
 .home-company .story-progression {
   margin-top: 48px;
 }
-main[data-page="/"] > .closing-cta {
-  background:
-    radial-gradient(ellipse at 90% 80%, #044eff70, transparent 65%), #071526;
-}
-main[data-page="/"] > .closing-cta > .site-container {
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 38px;
-}
-main[data-page="/"] > .closing-cta h2 {
-  font-size: clamp(42px, 5.7vw, 84px);
-  max-width: 1060px;
-  text-wrap: balance;
-}
-main[data-page="/"] > .closing-cta p {
-  font-size: clamp(20px, 2.2vw, 30px);
-  margin-top: 30px;
-}
-main[data-page="/"] > .closing-cta .site-button {
-  font-size: 20px;
-  min-height: 58px;
-  padding-inline: 30px;
-}
-
 /* The homepage progress indicator stays quiet at the top edge. */
 .story-progress {
   position: fixed;

@@ -1,0 +1,8 @@
+Use case: precise-object-edit
+Asset type: revised full-page visual mockup for Primitive AI /products, to review before implementation
+
+Input images: Image 1 is the edit target, a full-page portrait Products mockup. Image 2 is the replacement 3D system architecture illustration.
+
+Primary request: In Image 1, replace only the large glossy 3D architecture illustration inside the light Core Agentic platform panel with the architecture model from Image 2. Treat Image 2 as the exact replacement visual and fit it neatly into the existing illustration area on the right half of the panel. Scale it proportionally, preserve its internal labels and transparent background, with no added glow. The new model should sit comfortably inside the existing panel with a little breathing space and look premium, calm and readable.
+
+Constraints: Preserve Image 1's page composition, white and pale-blue background, navigation bar, all wording, product cards and images, specialist products section, custom AI banner, footer, typography, and spacing exactly. Keep the section order. Do not redesign or regenerate the page. Only replace the architecture visual in the Core Agentic panel. Do not change the Core Agentic title, its description, CTA, or the application-example chips. Avoid adding visual effects around the new illustration.

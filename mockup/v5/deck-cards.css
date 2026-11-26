@@ -1,0 +1,203 @@
+/* Keep the presentation's card groups inside the website's chapter shells. */
+.v5-body {
+  --deck-cream: #f4f3ec;
+  --deck-white: #fdfefd;
+  --deck-sage: #eaf4ec;
+  --deck-mint: #dceee4;
+  --deck-line: #d6e0d8;
+  --deck-ink: #142924;
+  --deck-muted: #425b53;
+  --deck-green: #1c614f;
+  --deck-night: #0b211e;
+  --deck-dark-card: #17362f;
+  --deck-dark-line: #315049;
+  --deck-dark-text: #c3d8cf;
+  --deck-accent: #85d6b0;
+}
+
+.v5-body .chapter-icon {
+  border-radius: 10px;
+  background: var(--deck-mint);
+}
+.v5-body .chapter-icon img { filter: none; }
+
+.v5-body .metric-card {
+  border-color: var(--deck-line);
+  border-radius: 18px;
+  background: var(--deck-white);
+  color: var(--deck-ink);
+  box-shadow: none;
+}
+.metric-card p { color: var(--deck-muted); }
+.metric-card strong, .metric-card a { color: var(--deck-green); }
+.metric-card.amber-card strong, .metric-card.amber-card a { color: #70471f; }
+.metric-card.amber-card .chapter-icon { background: #f6e6c4; }
+.v5-body .baseline { border-color: var(--deck-mint); background: var(--deck-mint); color: var(--deck-ink); }
+.v5-body .baseline .chapter-badge { border: 0; background: transparent; color: var(--deck-green); padding: 0; font-weight: 750; text-transform: uppercase; }
+.baseline strong { color: var(--deck-green); }
+
+.v5-body .execution-steps li {
+  border-color: var(--deck-line);
+  border-radius: 15px;
+  background: var(--deck-white);
+  color: var(--deck-ink);
+  box-shadow: none;
+}
+.v5-body .execution-steps p { color: var(--deck-muted); }
+.v5-body .deck-capture {
+  border-color: var(--deck-line);
+  border-radius: 18px;
+  background: var(--deck-white);
+}
+.v5-body .deck-capture figcaption {
+  border-color: var(--deck-line);
+  color: var(--deck-muted);
+}
+.v5-body .deck-capture figcaption strong { color: var(--deck-ink); }
+
+.v5-body .example {
+  border-color: var(--deck-line);
+  border-radius: 18px;
+  color: var(--deck-ink);
+  box-shadow: none;
+}
+.v5-body .example-order {
+  background: var(--deck-night);
+  border-color: var(--deck-dark-line);
+  color: var(--deck-white);
+}
+.example-order .order-photo { border-color: var(--deck-dark-line); }
+.example-order .example-copy blockquote {
+  border: 0;
+  padding-left: 0;
+  color: var(--deck-white);
+}
+.example-order .order-flow > li, .example-order .order-quantities {
+  border-color: var(--deck-dark-line);
+  background: var(--deck-dark-card);
+}
+.example-order .order-flow > li:not(:last-child)::after { background: #86b5a3; }
+.example-order .order-flow p, .example-order .order-quantities dt { color: var(--deck-dark-text); }
+.example-order .order-quantities > div + div { border-color: var(--deck-dark-line); }
+.example-order .order-quantities > div:last-child dd { color: var(--deck-accent); }
+.v5-body .example-order .example-note { color: var(--deck-dark-text); }
+.v5-body .example-order .example-note a { color: #a2e7c5; }
+
+.v5-body .example-workflow {
+  grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
+  gap: 14px clamp(15px, 3vw, 38px);
+}
+.v5-body .example-warehouse { background: var(--deck-cream); }
+.v5-body :is(.example-finance, .example-your-case) { background: var(--deck-sage); }
+.example :is(.example-note, header) { grid-column: 1 / -1; }
+.example-workflow .example-copy p { color: var(--deck-muted); }
+.example-workflow .execution-steps li { align-items: center; }
+.example-workflow .execution-steps h4 { font-size: clamp(16px, 1.5vw, 21px); }
+.v5-body .example-workflow .example-note,
+.v5-body .output-note { color: var(--deck-muted); font-size: 12px; }
+.v5-body .output-note { margin-top: 7px; }
+
+.v5-body .example-warehouse .output { border-color: var(--deck-line); background: var(--deck-white); padding: 7px; }
+.example-warehouse .output-photo { height: clamp(95px, 12vw, 166px); border-radius: 9px; }
+.example-warehouse .output-body { padding: 8px 5px 1px; }
+.example-warehouse .output caption { color: var(--deck-green); }
+.example-warehouse .output thead { background: var(--deck-mint); }
+.example-warehouse .output thead th, .example-warehouse .output tbody td:last-child { color: var(--deck-green); }
+.example-warehouse .output :is(th, td) { padding: 5px; border: 1px solid #c6d7cb; }
+
+.v5-body .output-report { border: 0; background: transparent; }
+.output-report .output-photo { height: clamp(125px, 15vw, 190px); border-radius: 14px; }
+.output-report .output-body {
+  position: relative;
+  margin: -26px 10px 0;
+  padding: 12px;
+  border: 1px solid var(--deck-line);
+  border-radius: 15px;
+  background: var(--deck-white);
+  color: var(--deck-ink);
+}
+.v5-body .example-workflow .output h4 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: clamp(16px, 1.7vw, 23px);
+}
+.example-workflow .output h4 .chapter-icon { width: 32px; height: 32px; }
+.example-workflow .output h4 .chapter-icon img { width: 18px; height: 18px; }
+.v5-body .example-workflow .report-list { color: var(--deck-muted); }
+
+.example-your-case .output-photo { object-position: right 28%; }
+
+.v5-body .v5-roles h2 { max-width: none; }
+.v5-body .role-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--v5-card-gap, 12px);
+}
+.v5-body .role-grid li {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 3px 13px;
+  align-content: center;
+  min-height: 112px;
+  padding-block: clamp(14px, 1.2vw, 18px);
+  border-color: var(--deck-line);
+  background: var(--deck-white);
+  color: var(--deck-ink);
+  box-shadow: none;
+}
+.v5-body .role-grid .chapter-icon { grid-row: span 2; align-self: center; }
+.v5-body .role-grid h3 { margin: 0; font-size: clamp(17px, 1.6vw, 23px); }
+.v5-body .role-grid p { margin: 0; color: var(--deck-muted); }
+.v5-body .role-configuration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  padding: 8px 16px;
+  border-radius: 11px;
+  background: var(--deck-mint);
+  color: var(--deck-ink);
+  font-weight: 650;
+}
+
+.delivery-example {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(16px, 3vw, 40px);
+  padding: clamp(12px, 2vw, 24px);
+  border-radius: 18px;
+  background: var(--page-night);
+}
+.delivery-example .delivery-photo { width: 100%; height: clamp(242px, 25vw, 380px); object-fit: cover; object-position: 77% 50%; border-radius: 12px; }
+.v5-body .delivery-example .execution-steps li {
+  border-color: var(--deck-dark-line);
+  background: var(--deck-dark-card);
+  color: var(--deck-white);
+}
+.v5-body .delivery-example .execution-steps p { color: var(--deck-dark-text); }
+
+@media (max-width: 690px) {
+  .v5-body .example-workflow, .delivery-example { grid-template-columns: minmax(0, 1fr); }
+  .v5-body .role-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .v5-body .role-grid li { grid-template-columns: minmax(0, 1fr); align-content: start; }
+  .v5-body .role-grid .chapter-icon { grid-row: auto; margin-bottom: 4px; }
+  .v5-body .role-grid .role-custom {
+    grid-column: 1 / -1;
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+  .v5-body .role-custom .chapter-icon { grid-row: span 2; margin-bottom: 0; }
+  .delivery-example .delivery-photo { height: clamp(170px, 50vw, 260px); }
+}
+
+@media (max-width: 400px) {
+  .example-warehouse .output :is(th, td) { padding-inline: 3px; font-size: 12px; }
+  .output-report .output-body { margin-inline: 4px; }
+}
+
+@media (max-width: 380px) {
+  .v5-body .role-grid { grid-template-columns: minmax(0, 1fr); }
+  .v5-body .role-grid li { grid-template-columns: 40px minmax(0, 1fr); min-height: 0; }
+  .v5-body .role-grid .chapter-icon { grid-row: span 2; margin-bottom: 0; }
+}

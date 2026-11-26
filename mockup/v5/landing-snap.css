@@ -1,0 +1,86 @@
+/* The preview uses the document scrollport for each chapter, as the live page does. */
+html:has(> body.v5-review) {
+  scroll-snap-type: y proximity;
+  scroll-padding-block: 0 16px;
+  scroll-behavior: smooth;
+}
+
+.v5-review {
+  --v5-header-clearance: 104px;
+  --v5-chapter-top: max(calc(var(--v5-header-clearance) + 16px), clamp(120px, 16svh, 152px));
+  --v5-chapter-bottom: clamp(42px, 6svh, 76px);
+}
+
+.v5-review #main > :is(#v5-live-hero, #v5-live-cta),
+.v5-review #main > .v5-body > .v5-section,
+.v5-review #main > .v5-body > .v5-architecture > .v5-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-margin-block-start: 0;
+}
+
+/* Reserve the live panels' space before React mounts, so a deep link stays put. */
+.v5-review #main > :is(#v5-live-hero, #v5-live-cta) {
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+}
+
+.v5-review #main > .v5-body > .v5-section,
+.v5-review #main > .v5-body > .v5-architecture > .v5-section {
+  display: grid;
+  align-content: start;
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  min-inline-size: 0;
+  padding-block: var(--v5-chapter-top) var(--v5-chapter-bottom);
+}
+
+/* The source-rendered sections have light-DOM anchors for same-page links. */
+.v5-review #main > :is(#intro, #next-step) {
+  display: block;
+  block-size: 0;
+  scroll-margin-block-start: 0;
+}
+
+.v5-review #main .v5-section :where([id], :focus-visible) {
+  scroll-margin-block-start: calc(var(--v5-header-clearance) + 12px);
+}
+
+.v5-review > .v5-footer {
+  scroll-snap-align: end;
+}
+
+.v5-review > .v5-story-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 180;
+  height: 3px;
+  overflow: clip;
+  background: #6d9aff20;
+  pointer-events: none;
+}
+
+.v5-review > .v5-story-progress > span {
+  display: block;
+  height: 100%;
+  background: #0fb4e0;
+  box-shadow: 0 0 12px #0fb4e0;
+  transform: scaleX(var(--v5-story-progress, 0));
+  transform-origin: left center;
+}
+
+@media (max-width: 920px) {
+  .v5-review {
+    --v5-header-clearance: 90px;
+    --v5-chapter-top: calc(var(--v5-header-clearance) + 15px);
+    --v5-chapter-bottom: clamp(34px, 6svh, 54px);
+  }
+}
+
+@media (max-height: 480px) and (max-width: 1199px) {
+  .v5-review { --v5-header-clearance: 72px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(> body.v5-review) { scroll-behavior: auto; }
+}
