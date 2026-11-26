@@ -1,19 +1,19 @@
-/* Responsive, scroll-led presentation layer. Native browser scrolling owns input. */
+/* Responsive, scroll-led presentation layer. */
 :root {
   --section-top: clamp(116px, 14svh, 164px);
   --section-bottom: clamp(48px, 7svh, 96px);
   --snap-header-clearance: clamp(100px, 11svh, 112px);
 }
 html.story-snap {
-  scroll-snap-type: y proximity;
-  scroll-padding-block: 0 16px;
+  scroll-snap-type: y mandatory;
+  scroll-padding-block: 0;
   scroll-behavior: smooth;
 }
 .experience-page > section,
 .experience-page > div > section,
 .experience-page .policy-sections > section {
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
+  scroll-snap-stop: always;
   scroll-margin-block-start: 0;
   min-inline-size: 0;
   block-size: 100svh;
@@ -51,8 +51,9 @@ html.story-snap {
 .experience-page .policy-sections > .policy-clause {
   margin-block: 0;
 }
-.site-footer {
-  scroll-snap-align: end;
+html.story-snap .site-footer {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .site-container {
   width: min(1280px, calc(100% - clamp(40px, 6.7vw, 112px)));
@@ -515,7 +516,6 @@ main[data-page="/"] > .home-company {
 @media (prefers-reduced-motion: reduce) {
   html.story-snap {
     scroll-behavior: auto;
-    scroll-snap-type: y proximity;
   }
   .motion-ready [data-reveal] {
     opacity: 1;

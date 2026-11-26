@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { installStoryNavigation } from "./story-scroll";
 
 const revealSelector = [
   ".site-eyebrow",
@@ -62,7 +63,7 @@ const revealSelector = [
   ".question-list",
 ].join(",");
 
-/** Native scrolling stays in charge; motion progressively enhances visible content. */
+/** Native touch snapping and wheel navigation share the same section boundaries. */
 export function usePageExperience(pathname: string, enabled: boolean) {
   useEffect(() => {
     const root = document.getElementById("main-content");
@@ -80,6 +81,7 @@ export function usePageExperience(pathname: string, enabled: boolean) {
     let revealObserver: IntersectionObserver | undefined;
     let sectionObserver: IntersectionObserver | undefined;
     html.classList.add("story-snap");
+    const removeStoryNavigation = installStoryNavigation(root, sections, preference);
     const configureMotion = () => {
       revealObserver?.disconnect();
       sectionObserver?.disconnect();
@@ -138,6 +140,7 @@ export function usePageExperience(pathname: string, enabled: boolean) {
     preference.addEventListener("change", configureMotion);
     root.addEventListener("focusin", revealFocusedContent);
     return () => {
+      removeStoryNavigation();
       revealObserver?.disconnect();
       sectionObserver?.disconnect();
       preference.removeEventListener("change", configureMotion);
