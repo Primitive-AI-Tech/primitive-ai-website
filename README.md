@@ -1,6 +1,6 @@
 # Primitive AI website
 
-The React site implements the approved V5 homepage, Products, Services, About, and Updates. These pages share navigation, the blue hero waves, scroll progress, section snapping, and the closing invitation. The [V5 mockup](mockup/v5/README.md) records the approved visual designs. The [architecture refactor](docs/architecture-refactor.md) explains the shared route, page and feature structure.
+The React site uses the approved V5 content structure. The [homepage design review](mockup/v6/index.html) shows the redesigned homepage and twelve complete section images. The [V5 mockup](mockup/v5/README.md) records the earlier designs and the Products, Services, About, and Updates pages. The [architecture refactor](docs/architecture-refactor.md) explains the shared route, page and feature structure.
 
 The interface uses the original Primitive AI logo, **#044EFF** as its primary blue, navy presentation sections, responsive layouts, native diagrams and scroll-led motion. The implementation uses React 18, TypeScript and Vite.
 

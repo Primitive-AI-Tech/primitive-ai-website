@@ -196,12 +196,6 @@
   .company-principle-grid h3 {
     font-size: 21px;
   }
-  .footer-grid {
-    gap: 25px;
-  }
-  .footer-grid > div {
-    padding-left: 25px;
-  }
 }
 @media (max-width: 1279px) {
   .desktop-navigation,
@@ -702,19 +696,6 @@
   .company-principle-grid article {
     flex-direction: column;
   }
-  .footer-grid {
-    grid-template-columns: 1.3fr 1fr 1fr;
-    gap: 18px;
-  }
-  .footer-grid > div {
-    padding-left: 18px;
-  }
-  .footer-grid > div > a {
-    font-size: 14px;
-  }
-  .footer-grid h2 {
-    font-size: 18px;
-  }
 }
 /* Mobile: reflow decisions, never scale a desktop screenshot */
 @media (max-width: 767px) {
@@ -887,44 +868,6 @@
   }
   .activity-preview > .text-link {
     font-size: 17px;
-  }
-  .site-footer {
-    padding: 35px 0 20px;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 28px 22px;
-  }
-  .footer-brand {
-    grid-column: 1/-1;
-    max-width: 245px;
-    padding: 7px 15px;
-  }
-  .footer-grid > div {
-    padding: 0;
-    border: 0;
-  }
-  .footer-grid > div:last-child {
-    grid-column: auto;
-  }
-  .footer-grid h2 {
-    font-size: 19px;
-    margin-bottom: 14px;
-  }
-  .footer-grid > div > a {
-    font-size: 15px;
-    margin-top: 10px;
-  }
-  .footer-grid .footer-email {
-    font-size: 14px;
-  }
-  .footer-bottom {
-    font-size: 11px;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 23px;
-    padding-top: 20px;
   }
   .page-hero {
     padding: 125px 0 55px;
@@ -2025,9 +1968,6 @@
   }
   .model-input-row > label {
     font-size: 14px;
-  }
-  .footer-grid {
-    gap: 25px 18px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

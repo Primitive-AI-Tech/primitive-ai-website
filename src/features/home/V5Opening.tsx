@@ -1,11 +1,13 @@
 import { useCopy } from "@/i18n/useCopy";
-import { ChapterIcon, ExecutionSteps, HomeChapter } from "./V5Chapter";
+import { HomeArtwork } from "./HomeArtwork";
+import { HomeIcon } from "./HomeIcon";
+import { ExecutionSteps, HomeChapter } from "./V5Chapter";
 
 const executionSteps = [
   { icon: "plan", title: "Reason and plan", description: "Break the objective into steps." },
-  { icon: "act", title: "Carry out the work", description: "Use a tool or run a workflow." },
+  { icon: "workflows", title: "Carry out the work", description: "Use a tool or run a workflow." },
   { icon: "deliver", title: "Hand off the result", description: "Save results or make updates when authorized." },
-];
+] as const;
 
 export default function V5Opening() {
   const t = useCopy();
@@ -13,6 +15,7 @@ export default function V5Opening() {
     <>
       <HomeChapter
         id="problem"
+        artwork={<HomeArtwork name="problem" />}
         className="v5-friction"
         titleId="friction-title"
         eyebrow={t("Operational challenges")}
@@ -22,7 +25,7 @@ export default function V5Opening() {
         <div className="friction-grid">
           <article className="metric-card">
             <h3>
-              <ChapterIcon name="search" />
+              <HomeIcon name="search" />
               {t("Finding information")}
             </h3>
             <strong>
@@ -34,7 +37,7 @@ export default function V5Opening() {
           </article>
           <article className="metric-card amber-card">
             <h3>
-              <ChapterIcon name="copy" />
+              <HomeIcon name="copy" />
               {t("Re-entering data")}
             </h3>
             <strong>{t("0.34%")}</strong>
@@ -43,7 +46,7 @@ export default function V5Opening() {
           </article>
           <article className="metric-card">
             <h3>
-              <ChapterIcon name="report" />
+              <HomeIcon name="report" />
               {t("Preparing reports")}
             </h3>
             <strong>47%</strong>
@@ -64,7 +67,8 @@ export default function V5Opening() {
       </HomeChapter>
       <HomeChapter
         id="system-handoffs"
-        className="v5-systems-problem ink"
+        artwork={<HomeArtwork name="handoffs" />}
+        className="v5-systems-problem"
         titleId="system-handoffs-title"
         eyebrow={t("Operational challenges")}
         title={t("One workflow is split across multiple applications")}
@@ -78,7 +82,7 @@ export default function V5Opening() {
           <ul className="system-stages" aria-label={t("Status across four applications")}>
             <li>
               <div className="system-record">
-                <ChapterIcon name="chat" />
+                <HomeIcon name="chat" />
                 <div>
                   <h4>CRM</h4>
                   <p>{t("Request YC-184")}</p>
@@ -88,7 +92,7 @@ export default function V5Opening() {
             </li>
             <li>
               <div className="system-record">
-                <ChapterIcon name="order" />
+                <HomeIcon name="order" />
                 <div>
                   <h4>ERP</h4>
                   <p>{t("Order DH-472")}</p>
@@ -98,7 +102,7 @@ export default function V5Opening() {
             </li>
             <li>
               <div className="system-record">
-                <ChapterIcon name="stock" />
+                <HomeIcon name="stock" />
                 <div>
                   <h4>{t("Warehouse software")}</h4>
                   <p>{t("Dispatch record PX-328")}</p>
@@ -108,7 +112,7 @@ export default function V5Opening() {
             </li>
             <li>
               <div className="system-record">
-                <ChapterIcon name="finance-report" />
+                <HomeIcon name="finance-report" />
                 <div>
                   <h4>{t("Accounting software")}</h4>
                   <p>{t("Reference DH-472")}</p>
@@ -121,16 +125,25 @@ export default function V5Opening() {
             <h4>{t("Manual handoffs")}</h4>
             <ul>
               <li>
-                <strong>Email</strong>
-                <span>{t("Sales emails operations to create the order.")}</span>
+                <HomeIcon name="email" />
+                <div>
+                  <strong>Email</strong>
+                  <p>{t("Sales emails operations to create the order.")}</p>
+                </div>
               </li>
               <li>
-                <strong>Excel</strong>
-                <span>{t("Operations records the request ID and order ID in a reconciliation spreadsheet.")}</span>
+                <HomeIcon name="spreadsheet" />
+                <div>
+                  <strong>Excel</strong>
+                  <p>{t("Operations records the request ID and order ID in a reconciliation spreadsheet.")}</p>
+                </div>
               </li>
               <li>
-                <strong>{t("Phone")}</strong>
-                <span>{t("Accounting calls the warehouse to confirm dispatch.")}</span>
+                <HomeIcon name="phone" />
+                <div>
+                  <strong>{t("Phone")}</strong>
+                  <p>{t("Accounting calls the warehouse to confirm dispatch.")}</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -142,7 +155,8 @@ export default function V5Opening() {
       </HomeChapter>
       <HomeChapter
         id="execution"
-        className="v5-work ink"
+        artwork={<HomeArtwork name="execution" />}
+        className="v5-work"
         titleId="execution-title"
         eyebrow={t("Product")}
         title={t("How does Core Agentic solve it?")}
@@ -151,25 +165,20 @@ export default function V5Opening() {
         <div className="work-grid">
           <ExecutionSteps steps={executionSteps} />
           <figure className="deck-capture">
-            <a href="/images/home/v5/deck-trace.webp">
-              <img
-                src="/images/home/v5/deck-trace.webp"
-                width={1384}
-                height={772}
-                loading="lazy"
-                decoding="async"
-                alt={t("Core Agentic interface showing a contract lookup, order check, and delivery schedule conclusion.")}
-              />
-            </a>
-            <figcaption>
-              <strong>{t("Delivery meets the contract terms")}</strong>
-              <span>{t("In this Core Agentic example, an agent checks a sample order against its contract. The contract allows five days and delivery is scheduled for day four.")}</span>
-            </figcaption>
+            <img
+              src="/images/home/v5/deck-trace.webp"
+              width={1384}
+              height={772}
+              loading="lazy"
+              decoding="async"
+              alt={t("In this Core Agentic example, an agent checks a sample order against its contract. The contract allows five days and delivery is scheduled for day four.")}
+            />
           </figure>
         </div>
       </HomeChapter>
       <HomeChapter
         id="business-value"
+        artwork={<HomeArtwork name="value" />}
         className="v5-value"
         titleId="value-title"
         eyebrow={t("Business value")}
@@ -179,7 +188,7 @@ export default function V5Opening() {
         <div className="value-pair">
           <article>
             <p className="value-category">
-              <ChapterIcon name="deliver" />
+              <HomeIcon name="productivity" />
               {t("Productivity")}
             </p>
             <h3>{t("Complete more work per hour")}</h3>
@@ -193,7 +202,7 @@ export default function V5Opening() {
           </article>
           <article>
             <p className="value-category">
-              <ChapterIcon name="report" />
+              <HomeIcon name="cost" />
               {t("Operating cost")}
             </p>
             <h3>{t("Know when to expand")}</h3>

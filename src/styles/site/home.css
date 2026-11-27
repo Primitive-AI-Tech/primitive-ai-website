@@ -1440,26 +1440,11 @@ main[data-page="/"] .hero-grid {
   min-height: 44px;
   align-items: center;
 }
-.site-footer .footer-grid > div > a {
-  display: flex;
-  align-items: center;
-  min-height: 44px;
-  margin: 0;
-}
-.site-footer .footer-email {
-  font-size: 14px;
-  overflow-wrap: anywhere;
-}
 main[data-page="/"] .text-link {
   min-height: 44px;
   padding-block: 6px;
 }
 .hero-control-cues {
-  min-height: 44px;
-}
-.footer-bottom a {
-  display: inline-flex;
-  align-items: center;
   min-height: 44px;
 }
 

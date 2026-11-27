@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import { useCopy } from "@/i18n/useCopy";
-import { ChapterIcon } from "@/components/marketing/ChapterIcon";
-export { ChapterIcon } from "@/components/marketing/ChapterIcon";
+import { HomeIcon, type HomeIconName } from "./HomeIcon";
 
 type ChapterProps = {
   id: string;
@@ -11,6 +10,7 @@ type ChapterProps = {
   title: ReactNode;
   lead: ReactNode;
   titleLang?: string;
+  artwork?: ReactNode;
   children: ReactNode;
 };
 
@@ -22,17 +22,21 @@ export function HomeChapter({
   title,
   lead,
   titleLang,
+  artwork,
   children,
 }: ChapterProps) {
   return (
     <section className={`v5-section ${className}`} id={id} aria-labelledby={titleId}>
       <div className="v5-wrap">
-        <div className="section-head">
-          <p className="eyebrow">{eyebrow}</p>
-          <h2 id={titleId} lang={titleLang}>
-            {title}
-          </h2>
-          <p className="lead">{lead}</p>
+        <div className={artwork ? "chapter-opening chapter-opening--illustrated" : "chapter-opening"}>
+          <div className="section-head">
+            <p className="eyebrow">{eyebrow}</p>
+            <h2 id={titleId} lang={titleLang}>
+              {title}
+            </h2>
+            <p className="lead">{lead}</p>
+          </div>
+          {artwork}
         </div>
         {children}
       </div>
@@ -40,7 +44,7 @@ export function HomeChapter({
   );
 }
 
-type Step = { icon: string; title: string; description: string };
+type Step = { icon: HomeIconName; title: string; description: string };
 
 export function ExecutionSteps({ steps }: { steps: readonly Step[] }) {
   const t = useCopy();
@@ -48,7 +52,7 @@ export function ExecutionSteps({ steps }: { steps: readonly Step[] }) {
     <ol className="execution-steps" role="list">
       {steps.map(({ icon, title, description }) => (
         <li key={icon}>
-          <ChapterIcon name={icon} />
+          <HomeIcon name={icon} />
           <div>
             <h3>{t(title)}</h3>
             <p>{t(description)}</p>

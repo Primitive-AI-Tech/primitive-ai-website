@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Inter;
+  src: url("assets/inter-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("assets/inter-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("assets/inter-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fcfdfe;
+  color: #0b1425;
+  font: 16px/1.55 Inter, system-ui, sans-serif;
+}
+main, header { width: min(100% - 42px, 1250px); margin-inline: auto; }
+header { padding-block: 22px; border-bottom: 1px solid #d6dee9; display: flex; gap: 10px; align-items: center; font-weight: 600; }
+header img { width: 28px; height: auto; }
+h1, h2, p { margin: 0; }
+h1 { font-size: clamp(42px, 6.2vw, 84px); line-height: 1; letter-spacing: -.06em; font-weight: 650; }
+h2 { font-size: clamp(27px, 4vw, 50px); letter-spacing: -.045em; line-height: 1.1; }
+p { color: #43536a; }
+.opening { padding-block: clamp(45px, 6.5vw, 95px); }
+.opening p { margin-top: 17px; max-width: 59ch; font-size: 18px; }
+nav { display: flex; flex-wrap: wrap; gap: 10px 13px; margin-top: 26px; }
+nav a {
+  display: inline-flex;
+  padding: 9px 15px;
+  border: 1px solid #b8cbe6;
+  color: #0544d5;
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+nav a:hover { background: #eef4ff; }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid #044eff; outline-offset: 4px; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 25px 0 80px; padding: 0; gap: 20px; list-style: none; }
+.gallery li { min-width: 0; border: 1px solid #d6dee9; border-radius: 13px; overflow: hidden; background: #f5f8fd; }
+.gallery a { display: block; text-decoration: none; }
+.gallery a:focus-visible { outline-offset: -4px; }
+.gallery img { width: 100%; height: auto; display: block; aspect-ratio: 3 / 2; object-fit: contain; background: #fff; }
+.gallery .footer-preview { grid-column: 1 / -1; }
+.gallery .footer-preview img { aspect-ratio: auto; }
+.gallery span { display: block; padding: 14px 18px; font-size: 15px; font-weight: 600; }
+footer { border-top: 1px solid #d6dee9; padding-block: 18px 32px; font-size: 14px; }
+@media (max-width: 680px) { .gallery { grid-template-columns: minmax(0, 1fr); } }

@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/marketing/primitives";
 import { useCopy } from "@/i18n/useCopy";
-import { ChapterIcon, ExecutionSteps, HomeChapter } from "./V5Chapter";
+import { HomeArtwork } from "./HomeArtwork";
+import { HomeIcon, type HomeIconName } from "./HomeIcon";
+import { ExecutionSteps, HomeChapter } from "./V5Chapter";
 
-const roles = [
+const roles: { icon: HomeIconName; title: string; description: string; className?: string }[] = [
   {
-    icon: "chat",
+    icon: "knowledge",
     title: "Knowledge chatbot",
     description: "Search approved documents, cross-check sources, and answer with citations.",
   },
@@ -30,17 +32,17 @@ const roles = [
     description: "Look up data and prepare actions in the applications teams already use.",
   },
   {
-    icon: "search",
+    icon: "prospect",
     title: "Prospect research",
     description: "Summarize company profiles, cite sources, and suggest next steps for sales.",
   },
   {
-    icon: "finance-overdue",
+    icon: "finance-report",
     title: "Financial reconciliation",
     description: "Compare documents and transactions, and flag discrepancies for accounting to review.",
   },
   {
-    icon: "report",
+    icon: "documents",
     title: "Documents and legal",
     description: "Compare documents with approved templates and record differences for specialist review.",
   },
@@ -68,7 +70,7 @@ const deliverySteps = [
     title: "Compare results",
     description: "Compare accepted results per team hour and the cost per result, including rework.",
   },
-];
+] as const;
 
 const pricingStages = [
   {
@@ -89,7 +91,7 @@ const pricingStages = [
     cadence: "Usage-based",
     description: "We estimate AI and any third-party costs based on how often your workflow runs.",
   },
-];
+] as const;
 
 type Logo = { name: string; file: string; dark?: boolean };
 
@@ -146,6 +148,7 @@ export function V5Roles() {
   return (
     <HomeChapter
       id="roles"
+      artwork={<HomeArtwork name="roles" />}
       className="v5-roles"
       titleId="role-title"
       eyebrow={t("Agent roles")}
@@ -156,7 +159,7 @@ export function V5Roles() {
       <ul className="role-grid" role="list">
         {roles.map(({ icon, title, description, className }) => (
           <li key={icon} className={className}>
-            <ChapterIcon name={icon} />
+            <HomeIcon name={icon} />
             <h3>{t(title)}</h3>
             <p>{t(description)}</p>
           </li>
@@ -179,28 +182,19 @@ export function V5Outcomes() {
     <>
       <HomeChapter
         id="how-we-work"
+        artwork={<HomeArtwork name="pilot" />}
         className="v5-delivery"
         titleId="delivery-title"
         eyebrow={t("How we roll it out")}
         title={t("Test one workflow before expanding")}
         lead={t("We work with your team to choose a recurring task, agree on the expected result and which actions require approval, and compare with how you work today.")}
       >
-        <div className="delivery-example">
-          <ExecutionSteps steps={deliverySteps} />
-          <img
-            className="delivery-photo"
-            src="/images/home/v5/deck-pilot.webp"
-            width={1640}
-            height={923}
-            loading="lazy"
-            decoding="async"
-            alt={t("Two people discuss a workflow on a factory floor.")}
-          />
-        </div>
+        <ExecutionSteps steps={deliverySteps} />
       </HomeChapter>
       <HomeChapter
         id="customer-experience"
-        className="v5-customers ink"
+        artwork={<HomeArtwork name="customers" caption={t("Illustrative workplace")} />}
+        className="v5-customers"
         titleId="customer-title"
         eyebrow={t("Deployment experience")}
         title={t("Organizations that have worked with Primitive AI")}
@@ -218,6 +212,7 @@ export function V5Outcomes() {
       </HomeChapter>
       <HomeChapter
         id="pricing"
+        artwork={<HomeArtwork name="pricing" />}
         className="v5-pricing"
         titleId="pricing-title"
         eyebrow={t("Pricing")}
@@ -228,7 +223,7 @@ export function V5Outcomes() {
           {pricingStages.map(({ icon, title, cadence, description }) => (
             <li key={icon} className="metric-card">
               <div className="pricing-card-heading">
-                <ChapterIcon name={icon} />
+                <HomeIcon name={icon} />
                 <div>
                   <h3>{t(title)}</h3>
                   <p className="pricing-cadence">{t(cadence)}</p>
