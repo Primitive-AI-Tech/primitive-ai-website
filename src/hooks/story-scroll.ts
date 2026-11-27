@@ -4,6 +4,8 @@ const wheelIntentDistance = 12;
 const wheelTailDistance = 8;
 const wheelRestartAge = 230;
 const touchIntentDistance = 42;
+// Fallback for browsers without `scrollend` or when a turn never moves.
+const turnSettleFallback = 1200;
 const nativeControls = "select, input[type=range], input[type=number], [contenteditable]:not([contenteditable=false]), [role=dialog]";
 
 type SectionRange = { start: number; end: number };
@@ -88,6 +90,7 @@ export function installStoryNavigation(
   let gesture: WheelGesture | undefined;
   let touchOrigin: TouchOrigin | undefined;
   let touchFrame = 0;
+  let settleActiveTurn: (() => void) | undefined;
 
   function gestureTarget(event: Event, target = event.target) {
     if (event.defaultPrevented || (window.visualViewport?.scale ?? 1) > 1 ||
@@ -95,7 +98,20 @@ export function installStoryNavigation(
     return target;
   }
 
-  function turnTo(top: number) {
+  // Calls onSettled once the scripted turn ends. Only one turn is tracked at a
+  // time; starting a new turn settles the previous one first.
+  function turnTo(top: number, onSettled: () => void = () => {}) {
+    settleActiveTurn?.();
+    let timer = 0;
+    const settle = () => {
+      window.removeEventListener("scrollend", settle);
+      window.clearTimeout(timer);
+      if (settleActiveTurn === settle) settleActiveTurn = undefined;
+      onSettled();
+    };
+    timer = window.setTimeout(settle, turnSettleFallback);
+    window.addEventListener("scrollend", settle);
+    settleActiveTurn = settle;
     window.scrollTo({ top, behavior: motion.matches ? "instant" : "smooth" });
   }
 
@@ -147,6 +163,8 @@ export function installStoryNavigation(
       return;
     }
     if (gesture.action === "turned") {
+      // Hold the scripted turn against input until it lands, then hand the
+      // rest of this stream back to the browser (see turnTo's onSettled).
       event.preventDefault();
       return;
     }
@@ -164,7 +182,13 @@ export function installStoryNavigation(
     gesture.distance += delta;
     if (Math.abs(gesture.distance) < wheelIntentDistance || Math.sign(gesture.distance) !== direction) return;
     gesture.action = "turned";
-    turnTo(step.top);
+    const turning = gesture;
+    // Once the turn lands, the lock is released for this stream. Continuous
+    // trackpad input then scrolls natively instead of being swallowed until a
+    // pause. A new swipe after a pause still starts a new gesture and can turn.
+    turnTo(step.top, () => {
+      if (gesture === turning && turning.action === "turned") turning.action = "native";
+    });
   }
 
   function onTouchStart(event: TouchEvent) {
@@ -210,6 +234,7 @@ export function installStoryNavigation(
   shell.addEventListener("touchcancel", onTouchCancel, { passive: true });
   return () => {
     window.cancelAnimationFrame(touchFrame);
+    settleActiveTurn?.();
     if (!useNativeWheel) document.removeEventListener("wheel", onWheel);
     shell.removeEventListener("touchstart", onTouchStart);
     shell.removeEventListener("touchend", onTouchEnd);
