@@ -17,7 +17,6 @@ const pages = {
   updates: lazy(() => import("@/pages/Updates")),
   contact: lazy(() => import("@/pages/Contact")),
   privacy: lazy(() => import("@/pages/Privacy")),
-  terms: lazy(() => import("@/pages/Terms")),
 } satisfies Record<PageId, unknown>;
 const NotFound = lazy(() => import("@/pages/NotFound"));
 

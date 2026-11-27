@@ -54,8 +54,7 @@ export function V5PageHero({
 }) {
   const titleId = `${id}-title`;
   return (
-    <section id={id} className={`v5-page-hero dark-section ${className}`} aria-labelledby={titleId}>
-      <FlowBackdrop />
+    <section id={id} className={`v5-page-hero ${className}`} aria-labelledby={titleId}>
       <div className="v5-page-wrap v5-hero-layout">
         <div className="v5-hero-copy">
           <Eyebrow>{eyebrow}</Eyebrow>

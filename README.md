@@ -1,8 +1,8 @@
 # Primitive AI website
 
-The React site uses the approved V5 content structure. The [homepage design review](mockup/v6/index.html) shows the redesigned homepage and twelve complete section images. The [V5 mockup](mockup/v5/README.md) records the earlier designs and the Products, Services, About, and Updates pages. The [architecture refactor](docs/architecture-refactor.md) explains the shared route, page and feature structure.
+The React site uses the approved V5 content structure and the V6 visual design. The [homepage design review](mockup/v6/index.html) shows the twelve homepage sections and footer. The [site design review](mockup/v6/site-review.html) includes desktop and phone previews of the other pages. The [V5 mockup](mockup/v5/README.md) records the earlier designs, and the [architecture refactor](docs/architecture-refactor.md) explains the shared route, page and feature structure.
 
-The interface uses the original Primitive AI logo, **#044EFF** as its primary blue, navy presentation sections, responsive layouts, native diagrams and scroll-led motion. The implementation uses React 18, TypeScript and Vite.
+The interface uses the original Primitive AI logo, **#044EFF** as its primary blue, light surfaces, colorful icons, responsive layouts, native diagrams and scroll-led motion. The implementation uses React 18, TypeScript and Vite.
 
 ## Run locally
 
@@ -28,7 +28,7 @@ npm run preview
 | `/about` | Founder portrait, company timeline beginning in 2023, and working principles |
 | `/update` | Hanoi Codex Community Hackathon recap and the official Primitive AI LinkedIn channel |
 | `/contact` | Inquiry form with optional offering, workflow and service context |
-| `/privacy`, `/terms` | Existing legal pages |
+| `/privacy` | Website use and privacy policy. The former `/terms` URL leads to the website-use section. |
 
 The header contains Home, Products, Services, About and Updates. Home sections are not separate top-level destinations. Older paths such as `/core-agentic`, `/business-value`, `/use-cases`, `/how-we-work`, `/trust`, `/company`, `/updates`, `/success` and `/solutions` resolve to their current destinations. Retired VisionHub, FamilyHub and EduAssess detail URLs lead to Products. Chatbot, KnowledgeHub and LegalHub URLs continue into the Products applications. Unknown URLs keep the not-found view.
 
@@ -40,7 +40,7 @@ The recipient is **doannt@primitive-ai.com**. Without `VITE_CONTACT_ENDPOINT`, a
 
 Products labels illustrative scenarios and measured test runs separately. The homepage shows customer and partner marks in separate groups. Updates uses event photographs supplied by the organizer.
 
-The V5 secondary pages use English and Vietnamese copy. The language menu continues to support Japanese, Chinese and Korean, with English fallback where a translation is unavailable.
+The public pages use English, Vietnamese, Japanese, Korean, and Simplified Chinese. Translated headlines keep each sentence in its natural reading order, and product labels distinguish access permissions, approval, and record verification.
 
 ## Checks and responsive review
 

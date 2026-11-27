@@ -10,7 +10,6 @@ const artworkNames = [
   "pilot",
   "customers",
   "pricing",
-  "next",
 ] as const;
 
 type HomeArtworkName = (typeof artworkNames)[number];

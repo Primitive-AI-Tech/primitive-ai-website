@@ -1,12 +1,16 @@
 # Primitive AI homepage redesign
 
-[Complete section images](index.html) · [Architecture detail](sections/architecture.webp) · [Footer](sections/footer.webp) · [Desktop homepage](desktop-preview.webp) · [Phone homepage](mobile-preview.webp)
+[Complete section images](index.html) · [Architecture detail](sections/architecture.webp) · [Footer](sections/footer.webp) · [Desktop homepage](desktop-preview.webp) · [Phone homepage](mobile-preview.webp) · [Site design review](site-review.html)
 
 The hero uses a crafted illustration of Core Agentic checking a delivery. The Product and Control examples are visible directly in their cards.
 
 ## Review the interactive homepage
 
 From the website repository, run `npm run dev` and open the printed local URL. The gallery and renders can also be opened directly in a browser.
+
+The other pages use the same light surfaces, typography, and icon palette. Products shows a [delivery-check configuration](../../public/images/products/agent-configuration.webp) beside the three choices teams make when setting up an agent. About pairs the original VisionHub example with the Core Agentic illustration from the homepage.
+
+The six marketing pages share the homepage’s closing invitation. The Website Policy groups website use, copyright and trademarks, and information handling on one page. The former Terms URL leads to the website-use section. [FPT’s website terms](https://fpt.com/vi/dieu-khoan-su-dung)
 
 ## Hero illustration
 

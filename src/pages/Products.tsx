@@ -1,30 +1,33 @@
+import { EmphasizedCopy } from "@/components/marketing/EmphasizedCopy";
 import { Link } from "react-router-dom";
 import { InvitationCTA } from "@/components/marketing/InvitationCTA";
 import { V5PageHero } from "@/components/marketing/PageHero";
 import { Eyebrow } from "@/components/marketing/primitives";
-import { ChapterIcon } from "@/components/marketing/ChapterIcon";
+import { EditorialIcon, type EditorialIconName } from "@/components/marketing/EditorialIcon";
 import { ProductApplications } from "@/features/products/ProductApplications";
 import { ProductDiagram } from "@/features/products/ProductDiagram";
 import { useProductCopy, type ProductText } from "@/features/products/product-copy";
 import type { ReactNode } from "react";
 
 const configuration = [
-  { icon: "customize", title: ["Task", "Nhiệm vụ"], description: ["Choose when the agent starts, the work it does, and the result it hands off.", "Chọn khi nào tác nhân bắt đầu, việc cần làm và kết quả cần bàn giao."] },
+  { icon: "customize", title: ["Task", "Nhiệm vụ", "products.configuration.agentTask"], description: ["Choose when the agent starts, the work it does, and the result it hands off.", "Chọn khi nào tác nhân bắt đầu, việc cần làm và kết quả cần bàn giao."] },
   { icon: "internal", title: ["Data and tools", "Dữ liệu và công cụ"], description: ["Set which data the agent can read and which tools it can use.", "Chỉ định dữ liệu tác nhân được đọc và công cụ được dùng."] },
   { icon: "approval", title: ["Permissions and approval", "Quyền và phê duyệt"], description: ["Define which actions the agent can take, what needs approval, and who can approve it.", "Chọn thao tác tác nhân được thực hiện, bước cần duyệt và người phê duyệt."] },
-] satisfies { icon: string; title: ProductText; description: ProductText }[];
+] satisfies { icon: EditorialIconName; title: ProductText; description: ProductText }[];
+
+type DiagramItem = [EditorialIconName, ProductText, ProductText];
 
 const workChannels = [
-  [["Chat and applications", "Chat và ứng dụng"], ["Use web chat or embed it in your application.", "Chat trên web hoặc nhúng vào ứng dụng."]],
-  [["Email and API", "Email và API"], ["Receive requests through configured connections.", "Tiếp nhận yêu cầu qua kết nối đã cấu hình."]],
-  [["Schedules and events", "Lịch và sự kiện"], ["Start tasks on configured schedules or events.", "Khởi chạy tác vụ theo lịch hoặc sự kiện đã thiết lập."]],
-] satisfies [ProductText, ProductText][];
+  ["chat", ["Chat and applications", "Chat và ứng dụng"], ["Use web chat or embed it in your application.", "Chat trên web hoặc nhúng vào ứng dụng."]],
+  ["email", ["Email and API", "Email và API"], ["Receive requests through configured connections.", "Tiếp nhận yêu cầu qua kết nối đã cấu hình."]],
+  ["events", ["Schedules and events", "Lịch và sự kiện"], ["Start tasks on configured schedules or events.", "Khởi chạy tác vụ theo lịch hoặc sự kiện đã thiết lập."]],
+] satisfies DiagramItem[];
 
 const existingSystems = [
-  [["Business applications", "Ứng dụng nghiệp vụ"], ["ERP, CRM, and WMS remain the sources of record.", "ERP, CRM và WMS vẫn giữ dữ liệu chính thức."]],
-  [["Databases", "Cơ sở dữ liệu"], ["Access stays within assigned permissions.", "Truy cập trong phạm vi được cấp quyền."]],
-  [["Files and knowledge repositories", "Tệp và kho tri thức"], ["Use approved documents and spreadsheets.", "Tài liệu và bảng tính đã được phê duyệt."]],
-] satisfies [ProductText, ProductText][];
+  ["applications", ["Business applications", "Ứng dụng nghiệp vụ"], ["ERP, CRM, and WMS remain the sources of record.", "ERP, CRM và WMS vẫn giữ dữ liệu chính thức."]],
+  ["databases", ["Databases", "Cơ sở dữ liệu"], ["Access stays within assigned permissions.", "Truy cập trong phạm vi được cấp quyền."]],
+  ["repositories", ["Files and knowledge repositories", "Tệp và kho tri thức"], ["Use approved documents and spreadsheets.", "Tài liệu và bảng tính đã được phê duyệt."]],
+] satisfies DiagramItem[];
 
 const independentProducts = [
   { title: "VisionHub", description: ["Computer vision for industrial operations.", "Thị giác máy tính cho hoạt động công nghiệp."], image: "visionhub-concept.jpg", alt: ["Concept image of a precision inspection camera on a manufacturing line.", "Camera kiểm tra trên dây chuyền công nghiệp."] },
@@ -49,9 +52,12 @@ function ProductHeading({
 function Integration() {
   const copy = useProductCopy();
 
-  function renderItems(items: [ProductText, ProductText][]) {
-    return items.map(([label, description]) => (
-      <div key={label[0]}><dt>{copy(label)}</dt><dd>{copy(description)}</dd></div>
+  function renderItems(items: DiagramItem[]) {
+    return items.map(([icon, label, description]) => (
+      <div key={label[0]}>
+        <dt><EditorialIcon name={icon} />{copy(label)}</dt>
+        <dd>{copy(description)}</dd>
+      </div>
     ));
   }
 
@@ -67,26 +73,26 @@ function Integration() {
         <figure className="v5-flow" aria-label={copy(["Core Agentic integration architecture", "Kiến trúc tích hợp Core Agentic"])}>
           <div className="v5-flow-grid">
             <section className="v5-systems v5-inputs" aria-labelledby="product-channels-title">
-              <h3 id="product-channels-title">{copy(["Work channels", "Kênh làm việc"])}</h3>
+              <h3 id="product-channels-title"><EditorialIcon name="channels" />{copy(["Work channels", "Kênh làm việc"])}</h3>
               <dl>{renderItems(workChannels)}</dl>
             </section>
-            <section className="v5-core" aria-labelledby="product-core-title">
-              <h3 id="product-core-title">Core Agentic</h3>
+            <section className="v5-core">
+              <h3 id="product-core-title"><EditorialIcon name="core" />Core Agentic</h3>
               <p>{copy(["The Worker executes tasks in the deployment environment dedicated to each customer.", "Worker thực hiện công việc trong môi trường triển khai riêng cho từng khách hàng."])}</p>
               <dl className="v5-engines">
                 {renderItems([
-                  [["AI agent", "Tác nhân AI"], ["Reasons and plans toward a goal.", "Suy luận và lập kế hoạch theo mục tiêu."]],
-                  [["Workflow", "Quy trình"], ["Runs configured steps, tools, and rules.", "Chạy các bước, công cụ và quy tắc đã thiết lập."]],
+                  ["agents", ["AI agent", "Tác nhân AI"], ["Reasons and plans toward a goal.", "Suy luận và lập kế hoạch theo mục tiêu."]],
+                  ["workflows", ["Workflow", "Quy trình"], ["Runs configured steps, tools, and rules.", "Chạy các bước, công cụ và quy tắc đã thiết lập."]],
                 ])}
               </dl>
-              <p className="v5-connectors">{copy(["The executor governs actions", "Bộ thực thi kiểm soát thao tác"])}</p>
+              <p className="v5-connectors"><EditorialIcon name="policy" />{copy(["The executor governs actions", "Bộ thực thi kiểm soát thao tác"])}</p>
             </section>
             <section className="v5-systems v5-records" aria-labelledby="product-records-title">
-              <h3 id="product-records-title">{copy(["Existing systems", "Hệ thống hiện có"])}</h3>
+              <h3 id="product-records-title"><EditorialIcon name="systems" />{copy(["Existing systems", "Hệ thống hiện có"])}</h3>
               <dl>{renderItems(existingSystems)}</dl>
             </section>
             <div className="v5-model">
-              <strong>{copy(["AI model", "Mô hình AI"])}</strong>
+              <strong><EditorialIcon name="models" />{copy(["AI model", "Mô hình AI"])}</strong>
               <span>{copy(["Selected in the deployment configuration.", "Được chọn theo cấu hình triển khai."])}</span>
             </div>
           </div>
@@ -118,17 +124,27 @@ export default function Products() {
 
       <ProductApplications />
 
-      <section className="v5-page-section product-configuration ink" id="roles" aria-labelledby="roles-title">
+      <section className="v5-page-section product-configuration" id="roles" aria-labelledby="roles-title">
         <div className="v5-page-wrap">
-          <ProductHeading id="roles-title"
-            eyebrow={copy(["Flexible configuration", "Cấu hình linh hoạt"])}
-            title={<>{copy(["Configure agents", "Cấu hình tác nhân"])} <em>{copy(["for the work", "theo công việc"])}</em></>}
-            lead={copy(["Your team configures agents for each workflow and decides how far AI can act.", "Đội ngũ cấu hình tác nhân cho từng quy trình và quyết định AI được phép làm đến đâu."])}
-          />
+          <div className="configuration-overview">
+            <ProductHeading id="roles-title"
+              eyebrow={copy(["Flexible configuration", "Cấu hình linh hoạt"])}
+              title={<EmphasizedCopy message="products.configuration.headline" fallback="Configure agents <em>for the work</em>" />}
+              lead={copy(["Your team configures agents for each workflow and decides how far AI can act.", "Đội ngũ cấu hình tác nhân cho từng quy trình và quyết định AI được phép làm đến đâu."])}
+            />
+            <img
+              src="/images/products/agent-configuration.webp"
+              width={1320}
+              height={880}
+              loading="lazy"
+              decoding="async"
+              alt={copy(["This example checks a delivery using contracts and order records and requires approval before updates.", "Ví dụ này kiểm tra lịch giao dựa trên hợp đồng và hồ sơ đơn hàng, đồng thời yêu cầu phê duyệt trước khi cập nhật."])}
+            />
+          </div>
           <ul className="configuration-decisions" role="list">
             {configuration.map(({ icon, title, description }) => (
               <li key={icon}>
-                <ChapterIcon name={icon} />
+                <EditorialIcon name={icon} />
                 <div><h3>{copy(title)}</h3><p>{copy(description)}</p></div>
               </li>
             ))}
@@ -160,7 +176,7 @@ export default function Products() {
         </div>
       </section>
 
-      <InvitationCTA id="next-step" />
+      <InvitationCTA />
     </>
   );
 }

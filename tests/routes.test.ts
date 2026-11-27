@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getPageMetadata, movedHomeLocation, movedProductLocation, redirectLocation } from "../src/app/routes.ts";
+import { getPageMetadata, movedHomeLocation, movedProductLocation, redirectLocation, redirects } from "../src/app/routes.ts";
 
 test("redirects preserve a working-session inquiry and a section entry", () => {
   assert.deepEqual(
@@ -49,7 +49,14 @@ test("moved homepage anchors preserve queries and use existing product sections"
 
 test("content pages share section snapping while missing pages stay natural", () => {
   assert.equal(getPageMetadata("/privacy").scroll, "story");
-  assert.equal(getPageMetadata("/terms").scroll, "story");
+  const termsRedirect = redirects.find(({ path }) => path === "/terms");
+  assert.ok(termsRedirect);
+  assert.equal(getPageMetadata("/terms").id, "not-found");
+  assert.deepEqual(redirectLocation(termsRedirect.destination, { pathname: "/terms", search: "?ref=footer", hash: "" }), {
+    pathname: "/privacy",
+    search: "?ref=footer",
+    hash: "#website-use",
+  });
   assert.equal(getPageMetadata("/an-unknown-url").scroll, "natural");
   assert.equal(getPageMetadata("/an-unknown-url").id, "not-found");
 });

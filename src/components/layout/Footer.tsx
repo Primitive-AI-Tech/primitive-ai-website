@@ -40,8 +40,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Primitive AI. {t("All rights reserved.")}
         </p>
         <ul className="footer-meta" role="list">
-          <li><Link to="/privacy">{t("Privacy")}</Link></li>
-          <li><Link to="/terms">{t("Terms")}</Link></li>
+          <li><Link to="/privacy">{t("Website Policy")}</Link></li>
           <li>
             <a href="https://www.linkedin.com/company/primitiveai" target="_blank" rel="noreferrer">
               LinkedIn <ArrowUpRight aria-hidden="true" />

@@ -1,6 +1,6 @@
 import { useCopy } from "@/i18n/useCopy";
 import { HomeArtwork } from "./HomeArtwork";
-import { HomeIcon } from "./HomeIcon";
+import { EditorialIcon } from "@/components/marketing/EditorialIcon";
 import { ExecutionSteps, HomeChapter } from "./V5Chapter";
 
 const executionSteps = [
@@ -25,7 +25,7 @@ export default function V5Opening() {
         <div className="friction-grid">
           <article className="metric-card">
             <h3>
-              <HomeIcon name="search" />
+              <EditorialIcon name="search" />
               {t("Finding information")}
             </h3>
             <strong>
@@ -37,7 +37,7 @@ export default function V5Opening() {
           </article>
           <article className="metric-card amber-card">
             <h3>
-              <HomeIcon name="copy" />
+              <EditorialIcon name="copy" />
               {t("Re-entering data")}
             </h3>
             <strong>{t("0.34%")}</strong>
@@ -46,7 +46,7 @@ export default function V5Opening() {
           </article>
           <article className="metric-card">
             <h3>
-              <HomeIcon name="report" />
+              <EditorialIcon name="report" />
               {t("Preparing reports")}
             </h3>
             <strong>47%</strong>
@@ -82,7 +82,7 @@ export default function V5Opening() {
           <ul className="system-stages" aria-label={t("Status across four applications")}>
             <li>
               <div className="system-record">
-                <HomeIcon name="chat" />
+                <EditorialIcon name="chat" />
                 <div>
                   <h4>CRM</h4>
                   <p>{t("Request YC-184")}</p>
@@ -92,7 +92,7 @@ export default function V5Opening() {
             </li>
             <li>
               <div className="system-record">
-                <HomeIcon name="order" />
+                <EditorialIcon name="order" />
                 <div>
                   <h4>ERP</h4>
                   <p>{t("Order DH-472")}</p>
@@ -102,7 +102,7 @@ export default function V5Opening() {
             </li>
             <li>
               <div className="system-record">
-                <HomeIcon name="stock" />
+                <EditorialIcon name="stock" />
                 <div>
                   <h4>{t("Warehouse software")}</h4>
                   <p>{t("Dispatch record PX-328")}</p>
@@ -112,7 +112,7 @@ export default function V5Opening() {
             </li>
             <li>
               <div className="system-record">
-                <HomeIcon name="finance-report" />
+                <EditorialIcon name="finance-report" />
                 <div>
                   <h4>{t("Accounting software")}</h4>
                   <p>{t("Reference DH-472")}</p>
@@ -125,21 +125,21 @@ export default function V5Opening() {
             <h4>{t("Manual handoffs")}</h4>
             <ul>
               <li>
-                <HomeIcon name="email" />
+                <EditorialIcon name="email" />
                 <div>
                   <strong>Email</strong>
                   <p>{t("Sales emails operations to create the order.")}</p>
                 </div>
               </li>
               <li>
-                <HomeIcon name="spreadsheet" />
+                <EditorialIcon name="spreadsheet" />
                 <div>
                   <strong>Excel</strong>
                   <p>{t("Operations records the request ID and order ID in a reconciliation spreadsheet.")}</p>
                 </div>
               </li>
               <li>
-                <HomeIcon name="phone" />
+                <EditorialIcon name="phone" />
                 <div>
                   <strong>{t("Phone")}</strong>
                   <p>{t("Accounting calls the warehouse to confirm dispatch.")}</p>
@@ -188,7 +188,7 @@ export default function V5Opening() {
         <div className="value-pair">
           <article>
             <p className="value-category">
-              <HomeIcon name="productivity" />
+              <EditorialIcon name="productivity" />
               {t("Productivity")}
             </p>
             <h3>{t("Complete more work per hour")}</h3>
@@ -202,7 +202,7 @@ export default function V5Opening() {
           </article>
           <article>
             <p className="value-category">
-              <HomeIcon name="cost" />
+              <EditorialIcon name="cost" />
               {t("Operating cost")}
             </p>
             <h3>{t("Know when to expand")}</h3>

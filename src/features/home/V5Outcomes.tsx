@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/marketing/primitives";
 import { useCopy } from "@/i18n/useCopy";
 import { HomeArtwork } from "./HomeArtwork";
-import { HomeIcon, type HomeIconName } from "./HomeIcon";
+import { EditorialIcon, type EditorialIconName } from "@/components/marketing/EditorialIcon";
 import { ExecutionSteps, HomeChapter } from "./V5Chapter";
 
-const roles: { icon: HomeIconName; title: string; description: string; className?: string }[] = [
+const roles: { icon: EditorialIconName; title: string; description: string; className?: string }[] = [
   {
     icon: "knowledge",
     title: "Knowledge chatbot",
@@ -152,14 +152,13 @@ export function V5Roles() {
       className="v5-roles"
       titleId="role-title"
       eyebrow={t("Agent roles")}
-      title="One platform. Configured for your work."
-      titleLang="en"
+      title={t("home.roles.headline", "One platform. Configured for your work.")}
       lead={t("Core Agentic supports work from answering customers to reconciling records. Each role produces a defined result for the team to check or approve.")}
     >
       <ul className="role-grid" role="list">
         {roles.map(({ icon, title, description, className }) => (
           <li key={icon} className={className}>
-            <HomeIcon name={icon} />
+            <EditorialIcon name={icon} />
             <h3>{t(title)}</h3>
             <p>{t(description)}</p>
           </li>
@@ -223,7 +222,7 @@ export function V5Outcomes() {
           {pricingStages.map(({ icon, title, cadence, description }) => (
             <li key={icon} className="metric-card">
               <div className="pricing-card-heading">
-                <HomeIcon name={icon} />
+                <EditorialIcon name={icon} />
                 <div>
                   <h3>{t(title)}</h3>
                   <p className="pricing-cadence">{t(cadence)}</p>

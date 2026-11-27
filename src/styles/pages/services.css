@@ -24,9 +24,9 @@
   justify-content: center;
   gap: 6px;
   padding: 9px 16px;
-  border: 1px solid #c8e3ff8c;
+  border: 1px solid #a7bde0;
   border-radius: 99px;
-  color: #fff;
+  color: #073fbf;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -34,13 +34,14 @@
 }
 
 :where(main[data-page="/services"]) .services-actions .site-button.secondary:hover {
-  border-color: #c7edff;
-  background: #1a406b;
+  border-color: #6a98eb;
+  background: #eaf2fe;
 }
 
 :where(main[data-page="/services"]) .services-actions .site-button:not(.secondary) {
   border-color: var(--page-blue);
   background: var(--page-blue);
+  color: #fff;
 }
 
 :where(main[data-page="/services"]) .services-actions .site-button:not(.secondary):hover {
@@ -51,24 +52,23 @@
 :where(main[data-page="/services"]) .services-project-brief {
   min-width: 0;
   overflow: hidden;
-  border: 1px solid #82bdf296;
+  border: 1px solid var(--editorial-card-stroke);
   border-radius: clamp(17px, 2.4vw, 27px);
-  background: #0b2441;
-  box-shadow: 0 20px 62px #020c229c, 0 0 21px #044eff44;
+  background: #fff;
+  box-shadow: 0 16px 38px #2145770e;
 }
 
 :where(main[data-page="/services"]) .services-project-brief > img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   object-position: center 46%;
 }
 
 :where(main[data-page="/services"]) .services-project-brief figcaption {
   padding: clamp(13px, 1.85vw, 24px);
-  border-top: 1px solid #82bdf253;
-  background: linear-gradient(120deg, #153452, #0a203b);
+  border-top: 1px solid var(--editorial-card-stroke);
 }
 
 :where(main[data-page="/services"]) .services-project-brief figcaption > strong {
@@ -89,29 +89,22 @@
 
 :where(main[data-page="/services"]) .services-brief-items li {
   display: grid;
-  grid-template-columns: 19px minmax(0, 1fr);
+  grid-template-columns: 26px minmax(0, 1fr);
   align-items: center;
   gap: 7px;
   min-height: 49px;
   padding: 6px 7px;
-  border: 1px solid #a4d3ff42;
+  border: 1px solid var(--editorial-card-stroke);
   border-radius: 9px;
-  background: #a6d7ff11;
-  color: #edf6ff;
+  background: #f8fafd;
+  color: var(--page-ink);
   font-size: clamp(12px, 1vw, 14px);
   font-weight: 650;
   line-height: 1.3;
 }
 
-:where(main[data-page="/services"]) .services-brief-items svg {
-  width: 19px;
-  height: 19px;
-  fill: none;
-  stroke: #a5e6fd;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
+:where(main[data-page="/services"]) .services-brief-items .editorial-icon { width: 26px; height: 26px; border-radius: 7px; }
+:where(main[data-page="/services"]) .services-brief-items .editorial-icon svg { width: 15px; height: 15px; }
 
 .experience-page[data-page="/services"] > .services-paths {
   align-content: safe center;
@@ -135,10 +128,6 @@
   background: #fcfeff;
 }
 
-:where(main[data-page="/services"]) .services-path-card .chapter-icon {
-  background: #e3efff;
-}
-
 :where(main[data-page="/services"]) .services-path-card h3 {
   margin-top: 13px;
   font-size: clamp(22px, 2.7vw, 36px);
@@ -157,26 +146,13 @@
 }
 
 :where(main[data-page="/services"]) .services-path-featured {
-  border-color: #527fc2;
-  background: linear-gradient(140deg, #173b6c, #0b2344);
-  color: #f6fbff;
-}
-
-:where(main[data-page="/services"]) .services-path-featured p {
-  color: #d4e5f8;
-}
-
-:where(main[data-page="/services"]) .services-path-featured .text-link {
-  color: #a8e3ff;
-}
-
-:where(main[data-page="/services"]) .services-path-featured :focus-visible {
-  outline-color: #8bdcff;
+  border-color: #bed2f3;
+  background: #edf4ff;
 }
 
 .experience-page[data-page="/services"] > .services-capabilities {
   align-content: safe center;
-  background: linear-gradient(130deg, #f7faf8, #e9f5ef);
+  background: var(--page-light);
 }
 
 :where(main[data-page="/services"]) .services-capability-grid {
@@ -230,7 +206,7 @@
 
 .experience-page[data-page="/services"] > .services-process {
   align-content: safe center;
-  background: var(--page-dark);
+  background: var(--page-light-glow);
 }
 
 :where(main[data-page="/services"]) .services-process-list {
@@ -244,11 +220,11 @@
 
 :where(main[data-page="/services"]) .services-process-list::before {
   position: absolute;
-  top: 21px;
+  top: 20px;
   right: 0;
   left: 0;
   height: 1px;
-  background: linear-gradient(90deg, #8be1f9dd, #4c97d800);
+  background: linear-gradient(90deg, #85a9eb, #c0d5f644);
   content: "";
 }
 
@@ -260,17 +236,7 @@
   gap: 11px;
 }
 
-:where(main[data-page="/services"]) .services-process-list .chapter-icon {
-  width: 42px;
-  height: 42px;
-  border: 1px solid #87d6ff;
-  background: #0e3357;
-  box-shadow: 0 0 0 4px #102c4a;
-}
-
-:where(main[data-page="/services"]) .services-process-list .chapter-icon img {
-  filter: brightness(0) saturate(100%) invert(86%) sepia(20%) saturate(778%) hue-rotate(161deg);
-}
+:where(main[data-page="/services"]) .services-process-list .editorial-icon { box-shadow: 0 0 0 4px var(--page-light-glow); }
 
 :where(main[data-page="/services"]) .services-process-list h3 {
   font-size: clamp(17px, 1.5vw, 22px);
@@ -278,14 +244,14 @@
 
 :where(main[data-page="/services"]) .services-process-list p {
   margin-top: 5px;
-  color: #c6dcf2;
+  color: var(--page-muted);
   font-size: 14px;
   line-height: 1.45;
 }
 
 :where(main[data-page="/services"]) .services-process-note {
   margin-top: clamp(18px, 3vw, 34px);
-  color: #c6dcf2;
+  color: var(--page-muted);
   font-size: 14px;
 }
 
@@ -327,14 +293,14 @@
   }
 
   :where(main[data-page="/services"]) .services-process-list::before {
-    inset: 0 auto 0 21px;
+    inset: 0 auto 0 20px;
     width: 1px;
     height: auto;
-    background: linear-gradient(#8be1f9dd, #4c97d800);
+    background: linear-gradient(#85a9eb, #c0d5f644);
   }
 
   :where(main[data-page="/services"]) .services-process-list li {
-    grid-template-columns: 42px minmax(0, 1fr);
+    grid-template-columns: 40px minmax(0, 1fr);
     align-items: start;
     gap: 13px;
   }

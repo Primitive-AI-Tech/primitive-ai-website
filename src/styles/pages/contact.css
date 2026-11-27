@@ -23,16 +23,15 @@
   width: 100%;
   min-width: 0;
   padding: clamp(19px, 3vw, 39px);
-  border: 1px solid #78b6fb59;
+  border: 1px solid var(--editorial-card-stroke);
   border-radius: clamp(17px, 2.2vw, 28px);
-  background: radial-gradient(ellipse at top right, #16469265, transparent 65%),
-    linear-gradient(150deg, #102844f7, #0a1e34f7);
-  box-shadow: 0 22px 65px #020d2780, inset 0 1px 0 #a6d8ff1f;
+  background: linear-gradient(145deg, #fff, #f3f7fd);
+  box-shadow: 0 16px 38px #2145770e;
 }
 
 .contact-next-card h2 {
   margin: 0 0 clamp(12px, 2vw, 23px);
-  color: #f7fbff;
+  color: var(--page-ink);
   font-size: clamp(21px, 2.4vw, 34px);
   font-weight: 760;
   letter-spacing: -.04em;
@@ -59,28 +58,12 @@
 .contact-next-steps li:last-child { padding-block-end: 0; }
 
 .contact-next-steps li + li {
-  border-top: 1px solid #a6d8ff2b;
-}
-
-.contact-next-icon {
-  display: grid;
-  width: clamp(33px, 3.2vw, 48px);
-  height: clamp(33px, 3.2vw, 48px);
-  place-items: center;
-  border: 1px solid #8adffa4d;
-  border-radius: 11px;
-  background: #75cbf921;
-  color: #a4eaff;
-}
-
-.contact-next-icon svg {
-  width: clamp(17px, 1.65vw, 23px);
-  height: auto;
+  border-top: 1px solid var(--editorial-card-stroke);
 }
 
 .contact-next-steps h3 {
   margin: 0;
-  color: #f7fbff;
+  color: var(--page-ink);
   font-size: clamp(16px, 1.7vw, 23px);
   font-weight: 710;
   letter-spacing: -.025em;
@@ -89,7 +72,7 @@
 
 .contact-next-steps p {
   margin: 4px 0 0;
-  color: #c6def6;
+  color: var(--page-muted);
   font-size: clamp(14px, 1.25vw, 17px);
   line-height: 1.42;
 }
@@ -468,9 +451,6 @@
     gap: 19px;
   }
 
-  .v5-contact-hero .flow-backdrop svg path:first-of-type {
-    transform: translateY(-12%);
-  }
 }
 
 @media (max-width: 510px) {

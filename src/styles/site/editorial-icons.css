@@ -1,0 +1,73 @@
+.editorial-icon {
+  --icon-ink: #164cc3;
+  --icon-light: #f0f6ff;
+  --icon-well: #d4e5ff;
+  --icon-edge: #bfd6fd;
+  --icon-fill: #a8c9ff;
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--icon-ink);
+  background: linear-gradient(145deg, var(--icon-light), var(--icon-well));
+  border: 1px solid var(--icon-edge);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 #ffffffa6;
+}
+.editorial-icon[data-tone="violet"] {
+  --icon-ink: #7135bd;
+  --icon-light: #f9f2ff;
+  --icon-well: #ecdcff;
+  --icon-edge: #e2ccfb;
+  --icon-fill: #d9b9f7;
+}
+.editorial-icon[data-tone="teal"] {
+  --icon-ink: #087477;
+  --icon-light: #ebfcfb;
+  --icon-well: #caefec;
+  --icon-edge: #b3e5e1;
+  --icon-fill: #91dfd8;
+}
+.editorial-icon[data-tone="green"] {
+  --icon-ink: #257342;
+  --icon-light: #effaf0;
+  --icon-well: #d4efdb;
+  --icon-edge: #bee3c8;
+  --icon-fill: #afe1ba;
+}
+.editorial-icon[data-tone="amber"] {
+  --icon-ink: #99510a;
+  --icon-light: #fff9eb;
+  --icon-well: #ffe6b9;
+  --icon-edge: #f7d7a2;
+  --icon-fill: #ffd385;
+}
+.editorial-icon[data-tone="rose"] {
+  --icon-ink: #a53260;
+  --icon-light: #fff1f6;
+  --icon-well: #fad8e7;
+  --icon-edge: #f3c4d9;
+  --icon-fill: #f4adca;
+}
+.editorial-icon[data-tone="brand"] {
+  --icon-ink: #fff;
+  --icon-light: #417bff;
+  --icon-well: #0441cf;
+  --icon-edge: #195bdd;
+  --icon-fill: #8cb6ff;
+  box-shadow: inset 0 1px 0 #ffffff42;
+}
+.editorial-icon svg {
+  width: 22px;
+  height: 22px;
+  color: inherit;
+  stroke-width: 1.8;
+}
+.editorial-icon svg > :is(circle, rect):not([fill]) {
+  fill: var(--icon-fill);
+}
+@media (forced-colors: active) {
+  .editorial-icon { border-color: CanvasText; }
+  .editorial-icon svg > :is(circle, rect):not([fill]) { fill: none; }
+}

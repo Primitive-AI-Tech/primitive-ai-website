@@ -1,5 +1,8 @@
-import { Compass, ListChecks, Mail, MessagesSquare } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import { EditorialIcon } from "@/components/marketing/EditorialIcon";
+import { EmphasizedCopy } from "@/components/marketing/EmphasizedCopy";
+import { InvitationCTA } from "@/components/marketing/InvitationCTA";
 import { V5PageHero } from "@/components/marketing/PageHero";
 import { Button } from "@/components/marketing/primitives";
 import { companyLocations, contactEmail } from "@/config/company";
@@ -8,21 +11,21 @@ import { useCopy } from "@/i18n/useCopy";
 
 const nextSteps = [
   {
-    icon: MessagesSquare,
+    icon: "chat",
     title: "Understand the work",
     description: "We’ll ask about the task, who handles it, and what slows it down.",
   },
   {
-    icon: Compass,
+    icon: "options",
     title: "Explore the options",
     description: "We’ll look at your systems and what would make the work easier.",
   },
   {
-    icon: ListChecks,
+    icon: "plan",
     title: "Agree on the next step",
     description: "We’ll discuss the scope and what it would take to get started.",
   },
-];
+] as const;
 
 export default function Contact() {
   const t = useCopy();
@@ -34,15 +37,15 @@ export default function Contact() {
         id="contact-intro"
         className="v5-contact-hero"
         eyebrow={t("Contact")}
-        title={<>{t("Tell us about")} <em>{t("your next project.")}</em></>}
+        title={<EmphasizedCopy message="contact.hero.headline" fallback="Tell us about <em>your next project.</em>" />}
         description={t("Share a workflow, a project idea, or a pricing question. We’ll help you choose a starting point.")}
         visual={
           <div className="contact-next-card">
             <h2>{t("What happens next")}</h2>
             <ol className="contact-next-steps" role="list">
-              {nextSteps.map(({ icon: Icon, title, description }) => (
+              {nextSteps.map(({ icon, title, description }) => (
                 <li key={title}>
-                  <span className="contact-next-icon"><Icon aria-hidden="true" /></span>
+                  <EditorialIcon name={icon} />
                   <div>
                     <h3>{t(title)}</h3>
                     <p>{t(description)}</p>
@@ -82,6 +85,7 @@ export default function Contact() {
           </aside>
         </div>
       </section>
+      <InvitationCTA to={`${search}#inquiry`} />
     </>
   );
 }

@@ -46,10 +46,10 @@
   min-height: 26px;
   align-items: center;
   padding: 4px 10px;
-  border: 1px solid #a1d4f266;
+  border: 1px solid #cfddf3;
   border-radius: 99px;
-  background: #d8edff18;
-  color: #f1f8ff;
+  background: var(--editorial-well);
+  color: #294d8a;
   font-size: 12px;
   font-weight: 650;
   line-height: 1.25;
@@ -65,10 +65,10 @@
   justify-self: end;
   align-content: end;
   overflow: hidden;
-  border: 1px solid #82bdf27d;
+  border: 1px solid var(--editorial-card-stroke);
   border-radius: clamp(18px, 2.5vw, 30px);
-  background: radial-gradient(ellipse at 57% 43%, #2c72a8, transparent 65%), #102946;
-  box-shadow: 0 23px 68px #020c2266;
+  background: #fff;
+  box-shadow: 0 16px 38px #2145770e;
 }
 
 .about-founder img {
@@ -81,13 +81,11 @@
 }
 
 .about-founder figcaption {
-  position: absolute;
-  inset: auto 0 0;
   display: grid;
   gap: 2px;
-  padding: 32px 21px 18px;
-  background: linear-gradient(transparent, #061b32e8 58%, #061b32);
-  color: #fff;
+  padding: clamp(14px, 2vw, 22px);
+  border-top: 1px solid var(--editorial-card-stroke);
+  color: var(--page-ink);
 }
 
 .about-founder figcaption strong {
@@ -96,7 +94,7 @@
 }
 
 .about-founder figcaption span {
-  color: #d0e7fc;
+  color: var(--page-muted);
   font-size: 14px;
 }
 
@@ -201,7 +199,7 @@
   display: block;
   width: 100%;
   height: auto;
-  max-height: 220px;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
@@ -213,7 +211,7 @@
 
 .about-principles {
   align-content: safe center;
-  background: #e9f2ff;
+  background: var(--page-light);
 }
 
 .about-values {
@@ -228,14 +226,6 @@
   border: 1px solid var(--page-border);
   border-radius: 16px;
   background: #fff;
-}
-
-.about-values .chapter-icon {
-  background: #e8f1ff;
-}
-
-.about-values .chapter-icon img {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(5748%) hue-rotate(222deg) brightness(99%) contrast(109%);
 }
 
 .about-timeline h3,

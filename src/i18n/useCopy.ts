@@ -12,9 +12,9 @@ export function useCopy() {
     });
   }, [language]);
   return useCallback(
-    (text: string): string =>
-      t(text, {
-        defaultValue: text,
+    (key: string, defaultValue = key): string =>
+      t(key, {
+        defaultValue,
         keySeparator: false,
         nsSeparator: false,
         returnObjects: false,

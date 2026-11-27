@@ -40,7 +40,7 @@
   background: #fff;
   border: 1px solid rgba(179, 218, 253, .65);
   border-radius: clamp(1.2rem, 2vw, 1.85rem);
-  box-shadow: 0 35px 75px rgba(0, 15, 37, .32);
+  box-shadow: 0 16px 38px #2145770e;
   text-decoration: none;
 }
 
@@ -50,7 +50,7 @@
   height: auto;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  background: #182d44;
+  background: var(--editorial-paper);
 }
 
 .updates-feature-caption {
@@ -92,7 +92,7 @@
 }
 
 .updates-latest {
-  background: linear-gradient(145deg, #f9fbff, #edf5ff);
+  background: var(--page-light-glow);
 }
 
 .updates-latest .v5-page-heading h2 {
@@ -154,22 +154,6 @@
 .updates-channel {
   align-self: start;
   background: #f3f8ff;
-}
-
-.updates-channel-icon {
-  display: grid;
-  width: 2.95rem;
-  height: 2.95rem;
-  margin-bottom: 1.1rem;
-  place-items: center;
-  color: #044eff;
-  background: #e1edff;
-  border-radius: .85rem;
-}
-
-.updates-channel-icon svg {
-  width: 1.4rem;
-  height: 1.4rem;
 }
 
 .updates-news-grid .text-link {

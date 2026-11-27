@@ -272,8 +272,8 @@ main[data-page="/"] > .v5-section {
 .v5-section .pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--v5-card-gap); padding: 0; list-style: none; }
 .v5-section .pricing-grid .metric-card { gap: clamp(8px, 1.1vw, 14px); padding: clamp(14px, 1.9vw, 26px); }
 .v5-section .pricing-card-heading { display: flex; align-items: center; gap: 12px; }
-.v5-section .pricing-grid .home-icon { width: clamp(40px, 4vw, 48px); height: clamp(40px, 4vw, 48px); }
-.v5-section .pricing-grid .home-icon svg { width: 24px; height: 24px; }
+.v5-section .pricing-grid .editorial-icon { width: clamp(40px, 4vw, 48px); height: clamp(40px, 4vw, 48px); }
+.v5-section .pricing-grid .editorial-icon svg { width: 24px; height: 24px; }
 .v5-section .pricing-grid h3 { font-size: clamp(20px, 2.05vw, 28px); }
 .v5-section .pricing-grid .pricing-cadence {
   margin-top: 2px;
@@ -304,8 +304,8 @@ main[data-page="/"] > .v5-section {
 @media (max-width: 760px) {
   .v5-section .system-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .v5-section .system-record { flex-direction: column; align-items: flex-start; gap: 6px; }
-  .v5-section .system-record .home-icon { width: 32px; height: 32px; }
-  .v5-section .system-record .home-icon svg { width: 19px; height: 19px; }
+  .v5-section .system-record .editorial-icon { width: 32px; height: 32px; }
+  .v5-section .system-record .editorial-icon svg { width: 19px; height: 19px; }
   .v5-section .system-relays ul { grid-template-columns: minmax(0, 1fr); }
   .v5-section .system-relays li { grid-template-columns: 72px minmax(0, 1fr); gap: 8px; }
 }
@@ -324,8 +324,8 @@ main[data-page="/"] > .v5-section {
   .v5-section .pricing-grid .metric-card { gap: 6px; padding-block: 12px; }
   .v5-section .pricing-card-heading { gap: 9px; }
   .v5-section .pricing-card-heading > div { display: flex; flex: 1; flex-wrap: wrap; align-items: baseline; gap: 1px 10px; }
-  .v5-section .pricing-grid .home-icon { width: 32px; height: 32px; border-radius: 9px; }
-  .v5-section .pricing-grid .home-icon svg { width: 19px; height: 19px; }
+  .v5-section .pricing-grid .editorial-icon { width: 32px; height: 32px; border-radius: 9px; }
+  .v5-section .pricing-grid .editorial-icon svg { width: 19px; height: 19px; }
   .v5-section .pricing-conversation { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .v5-section .pricing-conversation .site-button { padding-inline: 16px; }
 }
@@ -338,7 +338,7 @@ main[data-page="/"] > .v5-section {
 .v5-section .metric-card.amber-card strong, .v5-section .metric-card.amber-card a { color: #70471f; }
 
 .v5-section.v5-roles h2 { max-width: none; }
-.v5-section .role-grid .home-icon { grid-row: span 2; align-self: center; }
+.v5-section .role-grid .editorial-icon { grid-row: span 2; align-self: center; }
 .v5-section .role-configuration {
   display: flex;
   align-items: center;
@@ -373,19 +373,19 @@ main[data-page="/"] > .v5-section {
   .v5-section .delivery-example { grid-template-columns: minmax(0, 1fr); }
   .v5-section .role-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .v5-section .role-grid li { grid-template-columns: minmax(0, 1fr); align-content: start; }
-  .v5-section .role-grid .home-icon { grid-row: auto; margin-bottom: 4px; }
+  .v5-section .role-grid .editorial-icon { grid-row: auto; margin-bottom: 4px; }
   .v5-section .role-grid .role-custom {
     grid-column: 1 / -1;
     grid-template-columns: 40px minmax(0, 1fr);
   }
-  .v5-section .role-custom .home-icon { grid-row: span 2; margin-bottom: 0; }
+  .v5-section .role-custom .editorial-icon { grid-row: span 2; margin-bottom: 0; }
   .v5-section .delivery-example .delivery-photo { height: clamp(170px, 50vw, 260px); }
 }
 
 @media (max-width: 380px) {
   .v5-section .role-grid { grid-template-columns: minmax(0, 1fr); }
   .v5-section .role-grid li { grid-template-columns: 40px minmax(0, 1fr); min-height: 0; }
-  .v5-section .role-grid .home-icon { grid-row: span 2; margin-bottom: 0; }
+  .v5-section .role-grid .editorial-icon { grid-row: span 2; margin-bottom: 0; }
 }
 
 .v5-architecture.v5-control {

@@ -1,3 +1,4 @@
+import { EmphasizedCopy } from "@/components/marketing/EmphasizedCopy";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState, type FocusEvent, type KeyboardEvent, type TouchEvent } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -180,12 +181,13 @@ export function ProductApplications() {
       <div className="v5-page-wrap">
         <div className="v5-page-heading">
           <Eyebrow>{copy(["Applications", "Ứng dụng"])}</Eyebrow>
-          <h2 id="applications-title" lang="en">One solution to <em>rule them all</em></h2>
+          <h2 id="applications-title"><EmphasizedCopy message="products.applications.headline" fallback="One solution <em>to rule them all</em>" /></h2>
           <p className="lead">{copy(["One platform handles open-ended questions, structured workflows, and scheduled reports. Your team chooses the data, tools, and approval steps for each task.", "Cùng một nền tảng xử lý câu hỏi mở, quy trình định sẵn và báo cáo theo lịch. Đội ngũ chọn dữ liệu, công cụ và bước phê duyệt cho từng công việc."])}</p>
         </div>
 
         <div ref={carouselRef} className="case-carousel" role="region"
-          aria-roledescription={copy(["carousel", "bộ thẻ trượt"])} aria-labelledby="applications-title"
+          aria-roledescription={copy(["carousel", "bộ thẻ trượt"])}
+          aria-label={copy(["Core Agentic application examples", "Ví dụ ứng dụng Core Agentic"])}
           onPointerEnter={(event) => { if (event.pointerType === "mouse") setHovering(true); }}
           onPointerLeave={() => setHovering(false)}
           onFocusCapture={() => setFocused(true)} onBlurCapture={handleBlur}
@@ -196,7 +198,6 @@ export function ProductApplications() {
                 <Link key={item.id} id={`case-tab-${item.id}`} ref={(node) => { tabs.current[index] = node; }}
                   to={{ pathname: "/products", search, hash: `#${item.id}` }} role="tab"
                   aria-selected={index === selected} aria-controls={item.id} tabIndex={index === selected ? 0 : -1}
-                  lang={item.id === "your-use-case" ? "en" : undefined}
                   onClick={(event) => {
                     if (event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
                     event.preventDefault();

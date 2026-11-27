@@ -55,4 +55,13 @@
   --cyan: #0fb4e0;
   --logo-indigo: #32409a;
   --site-border: #cbdcf0;
+  --editorial-ink: #0b1425;
+  --editorial-paper: #f5f7fa;
+  --editorial-line: #d6dee9;
+  --editorial-muted: #43536a;
+  --editorial-blue: var(--blue);
+  --editorial-card: #fff;
+  --editorial-card-stroke: #d8e3f1;
+  --editorial-well: #edf4ff;
+  --editorial-card-radius: 18px;
 }

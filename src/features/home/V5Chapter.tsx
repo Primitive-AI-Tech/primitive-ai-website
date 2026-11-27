@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { useCopy } from "@/i18n/useCopy";
-import { HomeIcon, type HomeIconName } from "./HomeIcon";
+import { EditorialIcon, type EditorialIconName } from "@/components/marketing/EditorialIcon";
 
 type ChapterProps = {
   id: string;
@@ -9,7 +9,6 @@ type ChapterProps = {
   eyebrow: ReactNode;
   title: ReactNode;
   lead: ReactNode;
-  titleLang?: string;
   artwork?: ReactNode;
   children: ReactNode;
 };
@@ -21,7 +20,6 @@ export function HomeChapter({
   eyebrow,
   title,
   lead,
-  titleLang,
   artwork,
   children,
 }: ChapterProps) {
@@ -31,7 +29,7 @@ export function HomeChapter({
         <div className={artwork ? "chapter-opening chapter-opening--illustrated" : "chapter-opening"}>
           <div className="section-head">
             <p className="eyebrow">{eyebrow}</p>
-            <h2 id={titleId} lang={titleLang}>
+            <h2 id={titleId}>
               {title}
             </h2>
             <p className="lead">{lead}</p>
@@ -44,7 +42,7 @@ export function HomeChapter({
   );
 }
 
-type Step = { icon: HomeIconName; title: string; description: string };
+type Step = { icon: EditorialIconName; title: string; description: string };
 
 export function ExecutionSteps({ steps }: { steps: readonly Step[] }) {
   const t = useCopy();
@@ -52,7 +50,7 @@ export function ExecutionSteps({ steps }: { steps: readonly Step[] }) {
     <ol className="execution-steps" role="list">
       {steps.map(({ icon, title, description }) => (
         <li key={icon}>
-          <HomeIcon name={icon} />
+          <EditorialIcon name={icon} />
           <div>
             <h3>{t(title)}</h3>
             <p>{t(description)}</p>

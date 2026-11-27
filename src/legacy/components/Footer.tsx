@@ -116,7 +116,6 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-purple-300/60">
             <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
             <div className="flex gap-6">
-              <Link to="/terms" className="hover:text-white transition-colors">{t('footer.terms')}</Link>
               <Link to="/privacy" className="hover:text-white transition-colors">{t('footer.privacy')}</Link>
             </div>
           </div>

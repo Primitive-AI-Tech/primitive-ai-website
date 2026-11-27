@@ -47,6 +47,13 @@ export const journey: Milestone[] = [
   {
     title: "Core Agentic",
     text: "The platform brings knowledge, agents, tools and review together so organizations can shape AI around their work.",
+    image: {
+      src: "/images/home/editorial/hero-core-agentic-engine.webp",
+      alt: "Core Agentic checks a contract, order, and schedule with AI agents, workflows, and connectors. The illustration shows its access, approvals, and logs layer and confirms day-four delivery within the five-day allowance.",
+      caption: "Core Agentic",
+      width: 1320,
+      height: 880,
+    },
   },
 ];
 
@@ -57,18 +64,18 @@ export const companyValues = [
     text: "Start with a real need and shape the work around the people who will use the result.",
   },
   {
-    icon: "deliver",
+    icon: "productivity",
     title: "Excellence",
     text: "Take care with the quality of the product, engineering and collaboration.",
   },
   {
-    icon: "plan",
+    icon: "agents",
     title: "Innovation",
     text: "Explore new approaches when they can make a practical difference.",
   },
   {
-    icon: "approval",
+    icon: "policy",
     title: "Responsibility",
     text: "Build with clear boundaries, thoughtful review and respect for the people affected.",
   },
-];
+] as const;

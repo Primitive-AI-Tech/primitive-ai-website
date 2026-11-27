@@ -10,7 +10,9 @@ import {
   ChartNoAxesCombined,
   ClipboardCheck,
   ClipboardList,
+  CodeXml,
   Coins,
+  Compass,
   Copy,
   Database,
   FileChartColumn,
@@ -50,7 +52,9 @@ type IconTone = "blue" | "violet" | "teal" | "green" | "amber" | "rose" | "brand
 
 const icons = {
   knowledge: [BookOpenCheck, "blue"],
+  api: [CodeXml, "blue"],
   oversight: [UserRoundCheck, "amber"],
+  options: [Compass, "teal"],
   execution: [Activity, "violet"],
   search: [ScanSearch, "blue"],
   copy: [Copy, "amber"],
@@ -96,12 +100,12 @@ const icons = {
   "pricing-usage": [Gauge, "teal"],
 } satisfies Record<string, [LucideIcon, IconTone]>;
 
-export type HomeIconName = keyof typeof icons;
+export type EditorialIconName = keyof typeof icons;
 
-export function HomeIcon({ name }: { name: HomeIconName }) {
+export function EditorialIcon({ name, className }: { name: EditorialIconName; className?: string }) {
   const [Glyph, tone] = icons[name];
   return (
-    <span className="home-icon" data-tone={tone} aria-hidden="true">
+    <span className={className ? `editorial-icon ${className}` : "editorial-icon"} data-tone={tone} aria-hidden="true">
       <Glyph focusable="false" />
     </span>
   );

@@ -55,5 +55,17 @@ a:focus-visible { outline: 2px solid #044eff; outline-offset: 4px; }
 .gallery .footer-preview { grid-column: 1 / -1; }
 .gallery .footer-preview img { aspect-ratio: auto; }
 .gallery span { display: block; padding: 14px 18px; font-size: 15px; font-weight: 600; }
+.page-gallery img { aspect-ratio: 16 / 10; }
+.page-gallery .page-phone-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-inline: 18px;
+  margin-bottom: 8px;
+  color: #0544d5;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 footer { border-top: 1px solid #d6dee9; padding-block: 18px 32px; font-size: 14px; }
 @media (max-width: 680px) { .gallery { grid-template-columns: minmax(0, 1fr); } }

@@ -1,153 +1,75 @@
+import { PolicyLayout } from "@/components/marketing/PolicyLayout";
+import { contactEmail } from "@/config/company";
+import { useCopy } from "@/i18n/useCopy";
 
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronLeft } from 'lucide-react';
+const sections = [
+  {
+    id: "website-use",
+    title: "Use of this website",
+    paragraphs: [
+      ["permittedUse", "You may browse and share links to this website for lawful purposes. Do not interfere with its operation, attempt unauthorized access, or submit material you do not have permission to share."],
+      ["serviceAgreements", "Product descriptions and examples are for information. Any agreement you have with Primitive AI governs your use of the products or services covered by that agreement."],
+    ],
+  },
+  {
+    id: "intellectual-property",
+    title: "Copyright and trademarks",
+    paragraphs: [
+      ["ownership", "Primitive AI or the relevant rights holders own or license the text, design, images, logos, and other materials on this website. Third-party names and marks belong to their respective owners."],
+      ["permission", "Ask the relevant rights holder before reusing, modifying, or redistributing protected material unless the law or an applicable license permits it."],
+    ],
+  },
+  {
+    id: "personal-data",
+    title: "Information we handle",
+    paragraphs: [
+      ["inquiries", "When you contact us, we may receive your name, work email, organization, and the details you choose to share about your inquiry. Please share only what we need to understand your request."],
+      ["submission", "The inquiry form can send the details you enter through the website or prepare an email draft in your email app. If it prepares a draft, your inquiry reaches us only after you send it."],
+      ["technicalData", "This website stores your language preference in your browser. Web infrastructure may process technical information such as IP addresses and request times to deliver and protect the website."],
+    ],
+  },
+  {
+    id: "handling",
+    title: "Use, sharing, and retention",
+    paragraphs: [
+      ["purposes", "We use inquiry information to respond, follow up on the work you describe, and keep relevant correspondence. We may also process information to operate and protect the website or meet legal obligations."],
+      ["providersAndRetention", "Website and communications providers may handle information to support those functions. We may disclose information when the law requires it. We keep inquiry information for as long as it is needed for the inquiry, related records, or applicable legal obligations."],
+    ],
+  },
+  {
+    id: "external-links",
+    title: "External websites",
+    paragraphs: [
+      ["thirdPartyPractices", "Some links take you to other organizations’ websites. Those organizations manage their own content and privacy practices."],
+    ],
+  },
+  {
+    id: "contact",
+    title: "Your privacy choices and how to contact us",
+    paragraphs: [
+      ["choices", "Depending on applicable law, you may have rights to access, correct, delete, or restrict the use of your personal information, or to withdraw consent where we rely on it."],
+      ["getInTouch", "For privacy requests, questions about this policy, or copyright concerns, contact Primitive AI by email."],
+      ["updates", "We may update this policy by publishing a revised version on this page."],
+    ],
+  },
+] as const;
 
-const Privacy = () => {
+export default function Privacy() {
+  const t = useCopy();
   return (
-    <div className="policy-page animate-fade-in">
-      <section className="policy-title-panel">
-        <div className="site-container">
-          <div className="max-w-4xl mx-auto">
-          <Link 
-            to="/" 
-            className="flex items-center text-blue-600 hover:text-blue-700 transition-colors mb-8"
-          >
-            <ChevronLeft className="h-4 w-4 mr-1" />
-            Back to Home
-          </Link>
-          
-          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-left">Privacy Policy</h1>
-          <p className="text-lg text-muted-foreground">Last updated: June 1, 2024</p>
-          </div>
-        </div>
-      </section>
-      <div className="site-container">
-        <div className="policy-sections prose prose-lg max-w-4xl mx-auto text-left">
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
-              <p>
-                At Primitive AI ("we", "our", or "us"), we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
-              </p>
-              <p>
-                Please read this Privacy Policy carefully. By accessing or using our website or services, you acknowledge that you have read, understood, and agree to be bound by all the terms of this Privacy Policy.
-              </p>
-            </section>
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
-              <p>
-                We may collect several types of information from and about users of our website and services, including:
-              </p>
-              <h3 className="text-xl font-medium mt-6 mb-3">Personal Information</h3>
-              <p>
-                Personal information is information that identifies you as an individual. We may collect the following personal information:
-              </p>
-              <ul>
-                <li>Name</li>
-                <li>Email address</li>
-                <li>Phone number</li>
-                <li>Business name and address</li>
-                <li>Job title</li>
-                <li>Payment information</li>
-              </ul>
-              
-              <h3 className="text-xl font-medium mt-6 mb-3">Usage Information</h3>
-              <p>
-                We may automatically collect certain information about your device and how you interact with our website or services, including:
-              </p>
-              <ul>
-                <li>IP address</li>
-                <li>Browser type and version</li>
-                <li>Operating system</li>
-                <li>Time and date of access</li>
-                <li>Pages viewed</li>
-                <li>Actions taken on our website</li>
-              </ul>
-            </section>
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">How We Use Your Information</h2>
-              <p>
-                We may use the information we collect from you for various purposes, including:
-              </p>
-              <ul>
-                <li>Providing and maintaining our services</li>
-                <li>Processing transactions</li>
-                <li>Sending administrative information</li>
-                <li>Responding to inquiries and customer service requests</li>
-                <li>Sending marketing and promotional communications</li>
-                <li>Improving our website and services</li>
-                <li>Protecting our rights and preventing fraud</li>
-                <li>Complying with legal obligations</li>
-              </ul>
-            </section>
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">Disclosure of Your Information</h2>
-              <p>
-                We may disclose your personal information in the following circumstances:
-              </p>
-              <ul>
-                <li>To our subsidiaries and affiliates</li>
-                <li>To contractors, service providers, and other third parties we use to support our business</li>
-                <li>To fulfill the purpose for which you provide it</li>
-                <li>For any other purpose disclosed by us when you provide the information</li>
-                <li>To comply with any court order, law, or legal process</li>
-                <li>To enforce our terms of service</li>
-                <li>If we believe disclosure is necessary to protect our rights, property, or safety, or that of our customers or others</li>
-              </ul>
-            </section>
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">Your Rights and Choices</h2>
-              <p>
-                Depending on your location, you may have certain rights regarding your personal information, including:
-              </p>
-              <ul>
-                <li>Access to your personal information</li>
-                <li>Correction of inaccurate or incomplete information</li>
-                <li>Deletion of your personal information</li>
-                <li>Restriction of processing</li>
-                <li>Data portability</li>
-                <li>Objection to processing</li>
-                <li>Withdrawal of consent</li>
-              </ul>
-              <p className="mt-4">
-                To exercise these rights, please contact us using the information provided in the "Contact Us" section below.
-              </p>
-            </section>
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
-              <p>
-                We have implemented appropriate technical and organizational measures to secure your personal information from accidental loss and unauthorized access, use, alteration, and disclosure. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
-              </p>
-            </section>
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">Changes to Our Privacy Policy</h2>
-              <p>
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
-              </p>
-            </section>
-            
-            <section className="policy-clause">
-              <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-              <p>
-                If you have any questions or concerns about this Privacy Policy, please contact us at:
-              </p>
-              <p className="mt-4">
-                Primitive AI<br />
-                Email: doannt@primitive-ai.com<br />
-
-              </p>
-            </section>
-        </div>
-      </div>
-    </div>
+    <PolicyLayout
+      title={t("Website Policy")}
+      updated={t("policy.updated", "Last updated November 27, 2026")}
+      introduction={t("policy.intro", "This policy explains how to use the Primitive AI website and how we handle personal information when you visit or contact us.")}
+      contents={sections.map(({ id, title }) => ({ id, title: t(`policy.${id}.title`, title) }))}
+    >
+      {sections.map(({ id, title, paragraphs }) => (
+        <section className="policy-clause" id={id} key={id} aria-labelledby={`policy-${id}-title`}>
+          <h2 id={`policy-${id}-title`}>{t(`policy.${id}.title`, title)}</h2>
+          {paragraphs.map(([topic, paragraph]) => <p key={topic}>{t(`policy.${id}.${topic}`, paragraph)}</p>)}
+          {id === "contact" && <p><a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>}
+        </section>
+      ))}
+    </PolicyLayout>
   );
-};
-
-export default Privacy;
+}

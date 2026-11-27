@@ -1,7 +1,7 @@
 import { useCopy } from "@/i18n/useCopy";
 import { HomeArtwork } from "./HomeArtwork";
 import HomeArchitecture from "./HomeArchitecture";
-import { HomeIcon } from "./HomeIcon";
+import { EditorialIcon } from "@/components/marketing/EditorialIcon";
 import { HomeChapter } from "./V5Chapter";
 
 export default function V5Platform() {
@@ -30,21 +30,21 @@ export default function V5Platform() {
       >
         <ul className="v5-controls-list">
           <li>
-            <HomeIcon name="access" />
+            <EditorialIcon name="access" />
             <div>
               <h3>{t("Limit access")}</h3>
               <p>{t("Set permissions for each source and action. Start with read-only access where appropriate.")}</p>
             </div>
           </li>
           <li>
-            <HomeIcon name="approval" />
+            <EditorialIcon name="approval" />
             <div>
               <h3>{t("Approve specific actions")}</h3>
               <p>{t("When approval is required, AI pauses so the person responsible can review the proposed change before deciding.")}</p>
             </div>
           </li>
           <li>
-            <HomeIcon name="activity" />
+            <EditorialIcon name="activity" />
             <div>
               <h3>{t("Review the log")}</h3>
               <p>{t("Review the run, approval decision, and actions taken.")}</p>

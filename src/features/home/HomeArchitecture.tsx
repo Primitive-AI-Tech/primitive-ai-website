@@ -1,9 +1,9 @@
 import { ArrowDown } from "lucide-react";
 import { useCopy } from "@/i18n/useCopy";
-import { HomeIcon, type HomeIconName } from "./HomeIcon";
+import { EditorialIcon, type EditorialIconName } from "@/components/marketing/EditorialIcon";
 
 type ArchitectureItem = {
-  icon: HomeIconName;
+  icon: EditorialIconName;
   title: string;
   description: string;
 };
@@ -34,7 +34,7 @@ function ArchitectureItems({ items }: { items: ArchitectureItem[] }) {
       {items.map(({ icon, title, description }) => (
         <div key={title} className="home-architecture-item">
           <dt>
-            <HomeIcon name={icon} />
+            <EditorialIcon name={icon} />
             {t(title)}
           </dt>
           <dd>{t(description)}</dd>
@@ -51,7 +51,7 @@ export default function HomeArchitecture() {
     <figure className="home-architecture" aria-label={t("Core Agentic integration architecture")}>
       <section className="home-architecture-node home-architecture-channels" aria-labelledby="v5-channels-title">
         <header className="home-architecture-heading">
-          <HomeIcon name="channels" />
+          <EditorialIcon name="channels" />
           <h3 id="v5-channels-title">{t("Work channels")}</h3>
         </header>
         <ArchitectureItems items={workChannels} />
@@ -62,7 +62,7 @@ export default function HomeArchitecture() {
       <div className="home-architecture-center">
         <section className="home-architecture-node home-architecture-core" aria-labelledby="v5-core-title">
           <header className="home-architecture-heading">
-            <HomeIcon name="core" />
+            <EditorialIcon name="core" />
             <div>
               <h3 id="v5-core-title">Core Agentic</h3>
               <p>{t("A dedicated deployment environment for each customer.")}</p>
@@ -70,13 +70,13 @@ export default function HomeArchitecture() {
           </header>
           <ArchitectureItems items={platformCapabilities} />
           <a className="home-architecture-policy" href="#control">
-            <HomeIcon name="policy" />
+            <EditorialIcon name="policy" />
             <span>{t("Access · Approvals · Logs")}</span>
             <ArrowDown aria-hidden="true" />
           </a>
         </section>
         <div className="home-architecture-model">
-          <HomeIcon name="models" />
+          <EditorialIcon name="models" />
           <div>
             <strong>{t("AI models")}</strong>
             <p>{t("Core Agentic uses models according to the deployment configuration.")}</p>
@@ -88,7 +88,7 @@ export default function HomeArchitecture() {
 
       <section className="home-architecture-node home-architecture-records" aria-labelledby="v5-records-title">
         <header className="home-architecture-heading">
-          <HomeIcon name="systems" />
+          <EditorialIcon name="systems" />
           <div>
             <h3 id="v5-records-title">{t("Existing systems")}</h3>
             <p>{t("Systems of record")}</p>

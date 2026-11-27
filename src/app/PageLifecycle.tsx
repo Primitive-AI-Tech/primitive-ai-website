@@ -54,7 +54,7 @@ export default function PageLifecycle({
   const showProgress = ["products", "services", "about", "updates", "contact"].includes(page.id);
   return (
     <>
-      {showProgress && <StoryProgress key={page.id} endId={page.id === "contact" ? "inquiry" : undefined} />}
+      {showProgress && <StoryProgress key={page.id} />}
       {children}
     </>
   );

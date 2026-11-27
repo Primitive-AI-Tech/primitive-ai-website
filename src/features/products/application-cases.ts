@@ -1,6 +1,7 @@
+import type { EditorialIconName } from "@/components/marketing/EditorialIcon";
 import type { ProductText } from "./product-copy";
 
-export type CaseStep = readonly [icon: string, title: ProductText, description?: ProductText];
+export type CaseStep = readonly [icon: EditorialIconName, title: ProductText, description?: ProductText];
 type Case = {
   id: string;
   label: ProductText;
@@ -25,7 +26,7 @@ export const cases = [
     brief: [
       ["“Which projects might this company be interested in?”", "“Công ty này có thể quan tâm đến những dự án nào?”"],
       ["Let the agent plan, research the company, and check project records.", "Cho tác nhân tự lập kế hoạch, tra cứu doanh nghiệp và đối chiếu hồ sơ dự án."],
-      ["A shortlist to check against the original project records.", "Danh sách đề xuất để đối chiếu với hồ sơ gốc."],
+      ["Suggested projects with details to check against the source records.", "Danh sách dự án đề xuất kèm thông tin để đối chiếu với hồ sơ gốc."],
     ],
   },
   {
@@ -65,8 +66,8 @@ export const cases = [
     ],
   },
   {
-    id: "your-use-case", label: ["Your use case", "Your use case"],
-    title: ["Your use case", "Your use case"], type: "custom",
+    id: "your-use-case", label: ["Your use case", "Bài toán của bạn", "products.applications.yourUseCase"],
+    title: ["Your use case", "Bài toán của bạn", "products.applications.yourUseCase"], type: "custom",
     brief: [
       ["Choose recurring work or a task that often slows down at handoffs.", "Xử lý một việc lặp lại hoặc thường bị chậm ở khâu bàn giao."],
       ["Configure Core Agentic around your team’s workflow, tools, and permissions.", "Điều chỉnh Core Agentic theo quy trình, công cụ và quyền của đội ngũ."],
@@ -90,28 +91,28 @@ export const legacyCaseTargets: Record<string, ApplicationCase["id"]> = {
 
 export const orderSteps = [
   ["email", ["Incoming email", "Email đến"], ["Read the request.", "Đọc yêu cầu."]],
-  ["intake", ["Intake", "Tiếp nhận"], ["Ask for missing details.", "Hỏi thêm nếu thiếu."]],
+  ["channels", ["Intake", "Tiếp nhận"], ["Ask for missing details.", "Hỏi thêm nếu thiếu."]],
   ["order", ["Order", "Đơn hàng"], ["Create it in ERP after approval.", "Tạo trên ERP sau khi duyệt."]],
-  ["production", ["Production", "Sản xuất"], ["Check capacity and materials.", "Kiểm tra công suất và vật tư."]],
+  ["workflows", ["Production", "Sản xuất"], ["Check capacity and materials.", "Kiểm tra công suất và vật tư."]],
   ["stock", ["Inventory", "Tồn kho"], ["Check quantities available.", "Kiểm tra lượng có thể dùng."]],
-  ["purchase", ["Purchasing", "Mua hàng"], ["Send the request for approval.", "Gửi đề nghị mua để duyệt."]],
+  ["approval", ["Purchasing", "Mua hàng"], ["Send the request for approval.", "Gửi đề nghị mua để duyệt."]],
 ] as const satisfies readonly CaseStep[];
 
 export const researchSteps = [
-  ["internal", ["Identify the company", "Xác định doanh nghiệp"]],
-  ["search", ["Find project information", "Tìm thông tin dự án"]],
-  ["order", ["Assess the fit", "Đánh giá mức độ phù hợp"]],
+  ["internal", ["Identify the company", "Xác định doanh nghiệp"], ["Review what the company does to guide the search.", "Tìm hiểu hoạt động của doanh nghiệp để định hướng tra cứu."]],
+  ["search", ["Find project information", "Tìm thông tin dự án"], ["Find candidates and check project IDs, dates, and statuses against the source records.", "Tìm dự án tiềm năng và đối chiếu mã, ngày và trạng thái với hồ sơ gốc."]],
+  ["order", ["Assess the fit", "Đánh giá mức độ phù hợp"], ["Suggest projects related to the company’s activities for the team to review.", "Chọn các dự án có liên quan đến hoạt động của doanh nghiệp để đội ngũ rà soát."]],
 ] as const satisfies readonly CaseStep[];
 
 export const warehouseSteps = [
-  ["warehouse-count", ["Read the count sheet", "Đọc phiếu kiểm kê"], ["Identify the warehouse and count date.", "Xác định kho và ngày kiểm kê."]],
-  ["warehouse-compare", ["Compare quantities", "So sánh số lượng"], ["Match item codes and units of measure.", "Khớp mã hàng và đơn vị tính."]],
-  ["warehouse-export", ["Export discrepancies", "Xuất bảng chênh lệch"], ["Save an Excel file for review.", "Lưu tệp Excel để kiểm tra."]],
+  ["order", ["Read the count sheet", "Đọc phiếu kiểm kê"], ["Identify the warehouse and count date.", "Xác định kho và ngày kiểm kê."]],
+  ["search", ["Compare quantities", "So sánh số lượng"], ["Match item codes and units of measure.", "Khớp mã hàng và đơn vị tính."]],
+  ["spreadsheet", ["Export discrepancies", "Xuất bảng chênh lệch"], ["Save an Excel file for review.", "Lưu tệp Excel để kiểm tra."]],
 ] as const satisfies readonly CaseStep[];
 
 export const financeSteps = [
-  ["finance-cutoff", ["Get the weekly snapshot", "Lấy số liệu chốt tuần"], ["Read balances and due dates.", "Đọc số dư và hạn thanh toán."]],
-  ["finance-overdue", ["Review overdue balances", "Rà soát nợ quá hạn"], ["Find overdue balances and flag missing due dates.", "Xác định khoản quá hạn và đánh dấu khoản chưa có hạn thanh toán."]],
+  ["events", ["Get the weekly snapshot", "Lấy số liệu chốt tuần"], ["Read balances and due dates.", "Đọc số dư và hạn thanh toán."]],
+  ["cost", ["Review overdue balances", "Rà soát nợ quá hạn"], ["Find overdue balances and flag missing due dates.", "Xác định khoản quá hạn và đánh dấu khoản chưa có hạn thanh toán."]],
   ["finance-report", ["Build the report", "Lập báo cáo theo mẫu"], ["Save a PDF for finance to review.", "Lưu PDF để bộ phận tài chính kiểm tra."]],
 ] as const satisfies readonly CaseStep[];
 

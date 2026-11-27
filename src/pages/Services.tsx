@@ -1,5 +1,6 @@
-import { ArrowDown, Database, Target, Workflow } from "lucide-react";
-import { ChapterIcon } from "@/components/marketing/ChapterIcon";
+import { EmphasizedCopy } from "@/components/marketing/EmphasizedCopy";
+import { ArrowDown } from "lucide-react";
+import { EditorialIcon } from "@/components/marketing/EditorialIcon";
 import { InvitationCTA } from "@/components/marketing/InvitationCTA";
 import { V5PageHero } from "@/components/marketing/PageHero";
 import { Button, Eyebrow, TextLink } from "@/components/marketing/primitives";
@@ -15,7 +16,7 @@ const capabilities = [
     outcome: "A scoped agent workflow with evaluation and review points.",
   },
   {
-    icon: "act",
+    icon: "workflows",
     title: "AI Workflow Automation",
     description: "Map repeatable work, clarify exceptions and develop automation that fits the process and its owners.",
     outcome: "A working workflow with agreed handoffs and exception handling.",
@@ -44,21 +45,21 @@ const capabilities = [
     description: "Understand the work, compare opportunities and set out a practical path for responsible delivery.",
     outcome: "A prioritized opportunity brief and a delivery roadmap.",
   },
-];
+] as const;
 
 const process = [
   { title: "Discovery", description: "Understand the workflow, people, information, systems and constraints.", icon: "search" },
   { title: "Strategy", description: "Agree the problem, technical approach, scope and evaluation criteria.", icon: "plan" },
-  { title: "Build", description: "Develop the selected capability in reviewable increments.", icon: "act" },
+  { title: "Build", description: "Develop the selected capability in reviewable increments.", icon: "workflows" },
   { title: "Deploy", description: "Prepare the agreed release, documentation and operating handoff.", icon: "deliver" },
   { title: "Optimize", description: "Review real use and prioritize the next improvements together.", icon: "pilot-measure" },
-];
+] as const;
 
 const briefTopics = [
-  { icon: Workflow, title: "The work to improve" },
-  { icon: Database, title: "Existing data and systems" },
-  { icon: Target, title: "The outcome you need" },
-];
+  { icon: "workflows", title: "The work to improve" },
+  { icon: "databases", title: "Existing data and systems" },
+  { icon: "pilot-select", title: "The outcome you need" },
+] as const;
 
 export default function Services() {
   const t = useCopy();
@@ -68,7 +69,7 @@ export default function Services() {
       <V5PageHero
         id="service-intro"
         eyebrow={t("Custom AI Development")}
-        title={<>{t("Custom AI.")} <em>{t("Built around your business.")}</em></>}
+        title={<EmphasizedCopy message="services.hero.headline" fallback="Custom AI. <em>Built around your business.</em>" />}
         description={t("Primitive AI builds agents, tools and AI products with your team, shaped around your workflows and existing systems.")}
         className="services-hero"
         visual={
@@ -77,8 +78,8 @@ export default function Services() {
             <figcaption>
               <strong>{t("The first working session")}</strong>
               <ul className="services-brief-items" role="list">
-                {briefTopics.map(({ icon: Icon, title }) => (
-                  <li key={title}><Icon aria-hidden="true" /><span>{t(title)}</span></li>
+                {briefTopics.map(({ icon, title }) => (
+                  <li key={title}><EditorialIcon name={icon} /><span>{t(title)}</span></li>
                 ))}
               </ul>
             </figcaption>
@@ -102,13 +103,13 @@ export default function Services() {
           </div>
           <div className="services-path-grid">
             <article className="services-path-card">
-              <ChapterIcon name="customize" />
+              <EditorialIcon name="customize" />
               <h3>{t("Configure Core Agentic")}</h3>
               <p>{t("Start from an organizational workflow and configure the platform's knowledge, agents, tools and review steps around it.")}</p>
               <TextLink to="/products#roles">{t("See how Core Agentic is configured")}</TextLink>
             </article>
             <article className="services-path-card services-path-featured">
-              <ChapterIcon name="act" />
+              <EditorialIcon name="workflows" />
               <h3>{t("Develop custom AI")}</h3>
               <p>{t("Build a product, adapt a model or develop a deeper integration. Custom projects can run independently or use Core Agentic.")}</p>
               <TextLink to="#next-step">{t("Start a project conversation")}</TextLink>
@@ -127,7 +128,7 @@ export default function Services() {
           <div className="services-capability-grid">
             {capabilities.map(({ icon, title, description, outcome }) => (
               <article className="services-capability-card" key={title}>
-                <ChapterIcon name={icon} />
+                <EditorialIcon name={icon} />
                 <h3>{t(title)}</h3>
                 <p>{t(description)}</p>
                 <dl className="services-deliverable">
@@ -140,7 +141,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section id="service-process" className="v5-page-section services-process ink" aria-labelledby="service-process-title">
+      <section id="service-process" className="v5-page-section services-process" aria-labelledby="service-process-title">
         <div className="v5-page-wrap">
           <div className="v5-page-heading">
             <Eyebrow>{t("A practical engineering process")}</Eyebrow>
@@ -150,7 +151,7 @@ export default function Services() {
           <ol className="services-process-list" role="list">
             {process.map(({ icon, title, description }) => (
               <li key={title}>
-                <ChapterIcon name={icon} />
+                <EditorialIcon name={icon} />
                 <div><h3>{t(title)}</h3><p>{t(description)}</p></div>
               </li>
             ))}
@@ -159,7 +160,7 @@ export default function Services() {
         </div>
       </section>
 
-      <InvitationCTA id="next-step" to={projectContact} />
+      <InvitationCTA to={projectContact} />
     </>
   );
 }

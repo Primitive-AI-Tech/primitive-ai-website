@@ -1,14 +1,13 @@
 .v5-architecture {
-  --diagram-ink: #102925;
-  --diagram-card: #173831;
-  --diagram-sage: #eaf4ec;
-  --diagram-icon: #ddefe4;
-  --diagram-border: #bed7c9;
-  --diagram-dark-border: #35564e;
-  --diagram-muted: #3e5a53;
-  --diagram-dark-copy: #c0d7cf;
-  --diagram-mint: #a4e7c9;
-  --diagram-wire: #629586;
+  --diagram-ink: var(--editorial-ink);
+  --diagram-card: #fff;
+  --diagram-sage: #f4f8ff;
+  --diagram-border: var(--editorial-card-stroke);
+  --diagram-dark-border: #bed2f3;
+  --diagram-muted: var(--editorial-muted);
+  --diagram-dark-copy: var(--editorial-muted);
+  --diagram-mint: #0544d5;
+  --diagram-wire: #3c76db;
 }
 
 .v5-architecture.v5-integration {
@@ -16,18 +15,27 @@
   color: var(--page-ink, #101a35);
 }
 
+.v5-architecture .v5-flow {
+  padding: clamp(16px, 2.5vw, 34px);
+  border: 1px solid var(--editorial-card-stroke);
+  border-radius: clamp(18px, 2.2vw, 29px);
+  background: linear-gradient(145deg, #f4f8ff, #e9f1ff 60%, #f7faff);
+}
+
 .v5-architecture .v5-flow-grid {
   --diagram-row-gap: 26px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2.07fr) minmax(0, 1fr);
-  gap: var(--diagram-row-gap) clamp(22px, 3.9vw, 56px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: var(--diagram-row-gap) clamp(25px, 4vw, 60px);
 }
 
 .v5-architecture .v5-systems,
 .v5-architecture .v5-core {
   position: relative;
-  padding: clamp(17px, 2.1vw, 29px);
-  border-radius: 23px;
+  min-width: 0;
+  padding: clamp(14px, 1.55vw, 24px);
+  border-radius: 17px;
+  box-shadow: 0 10px 25px #2145770c;
 }
 
 .v5-architecture .v5-systems {
@@ -37,17 +45,18 @@
 }
 
 .v5-architecture .v5-core {
-  background: var(--diagram-ink);
-  color: #fff;
+  border: 1px solid #a9c5f4;
+  background: #f3f7ff;
+  color: var(--diagram-ink);
 }
 
 .v5-architecture .v5-systems h3 {
-  font-size: clamp(19px, 1.85vw, 27px);
+  font-size: clamp(17px, 1.65vw, 24px);
   letter-spacing: -.025em;
 }
 
 .v5-architecture .v5-core h3 {
-  font-size: clamp(28px, 3.2vw, 43px);
+  font-size: clamp(22px, 2.1vw, 31px);
   line-height: 1.1;
   letter-spacing: -.026em;
 }
@@ -55,13 +64,13 @@
 .v5-architecture .v5-core > p {
   margin-top: 8px;
   color: var(--diagram-dark-copy);
-  font-size: clamp(14px, 1.44vw, 19px);
+  font-size: clamp(14px, 1.25vw, 17px);
   line-height: 1.45;
 }
 
 .v5-architecture .v5-systems dl {
   display: grid;
-  gap: clamp(15px, 1.9vw, 27px);
+  gap: 14px;
   margin-top: clamp(17px, 2.2vw, 30px);
 }
 
@@ -71,28 +80,30 @@
   padding-inline-start: 44px;
 }
 
-/* The sprite retains the six original slide icons in reading order. */
-.v5-architecture .v5-systems dl > div::before {
+.v5-architecture .v5-systems dt .editorial-icon {
   position: absolute;
-  inset: 1px auto auto 0;
-  width: 38px;
-  height: 38px;
-  border-radius: 11px;
-  background-image: url("/images/home/v5/architecture-icons.png");
-  background-size: 38px 228px;
-  background-repeat: no-repeat;
-  content: "";
+  inset: 0 auto auto 0;
 }
 
-.v5-architecture .v5-inputs dl > div:nth-child(1)::before { background-position: 0 0; }
-.v5-architecture .v5-inputs dl > div:nth-child(2)::before { background-position: 0 -38px; }
-.v5-architecture .v5-inputs dl > div:nth-child(3)::before { background-position: 0 -76px; }
-.v5-architecture .v5-records dl > div:nth-child(1)::before { background-position: 0 -114px; }
-.v5-architecture .v5-records dl > div:nth-child(2)::before { background-position: 0 -152px; }
-.v5-architecture .v5-records dl > div:nth-child(3)::before { background-position: 0 -190px; }
+.v5-architecture .v5-flow :is(h3, .v5-engines dt, .v5-connectors, .v5-model strong) {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.v5-architecture .v5-flow :is(dt, .v5-connectors, .v5-model) .editorial-icon {
+  width: 33px;
+  height: 33px;
+  border-radius: 9px;
+}
+
+.v5-architecture .v5-flow :is(dt, .v5-connectors, .v5-model) .editorial-icon svg {
+  width: 19px;
+  height: 19px;
+}
 
 .v5-architecture .v5-flow dt {
-  font-size: clamp(15px, 1.36vw, 19px);
+  font-size: clamp(14px, 1.2vw, 17px);
   font-weight: 700;
   line-height: 1.25;
 }
@@ -123,8 +134,8 @@
 
 .v5-architecture .v5-core > .v5-connectors {
   margin-top: 10px;
-  color: #fff;
-  font-size: clamp(15px, 1.36vw, 19px);
+  color: #0e4777;
+  font-size: clamp(14px, 1.2vw, 17px);
   font-weight: 700;
 }
 
@@ -146,6 +157,7 @@
   position: relative;
   display: flex;
   grid-column: 2;
+  align-items: center;
   justify-content: center;
   justify-self: center;
   gap: 7px 15px;
@@ -163,29 +175,35 @@
   position: absolute;
   bottom: calc(100% + 1px);
   left: 50%;
-  width: 1px;
+  width: 2px;
   height: var(--diagram-row-gap);
-  background: var(--diagram-wire);
+  background: linear-gradient(to bottom, var(--diagram-wire) 7px, transparent 7px) 0 0 / 100% 12px repeat-y;
   content: "";
 }
 
-.v5-architecture .v5-model span { color: var(--diagram-muted); }
+.v5-architecture .v5-model > span { color: var(--diagram-muted); }
 
 .v5-architecture .v5-inputs::after,
 .v5-architecture .v5-records::before {
   position: absolute;
-  top: calc(50% - .5em);
-  display: grid;
-  place-items: center;
-  width: clamp(22px, 3.9vw, 56px);
-  color: var(--diagram-wire);
-  font-size: clamp(18px, 2.6vw, 36px);
-  line-height: 1;
-  content: "↔";
+  top: 50%;
+  width: clamp(25px, 4vw, 60px);
+  height: 2px;
+  background: linear-gradient(to right, var(--diagram-wire) 7px, transparent 7px) 0 0 / 12px 100% repeat-x;
+  content: "";
 }
 
 .v5-architecture .v5-inputs::after { left: calc(100% + 1px); }
 .v5-architecture .v5-records::before { right: calc(100% + 1px); }
+
+@keyframes editorial-flow-inline { to { background-position: 12px 0; } }
+@keyframes editorial-flow-block { to { background-position: 0 12px; } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .v5-architecture .v5-inputs::after,
+  .v5-architecture .v5-records::before { animation: editorial-flow-inline .675s linear infinite; }
+  .v5-architecture .v5-model::before { animation: editorial-flow-block .675s linear infinite; }
+}
 
 @media (max-width: 960px) {
   .v5-architecture .v5-flow-grid { --diagram-row-gap: 24px; grid-template-columns: minmax(0, 1fr); }
@@ -193,16 +211,17 @@
   .v5-architecture .v5-model { grid-column: 1; justify-self: stretch; }
   .v5-architecture .v5-model::before { display: none; }
   .v5-architecture .v5-inputs::after, .v5-architecture .v5-records::before {
-    inset: auto auto auto calc(50% - 12px);
-    width: 24px;
+    inset: auto auto auto 50%;
+    width: 2px;
     height: var(--diagram-row-gap);
-    font-size: 21px;
-    content: "↕";
+    background: linear-gradient(to bottom, var(--diagram-wire) 7px, transparent 7px) 0 0 / 100% 12px repeat-y;
+    animation-name: editorial-flow-block;
   }
   .v5-architecture .v5-inputs::after { top: 100%; }
   .v5-architecture .v5-records::before { bottom: 100%; }
 }
 
 @media (max-width: 600px) {
-  .v5-architecture .v5-systems dl { grid-template-columns: minmax(0, 1fr); }
+  .v5-architecture .v5-systems dl,
+  .v5-architecture .v5-engines { grid-template-columns: minmax(0, 1fr); }
 }

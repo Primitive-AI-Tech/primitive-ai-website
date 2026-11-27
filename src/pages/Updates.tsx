@@ -1,8 +1,11 @@
-import { ArrowDown, ArrowDownRight, ArrowUpRight, MessageSquareText } from "lucide-react";
+import { EmphasizedCopy } from "@/components/marketing/EmphasizedCopy";
+import { ArrowDown, ArrowDownRight, ArrowUpRight } from "lucide-react";
+import { EditorialIcon } from "@/components/marketing/EditorialIcon";
 import { InvitationCTA } from "@/components/marketing/InvitationCTA";
 import { V5PageHero } from "@/components/marketing/PageHero";
 import { Eyebrow } from "@/components/marketing/primitives";
-import { useCompanyCopy } from "@/features/company/copy";
+import { useTranslation } from "react-i18next";
+import { useCopy } from "@/i18n/useCopy";
 
 const companyLinkedIn = "https://www.linkedin.com/company/primitiveai";
 const eventUrl = "https://luma.com/l0ro71hq";
@@ -12,7 +15,12 @@ const eventPhoto = "/images/updates/hackathon-hanoi-2026.webp";
 const eventPhotoSmall = "/images/updates/hackathon-hanoi-2026-800.webp";
 
 export default function Updates() {
-  const { t, isVietnamese } = useCompanyCopy();
+  const t = useCopy();
+  const { i18n } = useTranslation();
+  const language = i18n.resolvedLanguage || "en";
+  const date = new Date(eventDate);
+  const shortDate = new Intl.DateTimeFormat(language, { dateStyle: "medium", timeZone: "UTC" }).format(date);
+  const longDate = new Intl.DateTimeFormat(language, { dateStyle: "long", timeZone: "UTC" }).format(date);
 
   return (
     <>
@@ -20,17 +28,12 @@ export default function Updates() {
         id="update-intro"
         className="updates-hero"
         eyebrow={t("From Primitive AI")}
-        title={
-          <>
-            {t("Updates and")} <em>{t("perspectives.")}</em>
-          </>
-        }
+        title={<EmphasizedCopy message="updates.hero.headline" fallback="Updates and <em>perspectives.</em>" />}
         description={t("Product news, community events and how AI is applied to real work.")}
         visual={
           <a
             className="updates-feature"
             href="#latest-update"
-            aria-label={t("Read about the Codex Community Hackathon in Hanoi")}
           >
             <img
               src={eventPhoto}
@@ -46,7 +49,7 @@ export default function Updates() {
               <div>
                 <p>
                   {t("Community")} ·{" "}
-                  <time dateTime={eventDate}>{isVietnamese ? "14/11/2026" : "Nov 14, 2026"}</time>
+                  <time dateTime={eventDate}>{shortDate}</time>
                 </p>
                 <strong>{t("Codex Community Hackathon in Hanoi")}</strong>
               </div>
@@ -73,7 +76,7 @@ export default function Updates() {
               <p className="updates-meta">
                 <span>{t("Community")}</span>
                 <time dateTime={eventDate}>
-                  {isVietnamese ? "14 tháng 11, 2026" : "November 14, 2026"}
+                  {longDate}
                 </time>
               </p>
               <h3 id="hackathon-title">{t("Codex Community Hackathon · AI in Your Palm")}</h3>
@@ -84,9 +87,7 @@ export default function Updates() {
               </a>
             </article>
             <aside className="updates-channel" aria-labelledby="updates-channel-title">
-              <div className="updates-channel-icon" aria-hidden="true">
-                <MessageSquareText />
-              </div>
+              <EditorialIcon name="chat" />
               <h3 id="updates-channel-title">{t("Follow Primitive AI")}</h3>
               <p>{t("Get product news and team updates on LinkedIn.")}</p>
               <a className="text-link" href={companyLinkedIn} target="_blank" rel="noreferrer">
@@ -96,7 +97,7 @@ export default function Updates() {
           </div>
         </div>
       </section>
-      <InvitationCTA id="next-step" />
+      <InvitationCTA />
     </>
   );
 }

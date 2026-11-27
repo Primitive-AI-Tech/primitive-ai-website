@@ -281,7 +281,7 @@ export function ContactInquiryForm({ search }: { search: string }) {
             </details>
             <p className="privacy-copy">
               {t("We will use these details to discuss your request.")}{" "}
-              <Link to="/privacy">{t("Privacy policy")}</Link>.
+              <Link to="/privacy#personal-data">{t("Privacy policy")}</Link>.
             </p>
             {submissionError && (
               <p className="submission-error" role="alert">

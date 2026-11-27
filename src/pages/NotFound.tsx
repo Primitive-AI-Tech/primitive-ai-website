@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Button } from "@/components/marketing/primitives";
 
 const NotFound = () => {
   const location = useLocation();
@@ -14,13 +15,11 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">{t('title')}</h1>
-        <p className="text-xl text-gray-600 mb-4">{t('message')}</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          {t('return_home')}
-        </a>
+    <div className="site-container not-found-page">
+      <div className="not-found-card">
+        <h1>{t("title")}</h1>
+        <p>{t("message")}</p>
+        <Button to="/" arrow>{t("return_home")}</Button>
       </div>
     </div>
   );

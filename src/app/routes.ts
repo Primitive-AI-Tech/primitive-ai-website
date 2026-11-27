@@ -61,14 +61,7 @@ export const pageRoutes = [
   {
     id: "privacy",
     path: "/privacy",
-    title: "Privacy",
-    surface: "marketing",
-    scroll: "story",
-  },
-  {
-    id: "terms",
-    path: "/terms",
-    title: "Terms",
+    title: "Website Policy",
     surface: "marketing",
     scroll: "story",
   },
@@ -78,6 +71,7 @@ export type PageId = (typeof pageRoutes)[number]["id"];
 export type PageMetadata = PagePolicy;
 
 export const redirects = [
+  { path: "/terms", destination: "/privacy#website-use" },
   { path: "/core-agentic", destination: "/" },
   { path: "/business-value", destination: "/#business-value" },
   { path: "/use-cases", destination: "/#applications" },

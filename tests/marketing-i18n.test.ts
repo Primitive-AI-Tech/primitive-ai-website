@@ -45,6 +45,19 @@ test("marketing resources share the existing language state and preserve sentenc
         }),
         missing,
       );
+      const englishDefaults = {
+        "home.hero.headline": "Put AI to <em>work</em> across your <em>organization.</em>",
+        "products.applications.yourUseCase": "Your use case",
+        "products.warehouse.countedQuantity": "Count",
+        "invitation.headline": "The next advantage is how your organization works.",
+        "policy.personal-data.title": "Information we handle",
+      };
+      for (const [message, fallback] of Object.entries(englishDefaults)) {
+        const translation = copy(message, { keySeparator: false, nsSeparator: false, defaultValue: fallback });
+        assert.equal(translation, dictionary[message], `${language} has a contextual translation for ${message}`);
+        assert.notEqual(translation, fallback);
+      }
+      assert.equal(dictionary["home.hero.headline"].match(/<em>[^<]+<\/em>/g)?.length, 2);
       const before = additions;
       await loadCopy(language);
       assert.equal(

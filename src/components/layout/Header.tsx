@@ -77,7 +77,7 @@ export default function Navigation() {
               <button
                 type="button"
                 className="language-trigger"
-                aria-label={t("Change language")}
+                aria-label={`${current.code.toUpperCase()} ${t("Change language")}`}
               >
                 <Globe2 size={19} aria-hidden="true" />
                 <span>{current.code.toUpperCase()}</span>
@@ -204,11 +204,7 @@ export default function Navigation() {
                 </Link>
                 <div>
                   <Link to="/privacy" onClick={() => setOpen(false)}>
-                    {t("Privacy")}
-                  </Link>
-                  <span>·</span>
-                  <Link to="/terms" onClick={() => setOpen(false)}>
-                    {t("Terms")}
+                    {t("Website Policy")}
                   </Link>
                 </div>
               </div>

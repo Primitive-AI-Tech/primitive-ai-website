@@ -1,13 +1,14 @@
+import { EmphasizedCopy } from "@/components/marketing/EmphasizedCopy";
 import { ArrowDown } from "lucide-react";
-import { ChapterIcon } from "@/components/marketing/ChapterIcon";
+import { EditorialIcon } from "@/components/marketing/EditorialIcon";
 import { InvitationCTA } from "@/components/marketing/InvitationCTA";
 import { V5PageHero } from "@/components/marketing/PageHero";
 import { Eyebrow, TextLink } from "@/components/marketing/primitives";
 import { companyValues, journey } from "@/features/company/content";
-import { useCompanyCopy } from "@/features/company/copy";
+import { useCopy } from "@/i18n/useCopy";
 
 export default function Company() {
-  const { t } = useCompanyCopy();
+  const t = useCopy();
 
   return (
     <>
@@ -15,14 +16,7 @@ export default function Company() {
         id="about-intro"
         className="about-hero"
         eyebrow={t("About Primitive AI")}
-        title={
-          <>
-            {t("More potential.")}{" "}
-            <em>
-              {t("More productive")} {t("organizations.")}
-            </em>
-          </>
-        }
+        title={<EmphasizedCopy message="about.hero.headline" fallback="More potential. <em>More productive organizations.</em>" />}
         description={t("We build practical AI around the work organizations need to get done.")}
         visual={
           <figure className="about-founder">
@@ -98,7 +92,7 @@ export default function Company() {
           <div className="about-values">
             {companyValues.map(({ icon, title, text }) => (
               <article key={title}>
-                <ChapterIcon name={icon} />
+                <EditorialIcon name={icon} />
                 <h3>{t(title)}</h3>
                 <p>{t(text)}</p>
               </article>
@@ -110,7 +104,7 @@ export default function Company() {
           </div>
         </div>
       </section>
-      <InvitationCTA id="next-step" />
+      <InvitationCTA />
     </>
   );
 }

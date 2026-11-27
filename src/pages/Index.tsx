@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button, Eyebrow } from "@/components/marketing/primitives";
 import { InvitationCTA } from "@/components/marketing/InvitationCTA";
+import { EmphasizedCopy } from "@/components/marketing/EmphasizedCopy";
 import StoryProgress, { ScrollCue } from "@/components/layout/StoryProgress";
 import { HomeArtwork } from "@/features/home/HomeArtwork";
-import { HomeIcon } from "@/features/home/HomeIcon";
+import { EditorialIcon } from "@/components/marketing/EditorialIcon";
 import V5Opening from "@/features/home/V5Opening";
 import V5Platform from "@/features/home/V5Platform";
 import { V5Outcomes, V5Roles } from "@/features/home/V5Outcomes";
@@ -20,14 +21,8 @@ export default function Home() {
         <div className="site-container hero-grid relative-content">
           <div className="home-hero-copy">
             <Eyebrow>{t("Core Agentic by Primitive AI")}</Eyebrow>
-            <h1
-              className="home-headline"
-              aria-label={t("Put AI to work across your organization.")}
-            >
-              {t("Put AI to")}{" "}
-              <span className="home-headline-accent">{t("work")}</span>{" "}
-              {t("across")} {t("your")}{" "}
-              <span className="home-headline-accent">{t("organization.")}</span>
+            <h1 className="home-headline">
+              <EmphasizedCopy message="home.hero.headline" fallback="Put AI to <em>work</em> across your <em>organization.</em>" />
             </h1>
             <p className="hero-lead">
               {t(
@@ -52,7 +47,7 @@ export default function Home() {
                 { icon: "execution", label: "Visible execution" },
               ] as const).map((item) => (
                 <span key={item.label}>
-                  <HomeIcon name={item.icon} />
+                  <EditorialIcon name={item.icon} />
                   <span>{t(item.label)}</span>
                 </span>
               ))}
@@ -73,7 +68,7 @@ export default function Home() {
       <V5Roles />
       <V5Platform />
       <V5Outcomes />
-      <InvitationCTA id="next-step" artwork={<HomeArtwork name="next" />} />
+      <InvitationCTA />
     </>
   );
 }

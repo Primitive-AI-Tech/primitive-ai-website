@@ -1,4 +1,4 @@
-import { ChapterIcon } from "@/components/marketing/ChapterIcon";
+import { EditorialIcon, type EditorialIconName } from "@/components/marketing/EditorialIcon";
 import {
   financeSteps, orderSteps, pilotSteps, researchSteps, warehouseSteps,
   type ApplicationCase, type CaseStep,
@@ -6,24 +6,6 @@ import {
 import { useProductCopy, type ProductText } from "./product-copy";
 
 const mediaPath = "/images/products/v5";
-const localIcons = new Set([
-  "email", "intake", "production", "purchase", "warehouse-count",
-  "warehouse-compare", "warehouse-export", "finance-cutoff",
-]);
-
-function CaseIcon({ name }: { name: string }) {
-  if (!localIcons.has(name)) return <ChapterIcon name={name} />;
-  return (
-    <span className="chapter-icon" aria-hidden="true">
-      <img src={`${mediaPath}/icons/${name}.png`} width={24} height={24} loading="lazy" decoding="async" alt="" />
-    </span>
-  );
-}
-
-function EvidenceIcon({ name, size = 35 }: { name: string; size?: number }) {
-  return <img className="pptx-icon" src={`/images/home/v5/icons/${name}.png`} width={size} height={size} loading="lazy" decoding="async" alt="" />;
-}
-
 function CasePhoto({
   file, alt, width = 1640, height, className,
 }: {
@@ -39,7 +21,7 @@ function Steps({ steps, order = false }: { steps: readonly CaseStep[]; order?: b
     <ol className={order ? "order-flow" : "execution-steps"}>
       {steps.map(([icon, title, description]) => (
         <li key={icon}>
-          <CaseIcon name={icon} />
+          <EditorialIcon name={icon} />
           <div><h4>{copy(title)}</h4>{description && <p>{copy(description)}</p>}</div>
         </li>
       ))}
@@ -63,7 +45,7 @@ function CaseHeading({ item, titleId }: { item: ApplicationCase; titleId: string
   const title = (
     <div className="example-copy">
       <p className={`case-type case-type-${item.type}`}>{copy(typeLabels[item.type])}</p>
-      <h3 id={titleId} lang={item.id === "your-use-case" ? "en" : undefined}>{copy(item.title)}</h3>
+      <h3 id={titleId}>{copy(item.title)}</h3>
     </div>
   );
 
@@ -104,23 +86,15 @@ function Research() {
   const copy = useProductCopy();
   return (
     <>
-      <div className="research-composition">
-        <div className="research-input">
-          <ol className="research-steps">
-            {researchSteps.map(([name, label]) => <li key={name}><EvidenceIcon name={name} size={28} />{copy(label)}</li>)}
-          </ol>
-        </div>
-        <div className="research-output">
-          <dl className="research-count">
-            <div><dt>{copy(["suggested projects", "dự án được đề xuất"])}</dt><dd>6<EvidenceIcon name="deliver" /></dd></div>
-          </dl>
-          <p className="research-check">
-            <EvidenceIcon name="approval" size={34} />
-            <span>{copy(["Project IDs, dates, and statuses were checked against original records. Relevance was assessed during this run.", "Đã đối chiếu mã, ngày và trạng thái với hồ sơ gốc. Mức độ phù hợp là nhận định từ lần chạy."])}</span>
-          </p>
-        </div>
+      <Steps steps={researchSteps} />
+      <div className="output output-body research-output">
+        <h4><EditorialIcon name="report" />{copy(["Project research results", "Kết quả tìm dự án"])}</h4>
+        <p className="research-result"><strong>6</strong> {copy(["suggested projects", "dự án được đề xuất"])}</p>
+        <p className="research-verification">
+          {copy(["Project IDs, dates, and statuses were checked against original records. Relevance was assessed during this run.", "Mã, ngày và trạng thái dự án đã được đối chiếu với hồ sơ gốc. Mức độ phù hợp là nhận định từ lần chạy."])}
+        </p>
       </div>
-      <p className="evidence-context">{copy(["Individual trial run · About 78 seconds", "Lần chạy thử riêng · Khoảng 78 giây"])}</p>
+      <p className="example-note">{copy(["Individual trial run · About 78 seconds", "Lần chạy thử riêng · Khoảng 78 giây"])}</p>
     </>
   );
 }
@@ -138,8 +112,8 @@ function Warehouse() {
             <table>
               <caption>{copy(["Sample discrepancy report", "Bảng chênh lệch mẫu"])}</caption>
               <thead><tr>
-                <th scope="col">{copy(["Item code", "Mã hàng"])}</th><th scope="col">{copy(["System", "Hệ thống"])}</th>
-                <th scope="col">{copy(["Count", "Kiểm kê"])}</th><th scope="col">{copy(["Difference", "Chênh lệch"])}</th>
+                <th scope="col">{copy(["Item code", "Mã hàng"])}</th><th scope="col">{copy(["System", "Số liệu hệ thống", "products.warehouse.systemQuantity"])}</th>
+                <th scope="col">{copy(["Count", "Số lượng kiểm kê", "products.warehouse.countedQuantity"])}</th><th scope="col">{copy(["Difference", "Chênh lệch"])}</th>
               </tr></thead>
               <tbody>
                 <tr><th scope="row">MAT-014</th><td>120</td><td>112</td><td>−8</td></tr>
@@ -156,7 +130,7 @@ function Warehouse() {
 }
 
 const profileMetrics = [
-  ["act", ["16 steps", "16 bước"], ["Read, research, write, index", "Đọc, tra cứu, viết, lập chỉ mục"]],
+  ["workflows", ["16 steps", "16 bước"], ["Read, research, write, index", "Đọc, tra cứu, viết, lập chỉ mục"]],
   ["report", ["3,021 words", "3.021 từ"], ["In-depth report", "Báo cáo chuyên sâu"]],
   ["schedule", ["101 seconds", "101 giây"], ["Processing time", "Thời gian xử lý"]],
 ] as const satisfies readonly CaseStep[];
@@ -175,7 +149,7 @@ function Profile() {
         </figure>
         <div className="profile-output">
           <ul className="profile-metrics" role="list">
-            {profileMetrics.map(([name, value, label]) => <li key={name}><EvidenceIcon name={name} size={36} /><strong>{copy(value)}</strong><span>{copy(label)}</span></li>)}
+            {profileMetrics.map(([name, value, label]) => <li key={name}><EditorialIcon name={name} className="case-evidence-icon" /><strong>{copy(value)}</strong><span>{copy(label)}</span></li>)}
           </ul>
           <p className="profile-check">{copy(["The index matched the saved profile.", "Chỉ mục khớp với hồ sơ đã lưu."])}</p>
         </div>
@@ -208,7 +182,7 @@ const reportOutputs = {
       ["Actions that require approval", "Các thao tác cần người phụ trách duyệt"],
     ],
   },
-} as const satisfies Record<string, { icon: string; image: string; height: number; alt: ProductText; title: ProductText; items: readonly ProductText[] }>;
+} as const satisfies Record<string, { icon: EditorialIconName; image: string; height: number; alt: ProductText; title: ProductText; items: readonly ProductText[] }>;
 
 function ReportOutput({ type }: { type: keyof typeof reportOutputs }) {
   const copy = useProductCopy();
@@ -222,7 +196,7 @@ function ReportOutput({ type }: { type: keyof typeof reportOutputs }) {
         <CasePhoto className="output-photo" file={report.image} height={report.height} alt={report.alt} />
       )}
       <figcaption className="output-body">
-        <h4><CaseIcon name={report.icon} />{copy(report.title)}</h4>
+        <h4><EditorialIcon name={report.icon} />{copy(report.title)}</h4>
         <ul className="report-list">
           {report.items.map((item) => <li key={item[0]}>{copy(item)}</li>)}
         </ul>
@@ -244,7 +218,7 @@ function Finance() {
 
 const screeningMetrics = [
   [521, "stock", ["profiles in the index", "hồ sơ trong chỉ mục"]],
-  [20, "act", ["buyers scored", "bên mua được chấm điểm"]],
+  [20, "workflows", ["buyers scored", "bên mua được chấm điểm"]],
   [10, "deliver", ["saved ranking results", "kết quả xếp hạng đã lưu"]],
 ] as const;
 
@@ -253,7 +227,7 @@ function Screening() {
   return (
     <>
       <dl className="screening-metrics">
-        {screeningMetrics.map(([value, icon, label]) => <div key={icon}><dt>{copy(label)}</dt><dd>{value}<EvidenceIcon name={icon} /></dd></div>)}
+        {screeningMetrics.map(([value, icon, label]) => <div key={icon}><dt>{copy(label)}</dt><dd>{value}<EditorialIcon name={icon} className="case-evidence-icon" /></dd></div>)}
       </dl>
       <p className="screening-warning">
         <span aria-hidden="true">⚠</span>
@@ -270,7 +244,7 @@ function YourCase() {
 
 const contentById = {
   "order-example": { className: "example example-order", Content: Order },
-  research: { className: "evidence-panel evidence-research", Content: Research },
+  research: { className: "example example-workflow example-research", Content: Research },
   "warehouse-example": { className: "example example-workflow example-warehouse", Content: Warehouse },
   "company-profile": { className: "evidence-panel evidence-profile", Content: Profile },
   "finance-example": { className: "example example-workflow example-finance", Content: Finance },
@@ -283,8 +257,8 @@ export function ApplicationCaseContent({ item, active }: { item: ApplicationCase
   const { className, Content } = contentById[item.id];
 
   return (
-    <article className={className} id={item.id} data-case-selection data-panel role="tabpanel" aria-labelledby={`case-tab-${item.id}`} hidden={!active} tabIndex={active ? 0 : undefined}>
+    <div className={className} id={item.id} data-case-selection data-panel role="tabpanel" aria-labelledby={`case-tab-${item.id}`} hidden={!active} tabIndex={active ? 0 : undefined}>
       {active && <><CaseHeading item={item} titleId={titleId} /><Content /></>}
-    </article>
+    </div>
   );
 }

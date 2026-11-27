@@ -3,6 +3,7 @@
 @import "./site/foundation.css";
 @import "./site/navigation.css";
 @import "./site/components.css";
+@import "./site/editorial-icons.css";
 @import "./pages/platform.css";
 @import "./pages/business-value.css";
 @import "./pages/use-cases.css";
@@ -20,3 +21,4 @@
 @import "./pages/invitation-cta.css";
 @import "./pages/v5-pages.css";
 @import "./pages/v5-architecture.css";
+@import "./pages/policy.css";

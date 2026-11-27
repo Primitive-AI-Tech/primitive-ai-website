@@ -71,7 +71,7 @@ export function usePageExperience(pathname: string, enabled: boolean) {
     const html = document.documentElement;
     const sections = Array.from(
       root.querySelectorAll<HTMLElement>(
-        ":scope > section, :scope > div > section, .prose > section",
+        ":scope > section, :scope > div > section, .prose > section, .policy-sections > section",
       ),
     );
     const targets = Array.from(
